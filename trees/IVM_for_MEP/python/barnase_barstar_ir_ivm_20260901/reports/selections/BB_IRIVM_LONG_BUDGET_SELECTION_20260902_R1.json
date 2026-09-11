@@ -1,0 +1,135 @@
+{
+  "audited_preview_dominance": {
+    "ODE_NEB": {
+      "baseline": {
+        "densified_Delta_E_kcal_per_mol": 1025.6896221952336,
+        "discrete_I_perp": 631.9043986870009,
+        "optimization_N_F": 9990,
+        "path_sha256": "3b017361c8922cfa07013a6240b0bf7f608f406449865535c66deee6944fb500"
+      },
+      "baseline_to_IR_IVM_Delta_E_ratio": 1.6719655488105785,
+      "baseline_to_IR_IVM_I_perp_ratio": 1.4334070291494891,
+      "baseline_to_IR_IVM_cost_ratio": 5.01254390366282,
+      "strictly_dominated_in_N_F_discrete_I_perp_and_densified_Delta_E": true
+    },
+    "current_BB_IVM": {
+      "baseline": {
+        "densified_Delta_E_kcal_per_mol": 628.3270998619552,
+        "discrete_I_perp": 1464.4822662116005,
+        "optimization_N_F": 9990,
+        "path_sha256": "694cca7e77f9734044ee6f3f14ced2f0728ef9f523a2ef8a79a7877f062cc7b8"
+      },
+      "baseline_to_IR_IVM_Delta_E_ratio": 1.0242292030846825,
+      "baseline_to_IR_IVM_I_perp_ratio": 3.322020196115569,
+      "baseline_to_IR_IVM_cost_ratio": 5.01254390366282,
+      "strictly_dominated_in_N_F_discrete_I_perp_and_densified_Delta_E": true
+    }
+  },
+  "bindings": {
+    "A8_trigger_decision": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/decisions/BB_IRIVM_CACHED_STALL_FOLLOWUP_DECISION_20260902_R1.json",
+      "sha256": "9b3cbbbcaa3c2e4ea4f91239a7431e3c57bc97196d8308921bc08eae9d375934"
+    },
+    "ODE_NEB_metric_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.audit.json",
+      "sha256": "22115e01097ea77c66a0ab2801cdce2c04e4e9e2d13a7e6dfd58388a89e94ee1"
+    },
+    "candidate_A_failure": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/failures/BB_IRIVM_A1E1_R05_M05_INF4080_R2_ALGORITHMIC_EARLY_STOP_20260902.json",
+      "sha256": "1d3eea23c847c7bfe537191eaa6f94e9b6686108352b41c84e5201c1976fba9a"
+    },
+    "candidate_B_metric_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.audit.json",
+      "sha256": "a2893048d8086b573c107450ad9feeb19fe3e54aec6fb288178a95560c6e66d7"
+    },
+    "candidate_B_metric_contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CANDIDATE_B_LONG_ARC500_20260902_R1.json",
+      "sha256": "2fa34041670d3f0b3432dace44203acf875129a707df1c300df31a0b27c05539"
+    },
+    "candidate_B_metric_output": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.npz",
+      "sha256": "0c64468d16ae3f01367b00a8b56b9450be1ac405966508f8ab52d4ca89b7d329"
+    },
+    "candidate_B_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "long_budget_design": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_BUDGET_DESIGN_20260902_R1.json",
+      "sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629"
+    },
+    "metric_policy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "original_IVM_metric_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_original_ivm_arc500_20260901_r1.audit.json",
+      "sha256": "4a1376c1c6afb03a2905c79c9cc823fb433aff43644edcebbc9b535c52640d31"
+    },
+    "prefix_criterion": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json",
+      "sha256": "a1e485cda26065ae1c91188589450053c4a25d0e7c871ee5ac9faa5dee6c6432"
+    }
+  },
+  "candidate_classes": {
+    "alpha_10_r_0p5_m_max_5": "ALGORITHMIC_EARLY_STOP_NOT_RANKABLE",
+    "alpha_1_r_0p1_m_max_5": "COMPLIANT_LONG_BUDGET_WITH_VALID_TWO_METRIC_DIAGNOSTIC"
+  },
+  "created_utc": "2026-09-01T20:33:53Z",
+  "preview_disclosure": "This three-objective dominance uses the best eligible N_F=1993 state from the 4080-upper-bound run.  The independent 9990 run and exact 4080-prefix reproducibility test remain required for the final claim.",
+  "ranking_targets": {
+    "densified_Delta_E_kcal_per_mol": 200.0,
+    "discrete_I_perp": 1468.5712347872072
+  },
+  "same_state_rows": [
+    {
+      "densified_Delta_E_kcal_per_mol": 10814.684022034557,
+      "diagnostic_energy_reused": true,
+      "discrete_I_perp": 8483398.585299263,
+      "joint_target_score": 5776.634040178847,
+      "optimization_N_F": 210,
+      "path_sha256": "d737fa00edc9f2e371f2a92e24cfe946c50a1a70d87205bddd801716af2573b3"
+    },
+    {
+      "densified_Delta_E_kcal_per_mol": 900.1006835316789,
+      "diagnostic_energy_reused": true,
+      "discrete_I_perp": 77444.13564174288,
+      "joint_target_score": 52.73434056671031,
+      "optimization_N_F": 429,
+      "path_sha256": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad"
+    },
+    {
+      "densified_Delta_E_kcal_per_mol": 613.4633712548085,
+      "diagnostic_energy_reused": false,
+      "discrete_I_perp": 440.84086783217526,
+      "joint_target_score": 3.0673168562740427,
+      "optimization_N_F": 1993,
+      "path_sha256": "7161dab1eb057d958e0af032626e5113de85b0b5725e085b56bf065d79060e66"
+    }
+  ],
+  "schema": "bb-irivm-long-budget-two-metric-selection-v1",
+  "selected_4080_run_state": {
+    "densified_Delta_E_kcal_per_mol": 613.4633712548085,
+    "diagnostic_energy_reused": false,
+    "discrete_I_perp": 440.84086783217526,
+    "joint_target_score": 3.0673168562740427,
+    "optimization_N_F": 1993,
+    "path_sha256": "7161dab1eb057d958e0af032626e5113de85b0b5725e085b56bf065d79060e66"
+  },
+  "selected_setting": {
+    "alpha": 1.0,
+    "fresh_from_common_initial_path": true,
+    "independent_optimization_N_F_upper_bound": 9990,
+    "m_max": 5,
+    "r": 0.1,
+    "reference_host": {
+      "address": "100.74.85.3",
+      "architecture": "arm64",
+      "hostname": "Mac-mini.local",
+      "processor": "Apple M4",
+      "selection_basis": "chosen before either 4080 call because measured throughput is about twice the local Mac; both candidates run serially on this same host"
+    }
+  },
+  "selection_reason": "The alpha=1, r=0.1, m_max=5 trajectory is the only compliant long-budget candidate and has a valid same-state two-metric diagnostic.",
+  "status": "PASS_SELECTED_SETTING_FOR_INDEPENDENT_9990_N_F_RUN"
+}

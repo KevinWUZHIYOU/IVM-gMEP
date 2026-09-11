@@ -1,0 +1,20 @@
+{
+  "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/screen/ivm_chig_irivm_a1e1_r05_m05_inf1500_r1_central_state_ivm_cfg29d8ce2d7afa_budget1500.npz",
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/dense_barrier_chig_irivm_a1e1_r05_m05_nf907.npz",
+  "source_path_records": 85,
+  "n_paths": 1,
+  "duplicate_call_records_collapsed": 0,
+  "duplicate_policy": "retain the final recorded state at each max-call label",
+  "initial_subdivisions": 10,
+  "comparison_subdivisions": 20,
+  "adaptive_threshold_kcal": 0.05,
+  "maximum_subdivisions": 80,
+  "diagnostic_backend_raw_joint_evaluations": 421,
+  "diagnostic_evaluator_cache_misses": 421,
+  "counts_excluded_from_optimization_axis": true,
+  "selected_subdivision_counts": {
+    "20": 1,
+    "40": 0,
+    "80": 0
+  }
+}

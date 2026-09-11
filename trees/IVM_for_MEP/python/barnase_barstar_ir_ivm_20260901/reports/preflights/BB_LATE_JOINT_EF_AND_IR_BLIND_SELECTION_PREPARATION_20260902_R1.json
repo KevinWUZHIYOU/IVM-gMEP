@@ -1,0 +1,67 @@
+{
+  "schema": "bb-late-joint-ef-and-ir-blind-selection-preparation-audit-v1",
+  "status": "PASS_PREPARED_NOT_LAUNCHED",
+  "created_utc": "2026-09-02T12:14:35Z",
+  "scope": {
+    "ode_neb_late_four_optimization_N_F": [2040, 4080, 8160, 9990],
+    "ir_ivm_future_anchor_optimization_N_F": [2000, 4000, 6000, 8000, 8982],
+    "ir_ivm_future_highest_legal_cap_N_F": 9990,
+    "arc_length_points_per_path": 500,
+    "joint_energy_full_force_storage": true,
+    "jobs": 1,
+    "all_six_thread_caps": 1,
+    "dual_canonical_host_local_fcntl_locks": true,
+    "optimization_N_F_contribution": 0,
+    "early_four_results_touched": 0,
+    "OpenMM_physical_computation_launched": false
+  },
+  "frozen_artifacts": {
+    "ode_neb_late_four_contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_LATE_FOUR_JOINT_EF_ARC500_20260902_R1.json",
+      "sha256": "386f6088ff38410e0829338c65d6fd08452148c81eeeefc7c3a1ca1ea31359d4"
+    },
+    "ir_ivm_late_milestone_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json",
+      "sha256": "a0a6af4b445b02a5960541c5492fdc57a4f48d74acdbda26c096dafb9b953e94"
+    }
+  },
+  "source_and_test_sha256": {
+    "evaluate_bb_ode_neb_late_four_joint_ef.py": "fbd0612b9ace3378f0314f2bf14460c2e5024d8b90f69affd733a4a4664eea0e",
+    "freeze_bb_ode_neb_late_four_joint_ef_contract.py": "5ae39e48186821a76ccd8a1e4092e79ddb5b0ed35ffffcf2c5b22a0d4f42f853",
+    "select_bb_irivm_late_milestones_blind.py": "5106409e7ab7dce619c8be5d96f9d6c2878fe23dd55b23b798e8ce706cb4a972",
+    "test_evaluate_bb_ode_neb_late_four_joint_ef.py": "33eb124b4c9a999b7d706ccacf214f260d8bcd88566ebb26ddbab8dfb2192f0e",
+    "test_select_bb_irivm_late_milestones_blind.py": "b9ee10ab83cde1ea1cce749f040e5375dc29e28ec2d793d665e877df160216fd"
+  },
+  "zero_physical_tests": {
+    "command": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python -m unittest -v python/barnase_barstar_ir_ivm_20260901/tests/test_evaluate_bb_ode_neb_late_four_joint_ef.py python/barnase_barstar_ir_ivm_20260901/tests/test_select_bb_irivm_late_milestones_blind.py",
+    "result": "PASS_5_TESTS",
+    "proofs": [
+      "real ODE contract freeze/load/static preflight constructs no OpenMM backend",
+      "synthetic 4x5 run records exactly 20 joint E/F calls and stores all full-force vectors",
+      "interrupted path leaves no shard and same contract fails closed without retry",
+      "IR selector never accesses poisoned metric fields",
+      "terminal uncommitted tail is excluded even when assigned artificially optimal metrics"
+    ]
+  },
+  "zero_physical_preflight": {
+    "ode_static_status": "PASS_ZERO_PHYSICAL_PREFLIGHT",
+    "ode_paid_discrete_receipts_revalidated": 4,
+    "ode_original_discrete_new_calls": 0,
+    "ode_fresh_dense_joint_EF_attempts_planned": 2000,
+    "ode_full_force_vectors_planned": 2000,
+    "ode_lifetime_attempt_started": 0,
+    "ode_required_free_bytes": 8942802688,
+    "ode_observed_free_bytes": 11672055808,
+    "ir_selection_status": "PASS_ZERO_OPENMM_SELECTION_PREFLIGHT",
+    "ir_result_or_verification_required_at_preregistration": false,
+    "ir_metric_values_consulted": false,
+    "formal_nonblocking_lock_probe": {
+      "status": "BLOCKED_EXPECTEDLY_NO_WAIT_NO_LAUNCH",
+      "observed_utc": "2026-09-02T12:14:35Z",
+      "lock": "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "observed_owner_pid": 65976
+    }
+  },
+  "ode_launch_command_not_executed": "cd /Users/wuzhiyou/IVM_for_MEP && OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OPENMM_CPU_THREADS=1 /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_ode_neb_late_four_joint_ef.py --contract python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_LATE_FOUR_JOINT_EF_ARC500_20260902_R1.json --host-role local --output python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.npz",
+  "future_ir_selection_freeze_template_not_executed": "cd /Users/wuzhiyou/IVM_for_MEP && /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_late_milestones_blind.py select --preregistration python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json --verification ABSOLUTE_PASS_R2_VERIFICATION_JSON --output python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_20260902_R1.json"
+}

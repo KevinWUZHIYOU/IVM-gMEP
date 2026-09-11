@@ -1,0 +1,25 @@
+{
+  "schema": "bb-irivm-nf8982-0k-section-energy-supersession-v1",
+  "status": "SUPERSEDED_BEFORE_ANY_PHYSICAL_CALL",
+  "superseded_label": "bb_irivm_nf8982_0k_section_energy_59x28_20260902_r3",
+  "physical_energy_or_force_calls_started": 0,
+  "physical_outputs_created": 0,
+  "reason": "Independent prelaunch audit found that R3 validated authorization contents but did not require the CLI authorization path to equal the contract-declared canonical authorization path, and did not bind the authorizer into the authorization payload.",
+  "superseded_contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_CONTRACT_R3_20260902.json",
+    "sha256": "da265c2715ead5c408aeff66a2d88aa22df52d470b0fea26f4f1eda2d15f987d"
+  },
+  "superseded_preauthorization_preflight": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_PREAUTH_PREFLIGHT_R3_20260902.json",
+    "sha256": "3e083fbbe1663765e1714c5ce92fafe3ad305c845193442bc3e29be3637b5dd1"
+  },
+  "superseded_execution_authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_EXECUTION_AUTHORIZATION_R3_20260902.json",
+    "sha256": "26e56333d539d716ea79882d7bf4ac0e071064b53d0d82b34faf3598c423ffe0"
+  },
+  "superseded_evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_nf8982_0k_section_energy.py",
+    "sha256": "af17cda66bee788d23b3948f6a0cb0ebad9ab8d061fac6cbf62a96e3a0000c9c"
+  },
+  "successor_requirement": "R4 must bind the canonical authorization path, execution authorizer, complete zero-OpenMM preauthorization counts/thread/lock set, and use new result/WAL/audit destinations."
+}

@@ -1,0 +1,126 @@
+{
+  "experiment_and_code_chain": {
+    "independent_audit": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/src/audit_and_select.py",
+      "sha256": "683e02261e4731537b41343efbc0443f2417f4ddff883deeba08bd368a9ac436"
+    },
+    "optimizer": {
+      "path": "leps_irivm_ala_chig_every1_sync1_20260830/src/leps_irivm_sync1.py",
+      "sha256": "8b1f848d6a2f03090b4851b6bd4a45d55a61fbee4025dfa50f5e59e2084ea49a"
+    },
+    "protocol": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/PROTOCOL.md",
+      "sha256": "3e47685f44e2b52238c8a30abe04419186d5d9c88f88226ea8469bd5843aa235"
+    },
+    "refined_wrapper": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/src/leps_irivm_sync1_refined.py",
+      "sha256": "721fb2b77d6711dc032f0578ec12651064711c2adbe8afcc839228120148e971"
+    },
+    "selected_result": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    }
+  },
+  "figure": "Figures/LEPS/leps_all_methods_metrics.pdf",
+  "figure_layout": {
+    "arrangement": "1x3",
+    "each_axes_box_aspect": 1.0,
+    "panels": [
+      "I_perp",
+      "densified energy barrier Delta E",
+      "discrete geometric action S_hat"
+    ],
+    "verified_display_width_to_height": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "figure_sha256": "081aad16011737c67d8d9eaded57559655f9b45f6ab18817940ca019c17f66b4",
+  "formal_replacement_authorized": true,
+  "formal_replacement_reason": "user-authorized permanent semantic replacement: the selected IR-IVM is now the LEPS method named IVM; the former article IVM is absent",
+  "frozen_plot_primitives": {
+    "path": "ir_ivm_qm10_v2p20_microrefine_20260829/src/remake_leps_all_methods.py",
+    "sha256": "8ee8b750f899b886a80ad2aeab0b52ec9239f5e425301f35f12af9c3bb67cf2e"
+  },
+  "ir_ivm_marker_contract": {
+    "completed_outer_iteration_count": 28,
+    "initial_state_count": 1,
+    "marker_every": 1,
+    "meaning": "one marker for the initial state and every completed outer iteration",
+    "plotted_ir_ivm_state_count": 29
+  },
+  "method_naming_contract": {
+    "former_article_ivm_plotted": false,
+    "legend_name": "IVM",
+    "meaning": "IR-IVM with alpha=100, r=3e-3, m_max=5",
+    "other_methods_unchanged": true
+  },
+  "metric_contract": {
+    "densified_barrier": "500 total coordinate-wise linearly interpolated points",
+    "geometric_action": "sum over the 21 original segments of 0.5*(norm(grad V_i)+norm(grad V_{i+1}))*norm(x_{i+1}-x_i); all 22 nodes including endpoints, full gradient norm, no densification",
+    "geometric_action_tangent_note": "the full-gradient action is tangent-independent; the same Henkelman-Jonsson improved tangent is retained for I_perp",
+    "i_perp": "article path-length quadrature with Henkelman-Jonsson improved tangent",
+    "number_of_forces": "uncached joint energy-force evaluations over the 20 internal images",
+    "offline_metric_evaluations_counted_as_nof": false
+  },
+  "plot_script": "leps_geometric_action_20260904/src/remake_leps_all_methods_three_metrics.py",
+  "plot_script_sha256": "107942f1ece049e223fa47ca9536eacbeb6ab326d51a5b9db30ec1dd0af202fe",
+  "plotted_results": {
+    "IVM": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    },
+    "OBSM-FIRE": {
+      "path": "runs/obsm_fire/production_fire_stable_l0.85_n4_dt0.18_cfgc5d07bd3b321_budget3000.npz",
+      "sha256": "24dc2c8882d3cab39861fb69a8630b317532f26a79bd6c7fb913a1ce23faa456"
+    },
+    "OBSM-L-BFGS": {
+      "path": "runs/obsm_lbfgs/production_lbfgs_r5_l0.95_n1_s0.1_cfg78c1b29f7570_budget3000.npz",
+      "sha256": "b5ae71ab114e8dffb90be582b327c1c6468f13123289b4358cdd3ea143be22cb"
+    },
+    "ODE-NEB": {
+      "path": "runs/neb/neb_production_k10_cfgfe491f5a6c6f_budget5000.npz",
+      "sha256": "ae0c2bbf3f8fa8539bcaffaa98e0298b5f90661f145fcb5e7a5c6b61c4548b0a"
+    },
+    "Original String": {
+      "path": "runs/original_string/production_original_dt0.07_r1_cfg6446cefea5fd_budget3000.npz",
+      "sha256": "c480e8520ff37b493e20c8dd476655aee58d0ebbd119360eccd74f8971f1a4cd"
+    },
+    "Static-NEB": {
+      "path": "runs/neb/production_static_k10_dt0.05_cfgba1c63497f9a_budget3000.npz",
+      "sha256": "a8daa64a59d7316c4546f47591cbfcdd509c3744eb0def2390c3951c5cdcb046"
+    }
+  },
+  "refined_grid_selected_ir_ivm": {
+    "alpha": 100.0,
+    "check_count": 21,
+    "first_failed_nf": 150,
+    "last_available_path_nf": 1528,
+    "m_max": 5,
+    "mean_joint_ratio": 0.18588458192513613,
+    "passing_checks": 19,
+    "r": 0.003,
+    "result": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+    "run_id": "3c62d93a051be116",
+    "stop_reason": "stationary",
+    "strict_pass": false,
+    "terminal_article_nf": 1558,
+    "worst_joint_ratio": 1.0648296617000004
+  },
+  "selection_manifest": "leps_irivm_sync1_refined_grid_20260830/reports/acceptance/selection_manifest.json",
+  "selection_manifest_sha256": "4ca04977a7331a93290a8f1b272b58213ef3f8c0bb502fa64d3c2611f44a1094",
+  "selection_status_disclosed": "scientifically ranked refined-grid result; 19/21 strict same-NoF checks, with densified-barrier misses at NoF 150 and 278",
+  "source_csv": "leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_source.csv",
+  "source_csv_sha256": "5fbccdaba1ca0b8612ff3860b52cadea4be0bf0aa7b42889e6b8ad95a3712138",
+  "superseded_formal_figure": {
+    "path": "Figures/LEPS/leps_all_methods_metrics.pdf",
+    "sha256": "f558d0b0aeb66115bc3b36a015aad2cc2bfce748917b7e309abc19f6589b0376"
+  },
+  "superseded_two_panel_figure": {
+    "path": "Figures/LEPS/leps_all_methods_metrics.pdf",
+    "sha256": "9faaa4e643cd14329bdb65825f954886bb0232db04b0a425b7a7ae14a9051a25"
+  },
+  "three_panel_replacement_authorized": true,
+  "three_panel_replacement_date": "2026-09-06"
+}

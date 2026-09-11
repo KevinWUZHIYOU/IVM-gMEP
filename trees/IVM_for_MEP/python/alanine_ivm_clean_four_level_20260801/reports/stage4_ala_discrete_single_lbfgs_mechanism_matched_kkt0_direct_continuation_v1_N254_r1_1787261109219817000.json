@@ -1,0 +1,355 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1",
+  "created_unix": 1787261109.224758,
+  "planned_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_N254_r1_1787261109219817000.json",
+  "study_role": "immutable_one_cell_completion_of_unlaunched_original_v1_direct_arm",
+  "continuation_of_protocol": "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1",
+  "cell_order": [
+    "direct_lbfgs_only"
+  ],
+  "single_new_cell": true,
+  "scientific_command_exact_original_direct_clone": true,
+  "scientific_command_only_routing_changed": true,
+  "registered_command": {
+    "label": "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_direct_lbfgs_only_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+    "command": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_scalar_lbfgs_shim.py",
+      "--root",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+      "--initial-path-file",
+      "inputs/common_initial_path_equidistant.npz",
+      "--output-dir",
+      "runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1/members",
+      "--run-label",
+      "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_direct_lbfgs_only_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+      "--solver",
+      "state_ivm",
+      "--alpha",
+      "15",
+      "--alpha-mode",
+      "fixed",
+      "--alpha-min",
+      "0.01",
+      "--alpha-max",
+      "inf",
+      "--max-step",
+      "1",
+      "--history",
+      "7",
+      "--stop-iperp",
+      "-1",
+      "--budget",
+      "254",
+      "--save-all-paths",
+      "--state-globalization",
+      "iperp_monotone",
+      "--state-trust-fraction",
+      "2",
+      "--state-polish-trust-fraction",
+      "2",
+      "--state-polish-alpha-factor",
+      "0.5",
+      "--inner-calls",
+      "15",
+      "--plbfgs-kkt-rtol",
+      "0.8",
+      "--reparam-mode",
+      "state_curve",
+      "--reparam-every",
+      "1",
+      "--state-curve-direct-solve",
+      "--state-curve-direct-trial-calls",
+      "15",
+      "--state-curve-direct-objective-acceptance",
+      "per_image",
+      "--state-curve-immediate-block-relock",
+      "--state-curve-stall-free-polish",
+      "--state-curve-stall-free-polish-count",
+      "1",
+      "--reparam-ready-relative-iperp",
+      "2",
+      "--reparam-cv-trigger",
+      "0.001",
+      "--reparam-strict-cv-trigger",
+      "0.001",
+      "--reparam-retry-reduction",
+      "0.8",
+      "--reparam-recovery-calls",
+      "320",
+      "--reparam-recovery-inner-calls",
+      "15",
+      "--reparam-recovery-merge",
+      "bicriteria",
+      "--reparam-recovery-iperp-rtol",
+      "0",
+      "--reparam-equidistance-contraction",
+      "0.2",
+      "--stop-complete-iperp",
+      "-1",
+      "--frozen-subproblem",
+      "discrete_b040",
+      "--discrete-inner-max-steps",
+      "10",
+      "--discrete-stop-mode",
+      "r08c10",
+      "--discrete-residual-ratio",
+      "0.8",
+      "--discrete-history",
+      "7",
+      "--discrete-step-multiplier-eta",
+      "1.1",
+      "--plbfgs-kkt-atol",
+      "0",
+      "--discrete-scalar-lbfgs-mode",
+      "direct_lbfgs_only"
+    ],
+    "compact_sha256": "2f328df06052a10c7f6c0062b529f573c043f6826da35c943e6796c37beeefc4",
+    "original_v1_compact_sha256": "8b41d35618a3c3d93f50fb56122e7b0751fc4f3b297698fb24b1a008225ca167",
+    "only_changed_options": [
+      "--output-dir",
+      "--run-label"
+    ]
+  },
+  "fixed_alpha": 15.0,
+  "fixed_eta": 1.1,
+  "fixed_residual_ratio": 0.8,
+  "fixed_max_evaluated_steps": 10,
+  "fixed_lbfgs_history": 7,
+  "fixed_kkt_atol": 0.0,
+  "budget_per_image": 254,
+  "trajectory_record_count_allowed_range": [
+    1,
+    254
+  ],
+  "early_stop_policy": "accept scientifically valid partial trajectory; mark nonconverged and treat precision beyond tightest reached as unreachable",
+  "early_stop_counted_as_converged": false,
+  "unreachable_threshold_policy": "candidate_unreachable_is_loss",
+  "fixed_solver_mechanism_gates_unchanged": true,
+  "aborted_solver_call_count_required_zero": true,
+  "energy_or_objective_backtracking_added": false,
+  "physical_energy_arrays_accessed_by_wrapper_or_launcher": false,
+  "barrier_fields_accessed_by_wrapper_or_launcher": false,
+  "densified_barrier_computation_performed": false,
+  "barrier_unembargo_allowed_by_this_protocol": false,
+  "formal_ranking_deferred_to_separate_readonly_iperp_ctp": true,
+  "post_hoc_scientific_command_changes_allowed": false,
+  "original_v1_outcome": {
+    "original_report_status": "incomplete",
+    "current0_completed_and_validated": true,
+    "scalar_selector_result_valid_but_wrapper_rejected_fixed_N254_shape": true,
+    "scalar_selector_trajectory_record_count": 58,
+    "scalar_selector_final_optimization_NF": 1160,
+    "scalar_selector_physical_stop_reason": "cached_coordinate_stall",
+    "direct_lbfgs_only_was_not_launched": true
+  },
+  "prior_artifact_manifest": {
+    "original_v1_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000_preregistered.json",
+      "sha256": "04de96743da079b8b35247214a4ad3cf387157edb2134381cc08f95d3bab1f86"
+    },
+    "original_v1_report": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000.json",
+      "sha256": "c1506422a651ee664b8cdb08a19c124bbab760435130042c300b7e721e7fa02f"
+    },
+    "current0_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg66edecece9c2_budget254.npz",
+      "sha256": "eff9d585dfbbd966744a972f9fa5b5a7b3da11639d2079c333560e34ce98ee07"
+    },
+    "current0_member_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/audits/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1.json",
+      "sha256": "f8fa0c5204295b704fe3cc3b8d0fbc47e29564b1daa9276a8f55045625c0ad8d"
+    },
+    "current0_companion_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg66edecece9c2_budget254.audit.json",
+      "sha256": "7c6ea4b394ea867f8b83b64a1bb6b910cc6f156fdf32feca71b765ef5b1a14a0"
+    },
+    "scalar_selector_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfga9f9d7ced447_budget254.npz",
+      "sha256": "ef5b54cd3127c86abf82ad934bb932f89e17e3008037fbd1c38a2570d868aea4"
+    },
+    "scalar_selector_companion_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfga9f9d7ced447_budget254.audit.json",
+      "sha256": "1753186830b182811f56ea6dfd49bcbaaa53d66c46d9917f7cc24526632d585d"
+    },
+    "current0_launcher_command_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "d2a3b0468cfceadb7baa11f368ccdcb5329f169f1704bdb6f829227145a2a05e"
+    },
+    "current0_launcher_stdout_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stdout.txt",
+      "sha256": "f8fa0c5204295b704fe3cc3b8d0fbc47e29564b1daa9276a8f55045625c0ad8d"
+    },
+    "current0_launcher_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "current0_member_command_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "e33ca25d88bcc6e13867f074f0b6ff242ac0822f948fb758edb52ea62a640863"
+    },
+    "current0_member_stdout_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stdout.txt",
+      "sha256": "4861bc83a55442915afecfcbd85e69320f4450b4fba9200435855f9a8c195a5c"
+    },
+    "current0_member_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scalar_launcher_command_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "e577393d29a0e62298d772549ac72f444977c23dc233719d76c4ad11ffd85274"
+    },
+    "scalar_launcher_stdout_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scalar_launcher_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/launcher/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stderr.txt",
+      "sha256": "55736355c8594194ea8a7a1b53852818848773cc35d496748e9108a66b6de6fe"
+    },
+    "scalar_member_command_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "61211b81757fc47d814939add57f1265b771876f06408d5b00032acd143ac589"
+    },
+    "scalar_member_stdout_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stdout.txt",
+      "sha256": "8d22025e1e86804c067629bdd131a2ff06dd6c1b101c5af416a201f9bdb0d69e"
+    },
+    "scalar_member_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "common_initial_and_topology": {
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+      "sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+      "initial_path_array_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e"
+    },
+    "alanine_topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/ala2_fixed.pdb",
+      "sha256": "7ffaf924e345b6fbbba06d0388a67d18f04c07729a2ab7d65ede9a61cd27eda2"
+    }
+  },
+  "run_source_manifest": {
+    "continuation_grid": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_grid.py",
+      "sha256": "9cbbcab77d5f46f9a487ec1726e23d9f3b31e8bcf3a86e94c2d5ef44c45983dd"
+    },
+    "continuation_member": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation.py",
+      "sha256": "1e384ac280f726cf63f138efee358095bca16ce8deb0f38bdd95919523b8432f"
+    },
+    "continuation_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation.py",
+      "sha256": "503087ef0684b5ae5276b03e983fea2d264e066494e4b093209d86beeea20db5"
+    },
+    "original_v1_grid": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_grid.py",
+      "sha256": "2da730df45d85a7dfd2b3e850fa23cbe4a176b14a86ba4d7bdfa74a5531a5a48"
+    },
+    "original_v1_member": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0.py",
+      "sha256": "e9195867d9126dc1271aea76bade95219b63a47679c7e870574197a7e9eab236"
+    },
+    "original_v1_member_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0.py",
+      "sha256": "3f8ede4a42819004020e48f2f0adf6ebb1e2d312011313c693511fd6ab01745c"
+    },
+    "original_v1_scalar_runtime": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_scalar_lbfgs_shim.py",
+      "sha256": "1d20bff8dd1d8c202f9b18d7a5f948219066c482bf898bfce9246764782000ae"
+    },
+    "original_v1_scalar_runtime_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_run_ivm_v9_discrete_scalar_lbfgs_shim.py",
+      "sha256": "8e0d3840a8b169ce3d5e6f06d39c4fcb66e6872b016b2a85278a43ba7d05ea37"
+    },
+    "original_v1_eta_runtime": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_selected_eta_shim.py",
+      "sha256": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9"
+    },
+    "original_v1_eta_runtime_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_run_ivm_v9_discrete_selected_eta_shim.py",
+      "sha256": "35909b6453110f64b6998551e4d7ff1d84c3d3d17c440bc54d33464889572fed"
+    },
+    "original_v1_frozen_discrete": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+      "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+    },
+    "original_v1_frozen_discrete_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_frozen_discrete_b040.py",
+      "sha256": "3cdaa3a6bcbd043b9a15de5b5af90b6fc49f3505bf891ec4892a8193ab365aa9"
+    },
+    "original_v1_production_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+    },
+    "original_v1_command_helper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+      "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+    },
+    "original_v1_ala_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+      "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+    },
+    "original_v1_old_current_member": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup.py",
+      "sha256": "0587bb2dd438a402293ee73a2be060a6e54d82b06add6f519d19df914a780c1a"
+    },
+    "original_v1_old_current_grid": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup_grid.py",
+      "sha256": "0c56283c67559abf0fcf898d44faefa8e51b82481f4bc833ecf3a3d2b05b4ab6"
+    },
+    "original_v1_old_current_ctp": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_eta1p1_alpha15_iperp_ctp.py",
+      "sha256": "109a3f0b395392dc8ff8ddf5129929884fd580acce629d8a5ce3065164cb54f6"
+    },
+    "original_v1_base_ctp": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_alpha_refinement_iperp_ctp.py",
+      "sha256": "15c7fdeb46c6d44556874df31bca8b4a37aabf1928ec571840cdfef50204eb2a"
+    },
+    "original_v1_eta_ctp": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_selected_eta_iperp_ctp.py",
+      "sha256": "4ef0f8d94aa925f63ae5efc8dd513f015287b0124c020fc3b3840b4b49ee6f00"
+    }
+  },
+  "single_thread_environment": {
+    "OPENMM_CPU_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "independent_member_paths_and_logs": true,
+  "overwrite_or_force_allowed": false,
+  "execution_jobs_fixed": 1,
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_N254_r1_1787261109219817000_preregistered.json",
+  "preregistration_sha256": "aecb23cd06521d111184ff4a123659cf333352ef1483ee5318662140d2ecc22e",
+  "execution_jobs_operational_only": 1,
+  "started_unix": 1787261128.044255,
+  "finished_unix": 1787261136.0992699,
+  "early_stop_is_valid_completion_of_execution_not_scientific_convergence": true,
+  "physical_energy_arrays_accessed_by_launcher": false,
+  "barrier_fields_accessed_by_launcher": false,
+  "results": [
+    {
+      "arm": "direct_lbfgs_only",
+      "returncode": 0,
+      "wall_seconds": 8.05328106880188,
+      "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1/audits/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_direct_lbfgs_only_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1.json",
+      "member_audit_sha256": "d98e0b037e96a65850b3a7003a84e3189170598e928f0a5419999dcd46f53455",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_direct_lbfgs_only_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg0cd55bed9ebf_budget254.npz",
+      "result_sha256": "a1b690eabb51c2abe85492256fd390f3ecc953cb9c096eccdda917e931d5381e",
+      "trajectory_record_count": 133,
+      "trajectory_complete_to_budget": false,
+      "early_stop": true,
+      "physical_stop_reason": "cached_coordinate_stall",
+      "scientific_run_converged": false,
+      "precision_beyond_tightest_reached_unreachable": true,
+      "final_optimization_NF": 2524,
+      "registered_command_sha256": "2f328df06052a10c7f6c0062b529f573c043f6826da35c943e6796c37beeefc4"
+    }
+  ]
+}

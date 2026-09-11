@@ -1,0 +1,174 @@
+{
+  "purpose": "Immutable pre-transactional inventory of all retained Chignolin cap=15/18/20/25/30 reports and figures.",
+  "root": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+  "relative_roots": [
+    "reports/reviewer_subproblem_cap15_dense_strict_20260729a",
+    "reports/reviewer_fixed_alpha_inner18_20260729a",
+    "reports/reviewer_fixed_alpha_inner20_20260729a",
+    "reports/reviewer_fixed_alpha_inner25_20260729a",
+    "reports/reviewer_fixed_alpha_inner30_20260729a",
+    "reports/reviewer_subproblem_caps18_20_dense_20260729a",
+    "reports/finalized_subproblem_caps18_20_20260729a",
+    "reports/finalized_subproblem_caps18_20_common17_20260729a",
+    "reports/reviewer_subproblem_cap_score_20260729a",
+    "figures/reviewer_subproblem_cap_alpha_well_20260729a",
+    "figures/reviewer_subproblem_cap_comparison_20260729a"
+  ],
+  "records": [
+    {
+      "relative_path": "reports/reviewer_subproblem_cap15_dense_strict_20260729a/manifest.json",
+      "size_bytes": 45191,
+      "sha256": "c1560a4c4a7ac0de6b969c15c84f71eb0a668fba9c1d334c918baca5d6f1bff2"
+    },
+    {
+      "relative_path": "reports/reviewer_fixed_alpha_inner18_20260729a/manifest.json",
+      "size_bytes": 16681,
+      "sha256": "cdef880347f041d1c1837238d171f12dea09814c16ae0ab23ee38bfb7b9ea2b3"
+    },
+    {
+      "relative_path": "reports/reviewer_fixed_alpha_inner20_20260729a/manifest.json",
+      "size_bytes": 16680,
+      "sha256": "2f68026397f9e7c6c28a717f2e05888ecb25725c061a289d9669db62d4a8313e"
+    },
+    {
+      "relative_path": "reports/reviewer_fixed_alpha_inner25_20260729a/manifest.json",
+      "size_bytes": 16711,
+      "sha256": "34b9f440c4370deafc80e11641bad5a466452da901ec13d7f725f216c83ee34a"
+    },
+    {
+      "relative_path": "reports/reviewer_fixed_alpha_inner30_20260729a/manifest.json",
+      "size_bytes": 16712,
+      "sha256": "6e2d5eca717ddf07c526f0867df516242e0b02126d5bf41e14b9d0dce94fe7df"
+    },
+    {
+      "relative_path": "reports/reviewer_subproblem_caps18_20_dense_20260729a/manifest.json",
+      "size_bytes": 88486,
+      "sha256": "b4afc1a218d63e26f9d5dd159918a40169b6965990c60fa572ca73b0c2382a2e"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "size_bytes": 46930,
+      "sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "size_bytes": 46934,
+      "sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_20260729a/manifest_index.json",
+      "size_bytes": 1297,
+      "sha256": "a9de0afe5ff222949b3ec87500caf9d34d63663e400e56f9700c674e6f5a26f7"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_common17_20260729a/inner18_manifest.json",
+      "size_bytes": 42121,
+      "sha256": "bf3e381da5b383fe1ecff9243b1f1a570b5b05dc098cc2d4c13521b771253c6a"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_common17_20260729a/inner20_manifest.json",
+      "size_bytes": 42122,
+      "sha256": "7ada68485b36de82912eed0583e725f0e206c663b4284302287af6fbddfd2874"
+    },
+    {
+      "relative_path": "reports/finalized_subproblem_caps18_20_common17_20260729a/manifest_index.json",
+      "size_bytes": 1292,
+      "sha256": "a107e074c5987f18237a3c143d0b9f348217477aed1e945a51ceb4a763169e23"
+    },
+    {
+      "relative_path": "reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_endpoint_trailing_consistency.csv",
+      "size_bytes": 2924,
+      "sha256": "45fc592ddea7a957fb011f53d23cb8a5aced24a9cbed353d5c515f1f69d063ae"
+    },
+    {
+      "relative_path": "reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_well_score_components.csv",
+      "size_bytes": 13560,
+      "sha256": "e24e69cb12ee03e5403ee3a3858ae6bd786b6f8a41794d891f42a166fc258b09"
+    },
+    {
+      "relative_path": "reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_well_score_formula.json",
+      "size_bytes": 6439,
+      "sha256": "609e4dbfc6bcc887f3b6f4e2578a4cdff47eb91d4970bc488f9dadf4f8127a09"
+    },
+    {
+      "relative_path": "reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_well_score_summary.csv",
+      "size_bytes": 947,
+      "sha256": "242d8e3ff6ba0808c73dd0e29c971bcae702b4d6a0d6f380cb2cd16960d762f2"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/chignolin_ivm_subproblem_cap_alpha_sensitivity_total_nf.pdf",
+      "size_bytes": 50170,
+      "sha256": "8e43d8f1a19b34f8e773f48ed63389eb7409dd053ed2c6f8332ed6ba32477743"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/chignolin_ivm_subproblem_cap_alpha_sensitivity_total_nf.png",
+      "size_bytes": 743895,
+      "sha256": "7dc68720ba43fcc2d0d476bff0668cb329c329d2dffdf2f569756b7440d35731"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/chignolin_ivm_subproblem_cap_alpha_sensitivity_total_nf.svg",
+      "size_bytes": 183210,
+      "sha256": "4e67951afed694a495d675d918ddc99d3178d6f50cdd23cad96b562bdad46c18"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/data/chignolin_ivm_subproblem_cap_dense_barrier_budget.csv",
+      "size_bytes": 66674,
+      "sha256": "f4b7209ef5746fda841b2036fb824a222e75b1cdec04bfe1c2c328f7fdc2bcf2"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/data/chignolin_ivm_subproblem_cap_i_perp_budget.csv",
+      "size_bytes": 59855,
+      "sha256": "03464a01d1311178c9f6ae803fc95c888294e3fedff7d4526f26254953564c1c"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_alpha_well_20260729a/figure_audit.json",
+      "size_bytes": 2433,
+      "sha256": "8c4b29be19b37e466e09cad410ababc932079b8bdc5592c0d1ca8944696edc64"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_comparison_summary.json",
+      "size_bytes": 271663,
+      "sha256": "c75174b1baf037cb42f91453e0fa319281fdb5d0a3b137878a28670f353988cc"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_i_perp_total_nf.pdf",
+      "size_bytes": 54337,
+      "sha256": "064fd8ec95cc507fd754bd5781c7096a1ff187f8e04dc0caedada4bad82713ad"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_i_perp_total_nf.png",
+      "size_bytes": 656520,
+      "sha256": "a24e857f01bca2649c9091c64d71c38f5c9493799ca65c6e3cbeb708bff4e846"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_i_perp_total_nf.svg",
+      "size_bytes": 125904,
+      "sha256": "717feff43fc6c7ef116c939c8254a3a1750e92d279fe7e74675a3cbaa1a1c547"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_path_efficiency_total_nf.pdf",
+      "size_bytes": 40153,
+      "sha256": "afd783f25367c975ff8bdc2204558f27c14de03f766f5ace8b9532bb1590f2cd"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_path_efficiency_total_nf.png",
+      "size_bytes": 421646,
+      "sha256": "9cf5d3428b4a858f7cba82bfccf8f884ad607979a0110f608f59b00a344d2f2e"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/chignolin_ivm_subproblem_cap_path_efficiency_total_nf.svg",
+      "size_bytes": 79065,
+      "sha256": "f3636fccf0af8a8785729088d28e44e79bfced35dcbc8ce642cc9bb58a0f5e74"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/data/chignolin_ivm_subproblem_cap_budget_metrics.csv",
+      "size_bytes": 68972,
+      "sha256": "ece7c2063fd23d80583b5ee9a309c6004d693c76f4c188ce077a3fb1623865fa"
+    },
+    {
+      "relative_path": "figures/reviewer_subproblem_cap_comparison_20260729a/data/chignolin_ivm_subproblem_cap_path_efficiency.csv",
+      "size_bytes": 45548,
+      "sha256": "b49679a0e68ef8efccfb8ef8c421e243a9755cc046984b894def9d6ebc5ea176"
+    }
+  ]
+}

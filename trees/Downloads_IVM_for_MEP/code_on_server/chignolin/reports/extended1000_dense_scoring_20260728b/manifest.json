@@ -1,0 +1,402 @@
+{
+  "score_name": "shared absolute weighted log-geometric objective with densified barrier",
+  "lower_is_better": true,
+  "same_formula_for_all_methods": true,
+  "no_family_specific_rank_normalization": true,
+  "weights": {
+    "i_perp_log_auc": 0.3,
+    "dense_barrier_log_auc": 0.25,
+    "log10_final_i_perp": 0.2,
+    "log10_final_dense_barrier_kcal": 0.15,
+    "log10_one_plus_final_equidistance": 0.1
+  },
+  "formula": "0.30*AUC(log10(I_perp)) + 0.25*AUC(log10(densified_barrier_kcal)) + 0.20*log10(final_I_perp) + 0.15*log10(final_densified_barrier_kcal) + 0.10*log10(1+final_equidistance_integral)",
+  "production_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/extended1000_sparse_scoring_20260728a/selected_production_manifest.json",
+  "dense_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/extended1000_top3_dense_20260728b/manifest.json",
+  "records": [
+    {
+      "name": "extended1000_ode_k50p0",
+      "method": "ODE-NEB",
+      "configuration": {
+        "method": "ode_neb",
+        "spring_k": 50.0,
+        "alpha_interface_only": 0.0001,
+        "selection_role": "focused 1000-call ODE-NEB k candidate"
+      },
+      "absolute_dense_score": 0.6523198497003224,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": -0.00646922394254185,
+        "dense_barrier_log_auc": 1.4717907068450728,
+        "log10_final_i_perp": -0.733506870347481,
+        "log10_final_dense_barrier_kcal": 1.3758088201786711,
+        "log10_one_plus_final_equidistance": 2.2664299121451226
+      },
+      "i_perp_log_auc": -0.00646922394254185,
+      "dense_barrier_log_auc": 1.4717907068450728,
+      "final_i_perp": 0.18471115741866675,
+      "final_dense_barrier_kcal": 23.75794213237218,
+      "final_equidistance_integral": 183.6842721377893,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k50p0_central_k50_alpha0p0001_ode_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k50p0_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k50p0_central_k50_alpha0p0001_ode_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k50p0_adaptive48.audit.json",
+      "unified_rank": 1,
+      "method_rank": 1
+    },
+    {
+      "name": "extended1000_obsm_l0p9_n5_dt0p12",
+      "method": "OBSM-FIRE",
+      "configuration": {
+        "method": "obsm_fire",
+        "lambda_mix": 0.9,
+        "inner_steps": 5,
+        "fire_dt": 0.12,
+        "fire_beta": 1.0,
+        "fire_mass": 1.0,
+        "reparam_interval": 1,
+        "selection_role": "focused 1000-call OBSM candidate"
+      },
+      "absolute_dense_score": 0.6643661835145273,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.015582009580136403,
+        "dense_barrier_log_auc": 1.4653055875509289,
+        "log10_final_i_perp": -0.6728001971031558,
+        "log10_final_dense_barrier_kcal": 1.3832428929442255,
+        "log10_one_plus_final_equidistance": 2.204387892317514
+      },
+      "i_perp_log_auc": 0.015582009580136403,
+      "dense_barrier_log_auc": 1.4653055875509289,
+      "final_i_perp": 0.21242215133173672,
+      "final_dense_barrier_kcal": 24.168121352641172,
+      "final_equidistance_integral": 159.09873201689604,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 19982,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p9_n5_dt0p12_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p9_n5_dt0p12_adaptive48.audit.json",
+      "unified_rank": 2,
+      "method_rank": 1
+    },
+    {
+      "name": "extended1000_ode_k35p0",
+      "method": "ODE-NEB",
+      "configuration": {
+        "method": "ode_neb",
+        "spring_k": 35.0,
+        "alpha_interface_only": 0.0001,
+        "selection_role": "focused 1000-call ODE-NEB k candidate"
+      },
+      "absolute_dense_score": 0.66492896931838,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": -0.03863480663399082,
+        "dense_barrier_log_auc": 1.465933558831815,
+        "log10_final_i_perp": -0.7776442095659202,
+        "log10_final_dense_barrier_kcal": 1.373477453701845,
+        "log10_one_plus_final_equidistance": 2.5954324545853082
+      },
+      "i_perp_log_auc": -0.03863480663399082,
+      "dense_barrier_log_auc": 1.465933558831815,
+      "final_i_perp": 0.1668613644045445,
+      "final_dense_barrier_kcal": 23.63074717489018,
+      "final_equidistance_integral": 392.9421534251338,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k35p0_central_k35_alpha0p0001_ode_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k35p0_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k35p0_central_k35_alpha0p0001_ode_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k35p0_adaptive48.audit.json",
+      "unified_rank": 3,
+      "method_rank": 2
+    },
+    {
+      "name": "extended1000_obsm_l0p9_n5_dt0p115",
+      "method": "OBSM-FIRE",
+      "configuration": {
+        "method": "obsm_fire",
+        "lambda_mix": 0.9,
+        "inner_steps": 5,
+        "fire_dt": 0.115,
+        "fire_beta": 1.0,
+        "fire_mass": 1.0,
+        "reparam_interval": 1,
+        "selection_role": "focused 1000-call OBSM candidate"
+      },
+      "absolute_dense_score": 0.6872388054892385,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.0914289637929139,
+        "dense_barrier_log_auc": 1.4728617713992214,
+        "log10_final_i_perp": -0.6312085954953423,
+        "log10_final_dense_barrier_kcal": 1.3865144739123467,
+        "log10_one_plus_final_equidistance": 2.0985922151377543
+      },
+      "i_perp_log_auc": 0.0914289637929139,
+      "dense_barrier_log_auc": 1.4728617713992214,
+      "final_i_perp": 0.23377141441070676,
+      "final_dense_barrier_kcal": 24.350869537526922,
+      "final_equidistance_integral": 124.4851156135713,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 19982,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p9_n5_dt0p115_fire_lam0p9_inner5_r1_nocap_cfg4764086a53c9_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p9_n5_dt0p115_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p9_n5_dt0p115_fire_lam0p9_inner5_r1_nocap_cfg4764086a53c9_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p9_n5_dt0p115_adaptive48.audit.json",
+      "unified_rank": 4,
+      "method_rank": 2
+    },
+    {
+      "name": "extended1000_obsm_l0p95_n5_dt0p12",
+      "method": "OBSM-FIRE",
+      "configuration": {
+        "method": "obsm_fire",
+        "lambda_mix": 0.95,
+        "inner_steps": 5,
+        "fire_dt": 0.12,
+        "fire_beta": 1.0,
+        "fire_mass": 1.0,
+        "reparam_interval": 1,
+        "selection_role": "focused 1000-call OBSM candidate"
+      },
+      "absolute_dense_score": 0.6971826636043592,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.11316432103507959,
+        "dense_barrier_log_auc": 1.4641213469268064,
+        "log10_final_i_perp": -0.6942236860262451,
+        "log10_final_dense_barrier_kcal": 1.3819408806134563,
+        "log10_one_plus_final_equidistance": 2.2875663567536426
+      },
+      "i_perp_log_auc": 0.11316432103507959,
+      "dense_barrier_log_auc": 1.4641213469268064,
+      "final_i_perp": 0.20219774785805994,
+      "final_dense_barrier_kcal": 24.095773968101454,
+      "final_equidistance_integral": 192.89488693353516,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 19982,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p95_n5_dt0p12_fire_lam0p95_inner5_r1_nocap_cfge3839a00ee46_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p95_n5_dt0p12_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_obsm_l0p95_n5_dt0p12_fire_lam0p95_inner5_r1_nocap_cfge3839a00ee46_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_obsm_l0p95_n5_dt0p12_adaptive48.audit.json",
+      "unified_rank": 5,
+      "method_rank": 3
+    },
+    {
+      "name": "extended1000_ode_k80p0",
+      "method": "ODE-NEB",
+      "configuration": {
+        "method": "ode_neb",
+        "spring_k": 80.0,
+        "alpha_interface_only": 0.0001,
+        "selection_role": "focused 1000-call ODE-NEB k candidate"
+      },
+      "absolute_dense_score": 0.7161989791066377,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.18453191711411035,
+        "dense_barrier_log_auc": 1.4954234769105492,
+        "log10_final_i_perp": -0.5546242292438858,
+        "log10_final_dense_barrier_kcal": 1.3876380275458415,
+        "log10_one_plus_final_equidistance": 1.8976267646166822
+      },
+      "i_perp_log_auc": 0.18453191711411035,
+      "dense_barrier_log_auc": 1.4954234769105492,
+      "final_i_perp": 0.2788532886860265,
+      "final_dense_barrier_kcal": 24.413948692839252,
+      "final_equidistance_integral": 77.99994057668621,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k80p0_central_k80_alpha0p0001_ode_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k80p0_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_ode_k80p0_central_k80_alpha0p0001_ode_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_ode_k80p0_adaptive48.audit.json",
+      "unified_rank": 6,
+      "method_rank": 3
+    },
+    {
+      "name": "extended1000_original_dt0p012575",
+      "method": "Original String",
+      "configuration": {
+        "method": "original_string",
+        "dt": 0.012575,
+        "reparam_interval": 1,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 0.7670579287412386,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.5508670587789384,
+        "dense_barrier_log_auc": 1.5364342098190118,
+        "log10_final_i_perp": -0.15268957961901586,
+        "log10_final_dense_barrier_kcal": 1.4232576792863818,
+        "log10_one_plus_final_equidistance": 0.34738522683649964
+      },
+      "i_perp_log_auc": 0.5508670587789384,
+      "dense_barrier_log_auc": 1.5364342098190118,
+      "final_i_perp": 0.7035750340641046,
+      "final_dense_barrier_kcal": 26.50072035457217,
+      "final_equidistance_integral": 1.2252828804994815,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p012575_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p012575_adaptive48.audit.json",
+      "unified_rank": 7,
+      "method_rank": 1
+    },
+    {
+      "name": "extended1000_original_dt0p01255",
+      "method": "Original String",
+      "configuration": {
+        "method": "original_string",
+        "dt": 0.01255,
+        "reparam_interval": 1,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 0.7673612402411121,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.551242060575247,
+        "dense_barrier_log_auc": 1.536653395131082,
+        "log10_final_i_perp": -0.15150525534485815,
+        "log10_final_dense_barrier_kcal": 1.423387789377892,
+        "log10_one_plus_final_equidistance": 0.3461815594805538
+      },
+      "i_perp_log_auc": 0.551242060575247,
+      "dense_barrier_log_auc": 1.536653395131082,
+      "final_i_perp": 0.7054963068737461,
+      "final_dense_barrier_kcal": 26.508660883037916,
+      "final_equidistance_integral": 1.219123944328159,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p01255_original_nolambda_dt0p01255_r1_cfgc4b028cc95ee_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p01255_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p01255_original_nolambda_dt0p01255_r1_cfgc4b028cc95ee_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p01255_adaptive48.audit.json",
+      "unified_rank": 8,
+      "method_rank": 2
+    },
+    {
+      "name": "extended1000_original_dt0p012525",
+      "method": "Original String",
+      "configuration": {
+        "method": "original_string",
+        "dt": 0.012525,
+        "reparam_interval": 1,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 0.7677541306350817,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.5519105525270079,
+        "dense_barrier_log_auc": 1.536874090023902,
+        "log10_final_i_perp": -0.15031939138489334,
+        "log10_final_dense_barrier_kcal": 1.4235240871851058,
+        "log10_one_plus_final_equidistance": 0.34497707570216585
+      },
+      "i_perp_log_auc": 0.5519105525270079,
+      "dense_barrier_log_auc": 1.536874090023902,
+      "final_i_perp": 0.7074253341595185,
+      "final_dense_barrier_kcal": 26.516981595178777,
+      "final_equidistance_integral": 1.212977894160348,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p012525_original_nolambda_dt0p012525_r1_cfg6c3edd90227f_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p012525_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/extended1000_candidates_20260728a/extended1000_candidates_20260728a_paper_production_extended1000_original_dt0p012525_original_nolambda_dt0p012525_r1_cfg6c3edd90227f_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_original_dt0p012525_adaptive48.audit.json",
+      "unified_rank": 9,
+      "method_rank": 3
+    },
+    {
+      "name": "extended1000_static_k40_a0p012575",
+      "method": "Static-NEB",
+      "configuration": {
+        "method": "static_neb",
+        "spring_k": 40.0,
+        "alpha": 0.012575,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 1.0267887338335164,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.550460390568224,
+        "dense_barrier_log_auc": 1.537043207858701,
+        "log10_final_i_perp": -0.15411246494408698,
+        "log10_final_dense_barrier_kcal": 1.424787970692074,
+        "log10_one_plus_final_equidistance": 2.944941120833802
+      },
+      "i_perp_log_auc": 0.550460390568224,
+      "dense_barrier_log_auc": 1.537043207858701,
+      "final_i_perp": 0.7012736730010077,
+      "final_dense_barrier_kcal": 26.59426369566459,
+      "final_equidistance_integral": 879.9294335289142,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p012575_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p012575_adaptive48.audit.json",
+      "unified_rank": 10,
+      "method_rank": 1
+    },
+    {
+      "name": "extended1000_static_k40_a0p01255",
+      "method": "Static-NEB",
+      "configuration": {
+        "method": "static_neb",
+        "spring_k": 40.0,
+        "alpha": 0.01255,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 1.0272783415710005,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.5508293189949024,
+        "dense_barrier_log_auc": 1.5372617567904314,
+        "log10_final_i_perp": -0.15292646407499286,
+        "log10_final_dense_barrier_kcal": 1.4249184542482345,
+        "log10_one_plus_final_equidistance": 2.9456163135268523
+      },
+      "i_perp_log_auc": 0.5508293189949024,
+      "dense_barrier_log_auc": 1.5372617567904314,
+      "final_i_perp": 0.7031913760838877,
+      "final_dense_barrier_kcal": 26.60225512911427,
+      "final_equidistance_integral": 881.3000696831269,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p01255_central_k40_alpha0p01255_static_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p01255_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p01255_central_k40_alpha0p01255_static_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p01255_adaptive48.audit.json",
+      "unified_rank": 11,
+      "method_rank": 2
+    },
+    {
+      "name": "extended1000_static_k40_a0p012525",
+      "method": "Static-NEB",
+      "configuration": {
+        "method": "static_neb",
+        "spring_k": 40.0,
+        "alpha": 0.012525,
+        "selection_role": "unified 300/500-call candidate"
+      },
+      "absolute_dense_score": 1.0278569711087853,
+      "absolute_dense_score_components": {
+        "i_perp_log_auc": 0.5514946724033111,
+        "dense_barrier_log_auc": 1.5374818836218374,
+        "log10_final_i_perp": -0.15173663379442484,
+        "log10_final_dense_barrier_kcal": 1.4250489551157586,
+        "log10_one_plus_final_equidistance": 2.9462808197385377
+      },
+      "i_perp_log_auc": 0.5514946724033111,
+      "dense_barrier_log_auc": 1.5374818836218374,
+      "final_i_perp": 0.7051205407231159,
+      "final_dense_barrier_kcal": 26.61025002465498,
+      "final_equidistance_integral": 882.6510945500345,
+      "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+      "final_number_of_force_evaluations": 20002,
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p012525_central_k40_alpha0p012525_static_budget1000.npz",
+      "dense_result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p012525_adaptive48.npz",
+      "production_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_extended1000_static_k40_a0p012525_central_k40_alpha0p012525_static_budget1000.audit.json",
+      "dense_audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_extended1000_static_k40_a0p012525_adaptive48.audit.json",
+      "unified_rank": 12,
+      "method_rank": 3
+    }
+  ]
+}

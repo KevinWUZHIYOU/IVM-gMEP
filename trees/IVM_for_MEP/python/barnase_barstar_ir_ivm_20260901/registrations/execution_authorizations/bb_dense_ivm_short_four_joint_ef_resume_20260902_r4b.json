@@ -1,0 +1,37 @@
+{
+  "OpenMM_calls_before_authorization": 0,
+  "authorized_entrypoint": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_dense_ivm_short_four_joint_resume_r4b.py",
+    "sha256": "bbbfa1f1afbfae9386f4fb96696b176e24af5165999bab96ed57f95440b908fe"
+  },
+  "authorizer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_dense_ivm_short_four_joint_resume_r4b.py",
+    "sha256": "912275d7de2068b27bc21b4cf0199a5d69a6fc676707c5959e0cfb65e71f3604"
+  },
+  "canonical_lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R4B.json",
+    "sha256": "3366d4f1aa304db127f3baf3c7feb6224dbe4aa3c7fff80b771b414bf6434f25"
+  },
+  "enabled": true,
+  "maximum_joint_EF_attempts": 1000,
+  "optimization_N_F_contribution": 0,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.npz",
+  "schema": "bb-dense-ivm-short-four-resume-r4b-execution-authorization-v1",
+  "status": "AUTHORIZED_AFTER_ZERO_OPENMM_PREFLIGHT",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R4B_PREAUTH.json",
+    "sha256": "d2c70a3c9e75c8e758421651d22538b85ce391dd7e9b1421db668f2e69171174"
+  }
+}

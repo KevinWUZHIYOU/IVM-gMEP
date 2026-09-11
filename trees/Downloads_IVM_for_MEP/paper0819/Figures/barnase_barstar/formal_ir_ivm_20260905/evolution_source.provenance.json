@@ -1,0 +1,653 @@
+{
+  "base_plot_wrapper": {
+    "bytes": 9719,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/plot_bb_r2_merged_relaxed15x10_evolution.py",
+    "sha256": "040f5e996f5c23b9a8f34b37a3fc7c1540f076e17c2e9ff1f5b770f6503e69cb"
+  },
+  "canonical_promotion": true,
+  "code": {
+    "bytes": 25292,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/plot_bb_r2_smooth_c2_gamma15_to_linear_preview.py",
+    "sha256": "83f043bee06f199c575eda3da41c8e2e3bd53a1fe2b2532a52acbbdc8489af92"
+  },
+  "colorbar_tick_audit": {
+    "left_label_energies_kcal_per_mol": [],
+    "right_label_energies_kcal_per_mol": [
+      50.0,
+      100.0,
+      150.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0
+    ],
+    "tick_energies_kcal_per_mol": [
+      50.0,
+      100.0,
+      150.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      688.4553818246745
+    ],
+    "top_exact_vmax_label": "$6.9\\times10^{2}$"
+  },
+  "created_utc": "2026-09-04T06:09:06.920633+00:00",
+  "final_panel_ir_ivm_replacement": {
+    "new_actual_optimization_N_F": 19993,
+    "new_target_N_F": 20000,
+    "old_target_N_F": 15000,
+    "only_final_ir_ivm_path_and_title_changed": true,
+    "record": {
+      "call_per_image": 693,
+      "formally_reportable": true,
+      "native_path": {
+        "array_key": "path32_A",
+        "native_array_sha256": "854f2d6a85412b2d9a7f3c7cd0564dd11e12cdb4e7b62e304c4e76c3f090f3ee",
+        "native_stored_shape": [
+          32,
+          9396
+        ]
+      },
+      "optimization_N_F": 19993,
+      "primary_audit": {
+        "bytes": 779926,
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_PRIMARY.json",
+        "sha256": "00a215f4e2953a551b7d5294780f65368b3ce4545dcd28f4623dd2645a7c1345"
+      },
+      "source": {
+        "bytes": 4823399,
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/plot_inputs/bb_irivm_nf20k_nf30k_20260904_r1/call_0693_stable_last.npz",
+        "sha256": "c673536713cdcaf8040cdda0c1a5bf10786908c90fcdcf0b9d68c8e209b85f4c"
+      },
+      "target_N_F": 20000,
+      "terminal_uncommitted_charged_tail": false
+    }
+  },
+  "formally_reportable": true,
+  "inherited_display": {
+    "actual_ir_ivm_N_F": [
+      0,
+      1993,
+      9985,
+      19993
+    ],
+    "actual_ode_neb_N_F": [
+      0,
+      2040,
+      9990,
+      30000
+    ],
+    "capped_points_overlaid_on_surface": false,
+    "capped_points_retained_in_provenance": 0,
+    "color_norm": {
+      "fit_target_above_200": "uniform tick-position progression",
+      "fit_target_below_or_at_200": "curvature 1.5 relative tick spacing rescaled to 72%",
+      "gaussian_center_kcal_per_mol": 110.56,
+      "gaussian_fraction": 0.6176883752046186,
+      "gaussian_width_kcal_per_mol": 68.33,
+      "global_continuity": "C-infinity; no joins",
+      "linear_fraction": 0.3823116247953814,
+      "name": "SmoothGaussianCDFLinearFitNorm",
+      "target_color_coordinate_at_200": 0.72,
+      "true_vmax_kcal_per_mol": 688.4553818246745
+    },
+    "display_maximum_kcal_per_mol": 688.4553818246745,
+    "energy_extrapolated_outside_sampled_surface": false,
+    "fill_seam_diagnosis": "dashed-looking seams reproduced in fill-only vector PDF",
+    "filled_contour_antialiased": false,
+    "filled_contour_bands": 17,
+    "filled_contour_levels": 18,
+    "filled_contour_raster_dpi": 600,
+    "filled_contour_rasterized": true,
+    "initial_points_outside_sampled_surface": 0,
+    "initial_projection_maximum_rms_A": 0.7000969218726065,
+    "line_contour_levels": 16,
+    "panel_budget_labels": [
+      0,
+      2000,
+      10000,
+      {
+        "IR-IVM": 20000,
+        "ODE-NEB": 30000
+      }
+    ],
+    "plot_xlim": [
+      0.0,
+      1.0
+    ],
+    "plot_ylim_rms_A": [
+      -0.12,
+      0.73
+    ],
+    "reference_energy_eV": -326.4795394677027,
+    "sampled_surface_maximum_rms_A": 0.72,
+    "sampled_surface_minimum_rms_A": -0.12,
+    "stored_energy_values_changed": false,
+    "white_contour_levels_kcal_per_mol": [
+      39.34720854050231,
+      59.71548195821846,
+      74.44748260560687,
+      86.69720560856126,
+      97.7036598541155,
+      108.13556424459557,
+      118.46550387490268,
+      129.13517937678313,
+      140.69368556176352,
+      154.03655999496027,
+      171.1014431306932,
+      198.1333229464061,
+      265.49968103906394,
+      370.6724460767025,
+      476.6000639377419,
+      582.5277228811981
+    ],
+    "white_contour_style": {
+      "alpha": 0.28,
+      "color": "white",
+      "linestyle": "solid",
+      "linewidth_pt": 0.25,
+      "reference_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/barnase_branch_local_true0k_evolution.pdf",
+      "reference_pdf_sha256": "26625a3f4a3a23c4d4302be6283e8a07879d7ca6fe569abec276f2e0ee8f9394",
+      "source": "direct audit of reference PDF content/ExtGState, not later source version"
+    },
+    "white_contours_match_internal_fill_boundaries": true,
+    "white_contours_paths_axes_text_remain_vector": true
+  },
+  "native32_sweep_code": {
+    "bytes": 30553,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/plot_bb_r2_square_all_images_curvature_sweep.py",
+    "sha256": "eda539ef44635446d4bf329a0c019ae3db7f4adcd63ad914fbef4bc75347afe5"
+  },
+  "native_projection_audit": {
+    "initial_path": {
+      "array_key": "initial_path",
+      "native_array_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+      "native_stored_shape": [
+        32,
+        9396
+      ],
+      "source": {
+        "bytes": 2405654,
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/common_initial_path32.npz",
+        "sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf"
+      }
+    },
+    "projected_n_range_A": [
+      -0.0031531517663508303,
+      0.7213065820587539
+    ],
+    "projected_points_per_path": 32,
+    "projected_s_range": [
+      0.0,
+      1.0
+    ],
+    "projection_coordinate_source": {
+      "bytes": 135373288,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+      "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+    },
+    "projection_method": "each native image is projected to its nearest point on the saved 59-point center polyline; no path resampling or path densification"
+  },
+  "normalization_verification": {
+    "dense_grid_points": 100010,
+    "exact_endpoints": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        688.4553818246745,
+        1.0
+      ]
+    ],
+    "fit_anchor_energies_kcal_per_mol": [
+      0.0,
+      50.0,
+      100.0,
+      150.0,
+      200.0,
+      240.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      688.4553818246745
+    ],
+    "fit_residuals": [
+      0.0,
+      0.02498183957862197,
+      -0.022467382283947568,
+      0.018817989590558026,
+      -0.011282565903569575,
+      0.0057291423766803184,
+      0.006932638721039774,
+      0.005168436451769898,
+      0.003376674000411639,
+      0.0015849108956823565,
+      0.0
+    ],
+    "fit_target": "curvature-1.5 relative spacing through 200 kcal/mol, rescaled to 72% of the bar, and a linear target from 200 kcal/mol to the measured maximum",
+    "fit_target_color_coordinates": [
+      0.0,
+      0.06147651675917317,
+      0.32935924715281667,
+      0.5527706489609625,
+      0.72,
+      0.7429294228638883,
+      0.7773235571597208,
+      0.8346471143194417,
+      0.8919706714791625,
+      0.9492942286388834,
+      1.0
+    ],
+    "fitted_color_coordinates": [
+      0.0,
+      0.08645835633779514,
+      0.3068918648688691,
+      0.5715886385515205,
+      0.7087174340964304,
+      0.7486585652405686,
+      0.7842561958807606,
+      0.8398155507712116,
+      0.8953473454795742,
+      0.9508791395345657,
+      1.0
+    ],
+    "fitted_parameters": {
+      "gaussian_center_kcal_per_mol": 110.56,
+      "gaussian_fraction": 0.6176883752046186,
+      "gaussian_width_kcal_per_mol": 68.33,
+      "linear_fraction": 0.3823116247953814
+    },
+    "global_continuity": "C-infinity; no joins",
+    "inverse": "64-step monotone bisection",
+    "maximum_absolute_fit_error_above_200": 0.006932638721039774,
+    "maximum_absolute_fit_error_below_or_at_200": 0.02498183957862197,
+    "maximum_inverse_round_trip_error_kcal_per_mol": 4.547473508864641e-13,
+    "minimum_derivative_per_kcal_per_mol": 0.0005553179405499118,
+    "selected_scheme": "global Gaussian-CDF plus linear weighted fit",
+    "strictly_monotone_on_dense_grid": true,
+    "target_color_coordinate_at_200": 0.72,
+    "weighted_sum_squared_error": 0.00817295416233595
+  },
+  "optimization_N_F_contribution": 0,
+  "output": {
+    "bytes": 114481,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution.pdf",
+    "sha256": "8dff0c767361bd10f1439e1ca55556a58430652a053e5a822066f2f2fbf2f23b"
+  },
+  "physical_calls": 0,
+  "preserved_curvature_2_sweep_member": {
+    "pdf": {
+      "bytes": 108178,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_2.pdf",
+      "sha256": "4ace8386b4d86ea5b3471d4fc1377382ff9d4439c9f198369ae6ac0248fe7401"
+    },
+    "provenance": {
+      "bytes": 19623,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_2.provenance.json",
+      "sha256": "620af409acf0424019cdefaa195241e2bf6a6ac2fe1b60f095225851d79c9e4c"
+    },
+    "seven_variant_manifest": {
+      "bytes": 17248,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_sweep.manifest.json",
+      "sha256": "4054010f5a4edfce85367275025717004c6b979d0c18ed99dde76468cf497deb"
+    }
+  },
+  "requested_style_audit": {
+    "colorbar_vertical_extent_aligned_to_square_panels": true,
+    "colors_changed": false,
+    "display_projection_changed_from_15_resampled_to_32_native": true,
+    "final_plot_ylim_rms_A": [
+      -0.12,
+      0.73
+    ],
+    "formal_bb_marker_shapes_colors_and_linewidths": true,
+    "native_images_directly_projected": true,
+    "native_projected_n_range_A": [
+      -0.04828104158566219,
+      0.7213065820587539
+    ],
+    "native_projected_points_per_path": 32,
+    "original_plot_ylim_rms_A": [
+      -0.12,
+      0.72
+    ],
+    "panel_box_aspect": 1.0,
+    "panel_width_over_height": [
+      0.9999999999999998,
+      0.9999999999999998,
+      0.9999999999999996,
+      1.0
+    ],
+    "path_artists": [
+      {
+        "alpha": null,
+        "color": "#7B3294",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "Initial path",
+        "linestyle": "-",
+        "linewidth_pt": 1.55,
+        "marker": "o",
+        "markeredgecolor_effective": "#7B3294",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#7B3294",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "fda9edfe784375103cc75ffadac88999736c069865f421af0246c89fef08855e",
+        "stored_path_points": 32,
+        "zorder": 5
+      },
+      {
+        "alpha": null,
+        "color": "#D55E00",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "ODE-NEB",
+        "linestyle": "-",
+        "linewidth_pt": 1.45,
+        "marker": "o",
+        "markeredgecolor_effective": "#D55E00",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#D55E00",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "221d89c54199ef55df2e48585dd8bc97a223e0ccd8d43f0ccd0191f4500b364f",
+        "stored_path_points": 32,
+        "zorder": 5
+      },
+      {
+        "alpha": null,
+        "color": "#0072B2",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "IVM",
+        "linestyle": "-",
+        "linewidth_pt": 1.75,
+        "marker": "s",
+        "markeredgecolor_effective": "#0072B2",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#0072B2",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "ce96ed9ed50fa3f48e432efbc9542272d159b552f223e8a2cde393049a5b3fde",
+        "stored_path_points": 32,
+        "zorder": 6
+      },
+      {
+        "alpha": null,
+        "color": "#D55E00",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "ODE-NEB",
+        "linestyle": "-",
+        "linewidth_pt": 1.45,
+        "marker": "o",
+        "markeredgecolor_effective": "#D55E00",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#D55E00",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "94689b8b997f8f33c3b1a84a0995060f3f0e15026143ad58a8550ea99a1e0ab3",
+        "stored_path_points": 32,
+        "zorder": 5
+      },
+      {
+        "alpha": null,
+        "color": "#0072B2",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "IVM",
+        "linestyle": "-",
+        "linewidth_pt": 1.75,
+        "marker": "s",
+        "markeredgecolor_effective": "#0072B2",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#0072B2",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "721503a3929e9e9fcdf2b7905808e6091a9eb321b9cb8a301b236591542d5ace",
+        "stored_path_points": 32,
+        "zorder": 6
+      },
+      {
+        "alpha": null,
+        "color": "#D55E00",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "ODE-NEB",
+        "linestyle": "-",
+        "linewidth_pt": 1.45,
+        "marker": "o",
+        "markeredgecolor_effective": "#D55E00",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#D55E00",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "8315d46d85922c4837b1e5e2e51d81478ba343853611705018b6f038d2b9ed17",
+        "stored_path_points": 32,
+        "zorder": 5
+      },
+      {
+        "alpha": null,
+        "color": "#0072B2",
+        "color_inherited_unchanged": true,
+        "defaults_retained_for_marker_face_edge_and_alpha": true,
+        "displayed_marker_points": 32,
+        "label": "IVM",
+        "linestyle": "-",
+        "linewidth_pt": 1.75,
+        "marker": "s",
+        "markeredgecolor_effective": "#0072B2",
+        "markeredgewidth_pt": 1.0,
+        "markerfacecolor_effective": "#0072B2",
+        "markersize_pt": 2.15,
+        "markevery": 1,
+        "path_resampled_or_densified": false,
+        "projected_coordinate_sha256": "82a7f4531c9549e0f3104a949b022c391b6d0051e68aca8df8ffbdca3824d954",
+        "stored_path_points": 32,
+        "zorder": 6
+      }
+    ],
+    "path_resampled_or_densified": false,
+    "path_style_reference_pdf": {
+      "bytes": 96137,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/barnase_branch_local_true0k_evolution.pdf",
+      "sha256": "26625a3f4a3a23c4d4302be6283e8a07879d7ca6fe569abec276f2e0ee8f9394"
+    },
+    "path_style_reference_source": {
+      "bytes": 50950,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_chigstyle/src/plot_manuscript_candidate.py",
+      "sha256": "aa30cd8530c67df66de511868db88711c2614193396aefc93627d59be060151c"
+    },
+    "saved_surface_and_native_path_values_changed": false,
+    "underlying_saved_images_per_compared_path": 32,
+    "user_requested_markevery": 1
+  },
+  "schema": "bb-irivm-r2-smooth-global-gaussian-cdf-fit-canonical-v1",
+  "status": "PASS_ZERO_PHYSICS_SMOOTH_GLOBAL_FIT_CANONICAL",
+  "unchanged_scientific_inputs": {
+    "fresh_converged": 148,
+    "fresh_maxstep": 0,
+    "path_snapshots": {
+      "IR-IVM": {
+        "10000": {
+          "call_per_image": 352,
+          "committed_by_final_reparameterization": false,
+          "native_path": {
+            "array_key": "path32_A",
+            "native_array_sha256": "59721ae2491fcde401a1081439b979a7313ca1ff0903e76be9e38e7140a07de1",
+            "native_stored_shape": [
+              32,
+              9396
+            ],
+            "source": {
+              "bytes": 4823399,
+              "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0352_stable_last.npz",
+              "sha256": "b14982cce08e9bfa6463537b9877e15098e09f68a2898927c4f29e4aba545e58"
+            }
+          },
+          "optimization_N_F": 9985,
+          "saved_images": 32,
+          "source": {
+            "bytes": 4823399,
+            "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0352_stable_last.npz",
+            "sha256": "b14982cce08e9bfa6463537b9877e15098e09f68a2898927c4f29e4aba545e58"
+          },
+          "target_N_F": 10000
+        },
+        "2000": {
+          "call_per_image": 72,
+          "committed_by_final_reparameterization": true,
+          "native_path": {
+            "array_key": "path32_A",
+            "native_array_sha256": "7161dab1eb057d958e0af032626e5113de85b0b5725e085b56bf065d79060e66",
+            "native_stored_shape": [
+              32,
+              9396
+            ],
+            "source": {
+              "bytes": 4823911,
+              "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0072_stable_last.npz",
+              "sha256": "6b537bc6a867e279a3797a0e90050debd841bb99523dd55d7a23016af089ff5b"
+            }
+          },
+          "optimization_N_F": 1993,
+          "saved_images": 32,
+          "source": {
+            "bytes": 4823911,
+            "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0072_stable_last.npz",
+            "sha256": "6b537bc6a867e279a3797a0e90050debd841bb99523dd55d7a23016af089ff5b"
+          },
+          "target_N_F": 2000
+        },
+        "20000": {
+          "call_per_image": 693,
+          "formally_reportable": true,
+          "native_path": {
+            "array_key": "path32_A",
+            "native_array_sha256": "854f2d6a85412b2d9a7f3c7cd0564dd11e12cdb4e7b62e304c4e76c3f090f3ee",
+            "native_stored_shape": [
+              32,
+              9396
+            ]
+          },
+          "optimization_N_F": 19993,
+          "primary_audit": {
+            "bytes": 779926,
+            "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_PRIMARY.json",
+            "sha256": "00a215f4e2953a551b7d5294780f65368b3ce4545dcd28f4623dd2645a7c1345"
+          },
+          "source": {
+            "bytes": 4823399,
+            "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/plot_inputs/bb_irivm_nf20k_nf30k_20260904_r1/call_0693_stable_last.npz",
+            "sha256": "c673536713cdcaf8040cdda0c1a5bf10786908c90fcdcf0b9d68c8e209b85f4c"
+          },
+          "target_N_F": 20000,
+          "terminal_uncommitted_charged_tail": false
+        }
+      },
+      "ODE-NEB": {
+        "10000": {
+          "batch_id": 333,
+          "native_path": {
+            "array_key": "nodes",
+            "native_array_sha256": "4c40f30af44fdbda87684d887136bcb1b71f6b20f6785892d50fd10ffcfdff09",
+            "native_stored_shape": [
+              32,
+              9396
+            ],
+            "source": {
+              "bytes": 2254478,
+              "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf09990.npz",
+              "sha256": "f9d2f7988d1b91b8b7bbcd80f5895a80dce7fe587a663199157e42289be6e2ce"
+            }
+          },
+          "optimization_N_F": 9990,
+          "saved_images": 32,
+          "source": {
+            "bytes": 2254478,
+            "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf09990.npz",
+            "sha256": "f9d2f7988d1b91b8b7bbcd80f5895a80dce7fe587a663199157e42289be6e2ce"
+          },
+          "target_N_F": 10000
+        },
+        "2000": {
+          "batch_id": 68,
+          "native_path": {
+            "array_key": "nodes",
+            "native_array_sha256": "01935fb657b4b1d102564a496d86598df72a1b6db33ce5f0da5ec5546c1a16b0",
+            "native_stored_shape": [
+              32,
+              9396
+            ],
+            "source": {
+              "bytes": 2254515,
+              "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf02040.npz",
+              "sha256": "81d087cf8ade76d496ad90c13821b698ad61c80a97e3f36735c6fe1661a4f089"
+            }
+          },
+          "optimization_N_F": 2040,
+          "saved_images": 32,
+          "source": {
+            "bytes": 2254515,
+            "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf02040.npz",
+            "sha256": "81d087cf8ade76d496ad90c13821b698ad61c80a97e3f36735c6fe1661a4f089"
+          },
+          "target_N_F": 2000
+        },
+        "30000": {
+          "batch_id": 1000,
+          "native_path": {
+            "array_key": "nodes",
+            "native_array_sha256": "7f247bfab9f083e1e72e64526e1b0168d61be58ed44401fa08f173fdbd632aad",
+            "native_stored_shape": [
+              32,
+              9396
+            ],
+            "source": {
+              "bytes": 2254424,
+              "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf30000.npz",
+              "sha256": "f4f876b7fed2494062cdbebc17771aea9d7e7c78dc366544078a4fc7c583344e"
+            }
+          },
+          "optimization_N_F": 30000,
+          "saved_images": 32,
+          "source": {
+            "bytes": 2254424,
+            "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/snapshots/nf30000.npz",
+            "sha256": "f4f876b7fed2494062cdbebc17771aea9d7e7c78dc366544078a4fc7c583344e"
+          },
+          "target_N_F": 30000
+        }
+      }
+    },
+    "surface_grid": {
+      "bytes": 47424303,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/bb_relaxed_surface_continuation_20260903_r1/postprocess/r2_merged/surface_grid.npz",
+      "sha256": "2043159d3d1a51d8500910aaee31662770e47da37e5ba3568b90a7b1bc0d982c"
+    },
+    "surface_sources": {
+      "bytes": 9083,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/bb_relaxed_surface_continuation_20260903_r1/postprocess/r2_merged/surface_sources.json",
+      "sha256": "a91f0bd16bc6aa7d06a6fe88027c33f38760dd01743876ad0571d23f6ed005b7"
+    }
+  }
+}

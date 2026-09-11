@@ -1,0 +1,61 @@
+{
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_ODE_FOUR_JOINT_EF_ARC500_20260902_R2.json",
+    "sha256": "ab463d3c922be9b43bd964328a0bac6117f85e2811a12951090e40748fd4ba00"
+  },
+  "direct_launch": {
+    "command": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_ODE_FOUR_JOINT_EF_ARC500_20260902_R2.json",
+      "--host-role",
+      "local",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_dense_four_arc500_joint_ef_20260902_r2.npz"
+    ],
+    "evaluator_self_holds_both_host_local_fcntl_locks": true,
+    "observed_child_pid": 96735,
+    "started_utc": "2026-09-02T05:43:22Z"
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+    "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+  },
+  "failed_wrapper_attempt": {
+    "dense_session_id": "2c82125d81504906bbb0b32e3a74cd17",
+    "discrete_session_id": "80228a6cc3ac424dad38dd1c1670bc59",
+    "explanation": "The generic outer wrapper acquired the same two locks that the frozen evaluator is required to acquire for itself, so the child exited before any physical OpenMM call. The direct relaunch is the contract-compatible launch mode.",
+    "physical_attempts": 0,
+    "receipt_path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_ode_neb_dense_four_arc500_joint_ef_20260902_r2.launch.json",
+    "receipt_sha256": "d3fc1ebc3a29d7903f004cbe3221bedfb9a4df5ffff13be9a8032710a8d086b8",
+    "returncode": 1
+  },
+  "host": "local MacBook Air",
+  "launch_preflight": {
+    "all_six_thread_caps": 1,
+    "free_bytes_observed": 16822046720,
+    "jobs": 1,
+    "minimum_free_bytes_reserve": 8589934592,
+    "optimization_N_F_contribution": 0,
+    "passed": true
+  },
+  "lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "observation": {
+    "dense_wal_session_id": "2b3d7bfd70f54eca84ae8e697d66412f",
+    "discrete_wal_session_id": "893df671a070422c9f14e1e853f5931c",
+    "observed_active_utc": "2026-09-02T05:47:24Z",
+    "status": "RUNNING"
+  },
+  "physical_call_accounting": {
+    "dense_arc500_joint_EF_expected": 2000,
+    "dense_endpoint_diagnostics_included_in_expected": 8,
+    "discrete_internal_joint_EF_expected": 120,
+    "optimization_N_F_contribution": 0,
+    "total_diagnostic_joint_EF_expected": 2120
+  },
+  "schema": "bb-dense-four-path-joint-ef-direct-relaunch-observation-v1"
+}

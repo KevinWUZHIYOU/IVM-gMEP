@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "ivm": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_ivm_equal_idpp_v52_direct_then_certified_fallback_production_central_state_ivm_cfgddc3ad8e72f1_budget500.npz",
+  "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+  "compatible_neb_runs": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_k20_screen300_central_k20_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_k50_budget5000_production_central_k50_alpha0p0001_ode_budget5000.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k0p1_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k1000_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k100_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k10_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k1_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k2000_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k500_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k50_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k5_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_scan300_central_k80_alpha0p0001_ode_budget300.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_top_k0p1_budget2000_central_k0p1_alpha0p0001_ode_budget2000.npz",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_equal_idpp_top_k50_budget2000_central_k50_alpha0p0001_ode_budget2000.npz"
+  ],
+  "comparison_calls": [
+    2,
+    500
+  ],
+  "i_perp_violation_calls": [],
+  "sparse_barrier_violation_calls": [],
+  "pointwise_lead_ranges": [
+    {
+      "calls": [
+        2,
+        50
+      ],
+      "minimum_neb_over_ivm_i_perp_ratio": 2.408418004271902,
+      "i_perp_worst_lead_call": 2,
+      "minimum_neb_over_ivm_sparse_barrier_ratio": 1.9911668178963644,
+      "barrier_worst_lead_call": 2
+    },
+    {
+      "calls": [
+        51,
+        200
+      ],
+      "minimum_neb_over_ivm_i_perp_ratio": 35.65072117586431,
+      "i_perp_worst_lead_call": 200,
+      "minimum_neb_over_ivm_sparse_barrier_ratio": 1.3909419131115854,
+      "barrier_worst_lead_call": 198
+    },
+    {
+      "calls": [
+        201,
+        500
+      ],
+      "minimum_neb_over_ivm_i_perp_ratio": 11.767283515817828,
+      "i_perp_worst_lead_call": 499,
+      "minimum_neb_over_ivm_sparse_barrier_ratio": 1.170162600416509,
+      "barrier_worst_lead_call": 499
+    },
+    {
+      "calls": [
+        2,
+        500
+      ],
+      "minimum_neb_over_ivm_i_perp_ratio": 2.408418004271902,
+      "i_perp_worst_lead_call": 2,
+      "minimum_neb_over_ivm_sparse_barrier_ratio": 1.170162600416509,
+      "barrier_worst_lead_call": 499
+    }
+  ],
+  "dense_barrier_common_reachable_thresholds": [
+    {
+      "threshold_kcal_per_mol": 27.798190983201717,
+      "ivm_first_passage_calls": 25,
+      "neb_first_passage_calls": 400,
+      "speedup_neb_over_ivm": 16.0
+    },
+    {
+      "threshold_kcal_per_mol": 24.770557613417107,
+      "ivm_first_passage_calls": 50,
+      "neb_first_passage_calls": 650,
+      "speedup_neb_over_ivm": 13.0
+    },
+    {
+      "threshold_kcal_per_mol": 23.86510365011888,
+      "ivm_first_passage_calls": 75,
+      "neb_first_passage_calls": 950,
+      "speedup_neb_over_ivm": 12.666666666666666
+    },
+    {
+      "threshold_kcal_per_mol": 23.44246718369732,
+      "ivm_first_passage_calls": 100,
+      "neb_first_passage_calls": 1250,
+      "speedup_neb_over_ivm": 12.5
+    },
+    {
+      "threshold_kcal_per_mol": 23.114466761668908,
+      "ivm_first_passage_calls": 125,
+      "neb_first_passage_calls": 1600,
+      "speedup_neb_over_ivm": 12.8
+    },
+    {
+      "threshold_kcal_per_mol": 22.727157308713963,
+      "ivm_first_passage_calls": 150,
+      "neb_first_passage_calls": 1900,
+      "speedup_neb_over_ivm": 12.666666666666666
+    },
+    {
+      "threshold_kcal_per_mol": 22.253292131500867,
+      "ivm_first_passage_calls": 175,
+      "neb_first_passage_calls": 2200,
+      "speedup_neb_over_ivm": 12.571428571428571
+    },
+    {
+      "threshold_kcal_per_mol": 21.784988305182633,
+      "ivm_first_passage_calls": 200,
+      "neb_first_passage_calls": 2550,
+      "speedup_neb_over_ivm": 12.75
+    },
+    {
+      "threshold_kcal_per_mol": 21.359639445938168,
+      "ivm_first_passage_calls": 225,
+      "neb_first_passage_calls": 2850,
+      "speedup_neb_over_ivm": 12.666666666666666
+    },
+    {
+      "threshold_kcal_per_mol": 20.976636494285902,
+      "ivm_first_passage_calls": 250,
+      "neb_first_passage_calls": 3300,
+      "speedup_neb_over_ivm": 13.2
+    },
+    {
+      "threshold_kcal_per_mol": 20.64163165967748,
+      "ivm_first_passage_calls": 275,
+      "neb_first_passage_calls": 3900,
+      "speedup_neb_over_ivm": 14.181818181818182
+    }
+  ],
+  "dense_barrier_best_observed": {
+    "ivm_kcal_per_mol": 20.35667037607208,
+    "neb_kcal_per_mol": 20.407641427938866
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "actual_optimization_N_F": 9985,
+  "authorized_minimum_launch_free_bytes": 8589934592,
+  "bindings": {
+    "audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.audit.json",
+      "sha256": "1d82aa3026faf2834ce1050de7c8454dab17c51433a1574563c24742772b6e39"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "5306d0cd6470068a9719383b567761614022391b02ebdc3d47812d1121dd6785"
+    },
+    "budget_atomicity_amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_BUDGET_ATOMICITY_AMENDMENT_20260901_R1.json",
+      "sha256": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680"
+    },
+    "lock_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_r1.launch.json",
+      "sha256": "295f6977247f58a7e67badfd01ccbacc542055ddb287ffab19a5049b54c794ae"
+    },
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    },
+    "result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    }
+  },
+  "budget_atomicity_case": "atomic_remainder",
+  "created_utc": "2026-09-02T00:26:51Z",
+  "diagnostic_energy_evaluations": 0,
+  "eligible_stored_calls_per_image": [
+    1,
+    7,
+    20,
+    72,
+    318
+  ],
+  "endpoint_optimization_N_F": 0,
+  "label": "bb_irivm_a1e0_r01_m05_inf9990_r1",
+  "observed_launch_free_bytes": 9501278208,
+  "post_initial_reparam_committed_stored_paths": [
+    {
+      "actual_optimization_N_F": 210,
+      "call_per_image": 7,
+      "path_sha256": "ea3cd456fca7103d67d227bb095b93e2d7fba3c794e6081b7ac1951d53de9b7f"
+    },
+    {
+      "actual_optimization_N_F": 429,
+      "call_per_image": 20,
+      "path_sha256": "f12eb157d86dec8bf6f7342926b0dcfbb53b8a2c334146d4ca2ae69d0081a6af"
+    },
+    {
+      "actual_optimization_N_F": 1993,
+      "call_per_image": 72,
+      "path_sha256": "0da18b88d1bd6776f612a2f034f8b573824137216135a46277dc0c78c59a6db7"
+    },
+    {
+      "actual_optimization_N_F": 8982,
+      "call_per_image": 318,
+      "path_sha256": "c2a41359bd3e0b46e2e3fbe3d5ca6c989eb2af4e126b9742c8106df40b991553"
+    }
+  ],
+  "registered_optimization_N_F_upper_bound": 9990,
+  "remaining_registered_N_F": 5,
+  "schema": "bb-irivm-long-budget-member-verification-v2",
+  "status": "PASS",
+  "terminal_partial_tail_present": true,
+  "terminal_partial_tail_quarantined": true
+}

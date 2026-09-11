@@ -1,0 +1,68 @@
+{
+  "schema": "bb-irivm-selected-all-paths-replay-user-termination-supersession-v1",
+  "status": "USER_TERMINATED_OUTPUT_ONLY_REPLAY_SUPERSEDED_NOT_A_SCIENTIFIC_FAILURE",
+  "recorded_utc": "2026-09-02T12:54:37Z",
+  "execution_authorized_by_this_file": false,
+  "failed_scientific_result": false,
+  "termination": {
+    "reason": "The user explicitly instructed that the remote all-path replay be interrupted and replaced by a fresh replay that also retains same-record energies and full forces.",
+    "signal": "SIGINT",
+    "python_exception": "KeyboardInterrupt",
+    "interrupted_operation": "OpenMM Context.getState(getEnergy=True, getForces=True)",
+    "child_pid": 38010,
+    "wrapper_pid": 38006,
+    "child_started_utc": "2026-09-02T10:24:04Z",
+    "locks_released_utc": "2026-09-02T12:47:31Z",
+    "child_returncode": -2,
+    "latest_emitted_record_call_per_image": 260,
+    "latest_emitted_record_I_perp": 44.15895,
+    "emitted_raw_record_count": 325,
+    "emitted_duplicate_call_levels": 63,
+    "emitted_extra_duplicate_records": 65,
+    "call_260_was_emitted_twice": true,
+    "lifetime_optimization_N_F": "not inferred from the last emitted call because interruption occurred inside the next physical query",
+    "scientific_interpretation": "none; this was a user-directed termination of an output-only replay, not evidence that IR-IVM failed to converge"
+  },
+  "outputs": {
+    "runtime_result_count": 0,
+    "runtime_audit_count": 0,
+    "verified_all_paths_bundle_count": 0,
+    "output_directory_file_count_at_receipt": 0,
+    "partial_log_is_not_a_scientific_result": true
+  },
+  "process_and_lock_postcondition": {
+    "launch_receipt_status": "CHILD_EXITED_LOCKS_RELEASED",
+    "child_pid_exited": true,
+    "both_remote_host_local_BB_locks_released": true
+  },
+  "supersession": {
+    "R2_registration_may_not_be_reused": true,
+    "R2_authorization_may_not_be_reused": true,
+    "R2_label_and_output_may_not_be_reused": true,
+    "R2_partial_log_may_not_be_used_as_a_completed_path_history": true,
+    "R2_sources_and_termination_artifacts_must_be_preserved": true,
+    "replacement_requires_new_registration_authorization_label_and_output": true
+  },
+  "bindings": {
+    "R2_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_ALL_PATHS_REPLAY_NF9990_20260902_R2.json",
+      "sha256": "363c1c3ba3ef164bf246539f406c16eb52570e2d457a8ff2232b358422050065"
+    },
+    "R2_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_allpaths_r2.json",
+      "sha256": "1dc6d762b0c9d445ad12634633e5d11abd7b6fd3a296092d75125e37a3a177fa"
+    },
+    "R2_launch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_allpaths_r2.launch.json",
+      "sha256": "a5bb7a46f656bc07f5d659f1a63d4818925f8180bc3948f906dc488cc7d2367f"
+    },
+    "R2_stdout_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/logs/bb_irivm_a1e0_r01_m05_inf9990_allpaths_r2.log",
+      "sha256": "64191c95dee68e99e314e0d59fb9a4828272d49399fe3f12e1017d3328e8a3b9"
+    },
+    "R2_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_all_paths_replay_r2.py",
+      "sha256": "1c803fc6e86d561d5abb0793a0ac7e3228fffaf32252f49abec06501feb7316f"
+    }
+  }
+}

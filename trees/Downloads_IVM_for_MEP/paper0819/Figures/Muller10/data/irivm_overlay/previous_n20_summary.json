@@ -1,0 +1,38 @@
+{
+  "algorithm_sha256": "af813409f2b2293d86891f6e90c00a2cb294c4fa50e52fe6b3bb5cd78fefd44a",
+  "alpha": 0.001,
+  "budget": 3000,
+  "checkpoint_count": 98,
+  "i_perp_rise_count": 1,
+  "m_max": 8,
+  "maximum_i_perp_rise": 10385.322626009618,
+  "n_internal": 20,
+  "nof_breakdown": {
+    "direct_spring_check": 40,
+    "initial_band": 20,
+    "normal_subproblem": 56,
+    "recovery_band_trial": 2207,
+    "synchronized_recovery_trial": 40
+  },
+  "nof_per_image_sum": 2363,
+  "public_state_count": 116,
+  "r": 0.3,
+  "rise_events": [
+    {
+      "after": 25360.379614046906,
+      "before": 14975.056988037288,
+      "nof": 80,
+      "phase": "trusted_provisional_expand",
+      "rise": 10385.322626009618,
+      "state_index": 3
+    }
+  ],
+  "stop_reason": "zero_nof_safety_limit",
+  "strict_barrier_count": 98,
+  "strict_i_perp_count": 98,
+  "strict_joint_count": 98,
+  "terminal_nof": 2363,
+  "trajectory_relative_path": "trajectory.npz",
+  "trusted_nonmonotone_public_commits": 1,
+  "variant": "exact_envelope"
+}

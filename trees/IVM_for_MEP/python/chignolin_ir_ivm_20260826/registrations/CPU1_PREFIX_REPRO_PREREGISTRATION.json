@@ -1,0 +1,34 @@
+{
+  "experiment_id": "chignolin_ir_ivm_cpu1_prefix_repro_20260826_v1",
+  "status": "preregistered_before_first_cpu1_openmm_run",
+  "reason": "Two-thread OpenMM produced non-bitwise forces before the first optimization step and caused a later recovery-acceptance branch. The article Chignolin V9 baseline uses one OpenMM CPU thread.",
+  "algorithm_identity": {
+    "name": "IR-IVM",
+    "alpha": 10.0,
+    "residual_ratio_r": 0.5,
+    "inner_max_steps_m_max": 5,
+    "physical_max_step_angstrom": 1.0,
+    "eta": 1.1,
+    "reparameterization": "mandatory state_curve every outer iteration with per_image direct acceptance and recovery"
+  },
+  "only_execution_change": {
+    "OPENMM_CPU_THREADS": 1,
+    "algorithm_change": false
+  },
+  "runs_in_order": [
+    {
+      "internal_nf_budget": 1500,
+      "replicate_tag": "prefix"
+    },
+    {
+      "internal_nf_budget": 5000,
+      "replicate_tag": "prefix"
+    }
+  ],
+  "validation": [
+    "Both runs must pass the 22-image Number of Forces audit.",
+    "Only the initial path and reparam_committed states are scientifically eligible.",
+    "The 1500-budget history must be an exact prefix of the 5000-budget history through every record completed before the shorter budget boundary.",
+    "Dense Delta E is diagnostic and excluded from the optimization Number of Forces axis."
+  ]
+}

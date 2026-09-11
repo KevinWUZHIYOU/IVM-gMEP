@@ -1,0 +1,47 @@
+{
+  "schema": "bb-remote-obsolete-data-cleanup-receipt-v1",
+  "status": "PASS_EXACT_TARGETS_DELETED_AND_VERIFIED",
+  "created_utc": "2026-09-02T12:24:33Z",
+  "host": "wuzhiyou@100.74.85.3",
+  "authorization_basis": "User explicitly requested cleanup of obsolete, poor-performing, abandoned historical data; targets were narrowed by read-only checks.",
+  "purpose": "Free enough remote space for preregistered arc-length-500 joint energy/full-force diagnostic shards without lowering the disk reserve gate.",
+  "protected_scope": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+  "protected_scope_reference_matches": 0,
+  "open_file_or_process_matches": 0,
+  "targets": [
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/deeplr_s112_c40_frozenh28_ffrbk_long_postfail",
+      "size_kib_before": 1250680,
+      "file_count_before": 5100,
+      "classification": "old post-failed-gate exploratory run",
+      "evidence": {
+        "summary_status": "complete_work_cap",
+        "post_failed_gate_exploratory": true,
+        "transaction_state": "idle",
+        "summary_nf9962_sha256": "884531f741c501c079d76cbba625f3483694c6f99fad4260a8fc836536b70e3a",
+        "transaction_state_sha256": "e6c9afb372b68e9484b572a31d7cbec7ce16303f03d49b67002a3cacfe35c3bc",
+        "configuration_sha256": "45e8a24348bc27af232416edc7e6ee8fc6d55c6fb7627626dc57098dc50b2915"
+      }
+    },
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/tmp",
+      "size_kib_before": 62756,
+      "file_count_before": 8,
+      "classification": "temporary scratch data from the same superseded historical project",
+      "evidence": {
+        "representative_scratch_script_sha256": "a0dc056e6bffc84801f1d365c97b55b18df27c290d599e6dc5dca3c9315e7777",
+        "representative_temporary_state_sha256": "5fe393134c24012e99a7cb09113e4681b362c76bfb25fe74618e1e630b2be1ac"
+      }
+    }
+  ],
+  "deletion_scope": "exactly the two listed paths; no glob, parent directory, campaign data, baseline, or Mutagen session data",
+  "recovery": "Deleted bulk files are not recoverable from this receipt; the receipt preserves target identity and key metadata hashes.",
+  "postdelete_verification": {
+    "verified_utc": "2026-09-02T12:25:32Z",
+    "both_exact_targets_absent": true,
+    "filesystem_free_kib_after": 8953760,
+    "filesystem_free_gib_after": 8.538970947265625,
+    "estimated_freed_kib_from_predelete_sizes": 1313436,
+    "current_campaign_untouched": true
+  }
+}

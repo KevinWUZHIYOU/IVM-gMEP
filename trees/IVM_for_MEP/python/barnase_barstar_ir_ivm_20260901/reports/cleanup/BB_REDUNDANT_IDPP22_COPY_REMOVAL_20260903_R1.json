@@ -1,0 +1,35 @@
+{
+  "schema": "bb-redundant-copy-removal-v1",
+  "timestamp_hkt": "2026-09-03T01:30:00+08:00",
+  "authorization": "User explicitly authorized deletion of obsolete unused data on both local and remote hosts when space is needed.",
+  "reason": "Free local disk for the preregistered ASE ODE-NEB k-screen while preserving all unique path, energy, and force records.",
+  "validation": {
+    "content_check": "rsync -a -n -i --checksum",
+    "result": "All payload contents matched the audited authoritative copies; dry-run output contained metadata timestamp updates only.",
+    "lsof": "No open files in removed trees, as established by the preceding read-only storage audit.",
+    "recoverable": true
+  },
+  "removed": [
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/ng_c42_spline_ivm_ff_plbfgs",
+      "bytes": 291876048,
+      "authoritative_copy": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_idpp22_20260804_audited/runs/ng_c42_spline_ivm_ff_plbfgs"
+    },
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/online_one_step_ff_rbk_c42_ivm22/online_one_step_ff_rbk_nf600_remote_r2_20260807",
+      "bytes": 830445347,
+      "authoritative_copy": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_idpp22_20260804_audited/runs/online_one_step_ff_rbk_c42_ivm22/online_one_step_ff_rbk_nf600_remote_r2_20260807"
+    },
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/online_one_step_ff_rbk_c42_ivm22/online_one_step_ff_rbk_nf1000_remote_r2_20260807",
+      "bytes": 1391176832,
+      "authoritative_copy": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_idpp22_20260804_audited/runs/online_one_step_ff_rbk_c42_ivm22/online_one_step_ff_rbk_nf1000_remote_r2_20260807"
+    }
+  ],
+  "total_bytes": 2513498227,
+  "post_removal_available_kib": 5369848,
+  "post_checks": {
+    "removed_paths_absent": true,
+    "authoritative_copies_present": true
+  }
+}

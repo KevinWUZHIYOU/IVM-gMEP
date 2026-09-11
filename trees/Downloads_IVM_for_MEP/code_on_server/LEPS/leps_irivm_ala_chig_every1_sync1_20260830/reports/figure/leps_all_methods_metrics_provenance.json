@@ -1,0 +1,74 @@
+{
+  "candidate_preview": {
+    "alpha": 100.0,
+    "check_count": 21,
+    "first_failed_nf": 150,
+    "last_available_path_nf": 1549,
+    "m_max": 5,
+    "mean_joint_ratio": 0.18667565371357694,
+    "passing_checks": 19,
+    "r": 0.001,
+    "result": "leps_irivm_ala_chig_every1_sync1_20260830/runs/356307bb5a618535.npz",
+    "run_id": "356307bb5a618535",
+    "stop_reason": "stationary",
+    "strict_pass": false,
+    "terminal_article_nf": 1587,
+    "worst_joint_ratio": 1.0648296617000004
+  },
+  "figure": "output/pdf/leps_all_methods_metrics_single_sync_preview.pdf",
+  "figure_sha256": "1a03ee2f97e14bc92b08206bc85a9ea40d98c0fe202d4fefa4a1fc56427bb0c6",
+  "formal_replacement_authorized": false,
+  "formal_replacement_reason": "single synchronized recovery passes 19 of 21 registered same-NoF checks and misses the densified barrier criterion at NoF 150 and 278",
+  "frozen_plot_primitives": {
+    "path": "ir_ivm_qm10_v2p20_microrefine_20260829/src/remake_leps_all_methods.py",
+    "sha256": "8ee8b750f899b886a80ad2aeab0b52ec9239f5e425301f35f12af9c3bb67cf2e"
+  },
+  "ir_ivm_marker_contract": {
+    "completed_outer_iteration_count": 28,
+    "initial_state_count": 1,
+    "marker_every": 1,
+    "meaning": "one marker for the initial state and every completed outer iteration",
+    "plotted_ir_ivm_state_count": 29
+  },
+  "metric_contract": {
+    "densified_barrier": "500 total coordinate-wise linearly interpolated points",
+    "i_perp": "article Henkelman-Jonsson improved-tangent integral",
+    "number_of_forces": "uncached joint energy-force evaluations over the 20 internal images"
+  },
+  "plot_script": "leps_irivm_ala_chig_every1_sync1_20260830/src/remake_leps_all_methods_preview.py",
+  "plot_script_sha256": "d75d66af46fadd638bbf0a5ee120d0d4c8fbe5cdfb8c56cfd08fb729fa88c884",
+  "plotted_results": {
+    "Article IVM": {
+      "path": "runs/ivm/ivm_production_alpha30_tight_reparam_cfg29674d42197b_budget500.npz",
+      "sha256": "2f43cd57182af04de40fd33ef4a825ec49cfe0e9c9d6f24f43a800367be6e65c"
+    },
+    "IR-IVM": {
+      "path": "leps_irivm_ala_chig_every1_sync1_20260830/runs/356307bb5a618535.npz",
+      "sha256": "3b15974315d318dce5c2cdc0cf0f7d9474cce3936c03a2fb581af5c47092d740"
+    },
+    "OBSM-FIRE": {
+      "path": "runs/obsm_fire/production_fire_stable_l0.85_n4_dt0.18_cfgc5d07bd3b321_budget3000.npz",
+      "sha256": "24dc2c8882d3cab39861fb69a8630b317532f26a79bd6c7fb913a1ce23faa456"
+    },
+    "OBSM-L-BFGS": {
+      "path": "runs/obsm_lbfgs/production_lbfgs_r5_l0.95_n1_s0.1_cfg78c1b29f7570_budget3000.npz",
+      "sha256": "b5ae71ab114e8dffb90be582b327c1c6468f13123289b4358cdd3ea143be22cb"
+    },
+    "ODE-NEB": {
+      "path": "runs/neb/neb_production_k10_cfgfe491f5a6c6f_budget5000.npz",
+      "sha256": "ae0c2bbf3f8fa8539bcaffaa98e0298b5f90661f145fcb5e7a5c6b61c4548b0a"
+    },
+    "Original String": {
+      "path": "runs/original_string/production_original_dt0.07_r1_cfg6446cefea5fd_budget3000.npz",
+      "sha256": "c480e8520ff37b493e20c8dd476655aee58d0ebbd119360eccd74f8971f1a4cd"
+    },
+    "Static-NEB": {
+      "path": "runs/neb/production_static_k10_dt0.05_cfgba1c63497f9a_budget3000.npz",
+      "sha256": "a8daa64a59d7316c4546f47591cbfcdd509c3744eb0def2390c3951c5cdcb046"
+    }
+  },
+  "selection_manifest": "leps_irivm_ala_chig_every1_sync1_20260830/reports/acceptance/selection_manifest.json",
+  "selection_manifest_sha256": "282ebaa9ab7c7c65c222c5ef66b4dceb41e165cb264d8ca1bcb11e07090596e3",
+  "source_csv": "leps_irivm_ala_chig_every1_sync1_20260830/reports/figure/leps_all_methods_metrics_source.csv",
+  "source_csv_sha256": "b63126886b5ce8025d1285b6d6c94246abd25ed61586d961fb5dd72516bc0d12"
+}

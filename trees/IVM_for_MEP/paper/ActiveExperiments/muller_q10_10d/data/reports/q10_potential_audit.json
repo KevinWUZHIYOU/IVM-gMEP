@@ -1,0 +1,23 @@
+{
+  "case": "unperturbed fixed-Q 10D Muller-Brown",
+  "contains_sincos_perturbation": false,
+  "coordinate_convention": "z = Q @ x; x = Q.T @ z",
+  "dimension": 10,
+  "endpoint_end_roundtrip_inf_error": 5.810933157614122e-16,
+  "endpoint_start_roundtrip_inf_error": 2.9024834677458514e-16,
+  "harmonic_energy_increment_expected": 0.18,
+  "harmonic_energy_increment_observed": 0.18000000000000682,
+  "harmonic_gradient_expected": 1.2,
+  "harmonic_gradient_observed": 1.2,
+  "initial_path_roundtrip_inf_error": 2.876895894327289e-15,
+  "max_finite_difference_absolute_error": 1.5266294894900057e-08,
+  "max_finite_difference_relative_error": 1.360410502161303e-08,
+  "max_force_plus_gradient_error": 0.0,
+  "max_gradient_covariance_error": 6.654313296943545e-13,
+  "max_scalar_batch_energy_error": 0.0,
+  "orthogonality_inf_error": 2.0464075346237923e-15,
+  "passed": true,
+  "q_seed": 0,
+  "q_sha256_float64_c_order": "372962a47504e6df28a20d8b022482a6835680765434b4385a6dba0e826974bc",
+  "qr_reconstruction_inf_error": 4.343747583845925e-15
+}

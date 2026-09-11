@@ -1,0 +1,216 @@
+{
+  "bb_core": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+    "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "contract_freezer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_ode_neb_late_four_joint_ef_contract.py",
+    "sha256": "5ae39e48186821a76ccd8a1e4092e79ddb5b0ed35ffffcf2c5b22a0d4f42f853"
+  },
+  "durability_policy": {
+    "atomic_complete_path_shard": true,
+    "failed_or_open_attempt_requires_superseding_registration": true,
+    "individual_incomplete_attempt_success_reuse": false,
+    "no_overwrite": true,
+    "restart_reuse_unit": "complete_fully_validated_path_shard_only",
+    "separate_paid_source_and_dense_append_only_fsync_WAL": true,
+    "shard_contains_dense_coordinates_energy_full_force": true,
+    "shard_contains_paid_internal_energy_full_force": true
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_ode_neb_late_four_joint_ef.py",
+    "sha256": "fbd0612b9ace3378f0314f2bf14460c2e5024d8b90f69affd733a4a4664eea0e"
+  },
+  "frozen": true,
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "local",
+  "isolation": {
+    "early_four_results_modified": false,
+    "early_four_results_read": false,
+    "late_four_namespace_only": true
+  },
+  "jobs": 1,
+  "joint_engine": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+    "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+  },
+  "method": "ODE-NEB",
+  "metric_policy": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_energy_and_force_same_call": true,
+    "dense_fixed_endpoint_joint_EF_calls": 2,
+    "dense_force_storage": "complete_full_force_vector_for_every_point",
+    "dense_physical_call": "one_joint_energy_full_force_getState_per_point",
+    "discrete_I_perp_implementation": "bb_core.path_diagnostics",
+    "discrete_I_perp_source": "sealed_paid_30_internal_force_receipt",
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "original_fixed_endpoint_diagnostic_calls": 0,
+    "sampling": "uniform_cartesian_arclength"
+  },
+  "ode_paid_ledger_validator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_targeted_ode_neb_arc500.py",
+    "sha256": "f7ac46f21057fee888eb4d3af8c9aeacfde0af4dbbf1d8545f2ce23e49ce1242"
+  },
+  "official_paid_ledger": {
+    "frozen_endpoints": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/frozen_endpoints_A.npy",
+      "sha256": "2a5a48c2a42fc3952384d7da7c12d17ffd5f4e0fc5f19f26ccc6b56f5e571d38"
+    },
+    "optimization_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/OPTIMIZATION_AUDIT.json",
+      "sha256": "5f84495087e0e9ea91feb29b33603301a8157f027a07407316eb115194c43cc3"
+    },
+    "optimization_complete": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/OPTIMIZATION_COMPLETE.json",
+      "sha256": "6dc07e421d49d303d6b174ada620e243145cf59ce7c6e1ce42711eaf73f8665e"
+    },
+    "optimization_wal": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/optimization_force_wal.jsonl",
+      "sha256": "6eec7bed765a30e8c777d5922c1a3362c95c1d92ba0489397182e079a1d94792"
+    }
+  },
+  "paths": [
+    {
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_complete_path_shard",
+      "discrete_I_perp": 21120.477930239103,
+      "host_role": "local",
+      "label": "ODE-NEB_NF2040",
+      "method": "ODE-NEB",
+      "official_path32_sha256": "325131ed0c90f20df1cd17579a6b7b01817e468162f151134bcc541137f65671",
+      "optimization_N_F": 2040,
+      "original_discrete_policy": "reuse_exact_paid_30_internal_joint_EF_receipt_zero_new_calls",
+      "paid_force_receipt": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/milestone_force_receipts/nf02040_batch_0068_EF30.npz",
+        "sha256": "4fb5af55fcddbf1299d0a4483162607c7295ea4a19e8bda73dee3480723a6400"
+      },
+      "paid_internal_energy_sha256": "6f8c009b7136e4b366695e5bc2334b6cc6453161022bc8bcc6ebd66d78cd3e82",
+      "paid_internal_force_sha256": "2c3615bdb3773eeb75056e97c8c2ae8433bbd43b6be9be60c26a18b7d73f36f1",
+      "path_identifier": {
+        "disposition": "accepted",
+        "optimization_N_F": 2040,
+        "paid_batch_id": 68,
+        "source_batch_id": 68
+      },
+      "path_sha256": "01935fb657b4b1d102564a496d86598df72a1b6db33ce5f0da5ec5546c1a16b0",
+      "source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0068_paid_coordinates30_A.npz",
+        "sha256": "2cc44ffa9177dc469725bf4198f81a64677593eaa028128c6a977548be7d8e84"
+      }
+    },
+    {
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_complete_path_shard",
+      "discrete_I_perp": 4371.16533670238,
+      "host_role": "local",
+      "label": "ODE-NEB_NF4080",
+      "method": "ODE-NEB",
+      "official_path32_sha256": "eb21e326ccbefe8919c022bfc842ae0b6518de0136f4ef2336bb57a8af9a2461",
+      "optimization_N_F": 4080,
+      "original_discrete_policy": "reuse_exact_paid_30_internal_joint_EF_receipt_zero_new_calls",
+      "paid_force_receipt": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/milestone_force_receipts/nf04080_batch_0136_EF30.npz",
+        "sha256": "2905e8f488690c81706a7a04bc25a67e43152266ed48809e37a7640ad12f96af"
+      },
+      "paid_internal_energy_sha256": "c2b921327920cce5291d65240105a6dd2cad7f9874eb3e68b62b9e1fda548862",
+      "paid_internal_force_sha256": "99e04b903b3ffc9e207ffedd970ef9ad9809f40a0def513b253b1c903f3cb93a",
+      "path_identifier": {
+        "disposition": "accepted",
+        "optimization_N_F": 4080,
+        "paid_batch_id": 136,
+        "source_batch_id": 136
+      },
+      "path_sha256": "b28a7222e61e457eae7e3b3dcfd90f83fec6b78728d64497914e1f607f4343d7",
+      "source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0136_paid_coordinates30_A.npz",
+        "sha256": "20f1854187b261c14ee09313f07a6346b27694beea9a53d5e23b0ccd3f41f351"
+      }
+    },
+    {
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_complete_path_shard",
+      "discrete_I_perp": 1387.2479290694707,
+      "host_role": "local",
+      "label": "ODE-NEB_NF8160",
+      "method": "ODE-NEB",
+      "official_path32_sha256": "ce608f83f1ed0c2c1a924fdbd783ce24bfcba51cab72d27cba1bba590484df8c",
+      "optimization_N_F": 8160,
+      "original_discrete_policy": "reuse_exact_paid_30_internal_joint_EF_receipt_zero_new_calls",
+      "paid_force_receipt": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/milestone_force_receipts/nf08160_batch_0272_EF30.npz",
+        "sha256": "4ff05ae21183fdf6a6118ef747cc96071e42c30357445656aa843195d4c25a33"
+      },
+      "paid_internal_energy_sha256": "2797754fcad0f6067155b6407c3b132ef1d47111a2da90e04331bffd4fd5312b",
+      "paid_internal_force_sha256": "425e07c7eebee7fa7d2d6fa3699f64c32eae786ae2bff115716f6dd20e1d0678",
+      "path_identifier": {
+        "disposition": "accepted",
+        "optimization_N_F": 8160,
+        "paid_batch_id": 272,
+        "source_batch_id": 272
+      },
+      "path_sha256": "544b19638a79182cc665cc3e40c3cef2c69e9944db19dcf6ee6eecbe5a562c20",
+      "source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0272_paid_coordinates30_A.npz",
+        "sha256": "f971c18c2021f0e550cde51dc0a1f4767e53be7583286bf8e9a2800c9ab7c6a6"
+      }
+    },
+    {
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_complete_path_shard",
+      "discrete_I_perp": 631.9043986870009,
+      "host_role": "local",
+      "label": "ODE-NEB_NF9990",
+      "method": "ODE-NEB",
+      "official_path32_sha256": "3b017361c8922cfa07013a6240b0bf7f608f406449865535c66deee6944fb500",
+      "optimization_N_F": 9990,
+      "original_discrete_policy": "reuse_exact_paid_30_internal_joint_EF_receipt_zero_new_calls",
+      "paid_force_receipt": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf09990_batch_0333_EF30.npz",
+        "sha256": "0f8c84b0e11fa191db9163c13fca8f10504aa685952a4c728b4043b5eba40ae0"
+      },
+      "paid_internal_energy_sha256": "7a61e00166653944032af7e98562769b6c9f8de77eb0ac07088efefafc5076ab",
+      "paid_internal_force_sha256": "d1a98287e4661634810723f7fd19142e6d76d3c45273abf2816139525e8fce94",
+      "path_identifier": {
+        "disposition": "accepted",
+        "optimization_N_F": 9990,
+        "paid_batch_id": 333,
+        "source_batch_id": 333
+      },
+      "path_sha256": "4c40f30af44fdbda87684d887136bcb1b71f6b20f6785892d50fd10ffcfdff09",
+      "source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0333_paid_coordinates30_A.npz",
+        "sha256": "7dd2411869c4128f6e15e9568dab027fd3c7da8d105254302aa6224283f213a5"
+      }
+    }
+  ],
+  "physical_call_policy": {
+    "all_six_thread_caps": 1,
+    "dense_full_force_storage": true,
+    "failed_or_open_attempt_retry_under_same_contract": false,
+    "fresh_dense_joint_EF_successes_per_path": 500,
+    "fresh_dense_joint_EF_successes_total": 2000,
+    "jobs": 1,
+    "maximum_attempt_started_records": 2000,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_new_calls": 0,
+    "paid_internal_joint_EF_values_reused_per_path": 30,
+    "two_canonical_host_local_fcntl_locks": true
+  },
+  "purpose": "late ODE--NEB cost-to-precision support at NF2040/4080/8160/9990 with paid discrete I_perp and fresh same-call arc500 energy/full-force",
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.npz",
+  "schema": "bb-ode-neb-late-four-arc500-joint-ef-contract-v1",
+  "status": "FROZEN_BEFORE_ANY_LATE_FOUR_OPENMM_OR_PHYSICAL_CALL",
+  "storage_policy": {
+    "aggregate_role": "index_metrics_and_plot_energy_only_no_duplicate_dense_coordinates_or_forces",
+    "authoritative_unit": "complete_atomic_path_shard",
+    "estimated_uncompressed_shard_bytes_per_path": 88217024,
+    "minimum_free_bytes_reserve": 8589934592
+  },
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  }
+}

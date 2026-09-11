@@ -1,0 +1,56 @@
+{
+  "IVM": {
+    "number_of_paths": 29,
+    "first_nof": 20,
+    "last_plotted_nof": 1528,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 1.7951584608504483,
+    "minimum_observed_action_eV": 1.7927613143384924,
+    "nof_at_minimum_observed_action": 517
+  },
+  "ODE-NEB": {
+    "number_of_paths": 930,
+    "first_nof": 20,
+    "last_plotted_nof": 20000,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 1.8525728745462033,
+    "minimum_observed_action_eV": 1.8525728745462033,
+    "nof_at_minimum_observed_action": 20000
+  },
+  "Static-NEB": {
+    "number_of_paths": 1000,
+    "first_nof": 20,
+    "last_plotted_nof": 20000,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 7.501866583980564,
+    "minimum_observed_action_eV": 6.585710799626976,
+    "nof_at_minimum_observed_action": 7480
+  },
+  "Original String": {
+    "number_of_paths": 1000,
+    "first_nof": 20,
+    "last_plotted_nof": 20000,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 23.129422083492397,
+    "minimum_observed_action_eV": 10.026923918457129,
+    "nof_at_minimum_observed_action": 140
+  },
+  "OBSM-FIRE": {
+    "number_of_paths": 200,
+    "first_nof": 20,
+    "last_plotted_nof": 19920,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 1.66259993254953,
+    "minimum_observed_action_eV": 1.66259993254953,
+    "nof_at_minimum_observed_action": 19920
+  },
+  "OBSM-L-BFGS": {
+    "number_of_paths": 418,
+    "first_nof": 20,
+    "last_plotted_nof": 19985,
+    "initial_action_eV": 10.709383931470192,
+    "last_action_eV": 7.621216295869827,
+    "minimum_observed_action_eV": 6.58812553321963,
+    "nof_at_minimum_observed_action": 8743
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "bindings": {
+    "endpoint_joint_EF_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "joint_EF_engine": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+      "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+    },
+    "preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_PREREG_NF15000_20260902_R3.json",
+      "sha256": "0957e5f432173a6b8aa972310391e74f0e244f9bab10e661c7e7218650be8b8e"
+    },
+    "selector_and_plan_freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_cost_only_late_six_r3.py",
+      "sha256": "9eb8ff190e68d1fea0b200145dfd326e99bc24fef561a02279a8829308f84979"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-02T14:08:52.417756+00:00",
+  "execution_authorized_by_this_file": false,
+  "frozen": true,
+  "future_contract_requirements": {
+    "arc500_coordinates_energy_full_force_materialized_per_path": true,
+    "bind_R5B_manifest_index_and_selected_full_state_shards": true,
+    "bind_selection_and_both_R5B_verifiers": true,
+    "cross_host_shard_outputs_must_not_overlap": true,
+    "future_freezer_and_evaluator_must_be_hash_bound_before_authorization": true,
+    "one_fresh_joint_energy_full_force_call_per_nonendpoint_dense_point": true,
+    "remote_local_role_sets_disjoint_and_union_all_six": true,
+    "reuse_original32_joint_EF": true,
+    "reuse_two_fixed_endpoints": true
+  },
+  "future_pipeline_order": [
+    "R5B primary verifier PASS",
+    "R5B supplemental verifier PASS",
+    "cost-only selector freezes six paths",
+    "Mutagen flush and exact file-hash equality on both hosts",
+    "freeze disjoint remote4 and local2 contracts",
+    "issue separate host-specific authorizations after zero-OpenMM preflights",
+    "launch remote4 and local2 concurrently, one BB job per host",
+    "join six complete shards and validate aggregate with zero OpenMM"
+  ],
+  "local_two": {
+    "Mutagen_session": {
+      "identifier": "sync_EaEvvA9594NRGtMQSN0jneepyUq2tCef27jljwXXPc9",
+      "name": "bb-irivm-20260901"
+    },
+    "append_only_fsync_WAL": true,
+    "atomic_complete_path_shards": true,
+    "dual_host_local_fcntl_locks": [
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "future_authorization": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json",
+    "future_contract": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+    "future_result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_local2_arc500_joint_ef_20260902_r3.npz",
+    "host_role": "local",
+    "identity": {
+      "hostname": "wuzhiyoudeMacBook-Air-206.local",
+      "machine": "arm64",
+      "platform": "Darwin"
+    },
+    "jobs": 1,
+    "later_execution_authorization_required": true,
+    "no_overwrite": true,
+    "open_failed_or_incomplete_path_fails_closed": true,
+    "selection_roles": [
+      "nearest_unused_to_NF2000",
+      "nearest_unused_to_NF4000"
+    ],
+    "thread_caps": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "remote_four": {
+    "Mutagen_session": {
+      "identifier": "sync_EaEvvA9594NRGtMQSN0jneepyUq2tCef27jljwXXPc9",
+      "name": "bb-irivm-20260901"
+    },
+    "append_only_fsync_WAL": true,
+    "atomic_complete_path_shards": true,
+    "dual_host_local_fcntl_locks": [
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "future_authorization": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json",
+    "future_contract": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+    "future_result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_remote4_arc500_joint_ef_20260902_r3.npz",
+    "host_role": "remote",
+    "identity": {
+      "address": "100.74.85.3",
+      "hostname": "Mac-mini.local",
+      "machine": "arm64",
+      "platform": "Darwin"
+    },
+    "jobs": 1,
+    "later_execution_authorization_required": true,
+    "no_overwrite": true,
+    "open_failed_or_incomplete_path_fails_closed": true,
+    "selection_roles": [
+      "highest_legal_NF_not_above_15000",
+      "nearest_unused_to_NF8982",
+      "nearest_unused_to_NF8000",
+      "nearest_unused_to_NF6000"
+    ],
+    "thread_caps": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "schema": "bb-irivm-r5b-cost-only-late-six-dual-host-template-v3",
+  "selection_or_R5B_final_artifacts_read": false,
+  "status": "FROZEN_ZERO_PHYSICAL_REMOTE4_LOCAL2_PLAN",
+  "wall_clock_reasoning": "each path has 498 expected fresh calls; four paths at 2x remote throughput balance two paths at 1x local throughput",
+  "workload": {
+    "expected_fresh_calls_local": 996,
+    "expected_fresh_calls_per_path": 498,
+    "expected_fresh_calls_remote": 1992,
+    "expected_fresh_calls_total": 2988,
+    "optimization_N_F_contribution": 0,
+    "selected_paths": 6,
+    "stored_arc500_joint_EF_values_total": 3000
+  }
+}

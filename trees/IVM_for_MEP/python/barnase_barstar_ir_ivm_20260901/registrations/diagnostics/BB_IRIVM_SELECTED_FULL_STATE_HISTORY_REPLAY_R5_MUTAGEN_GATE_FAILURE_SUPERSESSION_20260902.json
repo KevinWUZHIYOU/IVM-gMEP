@@ -1,0 +1,33 @@
+{
+  "schema": "bb-irivm-full-state-r5-zero-physical-mutagen-gate-failure-supersession-v1",
+  "status": "R5_PRELAUNCH_GATE_FAILED_CLOSED_SUPERSEDED_BY_R5B_NO_PHYSICAL_CALLS",
+  "created_utc": "2026-09-02T13:13:03Z",
+  "failed_stage": "canonical Mutagen gate generation",
+  "observed_exception": "RuntimeError: Mutagen session not uniquely listed",
+  "root_cause": "The Python string passed a literal backslash-n to the Mutagen Go template, so all sessions were returned on one logical line and the exact-session parser correctly failed closed.",
+  "physical_execution": {
+    "OpenMM_imported_or_called": false,
+    "optimization_N_F": 0,
+    "runtime_output_directory_created": false,
+    "canonical_Mutagen_gate_created": false,
+    "locks_acquired_for_execution": false
+  },
+  "supersession": {
+    "replacement_identity": "R5B",
+    "old_registration_and_authorization_preserved_read_only": true,
+    "old_registration_or_authorization_may_be_reused": false,
+    "replacement_requires_new_registration_authorization_gate_label_and_output": true,
+    "allowed_runtime_change_beyond_the_already_user_authorized_15000_budget": "identity paths only; numerical algorithm controls remain unchanged"
+  },
+  "bindings": {
+    "superseded_R5_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5.json",
+      "sha256": "f05fcf91d8a142b8dd91e47e0bf6521229b83ce8a5755dd372f29c772b4ffdaa"
+    },
+    "superseded_R5_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5.json",
+      "sha256": "95d3afad3f52885c284b38c902b6276bf61161d345ca41f8eba96a5e8342d98b"
+    },
+    "superseded_R5_runner_source_sha256": "1f7cfb032430ad8429949cf61ec06800715f49fec7c10306f258a39e90c497cc"
+  }
+}

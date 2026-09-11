@@ -1,0 +1,96 @@
+{
+  "campaign_id": "chignolin_ir_ivm_transfer_20260826_v1",
+  "registered_before_first_openmm_run": true,
+  "source_figure": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_cost_to_precision_total_nf_v9_20260730.pdf",
+    "sha256": "c56e61e7575b7f1cc784b946bd37e65682204579f7f85c3115b200b2dbdf37ff"
+  },
+  "baseline": {
+    "method": "current Chignolin V9 IVM",
+    "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a1_central_state_ivm_cfg9b5a238786a3_budget650.npz",
+    "result_sha256": "04a29ae267b3c6b953dac25e33db462a27d80574cc5510feb070484ea02f8691",
+    "iperp_threshold": 0.21242215133173672,
+    "iperp_first_passage_total_nf": 1382,
+    "dense_barrier_threshold_kcal_mol": 24.168121352641172,
+    "dense_barrier_first_passage_total_nf": 1502,
+    "last_complete_state_under_10000_total_nf": {
+      "total_nf": 9969,
+      "iperp": 0.029596057873027555,
+      "dense_barrier_kcal_mol": 20.6810004634525
+    }
+  },
+  "system": {
+    "n_images": 22,
+    "n_internal_images": 20,
+    "n_atoms": 166,
+    "path_shape": [22, 498],
+    "initial_path_array_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+    "topology_sha256": "04b122a0b98492b6fadae35772ffc307b8916ea65c8eaf959cb5187bbbfeab01",
+    "force_field": ["amber14-all.xml", "implicit/gbn2.xml"],
+    "nonbonded_method": "NoCutoff",
+    "openmm_platform": "CPU",
+    "precision": "double",
+    "openmm_cpu_threads": 2
+  },
+  "algorithm_invariants": {
+    "mandatory_reparameterization": "state_curve after every outer iteration",
+    "reparameterization_direct_acceptance": "per_image",
+    "reparameterization_recovery": "unchanged Ala transaction with bicriteria merge",
+    "outer_globalization": "iperp_monotone",
+    "selector": "one_way_takeover",
+    "eta": 1.1,
+    "history": 7,
+    "kkt_absolute_tolerance": 0.0,
+    "physical_max_step_angstrom": 1.0,
+    "energy_backtracking_on_primary_selected_step": false
+  },
+  "allowed_controls": {
+    "alpha": [0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0],
+    "relative_residual_r": [0.1, 0.3, 0.5, 0.7, 0.8],
+    "inner_whole_band_step_cap_m_max": [5, 8, 10, 15, 20, 50]
+  },
+  "cost_definition": {
+    "optimization_total_nf": "sum of joint energy-force cache misses over all 22 images",
+    "internal_budget": 5000,
+    "expected_endpoint_calls": 2,
+    "maximum_paper_total_nf": 5002,
+    "rejected_and_recovery_trials_are_charged": true,
+    "densified_diagnostic_calls_are_excluded": true,
+    "only_complete_initial_or_reparameterization_committed_states_are_eligible": true
+  },
+  "stages": [
+    {
+      "name": "smoke",
+      "settings": {"alpha": 10.0, "r": 0.5, "m_max": 5},
+      "internal_nf_budget": 240,
+      "purpose": "verify the full update, mandatory reparameterization, recovery, and force-call ledger"
+    },
+    {
+      "name": "ala_anchor",
+      "settings": {"alpha": 10.0, "r": 0.5, "m_max": 5},
+      "internal_nf_budget": 1500,
+      "purpose": "test the best Ala setting directly at the current Chignolin first-passage window"
+    },
+    {
+      "name": "sequential_three_parameter_screen",
+      "rule": "scan alpha first at r=0.5,m_max=5; scan all r at the best alpha; scan all m_max at the best alpha and r; extend the best three settings to 5000 internal NF",
+      "screen_internal_nf_budget": 1500,
+      "tie_break": "lower I_perp at the same measured total NF, then lower sparse barrier"
+    },
+    {
+      "name": "interaction_expansion_if_needed",
+      "rule": "if sequential tuning does not beat current V9 IVM, expand within the registered alpha-r-m_max Cartesian grid, prioritizing neighboring and then all remaining settings; no fourth control is allowed"
+    }
+  ],
+  "final_selection": {
+    "primary": "minimum measured total NF at which both the registered I_perp and densified barrier thresholds are satisfied",
+    "secondary": "lower I_perp and densified barrier at total NF not exceeding 5000",
+    "dense_protocol": "10 then 20 subdivisions per segment; refine to 40 and 80 when successive barriers differ by more than 0.05 kcal/mol",
+    "success_against_current_ivm": "strictly lower joint first-passage total NF than the current IVM, or a strict Pareto improvement at matched total NF"
+  },
+  "extra_technique_gate": {
+    "allowed_only_after_registered_three_parameter_search_is_exhausted": true,
+    "acceptance_condition": "the same technique and the same basic alpha-r-m_max settings must also improve the best relevant IR-IVM results in both BB and Ala",
+    "default": "forbidden"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "bb-remote-paid-ef-redundant-copy-postdelete-v1",
+  "receipt_id": "remote_five_paid_ef_redundant_copy_postdelete_20260902_r1",
+  "status": "PASS_EXACT_FIVE_REMOTE_REDUNDANT_FILES_DELETED_LOCAL_RECOVERY_VERIFIED",
+  "completed_at_utc": "2026-09-01T21:11:39Z",
+  "predelete_receipt": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/REMOTE_FIVE_PAID_EF_REDUNDANT_COPY_PREDELETE_20260902_R1.json",
+    "sha256": "1d3a8d9bd3e8af0b74717ff0f31eedf372f40e92604d74c5566c75737e288773"
+  },
+  "remote_host": "wuzhiyou@100.74.85.3",
+  "deleted_exact_file_count": 5,
+  "deleted_total_bytes": 3613238254,
+  "remote_free_kib_before": 5747560,
+  "remote_free_kib_after": 9276456,
+  "observed_remote_free_kib_delta": 3528896,
+  "all_exact_remote_targets_absent": true,
+  "local_recovery": {
+    "root": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1",
+    "paid_ef_pack_count": 5,
+    "complete_json_count": 5,
+    "all_pack_sizes_and_sha256_match_terminal_COMPLETE_records": true,
+    "recoverable_byte_for_byte": true
+  },
+  "preserved_remote_artifacts": [
+    "all five COMPLETE.json records",
+    "all PRESTART and authorization records",
+    "all WAL records",
+    "all snapshots",
+    "all source code and campaign registrations",
+    "all current IR-IVM artifacts",
+    "all ODE--NEB and original-IVM baseline artifacts"
+  ],
+  "recoverability": "Each deleted remote paid_ef.pack is retained byte-for-byte under the local recovery root together with its terminal COMPLETE.json and exact original-path mapping.",
+  "remote_start_gate": {
+    "required_free_bytes": 8589934592,
+    "observed_free_bytes_after": 9499080704,
+    "satisfied": true
+  }
+}

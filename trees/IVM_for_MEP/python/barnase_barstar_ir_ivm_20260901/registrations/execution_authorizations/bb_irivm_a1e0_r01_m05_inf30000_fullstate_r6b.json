@@ -1,0 +1,28 @@
+{
+  "authorization_scope": "one fresh exact remote R6 N_F=30000 replay",
+  "enabled": true,
+  "issued_utc": "2026-09-03T19:40:10Z",
+  "label": "bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+  "new_capture_queries": 0,
+  "optimization_N_F_budget": 30000,
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B.json",
+    "sha256": "0c0c1d9df6113bc67eedb83ea0a6a2b5abc8b3042acb6d6913dfb702a351c5b2"
+  },
+  "required_Mutagen_session": "bb-irivm-nf30000-20260904",
+  "required_lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "required_thread_caps": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "runtime_argv_sha256": "98745a44e6282155170b13d1c021393403979565c4c932f2e85ee7543e25baf8",
+  "runtime_output_directory": "/Volumes/GM7_1TB/IVM_for_MEP/active_runs/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+  "schema": "bb-irivm-selected-full-state-history-budget-extension-authorization-v6b"
+}

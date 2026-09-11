@@ -1,0 +1,34 @@
+{
+  "schema": "bb-irivm-infrastructure-nonconformance-v1",
+  "status": "RECORDED_INFRASTRUCTURE_FAILURE_NO_SCIENTIFIC_RESULT",
+  "original_label": "bb_irivm_a1e1_r05_m05_inf4080_r1",
+  "replacement_label": "bb_irivm_a1e1_r05_m05_inf4080_r2",
+  "registered_controls": {
+    "alpha": 10.0,
+    "r": 0.5,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 4080
+  },
+  "failure_class": "host-local fcntl locks were not acquired before the first physical call",
+  "scientific_result_exists": false,
+  "optimization_Number_of_Forces_is_exactly_auditable": false,
+  "last_observed_central_calls_per_image_log_value": 20,
+  "last_observed_log_value_is_not_optimization_Number_of_Forces": true,
+  "observed_signal": "SIGINT",
+  "returncode": -2,
+  "launcher_session_exit_code": 255,
+  "decision": "exclude r1 from every scientific selection and diagnostic; restart once from the common initial path under a new attempt label",
+  "guard_receipt": {
+    "path": "../../runs/lock_receipts/bb_irivm_a1e1_r05_m05_inf4080_r1.guard.json",
+    "sha256": "d9c188a3ef1adb511e31ec940d292e79014bd4dc90c0afcd687a5b1f33eff927",
+    "interpretation": "the guard prevented later concurrency but explicitly does not claim the pre-acquisition interval was locked"
+  },
+  "bindings": {
+    "long_budget_design_sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629",
+    "member_registration_sha256": "7125eb6498f43270e18ce290ba9a75a47a3bdbd8671efa6e542f332709512c5c",
+    "execution_authorization_sha256": "04046c921fa3fe452c1b54c9807d29c07cfc070bf64596d86a5c1e70c2f961c6",
+    "lock_wrapper_sha256": "cbc12d0e479c67ec6b100b410af1fa570a646a468d4f5ad6521d62b9dca35693"
+  },
+  "fixed_endpoint_statement": "no formal endpoint or total optimization N_F claim is made for the interrupted nonconforming pilot",
+  "diagnostic_policy": "no arc-length-500 diagnostic is authorized for this excluded pilot"
+}

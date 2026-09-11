@@ -1,0 +1,241 @@
+{
+  "bindings": {
+    "amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_REPORTING_INTERMEDIATE_STATES_AMENDMENT_20260902_R1.json",
+      "sha256": "de426ab62e1e25bc65b9f03d1b265912387268a3d46c1361d29120e4a59459e6"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1.json",
+      "sha256": "2d3cd0e99ce20f5c4834331fde081240051a9b4a7436a6577aad2ef0e1875748"
+    },
+    "reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+      "sha256": "aa7994abec1339bf9c9ae915b9982e8134363baf8966b9bb221ca244ab5808a2"
+    },
+    "replay_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.audit.json",
+      "sha256": "820e49a978e2448a8ff778666d698375b8daeb1abce9328d8989d1c4ac850653"
+    },
+    "replay_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+      "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+    }
+  },
+  "compared_discrete_audit_event_count": 207,
+  "compared_discrete_audit_keys": [],
+  "compared_online_history_keys": [
+    "accepted_fraction",
+    "active_alpha",
+    "active_global_iperp_rtol",
+    "active_inner_calls",
+    "active_iperp_rtol",
+    "active_lbfgsb_initial_step",
+    "active_max_step",
+    "active_plbfgs_kkt_rtol",
+    "active_reparam_every",
+    "alpha_action",
+    "alpha_precision_cap",
+    "alpha_quality_ratio",
+    "alpha_step_utilization",
+    "barrier_kcal",
+    "cache_hit_vectors",
+    "calls_per_image",
+    "counter_vectors",
+    "cycle_macro_step_scale",
+    "energy_request_vectors",
+    "equidistance_integral",
+    "equidistance_relative_defect",
+    "ffprecon_active",
+    "ffprecon_collective_active",
+    "ffprecon_exit_globalization_active",
+    "ffprecon_exit_polish_active",
+    "ffprecon_history_active",
+    "ffprecon_rebuilds",
+    "ffprecon_step_scale_max",
+    "ffprecon_step_scale_mean",
+    "ffprecon_step_scale_min",
+    "force_request_vectors",
+    "i_perp",
+    "mean_calls_per_internal_image",
+    "physical_fmax",
+    "rejected_images",
+    "reparam_accepted_fraction",
+    "reparam_attempted",
+    "reparam_committed",
+    "reparam_cv_after",
+    "reparam_cv_before",
+    "reparam_direct_joint_evaluations",
+    "reparam_equidistance_after",
+    "reparam_equidistance_before",
+    "reparam_proposal_scale",
+    "reparam_recovery_joint_evaluations",
+    "reparam_rejected_images",
+    "reparam_residual",
+    "reparam_step_scale_mean",
+    "segment_length_cv",
+    "segment_length_ratio",
+    "state_free_polish_active",
+    "state_outer_history_active",
+    "state_split_dtau",
+    "state_strict_polish_active",
+    "subproblem_alpha_halvings",
+    "subproblem_curvature_restarts",
+    "subproblem_hit_call_limit_images",
+    "subproblem_kkt_max",
+    "subproblem_kkt_mean",
+    "subproblem_kkt_min",
+    "subproblem_kkt_vectors",
+    "subproblem_line_search_backtracks",
+    "subproblem_probe_contraction_max",
+    "subproblem_relative_kkt_max",
+    "subproblem_relative_kkt_mean",
+    "subproblem_relative_kkt_vectors",
+    "subproblem_unconverged_images",
+    "total_internal_joint_evaluations"
+  ],
+  "compared_online_history_record_count": 50,
+  "created_utc": "2026-09-02T05:05:23Z",
+  "diagnostic_feedback_into_optimization": "forbidden",
+  "exact_prefix_through_call": 50,
+  "exact_prefix_through_optimization_N_F": 1329,
+  "excluded_online_history_keys": [
+    "wall_seconds"
+  ],
+  "fixed_endpoint_optimization_N_F": 0,
+  "fixed_reporting_rows": [
+    {
+      "call_per_image": 1,
+      "discrete_I_perp_eV2_per_A": 3310616093.2793417,
+      "fully_evaluated_current_path": true,
+      "history_index": 0,
+      "optimization_N_F": 30,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 2,
+      "discrete_I_perp_eV2_per_A": 68167135.91306221,
+      "fully_evaluated_current_path": true,
+      "history_index": 1,
+      "optimization_N_F": 60,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "1bb9241f4c3ce5a8d89c9db5aa8386f2a243972ae648e79c4ddd18de69c1edf0",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 5,
+      "discrete_I_perp_eV2_per_A": 29407169.52263667,
+      "fully_evaluated_current_path": true,
+      "history_index": 4,
+      "optimization_N_F": 150,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "2b4291c4f83c8007bcded8ae3182fdbbd2519aa619a56e198c3f2af0afc3a0e4",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 10,
+      "discrete_I_perp_eV2_per_A": 897667.2039737597,
+      "fully_evaluated_current_path": true,
+      "history_index": 9,
+      "optimization_N_F": 300,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "b59b0c2647bc297fd551769e9b4a94e6e61a31eb1973e9afc3419a0cfcd22b8d",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 20,
+      "discrete_I_perp_eV2_per_A": 77444.13564174288,
+      "fully_evaluated_current_path": true,
+      "history_index": 19,
+      "optimization_N_F": 429,
+      "reparameterization_committed": true,
+      "selected_path_sha256": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 50,
+      "discrete_I_perp_eV2_per_A": 952.0611021437114,
+      "fully_evaluated_current_path": true,
+      "history_index": 49,
+      "optimization_N_F": 1329,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "39a429c34373b375a0edc5ad5c0f7bfc402c090acab2ae8c684447f4a2ac6a1f",
+      "terminal_tail": false
+    }
+  ],
+  "new_reporting_rows": [
+    {
+      "call_per_image": 2,
+      "discrete_I_perp_eV2_per_A": 68167135.91306221,
+      "fully_evaluated_current_path": true,
+      "history_index": 1,
+      "optimization_N_F": 60,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "1bb9241f4c3ce5a8d89c9db5aa8386f2a243972ae648e79c4ddd18de69c1edf0",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 5,
+      "discrete_I_perp_eV2_per_A": 29407169.52263667,
+      "fully_evaluated_current_path": true,
+      "history_index": 4,
+      "optimization_N_F": 150,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "2b4291c4f83c8007bcded8ae3182fdbbd2519aa619a56e198c3f2af0afc3a0e4",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 10,
+      "discrete_I_perp_eV2_per_A": 897667.2039737597,
+      "fully_evaluated_current_path": true,
+      "history_index": 9,
+      "optimization_N_F": 300,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "b59b0c2647bc297fd551769e9b4a94e6e61a31eb1973e9afc3419a0cfcd22b8d",
+      "terminal_tail": false
+    },
+    {
+      "call_per_image": 50,
+      "discrete_I_perp_eV2_per_A": 952.0611021437114,
+      "fully_evaluated_current_path": true,
+      "history_index": 49,
+      "optimization_N_F": 1329,
+      "reparameterization_committed": false,
+      "selected_path_sha256": "39a429c34373b375a0edc5ad5c0f7bfc402c090acab2ae8c684447f4a2ac6a1f",
+      "terminal_tail": false
+    }
+  ],
+  "reference_path_hash_checks": [
+    {
+      "call_per_image": 1,
+      "exact_match": true,
+      "optimization_N_F": 30,
+      "selected_path_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769"
+    },
+    {
+      "call_per_image": 20,
+      "exact_match": true,
+      "optimization_N_F": 429,
+      "selected_path_sha256": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad"
+    }
+  ],
+  "schema": "bb-irivm-selected-legacy-replay-verification-v1",
+  "scientific_scope": "the output-only legacy replay exactly reproduces the selected IR-IVM online history through call 50 and contributes only the four prospectively registered, fully evaluated, nonterminal current paths",
+  "status": "PASS_EXACT_OUTPUT_ONLY_PREFIX",
+  "terminal_accounting": {
+    "last_complete_reparameterization_committed_N_F": 429,
+    "last_complete_reparameterization_committed_call": 20,
+    "registered_budget": 1500,
+    "remaining_budget": 21,
+    "terminal_call_per_image": 55,
+    "terminal_consumed_optimization_N_F": 1479,
+    "terminal_path_excluded": true,
+    "terminal_uncommitted_charged_tail_N_F": 1050
+  },
+  "tolerance_fallback_used": false
+}

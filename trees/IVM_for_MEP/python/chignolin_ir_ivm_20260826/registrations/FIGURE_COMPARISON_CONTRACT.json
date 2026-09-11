@@ -1,0 +1,90 @@
+{
+  "contract_id": "chignolin_ir_ivm_vs_article_v9_20260826_v1",
+  "purpose": "Validate and plot a selected IR-IVM result against the unchanged Chignolin article V9 comparison.",
+  "source_figure": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_cost_to_precision_total_nf_v9_20260730.pdf",
+    "sha256": "c56e61e7575b7f1cc784b946bd37e65682204579f7f85c3115b200b2dbdf37ff"
+  },
+  "baseline_summary": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_method_comparison_summary.json",
+    "sha256": "7d6c593ac70fe311d345364435e38d2941d494172c2dc70acfbfac922cb33754"
+  },
+  "annotation_table": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/data/chignolin_cost_to_precision_annotations_total_nf.csv",
+    "sha256": "6e24cc3e6aedaa9a1cb3c1c079fb0593be5ca45e38f31568c86675068a7319ef"
+  },
+  "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+  "total_nf_limit_for_current_ivm": 10000,
+  "non_ivm_max_calls_per_image": 1000,
+  "current_ivm_joint_first_passage_total_nf": 1502,
+  "fixed_thresholds": {
+    "i_perp": {
+      "value": 0.21242215133173672,
+      "current_ivm_first_passage_total_nf": 1382,
+      "baseline_first_passage_total_nf": {
+        "ODE-NEB": 17662,
+        "OBSM-FIRE": 19942
+      }
+    },
+    "densified_barrier_kcal": {
+      "value": 24.168121352641172,
+      "current_ivm_first_passage_total_nf": 1502,
+      "baseline_first_passage_total_nf": {
+        "ODE-NEB": 16562,
+        "OBSM-FIRE": 19982
+      }
+    }
+  },
+  "ir_algorithm_gates": {
+    "reparam_mode": "state_curve",
+    "reparam_every": 1,
+    "state_curve_direct_solve": true,
+    "state_curve_direct_objective_acceptance": "per_image",
+    "state_globalization": "iperp_monotone",
+    "frozen_subproblem": "discrete_b040",
+    "eta": 1.1
+  },
+  "required_ir_result_arrays": [
+    "counter_vectors",
+    "i_perp",
+    "reparam_attempted",
+    "reparam_committed",
+    "total_internal_nf_complete_state_definition",
+    "initial_path_sha256",
+    "tangent_definition",
+    "reparam_mode",
+    "reparam_every",
+    "state_curve_direct_solve",
+    "state_curve_direct_objective_acceptance",
+    "state_globalization",
+    "frozen_subproblem",
+    "discrete_ffrbk_selector_eta",
+    "alpha",
+    "discrete_residual_ratio",
+    "discrete_inner_max_steps"
+  ],
+  "required_ir_dense_arrays": [
+    "source_result_sha256",
+    "source_optimization_audit_sha256",
+    "record_index",
+    "paper_total_nf",
+    "i_perp",
+    "selected_counter_vectors",
+    "reparam_committed",
+    "complete_state_kind",
+    "complete_state_definition",
+    "adaptive_dense_barrier_kcal",
+    "paper_total_nf_includes_all_22_images",
+    "diagnostic_counts_excluded_from_paper_total_nf",
+    "initial_subdivisions",
+    "comparison_subdivisions",
+    "adaptive_threshold_kcal",
+    "maximum_subdivisions"
+  ],
+  "allowed_modes": [
+    "overlay",
+    "replace-current-IVM"
+  ],
+  "candidate_output_root": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/figures/active_candidates",
+  "formal_figure_mutation_allowed": false
+}

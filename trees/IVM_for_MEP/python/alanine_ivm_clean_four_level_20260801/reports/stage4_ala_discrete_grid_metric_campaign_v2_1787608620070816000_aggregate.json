@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_grid_metric_campaign_v2",
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000_preregistered.json",
+  "preregistration_sha256": "5fcfad3228e72c267ea1d768dd6f677528ae1fc8e8c6f180ea0d3498503b98a3",
+  "host_reports": {
+    "local": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000_local_host_report.json",
+      "sha256": "59c55a351f9babe66ed4a91bf16e94c4291e0883a5fe6f2213982b915e0b9f83"
+    },
+    "remote": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000_remote_host_report.json",
+      "sha256": "0c18528c97224ea458d717f34d9d4e113cf1ceff7b18cf7c6b413d868f21c248"
+    }
+  },
+  "host_machine_fingerprints": {
+    "local": "5b1f55bbdf3bbd0345e40c54062b9cae2f7914456d4244c23b234e6158f3ddc4",
+    "remote": "2f91c6feaaf871d8493d8b8b284e953458df9f0c49974098460e6f289ef1d8ed"
+  },
+  "scientific_runtime_sha256": "d34e76f312ac1ca097dcb13fef70f685911f00bb739916cbeb195147d034b6e2",
+  "optimizer_scientific_runtime_sha256": "d34e76f312ac1ca097dcb13fef70f685911f00bb739916cbeb195147d034b6e2",
+  "metric_runtime_matches_optimizer_runtime": true,
+  "unique_path_task_count": 1403,
+  "eligible_state_reference_count": 5916,
+  "unique_path_diagnostic_raw_joint_evaluations": 4715483,
+  "sentinel_diagnostic_raw_joint_evaluations": 6722,
+  "total_diagnostic_raw_joint_evaluations": 4722205,
+  "expected_unique_path_diagnostic_raw_joint_evaluations": 4715483,
+  "expected_sentinel_diagnostic_raw_joint_evaluations": 6722,
+  "optimization_nf_charged": 0,
+  "nonconverged_path_task_count": 0,
+  "all_path_tasks_dense_converged": true,
+  "cross_host_sentinel": {
+    "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "absolute_tolerance_kcal_per_mol": 1e-10,
+    "barrier_absolute_differences_by_subdivision": {
+      "20": 0.0,
+      "40": 0.0,
+      "80": 0.0,
+      "160": 0.0
+    },
+    "all_levels_within_tolerance": true,
+    "both_dense_converged": true,
+    "sentinel_convergence_is_not_a_comparison_domain_gate": true
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "claim_policy": {
+    "arrow_text_position": "right of vertical arrow at arithmetic line midpoint",
+    "first_passage_claim": "earliest observed first passage only",
+    "interpolation": "forbidden",
+    "main_curve": "observed lower envelope",
+    "show_all_raw_points_faintly": true,
+    "visible_arrow_text": "numeric multiplier only"
+  },
+  "created_utc": "2026-09-02T14:23:18Z",
+  "dependencies": {
+    "freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_cost_to_precision_joint_ef_dense_figure_contract.py",
+      "sha256": "e93d3ebea568feff69fecf31326c33758fcd079361c9f3c7a654b6924e30c4d4"
+    },
+    "muller_alanine_style_reference": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/plotting/plot_ala_discrete_single_cost_to_precision_muller_style.py",
+      "sha256": "e7c1153f7ebb356d968c9015193637ad40e4124c55ecdf14c4b2f6c7ed12ce7f"
+    },
+    "plotter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/plot_bb_cost_to_precision_joint_ef_dense.py",
+      "sha256": "cff05443e2e8e30572edc39baee366f442caf8c5432b914dbd0c66585f33ad8c"
+    }
+  },
+  "figure_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_ivm4_vs_ode8_measured_interim.pdf",
+  "figure_output_policy": {
+    "overwrite": false,
+    "sidecar_provenance": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_ivm4_vs_ode8_measured_interim.json"
+  },
+  "metric_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_force_use": "archival validation only",
+    "densified_metric": "Delta_E_on_same_path_arc500",
+    "discrete_metric": "I_perp_on_original_32_image_path",
+    "full_force_storage": true,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "optimization_N_F_contribution": 0,
+    "points": 500,
+    "sampling": "uniform_cartesian_arclength"
+  },
+  "observed_analysis_at_freeze": {
+    "ODE_NEB_over_IVM_observed_ratio": {
+      "delta_e": 3.069977426636569,
+      "i_perp": 7.516930022573363
+    },
+    "claim": "observed lower envelope only",
+    "earliest_observed_passage_N_F": {
+      "delta_e": {
+        "IVM": 1329,
+        "ODE-NEB": 4080
+      },
+      "i_perp": {
+        "IVM": 1329,
+        "ODE-NEB": 9990
+      }
+    },
+    "interpolation": "none",
+    "lower_envelopes": {
+      "delta_e": {
+        "IVM": [
+          {
+            "metric": 32534.508871798254,
+            "optimization_N_F": 60
+          },
+          {
+            "metric": 16762.917044769918,
+            "optimization_N_F": 150
+          },
+          {
+            "metric": 2255.5932804640006,
+            "optimization_N_F": 300
+          },
+          {
+            "metric": 602.8198952268627,
+            "optimization_N_F": 1329
+          }
+        ],
+        "ODE-NEB": [
+          {
+            "metric": 32436.691672664634,
+            "optimization_N_F": 60
+          },
+          {
+            "metric": 31084.635068795244,
+            "optimization_N_F": 150
+          },
+          {
+            "metric": 20466.90656274627,
+            "optimization_N_F": 300
+          },
+          {
+            "metric": 1711.12621374631,
+            "optimization_N_F": 1320
+          },
+          {
+            "metric": 1110.6269076536107,
+            "optimization_N_F": 2040
+          },
+          {
+            "metric": 912.3728204381405,
+            "optimization_N_F": 4080
+          }
+        ]
+      },
+      "i_perp": {
+        "IVM": [
+          {
+            "metric": 68167135.91306221,
+            "optimization_N_F": 60
+          },
+          {
+            "metric": 29407169.52263667,
+            "optimization_N_F": 150
+          },
+          {
+            "metric": 897667.2039737597,
+            "optimization_N_F": 300
+          },
+          {
+            "metric": 952.0611021437114,
+            "optimization_N_F": 1329
+          }
+        ],
+        "ODE-NEB": [
+          {
+            "metric": 108546577.96817958,
+            "optimization_N_F": 60
+          },
+          {
+            "metric": 61894077.59256836,
+            "optimization_N_F": 150
+          },
+          {
+            "metric": 17840502.05427264,
+            "optimization_N_F": 300
+          },
+          {
+            "metric": 66000.75150123879,
+            "optimization_N_F": 1320
+          },
+          {
+            "metric": 21120.477930239103,
+            "optimization_N_F": 2040
+          },
+          {
+            "metric": 4371.16533670238,
+            "optimization_N_F": 4080
+          },
+          {
+            "metric": 1387.2479290694707,
+            "optimization_N_F": 8160
+          },
+          {
+            "metric": 631.9043986870009,
+            "optimization_N_F": 9990
+          }
+        ]
+      }
+    },
+    "raw_observations_are_all_shown": true,
+    "thresholds": {
+      "delta_e": 912.3728204381405,
+      "i_perp": 952.0611021437114
+    },
+    "unmeasured_N_F_first_passage_claim": "forbidden"
+  },
+  "pack_specs": [
+    {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_COST_PRECISION_PACK_IVM_EARLY_MEASURED_INTERIM_20260902_R1.json",
+      "sha256": "d6acfb41869f5de9008db989c95699b1a87eb5405e5e78a909bf5f8382230c6b"
+    },
+    {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_COST_PRECISION_PACK_ODE_EARLY_JOINT_EF_20260902_R1.json",
+      "sha256": "3eeb24c549f4b69e5cd42fa38ae36fadf57f00173a81f095118acec99ae64dd8"
+    },
+    {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_COST_PRECISION_PACK_ODE_LATE_MEASURED_INTERIM_20260902_R1.json",
+      "sha256": "3ef9463413ef695a438376f9216fb7be9c599a4895b66c64a997b9db282e6956"
+    }
+  ],
+  "point_count_policy": {
+    "actual": {
+      "IVM": 4,
+      "ODE-NEB": 8
+    },
+    "maximum_per_method": 8,
+    "minimum_per_method": 4
+  },
+  "schema": "bb-joint-ef-cost-to-precision-figure-contract-v1",
+  "selection_policy": {
+    "all_points_from_every_bound_pack_are_included": true,
+    "duplicate_optimization_N_F": "forbidden",
+    "post_metric_point_omission": "forbidden"
+  },
+  "status": "FROZEN_COMPLETE_JOINT_EF_INPUTS",
+  "zero_physical_freeze": {
+    "OpenMM_contexts_constructed": 0,
+    "energy_calls": 0,
+    "force_calls": 0,
+    "optimization_N_F_contribution": 0
+  }
+}

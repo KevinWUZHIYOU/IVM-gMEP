@@ -1,0 +1,85 @@
+{
+  "schema": "bb-irivm-cached-stall-diagnosis-v1",
+  "status": "DIAGNOSED_NONCONVERGENT_NUMERICAL_STALL",
+  "label": "bb_irivm_a1e1_r05_m05_inf4080_r2",
+  "parameters": {
+    "alpha": 10.0,
+    "r": 0.5,
+    "m_max": 5
+  },
+  "terminal_evidence": {
+    "actual_optimization_N_F": 3057,
+    "registered_optimization_N_F_upper_bound": 4080,
+    "fixed_endpoint_optimization_N_F": 0,
+    "I_perp_eV2_per_A": 2352.5214579986227,
+    "physical_fmax_eV_per_A": 1.6981522642714897,
+    "producer_stop_reason": "cached_coordinate_stall",
+    "converged_MEP_claim": false
+  },
+  "repeated_subproblem_evidence": {
+    "outer_indices": [21, 22, 23, 24],
+    "inner_steps_per_outer": 5,
+    "direction_selection_each_outer": ["H0", "LBFGS", "LBFGS", "LBFGS", "LBFGS"],
+    "all_recorded_direction_and_cap_fields_bitwise_equal_across_four_outers": true,
+    "global_relative_natural_residual_each_outer": [
+      9.548730617397029,
+      9.548730617397029,
+      9.548730617397029,
+      9.548730617397029
+    ],
+    "subproblem_stop_reason_each_outer": [
+      "evaluated-inner-max-steps",
+      "evaluated-inner-max-steps",
+      "evaluated-inner-max-steps",
+      "evaluated-inner-max-steps"
+    ],
+    "requested_relative_residual": 0.5,
+    "subproblem_residual_target_met": false,
+    "last_outer_accepted_fraction": 0.0,
+    "last_outer_rejected_images": 30
+  },
+  "mechanism": [
+    "The fixed-central-tangent discrete proximal subproblem reached m_max=5 before its requested relative natural-residual condition was met.",
+    "Its five deterministic H0/L-BFGS trial states were locally descending for the frozen proximal model, but the I_perp-monotone whole-path globalization accepted no image update at the terminal retained path.",
+    "Because the retained path, central tangents, and call-free FFrbk preconditioner were unchanged, the next outer solve generated the same five coordinates exactly.",
+    "Those coordinates were already in the run-local exact-coordinate cache, so repeated outer solves added neither a physical force evaluation nor a retained-path displacement.",
+    "The source-level guard stops after three such zero-cost, zero-displacement outer iterations. This guard diagnoses a numerical stall; it is not an I_perp=0 convergence test."
+  ],
+  "disabled_fallback": {
+    "state_kkt_stall_tighten_target": -1.0,
+    "effect": "This branch would change active_plbfgs_kkt_rtol and reset outer memory, but the frozen discrete_b040 call receives discrete_residual_ratio directly. Therefore the present source does not establish that enabling this branch would change the repeated five-step discrete trial sequence; at most it could reset memory and delay the same stall test.",
+    "identity_note": "The Chignolin production command also leaves this option disabled. It is not one of the three declared tuning controls and is not a justified escape mechanism for the present discrete_b040 stall."
+  },
+  "migration_comparison": {
+    "chignolin_frozen_discrete_b040_sha256": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "barnase_barstar_frozen_discrete_b040_sha256": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "discrete_subproblem_byte_identity": true,
+    "runner_core_review": "The BB runner differs from the Chignolin runner only in the system adapter, frozen endpoint cache, call-free BB force-field preconditioner builder, committed storage, and NoF/audit fields; the outer cached-stall and I_perp-globalization logic is unchanged.",
+    "migration_omission_detected": false
+  },
+  "scientific_interpretation": "The evidence supports an incompatibility at this late path between the m_max=5 inexact frozen-tangent subproblem and the strict I_perp-monotone outer globalization. It does not prove that m_max alone is the unique cause; alpha and r jointly determine the frozen subproblem trajectory.",
+  "permitted_next_actions": [
+    "Run a different preregistered (alpha,r,m_max) setting from the common initial path.",
+    "If a targeted m_max=8 or m_max=10 long-budget follow-up is desired, preregister it as a new parameter setting before its first physical call; this changes only one of the three declared tuning controls and preserves IR-IVM identity."
+  ],
+  "forbidden_interpretations": [
+    "I_perp reached zero",
+    "the 4080 budget was exhausted",
+    "the remaining 1023 NoF were saved by convergence",
+    "repeated cache hits should be counted as new Number of Forces"
+  ],
+  "bindings": {
+    "result": {
+      "path": "runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf4080_r2_central_state_ivm_cfg7b6bc1ab268e_budget4080_storagecommitted.npz",
+      "sha256": "1bede8ef808af1f30c6a3dae539b47e6172ce5548607266e47e422876e3afed4"
+    },
+    "runner": {
+      "path": "src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa"
+    },
+    "discrete_subproblem": {
+      "path": "src/frozen_discrete_b040.py",
+      "sha256": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4"
+    }
+  }
+}

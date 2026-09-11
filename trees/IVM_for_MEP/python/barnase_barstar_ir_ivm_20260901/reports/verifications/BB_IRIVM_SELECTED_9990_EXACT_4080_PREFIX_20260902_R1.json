@@ -1,0 +1,167 @@
+{
+  "bindings": {
+    "criterion": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json",
+      "sha256": "a1e485cda26065ae1c91188589450053c4a25d0e7c871ee5ac9faa5dee6c6432"
+    },
+    "reference_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/screen/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "sha256": "6896c62db4964fcd218275e0898764519ee7906f249b11b03dce0df6232b7244"
+    },
+    "reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.npz",
+      "sha256": "df069ff6cb3b36f2660d9f7b3403e260695f4b4b01b3da7ee3c436d9da56c275"
+    },
+    "reference_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "selected_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    },
+    "selected_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "selected_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json",
+      "sha256": "af362a3db925399a5bdc49a5107f8d1988341d0ee3fd0dbfed20d31ae628b584"
+    }
+  },
+  "compared_discrete_audit_event_count": 128,
+  "compared_discrete_audit_keys": [
+    "discrete_audit_curvature_status",
+    "discrete_audit_h0_cap_scale",
+    "discrete_audit_h0_capped_predicted_decrease",
+    "discrete_audit_h0_raw_predicted_decrease",
+    "discrete_audit_history_count",
+    "discrete_audit_lbfgs_cap_scale",
+    "discrete_audit_lbfgs_capped_predicted_decrease",
+    "discrete_audit_lbfgs_raw_predicted_decrease",
+    "discrete_audit_outer",
+    "discrete_audit_selection",
+    "discrete_audit_step",
+    "discrete_ffrbk_selector_audit_empty_history_tie",
+    "discrete_ffrbk_selector_audit_forced_lbfgs",
+    "discrete_ffrbk_selector_audit_h0_capped_decrease",
+    "discrete_ffrbk_selector_audit_h0_failover",
+    "discrete_ffrbk_selector_audit_h0_valid",
+    "discrete_ffrbk_selector_audit_latched_after",
+    "discrete_ffrbk_selector_audit_latched_before",
+    "discrete_ffrbk_selector_audit_lbfgs_capped_decrease",
+    "discrete_ffrbk_selector_audit_lbfgs_valid",
+    "discrete_ffrbk_selector_audit_selection",
+    "discrete_ffrbk_selector_audit_selector_call",
+    "discrete_ffrbk_selector_audit_solver_call",
+    "discrete_ffrbk_selector_audit_strict_win_trigger",
+    "discrete_step_multiplier_audit_applied",
+    "discrete_step_multiplier_audit_applied_max_atomic_displacement",
+    "discrete_step_multiplier_audit_base_max_atomic_displacement",
+    "discrete_step_multiplier_audit_cap_hit",
+    "discrete_step_multiplier_audit_dynamic_max_step",
+    "discrete_step_multiplier_audit_requested",
+    "discrete_step_multiplier_audit_requested_max_atomic_displacement",
+    "discrete_step_multiplier_audit_selection"
+  ],
+  "compared_online_history_keys": [
+    "accepted_fraction",
+    "active_alpha",
+    "active_global_iperp_rtol",
+    "active_inner_calls",
+    "active_iperp_rtol",
+    "active_lbfgsb_initial_step",
+    "active_max_step",
+    "active_plbfgs_kkt_rtol",
+    "active_reparam_every",
+    "alpha_action",
+    "alpha_precision_cap",
+    "alpha_quality_ratio",
+    "alpha_step_utilization",
+    "barrier_kcal",
+    "cache_hit_vectors",
+    "calls_per_image",
+    "counter_vectors",
+    "cycle_macro_step_scale",
+    "energy_request_vectors",
+    "equidistance_integral",
+    "equidistance_relative_defect",
+    "ffprecon_active",
+    "ffprecon_collective_active",
+    "ffprecon_exit_globalization_active",
+    "ffprecon_exit_polish_active",
+    "ffprecon_history_active",
+    "ffprecon_rebuilds",
+    "ffprecon_step_scale_max",
+    "ffprecon_step_scale_mean",
+    "ffprecon_step_scale_min",
+    "force_request_vectors",
+    "i_perp",
+    "mean_calls_per_internal_image",
+    "physical_fmax",
+    "rejected_images",
+    "reparam_accepted_fraction",
+    "reparam_attempted",
+    "reparam_committed",
+    "reparam_cv_after",
+    "reparam_cv_before",
+    "reparam_direct_joint_evaluations",
+    "reparam_equidistance_after",
+    "reparam_equidistance_before",
+    "reparam_proposal_scale",
+    "reparam_recovery_joint_evaluations",
+    "reparam_rejected_images",
+    "reparam_residual",
+    "reparam_step_scale_mean",
+    "segment_length_cv",
+    "segment_length_ratio",
+    "state_free_polish_active",
+    "state_outer_history_active",
+    "state_split_dtau",
+    "state_strict_polish_active",
+    "subproblem_alpha_halvings",
+    "subproblem_curvature_restarts",
+    "subproblem_hit_call_limit_images",
+    "subproblem_kkt_max",
+    "subproblem_kkt_mean",
+    "subproblem_kkt_min",
+    "subproblem_kkt_vectors",
+    "subproblem_line_search_backtracks",
+    "subproblem_probe_contraction_max",
+    "subproblem_relative_kkt_max",
+    "subproblem_relative_kkt_mean",
+    "subproblem_relative_kkt_vectors",
+    "subproblem_unconverged_images",
+    "total_internal_joint_evaluations"
+  ],
+  "compared_online_history_record_count": 72,
+  "created_utc": "2026-09-02T00:27:06Z",
+  "endpoint_optimization_N_F_reference": 0,
+  "endpoint_optimization_N_F_selected": 0,
+  "excluded_online_history_keys": [
+    "wall_seconds"
+  ],
+  "reference_eligible_prefix": [
+    {
+      "call_per_image": 7,
+      "optimization_N_F": 210,
+      "path_sha256_canonical_le_float64": "d737fa00edc9f2e371f2a92e24cfe946c50a1a70d87205bddd801716af2573b3"
+    },
+    {
+      "call_per_image": 20,
+      "optimization_N_F": 429,
+      "path_sha256_canonical_le_float64": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad"
+    },
+    {
+      "call_per_image": 72,
+      "optimization_N_F": 1993,
+      "path_sha256_canonical_le_float64": "7161dab1eb057d958e0af032626e5113de85b0b5725e085b56bf065d79060e66"
+    }
+  ],
+  "reference_last_committed_history_index": 71,
+  "schema": "bb-irivm-selected-9990-exact-prefix-verification-v1",
+  "scientific_scope": "the selected 9990-N_F trajectory exactly reproduces every eligible reparameterization-committed state of the reference-host 4080-upper-bound trajectory",
+  "selected_total_eligible_committed_state_count": 4,
+  "status": "PASS_EXACT_PREFIX",
+  "tolerance_fallback_used": false
+}

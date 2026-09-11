@@ -1,0 +1,272 @@
+{
+  "alpha_notation_contract": {
+    "decimal_mantissa_examples_forbidden": [
+      "1.15e-3",
+      "2.25e-3"
+    ],
+    "integer_mantissas_only": true,
+    "registered_labels": [
+      "1e-3",
+      "2e-3"
+    ]
+  },
+  "audit_trust_boundary": {
+    "offline_audit_is_cryptographic_execution_attestation": false,
+    "pre_addition_direction_is_write_only_and_zero_nof": true,
+    "pre_addition_recovery_direction_logged_before_coordinate_addition": true,
+    "raw_lbfgs_memory_fully_regenerated_offline": false,
+    "raw_step_algebra_and_all_downstream_claims_recomputed": true,
+    "trusted": "preregistered source and AST identities plus the formal runner"
+  },
+  "campaign_id": "q10-irivm-low-r-coherence-secant-v2-20260830",
+  "dependency_sha256": {
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/src/leps_irivm_sync1.py": "8b1f848d6a2f03090b4851b6bd4a45d55a61fbee4025dfa50f5e59e2084ea49a",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/FIGURE_PROVENANCE.md": "384ef7d542d650f786b09ccc5abb03cb29d4d4d35d3cb4c30a7d1012dd93da86",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/baselines/run_q10_baselines.py": "dcf146b033ae654b23a6a6fe02a325c459d141aa3a636f59e48070fe82c66de5",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/common/q10_potential.py": "fddf4727c12df28d307fc7e74649f49a320cc7035e914815d1815cd6d8fec1aa",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/ivm/q10_ivm_core.py": "3faf0483605906cf1985e6f99d6d5ea24a79c5ffc7b0af44b4364d3fa3830b19",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/tuned_ivm_alpha1e3_selected.npz": "3cf6649deb4b6bd2c11da51ca204a06513cad8e6702867e59619a2956d52162b",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/inputs/Q_data.npz": "9a57ca4ce0aa39886aacbfa935c8c7db1423a7f7de3deb937697e72578415aca",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/experiments/q10_ivm_core.py": "3faf0483605906cf1985e6f99d6d5ea24a79c5ffc7b0af44b4364d3fa3830b19",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/experiments/q10_potential.py": "a52938a3286ef9833dd2d7cb50876968aa0fd8e0a9ee645c1a9817dc607c9865",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/experiments/run_q10_baselines.py": "dcf146b033ae654b23a6a6fe02a325c459d141aa3a636f59e48070fe82c66de5",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/tuned_ivm_alpha2e3_selected.npz": "a09bdc481d98c37b448ae9efaff045aba6208f247b8bcbf6d296b1f1ec7a7a40",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/inputs/Q_data.npz": "9a57ca4ce0aa39886aacbfa935c8c7db1423a7f7de3deb937697e72578415aca",
+    "/Users/wuzhiyou/IVM_for_MEP/python/leps_formal_ivm_q10_transfer_mmax_ge4_refinement_20260830/registrations/ARTICLE_IVM_ACCEPTANCE_AMENDMENT.json": "d6123e2aa2895a0d8d988bbe25566c8e640fc8880debb8ef1dfd96d6f092041d",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_atomic_tangent_secant_20260830/src/q10_irivm_atomic_tangent_secant_core.py": "edfb47d87fb993db460a6b3d9747ee715c66d5af98554025b15dc98ec22e230e",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_chord_coherence_20260830/src/q10_irivm_atomic_tangent_secant_core.py": "0fafbb8127d5eb4572ba7248de81317e833c0f614d7b342d2939fa93479349c0",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/registrations/CAMPAIGN_PREREGISTRATION.json": "ab7f916dda3079edd2c92ce052c7e4b9fac120dd00a46f3e1fa24403bb498937",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/reports/n20_gate_audit/AUDIT_REPORT.md": "f0b0d3832c610603079b0fedcbc7694af2217e6db898400237e77f8f57e4d40b",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/reports/n20_gate_audit/audit_manifest.json": "ee63bb5f50dfdb7458a312ccf3b66532ba7d6ed43a10c662752095c5a05627c8",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/reports/receipts/n20/685c22444caacc53.receipt.json": "407ccf641a4fefa0d6f0bb4721720b0e72a72ac173a2a6f5e5ea469891cd5c98",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/runs/n20/685c22444caacc53.npz": "6ba8c241700662fbf7b29c7a8fd2df1615be978ee2cf22e86a886cb6306ba7a7",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/src/audit_results.py": "214669be2e79dc5b4c26b1afb7751373ca9541b9de579f8b531a4292ec3528ea",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_20260830/src/q10_irivm_atomic_tangent_secant_core.py": "0dd36a0dc0224aa86b644821c93838610f3fbac2b1f4a809541d64d0a40d2281",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/PROTOCOL.md": "6203f7e07fbe74c343be34e34de24fc08458f80b812aecb6ccfba71dfba96169",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/audit_results.py": "79d4a57e96732124e1389a164841f741da6114b69f19b5c1743db072a93a639f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/q10_solver_backend.py": "165ea45322e3690f8b0c546be66fbe5e82a23a2c5fc5252724c8d06dad926ba9",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/run_grid.py": "6b9e02242564b331e7103f3ebfe81513964035e4dd4961a570d17230cc595ae4",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_atomic_tangent_secant_contract.py": "fd0dc05a53f8fc201d6defbe636f5e5ceaf89695fc6be7c982eadfa3bac3e1e4",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_independent_audit_edges.py": "c183b4ef0dafd1af3c0c2bced29ac3101f3e9f2c10c4c576541060aa671db6ad",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_leps_recovery_backtrack_20260830/registrations/CAMPAIGN_PREREGISTRATION.json": "29b228ac0b2bfc2123e4114222cd39f38af5858b9f8b0eb6167bca05e95ba3f8",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_leps_recovery_backtrack_20260830/runs/n20/4e85b4de460363ca.npz": "48f2f42f92eeecee5d5cd05271bdfffd7aa747dccd26ba7c18b128ecefce83d9",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_leps_recovery_backtrack_20260830/src/q10_leps_recovery_backtrack_core.py": "2c8b6858e6ee0318dcb34dbc8bd93b8d97cc75663e6778c7e381cc1d8ce9d92f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_leps_recovery_gain_fraction_refine_20260830/src/q10_leps_recovery_gain_fraction_refine_core.py": "385d7e849ccfac9f13e307643cba81753501b85861c2358a0b2c069333978e16",
+    "/Users/wuzhiyou/IVM_for_MEP/python/unified_ir_ivm_20260827/src/q10_article_metrics.py": "ab60b2391b52b6304b364c9d1c062dfbb0340ee4e9598b3827fba03006fd5e14"
+  },
+  "execution": {
+    "host_local_fcntl_lock": "locks/host-local-q10-irivm-low-r-coherence-secant-v2.lock",
+    "jobs": 1,
+    "n10_core_gate_manifest": "reports/n20_gate_audit/audit_manifest.json",
+    "n10_gate_token_is_current_manifest_sha256": true,
+    "n20_gate_token": "not_applicable",
+    "same_source_and_control_grid_at_both_resolutions": true,
+    "separate_resolution_progress_reports": true,
+    "single_thread_environment_required": true
+  },
+  "fixed_algorithm_identity": {
+    "accepted_recovery_secants": "after a complete recovery commit certify direct-to-projected physical secants satisfying s.y > 1e-6 ||s|| ||y||; strong publishes normalized-curvature top one while conservative and ordinary publish all certified pairs",
+    "controls": "alpha, r, m_max only",
+    "direct_acceptance_reference": "post-main I_perp",
+    "main_commit": "whole-band I_perp-monotone atomic commit or rollback",
+    "main_subproblem": "complete-normal proximal Armijo L-BFGS",
+    "maximum_recovery_bands_per_outer": 1,
+    "new_tunable_controls": false,
+    "nof_or_training_phase_specific_branch": false,
+    "optimizer_reads_densified_delta_e": false,
+    "optimizer_reads_reference_barrier": false,
+    "optimizer_reads_v2p20_opponent": false,
+    "q10_trust_adapter": "rho=min(2*median(||segment||_2/sqrt(10)),1); max_atomic_norm=max_j|d_j|",
+    "recovery": "one accepted-history or same-anchor half-backtracked algebraic raw proposal per outer, adjacent-chord-coherent saddle seed, direct-energy improved-tangent chord-Newton projection, one evaluated projected band, whole-band atomic acceptance",
+    "recovery_acceptance": "whole projected band atomically accepted when equidistant and either post-main-I_perp-monotone or positive in actual proximal merit",
+    "recovery_acceptance_reference": "post-main I_perp or positive actual proximal merit",
+    "recovery_backtrack_factor": 0.5,
+    "recovery_chord_coherence_conservative_weight": 1,
+    "recovery_chord_coherence_rule": "(m_max-1)*sqrt(1-dot(u_minus,u_plus)) <= 1",
+    "recovery_chord_coherence_strong_weight": "m_max-1",
+    "recovery_commit_requires_complete_band": true,
+    "recovery_direction_selection": "accepted-history regularized predicted decrease for the first proposal; retries multiply the stored actual full-step displacement by BACKTRACK**completed_attempts without an extra force call",
+    "recovery_escape_merit": "sum_internal(E_direct-E_projected-||x_projected-x_direct||^2/(2*alpha))",
+    "recovery_projection": "zero-NoF adjacent-chord-coherent saddle seed followed by direct-anchor-energy improved-tangent Newton correction of adjacent chord-length constraints to the original equidistance ceiling; only the projected band is evaluated",
+    "recovery_reads_main_m_max": true,
+    "recovery_reads_main_r": false,
+    "recovery_updates_main_memory_only_after_complete_commit": true,
+    "recovery_uses_pre_main_memory_snapshot_after_main_rollback": true,
+    "recovery_uses_warm_pairs": true,
+    "rejected_recovery_trial": "private actual full-step displacement carried only across a bitwise-identical direct anchor",
+    "reparameterization": "improved-tangent identical-spring after every outer stage",
+    "reparameterization_period": 1,
+    "resolution_specific_algorithm_branch": false,
+    "rollback_commit_memory_transport": "publish the accepted pre-main snapshot plus coherence-conditioned curvature-certified direct-to-projected recovery secants; rejected recovery trials never alter main memory",
+    "same_anchor_recovery_attempt_cap": "m_max completed fixed-factor recovery slots at one direct anchor; paid misses are recorded separately",
+    "stationarity_definition": "acceptable unchanged direct band converges only after ordinary normal recovery exhausts its m_max slots",
+    "tangent": "Henkelman-Jonsson improved everywhere",
+    "transaction_call_cap_per_image_including_direct": 2
+  },
+  "frozen_sources": {
+    "article_n10": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/tuned_ivm_alpha2e3_selected.npz",
+    "article_n20": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/tuned_ivm_alpha1e3_selected.npz",
+    "audit_edge_tests": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_independent_audit_edges.py",
+    "contract_tests": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_atomic_tangent_secant_contract.py",
+    "densified_count": 500,
+    "frozen_predecessor_core": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_chord_coherence_20260830/src/q10_irivm_atomic_tangent_secant_core.py",
+    "independent_audit": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/audit_results.py",
+    "metric": "/Users/wuzhiyou/IVM_for_MEP/python/unified_ir_ivm_20260827/src/q10_article_metrics.py",
+    "optimizer": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/q10_irivm_atomic_tangent_secant_core.py",
+    "protocol": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/PROTOCOL.md",
+    "reference_delta_e": 67.50188060819488,
+    "runner": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/run_grid.py"
+  },
+  "implementation_sha256": "2e12b8817730b56ddef0594c932cfc0c3f4642795af25c623ca82c7a726a66a0",
+  "methodological_status": "disclosed post-hoc QM10 v2 confirmation after the v1 formal audit revealed a tiny-displacement numerical false positive; not an independent transfer or holdout claim",
+  "number_of_forces_budget_per_run": 3000,
+  "number_of_forces_contract": {
+    "backtrack_fraction_selection_charged": false,
+    "direct_reparameterized_path_charged": true,
+    "endpoints_charged": false,
+    "exact_coordinate_cache": true,
+    "initial_cost": "N_internal",
+    "main_armijo_trials_charged": true,
+    "offline_metric_evaluations_charged": false,
+    "ordered_coordinate_miss_trace": "successful charged cache misses in exact global order with outer, phase, image, and SHA-256 of contiguous float64 coordinates",
+    "partial_budget_recovery_creates_or_advances_state": false,
+    "per_image_ledger_must_close_to_terminal_nof": true,
+    "projected_recovery_path_charged": true,
+    "raw_recovery_path_charged": false,
+    "rejected_and_rolled_back_trials_charged": true,
+    "trace_is_the_public_nof_clock": true,
+    "unit": "one uncached joint energy-gradient evaluation at one internal image"
+  },
+  "outer_iteration_safeguard": 10000,
+  "pre_registration_method_development": {
+    "candidate_n10": {
+      "alpha_label": "2e-3",
+      "joint_checkpoint_wins": 51,
+      "m_max": 4,
+      "r": 0.65,
+      "terminal_nof": 847
+    },
+    "candidate_n20": {
+      "alpha_label": "1e-3",
+      "joint_checkpoint_wins": 51,
+      "m_max": 4,
+      "r": 0.6,
+      "terminal_nof": 2276
+    },
+    "independent_generalization_claim_allowed": false,
+    "optimizer_opponent_blind_during_exploration": true,
+    "prior_v1_formal_evidence": {
+      "alpha_label": "1e-3",
+      "campaign_id": "q10-irivm-low-r-coherence-secant-20260830",
+      "delta_e_error_strictly_better_checkpoints_recomputed": 51,
+      "i_perp_strictly_better_checkpoints_recomputed": 51,
+      "m_max": 4,
+      "r": 0.6,
+      "run_id": "685c22444caacc53",
+      "terminal_nof": 2276,
+      "v1_gate_released": false,
+      "v1_integrity_error": "raw-minus-direct cancellation made the audit reconstruct the wrong sign for an approximately 1e-25 g-dot-d",
+      "worst_delta_e_error_ratio_recomputed": 0.9907478520478517,
+      "worst_i_perp_ratio_recomputed": 0.18279904897298907
+    },
+    "prior_v1_formal_result_observed": true,
+    "protocol_contains_full_disclosure": true,
+    "temporary_exploratory_runs_performed": true,
+    "temporary_outputs_outside_campaign_tree": true,
+    "v2_formal_campaign_result_before_registration": false
+  },
+  "projected_recovery_contract": {
+    "accepted_secant_curvature_threshold": 1e-06,
+    "actual_proximal_merit_formula": "sum_internal(E_direct-E_projected-||x_projected-x_direct||^2/(2*alpha))",
+    "actual_proximal_merit_reads_r": false,
+    "adjacent_chord_gate_is_not_a_tangent_operator": true,
+    "atomic_commit_gate": "equidistant and finite and changed and (post-main I_perp monotone or positive actual proximal merit)",
+    "complete_projected_candidate_preserved_for_offline_audit": true,
+    "conservative_secant_publication": "all curvature-certified pairs",
+    "fractions_for_m_max_4": [
+      1.0,
+      0.5,
+      0.25,
+      0.125
+    ],
+    "maximum_recovery_band_evaluations_per_outer": 1,
+    "maximum_transaction_calls_per_image_including_direct": 2,
+    "normalized_curvature_formula": "(s^T y)/(||s|| ||y||)",
+    "only_projected_candidate_is_evaluated": true,
+    "ordinary_secant_publication": "all curvature-certified pairs",
+    "projection_operator": "zero-NoF adjacent-chord-coherent saddle seed followed by Henkelman-Jonsson improved-tangent Newton correction of adjacent chord-length constraints using fixed direct-anchor energies",
+    "projection_target": "original max(direct_eq,0.2*pre_eq) ceiling",
+    "publication_only_after_complete_atomic_commit": true,
+    "rank_omitted_is_distinct_from_curvature_rejected": true,
+    "raw_proposal_evaluated": false,
+    "secant_index_convention": "1-based internal path image index",
+    "secant_tie_break": "smaller 1-based internal image index",
+    "slot_rule": "a complete projected fraction advances one slot even on all-cache hits; partial budget fractions do not advance",
+    "stationary_probe_uses_ordinary_normal_seed": true,
+    "strong_secant_publication": "highest normalized-curvature certified pair only",
+    "whole_band_atomic_merge": true
+  },
+  "question": "Can one shared low-r coherence-conditioned recovery-memory IR-IVM beat frozen Article IVM at every latter-half same-NoF checkpoint in both I_perp and densified Delta-E error for QM10 N_internal=10 and 20?",
+  "registered_at": "2026-08-30T22:10:00+08:00",
+  "registered_before_first_optimization_run": true,
+  "registered_member_count": 8,
+  "registration_scope": "before the first v2 formal NPZ, receipt, execution report, or lock; temporary exploratory runs and the frozen v1 formal evidence are disclosed in PROTOCOL.md",
+  "resolutions": [
+    10,
+    20
+  ],
+  "shared_grid_for_both_resolutions": {
+    "alpha": [
+      0.001,
+      0.002
+    ],
+    "alpha_labels": [
+      "1e-3",
+      "2e-3"
+    ],
+    "m_max": [
+      4
+    ],
+    "r": [
+      0.6,
+      0.65
+    ]
+  },
+  "staged_execution_gate": {
+    "final_selection_requires_all_registered_members": true,
+    "first_resolution": 20,
+    "n10_result_token": "SHA-256 of the exact fresh reports/n20_gate_audit/audit_manifest.json",
+    "n20_is_a_necessary_condition": true,
+    "n20_registered_members": 4,
+    "run_n10_only_after_an_integrity_valid_n20_strict_pass": true
+  },
+  "strict_acceptance": {
+    "campaign_pass": "both resolutions pass independently; selected control triples may differ",
+    "checkpoints": {
+      "10": {
+        "count": 51,
+        "range": [
+          481,
+          951
+        ]
+      },
+      "20": {
+        "count": 51,
+        "range": [
+          1199,
+          2377
+        ]
+      }
+    },
+    "metrics": [
+      "article Henkelman-Jonsson improved-tangent I_perp",
+      "absolute error of the coordinate-wise 500-point densified Delta E from 67.50188060819488"
+    ],
+    "nonfinite_result_eligible": false,
+    "numerical_failure_eligible": false,
+    "opponent": "frozen Article IVM",
+    "ranking_if_no_pass": "strict pass first, then ascending worst joint ratio, mean joint ratio, terminal NoF, alpha, r, m_max, run ID",
+    "resolution_pass": "one registered run is strictly lower than Article IVM in both metrics at every one of 51 checkpoints; equality fails",
+    "same_nof": "LOCF complete public states for both methods, including held public states after rejected paid trials"
+  }
+}

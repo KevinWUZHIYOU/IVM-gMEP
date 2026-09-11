@@ -1,0 +1,115 @@
+{
+  "builder": {
+    "bytes": 4959,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_call515_constrained_relaxed_pilot_r1b.py",
+    "sha256": "9897258fef67d66328782de2a576bacdefee65c668ee3fdf0b1a56b98f18edd0"
+  },
+  "center_state": {
+    "call_per_image": 515,
+    "formally_reportable": false,
+    "method": "IVM",
+    "optimization_N_F": 14983,
+    "path_sha256": "5a4ba3c5dc8f7063c1963f0bfd951f82356e60d0ad9c4fc17c0bc8b0d36d8569",
+    "state_role": "terminal_uncommitted_charged_tail"
+  },
+  "created_utc": "2026-09-03T05:39:32.410846+00:00",
+  "frozen_base_builder": {
+    "bytes": 14687,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_call515_constrained_relaxed_pilot_r1.py",
+    "sha256": "e985926d517ea053d60ffcf6db9f6448beb74bb4a62be1337bbbcd79b83dfe66"
+  },
+  "n_execution_order_within_pilot": [
+    2,
+    1,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "openmm_contexts_constructed": 0,
+  "optimization_N_F_contribution": 0,
+  "physical_force_calls": 0,
+  "planned_coordinate_audit": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.audit.json",
+  "planned_coordinate_manifest": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.npz",
+  "r1_superseded_zero_physics_evidence": {
+    "contract": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_CONSTRAINED_RELAXED_PILOT_COORDINATE_CONTRACT_R1_20260903.json",
+    "coordinate_manifest_without_audit": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1.npz",
+    "physical_force_calls": 0,
+    "reason": "bitwise s-grid representation mismatch caught after coordinate-only write"
+  },
+  "registered_n_values_rms_A": [
+    -0.12,
+    -0.06,
+    0.0,
+    0.12,
+    0.24,
+    0.36,
+    0.48,
+    0.6,
+    0.69
+  ],
+  "registered_s_values": [
+    0.0,
+    0.06896551724137931,
+    0.13793103448275862,
+    0.20689655172413793,
+    0.29310344827586204,
+    0.3620689655172414,
+    0.43103448275862066,
+    0.5,
+    0.5689655172413793,
+    0.6379310344827587,
+    0.7068965517241379,
+    0.7931034482758621,
+    0.8620689655172413,
+    0.9310344827586207,
+    1.0
+  ],
+  "schema": "bb-irivm-call515-constrained-relaxed-pilot-coordinate-contract-r1b-v1",
+  "source_coordinate_audit": {
+    "bytes": 2485,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.audit.json",
+    "sha256": "d8e1de581b4ae4c0ae4a742637cbee03658b464f21bf7169f3734b108a12b853"
+  },
+  "source_coordinate_manifest": {
+    "bytes": 135373288,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+    "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+  },
+  "source_n_indices": [
+    0,
+    2,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    27
+  ],
+  "source_s_indices": [
+    0,
+    4,
+    8,
+    12,
+    17,
+    21,
+    25,
+    29,
+    33,
+    37,
+    41,
+    46,
+    50,
+    54,
+    58
+  ],
+  "status": "FROZEN_ZERO_PHYSICS_BEFORE_CONSTRAINED_RELAXATION",
+  "surface_shape": [
+    15,
+    9
+  ]
+}

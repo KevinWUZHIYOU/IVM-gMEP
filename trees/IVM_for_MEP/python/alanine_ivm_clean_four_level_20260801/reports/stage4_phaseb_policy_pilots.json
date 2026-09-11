@@ -1,0 +1,66 @@
+{
+  "variants": {
+    "curve_eq075_perimage": [
+      "state_curve",
+      "per_image",
+      "0.75"
+    ],
+    "curve_eq05_perimage": [
+      "state_curve",
+      "per_image",
+      "0.5"
+    ],
+    "curve_eq075_pathsum": [
+      "state_curve",
+      "path_sum",
+      "0.75"
+    ],
+    "projected_eq075_pathsum": [
+      "state_curve_projected",
+      "path_sum",
+      "0.75"
+    ],
+    "projected_eq05_pathsum": [
+      "state_curve_projected",
+      "path_sum",
+      "0.5"
+    ]
+  },
+  "results": [
+    {
+      "variant": "curve_eq05_perimage",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq05_perimage_a20_central_state_ivm_cfg94f43ec73f81_budget220.npz",
+      "wall_seconds": 68.1780731678009
+    },
+    {
+      "variant": "curve_eq075_perimage",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq075_perimage_a20_central_state_ivm_cfga5515ae42fba_budget220.npz",
+      "wall_seconds": 71.82830381393433
+    },
+    {
+      "variant": "curve_eq075_pathsum",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq075_pathsum_a20_central_state_ivm_cfg6954310cd6e4_budget220.npz",
+      "wall_seconds": 72.6218810081482
+    },
+    {
+      "variant": "projected_eq075_pathsum",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_projected_eq075_pathsum_a20_central_state_ivm_cfgef5e7cb060ed_budget220.npz",
+      "wall_seconds": 27.34645986557007
+    },
+    {
+      "variant": "projected_eq05_pathsum",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_projected_eq05_pathsum_a20_central_state_ivm_cfgc15a63478a45_budget220.npz",
+      "wall_seconds": 26.190376043319702
+    }
+  ]
+}

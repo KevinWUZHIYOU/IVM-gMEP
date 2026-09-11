@@ -1,0 +1,26 @@
+{
+  "authorization_scope": "one exact fresh selected 9990-N_F output-only full-history replay",
+  "enabled": true,
+  "issued_utc": "2026-09-02T10:21:49Z",
+  "label": "bb_irivm_a1e0_r01_m05_inf9990_allpaths_r2",
+  "minimum_free_disk_bytes_before_child": 6442450944,
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_ALL_PATHS_REPLAY_NF9990_20260902_R2.json",
+    "sha256": "363c1c3ba3ef164bf246539f406c16eb52570e2d457a8ff2232b358422050065"
+  },
+  "required_Mutagen_session": "bb-irivm-20260901",
+  "required_lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "required_thread_caps": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "runtime_argv_sha256": "2905597e1d3da5bbc23004290f65a916c449562fef5e7e88b4fc185ecd28531c",
+  "schema": "bb-irivm-selected-all-paths-output-only-replay-authorization-v2"
+}

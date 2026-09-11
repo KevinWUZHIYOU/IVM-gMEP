@@ -1,0 +1,53 @@
+{
+  "authorized_stages": [
+    "original_path32",
+    "surface"
+  ],
+  "authorized_utc": "2026-09-02T11:39:50.702686+00:00",
+  "authorizer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_irivm_nf8982_0k_section_energy_r4.py",
+    "sha256": "e3fcb9c2561476450639ab801133f2ff1664d0bf62f4b43357ffd7c5ab90f641"
+  },
+  "canonical_two_lock_second_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_CONTRACT_R4_20260902.json",
+    "sha256": "3f7efd0eea0b03d7f1553f7e2fa4538851eea9dffdf8a394fa8fbc2199d1662d"
+  },
+  "enabled": true,
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_nf8982_0k_section_energy_r4.py",
+    "sha256": "3d3049d2710274b4cf8d7c36bd40a0fd912332c4b51c509c55401b609d4db07b"
+  },
+  "failed_or_open_attempt_policy": "fail closed; require a superseding authorization and new output",
+  "host_role": "local",
+  "jobs": 1,
+  "maximum_energy_only_attempts": 1680,
+  "maximum_force_calls": 0,
+  "maximum_original_internal_energy_only_attempts": 30,
+  "maximum_surface_energy_only_attempts": 1650,
+  "optimization_N_F_contribution": 0,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_original_path32_energy_20260902_r4.npz",
+  "physical_calls_started_before_authorization": 0,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_energy_59x28_20260902_r4.npz",
+  "schema": "bb-irivm-nf8982-0k-section-energy-authorization-v3",
+  "status": "AUTHORIZED_AFTER_ZERO_OPENMM_PREFLIGHT",
+  "successful_prefix_resume_policy": "reuse only exact coordinate-hash-bound successful WAL entries",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_PREAUTH_PREFLIGHT_R4_20260902.json",
+    "sha256": "ced1dd06ee5c21861f9b180bd1bee7d7abd1da4b09832e387f68c2d7e7cde80f"
+  }
+}

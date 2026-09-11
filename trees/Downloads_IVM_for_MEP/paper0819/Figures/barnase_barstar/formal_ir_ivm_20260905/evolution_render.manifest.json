@@ -1,0 +1,132 @@
+{
+  "builder": {
+    "bytes": 25292,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/plot_bb_r2_smooth_c2_gamma15_to_linear_preview.py",
+    "sha256": "83f043bee06f199c575eda3da41c8e2e3bd53a1fe2b2532a52acbbdc8489af92"
+  },
+  "canonical_pdf": {
+    "bytes": 114481,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution.pdf",
+    "sha256": "8dff0c767361bd10f1439e1ca55556a58430652a053e5a822066f2f2fbf2f23b"
+  },
+  "canonical_provenance": {
+    "bytes": 24794,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution.provenance.json",
+    "sha256": "37e6acdcbe881a1023f1526aa2397bd06b2059aa09d7e8bd969739adcc9ba144"
+  },
+  "created_utc": "2026-09-04T06:09:06.948323+00:00",
+  "final_panel_ir_ivm_target_N_F": 20000,
+  "normalization_verification": {
+    "dense_grid_points": 100010,
+    "exact_endpoints": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        688.4553818246745,
+        1.0
+      ]
+    ],
+    "fit_anchor_energies_kcal_per_mol": [
+      0.0,
+      50.0,
+      100.0,
+      150.0,
+      200.0,
+      240.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      688.4553818246745
+    ],
+    "fit_residuals": [
+      0.0,
+      0.02498183957862197,
+      -0.022467382283947568,
+      0.018817989590558026,
+      -0.011282565903569575,
+      0.0057291423766803184,
+      0.006932638721039774,
+      0.005168436451769898,
+      0.003376674000411639,
+      0.0015849108956823565,
+      0.0
+    ],
+    "fit_target": "curvature-1.5 relative spacing through 200 kcal/mol, rescaled to 72% of the bar, and a linear target from 200 kcal/mol to the measured maximum",
+    "fit_target_color_coordinates": [
+      0.0,
+      0.06147651675917317,
+      0.32935924715281667,
+      0.5527706489609625,
+      0.72,
+      0.7429294228638883,
+      0.7773235571597208,
+      0.8346471143194417,
+      0.8919706714791625,
+      0.9492942286388834,
+      1.0
+    ],
+    "fitted_color_coordinates": [
+      0.0,
+      0.08645835633779514,
+      0.3068918648688691,
+      0.5715886385515205,
+      0.7087174340964304,
+      0.7486585652405686,
+      0.7842561958807606,
+      0.8398155507712116,
+      0.8953473454795742,
+      0.9508791395345657,
+      1.0
+    ],
+    "fitted_parameters": {
+      "gaussian_center_kcal_per_mol": 110.56,
+      "gaussian_fraction": 0.6176883752046186,
+      "gaussian_width_kcal_per_mol": 68.33,
+      "linear_fraction": 0.3823116247953814
+    },
+    "global_continuity": "C-infinity; no joins",
+    "inverse": "64-step monotone bisection",
+    "maximum_absolute_fit_error_above_200": 0.006932638721039774,
+    "maximum_absolute_fit_error_below_or_at_200": 0.02498183957862197,
+    "maximum_inverse_round_trip_error_kcal_per_mol": 4.547473508864641e-13,
+    "minimum_derivative_per_kcal_per_mol": 0.0005553179405499118,
+    "selected_scheme": "global Gaussian-CDF plus linear weighted fit",
+    "strictly_monotone_on_dense_grid": true,
+    "target_color_coordinate_at_200": 0.72,
+    "weighted_sum_squared_error": 0.00817295416233595
+  },
+  "optimization_N_F_contribution": 0,
+  "physical_calls": 0,
+  "preserved_curvature_2_sweep_member": {
+    "pdf": {
+      "bytes": 108178,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_2.pdf",
+      "sha256": "4ace8386b4d86ea5b3471d4fc1377382ff9d4439c9f198369ae6ac0248fe7401"
+    },
+    "provenance": {
+      "bytes": 19623,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_2.provenance.json",
+      "sha256": "620af409acf0424019cdefaa195241e2bf6a6ac2fe1b60f095225851d79c9e4c"
+    },
+    "seven_variant_manifest": {
+      "bytes": 17248,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_square_all_points_curvature_sweep.manifest.json",
+      "sha256": "4054010f5a4edfce85367275025717004c6b979d0c18ed99dde76468cf497deb"
+    }
+  },
+  "schema": "bb-irivm-r2-smooth-global-fit-canonical-manifest-v1",
+  "source_preview": {
+    "bytes": 114471,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_smooth_global_gaussian_cdf_fit_preview.pdf",
+    "sha256": "9332578f7597ec48d196cb57d54a4968c86e35f202996563ae304d52be671cfd"
+  },
+  "source_preview_provenance": {
+    "bytes": 22706,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm_constrained_relaxed_evolution_smooth_global_gaussian_cdf_fit_preview.provenance.json",
+    "sha256": "0553500a6c5593ba8eda64880cb1b0bb36e5b3f5d119b0db1d4205bd75950a90"
+  },
+  "status": "PASS_SMOOTH_GLOBAL_FIT_CANONICAL_AND_GAMMA2_PRESERVATION"
+}

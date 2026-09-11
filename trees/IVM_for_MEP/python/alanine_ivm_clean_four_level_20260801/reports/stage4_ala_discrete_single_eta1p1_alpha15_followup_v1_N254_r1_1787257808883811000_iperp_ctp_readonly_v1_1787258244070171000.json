@@ -1,0 +1,2256 @@
+{
+  "analysis_id": "stage4_ala_discrete_single_eta1p1_alpha15_iperp_ctp_v1",
+  "created_unix": 1787258244.0685492,
+  "read_only_formal_input_audit": true,
+  "barrier_data_accessed": false,
+  "barrier_computation_or_densification_performed": false,
+  "barrier_unembargoed": false,
+  "barrier_remains_embargoed": true,
+  "eta1p1_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000.json",
+  "eta1p1_report_sha256": "fa0bf64922d91d15a48b0b6b6949d8ddb3ff109661ff011b351f8f9caee79212",
+  "eta1p1_preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000_preregistered.json",
+  "eta1p1_preregistration_sha256": "dbffae0850f39128c313f2819c28b7679d5e80ef0a6f9fe59246dc43a176df1d",
+  "canonical_common_initial_path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+  "canonical_common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "canonical_common_initial_array_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+  "verified_run_source_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup_grid.py": "0c56283c67559abf0fcf898d44faefa8e51b82481f4bc833ecf3a3d2b05b4ab6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup.py": "0587bb2dd438a402293ee73a2be060a6e54d82b06add6f519d19df914a780c1a",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_eta1p1_alpha15_followup.py": "3bbd8ea822a4d3af80b455b9c7856ade7b5db42206442d53784b8aec73e52d1f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_selected_eta_shim.py": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+  },
+  "verified_decision_source_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_eta1p1_alpha15_iperp_ctp.py": "109a3f0b395392dc8ff8ddf5129929884fd580acce629d8a5ce3065164cb54f6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_analyze_stage4_ala_discrete_single_eta1p1_alpha15_iperp_ctp.py": "b343bc24e695b94d380fdca203cfb627b75299b80673eecf98e09d3510d33cfa",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_alpha_refinement_iperp_ctp.py": "15c7fdeb46c6d44556874df31bca8b4a37aabf1928ec571840cdfef50204eb2a",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_selected_eta_iperp_ctp.py": "4ef0f8d94aa925f63ae5efc8dd513f015287b0124c020fc3b3840b4b49ee6f00",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_residual_ratio_iperp_ctp.py": "73a0959705ec3e581da5711a1fa3fd6b15dc294b36a1502f7242d69989c48c66"
+  },
+  "verified_decision_input_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg661f507a1380_budget254.npz": "28bf7a5894337e2fc26178cc9dc9ead86f421c50972f9faf15aef34ce1830d90",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1.json": "65ce120aaf470cfd95ac3ab46e1cc50ceecb76afff4e6c484216f1986e77165c",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1/command.json": "9bf0458e6d0f898ddaf76eaa9758531887c677853b4ce32b4bf98c3ea46125c8",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1.json": "fb26c9fcb09ba1fbff7058c367965c694a573ecd5ed6110ce81366cbdef3fe83",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1/command.json": "9842cbe8e47971a49e4b90203192d59d45245b19baadf06e28b36ef049d4db16",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_iperp_ctp_readonly_v1_1787253163640931000.json": "8ff9d9824eb2d3719d28f73f33b92b62e115ff9f7449bf60be054298d7ba5212"
+  },
+  "verified_formal_upstream_artifact_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000.json": "68571385e40e523065916c36fbd72b91445c4b7239f2925c0b8cdfc7a2ff63c0",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_preregistered.json": "16739061c15d8f575a48eefbd4cf2edf7cc453c38defbda987e9a3899714fc74",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000.json": "179a00246f01af6cb3955d018830a0d4eb818cdd4053477a0648d82698ed819a",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000_preregistered.json": "ad6996e1751e5095beb5db6695d9c6c0e2944825efd5d84c9b623089ae542823",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000_iperp_ctp_readonly_v1_1787252176364307000.json": "34a7710b2404ac1469158c28636f9b8441b3ff6695c2a35d2f3af3681d3ac587"
+  },
+  "verified_formal_source_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement_grid.py": "e592b7b905f04d9522d435ddd53e3722f43f3263ce4a004ed00ced4f01b8e724",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/build_pareto_archive.py": "ae71cab4bb760cf83edabcf4799c45313188102695b79ba9698abda0c6d786fd",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_iperp_ctp.py": "13dda1798c530a3629cb25c4ecbd13ad1e1c7a52ce5950b2b2a2a3a2c8edf60e",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha_grid.py": "0d6e04401c69fb20a9c5314df97114923e0ddce4f3376b8e3e33995489f8163f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha_grid.py": "cb5f7eae1a1a9d10473ee6a25d3b39678230b4d77e1571cd2758c9dfedb4dd69"
+  },
+  "verified_formal_result_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a5_N254_discrete_b040_r1_central_state_ivm_cfgcda4c0d00104_budget254.npz": "dab52fe02eb29dee3432196c7c1ce3cd40e29f2ebe05b11a22c707565ee7eb35",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a5_N254_legacy_r1_central_state_ivm_cfg04ebaa9d195e_budget254.npz": "cb56575b35d54f3c14b5c9a3aa7affeed172c2f6d375a518c68f4cadb594e6e9",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a7p5_N254_discrete_b040_r1_central_state_ivm_cfg49bd60362b61_budget254.npz": "91d91858e4af678a653000d1c5b8b2dd526454c47a0ff4b6663ca7cc0e297274",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a7p5_N254_legacy_r1_central_state_ivm_cfg9e5376710b04_budget254.npz": "44c93fe5b91d3767fcdbbfa3ffae777594595fa54fef2dd42bf90221fe4c88aa",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_r08c10_a10_N254_discrete_b040_r1_central_state_ivm_cfgffb5ffd94f4a_budget254.npz": "0343705f66678cf1d2031b9bf146c9e8659335e13e5362cf83c121b75d085b0e",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a10_N254_legacy_r1_central_state_ivm_cfgab23c94352d6_budget254.npz": "4217108b6e519e61d9b8d267cf2e8d1207fcd895c9c05406e42ab6453bb7eaa1",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfgfaf71a0dca2c_budget254.npz": "15df24a92b0a4a73e972be0574b5979d2e4eb7e7b980bc76cd58d474f9d8e835",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1_central_state_ivm_cfg706082ab7a04_budget254.npz": "236c9e8f623fa297619d403163a33419a09f3069ef3d151cddd9dafb9cd11c70",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg661f507a1380_budget254.npz": "28bf7a5894337e2fc26178cc9dc9ead86f421c50972f9faf15aef34ce1830d90",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_r08c10_a20_N254_discrete_b040_r1_central_state_ivm_cfg539237df964b_budget254.npz": "8ad8ad19f469752e2ebbd6c4b73eca12eadbfc09eb5df2d12ba5cf92e14d63ae",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a20_N254_legacy_r1_central_state_ivm_cfg26035919ed6a_budget254.npz": "2688b7b75fb79efb11a00ad9da3f426930a5f9e0f6f25c45c138c2945feb2176"
+  },
+  "verified_formal_member_audit_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a5_N254_discrete_b040_r1.json": "0fca5ea12165459944040ff68f453f8b8a8a3cf429b96f1d5605bfc1244c04c2",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a5_N254_legacy_r1.json": "b969367fcdaf5854aa7999eac1f63699ed6ffd198ca357d12c7826b6660ac500",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a7p5_N254_discrete_b040_r1.json": "1ca87302848baca0679d27b2f8bec3d5654d8535a0a9de1daf6d872d3aa898c6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a7p5_N254_legacy_r1.json": "37bf52d43fc18ba233676aab511fdffcf6868f9686e0ed421e4dd78d628f4ab4",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_r08c10_a10_N254_discrete_b040_r1.json": "a86f38fb7d5572c156bbc8d013bd0544c6d864fd449c0fd7768e332ddfd2a9e8",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a10_N254_legacy_r1.json": "bf5f898da01fcad46b1e7e06a57cfa5de5a27381eae18ab864bd802de653d340",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1.json": "1cf4ec9619b41f7f5d3dc39e007e0d7fc95323f78d6900befa64f365f3b5bc5f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1.json": "7783ba8a42491ce8d23f7b321ee310a7fd47b48d1df23e4e42d24b30a211d2db",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1.json": "65ce120aaf470cfd95ac3ab46e1cc50ceecb76afff4e6c484216f1986e77165c",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1.json": "fb26c9fcb09ba1fbff7058c367965c694a573ecd5ed6110ce81366cbdef3fe83",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_r08c10_a20_N254_discrete_b040_r1.json": "8f71542c46c732204c908bfda3de015680d1084820ec7688ec1f454730fc8c0e",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a20_N254_legacy_r1.json": "556ed435e62e0700b2a303ad932c22a6db5e848b5c9241a71ebbb2684f2c98e4"
+  },
+  "verified_report_prereg_source_command_result_audit_hashes": true,
+  "eta1p1_member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/audits/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1.json",
+  "eta1p1_member_audit_sha256": "058d591e5fccc4a0e7a4dee0854c4f372b7b2648d2673dd25a9bd58363eed91a",
+  "registered_scientific_command_sha256": "6e01b50f8e13a627a7b9f72f6b1e6e8f8ec8f9aa3ddf605eebe950720a946b8c",
+  "fixed_eta": 1.1,
+  "fixed_alpha": 15.0,
+  "fixed_residual_ratio": 0.8,
+  "fixed_max_evaluated_steps": 10,
+  "fixed_lbfgs_history": 7,
+  "fixed_budget_per_image": 254,
+  "excluded_formal_controls": [
+    "alpha10",
+    "alpha12.5",
+    "eta1.25"
+  ],
+  "npz_access_allowlists": {
+    "eta1p1_candidate": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_step_multiplier_aborted_selection_count",
+      "discrete_step_multiplier_application_stage",
+      "discrete_step_multiplier_base_implementation_id",
+      "discrete_step_multiplier_dynamic_cap_reapplied",
+      "discrete_step_multiplier_energy_backtracking",
+      "discrete_step_multiplier_eta",
+      "discrete_step_multiplier_extra_physical_evaluations",
+      "discrete_step_multiplier_implementation_id",
+      "discrete_step_multiplier_policy_id",
+      "discrete_step_multiplier_selector_isolated",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "subproblem_line_search_backtracks",
+      "total_internal_joint_evaluations"
+    ],
+    "same_alpha_eta_one_candidate": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "total_internal_joint_evaluations"
+    ],
+    "same_alpha_legacy": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "total_internal_joint_evaluations"
+    ],
+    "canonical_initial": [
+      "initial_path"
+    ],
+    "official_archive": [
+      "activation_iperp",
+      "candidate_calls",
+      "candidate_i_perp",
+      "complete_state_candidates_only",
+      "source_result",
+      "source_result_sha256"
+    ],
+    "official_combined": [
+      "phase_a_result",
+      "phase_a_result_sha256",
+      "phase_b_result",
+      "phase_b_result_sha256",
+      "phase_transition_force_offset"
+    ],
+    "official_components": [
+      "i_perp",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "total_internal_joint_evaluations"
+    ]
+  },
+  "eligibility": "initial or reparam_committed, then segment_length_cv<=0.0065 and segment_length_ratio<=1.03",
+  "cost_to_precision": "minimum actual optimization NF with I_perp<=threshold; no interpolation",
+  "unreachable_policy": "candidate unreachable is U and is a formal loss",
+  "candidate": {
+    "eta": 1.1,
+    "alpha": 15.0,
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/ivm_stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg02c3f3990307_budget254.npz",
+    "result_sha256": "bb189235868d63be23d335c0766db59e0315b82fd11448077a492966ce5eaa55",
+    "configuration_sha256": "02c3f3990307b894013cd41e97182d0045314466b500159cd059f93a42578a18",
+    "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "final_optimization_NF": 3313,
+    "npz_fields_accessed": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_step_multiplier_aborted_selection_count",
+      "discrete_step_multiplier_application_stage",
+      "discrete_step_multiplier_base_implementation_id",
+      "discrete_step_multiplier_dynamic_cap_reapplied",
+      "discrete_step_multiplier_energy_backtracking",
+      "discrete_step_multiplier_eta",
+      "discrete_step_multiplier_extra_physical_evaluations",
+      "discrete_step_multiplier_implementation_id",
+      "discrete_step_multiplier_policy_id",
+      "discrete_step_multiplier_selector_isolated",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "subproblem_line_search_backtracks",
+      "total_internal_joint_evaluations"
+    ],
+    "complete_state_NF": [
+      20,
+      80,
+      140,
+      180,
+      371,
+      512,
+      644,
+      770,
+      896,
+      1095,
+      1197,
+      1331,
+      1441,
+      1546,
+      1679,
+      1801,
+      2016,
+      2214,
+      2325,
+      2554,
+      2786,
+      3020,
+      3293
+    ],
+    "mesh_eligible_complete_state_NF": [
+      20,
+      80,
+      140,
+      180,
+      371,
+      770,
+      1197,
+      1331,
+      1441,
+      1546,
+      1679,
+      1801,
+      2016,
+      2214,
+      2325,
+      2554,
+      2786,
+      3020,
+      3293
+    ],
+    "eligible_points": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.4614608503380646,
+        "segment_length_cv": 0.0014046281962008832,
+        "segment_length_ratio": 1.0047881538944567,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.10866852352532867,
+        "segment_length_cv": 0.0006530048520385457,
+        "segment_length_ratio": 1.0018890097107451,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 180,
+        "i_perp": 0.06438455725168225,
+        "segment_length_cv": 6.260310475732988e-10,
+        "segment_length_ratio": 1.00000000176581,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 371,
+        "i_perp": 0.01443722756882871,
+        "segment_length_cv": 0.004218709164712164,
+        "segment_length_ratio": 1.0168105445575353,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 770,
+        "i_perp": 0.001974768972863892,
+        "segment_length_cv": 0.003057676601996772,
+        "segment_length_ratio": 1.0110936954369043,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1197,
+        "i_perp": 0.0006081390239443157,
+        "segment_length_cv": 0.002264121695596245,
+        "segment_length_ratio": 1.0087724839323344,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1331,
+        "i_perp": 0.000520937112802533,
+        "segment_length_cv": 0.002119454016192638,
+        "segment_length_ratio": 1.0084677815277876,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1441,
+        "i_perp": 0.0004644951867644147,
+        "segment_length_cv": 0.0019576432409745674,
+        "segment_length_ratio": 1.008332157583622,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1546,
+        "i_perp": 0.0004247375963870833,
+        "segment_length_cv": 0.0019251685853578545,
+        "segment_length_ratio": 1.0082292172932252,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1679,
+        "i_perp": 0.000392076550959963,
+        "segment_length_cv": 0.001965824681658106,
+        "segment_length_ratio": 1.0080871550605428,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1801,
+        "i_perp": 0.00036938327597160303,
+        "segment_length_cv": 0.0018716891717319624,
+        "segment_length_ratio": 1.0080841761386783,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2016,
+        "i_perp": 0.0003232082797768926,
+        "segment_length_cv": 0.003739777650467241,
+        "segment_length_ratio": 1.0156254876722537,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2214,
+        "i_perp": 0.00023364471166739993,
+        "segment_length_cv": 0.005847666495362384,
+        "segment_length_ratio": 1.025152678945114,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2325,
+        "i_perp": 0.00021903287444868414,
+        "segment_length_cv": 0.0019674664550748348,
+        "segment_length_ratio": 1.0084054480209523,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2554,
+        "i_perp": 0.00020112069358975564,
+        "segment_length_cv": 0.0039249123506775166,
+        "segment_length_ratio": 1.0171495650898732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2786,
+        "i_perp": 0.00018822199091361437,
+        "segment_length_cv": 0.0028174208698147087,
+        "segment_length_ratio": 1.012742264320557,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3020,
+        "i_perp": 0.0001716134721295674,
+        "segment_length_cv": 0.004334483994397212,
+        "segment_length_ratio": 1.0189456452047716,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3293,
+        "i_perp": 0.00016186039155354832,
+        "segment_length_cv": 0.003090712747587637,
+        "segment_length_ratio": 1.014130855385136,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.4614608503380646,
+        "segment_length_cv": 0.0014046281962008832,
+        "segment_length_ratio": 1.0047881538944567,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.10866852352532867,
+        "segment_length_cv": 0.0006530048520385457,
+        "segment_length_ratio": 1.0018890097107451,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 180,
+        "i_perp": 0.06438455725168225,
+        "segment_length_cv": 6.260310475732988e-10,
+        "segment_length_ratio": 1.00000000176581,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 371,
+        "i_perp": 0.01443722756882871,
+        "segment_length_cv": 0.004218709164712164,
+        "segment_length_ratio": 1.0168105445575353,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 770,
+        "i_perp": 0.001974768972863892,
+        "segment_length_cv": 0.003057676601996772,
+        "segment_length_ratio": 1.0110936954369043,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1197,
+        "i_perp": 0.0006081390239443157,
+        "segment_length_cv": 0.002264121695596245,
+        "segment_length_ratio": 1.0087724839323344,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1331,
+        "i_perp": 0.000520937112802533,
+        "segment_length_cv": 0.002119454016192638,
+        "segment_length_ratio": 1.0084677815277876,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1441,
+        "i_perp": 0.0004644951867644147,
+        "segment_length_cv": 0.0019576432409745674,
+        "segment_length_ratio": 1.008332157583622,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1546,
+        "i_perp": 0.0004247375963870833,
+        "segment_length_cv": 0.0019251685853578545,
+        "segment_length_ratio": 1.0082292172932252,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1679,
+        "i_perp": 0.000392076550959963,
+        "segment_length_cv": 0.001965824681658106,
+        "segment_length_ratio": 1.0080871550605428,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1801,
+        "i_perp": 0.00036938327597160303,
+        "segment_length_cv": 0.0018716891717319624,
+        "segment_length_ratio": 1.0080841761386783,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2016,
+        "i_perp": 0.0003232082797768926,
+        "segment_length_cv": 0.003739777650467241,
+        "segment_length_ratio": 1.0156254876722537,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2214,
+        "i_perp": 0.00023364471166739993,
+        "segment_length_cv": 0.005847666495362384,
+        "segment_length_ratio": 1.025152678945114,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2325,
+        "i_perp": 0.00021903287444868414,
+        "segment_length_cv": 0.0019674664550748348,
+        "segment_length_ratio": 1.0084054480209523,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2554,
+        "i_perp": 0.00020112069358975564,
+        "segment_length_cv": 0.0039249123506775166,
+        "segment_length_ratio": 1.0171495650898732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2786,
+        "i_perp": 0.00018822199091361437,
+        "segment_length_cv": 0.0028174208698147087,
+        "segment_length_ratio": 1.012742264320557,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3020,
+        "i_perp": 0.0001716134721295674,
+        "segment_length_cv": 0.004334483994397212,
+        "segment_length_ratio": 1.0189456452047716,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3293,
+        "i_perp": 0.00016186039155354832,
+        "segment_length_cv": 0.003090712747587637,
+        "segment_length_ratio": 1.014130855385136,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ]
+  },
+  "same_alpha_eta_one_candidate": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg661f507a1380_budget254.npz",
+    "result_sha256": "28bf7a5894337e2fc26178cc9dc9ead86f421c50972f9faf15aef34ce1830d90",
+    "configuration_sha256": "661f507a13800d049b2c2b46e4779ce2ec2de5ea1356f05f1fd09f0ee04ed814",
+    "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "complete_state_NF": [
+      20,
+      80,
+      140,
+      170,
+      210,
+      407,
+      626,
+      771,
+      895,
+      1015,
+      1115,
+      1217,
+      1322,
+      1425,
+      1583,
+      1762,
+      2060
+    ],
+    "mesh_eligible_complete_state_NF": [
+      20,
+      80,
+      140,
+      170,
+      210,
+      771,
+      1015,
+      1115,
+      1217,
+      1322
+    ],
+    "eligible_points": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545832,
+        "segment_length_cv": 0.0018330828826430647,
+        "segment_length_ratio": 1.0061595899488767,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.1266139334837305,
+        "segment_length_cv": 0.0007227573996704055,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 170,
+        "i_perp": 0.10920629220798343,
+        "segment_length_cv": 6.655276266286657e-10,
+        "segment_length_ratio": 1.0000000018772954,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 210,
+        "i_perp": 0.06513794802752697,
+        "segment_length_cv": 6.38364497338383e-10,
+        "segment_length_ratio": 1.000000001800665,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 771,
+        "i_perp": 0.00480409082239195,
+        "segment_length_cv": 0.003307051916392332,
+        "segment_length_ratio": 1.0112856220306528,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1015,
+        "i_perp": 0.00176045332236656,
+        "segment_length_cv": 0.003055095825361413,
+        "segment_length_ratio": 1.0144025321093528,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1115,
+        "i_perp": 0.0011755824396941234,
+        "segment_length_cv": 0.0028387733409754737,
+        "segment_length_ratio": 1.0132386748349596,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1217,
+        "i_perp": 0.0008722571513156955,
+        "segment_length_cv": 0.002511767198715362,
+        "segment_length_ratio": 1.010979130329642,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1322,
+        "i_perp": 0.0006661721649959672,
+        "segment_length_cv": 0.0024945754368019693,
+        "segment_length_ratio": 1.009937396454367,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545832,
+        "segment_length_cv": 0.0018330828826430647,
+        "segment_length_ratio": 1.0061595899488767,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.1266139334837305,
+        "segment_length_cv": 0.0007227573996704055,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 170,
+        "i_perp": 0.10920629220798343,
+        "segment_length_cv": 6.655276266286657e-10,
+        "segment_length_ratio": 1.0000000018772954,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 210,
+        "i_perp": 0.06513794802752697,
+        "segment_length_cv": 6.38364497338383e-10,
+        "segment_length_ratio": 1.000000001800665,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 771,
+        "i_perp": 0.00480409082239195,
+        "segment_length_cv": 0.003307051916392332,
+        "segment_length_ratio": 1.0112856220306528,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1015,
+        "i_perp": 0.00176045332236656,
+        "segment_length_cv": 0.003055095825361413,
+        "segment_length_ratio": 1.0144025321093528,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1115,
+        "i_perp": 0.0011755824396941234,
+        "segment_length_cv": 0.0028387733409754737,
+        "segment_length_ratio": 1.0132386748349596,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1217,
+        "i_perp": 0.0008722571513156955,
+        "segment_length_cv": 0.002511767198715362,
+        "segment_length_ratio": 1.010979130329642,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1322,
+        "i_perp": 0.0006661721649959672,
+        "segment_length_cv": 0.0024945754368019693,
+        "segment_length_ratio": 1.009937396454367,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ]
+  },
+  "same_alpha_legacy": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz",
+    "result_sha256": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc",
+    "configuration_sha256": "75672fcfca59cbc2d535c5782d1dd61ba8be698224898564a14107269d966f0b",
+    "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "complete_state_NF": [
+      20,
+      80,
+      140,
+      295,
+      409,
+      530,
+      639,
+      740,
+      858,
+      960,
+      1062,
+      1177,
+      1356,
+      1533,
+      1709,
+      1924,
+      2130,
+      2357,
+      2601
+    ],
+    "mesh_eligible_complete_state_NF": [
+      20,
+      80,
+      140,
+      295,
+      740,
+      960,
+      1062,
+      1177,
+      1709,
+      1924,
+      2130,
+      2357,
+      2601
+    ],
+    "eligible_points": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545873,
+        "segment_length_cv": 0.0018330828826429654,
+        "segment_length_ratio": 1.0061595899488784,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12661393348374372,
+        "segment_length_cv": 0.0007227573996703888,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 295,
+        "i_perp": 0.06577597501951635,
+        "segment_length_cv": 0.006238057333666607,
+        "segment_length_ratio": 1.0298818106978673,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 740,
+        "i_perp": 0.003032203875476306,
+        "segment_length_cv": 0.003585988429176827,
+        "segment_length_ratio": 1.012943542940609,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 960,
+        "i_perp": 0.0012545296079283967,
+        "segment_length_cv": 0.0028033173377807396,
+        "segment_length_ratio": 1.0091146884394884,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1062,
+        "i_perp": 0.0008736874966022932,
+        "segment_length_cv": 0.002528582285535717,
+        "segment_length_ratio": 1.0079598297433392,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1177,
+        "i_perp": 0.0006332574517911263,
+        "segment_length_cv": 0.0022354036687877695,
+        "segment_length_ratio": 1.0072684279059476,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1709,
+        "i_perp": 0.00022923308850427665,
+        "segment_length_cv": 0.005715951099049131,
+        "segment_length_ratio": 1.0243427463969976,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1924,
+        "i_perp": 0.0002068720496138766,
+        "segment_length_cv": 0.004793673170787593,
+        "segment_length_ratio": 1.01993671605588,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2130,
+        "i_perp": 0.00016624506246538717,
+        "segment_length_cv": 0.004084778597554305,
+        "segment_length_ratio": 1.018065492891196,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2357,
+        "i_perp": 0.00014168150922901185,
+        "segment_length_cv": 0.0022597873219675265,
+        "segment_length_ratio": 1.0102064057735969,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2601,
+        "i_perp": 0.00012403116975547233,
+        "segment_length_cv": 0.00279763462390943,
+        "segment_length_ratio": 1.01299310563877,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545873,
+        "segment_length_cv": 0.0018330828826429654,
+        "segment_length_ratio": 1.0061595899488784,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12661393348374372,
+        "segment_length_cv": 0.0007227573996703888,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 295,
+        "i_perp": 0.06577597501951635,
+        "segment_length_cv": 0.006238057333666607,
+        "segment_length_ratio": 1.0298818106978673,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 740,
+        "i_perp": 0.003032203875476306,
+        "segment_length_cv": 0.003585988429176827,
+        "segment_length_ratio": 1.012943542940609,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 960,
+        "i_perp": 0.0012545296079283967,
+        "segment_length_cv": 0.0028033173377807396,
+        "segment_length_ratio": 1.0091146884394884,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1062,
+        "i_perp": 0.0008736874966022932,
+        "segment_length_cv": 0.002528582285535717,
+        "segment_length_ratio": 1.0079598297433392,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1177,
+        "i_perp": 0.0006332574517911263,
+        "segment_length_cv": 0.0022354036687877695,
+        "segment_length_ratio": 1.0072684279059476,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1709,
+        "i_perp": 0.00022923308850427665,
+        "segment_length_cv": 0.005715951099049131,
+        "segment_length_ratio": 1.0243427463969976,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1924,
+        "i_perp": 0.0002068720496138766,
+        "segment_length_cv": 0.004793673170787593,
+        "segment_length_ratio": 1.01993671605588,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2130,
+        "i_perp": 0.00016624506246538717,
+        "segment_length_cv": 0.004084778597554305,
+        "segment_length_ratio": 1.018065492891196,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2357,
+        "i_perp": 0.00014168150922901185,
+        "segment_length_cv": 0.0022597873219675265,
+        "segment_length_ratio": 1.0102064057735969,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2601,
+        "i_perp": 0.00012403116975547233,
+        "segment_length_cv": 0.00279763462390943,
+        "segment_length_ratio": 1.01299310563877,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ]
+  },
+  "official_stage4_v4": {
+    "archive": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+    "archive_sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc",
+    "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA34_phaseB220.npz",
+    "source_result_sha256": "f5be61d5121a46d349247d036ba2ffe9d258efe5caf864ee659ef2bb18aa9622",
+    "component_results": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseA_fast_a20_central_state_ivm_cfg09d74897c1ef_budget34.npz",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseB_precision_a20_central_state_ivm_cfg21ee8dded116_budget220.npz"
+    ],
+    "component_result_sha256": [
+      "9d9a5f692a5a65c82b0921d385dd9a36b8477b9fa9efa1df82c629f4fd8d9de5",
+      "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918"
+    ],
+    "domain_max_i_perp": 0.007,
+    "eligible_points": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ],
+    "mesh_rejected_points": [
+      {
+        "NF": 1357,
+        "i_perp": 0.0004890888275104723,
+        "segment_length_cv": 0.023832350636027653,
+        "segment_length_ratio": 1.0982214523755627
+      },
+      {
+        "NF": 1694,
+        "i_perp": 0.0003952920084906028,
+        "segment_length_cv": 0.018268374352660106,
+        "segment_length_ratio": 1.0661580508264703
+      },
+      {
+        "NF": 2276,
+        "i_perp": 0.0001999634980787797,
+        "segment_length_cv": 0.008561292203950892,
+        "segment_length_ratio": 1.035754407258267
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ]
+  },
+  "official_transitive_hashes": {
+    "archive_sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc",
+    "combined_source_sha256": "f5be61d5121a46d349247d036ba2ffe9d258efe5caf864ee659ef2bb18aa9622",
+    "phase_result_sha256": [
+      "9d9a5f692a5a65c82b0921d385dd9a36b8477b9fa9efa1df82c629f4fd8d9de5",
+      "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918"
+    ],
+    "combined_embedded_phase_result_sha256": [
+      "51a60c6287459e9646120b5b86c35cb418a01fa1d23ba919181c551e04279776",
+      "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918"
+    ],
+    "combined_embedded_phase_hash_matches_current": [
+      false,
+      true
+    ],
+    "component_hash_authority": "frozen formal component hashes; historical combined Phase-A embedded hash is retained as an audited stale metadata field",
+    "candidate_call_count": 11
+  },
+  "formal_alpha15_refinement_ctp": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_iperp_ctp_readonly_v1_1787253163640931000.json",
+  "formal_alpha15_refinement_ctp_sha256": "8ff9d9824eb2d3719d28f73f33b92b62e115ff9f7449bf60be054298d7ba5212",
+  "comparisons": {
+    "same_alpha_eta_one_candidate": {
+      "comparator": "same_alpha_eta_one_candidate",
+      "comparator_pareto_record_count": 10,
+      "threshold_results": [
+        {
+          "threshold_i_perp": 776.2298999129312,
+          "candidate_NF": 20,
+          "comparator_NF": 20,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.5253604244545832,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.1266139334837305,
+          "candidate_NF": 140,
+          "comparator_NF": 140,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.10920629220798343,
+          "candidate_NF": 140,
+          "comparator_NF": 170,
+          "candidate_minus_comparator_NF": -30,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.06513794802752697,
+          "candidate_NF": 180,
+          "comparator_NF": 210,
+          "candidate_minus_comparator_NF": -30,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.00480409082239195,
+          "candidate_NF": 770,
+          "comparator_NF": 771,
+          "candidate_minus_comparator_NF": -1,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.00176045332236656,
+          "candidate_NF": 1197,
+          "comparator_NF": 1015,
+          "candidate_minus_comparator_NF": 182,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0011755824396941234,
+          "candidate_NF": 1197,
+          "comparator_NF": 1115,
+          "candidate_minus_comparator_NF": 82,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0008722571513156955,
+          "candidate_NF": 1197,
+          "comparator_NF": 1217,
+          "candidate_minus_comparator_NF": -20,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.0006661721649959672,
+          "candidate_NF": 1197,
+          "comparator_NF": 1322,
+          "candidate_minus_comparator_NF": -125,
+          "outcome": "strict_win"
+        }
+      ],
+      "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+      "strictly_faster_at_least_one_threshold": true,
+      "candidate_tightest_eligible_i_perp": 0.00016186039155354832,
+      "comparator_tightest_eligible_i_perp": 0.0006661721649959672,
+      "candidate_does_not_lose_tightest_precision": true,
+      "full_curve_dominates": false,
+      "exact_deficit": {
+        "loss_threshold_count": 2,
+        "candidate_unreachable_loss_count": 0,
+        "strict_win_count": 5,
+        "losses": [
+          {
+            "threshold_i_perp": 0.00176045332236656,
+            "candidate_NF": 1197,
+            "comparator_NF": 1015,
+            "candidate_minus_comparator_NF": 182,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011755824396941234,
+            "candidate_NF": 1197,
+            "comparator_NF": 1115,
+            "candidate_minus_comparator_NF": 82,
+            "outcome": "loss"
+          }
+        ]
+      },
+      "W_T_L_U": {
+        "W": 5,
+        "T": 3,
+        "L": 2,
+        "U": 0
+      },
+      "loss_count_including_unreachable": 2
+    },
+    "same_alpha_legacy": {
+      "comparator": "same_alpha_legacy",
+      "comparator_pareto_record_count": 13,
+      "threshold_results": [
+        {
+          "threshold_i_perp": 776.2298999129312,
+          "candidate_NF": 20,
+          "comparator_NF": 20,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.5253604244545873,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.12661393348374372,
+          "candidate_NF": 140,
+          "comparator_NF": 140,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.06577597501951635,
+          "candidate_NF": 180,
+          "comparator_NF": 295,
+          "candidate_minus_comparator_NF": -115,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.003032203875476306,
+          "candidate_NF": 770,
+          "comparator_NF": 740,
+          "candidate_minus_comparator_NF": 30,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0012545296079283967,
+          "candidate_NF": 1197,
+          "comparator_NF": 960,
+          "candidate_minus_comparator_NF": 237,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0008736874966022932,
+          "candidate_NF": 1197,
+          "comparator_NF": 1062,
+          "candidate_minus_comparator_NF": 135,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0006332574517911263,
+          "candidate_NF": 1197,
+          "comparator_NF": 1177,
+          "candidate_minus_comparator_NF": 20,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00022923308850427665,
+          "candidate_NF": 2325,
+          "comparator_NF": 1709,
+          "candidate_minus_comparator_NF": 616,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0002068720496138766,
+          "candidate_NF": 2554,
+          "comparator_NF": 1924,
+          "candidate_minus_comparator_NF": 630,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00016624506246538717,
+          "candidate_NF": 3293,
+          "comparator_NF": 2130,
+          "candidate_minus_comparator_NF": 1163,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00014168150922901185,
+          "candidate_NF": null,
+          "comparator_NF": 2357,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss"
+        },
+        {
+          "threshold_i_perp": 0.00012403116975547233,
+          "candidate_NF": null,
+          "comparator_NF": 2601,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss"
+        }
+      ],
+      "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+      "strictly_faster_at_least_one_threshold": true,
+      "candidate_tightest_eligible_i_perp": 0.00016186039155354832,
+      "comparator_tightest_eligible_i_perp": 0.00012403116975547233,
+      "candidate_does_not_lose_tightest_precision": false,
+      "full_curve_dominates": false,
+      "exact_deficit": {
+        "loss_threshold_count": 9,
+        "candidate_unreachable_loss_count": 2,
+        "strict_win_count": 1,
+        "losses": [
+          {
+            "threshold_i_perp": 0.003032203875476306,
+            "candidate_NF": 770,
+            "comparator_NF": 740,
+            "candidate_minus_comparator_NF": 30,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0012545296079283967,
+            "candidate_NF": 1197,
+            "comparator_NF": 960,
+            "candidate_minus_comparator_NF": 237,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0008736874966022932,
+            "candidate_NF": 1197,
+            "comparator_NF": 1062,
+            "candidate_minus_comparator_NF": 135,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0006332574517911263,
+            "candidate_NF": 1197,
+            "comparator_NF": 1177,
+            "candidate_minus_comparator_NF": 20,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00022923308850427665,
+            "candidate_NF": 2325,
+            "comparator_NF": 1709,
+            "candidate_minus_comparator_NF": 616,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0002068720496138766,
+            "candidate_NF": 2554,
+            "comparator_NF": 1924,
+            "candidate_minus_comparator_NF": 630,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00016624506246538717,
+            "candidate_NF": 3293,
+            "comparator_NF": 2130,
+            "candidate_minus_comparator_NF": 1163,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00014168150922901185,
+            "candidate_NF": null,
+            "comparator_NF": 2357,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00012403116975547233,
+            "candidate_NF": null,
+            "comparator_NF": 2601,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ]
+      },
+      "W_T_L_U": {
+        "W": 1,
+        "T": 3,
+        "L": 7,
+        "U": 2
+      },
+      "loss_count_including_unreachable": 9
+    },
+    "official_stage4_v4": {
+      "comparator": "official_stage4_v4_post_activation_mesh_eligible_tail",
+      "comparator_pareto_record_count": 8,
+      "threshold_results": [
+        {
+          "threshold_i_perp": 0.006889354808869684,
+          "candidate_NF": 770,
+          "comparator_NF": 660,
+          "candidate_minus_comparator_NF": 110,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.006584491730342424,
+          "candidate_NF": 770,
+          "comparator_NF": 680,
+          "candidate_minus_comparator_NF": 90,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0034644624572146097,
+          "candidate_NF": 770,
+          "comparator_NF": 829,
+          "candidate_minus_comparator_NF": -59,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.0018424108929185675,
+          "candidate_NF": 1197,
+          "comparator_NF": 943,
+          "candidate_minus_comparator_NF": 254,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0011294646817160594,
+          "candidate_NF": 1197,
+          "comparator_NF": 1059,
+          "candidate_minus_comparator_NF": 138,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.000767668366776594,
+          "candidate_NF": 1197,
+          "comparator_NF": 1173,
+          "candidate_minus_comparator_NF": 24,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0002636014863862734,
+          "candidate_NF": 2214,
+          "comparator_NF": 1984,
+          "candidate_minus_comparator_NF": 230,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00018216907465962214,
+          "candidate_NF": 3020,
+          "comparator_NF": 2507,
+          "candidate_minus_comparator_NF": 513,
+          "outcome": "loss"
+        }
+      ],
+      "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+      "strictly_faster_at_least_one_threshold": true,
+      "candidate_tightest_eligible_i_perp": 0.00016186039155354832,
+      "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+      "candidate_does_not_lose_tightest_precision": true,
+      "full_curve_dominates": false,
+      "exact_deficit": {
+        "loss_threshold_count": 7,
+        "candidate_unreachable_loss_count": 0,
+        "strict_win_count": 1,
+        "losses": [
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 770,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": 110,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 770,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": 90,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 1197,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 254,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1197,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 138,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1197,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": 24,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": 2214,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": 230,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": 3020,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": 513,
+            "outcome": "loss"
+          }
+        ]
+      },
+      "W_T_L_U": {
+        "W": 1,
+        "T": 0,
+        "L": 7,
+        "U": 0
+      },
+      "loss_count_including_unreachable": 7
+    }
+  },
+  "deficit_vectors": {
+    "same_alpha_eta_one_candidate": {
+      "thresholds_tight_to_loose": [
+        0.0006661721649959672,
+        0.0008722571513156955,
+        0.0011755824396941234,
+        0.00176045332236656,
+        0.00480409082239195,
+        0.06513794802752697,
+        0.10920629220798343,
+        0.1266139334837305,
+        0.5253604244545832,
+        776.2298999129312
+      ],
+      "candidate_minus_comparator_NF_tight_to_loose": [
+        -125,
+        -20,
+        82,
+        182,
+        -1,
+        -30,
+        -30,
+        0,
+        0,
+        0
+      ],
+      "candidate_unreachable_tight_to_loose": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "threshold_rows_tight_to_loose": [
+        {
+          "threshold_i_perp": 0.0006661721649959672,
+          "candidate_NF": 1197,
+          "comparator_NF": 1322,
+          "candidate_minus_comparator_NF": -125,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.0008722571513156955,
+          "candidate_NF": 1197,
+          "comparator_NF": 1217,
+          "candidate_minus_comparator_NF": -20,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.0011755824396941234,
+          "candidate_NF": 1197,
+          "comparator_NF": 1115,
+          "candidate_minus_comparator_NF": 82,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00176045332236656,
+          "candidate_NF": 1197,
+          "comparator_NF": 1015,
+          "candidate_minus_comparator_NF": 182,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00480409082239195,
+          "candidate_NF": 770,
+          "comparator_NF": 771,
+          "candidate_minus_comparator_NF": -1,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.06513794802752697,
+          "candidate_NF": 180,
+          "comparator_NF": 210,
+          "candidate_minus_comparator_NF": -30,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.10920629220798343,
+          "candidate_NF": 140,
+          "comparator_NF": 170,
+          "candidate_minus_comparator_NF": -30,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.1266139334837305,
+          "candidate_NF": 140,
+          "comparator_NF": 140,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.5253604244545832,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 776.2298999129312,
+          "candidate_NF": 20,
+          "comparator_NF": 20,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        }
+      ]
+    },
+    "same_alpha_legacy": {
+      "thresholds_tight_to_loose": [
+        0.00012403116975547233,
+        0.00014168150922901185,
+        0.00016624506246538717,
+        0.0002068720496138766,
+        0.00022923308850427665,
+        0.0006332574517911263,
+        0.0008736874966022932,
+        0.0012545296079283967,
+        0.003032203875476306,
+        0.06577597501951635,
+        0.12661393348374372,
+        0.5253604244545873,
+        776.2298999129312
+      ],
+      "candidate_minus_comparator_NF_tight_to_loose": [
+        null,
+        null,
+        1163,
+        630,
+        616,
+        20,
+        135,
+        237,
+        30,
+        -115,
+        0,
+        0,
+        0
+      ],
+      "candidate_unreachable_tight_to_loose": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "threshold_rows_tight_to_loose": [
+        {
+          "threshold_i_perp": 0.00012403116975547233,
+          "candidate_NF": null,
+          "comparator_NF": 2601,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss"
+        },
+        {
+          "threshold_i_perp": 0.00014168150922901185,
+          "candidate_NF": null,
+          "comparator_NF": 2357,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss"
+        },
+        {
+          "threshold_i_perp": 0.00016624506246538717,
+          "candidate_NF": 3293,
+          "comparator_NF": 2130,
+          "candidate_minus_comparator_NF": 1163,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0002068720496138766,
+          "candidate_NF": 2554,
+          "comparator_NF": 1924,
+          "candidate_minus_comparator_NF": 630,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.00022923308850427665,
+          "candidate_NF": 2325,
+          "comparator_NF": 1709,
+          "candidate_minus_comparator_NF": 616,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0006332574517911263,
+          "candidate_NF": 1197,
+          "comparator_NF": 1177,
+          "candidate_minus_comparator_NF": 20,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0008736874966022932,
+          "candidate_NF": 1197,
+          "comparator_NF": 1062,
+          "candidate_minus_comparator_NF": 135,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0012545296079283967,
+          "candidate_NF": 1197,
+          "comparator_NF": 960,
+          "candidate_minus_comparator_NF": 237,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.003032203875476306,
+          "candidate_NF": 770,
+          "comparator_NF": 740,
+          "candidate_minus_comparator_NF": 30,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.06577597501951635,
+          "candidate_NF": 180,
+          "comparator_NF": 295,
+          "candidate_minus_comparator_NF": -115,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.12661393348374372,
+          "candidate_NF": 140,
+          "comparator_NF": 140,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 0.5253604244545873,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        },
+        {
+          "threshold_i_perp": 776.2298999129312,
+          "candidate_NF": 20,
+          "comparator_NF": 20,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie"
+        }
+      ]
+    },
+    "official_stage4_v4": {
+      "thresholds_tight_to_loose": [
+        0.00018216907465962214,
+        0.0002636014863862734,
+        0.000767668366776594,
+        0.0011294646817160594,
+        0.0018424108929185675,
+        0.0034644624572146097,
+        0.006584491730342424,
+        0.006889354808869684
+      ],
+      "candidate_minus_comparator_NF_tight_to_loose": [
+        513,
+        230,
+        24,
+        138,
+        254,
+        -59,
+        90,
+        110
+      ],
+      "candidate_unreachable_tight_to_loose": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "threshold_rows_tight_to_loose": [
+        {
+          "threshold_i_perp": 0.00018216907465962214,
+          "candidate_NF": 3020,
+          "comparator_NF": 2507,
+          "candidate_minus_comparator_NF": 513,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0002636014863862734,
+          "candidate_NF": 2214,
+          "comparator_NF": 1984,
+          "candidate_minus_comparator_NF": 230,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.000767668366776594,
+          "candidate_NF": 1197,
+          "comparator_NF": 1173,
+          "candidate_minus_comparator_NF": 24,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0011294646817160594,
+          "candidate_NF": 1197,
+          "comparator_NF": 1059,
+          "candidate_minus_comparator_NF": 138,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0018424108929185675,
+          "candidate_NF": 1197,
+          "comparator_NF": 943,
+          "candidate_minus_comparator_NF": 254,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.0034644624572146097,
+          "candidate_NF": 770,
+          "comparator_NF": 829,
+          "candidate_minus_comparator_NF": -59,
+          "outcome": "strict_win"
+        },
+        {
+          "threshold_i_perp": 0.006584491730342424,
+          "candidate_NF": 770,
+          "comparator_NF": 680,
+          "candidate_minus_comparator_NF": 90,
+          "outcome": "loss"
+        },
+        {
+          "threshold_i_perp": 0.006889354808869684,
+          "candidate_NF": 770,
+          "comparator_NF": 660,
+          "candidate_minus_comparator_NF": 110,
+          "outcome": "loss"
+        }
+      ]
+    }
+  },
+  "reporting_anchors": {
+    "same_alpha_eta_one_candidate": [
+      {
+        "threshold_i_perp": 1.0,
+        "candidate_NF": 80,
+        "comparator_NF": 80,
+        "candidate_minus_comparator_NF": 0,
+        "outcome": "tie",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.1,
+        "candidate_NF": 180,
+        "comparator_NF": 210,
+        "candidate_minus_comparator_NF": -30,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.05,
+        "candidate_NF": 371,
+        "comparator_NF": 771,
+        "candidate_minus_comparator_NF": -400,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.02,
+        "candidate_NF": 371,
+        "comparator_NF": 771,
+        "candidate_minus_comparator_NF": -400,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.01,
+        "candidate_NF": 770,
+        "comparator_NF": 771,
+        "candidate_minus_comparator_NF": -1,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.005,
+        "candidate_NF": 770,
+        "comparator_NF": 771,
+        "candidate_minus_comparator_NF": -1,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.002,
+        "candidate_NF": 770,
+        "comparator_NF": 1015,
+        "candidate_minus_comparator_NF": -245,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.001,
+        "candidate_NF": 1197,
+        "comparator_NF": 1217,
+        "candidate_minus_comparator_NF": -20,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0005,
+        "candidate_NF": 1441,
+        "comparator_NF": null,
+        "candidate_minus_comparator_NF": null,
+        "outcome": "comparator_unreachable",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0002,
+        "candidate_NF": 2786,
+        "comparator_NF": null,
+        "candidate_minus_comparator_NF": null,
+        "outcome": "comparator_unreachable",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.00015,
+        "candidate_NF": null,
+        "comparator_NF": null,
+        "candidate_minus_comparator_NF": null,
+        "outcome": "comparator_unreachable",
+        "domain_status": "inside_comparator_domain"
+      }
+    ],
+    "same_alpha_legacy": [
+      {
+        "threshold_i_perp": 1.0,
+        "candidate_NF": 80,
+        "comparator_NF": 80,
+        "candidate_minus_comparator_NF": 0,
+        "outcome": "tie",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.1,
+        "candidate_NF": 180,
+        "comparator_NF": 295,
+        "candidate_minus_comparator_NF": -115,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.05,
+        "candidate_NF": 371,
+        "comparator_NF": 740,
+        "candidate_minus_comparator_NF": -369,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.02,
+        "candidate_NF": 371,
+        "comparator_NF": 740,
+        "candidate_minus_comparator_NF": -369,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.01,
+        "candidate_NF": 770,
+        "comparator_NF": 740,
+        "candidate_minus_comparator_NF": 30,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.005,
+        "candidate_NF": 770,
+        "comparator_NF": 740,
+        "candidate_minus_comparator_NF": 30,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.002,
+        "candidate_NF": 770,
+        "comparator_NF": 960,
+        "candidate_minus_comparator_NF": -190,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.001,
+        "candidate_NF": 1197,
+        "comparator_NF": 1062,
+        "candidate_minus_comparator_NF": 135,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0005,
+        "candidate_NF": 1441,
+        "comparator_NF": 1709,
+        "candidate_minus_comparator_NF": -268,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0002,
+        "candidate_NF": 2786,
+        "comparator_NF": 2130,
+        "candidate_minus_comparator_NF": 656,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.00015,
+        "candidate_NF": null,
+        "comparator_NF": 2357,
+        "candidate_minus_comparator_NF": null,
+        "outcome": "candidate_unreachable_loss",
+        "domain_status": "inside_comparator_domain"
+      }
+    ],
+    "official_stage4_v4": [
+      {
+        "threshold_i_perp": 1.0,
+        "domain_status": "outside_official_post_activation_domain",
+        "candidate_NF": 80,
+        "comparator_NF": null,
+        "outcome": "not_compared"
+      },
+      {
+        "threshold_i_perp": 0.1,
+        "domain_status": "outside_official_post_activation_domain",
+        "candidate_NF": 180,
+        "comparator_NF": null,
+        "outcome": "not_compared"
+      },
+      {
+        "threshold_i_perp": 0.05,
+        "domain_status": "outside_official_post_activation_domain",
+        "candidate_NF": 371,
+        "comparator_NF": null,
+        "outcome": "not_compared"
+      },
+      {
+        "threshold_i_perp": 0.02,
+        "domain_status": "outside_official_post_activation_domain",
+        "candidate_NF": 371,
+        "comparator_NF": null,
+        "outcome": "not_compared"
+      },
+      {
+        "threshold_i_perp": 0.01,
+        "domain_status": "outside_official_post_activation_domain",
+        "candidate_NF": 770,
+        "comparator_NF": null,
+        "outcome": "not_compared"
+      },
+      {
+        "threshold_i_perp": 0.005,
+        "candidate_NF": 770,
+        "comparator_NF": 829,
+        "candidate_minus_comparator_NF": -59,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.002,
+        "candidate_NF": 770,
+        "comparator_NF": 943,
+        "candidate_minus_comparator_NF": -173,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.001,
+        "candidate_NF": 1197,
+        "comparator_NF": 1173,
+        "candidate_minus_comparator_NF": 24,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0005,
+        "candidate_NF": 1441,
+        "comparator_NF": 1984,
+        "candidate_minus_comparator_NF": -543,
+        "outcome": "strict_win",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.0002,
+        "candidate_NF": 2786,
+        "comparator_NF": 2507,
+        "candidate_minus_comparator_NF": 279,
+        "outcome": "loss",
+        "domain_status": "inside_comparator_domain"
+      },
+      {
+        "threshold_i_perp": 0.00015,
+        "candidate_NF": null,
+        "comparator_NF": null,
+        "candidate_minus_comparator_NF": null,
+        "outcome": "comparator_unreachable",
+        "domain_status": "inside_comparator_domain"
+      }
+    ]
+  },
+  "triple_tightest_precision_ok": false,
+  "primary_success_criterion_satisfied": false,
+  "fixed_eta1p1_full_curve_dominates_all_three": false,
+  "single_candidate_no_multiwinner_or_tiebreak": true,
+  "winner_claim_made": false,
+  "post_hoc_eta_or_alpha_expansion_allowed": false,
+  "barrier_unembargo_allowed_by_this_analysis": false,
+  "analysis_script": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_eta1p1_alpha15_iperp_ctp.py",
+  "analysis_script_sha256": "109a3f0b395392dc8ff8ddf5129929884fd580acce629d8a5ce3065164cb54f6"
+}

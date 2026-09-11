@@ -1,0 +1,25 @@
+{
+  "alpha_connected": true,
+  "authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b.json",
+    "sha256": "817799d981c43edddcb3c8940b10035959ff98cf30cb395218b76e21c7ec2a57"
+  },
+  "beta_connected": true,
+  "created_utc": "2026-09-02T13:18:34Z",
+  "flush_exit_code": 0,
+  "gate_generator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay_r5.py",
+    "sha256": "f1a0c709d3d98a7d84c3d5b66eb3f34ee4c7c6a7fa51ecab60f6b8ff67edc93d"
+  },
+  "label": "bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b",
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B.json",
+    "sha256": "7149bf52c733004f13e15b3a7685a6ba2dc9ec8106308f8e786a9f18f5aa1246"
+  },
+  "schema": "bb-irivm-full-state-r5b-mutagen-gate-v1",
+  "session_identifier": "sync_EaEvvA9594NRGtMQSN0jneepyUq2tCef27jljwXXPc9",
+  "session_name": "bb-irivm-20260901",
+  "session_status": "Watching",
+  "status": "PASS_CONNECTED_FLUSHED",
+  "transition_problems": 0
+}

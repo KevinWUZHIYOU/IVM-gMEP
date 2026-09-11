@@ -1,0 +1,424 @@
+{
+  "status": "preregistered",
+  "protocol_id": "stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1",
+  "created_unix": 1787262084.322314,
+  "planned_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1_N254_r1_1787262084320785000.json",
+  "study_role": "matched FFrbk selector-policy ablation after scalar ablation diagnosis",
+  "cell_order": [
+    "one_way_takeover",
+    "forced_operator_lbfgs_selection"
+  ],
+  "registered_commands": {
+    "one_way_takeover": {
+      "label": "stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1_one_way_takeover_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+        "--initial-path-file",
+        "inputs/common_initial_path_equidistant.npz",
+        "--output-dir",
+        "runs/stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1/members",
+        "--run-label",
+        "stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1_one_way_takeover_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+        "--solver",
+        "state_ivm",
+        "--alpha",
+        "15",
+        "--alpha-mode",
+        "fixed",
+        "--alpha-min",
+        "0.01",
+        "--alpha-max",
+        "inf",
+        "--max-step",
+        "1",
+        "--history",
+        "7",
+        "--stop-iperp",
+        "-1",
+        "--budget",
+        "254",
+        "--save-all-paths",
+        "--state-globalization",
+        "iperp_monotone",
+        "--state-trust-fraction",
+        "2",
+        "--state-polish-trust-fraction",
+        "2",
+        "--state-polish-alpha-factor",
+        "0.5",
+        "--inner-calls",
+        "15",
+        "--plbfgs-kkt-rtol",
+        "0.8",
+        "--reparam-mode",
+        "state_curve",
+        "--reparam-every",
+        "1",
+        "--state-curve-direct-solve",
+        "--state-curve-direct-trial-calls",
+        "15",
+        "--state-curve-direct-objective-acceptance",
+        "per_image",
+        "--state-curve-immediate-block-relock",
+        "--state-curve-stall-free-polish",
+        "--state-curve-stall-free-polish-count",
+        "1",
+        "--reparam-ready-relative-iperp",
+        "2",
+        "--reparam-cv-trigger",
+        "0.001",
+        "--reparam-strict-cv-trigger",
+        "0.001",
+        "--reparam-retry-reduction",
+        "0.8",
+        "--reparam-recovery-calls",
+        "320",
+        "--reparam-recovery-inner-calls",
+        "15",
+        "--reparam-recovery-merge",
+        "bicriteria",
+        "--reparam-recovery-iperp-rtol",
+        "0",
+        "--reparam-equidistance-contraction",
+        "0.2",
+        "--stop-complete-iperp",
+        "-1",
+        "--frozen-subproblem",
+        "discrete_b040",
+        "--discrete-inner-max-steps",
+        "10",
+        "--discrete-stop-mode",
+        "r08c10",
+        "--discrete-residual-ratio",
+        "0.8",
+        "--discrete-history",
+        "7",
+        "--discrete-step-multiplier-eta",
+        "1.1",
+        "--plbfgs-kkt-atol",
+        "0",
+        "--discrete-ffrbk-selector-mode",
+        "one_way_takeover"
+      ],
+      "compact_sha256": "b4e8b7bb9493edda11c10b3ef384f988d5072fe8ec5e20acd72043131d05f965",
+      "matched_current0_command_sha256": "e33ca25d88bcc6e13867f074f0b6ff242ac0822f948fb758edb52ea62a640863",
+      "only_changed_components": [
+        "runtime_entry_point",
+        "selector_mode_flag",
+        "output_dir_routing",
+        "run_label_routing"
+      ]
+    },
+    "forced_operator_lbfgs_selection": {
+      "label": "stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1_forced_operator_lbfgs_selection_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+        "--initial-path-file",
+        "inputs/common_initial_path_equidistant.npz",
+        "--output-dir",
+        "runs/stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1/members",
+        "--run-label",
+        "stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_v1_forced_operator_lbfgs_selection_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1",
+        "--solver",
+        "state_ivm",
+        "--alpha",
+        "15",
+        "--alpha-mode",
+        "fixed",
+        "--alpha-min",
+        "0.01",
+        "--alpha-max",
+        "inf",
+        "--max-step",
+        "1",
+        "--history",
+        "7",
+        "--stop-iperp",
+        "-1",
+        "--budget",
+        "254",
+        "--save-all-paths",
+        "--state-globalization",
+        "iperp_monotone",
+        "--state-trust-fraction",
+        "2",
+        "--state-polish-trust-fraction",
+        "2",
+        "--state-polish-alpha-factor",
+        "0.5",
+        "--inner-calls",
+        "15",
+        "--plbfgs-kkt-rtol",
+        "0.8",
+        "--reparam-mode",
+        "state_curve",
+        "--reparam-every",
+        "1",
+        "--state-curve-direct-solve",
+        "--state-curve-direct-trial-calls",
+        "15",
+        "--state-curve-direct-objective-acceptance",
+        "per_image",
+        "--state-curve-immediate-block-relock",
+        "--state-curve-stall-free-polish",
+        "--state-curve-stall-free-polish-count",
+        "1",
+        "--reparam-ready-relative-iperp",
+        "2",
+        "--reparam-cv-trigger",
+        "0.001",
+        "--reparam-strict-cv-trigger",
+        "0.001",
+        "--reparam-retry-reduction",
+        "0.8",
+        "--reparam-recovery-calls",
+        "320",
+        "--reparam-recovery-inner-calls",
+        "15",
+        "--reparam-recovery-merge",
+        "bicriteria",
+        "--reparam-recovery-iperp-rtol",
+        "0",
+        "--reparam-equidistance-contraction",
+        "0.2",
+        "--stop-complete-iperp",
+        "-1",
+        "--frozen-subproblem",
+        "discrete_b040",
+        "--discrete-inner-max-steps",
+        "10",
+        "--discrete-stop-mode",
+        "r08c10",
+        "--discrete-residual-ratio",
+        "0.8",
+        "--discrete-history",
+        "7",
+        "--discrete-step-multiplier-eta",
+        "1.1",
+        "--plbfgs-kkt-atol",
+        "0",
+        "--discrete-ffrbk-selector-mode",
+        "forced_operator_lbfgs_selection"
+      ],
+      "compact_sha256": "8ab711735ff3005ecea4960e6b1a49c185d66c3a7e141d35ba4653d13a4c49c4",
+      "matched_current0_command_sha256": "e33ca25d88bcc6e13867f074f0b6ff242ac0822f948fb758edb52ea62a640863",
+      "only_changed_components": [
+        "runtime_entry_point",
+        "selector_mode_flag",
+        "output_dir_routing",
+        "run_label_routing"
+      ]
+    }
+  },
+  "scientific_command_exact_matched_current0_clone": true,
+  "only_runtime_entry_mode_and_routing_changed": true,
+  "fixed_alpha": 15.0,
+  "fixed_eta": 1.1,
+  "fixed_residual_ratio": 0.8,
+  "fixed_max_evaluated_steps": 10,
+  "fixed_lbfgs_history": 7,
+  "fixed_kkt_atol": 0.0,
+  "fixed_reparameterization": "state_curve/per_image from first state",
+  "budget_per_image": 254,
+  "trajectory_record_count_allowed_range": [
+    1,
+    254
+  ],
+  "early_stop_policy": "retain valid observed prefix as nonconverged; all precision beyond its tightest observed complete+mesh state is unreachable/U",
+  "early_stop_counted_as_converged": false,
+  "unobserved_tail_extrapolated": false,
+  "formal_performance_metric": "I_perp_only",
+  "formal_eligibility": "initial plus reparam_committed states, then segment_length_cv<=0.0065 and segment_length_ratio<=1.03",
+  "formal_cost_to_precision": "minimum actual observed optimization NF with I_perp<=threshold; no interpolation or extrapolation",
+  "candidate_unreachable_threshold_policy": "U_formal_loss",
+  "primary_mechanism_contrast": "one_way_takeover versus matched Current0: retain strict LBFGS wins for the remainder of each fixed subproblem",
+  "one_way_invalid_lbfgs_safety_fallback": "if the latched L-BFGS proposal is invalid, select a valid H0 proposal without clearing the latch",
+  "secondary_mechanism_contrast": "forced_operator_lbfgs_selection versus one_way_takeover: force valid operator-LBFGS selection, including the empty-history tie, while preserving the FFrbk operator",
+  "forced_operator_lbfgs_is_selection_not_computation_ablation": true,
+  "forced_operator_lbfgs_h0_shadow_policy": "H0 remains constructed as a zero-extra-NF shadow/safety candidate; it is selected only when L-BFGS is invalid",
+  "identical_candidate_trajectories_allowed": true,
+  "identical_trajectory_interpretation": "valid mechanistic null: Current0 has strict H0 switches only at outer=3 steps=2,3, while every multi-step outer has a strict L-BFGS win at step=1",
+  "performance_comparators": [
+    "matched_current0",
+    "old_alpha15_eta1p1",
+    "same_alpha_legacy",
+    "official_stage4_v4"
+  ],
+  "mechanism_ctp_evidence": {
+    "performance_metric": "I_perp_only",
+    "physical_objective_arrays_accessed": false,
+    "densification_performed": false,
+    "unobserved_tail_extrapolated": false,
+    "fixed_alpha": 15.0,
+    "fixed_eta": 1.1,
+    "fixed_residual_ratio": 0.8,
+    "fixed_max_evaluated_steps": 10,
+    "fixed_lbfgs_history": 7,
+    "fixed_kkt_atol": 0.0,
+    "maximum_trajectory_length": 254,
+    "eligibility": "initial plus reparam_committed states, then segment_length_cv<=0.0065 and segment_length_ratio<=1.03",
+    "cost_to_precision": "minimum actual observed optimization NF with I_perp<=threshold; no interpolation or extrapolation",
+    "early_termination_policy": "precision thresholds not reached by the observed prefix are U formal losses; the unobserved tail is never imputed",
+    "matched_current0_result_sha256": "eff9d585dfbbd966744a972f9fa5b5a7b3da11639d2079c333560e34ce98ee07",
+    "same_alpha_legacy_result_sha256": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc",
+    "official_stage4_v4_sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc"
+  },
+  "energy_or_objective_backtracking_added": false,
+  "physical_energy_arrays_accessed_by_wrapper_or_launcher": false,
+  "barrier_fields_accessed_by_wrapper_or_launcher": false,
+  "densified_barrier_computation_performed": false,
+  "barrier_unembargo_allowed_by_this_protocol": false,
+  "formal_ranking_deferred_to_separate_readonly_iperp_ctp": true,
+  "post_hoc_scientific_command_changes_allowed": false,
+  "prior_artifact_manifest": {
+    "mechanism_ctp_readonly": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000_with_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_N254_r1_1787261109219817000_iperp_ctp_readonly_v1_1787261155406090000.json",
+      "sha256": "98fe38387a76ca11308eb96c071b5448542f3eff719620f7b7d67968c3ef193d"
+    },
+    "matched_current0_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000_preregistered.json",
+      "sha256": "04de96743da079b8b35247214a4ad3cf387157edb2134381cc08f95d3bab1f86"
+    },
+    "matched_current0_campaign_report": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000.json",
+      "sha256": "c1506422a651ee664b8cdb08a19c124bbab760435130042c300b7e721e7fa02f"
+    },
+    "matched_current0_postrun_mechanism": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000_postrun_mechanism_provenance_readonly_v1.json",
+      "sha256": "115056ec3d22ee102ff714d704a12913f0ea09726d4918b0fa24a1d462a049aa"
+    },
+    "matched_current0_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg66edecece9c2_budget254.npz",
+      "sha256": "eff9d585dfbbd966744a972f9fa5b5a7b3da11639d2079c333560e34ce98ee07"
+    },
+    "matched_current0_companion_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg66edecece9c2_budget254.audit.json",
+      "sha256": "7c6ea4b394ea867f8b83b64a1bb6b910cc6f156fdf32feca71b765ef5b1a14a0"
+    },
+    "matched_current0_member_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/audits/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1.json",
+      "sha256": "f8fa0c5204295b704fe3cc3b8d0fbc47e29564b1daa9276a8f55045625c0ad8d"
+    },
+    "matched_current0_command": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "e33ca25d88bcc6e13867f074f0b6ff242ac0822f948fb758edb52ea62a640863"
+    },
+    "old_alpha15_eta1p1_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/ivm_stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg02c3f3990307_budget254.npz",
+      "sha256": "bb189235868d63be23d335c0766db59e0315b82fd11448077a492966ce5eaa55"
+    },
+    "old_alpha15_eta1p1_command": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1/command.json",
+      "sha256": "a3f622b4be15b64574479d5832bd76fc2a0de8fb3e2032ef4103e776129fb61f"
+    },
+    "old_alpha15_eta1p1_ctp": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000_iperp_ctp_readonly_v1_1787258244070171000.json",
+      "sha256": "0ef85ac737d57c5a5b6b7a2e725eef8684e66e225934b9e8858c167fa887d9ae"
+    },
+    "same_alpha_legacy_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz",
+      "sha256": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc"
+    },
+    "same_alpha_legacy_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1.json",
+      "sha256": "fb26c9fcb09ba1fbff7058c367965c694a573ecd5ed6110ce81366cbdef3fe83"
+    },
+    "same_alpha_legacy_command": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1/command.json",
+      "sha256": "9842cbe8e47971a49e4b90203192d59d45245b19baadf06e28b36ef049d4db16"
+    },
+    "official_stage4_v4": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+      "sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc"
+    }
+  },
+  "common_initial_and_topology": {
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+      "sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+      "initial_path_array_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e"
+    },
+    "alanine_topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/ala2_fixed.pdb",
+      "sha256": "7ffaf924e345b6fbbba06d0388a67d18f04c07729a2ab7d65ede9a61cd27eda2"
+    }
+  },
+  "run_source_manifest": {
+    "grid": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0_grid.py",
+      "sha256": "45b0d0bbc5abc0deba61e20b09ad6d5391cb350a532cfd6159cf1cc72170adf5"
+    },
+    "member": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0.py",
+      "sha256": "612aad99b0edc6cd8352de2bee9f73a05af7cbfc776048da828381653eaeb304"
+    },
+    "campaign_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_ffrbk_takeover_matched_kkt0.py",
+      "sha256": "72640aa47d744c4b1bc1fb6da295d0c67a4e0abf82a6306741e747843a567f34"
+    },
+    "takeover_runtime": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py",
+      "sha256": "62c6cf784795984c8104b4ba28fe2b0e15d657593648734d8f4a36ae03edfffc"
+    },
+    "takeover_runtime_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py",
+      "sha256": "1801013f70928adcf0fa0655b74a61835353a6fae0adf3f4f667783603200386"
+    },
+    "eta_runtime": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_selected_eta_shim.py",
+      "sha256": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9"
+    },
+    "eta_runtime_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_run_ivm_v9_discrete_selected_eta_shim.py",
+      "sha256": "35909b6453110f64b6998551e4d7ff1d84c3d3d17c440bc54d33464889572fed"
+    },
+    "frozen_discrete": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+      "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+    },
+    "frozen_discrete_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_frozen_discrete_b040.py",
+      "sha256": "3cdaa3a6bcbd043b9a15de5b5af90b6fc49f3505bf891ec4892a8193ab365aa9"
+    },
+    "production_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+    },
+    "command_helper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+      "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+    },
+    "ala_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+      "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+    },
+    "matched_current0_member": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0.py",
+      "sha256": "e9195867d9126dc1271aea76bade95219b63a47679c7e870574197a7e9eab236"
+    },
+    "flexible_trajectory_validator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation.py",
+      "sha256": "1e384ac280f726cf63f138efee358095bca16ce8deb0f38bdd95919523b8432f"
+    },
+    "mechanism_ctp_analyzer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_iperp_ctp.py",
+      "sha256": "e4f9d1428cad565d44cab57bf6069ec03a3a196db7cb3c07deb32624c938dfdf"
+    }
+  },
+  "single_thread_environment": {
+    "OPENMM_CPU_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "independent_member_paths_and_logs": true,
+  "overwrite_or_force_allowed": false,
+  "execution_jobs_fixed": 1
+}

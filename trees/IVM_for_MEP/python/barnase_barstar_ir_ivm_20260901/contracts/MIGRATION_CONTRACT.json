@@ -1,0 +1,75 @@
+{
+  "contract_id": "bb-chignolin-transfer-central-ir-ivm-migration-v1",
+  "created_utc": "2026-09-01T00:00:00Z",
+  "status": "ZERO_FORCE_CONSTRUCTION_ONLY",
+  "algorithm_source": {
+    "root": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826",
+    "identity": "Chignolin central-tangent inexact-plus-state_curve-reparameterization IR-IVM",
+    "frozen_discrete_b040_sha256": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "selector_shim_sha256": "75f4dc5f4d7ab6c7af13e5b8e15a0f81b41b4a937346233a20a3e20e0de160f4",
+    "selected_eta_shim_sha256": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9"
+  },
+  "algorithm_invariants": {
+    "tangent": "normalized central difference x[i+1]-x[i-1]",
+    "alpha": "fixed within each member; decade grid 1e-1 through 1e6",
+    "residual_ratio_r": [0.1, 0.3, 0.5, 0.7, 0.8],
+    "inner_max_steps_m_max": [5, 8, 10, 15, 20, 50],
+    "physical_max_atom_displacement_A": 1.0,
+    "selected_step_multiplier_eta": 1.1,
+    "lbfgs_history": 7,
+    "selector": "capped first-order H0 versus H0-initialized L-BFGS; initial tie H0; one-way L-BFGS takeover within a frozen subproblem",
+    "secant_gate": "positive curvature cosine >= 1e-4; FIFO",
+    "outer_reparameterization": "mandatory state_curve every outer iteration",
+    "direct_acceptance": "per_image proximal objective",
+    "recovery": "320 calls, 15 inner calls, bicriteria merge, I_perp rtol 0",
+    "energy_fallback": "none",
+    "endpoints": "bitwise fixed; canonical joint E/F preloaded as shared inherited cache entries before the first optimization query",
+    "eligible_states": "initial or fully reparameterization-committed; partial tails quarantined"
+  },
+  "allowed_system_only_differences": [
+    "32 total images and 30 internal images",
+    "3132 atoms and flattened dimension 9396",
+    "complex_fixed.pdb and common_initial_path32.npz",
+    "canonical BB Amber14-all plus implicit/gbn2 CPU/double joint oracle",
+    "call-free nonperiodic sparse FFrbk construction acceleration with unchanged matrix entries and rebuild frequency",
+    "explicit path-history storage mode that is never read by the online algorithm"
+  ],
+  "forbidden_drift": [
+    "Henkelman-Jonsson improved tangent",
+    "removing or weakening state_curve reparameterization/recovery",
+    "rescaling alpha, r, eta, or max step by atom or image count",
+    "changing FFrbk rebuild frequency or shifted solve",
+    "online dense metrics or baseline feedback",
+    "unregistered fourth tuning controls"
+  ],
+  "input_contract": {
+    "pdb_sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "path_npz_sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "path_array_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+    "path_shape": [32, 9396],
+    "endpoint_array_sha256": "5788e22f86df91ed5500e88a8dc053f7408bd2fb39414de121a6eec36b833db1",
+    "endpoint_cache_npz_sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a",
+    "endpoint_energy_array_sha256": "24884695bc3bbecbf1e5007bf8f245bfe6d7eb5bf81725e986b8dd0ece088a31",
+    "endpoint_force_array_sha256": "c28ab9e8ad515beb3cfd5de8cc09af542ff9c80a96815d8d1b8b17d03fd8e01c",
+    "endpoint_energies_eV": [-326.4795394677027, -323.4480415528234],
+    "endpoint_cache_source_data_sha256": "c951b6bdfa356a838a5298740b44abc461344a712b3380ed3adda463a65c017c",
+    "endpoint_cache_source_diagnostic_audit_sha256": "59534941c0a8748ed1a29c8dc4048a4d48693374c083610582a830d28f697fa7"
+  },
+  "oracle_contract": {
+    "openmm": "8.1.2",
+    "platform": "CPU",
+    "precision": "double",
+    "threads": 1,
+    "system_xml_sha256": "ef5d6907fe238ed54be5dcd11d900a7488fe0949a479e544e645c9d2711a9969",
+    "system_xml_bytes": 3918711,
+    "kj_per_mol_per_ev": 96.48533212331002
+  },
+  "number_of_forces": {
+    "primary_axis": "all physical joint getState attempts made by the optimization member, exactly the 30 internal-image cache misses; fixed endpoints are shared inherited cache hits",
+    "endpoint_policy": "the canonical endpoint E/F arrays are hash-verified and preloaded before any query; endpoint getState attempts and endpoint cache misses must both equal zero",
+    "optimization_internal_nf": "identical to Number of Forces and retained for matched lookup against the formal ODE-NEB index",
+    "full_member": {"optimization_internal_nf": 9990, "number_of_forces": 9990},
+    "failure_policy": "a failed getState attempt still counts; the member is invalid/failed and logs are preserved"
+  },
+  "execution_gate": "immutable registrations/execution_authorizations/{label}.json binds the exact label plus the member registration, campaign preregistration, migration contract, and staged-search protocol hashes; no authorization is present in this construction"
+}

@@ -1,0 +1,81 @@
+{
+  "causal_prefix": {
+    "archived_identity": "path_iter_0 is bitwise equal to phi_ref_iter_1",
+    "reason": "The state at incremental NoF 0 is now the exact observation from which the archived current-IVM update produced state 1; no metrics from a separate restrained-MD realization are spliced into the prefix.",
+    "state_0": "phi_ref_iter_0 with M_ref_iter_0 and F_ref_iter_0",
+    "state_1": "phi_ref_iter_1 with M_ref_iter_1 and F_ref_iter_1"
+  },
+  "generator": {
+    "file": "build_causal_shared_initial.py",
+    "sha256": "fe740c380198d0ef404722dee5bc9dbde3d39781052a9f3ea81f2d38af692313"
+  },
+  "geometry_audit": {
+    "legacy_vs_causal_path_max_abs_rad": 4.440892098500626e-16,
+    "legacy_vs_causal_path_rms_rad": 1.8334729819819328e-16,
+    "tolerance_rad": 1e-12
+  },
+  "inputs": {
+    "historical_current_ivm": {
+      "file": "current_ivm.npz",
+      "sha256": "b9cabc5119eaae01a2d1d6556b43219e7f34ae831f05bdbfec9a22787e145d24"
+    },
+    "legacy_common_initial": {
+      "file": "MFEP_INITIAL_PATH_common.npz",
+      "role": "fixed endpoints and geometry cross-check only",
+      "sha256": "415374e22880eb9a25dab75773debd0f894fe9d7ea80417623dca23bc65f1080"
+    }
+  },
+  "key_mapping": {
+    "C1": "legacy_common_initial:C1 (verified against fixed current-IVM endpoint)",
+    "C2": "legacy_common_initial:C2 (verified against fixed current-IVM endpoint)",
+    "F_init": "historical_current_ivm:F_ref_iter_0",
+    "M_init": "historical_current_ivm:M_ref_iter_0",
+    "arc_init": "historical_current_ivm:arc_ref_iter_0",
+    "article_metrics_and_profile": "recomputed from full_path_init, M_init, and F_init by riemannian_torus_geometry.compute_article_metrics",
+    "full_path_init": "vstack(C1, phi_ref_iter_0, C2)",
+    "phi_init": "historical_current_ivm:phi_ref_iter_0"
+  },
+  "legacy_observation_audit": {
+    "M_max_abs_difference": 4.727828175165996,
+    "M_rms_difference": 0.9566008197352869,
+    "causal_minus_old": {
+      "Delta_F_barrier_kcal_per_mol": -0.10252335800445467,
+      "Delta_F_final_kcal_per_mol": -0.03291580400333949,
+      "I_arc": 7.538713776314785e-26,
+      "I_perp_G": 9.076219656784247
+    },
+    "grad_F_max_abs_difference_kcal_per_mol_rad": 0.7949818653392329,
+    "grad_F_rms_difference_kcal_per_mol_rad": 0.20283606903288093,
+    "old_metrics": {
+      "Delta_F_barrier_kcal_per_mol": 2.400002128166882,
+      "Delta_F_final_kcal_per_mol": -0.5653009833418366,
+      "I_arc": 2.146161825037264e-25,
+      "I_perp_G": 190.26227431421816
+    }
+  },
+  "metrics": {
+    "Delta_F_barrier_kcal_per_mol": 2.2974787701624275,
+    "Delta_F_final_kcal_per_mol": -0.5982167873451761,
+    "I_arc": 2.9000332026687426e-25,
+    "I_perp_G": 199.3384939710024
+  },
+  "nof": {
+    "counting_unit": "one complete two-component mean-force vector evaluated at one 2D collective-variable image counts as one NoF",
+    "explanation": "The archived state 0 required one mean-force evaluation at each of 20 internal images (20 absolute NoF).  Because both methods inherit that already observed band, the comparison axis starts it at incremental NoF 0; state 1 adds the next 20 evaluations.",
+    "historical_initial_absolute_nof": 20,
+    "internal_image_count": 20,
+    "name": "number of mean-force evaluations",
+    "next_historical_state_incremental_nof": 20,
+    "shared_initial_incremental_nof": 0
+  },
+  "output": {
+    "file": "MFEP_INITIAL_PATH_current_ivm_state0.npz",
+    "sha256": "ef14d24e98a8f6d640cd7dd9bb7786ee189710a95c980c62e1c8aff39194ef79"
+  },
+  "runtime": {
+    "byteorder": "little",
+    "numpy": "1.24.4",
+    "python": "3.8.20"
+  },
+  "schema_version": "ala2d.causal_shared_initial.v1"
+}

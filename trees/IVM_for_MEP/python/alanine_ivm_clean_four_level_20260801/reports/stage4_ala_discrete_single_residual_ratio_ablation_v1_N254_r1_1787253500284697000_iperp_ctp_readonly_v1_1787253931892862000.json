@@ -1,0 +1,3283 @@
+{
+  "analysis_id": "stage4_ala_discrete_single_residual_ratio_iperp_ctp_v1",
+  "created_unix": 1787253931.892441,
+  "read_only_formal_input_audit": true,
+  "barrier_data_accessed": false,
+  "barrier_computation_or_densification_performed": false,
+  "barrier_unembargoed": false,
+  "ratio_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_residual_ratio_ablation_v1_N254_r1_1787253500284697000.json",
+  "ratio_report_sha256": "f4e1f3e9f32704e80d51dd1b5ebd56b40b5a56d2bde0350ef21a908e84004d2c",
+  "ratio_preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_residual_ratio_ablation_v1_N254_r1_1787253500284697000_preregistered.json",
+  "ratio_preregistration_sha256": "eba63e07899480b5a63af31a6b80c0262e97902a241a9b6a9bbc87f4e8c099d4",
+  "formal_refinement_analysis": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_iperp_ctp_readonly_v1_1787253163640931000.json",
+  "formal_refinement_analysis_sha256": "8ff9d9824eb2d3719d28f73f33b92b62e115ff9f7449bf60be054298d7ba5212",
+  "verified_source_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_residual_ratio_ablation_grid.py": "9cb434663cad6d57634dc9b79d97044e1e7435cdff7a756af6d718e00ba3ebed",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_residual_ratio_ablation.py": "92dd95c4d8912cf6675112eff0307b7f6d8971b6b40566e0d14db12c565c2e05",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_alpha_refinement_iperp_ctp.py": "15c7fdeb46c6d44556874df31bca8b4a37aabf1928ec571840cdfef50204eb2a"
+  },
+  "verified_report_prereg_source_command_result_audit_hashes": true,
+  "canonical_initial_path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+  "canonical_initial_path_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "canonical_initial_path_array_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+  "merged_residual_ratio_grid": [
+    0.9,
+    0.8,
+    0.5
+  ],
+  "fixed_alpha": 12.5,
+  "fixed_budget_per_image": 254,
+  "command_identity": "new candidates differ from the reused r=0.8 scientific command only in --discrete-residual-ratio; routing is isolated",
+  "npz_access_allowlists": {
+    "candidate": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "total_internal_joint_evaluations"
+    ],
+    "legacy_control": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "total_internal_joint_evaluations"
+    ],
+    "official_archive": [
+      "activation_iperp",
+      "candidate_calls",
+      "candidate_i_perp",
+      "complete_state_candidates_only",
+      "source_result",
+      "source_result_sha256"
+    ],
+    "official_combined": [
+      "phase_a_result",
+      "phase_b_result",
+      "phase_transition_force_offset"
+    ],
+    "official_components": [
+      "i_perp",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "total_internal_joint_evaluations"
+    ]
+  },
+  "eligibility": "initial or reparam_committed, then segment_length_cv<=0.0065 and segment_length_ratio<=1.03",
+  "cost_to_precision": "minimum actual optimization NF with I_perp<=threshold; no interpolation",
+  "official_comparison_scope": "frozen official-v4 complete mesh-eligible post-activation tail with I_perp<=0.007",
+  "primary_success_criterion": "a ratio candidate must weakly dominate every reachable threshold and be strict at least once versus both comparators; its tightest eligible I_perp must also be no larger than each comparator's tightest eligible I_perp",
+  "multiple_primary_winner_tiebreak": [
+    "lexicographically smallest candidate-minus-official NF vector at official thresholds ordered tight-to-loose",
+    "lexicographically smallest candidate-minus-legacy NF vector ordered tight-to-loose",
+    "smallest absolute log-distance from reused r=0.8"
+  ],
+  "same_alpha_legacy_control": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1_central_state_ivm_cfg706082ab7a04_budget254.npz",
+    "result_sha256": "236c9e8f623fa297619d403163a33419a09f3069ef3d151cddd9dafb9cd11c70",
+    "configuration_sha256": "706082ab7a04f6628fe6b36e4b9700391767f652714e9cd82d8c4e9aff136803",
+    "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "complete_state_NF": [
+      20,
+      80,
+      140,
+      289,
+      396,
+      523,
+      629,
+      747,
+      862,
+      975,
+      1127,
+      1319,
+      1503,
+      1668,
+      1831,
+      2076,
+      2299,
+      2629,
+      2923,
+      3197,
+      3467
+    ],
+    "mesh_eligible_complete_state_NF": [
+      20,
+      80,
+      140,
+      289,
+      975,
+      2629,
+      2923,
+      3197,
+      3467
+    ],
+    "eligible_points": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5321329028770402,
+        "segment_length_cv": 0.0018601202861255701,
+        "segment_length_ratio": 1.0062762627027255,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12859632309391136,
+        "segment_length_cv": 0.0007215922160674652,
+        "segment_length_ratio": 1.0021373710377206,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 289,
+        "i_perp": 0.06851258916556509,
+        "segment_length_cv": 0.0014594337735032736,
+        "segment_length_ratio": 1.0054613326991106,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 975,
+        "i_perp": 0.001432869296101324,
+        "segment_length_cv": 0.0028508453742817383,
+        "segment_length_ratio": 1.0111555560440837,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2629,
+        "i_perp": 0.0001603740667333053,
+        "segment_length_cv": 0.006482964866449033,
+        "segment_length_ratio": 1.028293442716982,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2923,
+        "i_perp": 0.00014165380006235588,
+        "segment_length_cv": 0.006383103053770811,
+        "segment_length_ratio": 1.0291694851753967,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3197,
+        "i_perp": 0.00013371115760125484,
+        "segment_length_cv": 0.0026944835871635956,
+        "segment_length_ratio": 1.0121799931807396,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3467,
+        "i_perp": 0.00012595229696197604,
+        "segment_length_cv": 0.0019957198049234295,
+        "segment_length_ratio": 1.0079560297753993,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5321329028770402,
+        "segment_length_cv": 0.0018601202861255701,
+        "segment_length_ratio": 1.0062762627027255,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12859632309391136,
+        "segment_length_cv": 0.0007215922160674652,
+        "segment_length_ratio": 1.0021373710377206,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 289,
+        "i_perp": 0.06851258916556509,
+        "segment_length_cv": 0.0014594337735032736,
+        "segment_length_ratio": 1.0054613326991106,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 975,
+        "i_perp": 0.001432869296101324,
+        "segment_length_cv": 0.0028508453742817383,
+        "segment_length_ratio": 1.0111555560440837,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2629,
+        "i_perp": 0.0001603740667333053,
+        "segment_length_cv": 0.006482964866449033,
+        "segment_length_ratio": 1.028293442716982,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2923,
+        "i_perp": 0.00014165380006235588,
+        "segment_length_cv": 0.006383103053770811,
+        "segment_length_ratio": 1.0291694851753967,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3197,
+        "i_perp": 0.00013371115760125484,
+        "segment_length_cv": 0.0026944835871635956,
+        "segment_length_ratio": 1.0121799931807396,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 3467,
+        "i_perp": 0.00012595229696197604,
+        "segment_length_cv": 0.0019957198049234295,
+        "segment_length_ratio": 1.0079560297753993,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "npz_fields_accessed": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "i_perp",
+      "initial_path_sha256",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "total_internal_joint_evaluations"
+    ]
+  },
+  "official_stage4_v4": {
+    "archive": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+    "archive_sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc",
+    "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA34_phaseB220.npz",
+    "source_result_sha256": "f5be61d5121a46d349247d036ba2ffe9d258efe5caf864ee659ef2bb18aa9622",
+    "component_results": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseA_fast_a20_central_state_ivm_cfg09d74897c1ef_budget34.npz",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseB_precision_a20_central_state_ivm_cfg21ee8dded116_budget220.npz"
+    ],
+    "component_result_sha256": [
+      "9d9a5f692a5a65c82b0921d385dd9a36b8477b9fa9efa1df82c629f4fd8d9de5",
+      "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918"
+    ],
+    "domain_max_i_perp": 0.007,
+    "eligible_points": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ],
+    "mesh_rejected_points": [
+      {
+        "NF": 1357,
+        "i_perp": 0.0004890888275104723,
+        "segment_length_cv": 0.023832350636027653,
+        "segment_length_ratio": 1.0982214523755627
+      },
+      {
+        "NF": 1694,
+        "i_perp": 0.0003952920084906028,
+        "segment_length_cv": 0.018268374352660106,
+        "segment_length_ratio": 1.0661580508264703
+      },
+      {
+        "NF": 2276,
+        "i_perp": 0.0001999634980787797,
+        "segment_length_cv": 0.008561292203950892,
+        "segment_length_ratio": 1.035754407258267
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ]
+  },
+  "formal_result_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1_central_state_ivm_cfg706082ab7a04_budget254.npz": "236c9e8f623fa297619d403163a33419a09f3069ef3d151cddd9dafb9cd11c70",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfgfaf71a0dca2c_budget254.npz": "15df24a92b0a4a73e972be0574b5979d2e4eb7e7b980bc76cd58d474f9d8e835",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr090c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg77f6ec2b26c7_budget254.npz": "3546360e801e0154ec5c977cd6982916b8a6daac4e288e4f36111150c53cb851",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr050c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg7c3fa9819273_budget254.npz": "1aecf145c6747ba2c6956bdd419903c363d1445720f434bfe9332df3a676c1a6"
+  },
+  "formal_member_audit_hashes": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1.json": "7783ba8a42491ce8d23f7b321ee310a7fd47b48d1df23e4e42d24b30a211d2db",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1.json": "1cf4ec9619b41f7f5d3dc39e007e0d7fc95323f78d6900befa64f365f3b5bc5f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/audits/stage4_ala_discrete_single_residual_ratio_ablation_v1_rr090c10_a12p5_N254_discrete_b040_r1.json": "530b9ad5a19f1e24281911823d3c457c384e092b357421576d755b955264424f",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/audits/stage4_ala_discrete_single_residual_ratio_ablation_v1_rr050c10_a12p5_N254_discrete_b040_r1.json": "0dd06ead6b9e940b9c988fc4d8b492d48cf08f8323b3979cec98246f07fbbd16"
+  },
+  "comparisons": [
+    {
+      "residual_ratio": 0.9,
+      "source": "new_ablation",
+      "candidate": {
+        "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr090c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg77f6ec2b26c7_budget254.npz",
+        "result_sha256": "3546360e801e0154ec5c977cd6982916b8a6daac4e288e4f36111150c53cb851",
+        "configuration_sha256": "77f6ec2b26c726b75c09d6ed0c0ae81066416e6593d599a767f948ad8bb51b73",
+        "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+        "complete_state_NF": [
+          20,
+          80,
+          140,
+          171,
+          211,
+          251,
+          291,
+          331,
+          371,
+          411,
+          451,
+          491,
+          531,
+          674,
+          806,
+          932,
+          1042,
+          1148,
+          1252,
+          1354,
+          1449,
+          1554,
+          1668,
+          1840,
+          1997,
+          2184,
+          2668,
+          2842
+        ],
+        "mesh_eligible_complete_state_NF": [
+          20,
+          80,
+          140,
+          171,
+          211,
+          251,
+          291,
+          331,
+          371,
+          411,
+          451,
+          491,
+          531,
+          674,
+          932,
+          1042,
+          1148,
+          1252,
+          1354,
+          1449,
+          1554,
+          1668,
+          1840
+        ],
+        "eligible_points": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 171,
+            "i_perp": 0.10157801177649105,
+            "segment_length_cv": 6.45575185672677e-10,
+            "segment_length_ratio": 1.0000000018206754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 211,
+            "i_perp": 0.06357473802476937,
+            "segment_length_cv": 5.431202497451231e-10,
+            "segment_length_ratio": 1.0000000015316726,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 251,
+            "i_perp": 0.04862384201752942,
+            "segment_length_cv": 5.832167119727582e-10,
+            "segment_length_ratio": 1.0000000016449182,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 291,
+            "i_perp": 0.03971986127094102,
+            "segment_length_cv": 6.034734942009607e-10,
+            "segment_length_ratio": 1.0000000017021151,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 331,
+            "i_perp": 0.033684979529719154,
+            "segment_length_cv": 6.206458710296262e-10,
+            "segment_length_ratio": 1.0000000017505863,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 371,
+            "i_perp": 0.02929582274249444,
+            "segment_length_cv": 6.292637103658618e-10,
+            "segment_length_ratio": 1.0000000017748754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 411,
+            "i_perp": 0.025991719089463697,
+            "segment_length_cv": 6.415209131263381e-10,
+            "segment_length_ratio": 1.0000000018094686,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 451,
+            "i_perp": 0.023425254293430522,
+            "segment_length_cv": 6.419030729161306e-10,
+            "segment_length_ratio": 1.0000000018105588,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 491,
+            "i_perp": 0.02138160246228826,
+            "segment_length_cv": 6.481977724904601e-10,
+            "segment_length_ratio": 1.0000000018283184,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 531,
+            "i_perp": 0.019704921285490395,
+            "segment_length_cv": 6.488023663415394e-10,
+            "segment_length_ratio": 1.0000000018300241,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 674,
+            "i_perp": 0.009663285802479807,
+            "segment_length_cv": 0.004769766504330285,
+            "segment_length_ratio": 1.0221915913811648,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 932,
+            "i_perp": 0.003546888738136597,
+            "segment_length_cv": 0.005258037721204065,
+            "segment_length_ratio": 1.0199456412308212,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1042,
+            "i_perp": 0.0022921199809493196,
+            "segment_length_cv": 0.004652316305035338,
+            "segment_length_ratio": 1.0200342431576697,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1148,
+            "i_perp": 0.0016043859855591088,
+            "segment_length_cv": 0.002618172776306928,
+            "segment_length_ratio": 1.010003399453096,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1252,
+            "i_perp": 0.0011696208423776415,
+            "segment_length_cv": 0.0024988681100859902,
+            "segment_length_ratio": 1.0077438831524086,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1354,
+            "i_perp": 0.0008759757383230165,
+            "segment_length_cv": 0.0023292001261537238,
+            "segment_length_ratio": 1.0071970077682892,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1449,
+            "i_perp": 0.0008023706968619769,
+            "segment_length_cv": 0.0018485042781098714,
+            "segment_length_ratio": 1.0065728361916133,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1554,
+            "i_perp": 0.0006016644602007634,
+            "segment_length_cv": 0.0020762217374249103,
+            "segment_length_ratio": 1.0066597927193102,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1668,
+            "i_perp": 0.000487601789431745,
+            "segment_length_cv": 0.0019289205976402866,
+            "segment_length_ratio": 1.0061970474782207,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1840,
+            "i_perp": 0.0004247001913143944,
+            "segment_length_cv": 0.0019581113614957494,
+            "segment_length_ratio": 1.0059429320954119,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "pareto_records": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 171,
+            "i_perp": 0.10157801177649105,
+            "segment_length_cv": 6.45575185672677e-10,
+            "segment_length_ratio": 1.0000000018206754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 211,
+            "i_perp": 0.06357473802476937,
+            "segment_length_cv": 5.431202497451231e-10,
+            "segment_length_ratio": 1.0000000015316726,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 251,
+            "i_perp": 0.04862384201752942,
+            "segment_length_cv": 5.832167119727582e-10,
+            "segment_length_ratio": 1.0000000016449182,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 291,
+            "i_perp": 0.03971986127094102,
+            "segment_length_cv": 6.034734942009607e-10,
+            "segment_length_ratio": 1.0000000017021151,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 331,
+            "i_perp": 0.033684979529719154,
+            "segment_length_cv": 6.206458710296262e-10,
+            "segment_length_ratio": 1.0000000017505863,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 371,
+            "i_perp": 0.02929582274249444,
+            "segment_length_cv": 6.292637103658618e-10,
+            "segment_length_ratio": 1.0000000017748754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 411,
+            "i_perp": 0.025991719089463697,
+            "segment_length_cv": 6.415209131263381e-10,
+            "segment_length_ratio": 1.0000000018094686,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 451,
+            "i_perp": 0.023425254293430522,
+            "segment_length_cv": 6.419030729161306e-10,
+            "segment_length_ratio": 1.0000000018105588,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 491,
+            "i_perp": 0.02138160246228826,
+            "segment_length_cv": 6.481977724904601e-10,
+            "segment_length_ratio": 1.0000000018283184,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 531,
+            "i_perp": 0.019704921285490395,
+            "segment_length_cv": 6.488023663415394e-10,
+            "segment_length_ratio": 1.0000000018300241,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 674,
+            "i_perp": 0.009663285802479807,
+            "segment_length_cv": 0.004769766504330285,
+            "segment_length_ratio": 1.0221915913811648,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 932,
+            "i_perp": 0.003546888738136597,
+            "segment_length_cv": 0.005258037721204065,
+            "segment_length_ratio": 1.0199456412308212,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1042,
+            "i_perp": 0.0022921199809493196,
+            "segment_length_cv": 0.004652316305035338,
+            "segment_length_ratio": 1.0200342431576697,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1148,
+            "i_perp": 0.0016043859855591088,
+            "segment_length_cv": 0.002618172776306928,
+            "segment_length_ratio": 1.010003399453096,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1252,
+            "i_perp": 0.0011696208423776415,
+            "segment_length_cv": 0.0024988681100859902,
+            "segment_length_ratio": 1.0077438831524086,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1354,
+            "i_perp": 0.0008759757383230165,
+            "segment_length_cv": 0.0023292001261537238,
+            "segment_length_ratio": 1.0071970077682892,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1449,
+            "i_perp": 0.0008023706968619769,
+            "segment_length_cv": 0.0018485042781098714,
+            "segment_length_ratio": 1.0065728361916133,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1554,
+            "i_perp": 0.0006016644602007634,
+            "segment_length_cv": 0.0020762217374249103,
+            "segment_length_ratio": 1.0066597927193102,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1668,
+            "i_perp": 0.000487601789431745,
+            "segment_length_cv": 0.0019289205976402866,
+            "segment_length_ratio": 1.0061970474782207,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1840,
+            "i_perp": 0.0004247001913143944,
+            "segment_length_cv": 0.0019581113614957494,
+            "segment_length_ratio": 1.0059429320954119,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "npz_fields_accessed": [
+          "active_alpha",
+          "alpha",
+          "alpha_mode",
+          "configuration_sha256",
+          "discrete_all_returned_states_evaluated",
+          "discrete_history",
+          "discrete_implementation_id",
+          "discrete_inner_max_steps",
+          "discrete_residual_ratio",
+          "discrete_stop_mode",
+          "frozen_subproblem",
+          "i_perp",
+          "initial_path_sha256",
+          "reparam_committed",
+          "reparam_mode",
+          "segment_length_cv",
+          "segment_length_ratio",
+          "state_curve_direct_objective_acceptance",
+          "stop_complete_iperp",
+          "total_internal_joint_evaluations"
+        ]
+      },
+      "same_alpha_legacy_comparison": {
+        "comparator": "same_alpha_legacy_control",
+        "comparator_pareto_record_count": 9,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 211,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": -78,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1252,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 277,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": null,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.0004247001913143944,
+        "comparator_tightest_eligible_i_perp": 0.00012595229696197604,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 6,
+          "candidate_unreachable_loss_count": 4,
+          "strict_win_count": 1,
+          "losses": [
+            {
+              "threshold_i_perp": 0.5321329028770402,
+              "candidate_NF": 140,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 60,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.001432869296101324,
+              "candidate_NF": 1252,
+              "comparator_NF": 975,
+              "candidate_minus_comparator_NF": 277,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0001603740667333053,
+              "candidate_NF": null,
+              "comparator_NF": 2629,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00014165380006235588,
+              "candidate_NF": null,
+              "comparator_NF": 2923,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00013371115760125484,
+              "candidate_NF": null,
+              "comparator_NF": 3197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00012595229696197604,
+              "candidate_NF": null,
+              "comparator_NF": 3467,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        }
+      },
+      "official_stage4_v4_comparison": {
+        "comparator": "official_stage4_v4_post_activation_mesh_eligible_tail",
+        "comparator_pareto_record_count": 8,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 932,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": 272,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 932,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": 252,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 1042,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": 213,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 1148,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 205,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1354,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 295,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1554,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": 381,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": null,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": null,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": false,
+        "candidate_tightest_eligible_i_perp": 0.0004247001913143944,
+        "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 8,
+          "candidate_unreachable_loss_count": 2,
+          "strict_win_count": 0,
+          "losses": [
+            {
+              "threshold_i_perp": 0.006889354808869684,
+              "candidate_NF": 932,
+              "comparator_NF": 660,
+              "candidate_minus_comparator_NF": 272,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.006584491730342424,
+              "candidate_NF": 932,
+              "comparator_NF": 680,
+              "candidate_minus_comparator_NF": 252,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0034644624572146097,
+              "candidate_NF": 1042,
+              "comparator_NF": 829,
+              "candidate_minus_comparator_NF": 213,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0018424108929185675,
+              "candidate_NF": 1148,
+              "comparator_NF": 943,
+              "candidate_minus_comparator_NF": 205,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0011294646817160594,
+              "candidate_NF": 1354,
+              "comparator_NF": 1059,
+              "candidate_minus_comparator_NF": 295,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.000767668366776594,
+              "candidate_NF": 1554,
+              "comparator_NF": 1173,
+              "candidate_minus_comparator_NF": 381,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0002636014863862734,
+              "candidate_NF": null,
+              "comparator_NF": 1984,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018216907465962214,
+              "candidate_NF": null,
+              "comparator_NF": 2507,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        }
+      },
+      "joint_full_curve_dominates": false,
+      "legacy_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00012595229696197604,
+          0.00013371115760125484,
+          0.00014165380006235588,
+          0.0001603740667333053,
+          0.001432869296101324,
+          0.06851258916556509,
+          0.12859632309391136,
+          0.5321329028770402,
+          776.2298999129312
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          null,
+          null,
+          null,
+          null,
+          277,
+          -78,
+          0,
+          60,
+          0
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": null,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1252,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 277,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 211,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": -78,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          }
+        ]
+      },
+      "official_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00018216907465962214,
+          0.0002636014863862734,
+          0.000767668366776594,
+          0.0011294646817160594,
+          0.0018424108929185675,
+          0.0034644624572146097,
+          0.006584491730342424,
+          0.006889354808869684
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          null,
+          null,
+          381,
+          295,
+          205,
+          213,
+          252,
+          272
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": null,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": null,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1554,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": 381,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1354,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 295,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 1148,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 205,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 1042,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": 213,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 932,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": 252,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 932,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": 272,
+            "outcome": "loss"
+          }
+        ]
+      },
+      "reporting_anchors_same_alpha_legacy": [
+        {
+          "threshold_i_perp": 1.0,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "candidate_NF": 211,
+          "comparator_NF": 289,
+          "candidate_minus_comparator_NF": -78,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "candidate_NF": 251,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -724,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "candidate_NF": 531,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -444,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "candidate_NF": 674,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -301,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 932,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -43,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 1148,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": 173,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1354,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -1275,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1668,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -961,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": null,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": null,
+          "comparator_NF": 2923,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        }
+      ],
+      "reporting_anchors_official_stage4_v4": [
+        {
+          "threshold_i_perp": 1.0,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 80,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 211,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 251,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 531,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 674,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 932,
+          "comparator_NF": 829,
+          "candidate_minus_comparator_NF": 103,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 1148,
+          "comparator_NF": 943,
+          "candidate_minus_comparator_NF": 205,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1354,
+          "comparator_NF": 1173,
+          "candidate_minus_comparator_NF": 181,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1668,
+          "comparator_NF": 1984,
+          "candidate_minus_comparator_NF": -316,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": null,
+          "comparator_NF": 2507,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": null,
+          "comparator_NF": null,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "comparator_unreachable",
+          "domain_status": "inside_comparator_domain"
+        }
+      ]
+    },
+    {
+      "residual_ratio": 0.8,
+      "source": "reused_reference",
+      "candidate": {
+        "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfgfaf71a0dca2c_budget254.npz",
+        "result_sha256": "15df24a92b0a4a73e972be0574b5979d2e4eb7e7b980bc76cd58d474f9d8e835",
+        "configuration_sha256": "faf71a0dca2cf52c54c05cd588a380d4c336aad4b456265211f3dfc2d7985bdf",
+        "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+        "complete_state_NF": [
+          20,
+          80,
+          140,
+          171,
+          211,
+          387,
+          523,
+          659,
+          844,
+          958,
+          1062,
+          1167,
+          1272,
+          1373,
+          1553,
+          1742,
+          2008,
+          2262,
+          2444,
+          2864
+        ],
+        "mesh_eligible_complete_state_NF": [
+          20,
+          80,
+          140,
+          171,
+          211,
+          958,
+          1062,
+          1272,
+          1373,
+          1742,
+          2262,
+          2444,
+          2864
+        ],
+        "eligible_points": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 171,
+            "i_perp": 0.10157801177649105,
+            "segment_length_cv": 6.45575185672677e-10,
+            "segment_length_ratio": 1.0000000018206754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 211,
+            "i_perp": 0.06357473802476937,
+            "segment_length_cv": 5.431202497451231e-10,
+            "segment_length_ratio": 1.0000000015316726,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 958,
+            "i_perp": 0.0016424167578845807,
+            "segment_length_cv": 0.0027498442532199077,
+            "segment_length_ratio": 1.010410183086201,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1062,
+            "i_perp": 0.001030876061471016,
+            "segment_length_cv": 0.0025818951247400302,
+            "segment_length_ratio": 1.009628987019014,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1272,
+            "i_perp": 0.000581509405428822,
+            "segment_length_cv": 0.0021495518597685493,
+            "segment_length_ratio": 1.0073834496241962,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1373,
+            "i_perp": 0.00044827072812227836,
+            "segment_length_cv": 0.001893483108769244,
+            "segment_length_ratio": 1.0062020678419439,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1742,
+            "i_perp": 0.0002542115725838214,
+            "segment_length_cv": 0.005772899206525212,
+            "segment_length_ratio": 1.0201409031499182,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2262,
+            "i_perp": 0.00019523881062703582,
+            "segment_length_cv": 0.006332131311027813,
+            "segment_length_ratio": 1.0275033987269442,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2444,
+            "i_perp": 0.00016824861463692815,
+            "segment_length_cv": 0.003018856643569207,
+            "segment_length_ratio": 1.0123959995244196,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2864,
+            "i_perp": 0.00014768658551023934,
+            "segment_length_cv": 0.005270080720984374,
+            "segment_length_ratio": 1.02193219581525,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "pareto_records": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 171,
+            "i_perp": 0.10157801177649105,
+            "segment_length_cv": 6.45575185672677e-10,
+            "segment_length_ratio": 1.0000000018206754,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 211,
+            "i_perp": 0.06357473802476937,
+            "segment_length_cv": 5.431202497451231e-10,
+            "segment_length_ratio": 1.0000000015316726,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 958,
+            "i_perp": 0.0016424167578845807,
+            "segment_length_cv": 0.0027498442532199077,
+            "segment_length_ratio": 1.010410183086201,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1062,
+            "i_perp": 0.001030876061471016,
+            "segment_length_cv": 0.0025818951247400302,
+            "segment_length_ratio": 1.009628987019014,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1272,
+            "i_perp": 0.000581509405428822,
+            "segment_length_cv": 0.0021495518597685493,
+            "segment_length_ratio": 1.0073834496241962,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1373,
+            "i_perp": 0.00044827072812227836,
+            "segment_length_cv": 0.001893483108769244,
+            "segment_length_ratio": 1.0062020678419439,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1742,
+            "i_perp": 0.0002542115725838214,
+            "segment_length_cv": 0.005772899206525212,
+            "segment_length_ratio": 1.0201409031499182,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2262,
+            "i_perp": 0.00019523881062703582,
+            "segment_length_cv": 0.006332131311027813,
+            "segment_length_ratio": 1.0275033987269442,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2444,
+            "i_perp": 0.00016824861463692815,
+            "segment_length_cv": 0.003018856643569207,
+            "segment_length_ratio": 1.0123959995244196,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2864,
+            "i_perp": 0.00014768658551023934,
+            "segment_length_cv": 0.005270080720984374,
+            "segment_length_ratio": 1.02193219581525,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "npz_fields_accessed": [
+          "active_alpha",
+          "alpha",
+          "alpha_mode",
+          "configuration_sha256",
+          "discrete_all_returned_states_evaluated",
+          "discrete_history",
+          "discrete_implementation_id",
+          "discrete_inner_max_steps",
+          "discrete_residual_ratio",
+          "discrete_stop_mode",
+          "frozen_subproblem",
+          "i_perp",
+          "initial_path_sha256",
+          "reparam_committed",
+          "reparam_mode",
+          "segment_length_cv",
+          "segment_length_ratio",
+          "state_curve_direct_objective_acceptance",
+          "stop_complete_iperp",
+          "total_internal_joint_evaluations"
+        ]
+      },
+      "same_alpha_legacy_comparison": {
+        "comparator": "same_alpha_legacy_control",
+        "comparator_pareto_record_count": 9,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 211,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": -78,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1062,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 87,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": 2864,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": 235,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.00014768658551023934,
+        "comparator_tightest_eligible_i_perp": 0.00012595229696197604,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 6,
+          "candidate_unreachable_loss_count": 3,
+          "strict_win_count": 1,
+          "losses": [
+            {
+              "threshold_i_perp": 0.5321329028770402,
+              "candidate_NF": 140,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 60,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.001432869296101324,
+              "candidate_NF": 1062,
+              "comparator_NF": 975,
+              "candidate_minus_comparator_NF": 87,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0001603740667333053,
+              "candidate_NF": 2864,
+              "comparator_NF": 2629,
+              "candidate_minus_comparator_NF": 235,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.00014165380006235588,
+              "candidate_NF": null,
+              "comparator_NF": 2923,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00013371115760125484,
+              "candidate_NF": null,
+              "comparator_NF": 3197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00012595229696197604,
+              "candidate_NF": null,
+              "comparator_NF": 3467,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        }
+      },
+      "official_stage4_v4_comparison": {
+        "comparator": "official_stage4_v4_post_activation_mesh_eligible_tail",
+        "comparator_pareto_record_count": 8,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 958,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": 298,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 958,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": 278,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 958,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": 129,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 958,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 15,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1062,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 3,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1272,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": 99,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": 1742,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": -242,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": 2444,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": -63,
+            "outcome": "strict_win"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.00014768658551023934,
+        "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+        "candidate_does_not_lose_tightest_precision": true,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 6,
+          "candidate_unreachable_loss_count": 0,
+          "strict_win_count": 2,
+          "losses": [
+            {
+              "threshold_i_perp": 0.006889354808869684,
+              "candidate_NF": 958,
+              "comparator_NF": 660,
+              "candidate_minus_comparator_NF": 298,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.006584491730342424,
+              "candidate_NF": 958,
+              "comparator_NF": 680,
+              "candidate_minus_comparator_NF": 278,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0034644624572146097,
+              "candidate_NF": 958,
+              "comparator_NF": 829,
+              "candidate_minus_comparator_NF": 129,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0018424108929185675,
+              "candidate_NF": 958,
+              "comparator_NF": 943,
+              "candidate_minus_comparator_NF": 15,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0011294646817160594,
+              "candidate_NF": 1062,
+              "comparator_NF": 1059,
+              "candidate_minus_comparator_NF": 3,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.000767668366776594,
+              "candidate_NF": 1272,
+              "comparator_NF": 1173,
+              "candidate_minus_comparator_NF": 99,
+              "outcome": "loss"
+            }
+          ]
+        }
+      },
+      "joint_full_curve_dominates": false,
+      "legacy_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00012595229696197604,
+          0.00013371115760125484,
+          0.00014165380006235588,
+          0.0001603740667333053,
+          0.001432869296101324,
+          0.06851258916556509,
+          0.12859632309391136,
+          0.5321329028770402,
+          776.2298999129312
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          null,
+          null,
+          null,
+          235,
+          87,
+          -78,
+          0,
+          60,
+          0
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": 2864,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": 235,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1062,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 87,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 211,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": -78,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          }
+        ]
+      },
+      "official_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00018216907465962214,
+          0.0002636014863862734,
+          0.000767668366776594,
+          0.0011294646817160594,
+          0.0018424108929185675,
+          0.0034644624572146097,
+          0.006584491730342424,
+          0.006889354808869684
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          -63,
+          -242,
+          99,
+          3,
+          15,
+          129,
+          278,
+          298
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": 2444,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": -63,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": 1742,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": -242,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1272,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": 99,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1062,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 3,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 958,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 15,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 958,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": 129,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 958,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": 278,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 958,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": 298,
+            "outcome": "loss"
+          }
+        ]
+      },
+      "reporting_anchors_same_alpha_legacy": [
+        {
+          "threshold_i_perp": 1.0,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "candidate_NF": 211,
+          "comparator_NF": 289,
+          "candidate_minus_comparator_NF": -78,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "candidate_NF": 958,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -17,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "candidate_NF": 958,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -17,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "candidate_NF": 958,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -17,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 958,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -17,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 958,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -17,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1272,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -1357,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1373,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -1256,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": 2262,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -367,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": 2864,
+          "comparator_NF": 2923,
+          "candidate_minus_comparator_NF": -59,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        }
+      ],
+      "reporting_anchors_official_stage4_v4": [
+        {
+          "threshold_i_perp": 1.0,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 80,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 211,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 958,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 958,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 958,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 958,
+          "comparator_NF": 829,
+          "candidate_minus_comparator_NF": 129,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 958,
+          "comparator_NF": 943,
+          "candidate_minus_comparator_NF": 15,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1272,
+          "comparator_NF": 1173,
+          "candidate_minus_comparator_NF": 99,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1373,
+          "comparator_NF": 1984,
+          "candidate_minus_comparator_NF": -611,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": 2262,
+          "comparator_NF": 2507,
+          "candidate_minus_comparator_NF": -245,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": 2864,
+          "comparator_NF": null,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "comparator_unreachable",
+          "domain_status": "inside_comparator_domain"
+        }
+      ]
+    },
+    {
+      "residual_ratio": 0.5,
+      "source": "new_ablation",
+      "candidate": {
+        "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr050c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg7c3fa9819273_budget254.npz",
+        "result_sha256": "1aecf145c6747ba2c6956bdd419903c363d1445720f434bfe9332df3a676c1a6",
+        "configuration_sha256": "7c3fa9819273c83ee5bd1a1528bf1bbd014ad5166aa551faf44b4978a2fcb819",
+        "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+        "complete_state_NF": [
+          20,
+          80,
+          140,
+          297,
+          476,
+          596,
+          730,
+          840,
+          958,
+          1062,
+          1166,
+          1283,
+          1475,
+          1625,
+          2936,
+          3265
+        ],
+        "mesh_eligible_complete_state_NF": [
+          20,
+          80,
+          140,
+          297,
+          596,
+          730,
+          1062,
+          1166,
+          1283,
+          2936
+        ],
+        "eligible_points": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 297,
+            "i_perp": 0.01903790960176388,
+            "segment_length_cv": 0.005335754562781471,
+            "segment_length_ratio": 1.0202939562181974,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 596,
+            "i_perp": 0.0046786995000224684,
+            "segment_length_cv": 0.0027616797491385302,
+            "segment_length_ratio": 1.0084464845965961,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 730,
+            "i_perp": 0.0027470833569125303,
+            "segment_length_cv": 0.004649894402377994,
+            "segment_length_ratio": 1.0173523936700226,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1062,
+            "i_perp": 0.0008777123393607607,
+            "segment_length_cv": 0.0027744403464778737,
+            "segment_length_ratio": 1.0088194197375975,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1166,
+            "i_perp": 0.000620044681704139,
+            "segment_length_cv": 0.0022558065169976543,
+            "segment_length_ratio": 1.0082177706671362,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1283,
+            "i_perp": 0.000489657980061497,
+            "segment_length_cv": 0.0020108260642547012,
+            "segment_length_ratio": 1.0071333077291449,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2936,
+            "i_perp": 0.00022095375064813441,
+            "segment_length_cv": 0.003405991127426554,
+            "segment_length_ratio": 1.0159145890379997,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "pareto_records": [
+          {
+            "NF": 20,
+            "i_perp": 776.2298999129312,
+            "segment_length_cv": 1.479724507567486e-15,
+            "segment_length_ratio": 1.0000000000000078,
+            "is_initial": true,
+            "reparam_committed": false
+          },
+          {
+            "NF": 80,
+            "i_perp": 0.5321329028770521,
+            "segment_length_cv": 0.0018601202861255825,
+            "segment_length_ratio": 1.0062762627027246,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 140,
+            "i_perp": 0.12859632309389024,
+            "segment_length_cv": 0.000721592216067337,
+            "segment_length_ratio": 1.0021373710377202,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 297,
+            "i_perp": 0.01903790960176388,
+            "segment_length_cv": 0.005335754562781471,
+            "segment_length_ratio": 1.0202939562181974,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 596,
+            "i_perp": 0.0046786995000224684,
+            "segment_length_cv": 0.0027616797491385302,
+            "segment_length_ratio": 1.0084464845965961,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 730,
+            "i_perp": 0.0027470833569125303,
+            "segment_length_cv": 0.004649894402377994,
+            "segment_length_ratio": 1.0173523936700226,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1062,
+            "i_perp": 0.0008777123393607607,
+            "segment_length_cv": 0.0027744403464778737,
+            "segment_length_ratio": 1.0088194197375975,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1166,
+            "i_perp": 0.000620044681704139,
+            "segment_length_cv": 0.0022558065169976543,
+            "segment_length_ratio": 1.0082177706671362,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 1283,
+            "i_perp": 0.000489657980061497,
+            "segment_length_cv": 0.0020108260642547012,
+            "segment_length_ratio": 1.0071333077291449,
+            "is_initial": false,
+            "reparam_committed": true
+          },
+          {
+            "NF": 2936,
+            "i_perp": 0.00022095375064813441,
+            "segment_length_cv": 0.003405991127426554,
+            "segment_length_ratio": 1.0159145890379997,
+            "is_initial": false,
+            "reparam_committed": true
+          }
+        ],
+        "npz_fields_accessed": [
+          "active_alpha",
+          "alpha",
+          "alpha_mode",
+          "configuration_sha256",
+          "discrete_all_returned_states_evaluated",
+          "discrete_history",
+          "discrete_implementation_id",
+          "discrete_inner_max_steps",
+          "discrete_residual_ratio",
+          "discrete_stop_mode",
+          "frozen_subproblem",
+          "i_perp",
+          "initial_path_sha256",
+          "reparam_committed",
+          "reparam_mode",
+          "segment_length_cv",
+          "segment_length_ratio",
+          "state_curve_direct_objective_acceptance",
+          "stop_complete_iperp",
+          "total_internal_joint_evaluations"
+        ]
+      },
+      "same_alpha_legacy_comparison": {
+        "comparator": "same_alpha_legacy_control",
+        "comparator_pareto_record_count": 9,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 297,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": 8,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1062,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 87,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": null,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": false,
+        "candidate_tightest_eligible_i_perp": 0.00022095375064813441,
+        "comparator_tightest_eligible_i_perp": 0.00012595229696197604,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 7,
+          "candidate_unreachable_loss_count": 4,
+          "strict_win_count": 0,
+          "losses": [
+            {
+              "threshold_i_perp": 0.5321329028770402,
+              "candidate_NF": 140,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 60,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.06851258916556509,
+              "candidate_NF": 297,
+              "comparator_NF": 289,
+              "candidate_minus_comparator_NF": 8,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.001432869296101324,
+              "candidate_NF": 1062,
+              "comparator_NF": 975,
+              "candidate_minus_comparator_NF": 87,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0001603740667333053,
+              "candidate_NF": null,
+              "comparator_NF": 2629,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00014165380006235588,
+              "candidate_NF": null,
+              "comparator_NF": 2923,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00013371115760125484,
+              "candidate_NF": null,
+              "comparator_NF": 3197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00012595229696197604,
+              "candidate_NF": null,
+              "comparator_NF": 3467,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        }
+      },
+      "official_stage4_v4_comparison": {
+        "comparator": "official_stage4_v4_post_activation_mesh_eligible_tail",
+        "comparator_pareto_record_count": 8,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 596,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": -64,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 596,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": -84,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 730,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": -99,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 1062,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 119,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1062,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 3,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1166,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": -7,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": 2936,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": 952,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": null,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.00022095375064813441,
+        "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 4,
+          "candidate_unreachable_loss_count": 1,
+          "strict_win_count": 4,
+          "losses": [
+            {
+              "threshold_i_perp": 0.0018424108929185675,
+              "candidate_NF": 1062,
+              "comparator_NF": 943,
+              "candidate_minus_comparator_NF": 119,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0011294646817160594,
+              "candidate_NF": 1062,
+              "comparator_NF": 1059,
+              "candidate_minus_comparator_NF": 3,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.0002636014863862734,
+              "candidate_NF": 2936,
+              "comparator_NF": 1984,
+              "candidate_minus_comparator_NF": 952,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.00018216907465962214,
+              "candidate_NF": null,
+              "comparator_NF": 2507,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        }
+      },
+      "joint_full_curve_dominates": false,
+      "legacy_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00012595229696197604,
+          0.00013371115760125484,
+          0.00014165380006235588,
+          0.0001603740667333053,
+          0.001432869296101324,
+          0.06851258916556509,
+          0.12859632309391136,
+          0.5321329028770402,
+          776.2298999129312
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          null,
+          null,
+          null,
+          null,
+          87,
+          8,
+          0,
+          60,
+          0
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00012595229696197604,
+            "candidate_NF": null,
+            "comparator_NF": 3467,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00013371115760125484,
+            "candidate_NF": null,
+            "comparator_NF": 3197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00014165380006235588,
+            "candidate_NF": null,
+            "comparator_NF": 2923,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0001603740667333053,
+            "candidate_NF": null,
+            "comparator_NF": 2629,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.001432869296101324,
+            "candidate_NF": 1062,
+            "comparator_NF": 975,
+            "candidate_minus_comparator_NF": 87,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.06851258916556509,
+            "candidate_NF": 297,
+            "comparator_NF": 289,
+            "candidate_minus_comparator_NF": 8,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.12859632309391136,
+            "candidate_NF": 140,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.5321329028770402,
+            "candidate_NF": 140,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 60,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          }
+        ]
+      },
+      "official_deficit_vector": {
+        "thresholds_tight_to_loose": [
+          0.00018216907465962214,
+          0.0002636014863862734,
+          0.000767668366776594,
+          0.0011294646817160594,
+          0.0018424108929185675,
+          0.0034644624572146097,
+          0.006584491730342424,
+          0.006889354808869684
+        ],
+        "candidate_minus_comparator_NF_tight_to_loose": [
+          null,
+          952,
+          -7,
+          3,
+          119,
+          -99,
+          -84,
+          -64
+        ],
+        "candidate_unreachable_tight_to_loose": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "threshold_rows_tight_to_loose": [
+          {
+            "threshold_i_perp": 0.00018216907465962214,
+            "candidate_NF": null,
+            "comparator_NF": 2507,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0002636014863862734,
+            "candidate_NF": 2936,
+            "comparator_NF": 1984,
+            "candidate_minus_comparator_NF": 952,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.000767668366776594,
+            "candidate_NF": 1166,
+            "comparator_NF": 1173,
+            "candidate_minus_comparator_NF": -7,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0011294646817160594,
+            "candidate_NF": 1062,
+            "comparator_NF": 1059,
+            "candidate_minus_comparator_NF": 3,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0018424108929185675,
+            "candidate_NF": 1062,
+            "comparator_NF": 943,
+            "candidate_minus_comparator_NF": 119,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.0034644624572146097,
+            "candidate_NF": 730,
+            "comparator_NF": 829,
+            "candidate_minus_comparator_NF": -99,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.006584491730342424,
+            "candidate_NF": 596,
+            "comparator_NF": 680,
+            "candidate_minus_comparator_NF": -84,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.006889354808869684,
+            "candidate_NF": 596,
+            "comparator_NF": 660,
+            "candidate_minus_comparator_NF": -64,
+            "outcome": "strict_win"
+          }
+        ]
+      },
+      "reporting_anchors_same_alpha_legacy": [
+        {
+          "threshold_i_perp": 1.0,
+          "candidate_NF": 80,
+          "comparator_NF": 80,
+          "candidate_minus_comparator_NF": 0,
+          "outcome": "tie",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "candidate_NF": 297,
+          "comparator_NF": 289,
+          "candidate_minus_comparator_NF": 8,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "candidate_NF": 297,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -678,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "candidate_NF": 297,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -678,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "candidate_NF": 596,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -379,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 596,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": -379,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 1062,
+          "comparator_NF": 975,
+          "candidate_minus_comparator_NF": 87,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1062,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -1567,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1283,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": -1346,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": null,
+          "comparator_NF": 2629,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": null,
+          "comparator_NF": 2923,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        }
+      ],
+      "reporting_anchors_official_stage4_v4": [
+        {
+          "threshold_i_perp": 1.0,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 80,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.1,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 297,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.05,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 297,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.02,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 297,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.01,
+          "domain_status": "outside_official_post_activation_domain",
+          "candidate_NF": 596,
+          "comparator_NF": null,
+          "outcome": "not_compared"
+        },
+        {
+          "threshold_i_perp": 0.005,
+          "candidate_NF": 596,
+          "comparator_NF": 829,
+          "candidate_minus_comparator_NF": -233,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.002,
+          "candidate_NF": 1062,
+          "comparator_NF": 943,
+          "candidate_minus_comparator_NF": 119,
+          "outcome": "loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.001,
+          "candidate_NF": 1062,
+          "comparator_NF": 1173,
+          "candidate_minus_comparator_NF": -111,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0005,
+          "candidate_NF": 1283,
+          "comparator_NF": 1984,
+          "candidate_minus_comparator_NF": -701,
+          "outcome": "strict_win",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.0002,
+          "candidate_NF": null,
+          "comparator_NF": 2507,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "candidate_unreachable_loss",
+          "domain_status": "inside_comparator_domain"
+        },
+        {
+          "threshold_i_perp": 0.00015,
+          "candidate_NF": null,
+          "comparator_NF": null,
+          "candidate_minus_comparator_NF": null,
+          "outcome": "comparator_unreachable",
+          "domain_status": "inside_comparator_domain"
+        }
+      ]
+    }
+  ],
+  "joint_full_curve_dominator_ratios": [],
+  "selected_primary_winner_ratio": null,
+  "multiple_primary_winner_tiebreak_applied": false,
+  "multiple_primary_winner_exact_tie_unresolved": false,
+  "ratio_lock_status": "not_locked_no_primary_dominator",
+  "winner_claim_made": false,
+  "ratio_lock_allowed": false,
+  "barrier_unembargo_allowed": false,
+  "barrier_unembargoed_by_this_analyzer": false,
+  "no_primary_dominator_rule_applied": true,
+  "no_primary_dominator_actions": {
+    "winner_claim_allowed": false,
+    "ratio_lock_allowed": false,
+    "post_hoc_grid_expansion_allowed": false,
+    "barrier_unembargo_allowed": false
+  },
+  "barrier_remains_embargoed": true,
+  "reporting_anchors": [
+    1.0,
+    0.1,
+    0.05,
+    0.02,
+    0.01,
+    0.005,
+    0.002,
+    0.001,
+    0.0005,
+    0.0002,
+    0.00015
+  ],
+  "analysis_script": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_residual_ratio_iperp_ctp.py",
+  "analysis_script_sha256": "73a0959705ec3e581da5711a1fa3fd6b15dc294b36a1502f7242d69989c48c66"
+}

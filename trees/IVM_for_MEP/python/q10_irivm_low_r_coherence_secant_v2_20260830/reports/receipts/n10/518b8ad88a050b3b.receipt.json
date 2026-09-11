@@ -1,0 +1,29 @@
+{
+  "accepted_states": 71,
+  "alpha": 0.002,
+  "alpha_label": "2e-3",
+  "committed_transactions": 40,
+  "controls": {
+    "alpha": 0.002,
+    "alpha_label": "2e-3",
+    "m_max": 4,
+    "n_internal": 10,
+    "r": 0.6
+  },
+  "failure_message": "",
+  "last_complete_article_nf": 764,
+  "m_max": 4,
+  "n20_gate_manifest_sha256_token": "e7a3c54bffd4c9c63c9b2dac39fe9baf985a6d964485ea77fecc11917cc8fd23",
+  "n_internal": 10,
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/runs/n10/518b8ad88a050b3b.npz",
+  "output_sha256": "7c7b0e204b90a925b86847b99f2fdef4d23a8b24c6d15bcb3fbfb7ed12c86bce",
+  "r": 0.6,
+  "recovery_backtrack_states_cleared_total": 8,
+  "rolled_back_transactions": 11,
+  "run_id": "518b8ad88a050b3b",
+  "status": "completed",
+  "stop_reason": "stationary",
+  "terminal_article_nf": 764,
+  "transactions": 51,
+  "wall_seconds": 0.8082139999999995
+}

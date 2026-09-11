@@ -1,0 +1,61 @@
+{
+  "canonical_two_lock_nonblocking_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "bytes": 11832,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_CONSTRAINED_RELAXED_PILOT_RUN_CONTRACT_R1_20260903.json",
+    "sha256": "8c06973275704fc56dd3e1fd9cae6c688330c7df7008bf1e6a71d141126e1ab3"
+  },
+  "coordinate_audit": {
+    "bytes": 2747,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.audit.json",
+    "sha256": "305ca970e862c331aa0f502f592c27d28d8a7d73f0c214c8e21b4a8a3f62fe16"
+  },
+  "coordinate_manifest": {
+    "bytes": 12452188,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.npz",
+    "sha256": "1e0acc34ff629d3bb3c5eb7aa633d6af72eeaf8289aa98205acb8882caa754ec"
+  },
+  "created_utc": "2026-09-03T06:45:38.323376+00:00",
+  "endpoint_joint_ef_cache": {
+    "bytes": 302464,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+    "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "evaluator": {
+    "bytes": 56126,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_call515_constrained_relaxed_pilot_r1.py",
+    "sha256": "ef4ea4ba351fa7f1af0fc4df6d38ab617ce0c5b659ea265eb19a0e415eaa52b1"
+  },
+  "fixed_anchor_coordinate_hashes": [
+    "22583ec180224d0df70573233dfe87378058b96324e0d70af1546b67c13d7822",
+    "ab7de10c0bf1031945e6356eea191981038ae207bed9d9de6b3a9ebc259c9dc7"
+  ],
+  "fixed_anchor_raw_force_fmax_eV_A": [
+    0.03332491869310135,
+    0.0075490093259253915
+  ],
+  "fixed_cached_endpoint_anchors": 2,
+  "maximum_fresh_center_column_force_attempts": 663,
+  "maximum_physical_force_attempts": 6783,
+  "observed_free_bytes": 26418540544,
+  "openmm_contexts_constructed": 0,
+  "optimization_N_F_contribution": 0,
+  "physical_force_calls_started": 0,
+  "required_free_bytes": 12884901888,
+  "schema": "bb-irivm-call515-constrained-relaxed-pilot-preflight-r1-v1",
+  "status": "PASS_ZERO_OPENMM_BEFORE_CONSTRAINED_PILOT_AUTHORIZATION",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

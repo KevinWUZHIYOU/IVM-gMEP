@@ -1,0 +1,173 @@
+{
+  "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+  "source_result_sha256": "e8ce449e55b975360bbc29fd49a8e28c1fe8c0618382eb37b0a86e022bdfe03a",
+  "source_optimization_audit": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.audit.json",
+  "source_optimization_audit_sha256": "f6ae6899ef8cdf3ad8c09adcd6aad2891cec91a6ddc7a52e6d8f03414a314085",
+  "source_optimization_backend_raw_joint_evaluations": 5002,
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/dense_cpu1_a10_r05_m05_all_committed.npz",
+  "output_sha256": "af1d8365ddc25cc4372eac5c53ff48facace9ce94193f20229b181c948214d8a",
+  "source_selected_paths_sha256": "5a629a0cd82fe0bfd17d04fb7f89ae95bd3f4c884c906143db52d32102655519",
+  "complete_state_definition": "initial_or_reparam_committed",
+  "eligibility_rule": "record_index == 0 or reparam_committed[record_index]",
+  "all_selected_records_eligible": true,
+  "path_mapping_policy": "audited_one_to_one_history_order",
+  "optimization_cost_axis": "counter_vectors.sum(axis=1)",
+  "cost_includes_all_22_images": true,
+  "fixed_endpoint_first_evaluations_included": true,
+  "diagnostic_counts_excluded_from_optimization_axis": true,
+  "barrier_protocol": {
+    "energy_backend": "real OpenMM CPU double precision",
+    "interpolation": "linear Cartesian interpolation per segment",
+    "initial_subdivisions": 10,
+    "comparison_subdivisions": 20,
+    "adaptive_threshold_kcal": 0.05,
+    "maximum_subdivisions": 80
+  },
+  "records": [
+    {
+      "record_index": 0,
+      "stored_path_index": 0,
+      "complete_state_kind": "initial",
+      "reparam_committed": false,
+      "paper_total_nf": 22,
+      "i_perp": 126945.61152277098,
+      "adaptive_dense_barrier_kcal": 2473.320730352419,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 421
+    },
+    {
+      "record_index": 7,
+      "stored_path_index": 7,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 126,
+      "i_perp": 3877.951648508589,
+      "adaptive_dense_barrier_kcal": 107.56456328409747,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 11,
+      "stored_path_index": 11,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 210,
+      "i_perp": 19.13659073497125,
+      "adaptive_dense_barrier_kcal": 32.468709181316356,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 20,
+      "stored_path_index": 20,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 386,
+      "i_perp": 2.6583444258234845,
+      "adaptive_dense_barrier_kcal": 27.435360656001503,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 30,
+      "stored_path_index": 30,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 567,
+      "i_perp": 0.5985191429661587,
+      "adaptive_dense_barrier_kcal": 25.497175448968036,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 40,
+      "stored_path_index": 40,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 735,
+      "i_perp": 0.3871028020747278,
+      "adaptive_dense_barrier_kcal": 24.376334777518075,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 50,
+      "stored_path_index": 50,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 905,
+      "i_perp": 0.1852701724454184,
+      "adaptive_dense_barrier_kcal": 24.100098154200122,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 68,
+      "stored_path_index": 68,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1220,
+      "i_perp": 0.158490888685889,
+      "adaptive_dense_barrier_kcal": 23.757411942448314,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 82,
+      "stored_path_index": 82,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1455,
+      "i_perp": 0.1003612689559028,
+      "adaptive_dense_barrier_kcal": 23.472994908965468,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 102,
+      "stored_path_index": 102,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1697,
+      "i_perp": 0.08076839503475554,
+      "adaptive_dense_barrier_kcal": 22.95816155009052,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 112,
+      "stored_path_index": 112,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1947,
+      "i_perp": 0.0640538650232094,
+      "adaptive_dense_barrier_kcal": 22.291569201532386,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 258,
+      "stored_path_index": 258,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 3740,
+      "i_perp": 0.044067774325682534,
+      "adaptive_dense_barrier_kcal": 20.475235056633274,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    }
+  ],
+  "selected_initial_states": 1,
+  "selected_committed_reparameterizations": 11,
+  "diagnostic_backend_raw_joint_evaluations": 5030,
+  "diagnostic_evaluator_cache_misses": 5030,
+  "diagnostic_row_joint_evaluations": 5030,
+  "diagnostic_energy_requests": 7584,
+  "diagnostic_force_requests": 0,
+  "diagnostic_cache_hits": 2554,
+  "selected_subdivision_counts": {
+    "20": 12,
+    "40": 0,
+    "80": 0
+  }
+}

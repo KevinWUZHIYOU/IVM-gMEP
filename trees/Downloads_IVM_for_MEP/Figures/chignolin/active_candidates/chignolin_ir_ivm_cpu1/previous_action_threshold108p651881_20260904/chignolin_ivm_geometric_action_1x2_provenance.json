@@ -1,0 +1,171 @@
+{
+  "status": "validated",
+  "definition": "sum_i 0.5*(norm(gradV_i)+norm(gradV_(i+1)))*norm(x_(i+1)-x_i)",
+  "unit": "kcal/mol",
+  "thresholds": {
+    "i_perp": 0.21242215133173672,
+    "action_kcal": 108.65188139033872
+  },
+  "methods": {
+    "IVM": {
+      "count": 12,
+      "source": {
+        "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+        "source_result_sha256": "e8ce449e55b975360bbc29fd49a8e28c1fe8c0618382eb37b0a86e022bdfe03a",
+        "eligibility": "initial_or_reparam_committed"
+      },
+      "first_passage": {
+        "i_perp": 905,
+        "action_kcal": 905
+      },
+      "initial_action_kcal": 60336.99184701898,
+      "final_action_kcal": 53.917860845503846,
+      "best_action_kcal": 53.917860845503846,
+      "final_publishable_nf": 3740
+    },
+    "ODE-NEB": {
+      "count": 906,
+      "source": {
+        "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_ode_k50_central_k50_alpha0p0001_ode_budget1000.npz",
+        "source_result_sha256": "68bc5c5a8608e173e650f194bf849127e583439862294f7afdae4fb4d03609ba",
+        "eligibility": "all_saved_states"
+      },
+      "first_passage": {
+        "i_perp": 17662,
+        "action_kcal": 17662
+      },
+      "initial_action_kcal": 60336.99184701898,
+      "final_action_kcal": 101.69006490845834,
+      "best_action_kcal": 101.69006490845834,
+      "final_publishable_nf": 20002
+    },
+    "Static-NEB": {
+      "count": 1000,
+      "source": {
+        "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.npz",
+        "source_result_sha256": "8aa75a1cdee0cf82b2e46181c8633c6655277a18d37e9c738002546de0359fe0",
+        "eligibility": "all_saved_states"
+      },
+      "first_passage": {
+        "i_perp": null,
+        "action_kcal": null
+      },
+      "initial_action_kcal": 60336.99184701898,
+      "final_action_kcal": 189.90779248422842,
+      "best_action_kcal": 189.90779248422842,
+      "final_publishable_nf": 20002
+    },
+    "Original String": {
+      "count": 1000,
+      "source": {
+        "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.npz",
+        "source_result_sha256": "10778b9d36ffb6da7c2904cf024c5046137b6e103cd3581140ee440bd5ea5ea9",
+        "eligibility": "all_saved_states"
+      },
+      "first_passage": {
+        "i_perp": null,
+        "action_kcal": null
+      },
+      "initial_action_kcal": 60336.99184701898,
+      "final_action_kcal": 190.20069796028702,
+      "best_action_kcal": 190.20069796028702,
+      "final_publishable_nf": 20002
+    },
+    "OBSM-FIRE": {
+      "count": 168,
+      "source": {
+        "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.npz",
+        "source_result_sha256": "0dc20cbb94fa5411d8bd6bd8d40f303766937c5327a7fbc2f965b71668bf7b4c",
+        "eligibility": "all_saved_states"
+      },
+      "first_passage": {
+        "i_perp": 19942,
+        "action_kcal": 19942
+      },
+      "initial_action_kcal": 60336.99184701898,
+      "final_action_kcal": 108.65188139033872,
+      "best_action_kcal": 108.65188139033872,
+      "final_publishable_nf": 19982
+    }
+  },
+  "diagnostic_audit": {
+    "status": "validated",
+    "contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/GEOMETRIC_ACTION_DISCRETE_V1.json",
+    "contract_sha256": "87777a9461eba26693ce01903eb6993f7bf81603dddb7e771c931a029d585760",
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.npz",
+    "result_sha256": "1c0acd1d423be9bddd77e3a4cade5008f4cff438e747d5bd83b3849e581e5921",
+    "csv": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.csv",
+    "csv_sha256": "06c21d74969c27a7e7899fe366e10eec9da965223794d16824628c1e9d80e142",
+    "selected_path_count": 3086,
+    "counts": {
+      "IVM": 12,
+      "ODE-NEB": 906,
+      "Static-NEB": 1000,
+      "Original String": 1000,
+      "OBSM-FIRE": 168
+    },
+    "diagnostic_joint_evaluations": 67892,
+    "diagnostic_cost_excluded_from_optimization_axis": true,
+    "backend_platform": "CPU",
+    "backend_requested_precision": "double",
+    "actual_precision_note": "Same production CPU backend; precision keyword configures only GPU platforms in core",
+    "openmm_cpu_threads": 1,
+    "maximum_iperp_absolute_difference": 0.0,
+    "maximum_iperp_relative_difference": 0.0
+  },
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/GEOMETRIC_ACTION_DISCRETE_V1.json",
+    "sha256": "87777a9461eba26693ce01903eb6993f7bf81603dddb7e771c931a029d585760"
+  },
+  "code": {
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/plot_chignolin_geometric_action.py": "5b9456e5e75f3da6145d4f7422ff9d8397b2e66ebaefebc79861e79e45fa424c",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/postprocess_geometric_action.py": "959167006d816b4346b9b8a569d2349632a256309340c7ff558511855b6dc1e0",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/chignolin_core.py": "ad5d6532f7acd7c7b2560fdb68e6ead796374bcf0b24d1c0790b7e51fa5e4faa",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/plot_chignolin_ivm_arc500.py": "62d30b5b81e0ab3b42bdf080308e95c615a4ecee0b960946b1df4dd15e0743b9"
+  },
+  "interpretation": "Discrete 22-node trapezoid action, not densified; full gradient; neither Iperp nor energy barrier",
+  "diagnostic_cost_excluded_from_optimization_axis": true,
+  "annotations": [
+    {
+      "metric": "i_perp",
+      "shared_threshold": 0.21242215133173672,
+      "ivm_number_of_forces": 905,
+      "ode_number_of_forces": 17662,
+      "ode_over_ivm": 19.516022099447515
+    },
+    {
+      "metric": "action_kcal",
+      "shared_threshold": 108.65188139033872,
+      "ivm_number_of_forces": 905,
+      "ode_number_of_forces": 17662,
+      "ode_over_ivm": 19.516022099447515
+    }
+  ],
+  "outputs": {
+    "pdf": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ivm_geometric_action_1x2.pdf",
+      "sha256": "3a1abffd9f0f805e0c0a60cf8c983857833aea717b35f0977b218cf2e4d66c4d"
+    },
+    "png": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ivm_geometric_action_1x2.png",
+      "sha256": "100af921d549717c93560628ade1e2fca779cc4e6a5f7733c0e2ea33d16a239c"
+    },
+    "svg": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ivm_geometric_action_1x2.svg",
+      "sha256": "aaf1974cd4e04c389a39c4ea717e8576b87f7875369e1ebe1c05a9000da694b3"
+    },
+    "frontier": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ivm_geometric_action_1x2_frontier.csv",
+      "sha256": "b03229a66061e29b28887e81bf766bb72c1dec5b5f39fcac209f58f277468cb9"
+    },
+    "annotations": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ivm_geometric_action_1x2_annotations.csv",
+      "sha256": "7012c97a1749b77edb70b45a22c6efecaefad8e53101a24214af1a35319a4504"
+    }
+  },
+  "action_xlim": [
+    100000.0,
+    32.35071650730231
+  ],
+  "action_xscale": "log"
+}

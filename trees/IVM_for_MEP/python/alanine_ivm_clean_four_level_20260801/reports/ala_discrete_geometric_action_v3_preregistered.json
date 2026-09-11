@@ -1,0 +1,72 @@
+{
+  "registered_utc": "2026-09-03T17:07:56.024314+00:00",
+  "purpose": "Additional discrete geometric-action cost-to-precision diagnostic; no optimizer rerun",
+  "formula": "sum_i 0.5*(norm(gradV_i)+norm(gradV_(i+1)))*norm(x_(i+1)-x_i)",
+  "gradient": "full physical gradient; force=-gradV so their Euclidean norms agree",
+  "tangent": "normalized central difference: x[i+1] - x[i-1]",
+  "tangent_reference_example": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/postprocess_geometric_action.py",
+  "quadrature": "polygonal arc-length trapezoid",
+  "interior_weights": "ala_core.local_path_weights; identical policy to the Chignolin example",
+  "endpoint_policy": "include half-segment endpoint terms",
+  "spatial_nodes": 22,
+  "densification": false,
+  "coordinate_space": "unweighted 66D Cartesian, Angstrom",
+  "output_unit": "kcal/mol",
+  "ev_to_kcal": 23.0605,
+  "selected_ivm_controls": {
+    "alpha": 10.0,
+    "residual_ratio": 0.7,
+    "inner_max_steps": 5,
+    "total_internal_nf_budget": 5000
+  },
+  "selected_ivm_cell_id": "a736dd230285d61c",
+  "counts": {
+    "ivm": 22,
+    "ode_neb": 4638,
+    "static_neb": 264,
+    "original_string": 264,
+    "obsm_fire": 66,
+    "obsm_bfgs": 134
+  },
+  "selected_path_count": 5388,
+  "expected_diagnostic_joint_evaluations": 118536,
+  "selected_paths_sha256": "c223757e2e941bc9b2f58607193b5b0bffc996227904b28064f3bc27a877090e",
+  "jobs": 1,
+  "openmm_cpu_threads": 1,
+  "host_local_ala_lock": "/Users/wuzhiyou/Downloads/IVM_for_MEP/.ala_global_heavy_task.lock",
+  "diagnostic_cost_excluded_from_optimization_axis": true,
+  "optimization_cost": "source optimizer cumulative counter; all 22 images, including endpoints",
+  "iperp_verification_rtol": 1e-05,
+  "iperp_verification_atol": 1e-08,
+  "iperp_verification_exclusion": {
+    "method": "ode_neb",
+    "source_record_indices": "all",
+    "reason": "legacy ODE loss_perp predates the article's uniform central-tangent diagnostic; path forces are checked directly instead"
+  },
+  "ode_stored_force_verification": {
+    "reference_field": "F_original",
+    "relative_l2_tolerance": 1e-05,
+    "maximum_absolute_tolerance_ev_per_angstrom": 0.0001
+  },
+  "supersedes_failed_preregistrations": [
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/ala_discrete_geometric_action_v1_preregistered.json",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/ala_discrete_geometric_action_v2_preregistered.json"
+  ],
+  "figure_policy": "append geometric action as a third panel; common Number-of-Forces scale across all panels",
+  "sources": {
+    "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_delta_aware_grid_ivm_replacement_1x2_preview_manifest.json": "b6b8ebd220d81e750c0b5d9c6f4953df87fc9be00d30819ccac740c15e82c6b7",
+    "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_delta_aware_grid_ivm_replacement_1x2_preview_source.csv": "93e9a938c289f964fb509f57ab861c8ce4e93e612c0f22820b2b5a699643176d",
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/metrics/postprocess_ala_geometric_action.py": "44278fdd7ca8535d5d3ffcf1f5dd3252466338751dfab91ec83dcf9e18f19221",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/ala2_fixed.pdb": "7ffaf924e345b6fbbba06d0388a67d18f04c07729a2ab7d65ede9a61cd27eda2",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000_preregistered.json": "5fcfad3228e72c267ea1d768dd6f677528ae1fc8e8c6f180ea0d3498503b98a3",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_inexact_reparam_grid_v1/members/ivm_stage4_ala_discrete_inexact_reparam_grid_v1_a1e1_rr70_c05_tnf5000_r1_central_state_ivm_cfgc3a418a9c878_budget5000.npz": "0da1bbab469de81ca5b9229c4ebef656b7688ccb79c822ec14f0f4c92226d161",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/formal_figure_inputs/ala_0to1_N22_k50_alpha0.0001_ode_results.npz": "935561709ecbdfe87af31b78b45335a66545356b3e62f331a4a9fbb8125d9a09",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/formal_figure_inputs/metrics_ala_0to1_N22_k50_alpha0.0001_ode_results.npz": "b2535ddc90bd21142cf5bd1a7bd73428c3856f8fe559cdcfd030df9f3312241c",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/runs/neb/neb_publication90k20260802r2_central_k30_alpha0p013_static_budget4500.npz": "af6228a27324baf7a61ae34d55e7d3c0e7cd66933c6ebd14641e1b82eb0b6bf8",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/runs/publication_long90k_20260802/publication_long90k_20260802_publication90k20260802r2_original_nolambda_dt0p014_r1_cfg587b411dd523_budget4500.npz": "e161d010ff662ae7ad12b2552ae02e152272ed124b4da2e05254c12d011862bd",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/runs/publication_long90k_20260802/publication_long90k_20260802_publication90k20260802r3_fire_lam0p85_inner3_r1_nocap_cfg75c2b3203822_budget4510.npz": "33d3963eb17887e7a2779ab1533ee103547366a10517cb19c3907ef9396354bf",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/runs/publication_long90k_20260802/publication_long90k_20260802_publication90k_robust_20260802r2_bfgs_lam0p3_inner1_r1_nocap_cfg9c7658b737c3_budget8000.npz": "d8033d1de78841fa00dcfceb41118465c32465ec66957d818620487369483621",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/postprocess_geometric_action.py": "959167006d816b4346b9b8a569d2349632a256309340c7ff558511855b6dc1e0"
+  }
+}

@@ -1,0 +1,3511 @@
+{
+  "algorithm_sha256": "3fcffd7df4d5d92cacafa7ba835e9ca748c57bcd8d7c5f6baa6d1a6ba6147342",
+  "alpha": 0.001,
+  "budget": 3000,
+  "checkpoint_count": 98,
+  "fraction_choice_events": [
+    {
+      "nof": 40,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 152.63471443824903,
+          "regularized_prediction": 152.63471443824903
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -17821.25340052045,
+          "regularized_prediction": -174267.34145621437
+        }
+      ],
+      "outer": 1,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 60,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 109.2013925194883,
+          "regularized_prediction": 109.2013925194883
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": 107.77325957019514,
+          "regularized_prediction": 13.400962304572147
+        }
+      ],
+      "outer": 2,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 80,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 90.70112082205821,
+          "regularized_prediction": 90.70112082205821
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": 98.2557069534958,
+          "regularized_prediction": 48.726911075055796
+        }
+      ],
+      "outer": 3,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 3.0
+    },
+    {
+      "nof": 120,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 3.3681515900243504,
+          "regularized_prediction": 3.3681515900243504
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": 21.192585355323885,
+          "regularized_prediction": -96.8808132937213
+        }
+      ],
+      "outer": 4,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 140,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 7.393873075337819,
+          "regularized_prediction": 7.393873075337819
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": 0.22693094537224923,
+          "regularized_prediction": -120.55815120099038
+        }
+      ],
+      "outer": 5,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 160,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 7.232612851144152,
+          "regularized_prediction": 7.232612851144152
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -2.6513943406141003,
+          "regularized_prediction": -70.59982347464404
+        }
+      ],
+      "outer": 6,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 180,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -1.6268599394236816,
+          "regularized_prediction": -1.6268599394236816
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -2.070088791250761,
+          "regularized_prediction": -91.2200750028673
+        }
+      ],
+      "outer": 7,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 200,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.8580131718542257,
+          "regularized_prediction": -0.8580131718542257
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -4.187161606270417,
+          "regularized_prediction": -32.34675433477795
+        }
+      ],
+      "outer": 8,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 220,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -1.7702367331215692,
+          "regularized_prediction": -1.7702367331215692
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -1.258933922081709,
+          "regularized_prediction": -20.473576152047425
+        }
+      ],
+      "outer": 9,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 305,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.8037324538905828,
+          "regularized_prediction": -0.8037324538905828
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -1.0437294037783704,
+          "regularized_prediction": -4.1571295572455735
+        }
+      ],
+      "outer": 11,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 325,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.7603259008607738,
+          "regularized_prediction": -0.7603259008607738
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.9923514602025537,
+          "regularized_prediction": -3.4832982328652764
+        }
+      ],
+      "outer": 12,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 345,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": 0.26960557919414546,
+          "regularized_prediction": 0.26960557919414546
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": 0.08884225878541414,
+          "regularized_prediction": 0.2159560425051214
+        }
+      ],
+      "outer": 13,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 365,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.7408041997503089,
+          "regularized_prediction": -0.7408041997503089
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.9005881498238592,
+          "regularized_prediction": -2.9428720849847814
+        }
+      ],
+      "outer": 14,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 456,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.31505461492852155,
+          "regularized_prediction": -0.31505461492852155
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.39765429494569515,
+          "regularized_prediction": -1.2841052337016678
+        }
+      ],
+      "outer": 15,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 476,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.2429419889440262,
+          "regularized_prediction": -0.2429419889440262
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.31455087868356857,
+          "regularized_prediction": -0.9920656454223591
+        }
+      ],
+      "outer": 16,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 496,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.15903452533286086,
+          "regularized_prediction": -0.15903452533286086
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.21905284327701044,
+          "regularized_prediction": -0.682177363638019
+        }
+      ],
+      "outer": 17,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 516,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09768777674984883,
+          "regularized_prediction": -0.09768777674984883
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.14306434446690958,
+          "regularized_prediction": -0.4429673279986707
+        }
+      ],
+      "outer": 18,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 536,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.05853586004604488,
+          "regularized_prediction": -0.05853586004604488
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.0949963481482011,
+          "regularized_prediction": -0.2917874558386873
+        }
+      ],
+      "outer": 19,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 556,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.03832029588288998,
+          "regularized_prediction": -0.03832029588288998
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.06643760718586109,
+          "regularized_prediction": -0.202633856969228
+        }
+      ],
+      "outer": 20,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 576,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.02618844603663056,
+          "regularized_prediction": -0.02618844603663056
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.046093630583998964,
+          "regularized_prediction": -0.1399702618874673
+        }
+      ],
+      "outer": 21,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 596,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.005736990167437407,
+          "regularized_prediction": -0.005736990167437407
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.010776655986400022,
+          "regularized_prediction": -0.03485070812424365
+        }
+      ],
+      "outer": 22,
+      "public_action": "cap_normal_stream_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 616,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.033540719177363856,
+          "regularized_prediction": -0.033540719177363856
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03166763773124379,
+          "regularized_prediction": -0.09603585189953429
+        }
+      ],
+      "outer": 23,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 636,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0360563174777789,
+          "regularized_prediction": -0.0360563174777789
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03228562939584262,
+          "regularized_prediction": -0.09777712900870905
+        }
+      ],
+      "outer": 24,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 656,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.04521339618019199,
+          "regularized_prediction": -0.04521339618019199
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03352169484936539,
+          "regularized_prediction": -0.10129635441818022
+        }
+      ],
+      "outer": 25,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 676,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.054689640177161644,
+          "regularized_prediction": -0.054689640177161644
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03411610559042978,
+          "regularized_prediction": -0.10298567822367805
+        }
+      ],
+      "outer": 26,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 696,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.06344381132728648,
+          "regularized_prediction": -0.06344381132728648
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.034198454752087507,
+          "regularized_prediction": -0.10318863976335342
+        }
+      ],
+      "outer": 27,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 716,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.07209498946895952,
+          "regularized_prediction": -0.07209498946895952
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03399279008433877,
+          "regularized_prediction": -0.10255284580879913
+        }
+      ],
+      "outer": 28,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 736,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.08005874359692046,
+          "regularized_prediction": -0.08005874359692046
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03368069327475574,
+          "regularized_prediction": -0.10161238876446224
+        }
+      ],
+      "outer": 29,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 756,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.08639200070691613,
+          "regularized_prediction": -0.08639200070691613
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.033392986313479006,
+          "regularized_prediction": -0.10075198719021332
+        }
+      ],
+      "outer": 30,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 776,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09104200114324547,
+          "regularized_prediction": -0.09104200114324547
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03318300039836226,
+          "regularized_prediction": -0.10012588147773653
+        }
+      ],
+      "outer": 31,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 796,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09424281430205957,
+          "regularized_prediction": -0.09424281430205957
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03304666614403816,
+          "regularized_prediction": -0.09971917682260538
+        }
+      ],
+      "outer": 32,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 816,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09631449859619218,
+          "regularized_prediction": -0.09631449859619218
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032960867647528765,
+          "regularized_prediction": -0.09946225219812926
+        }
+      ],
+      "outer": 33,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 836,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09756322374988352,
+          "regularized_prediction": -0.09756322374988352
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03290514421141123,
+          "regularized_prediction": -0.09929439567522036
+        }
+      ],
+      "outer": 34,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 856,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09825921093568893,
+          "regularized_prediction": -0.09825921093568893
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03286661681603084,
+          "regularized_prediction": -0.09917774693359019
+        }
+      ],
+      "outer": 35,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 876,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09861967618291484,
+          "regularized_prediction": -0.09861967618291484
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03283915474751719,
+          "regularized_prediction": -0.0990944049388755
+        }
+      ],
+      "outer": 36,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 896,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09879516013549658,
+          "regularized_prediction": -0.09879516013549658
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03282014240775831,
+          "regularized_prediction": -0.09903669269966174
+        }
+      ],
+      "outer": 37,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 916,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09887648244039356,
+          "regularized_prediction": -0.09887648244039356
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03280774737775109,
+          "regularized_prediction": -0.0989990998567568
+        }
+      ],
+      "outer": 38,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 936,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09891299670711226,
+          "regularized_prediction": -0.09891299670711226
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03280012033334953,
+          "regularized_prediction": -0.0989760046917532
+        }
+      ],
+      "outer": 39,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 956,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09892933569164271,
+          "regularized_prediction": -0.09892933569164271
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03279559564294456,
+          "regularized_prediction": -0.0989623366407372
+        }
+      ],
+      "outer": 40,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 976,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09893686147510126,
+          "regularized_prediction": -0.09893686147510126
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03279293828389246,
+          "regularized_prediction": -0.09895433792794897
+        }
+      ],
+      "outer": 41,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 996,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894044984370105,
+          "regularized_prediction": -0.09894044984370105
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03279138979176891,
+          "regularized_prediction": -0.09894970231179816
+        }
+      ],
+      "outer": 42,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1016,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894213033184181,
+          "regularized_prediction": -0.09894213033184181
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03279055024056389,
+          "regularized_prediction": -0.09894721241027414
+        }
+      ],
+      "outer": 43,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1036,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894286279660428,
+          "regularized_prediction": -0.09894286279660428
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03279017797438625,
+          "regularized_prediction": -0.09894613013695155
+        }
+      ],
+      "outer": 44,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1056,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894320181180964,
+          "regularized_prediction": -0.09894320181180964
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.0327900656895504,
+          "regularized_prediction": -0.09894582355035081
+        }
+      ],
+      "outer": 45,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1076,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894343972571204,
+          "regularized_prediction": -0.09894343972571204
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032790049692665316,
+          "regularized_prediction": -0.09894579672083385
+        }
+      ],
+      "outer": 46,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1096,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894367673922984,
+          "regularized_prediction": -0.09894367673922984
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.0327900370253823,
+          "regularized_prediction": -0.0989457702072158
+        }
+      ],
+      "outer": 47,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1116,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894391006868566,
+          "regularized_prediction": -0.09894391006868566
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278999232506456,
+          "regularized_prediction": -0.09894563925192565
+        }
+      ],
+      "outer": 48,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1136,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989441017961732,
+          "regularized_prediction": -0.0989441017961732
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278991709039509,
+          "regularized_prediction": -0.0989454107863996
+        }
+      ],
+      "outer": 49,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1156,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894422747777408,
+          "regularized_prediction": -0.09894422747777408
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789832591029924,
+          "regularized_prediction": -0.09894515184044128
+        }
+      ],
+      "outer": 50,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1176,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894429455956516,
+          "regularized_prediction": -0.09894429455956516
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789759571670386,
+          "regularized_prediction": -0.0989449273970567
+        }
+      ],
+      "outer": 51,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1196,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894432633080216,
+          "regularized_prediction": -0.09894432633080216
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789706399187546,
+          "regularized_prediction": -0.09894476388102534
+        }
+      ],
+      "outer": 52,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1216,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989443423714033,
+          "regularized_prediction": -0.0989443423714033
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278967127056855,
+          "regularized_prediction": -0.09894465600416451
+        }
+      ],
+      "outer": 53,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1236,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894435314606757,
+          "regularized_prediction": -0.09894435314606757
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789648867668074,
+          "regularized_prediction": -0.09894458741984442
+        }
+      ],
+      "outer": 54,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1256,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894436272569898,
+          "regularized_prediction": -0.09894436272569898
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278963434658919,
+          "regularized_prediction": -0.0989445431619084
+        }
+      ],
+      "outer": 55,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1276,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894437214105585,
+          "regularized_prediction": -0.09894437214105585
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789624450601906,
+          "regularized_prediction": -0.09894451314931678
+        }
+      ],
+      "outer": 56,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1296,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894438134845067,
+          "regularized_prediction": -0.09894438134845067
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278961733064684,
+          "regularized_prediction": -0.09894449165177553
+        }
+      ],
+      "outer": 57,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1316,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894438788856257,
+          "regularized_prediction": -0.09894438788856257
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789613425498756,
+          "regularized_prediction": -0.09894447990823081
+        }
+      ],
+      "outer": 58,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1336,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894439725688407,
+          "regularized_prediction": -0.09894439725688407
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789608697389894,
+          "regularized_prediction": -0.09894446571281372
+        }
+      ],
+      "outer": 59,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1356,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894440488386427,
+          "regularized_prediction": -0.09894440488386427
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789605528931516,
+          "regularized_prediction": -0.0989444562092038
+        }
+      ],
+      "outer": 60,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1376,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894440950145547,
+          "regularized_prediction": -0.09894440950145547
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960404504183,
+          "regularized_prediction": -0.09894445176174484
+        }
+      ],
+      "outer": 61,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1396,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894441291020752,
+          "regularized_prediction": -0.09894441291020752
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960325154777,
+          "regularized_prediction": -0.0989444493842761
+        }
+      ],
+      "outer": 62,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1416,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894442008455052,
+          "regularized_prediction": -0.09894442008455052
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960188001255,
+          "regularized_prediction": -0.09894444527461975
+        }
+      ],
+      "outer": 63,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1436,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444235852868,
+          "regularized_prediction": -0.0989444235852868
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789601408849525,
+          "regularized_prediction": -0.0989444438628996
+        }
+      ],
+      "outer": 64,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1456,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894442805355784,
+          "regularized_prediction": -0.09894442805355784
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960099495497,
+          "regularized_prediction": -0.09894444262302292
+        }
+      ],
+      "outer": 65,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1476,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443140112354,
+          "regularized_prediction": -0.09894443140112354
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.0327896008236049,
+          "regularized_prediction": -0.09894444211056695
+        }
+      ],
+      "outer": 66,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1496,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443307463481,
+          "regularized_prediction": -0.09894443307463481
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600829684636,
+          "regularized_prediction": -0.09894444213000678
+        }
+      ],
+      "outer": 67,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1516,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443414716096,
+          "regularized_prediction": -0.09894443414716096
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960088095003,
+          "regularized_prediction": -0.09894444228492472
+        }
+      ],
+      "outer": 68,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1536,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443671730056,
+          "regularized_prediction": -0.09894443671730056
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960099114001,
+          "regularized_prediction": -0.09894444261840021
+        }
+      ],
+      "outer": 69,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1556,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443855431999,
+          "regularized_prediction": -0.09894443855431999
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960104485283,
+          "regularized_prediction": -0.0989444427816757
+        }
+      ],
+      "outer": 70,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1576,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894443934734232,
+          "regularized_prediction": -0.09894443934734232
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960105517704,
+          "regularized_prediction": -0.09894444281356603
+        }
+      ],
+      "outer": 71,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1596,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444397778742,
+          "regularized_prediction": -0.0989444397778742
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960104826428,
+          "regularized_prediction": -0.09894444279324874
+        }
+      ],
+      "outer": 72,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1616,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444007207866,
+          "regularized_prediction": -0.09894444007207866
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960103570862,
+          "regularized_prediction": -0.09894444275577556
+        }
+      ],
+      "outer": 73,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1636,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444030636351,
+          "regularized_prediction": -0.09894444030636351
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789601022416286,
+          "regularized_prediction": -0.09894444271597491
+        }
+      ],
+      "outer": 74,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1656,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444099269037,
+          "regularized_prediction": -0.09894444099269037
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600984612505,
+          "regularized_prediction": -0.09894444260268782
+        }
+      ],
+      "outer": 75,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1676,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444144582988,
+          "regularized_prediction": -0.09894444144582988
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600960601246,
+          "regularized_prediction": -0.09894444253065192
+        }
+      ],
+      "outer": 76,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1696,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444175167204,
+          "regularized_prediction": -0.09894444175167204
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960094532311,
+          "regularized_prediction": -0.09894444248476612
+        }
+      ],
+      "outer": 77,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1716,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444418830006,
+          "regularized_prediction": -0.0989444418830006
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960093876205,
+          "regularized_prediction": -0.09894444246503044
+        }
+      ],
+      "outer": 78,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1736,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444205012841,
+          "regularized_prediction": -0.09894444205012841
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960093080257,
+          "regularized_prediction": -0.0989444424410931
+        }
+      ],
+      "outer": 79,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1756,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444421218237,
+          "regularized_prediction": -0.0989444421218237
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092757225,
+          "regularized_prediction": -0.09894444243138474
+        }
+      ],
+      "outer": 80,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1776,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444221031232,
+          "regularized_prediction": -0.09894444221031232
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600923947254,
+          "regularized_prediction": -0.09894444242051019
+        }
+      ],
+      "outer": 81,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1796,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444224866798,
+          "regularized_prediction": -0.09894444224866798
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092260968,
+          "regularized_prediction": -0.09894444241651332
+        }
+      ],
+      "outer": 82,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1816,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444422697144,
+          "regularized_prediction": -0.0989444422697144
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092205353,
+          "regularized_prediction": -0.09894444241486476
+        }
+      ],
+      "outer": 83,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1836,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444228413883,
+          "regularized_prediction": -0.09894444228413883
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600921774395,
+          "regularized_prediction": -0.09894444241404649
+        }
+      ],
+      "outer": 84,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1856,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444232356729,
+          "regularized_prediction": -0.09894444232356729
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092092588,
+          "regularized_prediction": -0.09894444241154994
+        }
+      ],
+      "outer": 85,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1876,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444423402275,
+          "regularized_prediction": -0.0989444423402275
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092058247,
+          "regularized_prediction": -0.09894444241053886
+        }
+      ],
+      "outer": 86,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1896,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444234955069,
+          "regularized_prediction": -0.09894444234955069
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960092039376,
+          "regularized_prediction": -0.09894444240998083
+        }
+      ],
+      "outer": 87,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1916,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444236796658,
+          "regularized_prediction": -0.09894444236796658
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600919948154,
+          "regularized_prediction": -0.09894444240865581
+        }
+      ],
+      "outer": 88,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1936,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444423799969,
+          "regularized_prediction": -0.0989444423799969
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091959438,
+          "regularized_prediction": -0.09894444240760097
+        }
+      ],
+      "outer": 89,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1956,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444238529133,
+          "regularized_prediction": -0.09894444238529133
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600919407975,
+          "regularized_prediction": -0.09894444240704253
+        }
+      ],
+      "outer": 90,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1976,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444239184272,
+          "regularized_prediction": -0.09894444239184272
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600919171116,
+          "regularized_prediction": -0.09894444240633321
+        }
+      ],
+      "outer": 91,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 1996,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444239464725,
+          "regularized_prediction": -0.09894444239464725
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091907735,
+          "regularized_prediction": -0.09894444240605134
+        }
+      ],
+      "outer": 92,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2016,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444239603262,
+          "regularized_prediction": -0.09894444239603262
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918991274,
+          "regularized_prediction": -0.09894444240579223
+        }
+      ],
+      "outer": 93,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2036,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444239897994,
+          "regularized_prediction": -0.09894444239897994
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091886013,
+          "regularized_prediction": -0.09894444240539808
+        }
+      ],
+      "outer": 94,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2056,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240019838,
+          "regularized_prediction": -0.09894444240019838
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091880585,
+          "regularized_prediction": -0.09894444240523492
+        }
+      ],
+      "outer": 95,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2076,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240169543,
+          "regularized_prediction": -0.09894444240169543
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918778784,
+          "regularized_prediction": -0.09894444240515388
+        }
+      ],
+      "outer": 96,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2096,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240272245,
+          "regularized_prediction": -0.09894444240272245
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091872112,
+          "regularized_prediction": -0.09894444240498045
+        }
+      ],
+      "outer": 97,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2116,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240309255,
+          "regularized_prediction": -0.09894444240309255
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869439,
+          "regularized_prediction": -0.09894444240490023
+        }
+      ],
+      "outer": 98,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2136,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240331257,
+          "regularized_prediction": -0.09894444240331257
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091868697,
+          "regularized_prediction": -0.09894444240487807
+        }
+      ],
+      "outer": 99,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2156,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240372205,
+          "regularized_prediction": -0.09894444240372205
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091865639,
+          "regularized_prediction": -0.09894444240478636
+        }
+      ],
+      "outer": 100,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2176,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240387179,
+          "regularized_prediction": -0.09894444240387179
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091867158,
+          "regularized_prediction": -0.09894444240483193
+        }
+      ],
+      "outer": 101,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2196,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240421091,
+          "regularized_prediction": -0.09894444240421091
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091865182,
+          "regularized_prediction": -0.09894444240477296
+        }
+      ],
+      "outer": 102,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2214,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240434573,
+          "regularized_prediction": -0.09894444240434573
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091866063,
+          "regularized_prediction": -0.09894444240479962
+        }
+      ],
+      "outer": 103,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2233,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.0989444424044166,
+          "regularized_prediction": -0.0989444424044166
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091867537,
+          "regularized_prediction": -0.09894444240484368
+        }
+      ],
+      "outer": 104,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2252,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240451399,
+          "regularized_prediction": -0.09894444240451399
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091867464,
+          "regularized_prediction": -0.0989444424048419
+        }
+      ],
+      "outer": 105,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2271,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240450101,
+          "regularized_prediction": -0.09894444240450101
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091866294,
+          "regularized_prediction": -0.09894444240480679
+        }
+      ],
+      "outer": 106,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2290,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240454904,
+          "regularized_prediction": -0.09894444240454904
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091866157,
+          "regularized_prediction": -0.098944442404803
+        }
+      ],
+      "outer": 107,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2308,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240467495,
+          "regularized_prediction": -0.09894444240467495
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918683014,
+          "regularized_prediction": -0.09894444240486763
+        }
+      ],
+      "outer": 108,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2326,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240468446,
+          "regularized_prediction": -0.09894444240468446
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.0327896009187031,
+          "regularized_prediction": -0.09894444240492782
+        }
+      ],
+      "outer": 109,
+      "public_action": "envelope_atomic_commit",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2343,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 110,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 111,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 112,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 113,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 114,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 115,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 116,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 117,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 118,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 119,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 120,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 121,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 122,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 123,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 124,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 125,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 126,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 127,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 128,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 129,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 130,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 131,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 132,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 133,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 134,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 135,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 136,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 137,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 138,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 139,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 140,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 141,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 142,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 143,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 144,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 145,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 146,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 147,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 148,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 149,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 150,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 151,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 152,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 153,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 154,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 155,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 156,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 157,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 158,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 159,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 160,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 161,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 162,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 163,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 164,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 165,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 166,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 167,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 168,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 169,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 170,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 171,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 172,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 173,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240477016,
+          "regularized_prediction": -0.09894444240477016
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.032789600918699216,
+          "regularized_prediction": -0.09894444240491607
+        }
+      ],
+      "outer": 174,
+      "public_action": "private_hold",
+      "selected_fraction": 1.0
+    },
+    {
+      "nof": 2363,
+      "options": [
+        {
+          "finite_proposal": true,
+          "fraction": 1.0,
+          "fraction_scaled_prediction": -0.09894444240481041,
+          "regularized_prediction": -0.09894444240481041
+        },
+        {
+          "finite_proposal": true,
+          "fraction": 3.0,
+          "fraction_scaled_prediction": -0.03278960091869264,
+          "regularized_prediction": -0.09894444240489651
+        }
+      ],
+      "outer": 175,
+      "public_action": "provisional_rollback_trial_failure",
+      "selected_fraction": 1.0
+    }
+  ],
+  "i_perp_rise_count": 0,
+  "m_max": 8,
+  "maximum_i_perp_rise": 0.0,
+  "n_internal": 20,
+  "nof_breakdown": {
+    "direct_spring_check": 40,
+    "initial_band": 20,
+    "normal_subproblem": 56,
+    "recovery_band_trial": 2207,
+    "synchronized_recovery_trial": 40
+  },
+  "nof_per_image_sum": 2363,
+  "public_state_count": 116,
+  "r": 0.3,
+  "rise_events": [],
+  "stop_reason": "zero_nof_safety_limit",
+  "strict_barrier_count": 98,
+  "strict_i_perp_count": 98,
+  "strict_joint_count": 98,
+  "terminal_nof": 2363,
+  "trajectory_relative_path": "trajectory.npz",
+  "trusted_nonmonotone_public_commits": 0,
+  "variant": "horizon_control_probe"
+}

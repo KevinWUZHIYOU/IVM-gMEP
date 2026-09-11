@@ -1,0 +1,54 @@
+{
+  "alpha": 0.001,
+  "case": "fixed-Q unperturbed 10D Muller-Brown, 22 images",
+  "dense_count": 5001,
+  "figure": "figures/nn_ivm/muller22_q10_mlp_random_feature_study.pdf",
+  "force_cost": "direct sum over all 20 sample streams",
+  "main_tex_updated": false,
+  "runs": [
+    {
+      "barrier_error_at_minimum_i_perp": 12.8906900164056,
+      "best_i_perp_with_barrier_below_1e-4": null,
+      "final_dense_barrier_error": 57.697906868052726,
+      "final_dense_i_perp": 7570202.572987904,
+      "final_number_of_forces": 3500,
+      "maximum_inactive_coordinate": 1.5533368586415307e-15,
+      "method": "Full MLP NN-IVM",
+      "minimum_dense_i_perp": 15911.502881147075,
+      "minimum_i_perp_number_of_forces": 540,
+      "output": "runs/mlp_rf_dense_postprocessed/full_mlp.npz",
+      "source": "runs/nnivm_full_mlp_production_audit/q10_nn_ivm_mlp_lbfgs_d2d2b7a8139f.npz"
+    },
+    {
+      "barrier_error_at_minimum_i_perp": 0.03738427787591547,
+      "best_i_perp_with_barrier_below_1e-4": null,
+      "final_dense_barrier_error": 0.07297785366631615,
+      "final_dense_i_perp": 2987.5304913739296,
+      "final_number_of_forces": 3500,
+      "maximum_inactive_coordinate": 1.1398922172063257e-15,
+      "method": "RF NN-IVM",
+      "minimum_dense_i_perp": 1389.7479603809095,
+      "minimum_i_perp_number_of_forces": 2320,
+      "output": "runs/mlp_rf_dense_postprocessed/random_feature.npz",
+      "source": "runs/nnivm_rbf_production_audit/q10_nn_ivm_mlp_lbfgs_2f62d1475247.npz"
+    },
+    {
+      "final_dense_barrier_error": 1.5818082204077655e-06,
+      "final_dense_i_perp": 4.140124327438333,
+      "final_number_of_forces": 4000,
+      "method": "Spline NN-IVM",
+      "minimum_dense_i_perp": 4.1010652561765335,
+      "output": "runs/dense_postprocessed_improved_5001/nn_ivm.npz"
+    },
+    {
+      "final_dense_barrier_error": 1.3474385326617266e-05,
+      "final_dense_i_perp": 509.31950121512943,
+      "final_number_of_forces": 2377,
+      "method": "IVM",
+      "minimum_dense_i_perp": 509.31950121512943,
+      "output": "runs/dense_postprocessed_improved_5001/ivm.npz"
+    }
+  ],
+  "sample_count": 20,
+  "tangent": "NEB Henkelman-Jonsson improved tangent"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "preregistered_before_25_30_call_results",
+  "higher_score_is_better": true,
+  "caps_to_score": [
+    15,
+    18,
+    20
+  ],
+  "budgets": [
+    1000,
+    3000,
+    6000,
+    10000
+  ],
+  "metrics": [
+    "endpoint_i_perp",
+    "trailing_i_perp_mean"
+  ],
+  "expected_alphas": [
+    0.03,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    30.0,
+    50.0,
+    70.0,
+    100.0,
+    300.0,
+    1000.0
+  ],
+  "alpha_sets": {
+    "center": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "left_shoulder": [
+      0.03,
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "right_shoulder": [
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      50.0,
+      70.0,
+      100.0,
+      300.0,
+      1000.0
+    ],
+    "roughness_window": [
+      0.3,
+      0.5,
+      1.0,
+      2.0,
+      3.0
+    ]
+  },
+  "logarithm_base": "natural",
+  "geometric_means": "G_C, G_L, and G_R are geometric means of the observed positive metric over the fixed center, left-shoulder, and right-shoulder alpha sets.",
+  "left_advantage": "A_L = ln(G_L / G_C)",
+  "right_advantage": "A_R = ln(G_R / G_C)",
+  "conservative_advantage": "A = min(A_L, A_R)",
+  "local_second_derivative": "For x=ln(alpha), z=ln(metric), kappa_i = 2 * [slope(i,i+1)-slope(i-1,i)] / [x(i+1)-x(i-1)].",
+  "roughness": "R = median(Delta x)^2 * RMS(kappa_i - mean(kappa)) over 0.3 <= alpha <= 3. R=0 when fewer than two kappa values are available; missing local points remain penalized through q.",
+  "completion": "q = number of budget-reached positive values divided by the 19 preregistered alpha values.",
+  "component_score": "S = A - lambda_R * R - lambda_1:10 * R_1:10 - lambda_M * (1-q). If a center or shoulder geometric mean is unavailable, A is set to 0 and the missing-data penalty remains active.",
+  "aggregate_score": "Arithmetic mean of S over the two metrics and all four budgets. Because S is in log units, this is equivalent to geometric aggregation of the underlying advantage ratios.",
+  "roughness_weight_lambda_R": 0.5,
+  "midrange_range": [
+    1.0,
+    10.0
+  ],
+  "midrange_diagnostic": "On 1 <= alpha <= 10, report adjacent nonuniform log-alpha second differences, log slopes, peak/well turn counts, total curvature RMS, and negative-curvature RMS.",
+  "midrange_roughness": "R_1:10 = median(Delta x)^2 * RMS(kappa_i - mean(kappa)) on 1 <= alpha <= 10.",
+  "midrange_roughness_weight_lambda_1_10": 0.25,
+  "missing_weight_lambda_M": 2.302585092994046,
+  "missing_weight_interpretation": "lambda_M = ln(10): a completely missing component receives a one-decade penalty before other terms.",
+  "endpoint_policy": "Input rows must use the last real N_F <= B only after the run has genuinely reached B; no terminal carry-forward is allowed.",
+  "selection_policy": "Rank caps by aggregate_well_score. Report all component scores, minimum component score, completion, and penalties; do not replace missing values or tune weights after viewing cap25/30. A rank is labelled final only when all 19 alpha runs for that cap are represented in the source CSV; otherwise it is explicitly provisional.",
+  "endpoint_trailing_consistency_rule": "At each cap and budget: at least 8 overlapping alpha values; Spearman rank correlation >= 0.80; endpoint and trailing minimum alphas differ by at most a factor of 2; and the signs of their center-vs-shoulder conservative advantages agree.",
+  "source_budget_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/reviewer_subproblem_cap_comparison_20260729a/data/chignolin_ivm_subproblem_cap_budget_metrics.csv",
+  "component_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_well_score_components.csv",
+  "summary_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_well_score_summary.csv",
+  "endpoint_trailing_consistency_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_subproblem_cap_score_20260729a/subproblem_cap_endpoint_trailing_consistency.csv",
+  "scores": [
+    {
+      "subproblem_call_cap": 15,
+      "aggregate_well_score": -0.7145309251353131,
+      "aggregate_well_score_before_midrange_penalty": -0.27048351522693087,
+      "minimum_component_score": -1.7358264723317292,
+      "mean_conservative_log_geometric_advantage": 0.7100415283256776,
+      "mean_roughness_penalty": 0.5866618039615217,
+      "mean_midrange_roughness_penalty": 0.4440474099083822,
+      "mean_missing_penalty": 0.39386323959108677,
+      "mean_completion_fraction": 0.8289473684210527,
+      "fully_observed_component_count": 4,
+      "component_count": 8,
+      "source_alpha_count": 19,
+      "expected_source_alpha_count": 19,
+      "all_expected_alpha_runs_present": true,
+      "rank_status": "final",
+      "rank": 3
+    },
+    {
+      "subproblem_call_cap": 18,
+      "aggregate_well_score": -0.5534613007586522,
+      "aggregate_well_score_before_midrange_penalty": -0.11699041888693512,
+      "minimum_component_score": -1.5785916353680722,
+      "mean_conservative_log_geometric_advantage": 0.8536624058850664,
+      "mean_roughness_penalty": 0.6373839297333898,
+      "mean_midrange_roughness_penalty": 0.436470881871717,
+      "mean_missing_penalty": 0.3332688950386119,
+      "mean_completion_fraction": 0.8552631578947368,
+      "fully_observed_component_count": 4,
+      "component_count": 8,
+      "source_alpha_count": 19,
+      "expected_source_alpha_count": 19,
+      "all_expected_alpha_runs_present": true,
+      "rank_status": "final",
+      "rank": 2
+    },
+    {
+      "subproblem_call_cap": 20,
+      "aggregate_well_score": -0.47604917503607114,
+      "aggregate_well_score_before_midrange_penalty": -0.11428277668743492,
+      "minimum_component_score": -1.4513195226009004,
+      "mean_conservative_log_geometric_advantage": 0.8279970658385702,
+      "mean_roughness_penalty": 0.6393081197636306,
+      "mean_midrange_roughness_penalty": 0.3617663983486362,
+      "mean_missing_penalty": 0.30297172276237444,
+      "mean_completion_fraction": 0.868421052631579,
+      "fully_observed_component_count": 4,
+      "component_count": 8,
+      "source_alpha_count": 19,
+      "expected_source_alpha_count": 19,
+      "all_expected_alpha_runs_present": true,
+      "rank_status": "final",
+      "rank": 1
+    }
+  ]
+}

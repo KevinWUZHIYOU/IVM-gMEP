@@ -1,0 +1,39 @@
+{
+  "figure": "1x4 matched-cost path evolution",
+  "coordinate_system": "natural Muller coordinates z = Qx",
+  "snapshot_force_budgets": [
+    0.0,
+    5.0,
+    20.0,
+    100.0
+  ],
+  "actual_force_counts": {
+    "0": {
+      "IVM": 0.0,
+      "ODE-NEB": 0.0
+    },
+    "5": {
+      "IVM": 5.0,
+      "ODE-NEB": 2.0
+    },
+    "20": {
+      "IVM": 20.0,
+      "ODE-NEB": 13.0
+    },
+    "100": {
+      "IVM": 100.0,
+      "ODE-NEB": 93.0
+    }
+  },
+  "force_cost_definition": "mean force calls per movable image",
+  "ivm_run": "runs/inexact_tuned_resample/96b8903a356a.npz",
+  "ode_neb_run": "runs/ode_default_production/ode_neb/ode_neb_17cd3c104e33_budget5000.npz",
+  "q_file": "inputs/Q_data.npz",
+  "q_sha256": "9a57ca4ce0aa39886aacbfa935c8c7db1423a7f7de3deb937697e72578415aca",
+  "outputs": [
+    "figures/path_evolution/q10_muller_path_evolution_1x4.pdf",
+    "figures/path_evolution/q10_muller_path_evolution_1x4.svg",
+    "figures/path_evolution/q10_muller_path_evolution_1x4.png"
+  ],
+  "source_data": "figures/path_evolution/q10_muller_path_evolution_1x4_source_data.csv"
+}

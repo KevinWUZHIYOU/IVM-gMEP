@@ -1,0 +1,3552 @@
+{
+  "analysis_id": "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_iperp_ctp_v1",
+  "created_unix": 1787261155.405866,
+  "read_only_formal_input_audit": true,
+  "performance_metric": "I_perp_only",
+  "physical_objective_arrays_accessed": false,
+  "densification_performed": false,
+  "unobserved_tail_extrapolated": false,
+  "original_incomplete_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000.json",
+  "original_incomplete_report_sha256": "c1506422a651ee664b8cdb08a19c124bbab760435130042c300b7e721e7fa02f",
+  "original_preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_N254_r1_1787260497802476000_preregistered.json",
+  "original_preregistration_sha256": "04de96743da079b8b35247214a4ad3cf387157edb2134381cc08f95d3bab1f86",
+  "direct_continuation_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_N254_r1_1787261109219817000.json",
+  "direct_continuation_report_sha256": "3a01d04d1bdc7d1161a49885e9c2585cdf1fc3a27f7cc087fd956e80ecb8679e",
+  "direct_continuation_protocol_id": "stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1",
+  "frozen_alpha15_ctp_snapshot": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000_iperp_ctp_readonly_v1_1787258244070171000.json",
+  "frozen_alpha15_ctp_snapshot_sha256": "0ef85ac737d57c5a5b6b7a2e725eef8684e66e225934b9e8858c167fa887d9ae",
+  "fixed_alpha": 15.0,
+  "fixed_eta": 1.1,
+  "fixed_residual_ratio": 0.8,
+  "fixed_max_evaluated_steps": 10,
+  "fixed_lbfgs_history": 7,
+  "fixed_kkt_atol": 0.0,
+  "maximum_trajectory_length": 254,
+  "eligibility": "initial plus reparam_committed states, then segment_length_cv<=0.0065 and segment_length_ratio<=1.03",
+  "cost_to_precision": "minimum actual observed optimization NF with I_perp<=threshold; no interpolation or extrapolation",
+  "early_termination_policy": "precision thresholds not reached by the observed prefix are U formal losses; the unobserved tail is never imputed",
+  "npz_access_allowlists": {
+    "current_ffrbk_selector": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "plbfgs_kkt_atol",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "stop_reason",
+      "total_internal_joint_evaluations"
+    ],
+    "scalar_selector": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_scalar_lbfgs_direct_only",
+      "discrete_scalar_lbfgs_ffrbk_applied_inside_fixed_solver",
+      "discrete_scalar_lbfgs_ffrbk_solve_normal_calls_inside_fixed_solver",
+      "discrete_scalar_lbfgs_fixed_solver_preconditioner_is_none",
+      "discrete_scalar_lbfgs_implementation_id",
+      "discrete_scalar_lbfgs_mode",
+      "discrete_scalar_lbfgs_selector_competition",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "plbfgs_kkt_atol",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "stop_reason",
+      "total_internal_joint_evaluations"
+    ],
+    "direct_lbfgs_only": [
+      "active_alpha",
+      "alpha",
+      "alpha_mode",
+      "configuration_sha256",
+      "discrete_all_returned_states_evaluated",
+      "discrete_history",
+      "discrete_implementation_id",
+      "discrete_inner_max_steps",
+      "discrete_residual_ratio",
+      "discrete_scalar_lbfgs_direct_only",
+      "discrete_scalar_lbfgs_ffrbk_applied_inside_fixed_solver",
+      "discrete_scalar_lbfgs_ffrbk_solve_normal_calls_inside_fixed_solver",
+      "discrete_scalar_lbfgs_fixed_solver_preconditioner_is_none",
+      "discrete_scalar_lbfgs_implementation_id",
+      "discrete_scalar_lbfgs_mode",
+      "discrete_scalar_lbfgs_selector_competition",
+      "discrete_stop_mode",
+      "frozen_subproblem",
+      "i_perp",
+      "initial_path_sha256",
+      "plbfgs_kkt_atol",
+      "reparam_committed",
+      "reparam_mode",
+      "segment_length_cv",
+      "segment_length_ratio",
+      "state_curve_direct_objective_acceptance",
+      "stop_complete_iperp",
+      "stop_reason",
+      "total_internal_joint_evaluations"
+    ]
+  },
+  "arms": {
+    "current_ffrbk_selector": {
+      "arm": "current_ffrbk_selector",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_current_ffrbk_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg66edecece9c2_budget254.npz",
+      "result_sha256": "eff9d585dfbbd966744a972f9fa5b5a7b3da11639d2079c333560e34ce98ee07",
+      "configuration_sha256": "66edecece9c27f28797af1f6d34d2a0c3b989707b257bbe8c6b90b069ba474ec",
+      "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "termination_reason": "evaluation_budget",
+      "terminated_before_N254": false,
+      "final_observed_optimization_NF": 3313,
+      "unobserved_tail_extrapolated": false,
+      "ctp_trajectory_sha256": "9d0fc0d28688226a18e5188622cfb606482a5366ac5d3ebd7931a8a80d684aff",
+      "npz_fields_accessed": [
+        "active_alpha",
+        "alpha",
+        "alpha_mode",
+        "configuration_sha256",
+        "discrete_all_returned_states_evaluated",
+        "discrete_history",
+        "discrete_implementation_id",
+        "discrete_inner_max_steps",
+        "discrete_residual_ratio",
+        "discrete_stop_mode",
+        "frozen_subproblem",
+        "i_perp",
+        "initial_path_sha256",
+        "plbfgs_kkt_atol",
+        "reparam_committed",
+        "reparam_mode",
+        "segment_length_cv",
+        "segment_length_ratio",
+        "state_curve_direct_objective_acceptance",
+        "stop_complete_iperp",
+        "stop_reason",
+        "total_internal_joint_evaluations"
+      ],
+      "observed_trajectory_length": 254,
+      "complete_state_NF": [
+        20,
+        80,
+        140,
+        180,
+        371,
+        512,
+        644,
+        770,
+        896,
+        1095,
+        1197,
+        1331,
+        1441,
+        1546,
+        1679,
+        1801,
+        2016,
+        2214,
+        2325,
+        2554,
+        2786,
+        3020,
+        3293
+      ],
+      "mesh_eligible_complete_state_NF": [
+        20,
+        80,
+        140,
+        180,
+        371,
+        770,
+        1197,
+        1331,
+        1441,
+        1546,
+        1679,
+        1801,
+        2016,
+        2214,
+        2325,
+        2554,
+        2786,
+        3020,
+        3293
+      ],
+      "eligible_points": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 80,
+          "i_perp": 0.4614608503380646,
+          "segment_length_cv": 0.0014046281962008832,
+          "segment_length_ratio": 1.0047881538944567,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 140,
+          "i_perp": 0.10866852352532867,
+          "segment_length_cv": 0.0006530048520385457,
+          "segment_length_ratio": 1.0018890097107451,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 180,
+          "i_perp": 0.06438455725168225,
+          "segment_length_cv": 6.260310475732988e-10,
+          "segment_length_ratio": 1.00000000176581,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 371,
+          "i_perp": 0.01443722756882871,
+          "segment_length_cv": 0.004218709164712164,
+          "segment_length_ratio": 1.0168105445575353,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 770,
+          "i_perp": 0.001974768972863892,
+          "segment_length_cv": 0.003057676601996772,
+          "segment_length_ratio": 1.0110936954369043,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1197,
+          "i_perp": 0.0006081390239443157,
+          "segment_length_cv": 0.002264121695596245,
+          "segment_length_ratio": 1.0087724839323344,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1331,
+          "i_perp": 0.000520937112802533,
+          "segment_length_cv": 0.002119454016192638,
+          "segment_length_ratio": 1.0084677815277876,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1441,
+          "i_perp": 0.0004644951867644147,
+          "segment_length_cv": 0.0019576432409745674,
+          "segment_length_ratio": 1.008332157583622,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1546,
+          "i_perp": 0.0004247375963870833,
+          "segment_length_cv": 0.0019251685853578545,
+          "segment_length_ratio": 1.0082292172932252,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1679,
+          "i_perp": 0.000392076550959963,
+          "segment_length_cv": 0.001965824681658106,
+          "segment_length_ratio": 1.0080871550605428,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1801,
+          "i_perp": 0.00036938327597160303,
+          "segment_length_cv": 0.0018716891717319624,
+          "segment_length_ratio": 1.0080841761386783,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2016,
+          "i_perp": 0.0003232082797768926,
+          "segment_length_cv": 0.003739777650467241,
+          "segment_length_ratio": 1.0156254876722537,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2214,
+          "i_perp": 0.00023364471166739993,
+          "segment_length_cv": 0.005847666495362384,
+          "segment_length_ratio": 1.025152678945114,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2325,
+          "i_perp": 0.00021903287444868414,
+          "segment_length_cv": 0.0019674664550748348,
+          "segment_length_ratio": 1.0084054480209523,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2554,
+          "i_perp": 0.00020112069358975564,
+          "segment_length_cv": 0.0039249123506775166,
+          "segment_length_ratio": 1.0171495650898732,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2786,
+          "i_perp": 0.00018822199091361437,
+          "segment_length_cv": 0.0028174208698147087,
+          "segment_length_ratio": 1.012742264320557,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 3020,
+          "i_perp": 0.0001716134721295674,
+          "segment_length_cv": 0.004334483994397212,
+          "segment_length_ratio": 1.0189456452047716,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 3293,
+          "i_perp": 0.00016186039155354832,
+          "segment_length_cv": 0.003090712747587637,
+          "segment_length_ratio": 1.014130855385136,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ],
+      "pareto_records": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 80,
+          "i_perp": 0.4614608503380646,
+          "segment_length_cv": 0.0014046281962008832,
+          "segment_length_ratio": 1.0047881538944567,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 140,
+          "i_perp": 0.10866852352532867,
+          "segment_length_cv": 0.0006530048520385457,
+          "segment_length_ratio": 1.0018890097107451,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 180,
+          "i_perp": 0.06438455725168225,
+          "segment_length_cv": 6.260310475732988e-10,
+          "segment_length_ratio": 1.00000000176581,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 371,
+          "i_perp": 0.01443722756882871,
+          "segment_length_cv": 0.004218709164712164,
+          "segment_length_ratio": 1.0168105445575353,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 770,
+          "i_perp": 0.001974768972863892,
+          "segment_length_cv": 0.003057676601996772,
+          "segment_length_ratio": 1.0110936954369043,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1197,
+          "i_perp": 0.0006081390239443157,
+          "segment_length_cv": 0.002264121695596245,
+          "segment_length_ratio": 1.0087724839323344,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1331,
+          "i_perp": 0.000520937112802533,
+          "segment_length_cv": 0.002119454016192638,
+          "segment_length_ratio": 1.0084677815277876,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1441,
+          "i_perp": 0.0004644951867644147,
+          "segment_length_cv": 0.0019576432409745674,
+          "segment_length_ratio": 1.008332157583622,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1546,
+          "i_perp": 0.0004247375963870833,
+          "segment_length_cv": 0.0019251685853578545,
+          "segment_length_ratio": 1.0082292172932252,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1679,
+          "i_perp": 0.000392076550959963,
+          "segment_length_cv": 0.001965824681658106,
+          "segment_length_ratio": 1.0080871550605428,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1801,
+          "i_perp": 0.00036938327597160303,
+          "segment_length_cv": 0.0018716891717319624,
+          "segment_length_ratio": 1.0080841761386783,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2016,
+          "i_perp": 0.0003232082797768926,
+          "segment_length_cv": 0.003739777650467241,
+          "segment_length_ratio": 1.0156254876722537,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2214,
+          "i_perp": 0.00023364471166739993,
+          "segment_length_cv": 0.005847666495362384,
+          "segment_length_ratio": 1.025152678945114,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2325,
+          "i_perp": 0.00021903287444868414,
+          "segment_length_cv": 0.0019674664550748348,
+          "segment_length_ratio": 1.0084054480209523,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2554,
+          "i_perp": 0.00020112069358975564,
+          "segment_length_cv": 0.0039249123506775166,
+          "segment_length_ratio": 1.0171495650898732,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2786,
+          "i_perp": 0.00018822199091361437,
+          "segment_length_cv": 0.0028174208698147087,
+          "segment_length_ratio": 1.012742264320557,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 3020,
+          "i_perp": 0.0001716134721295674,
+          "segment_length_cv": 0.004334483994397212,
+          "segment_length_ratio": 1.0189456452047716,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 3293,
+          "i_perp": 0.00016186039155354832,
+          "segment_length_cv": 0.003090712747587637,
+          "segment_length_ratio": 1.014130855385136,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ]
+    },
+    "scalar_selector": {
+      "arm": "scalar_selector",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_v1_scalar_selector_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfga9f9d7ced447_budget254.npz",
+      "result_sha256": "ef5b54cd3127c86abf82ad934bb932f89e17e3008037fbd1c38a2570d868aea4",
+      "configuration_sha256": "a9f9d7ced44788804ffa1b58f082662b61a2f55c7e687fef245ce3e28e5fa1f9",
+      "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "termination_reason": "cached_coordinate_stall",
+      "terminated_before_N254": true,
+      "final_observed_optimization_NF": 1160,
+      "unobserved_tail_extrapolated": false,
+      "ctp_trajectory_sha256": "2eb85c1b910cb5d3c780a13323017db80c90ed6d46a8202e4e11a3dbcc405aeb",
+      "npz_fields_accessed": [
+        "active_alpha",
+        "alpha",
+        "alpha_mode",
+        "configuration_sha256",
+        "discrete_all_returned_states_evaluated",
+        "discrete_history",
+        "discrete_implementation_id",
+        "discrete_inner_max_steps",
+        "discrete_residual_ratio",
+        "discrete_scalar_lbfgs_direct_only",
+        "discrete_scalar_lbfgs_ffrbk_applied_inside_fixed_solver",
+        "discrete_scalar_lbfgs_ffrbk_solve_normal_calls_inside_fixed_solver",
+        "discrete_scalar_lbfgs_fixed_solver_preconditioner_is_none",
+        "discrete_scalar_lbfgs_implementation_id",
+        "discrete_scalar_lbfgs_mode",
+        "discrete_scalar_lbfgs_selector_competition",
+        "discrete_stop_mode",
+        "frozen_subproblem",
+        "i_perp",
+        "initial_path_sha256",
+        "plbfgs_kkt_atol",
+        "reparam_committed",
+        "reparam_mode",
+        "segment_length_cv",
+        "segment_length_ratio",
+        "state_curve_direct_objective_acceptance",
+        "stop_complete_iperp",
+        "stop_reason",
+        "total_internal_joint_evaluations"
+      ],
+      "observed_trajectory_length": 58,
+      "complete_state_NF": [
+        20,
+        100,
+        200,
+        560,
+        740,
+        960
+      ],
+      "mesh_eligible_complete_state_NF": [
+        20,
+        100,
+        200,
+        560,
+        740,
+        960
+      ],
+      "eligible_points": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 100,
+          "i_perp": 103.78623950625564,
+          "segment_length_cv": 4.707233132233928e-10,
+          "segment_length_ratio": 1.0000000013267474,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 200,
+          "i_perp": 21.865036004734204,
+          "segment_length_cv": 6.330200034303677e-10,
+          "segment_length_ratio": 1.0000000017853448,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 560,
+          "i_perp": 0.30163351593121085,
+          "segment_length_cv": 6.023479735753967e-10,
+          "segment_length_ratio": 1.0000000016988808,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 740,
+          "i_perp": 0.14437980673449008,
+          "segment_length_cv": 6.621963983970962e-10,
+          "segment_length_ratio": 1.00000000186777,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 960,
+          "i_perp": 0.14394805708615313,
+          "segment_length_cv": 5.588429300242039e-10,
+          "segment_length_ratio": 1.0000000015761494,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ],
+      "pareto_records": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 100,
+          "i_perp": 103.78623950625564,
+          "segment_length_cv": 4.707233132233928e-10,
+          "segment_length_ratio": 1.0000000013267474,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 200,
+          "i_perp": 21.865036004734204,
+          "segment_length_cv": 6.330200034303677e-10,
+          "segment_length_ratio": 1.0000000017853448,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 560,
+          "i_perp": 0.30163351593121085,
+          "segment_length_cv": 6.023479735753967e-10,
+          "segment_length_ratio": 1.0000000016988808,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 740,
+          "i_perp": 0.14437980673449008,
+          "segment_length_cv": 6.621963983970962e-10,
+          "segment_length_ratio": 1.00000000186777,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 960,
+          "i_perp": 0.14394805708615313,
+          "segment_length_cv": 5.588429300242039e-10,
+          "segment_length_ratio": 1.0000000015761494,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ]
+    },
+    "direct_lbfgs_only": {
+      "arm": "direct_lbfgs_only",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1/members/ivm_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_direct_continuation_v1_direct_lbfgs_only_eta1p1_r08c10_kkt0_a15_N254_discrete_b040_r1_central_state_ivm_cfg0cd55bed9ebf_budget254.npz",
+      "result_sha256": "a1b690eabb51c2abe85492256fd390f3ecc953cb9c096eccdda917e931d5381e",
+      "configuration_sha256": "0cd55bed9ebfc0f80656b4a00f215f5e405656387af511cdf578be59c5bd7edc",
+      "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "termination_reason": "cached_coordinate_stall",
+      "terminated_before_N254": true,
+      "final_observed_optimization_NF": 2524,
+      "unobserved_tail_extrapolated": false,
+      "ctp_trajectory_sha256": "668d55b0b13bede8f4991879319083c22e6e7b9b42a24f7862b09904e8ab8437",
+      "npz_fields_accessed": [
+        "active_alpha",
+        "alpha",
+        "alpha_mode",
+        "configuration_sha256",
+        "discrete_all_returned_states_evaluated",
+        "discrete_history",
+        "discrete_implementation_id",
+        "discrete_inner_max_steps",
+        "discrete_residual_ratio",
+        "discrete_scalar_lbfgs_direct_only",
+        "discrete_scalar_lbfgs_ffrbk_applied_inside_fixed_solver",
+        "discrete_scalar_lbfgs_ffrbk_solve_normal_calls_inside_fixed_solver",
+        "discrete_scalar_lbfgs_fixed_solver_preconditioner_is_none",
+        "discrete_scalar_lbfgs_implementation_id",
+        "discrete_scalar_lbfgs_mode",
+        "discrete_scalar_lbfgs_selector_competition",
+        "discrete_stop_mode",
+        "frozen_subproblem",
+        "i_perp",
+        "initial_path_sha256",
+        "plbfgs_kkt_atol",
+        "reparam_committed",
+        "reparam_mode",
+        "segment_length_cv",
+        "segment_length_ratio",
+        "state_curve_direct_objective_acceptance",
+        "stop_complete_iperp",
+        "stop_reason",
+        "total_internal_joint_evaluations"
+      ],
+      "observed_trajectory_length": 133,
+      "complete_state_NF": [
+        20,
+        80,
+        500,
+        720,
+        1123,
+        1343,
+        1776,
+        2046,
+        2324
+      ],
+      "mesh_eligible_complete_state_NF": [
+        20,
+        80,
+        500,
+        720,
+        1123,
+        1343,
+        1776,
+        2046,
+        2324
+      ],
+      "eligible_points": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 80,
+          "i_perp": 139.5667304151437,
+          "segment_length_cv": 4.776893844485586e-10,
+          "segment_length_ratio": 1.0000000013465002,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 500,
+          "i_perp": 0.2172345838098256,
+          "segment_length_cv": 0.0010787706859980617,
+          "segment_length_ratio": 1.0035418960964848,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 720,
+          "i_perp": 0.20846086160774133,
+          "segment_length_cv": 6.390794283402067e-10,
+          "segment_length_ratio": 1.0000000018033564,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1123,
+          "i_perp": 0.20320771783624939,
+          "segment_length_cv": 6.715039853421099e-10,
+          "segment_length_ratio": 1.0000000018944382,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1343,
+          "i_perp": 0.17801835989813972,
+          "segment_length_cv": 1.4040883842439189e-10,
+          "segment_length_ratio": 1.0000000003954679,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1776,
+          "i_perp": 0.05920592086029856,
+          "segment_length_cv": 0.0023643156137238123,
+          "segment_length_ratio": 1.0093380610688212,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2046,
+          "i_perp": 0.04752100466586779,
+          "segment_length_cv": 0.0010777380294917996,
+          "segment_length_ratio": 1.0039592801133688,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2324,
+          "i_perp": 0.0460201073389948,
+          "segment_length_cv": 0.000353103663276913,
+          "segment_length_ratio": 1.001063569740141,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ],
+      "pareto_records": [
+        {
+          "NF": 20,
+          "i_perp": 776.2298999129312,
+          "segment_length_cv": 1.479724507567486e-15,
+          "segment_length_ratio": 1.0000000000000078,
+          "is_initial": true,
+          "reparam_committed": false
+        },
+        {
+          "NF": 80,
+          "i_perp": 139.5667304151437,
+          "segment_length_cv": 4.776893844485586e-10,
+          "segment_length_ratio": 1.0000000013465002,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 500,
+          "i_perp": 0.2172345838098256,
+          "segment_length_cv": 0.0010787706859980617,
+          "segment_length_ratio": 1.0035418960964848,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 720,
+          "i_perp": 0.20846086160774133,
+          "segment_length_cv": 6.390794283402067e-10,
+          "segment_length_ratio": 1.0000000018033564,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1123,
+          "i_perp": 0.20320771783624939,
+          "segment_length_cv": 6.715039853421099e-10,
+          "segment_length_ratio": 1.0000000018944382,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1343,
+          "i_perp": 0.17801835989813972,
+          "segment_length_cv": 1.4040883842439189e-10,
+          "segment_length_ratio": 1.0000000003954679,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 1776,
+          "i_perp": 0.05920592086029856,
+          "segment_length_cv": 0.0023643156137238123,
+          "segment_length_ratio": 1.0093380610688212,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2046,
+          "i_perp": 0.04752100466586779,
+          "segment_length_cv": 0.0010777380294917996,
+          "segment_length_ratio": 1.0039592801133688,
+          "is_initial": false,
+          "reparam_committed": true
+        },
+        {
+          "NF": 2324,
+          "i_perp": 0.0460201073389948,
+          "segment_length_cv": 0.000353103663276913,
+          "segment_length_ratio": 1.001063569740141,
+          "is_initial": false,
+          "reparam_committed": true
+        }
+      ]
+    }
+  },
+  "same_alpha_legacy": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz",
+    "result_sha256": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc",
+    "configuration_sha256": "75672fcfca59cbc2d535c5782d1dd61ba8be698224898564a14107269d966f0b",
+    "initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "complete_state_NF": [
+      20,
+      80,
+      140,
+      295,
+      409,
+      530,
+      639,
+      740,
+      858,
+      960,
+      1062,
+      1177,
+      1356,
+      1533,
+      1709,
+      1924,
+      2130,
+      2357,
+      2601
+    ],
+    "mesh_eligible_complete_state_NF": [
+      20,
+      80,
+      140,
+      295,
+      740,
+      960,
+      1062,
+      1177,
+      1709,
+      1924,
+      2130,
+      2357,
+      2601
+    ],
+    "eligible_points": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545873,
+        "segment_length_cv": 0.0018330828826429654,
+        "segment_length_ratio": 1.0061595899488784,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12661393348374372,
+        "segment_length_cv": 0.0007227573996703888,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 295,
+        "i_perp": 0.06577597501951635,
+        "segment_length_cv": 0.006238057333666607,
+        "segment_length_ratio": 1.0298818106978673,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 740,
+        "i_perp": 0.003032203875476306,
+        "segment_length_cv": 0.003585988429176827,
+        "segment_length_ratio": 1.012943542940609,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 960,
+        "i_perp": 0.0012545296079283967,
+        "segment_length_cv": 0.0028033173377807396,
+        "segment_length_ratio": 1.0091146884394884,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1062,
+        "i_perp": 0.0008736874966022932,
+        "segment_length_cv": 0.002528582285535717,
+        "segment_length_ratio": 1.0079598297433392,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1177,
+        "i_perp": 0.0006332574517911263,
+        "segment_length_cv": 0.0022354036687877695,
+        "segment_length_ratio": 1.0072684279059476,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1709,
+        "i_perp": 0.00022923308850427665,
+        "segment_length_cv": 0.005715951099049131,
+        "segment_length_ratio": 1.0243427463969976,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1924,
+        "i_perp": 0.0002068720496138766,
+        "segment_length_cv": 0.004793673170787593,
+        "segment_length_ratio": 1.01993671605588,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2130,
+        "i_perp": 0.00016624506246538717,
+        "segment_length_cv": 0.004084778597554305,
+        "segment_length_ratio": 1.018065492891196,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2357,
+        "i_perp": 0.00014168150922901185,
+        "segment_length_cv": 0.0022597873219675265,
+        "segment_length_ratio": 1.0102064057735969,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2601,
+        "i_perp": 0.00012403116975547233,
+        "segment_length_cv": 0.00279763462390943,
+        "segment_length_ratio": 1.01299310563877,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 20,
+        "i_perp": 776.2298999129312,
+        "segment_length_cv": 1.479724507567486e-15,
+        "segment_length_ratio": 1.0000000000000078,
+        "is_initial": true,
+        "reparam_committed": false
+      },
+      {
+        "NF": 80,
+        "i_perp": 0.5253604244545873,
+        "segment_length_cv": 0.0018330828826429654,
+        "segment_length_ratio": 1.0061595899488784,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 140,
+        "i_perp": 0.12661393348374372,
+        "segment_length_cv": 0.0007227573996703888,
+        "segment_length_ratio": 1.002139223624732,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 295,
+        "i_perp": 0.06577597501951635,
+        "segment_length_cv": 0.006238057333666607,
+        "segment_length_ratio": 1.0298818106978673,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 740,
+        "i_perp": 0.003032203875476306,
+        "segment_length_cv": 0.003585988429176827,
+        "segment_length_ratio": 1.012943542940609,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 960,
+        "i_perp": 0.0012545296079283967,
+        "segment_length_cv": 0.0028033173377807396,
+        "segment_length_ratio": 1.0091146884394884,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1062,
+        "i_perp": 0.0008736874966022932,
+        "segment_length_cv": 0.002528582285535717,
+        "segment_length_ratio": 1.0079598297433392,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1177,
+        "i_perp": 0.0006332574517911263,
+        "segment_length_cv": 0.0022354036687877695,
+        "segment_length_ratio": 1.0072684279059476,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1709,
+        "i_perp": 0.00022923308850427665,
+        "segment_length_cv": 0.005715951099049131,
+        "segment_length_ratio": 1.0243427463969976,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 1924,
+        "i_perp": 0.0002068720496138766,
+        "segment_length_cv": 0.004793673170787593,
+        "segment_length_ratio": 1.01993671605588,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2130,
+        "i_perp": 0.00016624506246538717,
+        "segment_length_cv": 0.004084778597554305,
+        "segment_length_ratio": 1.018065492891196,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2357,
+        "i_perp": 0.00014168150922901185,
+        "segment_length_cv": 0.0022597873219675265,
+        "segment_length_ratio": 1.0102064057735969,
+        "is_initial": false,
+        "reparam_committed": true
+      },
+      {
+        "NF": 2601,
+        "i_perp": 0.00012403116975547233,
+        "segment_length_cv": 0.00279763462390943,
+        "segment_length_ratio": 1.01299310563877,
+        "is_initial": false,
+        "reparam_committed": true
+      }
+    ]
+  },
+  "official_stage4_v4": {
+    "archive": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+    "archive_sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc",
+    "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA34_phaseB220.npz",
+    "source_result_sha256": "f5be61d5121a46d349247d036ba2ffe9d258efe5caf864ee659ef2bb18aa9622",
+    "component_results": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseA_fast_a20_central_state_ivm_cfg09d74897c1ef_budget34.npz",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseB_precision_a20_central_state_ivm_cfg21ee8dded116_budget220.npz"
+    ],
+    "component_result_sha256": [
+      "9d9a5f692a5a65c82b0921d385dd9a36b8477b9fa9efa1df82c629f4fd8d9de5",
+      "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918"
+    ],
+    "domain_max_i_perp": 0.007,
+    "eligible_points": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ],
+    "mesh_rejected_points": [
+      {
+        "NF": 1357,
+        "i_perp": 0.0004890888275104723,
+        "segment_length_cv": 0.023832350636027653,
+        "segment_length_ratio": 1.0982214523755627
+      },
+      {
+        "NF": 1694,
+        "i_perp": 0.0003952920084906028,
+        "segment_length_cv": 0.018268374352660106,
+        "segment_length_ratio": 1.0661580508264703
+      },
+      {
+        "NF": 2276,
+        "i_perp": 0.0001999634980787797,
+        "segment_length_cv": 0.008561292203950892,
+        "segment_length_ratio": 1.035754407258267
+      }
+    ],
+    "pareto_records": [
+      {
+        "NF": 660,
+        "i_perp": 0.006889354808869684,
+        "segment_length_cv": 6.157329810044762e-10,
+        "segment_length_ratio": 1.0000000017357638
+      },
+      {
+        "NF": 680,
+        "i_perp": 0.006584491730342424,
+        "segment_length_cv": 6.159414791865821e-10,
+        "segment_length_ratio": 1.0000000017362503
+      },
+      {
+        "NF": 829,
+        "i_perp": 0.0034644624572146097,
+        "segment_length_cv": 0.0064097679556667725,
+        "segment_length_ratio": 1.0285676497966563
+      },
+      {
+        "NF": 943,
+        "i_perp": 0.0018424108929185675,
+        "segment_length_cv": 0.0034139107310496228,
+        "segment_length_ratio": 1.0117685188045293
+      },
+      {
+        "NF": 1059,
+        "i_perp": 0.0011294646817160594,
+        "segment_length_cv": 0.0032417949621423984,
+        "segment_length_ratio": 1.0121131366163651
+      },
+      {
+        "NF": 1173,
+        "i_perp": 0.000767668366776594,
+        "segment_length_cv": 0.002605530673367481,
+        "segment_length_ratio": 1.0085454837176746
+      },
+      {
+        "NF": 1984,
+        "i_perp": 0.0002636014863862734,
+        "segment_length_cv": 0.006166678146014931,
+        "segment_length_ratio": 1.0273270338729001
+      },
+      {
+        "NF": 2507,
+        "i_perp": 0.00018216907465962214,
+        "segment_length_cv": 0.0032232082468806444,
+        "segment_length_ratio": 1.0141544133914462
+      }
+    ]
+  },
+  "mechanism_bidirectional_comparisons": {
+    "ffrbk_operator_effect": {
+      "left_arm": "current_ffrbk_selector",
+      "right_arm": "scalar_selector",
+      "current_ffrbk_selector_vs_scalar_selector": {
+        "comparator": "scalar_selector",
+        "comparator_pareto_record_count": 6,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 103.78623950625564,
+            "candidate_NF": 80,
+            "comparator_NF": 100,
+            "candidate_minus_comparator_NF": -20,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 21.865036004734204,
+            "candidate_NF": 80,
+            "comparator_NF": 200,
+            "candidate_minus_comparator_NF": -120,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.30163351593121085,
+            "candidate_NF": 140,
+            "comparator_NF": 560,
+            "candidate_minus_comparator_NF": -420,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.14437980673449008,
+            "candidate_NF": 140,
+            "comparator_NF": 740,
+            "candidate_minus_comparator_NF": -600,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.14394805708615313,
+            "candidate_NF": 140,
+            "comparator_NF": 960,
+            "candidate_minus_comparator_NF": -820,
+            "outcome": "strict_win"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": true,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.00016186039155354832,
+        "comparator_tightest_eligible_i_perp": 0.14394805708615313,
+        "candidate_does_not_lose_tightest_precision": true,
+        "full_curve_dominates": true,
+        "exact_deficit": {
+          "loss_threshold_count": 0,
+          "candidate_unreachable_loss_count": 0,
+          "strict_win_count": 5,
+          "losses": []
+        },
+        "W_T_L_U": {
+          "W": 5,
+          "T": 1,
+          "L": 0,
+          "U": 0
+        },
+        "loss_count_including_unreachable": 0,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "scalar_selector_vs_current_ffrbk_selector": {
+        "comparator": "current_ffrbk_selector",
+        "comparator_pareto_record_count": 19,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.4614608503380646,
+            "candidate_NF": 560,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 480,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.10866852352532867,
+            "candidate_NF": null,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.06438455725168225,
+            "candidate_NF": null,
+            "comparator_NF": 180,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.01443722756882871,
+            "candidate_NF": null,
+            "comparator_NF": 371,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.001974768972863892,
+            "candidate_NF": null,
+            "comparator_NF": 770,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0006081390239443157,
+            "candidate_NF": null,
+            "comparator_NF": 1197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.000520937112802533,
+            "candidate_NF": null,
+            "comparator_NF": 1331,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0004644951867644147,
+            "candidate_NF": null,
+            "comparator_NF": 1441,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0004247375963870833,
+            "candidate_NF": null,
+            "comparator_NF": 1546,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.000392076550959963,
+            "candidate_NF": null,
+            "comparator_NF": 1679,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00036938327597160303,
+            "candidate_NF": null,
+            "comparator_NF": 1801,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0003232082797768926,
+            "candidate_NF": null,
+            "comparator_NF": 2016,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00023364471166739993,
+            "candidate_NF": null,
+            "comparator_NF": 2214,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00021903287444868414,
+            "candidate_NF": null,
+            "comparator_NF": 2325,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00020112069358975564,
+            "candidate_NF": null,
+            "comparator_NF": 2554,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00018822199091361437,
+            "candidate_NF": null,
+            "comparator_NF": 2786,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0001716134721295674,
+            "candidate_NF": null,
+            "comparator_NF": 3020,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00016186039155354832,
+            "candidate_NF": null,
+            "comparator_NF": 3293,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": false,
+        "candidate_tightest_eligible_i_perp": 0.14394805708615313,
+        "comparator_tightest_eligible_i_perp": 0.00016186039155354832,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 18,
+          "candidate_unreachable_loss_count": 17,
+          "strict_win_count": 0,
+          "losses": [
+            {
+              "threshold_i_perp": 0.4614608503380646,
+              "candidate_NF": 560,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 480,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.10866852352532867,
+              "candidate_NF": null,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.06438455725168225,
+              "candidate_NF": null,
+              "comparator_NF": 180,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.01443722756882871,
+              "candidate_NF": null,
+              "comparator_NF": 371,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.001974768972863892,
+              "candidate_NF": null,
+              "comparator_NF": 770,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006081390239443157,
+              "candidate_NF": null,
+              "comparator_NF": 1197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000520937112802533,
+              "candidate_NF": null,
+              "comparator_NF": 1331,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004644951867644147,
+              "candidate_NF": null,
+              "comparator_NF": 1441,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004247375963870833,
+              "candidate_NF": null,
+              "comparator_NF": 1546,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000392076550959963,
+              "candidate_NF": null,
+              "comparator_NF": 1679,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00036938327597160303,
+              "candidate_NF": null,
+              "comparator_NF": 1801,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0003232082797768926,
+              "candidate_NF": null,
+              "comparator_NF": 2016,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00023364471166739993,
+              "candidate_NF": null,
+              "comparator_NF": 2214,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00021903287444868414,
+              "candidate_NF": null,
+              "comparator_NF": 2325,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00020112069358975564,
+              "candidate_NF": null,
+              "comparator_NF": 2554,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018822199091361437,
+              "candidate_NF": null,
+              "comparator_NF": 2786,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0001716134721295674,
+              "candidate_NF": null,
+              "comparator_NF": 3020,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016186039155354832,
+              "candidate_NF": null,
+              "comparator_NF": 3293,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        },
+        "W_T_L_U": {
+          "W": 0,
+          "T": 1,
+          "L": 1,
+          "U": 17
+        },
+        "loss_count_including_unreachable": 18,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "directional_full_curve_dominators": [
+        "current_ffrbk_selector"
+      ],
+      "global_mechanism_superiority_claim_allowed": true,
+      "crossing_or_no_global_dominator": false
+    },
+    "selector_effect": {
+      "left_arm": "scalar_selector",
+      "right_arm": "direct_lbfgs_only",
+      "scalar_selector_vs_direct_lbfgs_only": {
+        "comparator": "direct_lbfgs_only",
+        "comparator_pareto_record_count": 9,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 139.5667304151437,
+            "candidate_NF": 100,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 20,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.2172345838098256,
+            "candidate_NF": 740,
+            "comparator_NF": 500,
+            "candidate_minus_comparator_NF": 240,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.20846086160774133,
+            "candidate_NF": 740,
+            "comparator_NF": 720,
+            "candidate_minus_comparator_NF": 20,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.20320771783624939,
+            "candidate_NF": 740,
+            "comparator_NF": 1123,
+            "candidate_minus_comparator_NF": -383,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.17801835989813972,
+            "candidate_NF": 740,
+            "comparator_NF": 1343,
+            "candidate_minus_comparator_NF": -603,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.05920592086029856,
+            "candidate_NF": null,
+            "comparator_NF": 1776,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.04752100466586779,
+            "candidate_NF": null,
+            "comparator_NF": 2046,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0460201073389948,
+            "candidate_NF": null,
+            "comparator_NF": 2324,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.14394805708615313,
+        "comparator_tightest_eligible_i_perp": 0.0460201073389948,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 6,
+          "candidate_unreachable_loss_count": 3,
+          "strict_win_count": 2,
+          "losses": [
+            {
+              "threshold_i_perp": 139.5667304151437,
+              "candidate_NF": 100,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 20,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.2172345838098256,
+              "candidate_NF": 740,
+              "comparator_NF": 500,
+              "candidate_minus_comparator_NF": 240,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.20846086160774133,
+              "candidate_NF": 740,
+              "comparator_NF": 720,
+              "candidate_minus_comparator_NF": 20,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.05920592086029856,
+              "candidate_NF": null,
+              "comparator_NF": 1776,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.04752100466586779,
+              "candidate_NF": null,
+              "comparator_NF": 2046,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0460201073389948,
+              "candidate_NF": null,
+              "comparator_NF": 2324,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        },
+        "W_T_L_U": {
+          "W": 2,
+          "T": 1,
+          "L": 3,
+          "U": 3
+        },
+        "loss_count_including_unreachable": 6,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "direct_lbfgs_only_vs_scalar_selector": {
+        "comparator": "scalar_selector",
+        "comparator_pareto_record_count": 6,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 103.78623950625564,
+            "candidate_NF": 500,
+            "comparator_NF": 100,
+            "candidate_minus_comparator_NF": 400,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 21.865036004734204,
+            "candidate_NF": 500,
+            "comparator_NF": 200,
+            "candidate_minus_comparator_NF": 300,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.30163351593121085,
+            "candidate_NF": 500,
+            "comparator_NF": 560,
+            "candidate_minus_comparator_NF": -60,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.14437980673449008,
+            "candidate_NF": 1776,
+            "comparator_NF": 740,
+            "candidate_minus_comparator_NF": 1036,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.14394805708615313,
+            "candidate_NF": 1776,
+            "comparator_NF": 960,
+            "candidate_minus_comparator_NF": 816,
+            "outcome": "loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.0460201073389948,
+        "comparator_tightest_eligible_i_perp": 0.14394805708615313,
+        "candidate_does_not_lose_tightest_precision": true,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 4,
+          "candidate_unreachable_loss_count": 0,
+          "strict_win_count": 1,
+          "losses": [
+            {
+              "threshold_i_perp": 103.78623950625564,
+              "candidate_NF": 500,
+              "comparator_NF": 100,
+              "candidate_minus_comparator_NF": 400,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 21.865036004734204,
+              "candidate_NF": 500,
+              "comparator_NF": 200,
+              "candidate_minus_comparator_NF": 300,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.14437980673449008,
+              "candidate_NF": 1776,
+              "comparator_NF": 740,
+              "candidate_minus_comparator_NF": 1036,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.14394805708615313,
+              "candidate_NF": 1776,
+              "comparator_NF": 960,
+              "candidate_minus_comparator_NF": 816,
+              "outcome": "loss"
+            }
+          ]
+        },
+        "W_T_L_U": {
+          "W": 1,
+          "T": 1,
+          "L": 4,
+          "U": 0
+        },
+        "loss_count_including_unreachable": 4,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "directional_full_curve_dominators": [],
+      "global_mechanism_superiority_claim_allowed": false,
+      "crossing_or_no_global_dominator": true
+    },
+    "combined_effect": {
+      "left_arm": "current_ffrbk_selector",
+      "right_arm": "direct_lbfgs_only",
+      "current_ffrbk_selector_vs_direct_lbfgs_only": {
+        "comparator": "direct_lbfgs_only",
+        "comparator_pareto_record_count": 9,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 139.5667304151437,
+            "candidate_NF": 80,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.2172345838098256,
+            "candidate_NF": 140,
+            "comparator_NF": 500,
+            "candidate_minus_comparator_NF": -360,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.20846086160774133,
+            "candidate_NF": 140,
+            "comparator_NF": 720,
+            "candidate_minus_comparator_NF": -580,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.20320771783624939,
+            "candidate_NF": 140,
+            "comparator_NF": 1123,
+            "candidate_minus_comparator_NF": -983,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.17801835989813972,
+            "candidate_NF": 140,
+            "comparator_NF": 1343,
+            "candidate_minus_comparator_NF": -1203,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.05920592086029856,
+            "candidate_NF": 371,
+            "comparator_NF": 1776,
+            "candidate_minus_comparator_NF": -1405,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.04752100466586779,
+            "candidate_NF": 371,
+            "comparator_NF": 2046,
+            "candidate_minus_comparator_NF": -1675,
+            "outcome": "strict_win"
+          },
+          {
+            "threshold_i_perp": 0.0460201073389948,
+            "candidate_NF": 371,
+            "comparator_NF": 2324,
+            "candidate_minus_comparator_NF": -1953,
+            "outcome": "strict_win"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": true,
+        "strictly_faster_at_least_one_threshold": true,
+        "candidate_tightest_eligible_i_perp": 0.00016186039155354832,
+        "comparator_tightest_eligible_i_perp": 0.0460201073389948,
+        "candidate_does_not_lose_tightest_precision": true,
+        "full_curve_dominates": true,
+        "exact_deficit": {
+          "loss_threshold_count": 0,
+          "candidate_unreachable_loss_count": 0,
+          "strict_win_count": 7,
+          "losses": []
+        },
+        "W_T_L_U": {
+          "W": 7,
+          "T": 2,
+          "L": 0,
+          "U": 0
+        },
+        "loss_count_including_unreachable": 0,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "direct_lbfgs_only_vs_current_ffrbk_selector": {
+        "comparator": "current_ffrbk_selector",
+        "comparator_pareto_record_count": 19,
+        "threshold_results": [
+          {
+            "threshold_i_perp": 776.2298999129312,
+            "candidate_NF": 20,
+            "comparator_NF": 20,
+            "candidate_minus_comparator_NF": 0,
+            "outcome": "tie"
+          },
+          {
+            "threshold_i_perp": 0.4614608503380646,
+            "candidate_NF": 500,
+            "comparator_NF": 80,
+            "candidate_minus_comparator_NF": 420,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.10866852352532867,
+            "candidate_NF": 1776,
+            "comparator_NF": 140,
+            "candidate_minus_comparator_NF": 1636,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.06438455725168225,
+            "candidate_NF": 1776,
+            "comparator_NF": 180,
+            "candidate_minus_comparator_NF": 1596,
+            "outcome": "loss"
+          },
+          {
+            "threshold_i_perp": 0.01443722756882871,
+            "candidate_NF": null,
+            "comparator_NF": 371,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.001974768972863892,
+            "candidate_NF": null,
+            "comparator_NF": 770,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0006081390239443157,
+            "candidate_NF": null,
+            "comparator_NF": 1197,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.000520937112802533,
+            "candidate_NF": null,
+            "comparator_NF": 1331,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0004644951867644147,
+            "candidate_NF": null,
+            "comparator_NF": 1441,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0004247375963870833,
+            "candidate_NF": null,
+            "comparator_NF": 1546,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.000392076550959963,
+            "candidate_NF": null,
+            "comparator_NF": 1679,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00036938327597160303,
+            "candidate_NF": null,
+            "comparator_NF": 1801,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0003232082797768926,
+            "candidate_NF": null,
+            "comparator_NF": 2016,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00023364471166739993,
+            "candidate_NF": null,
+            "comparator_NF": 2214,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00021903287444868414,
+            "candidate_NF": null,
+            "comparator_NF": 2325,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00020112069358975564,
+            "candidate_NF": null,
+            "comparator_NF": 2554,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00018822199091361437,
+            "candidate_NF": null,
+            "comparator_NF": 2786,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.0001716134721295674,
+            "candidate_NF": null,
+            "comparator_NF": 3020,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          },
+          {
+            "threshold_i_perp": 0.00016186039155354832,
+            "candidate_NF": null,
+            "comparator_NF": 3293,
+            "candidate_minus_comparator_NF": null,
+            "outcome": "candidate_unreachable_loss"
+          }
+        ],
+        "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+        "strictly_faster_at_least_one_threshold": false,
+        "candidate_tightest_eligible_i_perp": 0.0460201073389948,
+        "comparator_tightest_eligible_i_perp": 0.00016186039155354832,
+        "candidate_does_not_lose_tightest_precision": false,
+        "full_curve_dominates": false,
+        "exact_deficit": {
+          "loss_threshold_count": 18,
+          "candidate_unreachable_loss_count": 15,
+          "strict_win_count": 0,
+          "losses": [
+            {
+              "threshold_i_perp": 0.4614608503380646,
+              "candidate_NF": 500,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 420,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.10866852352532867,
+              "candidate_NF": 1776,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": 1636,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.06438455725168225,
+              "candidate_NF": 1776,
+              "comparator_NF": 180,
+              "candidate_minus_comparator_NF": 1596,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.01443722756882871,
+              "candidate_NF": null,
+              "comparator_NF": 371,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.001974768972863892,
+              "candidate_NF": null,
+              "comparator_NF": 770,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006081390239443157,
+              "candidate_NF": null,
+              "comparator_NF": 1197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000520937112802533,
+              "candidate_NF": null,
+              "comparator_NF": 1331,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004644951867644147,
+              "candidate_NF": null,
+              "comparator_NF": 1441,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004247375963870833,
+              "candidate_NF": null,
+              "comparator_NF": 1546,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000392076550959963,
+              "candidate_NF": null,
+              "comparator_NF": 1679,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00036938327597160303,
+              "candidate_NF": null,
+              "comparator_NF": 1801,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0003232082797768926,
+              "candidate_NF": null,
+              "comparator_NF": 2016,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00023364471166739993,
+              "candidate_NF": null,
+              "comparator_NF": 2214,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00021903287444868414,
+              "candidate_NF": null,
+              "comparator_NF": 2325,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00020112069358975564,
+              "candidate_NF": null,
+              "comparator_NF": 2554,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018822199091361437,
+              "candidate_NF": null,
+              "comparator_NF": 2786,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0001716134721295674,
+              "candidate_NF": null,
+              "comparator_NF": 3020,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016186039155354832,
+              "candidate_NF": null,
+              "comparator_NF": 3293,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ]
+        },
+        "W_T_L_U": {
+          "W": 0,
+          "T": 1,
+          "L": 3,
+          "U": 15
+        },
+        "loss_count_including_unreachable": 18,
+        "unobserved_tail_extrapolated": false,
+        "candidate_unreachable_policy": "U_formal_loss"
+      },
+      "directional_full_curve_dominators": [
+        "current_ffrbk_selector"
+      ],
+      "global_mechanism_superiority_claim_allowed": true,
+      "crossing_or_no_global_dominator": false
+    }
+  },
+  "performance_candidate_comparisons": {
+    "scalar_selector": {
+      "comparisons": {
+        "current_ffrbk_selector": {
+          "comparator": "current_ffrbk_selector",
+          "comparator_pareto_record_count": 19,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 776.2298999129312,
+              "candidate_NF": 20,
+              "comparator_NF": 20,
+              "candidate_minus_comparator_NF": 0,
+              "outcome": "tie"
+            },
+            {
+              "threshold_i_perp": 0.4614608503380646,
+              "candidate_NF": 560,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 480,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.10866852352532867,
+              "candidate_NF": null,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.06438455725168225,
+              "candidate_NF": null,
+              "comparator_NF": 180,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.01443722756882871,
+              "candidate_NF": null,
+              "comparator_NF": 371,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.001974768972863892,
+              "candidate_NF": null,
+              "comparator_NF": 770,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006081390239443157,
+              "candidate_NF": null,
+              "comparator_NF": 1197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000520937112802533,
+              "candidate_NF": null,
+              "comparator_NF": 1331,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004644951867644147,
+              "candidate_NF": null,
+              "comparator_NF": 1441,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004247375963870833,
+              "candidate_NF": null,
+              "comparator_NF": 1546,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000392076550959963,
+              "candidate_NF": null,
+              "comparator_NF": 1679,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00036938327597160303,
+              "candidate_NF": null,
+              "comparator_NF": 1801,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0003232082797768926,
+              "candidate_NF": null,
+              "comparator_NF": 2016,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00023364471166739993,
+              "candidate_NF": null,
+              "comparator_NF": 2214,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00021903287444868414,
+              "candidate_NF": null,
+              "comparator_NF": 2325,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00020112069358975564,
+              "candidate_NF": null,
+              "comparator_NF": 2554,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018822199091361437,
+              "candidate_NF": null,
+              "comparator_NF": 2786,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0001716134721295674,
+              "candidate_NF": null,
+              "comparator_NF": 3020,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016186039155354832,
+              "candidate_NF": null,
+              "comparator_NF": 3293,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.14394805708615313,
+          "comparator_tightest_eligible_i_perp": 0.00016186039155354832,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 18,
+            "candidate_unreachable_loss_count": 17,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.4614608503380646,
+                "candidate_NF": 560,
+                "comparator_NF": 80,
+                "candidate_minus_comparator_NF": 480,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.10866852352532867,
+                "candidate_NF": null,
+                "comparator_NF": 140,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.06438455725168225,
+                "candidate_NF": null,
+                "comparator_NF": 180,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.01443722756882871,
+                "candidate_NF": null,
+                "comparator_NF": 371,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.001974768972863892,
+                "candidate_NF": null,
+                "comparator_NF": 770,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0006081390239443157,
+                "candidate_NF": null,
+                "comparator_NF": 1197,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000520937112802533,
+                "candidate_NF": null,
+                "comparator_NF": 1331,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0004644951867644147,
+                "candidate_NF": null,
+                "comparator_NF": 1441,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0004247375963870833,
+                "candidate_NF": null,
+                "comparator_NF": 1546,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000392076550959963,
+                "candidate_NF": null,
+                "comparator_NF": 1679,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00036938327597160303,
+                "candidate_NF": null,
+                "comparator_NF": 1801,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0003232082797768926,
+                "candidate_NF": null,
+                "comparator_NF": 2016,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00023364471166739993,
+                "candidate_NF": null,
+                "comparator_NF": 2214,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00021903287444868414,
+                "candidate_NF": null,
+                "comparator_NF": 2325,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00020112069358975564,
+                "candidate_NF": null,
+                "comparator_NF": 2554,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00018822199091361437,
+                "candidate_NF": null,
+                "comparator_NF": 2786,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0001716134721295674,
+                "candidate_NF": null,
+                "comparator_NF": 3020,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00016186039155354832,
+                "candidate_NF": null,
+                "comparator_NF": 3293,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 1,
+            "L": 1,
+            "U": 17
+          },
+          "loss_count_including_unreachable": 18,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        },
+        "same_alpha_legacy": {
+          "comparator": "same_alpha_legacy",
+          "comparator_pareto_record_count": 13,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 776.2298999129312,
+              "candidate_NF": 20,
+              "comparator_NF": 20,
+              "candidate_minus_comparator_NF": 0,
+              "outcome": "tie"
+            },
+            {
+              "threshold_i_perp": 0.5253604244545873,
+              "candidate_NF": 560,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 480,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.12661393348374372,
+              "candidate_NF": null,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.06577597501951635,
+              "candidate_NF": null,
+              "comparator_NF": 295,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.003032203875476306,
+              "candidate_NF": null,
+              "comparator_NF": 740,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0012545296079283967,
+              "candidate_NF": null,
+              "comparator_NF": 960,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0008736874966022932,
+              "candidate_NF": null,
+              "comparator_NF": 1062,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006332574517911263,
+              "candidate_NF": null,
+              "comparator_NF": 1177,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00022923308850427665,
+              "candidate_NF": null,
+              "comparator_NF": 1709,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0002068720496138766,
+              "candidate_NF": null,
+              "comparator_NF": 1924,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016624506246538717,
+              "candidate_NF": null,
+              "comparator_NF": 2130,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00014168150922901185,
+              "candidate_NF": null,
+              "comparator_NF": 2357,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00012403116975547233,
+              "candidate_NF": null,
+              "comparator_NF": 2601,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.14394805708615313,
+          "comparator_tightest_eligible_i_perp": 0.00012403116975547233,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 12,
+            "candidate_unreachable_loss_count": 11,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.5253604244545873,
+                "candidate_NF": 560,
+                "comparator_NF": 80,
+                "candidate_minus_comparator_NF": 480,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.12661393348374372,
+                "candidate_NF": null,
+                "comparator_NF": 140,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.06577597501951635,
+                "candidate_NF": null,
+                "comparator_NF": 295,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.003032203875476306,
+                "candidate_NF": null,
+                "comparator_NF": 740,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0012545296079283967,
+                "candidate_NF": null,
+                "comparator_NF": 960,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0008736874966022932,
+                "candidate_NF": null,
+                "comparator_NF": 1062,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0006332574517911263,
+                "candidate_NF": null,
+                "comparator_NF": 1177,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00022923308850427665,
+                "candidate_NF": null,
+                "comparator_NF": 1709,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0002068720496138766,
+                "candidate_NF": null,
+                "comparator_NF": 1924,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00016624506246538717,
+                "candidate_NF": null,
+                "comparator_NF": 2130,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00014168150922901185,
+                "candidate_NF": null,
+                "comparator_NF": 2357,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00012403116975547233,
+                "candidate_NF": null,
+                "comparator_NF": 2601,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 1,
+            "L": 1,
+            "U": 11
+          },
+          "loss_count_including_unreachable": 12,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        },
+        "official_stage4_v4": {
+          "comparator": "official_stage4_v4",
+          "comparator_pareto_record_count": 8,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 0.006889354808869684,
+              "candidate_NF": null,
+              "comparator_NF": 660,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.006584491730342424,
+              "candidate_NF": null,
+              "comparator_NF": 680,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0034644624572146097,
+              "candidate_NF": null,
+              "comparator_NF": 829,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0018424108929185675,
+              "candidate_NF": null,
+              "comparator_NF": 943,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0011294646817160594,
+              "candidate_NF": null,
+              "comparator_NF": 1059,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000767668366776594,
+              "candidate_NF": null,
+              "comparator_NF": 1173,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0002636014863862734,
+              "candidate_NF": null,
+              "comparator_NF": 1984,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018216907465962214,
+              "candidate_NF": null,
+              "comparator_NF": 2507,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.14394805708615313,
+          "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 8,
+            "candidate_unreachable_loss_count": 8,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.006889354808869684,
+                "candidate_NF": null,
+                "comparator_NF": 660,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.006584491730342424,
+                "candidate_NF": null,
+                "comparator_NF": 680,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0034644624572146097,
+                "candidate_NF": null,
+                "comparator_NF": 829,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0018424108929185675,
+                "candidate_NF": null,
+                "comparator_NF": 943,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0011294646817160594,
+                "candidate_NF": null,
+                "comparator_NF": 1059,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000767668366776594,
+                "candidate_NF": null,
+                "comparator_NF": 1173,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0002636014863862734,
+                "candidate_NF": null,
+                "comparator_NF": 1984,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00018216907465962214,
+                "candidate_NF": null,
+                "comparator_NF": 2507,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 0,
+            "L": 0,
+            "U": 8
+          },
+          "loss_count_including_unreachable": 8,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        }
+      },
+      "full_curve_dominates_all_three": false,
+      "primary_comparator_set_exact": [
+        "current_ffrbk_selector",
+        "same_alpha_legacy",
+        "official_stage4_v4"
+      ]
+    },
+    "direct_lbfgs_only": {
+      "comparisons": {
+        "current_ffrbk_selector": {
+          "comparator": "current_ffrbk_selector",
+          "comparator_pareto_record_count": 19,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 776.2298999129312,
+              "candidate_NF": 20,
+              "comparator_NF": 20,
+              "candidate_minus_comparator_NF": 0,
+              "outcome": "tie"
+            },
+            {
+              "threshold_i_perp": 0.4614608503380646,
+              "candidate_NF": 500,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 420,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.10866852352532867,
+              "candidate_NF": 1776,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": 1636,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.06438455725168225,
+              "candidate_NF": 1776,
+              "comparator_NF": 180,
+              "candidate_minus_comparator_NF": 1596,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.01443722756882871,
+              "candidate_NF": null,
+              "comparator_NF": 371,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.001974768972863892,
+              "candidate_NF": null,
+              "comparator_NF": 770,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006081390239443157,
+              "candidate_NF": null,
+              "comparator_NF": 1197,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000520937112802533,
+              "candidate_NF": null,
+              "comparator_NF": 1331,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004644951867644147,
+              "candidate_NF": null,
+              "comparator_NF": 1441,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0004247375963870833,
+              "candidate_NF": null,
+              "comparator_NF": 1546,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000392076550959963,
+              "candidate_NF": null,
+              "comparator_NF": 1679,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00036938327597160303,
+              "candidate_NF": null,
+              "comparator_NF": 1801,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0003232082797768926,
+              "candidate_NF": null,
+              "comparator_NF": 2016,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00023364471166739993,
+              "candidate_NF": null,
+              "comparator_NF": 2214,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00021903287444868414,
+              "candidate_NF": null,
+              "comparator_NF": 2325,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00020112069358975564,
+              "candidate_NF": null,
+              "comparator_NF": 2554,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018822199091361437,
+              "candidate_NF": null,
+              "comparator_NF": 2786,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0001716134721295674,
+              "candidate_NF": null,
+              "comparator_NF": 3020,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016186039155354832,
+              "candidate_NF": null,
+              "comparator_NF": 3293,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.0460201073389948,
+          "comparator_tightest_eligible_i_perp": 0.00016186039155354832,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 18,
+            "candidate_unreachable_loss_count": 15,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.4614608503380646,
+                "candidate_NF": 500,
+                "comparator_NF": 80,
+                "candidate_minus_comparator_NF": 420,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.10866852352532867,
+                "candidate_NF": 1776,
+                "comparator_NF": 140,
+                "candidate_minus_comparator_NF": 1636,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.06438455725168225,
+                "candidate_NF": 1776,
+                "comparator_NF": 180,
+                "candidate_minus_comparator_NF": 1596,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.01443722756882871,
+                "candidate_NF": null,
+                "comparator_NF": 371,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.001974768972863892,
+                "candidate_NF": null,
+                "comparator_NF": 770,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0006081390239443157,
+                "candidate_NF": null,
+                "comparator_NF": 1197,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000520937112802533,
+                "candidate_NF": null,
+                "comparator_NF": 1331,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0004644951867644147,
+                "candidate_NF": null,
+                "comparator_NF": 1441,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0004247375963870833,
+                "candidate_NF": null,
+                "comparator_NF": 1546,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000392076550959963,
+                "candidate_NF": null,
+                "comparator_NF": 1679,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00036938327597160303,
+                "candidate_NF": null,
+                "comparator_NF": 1801,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0003232082797768926,
+                "candidate_NF": null,
+                "comparator_NF": 2016,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00023364471166739993,
+                "candidate_NF": null,
+                "comparator_NF": 2214,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00021903287444868414,
+                "candidate_NF": null,
+                "comparator_NF": 2325,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00020112069358975564,
+                "candidate_NF": null,
+                "comparator_NF": 2554,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00018822199091361437,
+                "candidate_NF": null,
+                "comparator_NF": 2786,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0001716134721295674,
+                "candidate_NF": null,
+                "comparator_NF": 3020,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00016186039155354832,
+                "candidate_NF": null,
+                "comparator_NF": 3293,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 1,
+            "L": 3,
+            "U": 15
+          },
+          "loss_count_including_unreachable": 18,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        },
+        "same_alpha_legacy": {
+          "comparator": "same_alpha_legacy",
+          "comparator_pareto_record_count": 13,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 776.2298999129312,
+              "candidate_NF": 20,
+              "comparator_NF": 20,
+              "candidate_minus_comparator_NF": 0,
+              "outcome": "tie"
+            },
+            {
+              "threshold_i_perp": 0.5253604244545873,
+              "candidate_NF": 500,
+              "comparator_NF": 80,
+              "candidate_minus_comparator_NF": 420,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.12661393348374372,
+              "candidate_NF": 1776,
+              "comparator_NF": 140,
+              "candidate_minus_comparator_NF": 1636,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.06577597501951635,
+              "candidate_NF": 1776,
+              "comparator_NF": 295,
+              "candidate_minus_comparator_NF": 1481,
+              "outcome": "loss"
+            },
+            {
+              "threshold_i_perp": 0.003032203875476306,
+              "candidate_NF": null,
+              "comparator_NF": 740,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0012545296079283967,
+              "candidate_NF": null,
+              "comparator_NF": 960,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0008736874966022932,
+              "candidate_NF": null,
+              "comparator_NF": 1062,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0006332574517911263,
+              "candidate_NF": null,
+              "comparator_NF": 1177,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00022923308850427665,
+              "candidate_NF": null,
+              "comparator_NF": 1709,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0002068720496138766,
+              "candidate_NF": null,
+              "comparator_NF": 1924,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00016624506246538717,
+              "candidate_NF": null,
+              "comparator_NF": 2130,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00014168150922901185,
+              "candidate_NF": null,
+              "comparator_NF": 2357,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00012403116975547233,
+              "candidate_NF": null,
+              "comparator_NF": 2601,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.0460201073389948,
+          "comparator_tightest_eligible_i_perp": 0.00012403116975547233,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 12,
+            "candidate_unreachable_loss_count": 9,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.5253604244545873,
+                "candidate_NF": 500,
+                "comparator_NF": 80,
+                "candidate_minus_comparator_NF": 420,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.12661393348374372,
+                "candidate_NF": 1776,
+                "comparator_NF": 140,
+                "candidate_minus_comparator_NF": 1636,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.06577597501951635,
+                "candidate_NF": 1776,
+                "comparator_NF": 295,
+                "candidate_minus_comparator_NF": 1481,
+                "outcome": "loss"
+              },
+              {
+                "threshold_i_perp": 0.003032203875476306,
+                "candidate_NF": null,
+                "comparator_NF": 740,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0012545296079283967,
+                "candidate_NF": null,
+                "comparator_NF": 960,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0008736874966022932,
+                "candidate_NF": null,
+                "comparator_NF": 1062,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0006332574517911263,
+                "candidate_NF": null,
+                "comparator_NF": 1177,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00022923308850427665,
+                "candidate_NF": null,
+                "comparator_NF": 1709,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0002068720496138766,
+                "candidate_NF": null,
+                "comparator_NF": 1924,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00016624506246538717,
+                "candidate_NF": null,
+                "comparator_NF": 2130,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00014168150922901185,
+                "candidate_NF": null,
+                "comparator_NF": 2357,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00012403116975547233,
+                "candidate_NF": null,
+                "comparator_NF": 2601,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 1,
+            "L": 3,
+            "U": 9
+          },
+          "loss_count_including_unreachable": 12,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        },
+        "official_stage4_v4": {
+          "comparator": "official_stage4_v4",
+          "comparator_pareto_record_count": 8,
+          "threshold_results": [
+            {
+              "threshold_i_perp": 0.006889354808869684,
+              "candidate_NF": null,
+              "comparator_NF": 660,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.006584491730342424,
+              "candidate_NF": null,
+              "comparator_NF": 680,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0034644624572146097,
+              "candidate_NF": null,
+              "comparator_NF": 829,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0018424108929185675,
+              "candidate_NF": null,
+              "comparator_NF": 943,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0011294646817160594,
+              "candidate_NF": null,
+              "comparator_NF": 1059,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.000767668366776594,
+              "candidate_NF": null,
+              "comparator_NF": 1173,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.0002636014863862734,
+              "candidate_NF": null,
+              "comparator_NF": 1984,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            },
+            {
+              "threshold_i_perp": 0.00018216907465962214,
+              "candidate_NF": null,
+              "comparator_NF": 2507,
+              "candidate_minus_comparator_NF": null,
+              "outcome": "candidate_unreachable_loss"
+            }
+          ],
+          "weakly_no_slower_at_every_comparator_pareto_threshold": false,
+          "strictly_faster_at_least_one_threshold": false,
+          "candidate_tightest_eligible_i_perp": 0.0460201073389948,
+          "comparator_tightest_eligible_i_perp": 0.00018216907465962214,
+          "candidate_does_not_lose_tightest_precision": false,
+          "full_curve_dominates": false,
+          "exact_deficit": {
+            "loss_threshold_count": 8,
+            "candidate_unreachable_loss_count": 8,
+            "strict_win_count": 0,
+            "losses": [
+              {
+                "threshold_i_perp": 0.006889354808869684,
+                "candidate_NF": null,
+                "comparator_NF": 660,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.006584491730342424,
+                "candidate_NF": null,
+                "comparator_NF": 680,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0034644624572146097,
+                "candidate_NF": null,
+                "comparator_NF": 829,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0018424108929185675,
+                "candidate_NF": null,
+                "comparator_NF": 943,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0011294646817160594,
+                "candidate_NF": null,
+                "comparator_NF": 1059,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.000767668366776594,
+                "candidate_NF": null,
+                "comparator_NF": 1173,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.0002636014863862734,
+                "candidate_NF": null,
+                "comparator_NF": 1984,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              },
+              {
+                "threshold_i_perp": 0.00018216907465962214,
+                "candidate_NF": null,
+                "comparator_NF": 2507,
+                "candidate_minus_comparator_NF": null,
+                "outcome": "candidate_unreachable_loss"
+              }
+            ]
+          },
+          "W_T_L_U": {
+            "W": 0,
+            "T": 0,
+            "L": 0,
+            "U": 8
+          },
+          "loss_count_including_unreachable": 8,
+          "unobserved_tail_extrapolated": false,
+          "candidate_unreachable_policy": "U_formal_loss"
+        }
+      },
+      "full_curve_dominates_all_three": false,
+      "primary_comparator_set_exact": [
+        "current_ffrbk_selector",
+        "same_alpha_legacy",
+        "official_stage4_v4"
+      ]
+    }
+  },
+  "performance_qualifiers": [],
+  "qualifiers": [],
+  "winner_status": "no_winner_no_triple_full_curve_dominator",
+  "locked_winner": null,
+  "winner_claim_made": false,
+  "analysis_script": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_lbfgs_mechanism_matched_kkt0_iperp_ctp.py",
+  "analysis_script_sha256": "e4f9d1428cad565d44cab57bf6069ec03a3a196db7cb3c07deb32624c938dfdf"
+}

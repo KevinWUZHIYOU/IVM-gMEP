@@ -1,0 +1,75 @@
+{
+  "bb_core": {
+    "bytes": 38028,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+    "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "coordinate_audit": {
+    "bytes": 2485,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.audit.json",
+    "sha256": "d8e1de581b4ae4c0ae4a742637cbee03658b464f21bf7169f3734b108a12b853"
+  },
+  "coordinate_freeze_contract": {
+    "bytes": 2748,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_COORDINATE_CONTRACT_R2_20260903.json",
+    "sha256": "3bd859da85907224f044f24ac930130f9d34fef8c1a890a236c88b92807fc1af"
+  },
+  "coordinate_manifest": {
+    "bytes": 135373288,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+    "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+  },
+  "created_utc": "2026-09-03T05:24:50.693865+00:00",
+  "endpoint_cache": {
+    "bytes": 302464,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+    "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "energy_call_policy": {
+    "bytes": 1181,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_CALL_POLICY_R2B_20260903.json",
+    "sha256": "ac8dab234bab61794c6d00d5728fb579b9393e409b5d41ecd8ed4e9eefb5e5a6"
+  },
+  "evaluator": {
+    "bytes": 23078,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_call515_terminal_tail_0k_section_energy_r2.py",
+    "sha256": "7a0fc198c563700a85057dc83bd2d9a8335e2da15b079d5c6d5453708417e04a"
+  },
+  "execution_authorization_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_AUTHORIZATION_R2B_20260903.json",
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "local",
+  "jobs": 1,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_unused_path_stage_r2b.npz",
+  "physical_call_policy": {
+    "exact_original_path_inherited_fixed_endpoint_values": 2,
+    "exact_original_path_internal_fresh_energy_only_attempts": 0,
+    "force_calls": 0,
+    "getState_getEnergy": true,
+    "getState_getForces": false,
+    "optimization_N_F_contribution": 0,
+    "surface_energy_values_stored": 1652,
+    "surface_fresh_energy_only_attempts": 1650,
+    "surface_inherited_fixed_endpoint_values": 2,
+    "total_fresh_energy_only_attempts": 1650
+  },
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_energy_59x28_20260903_r2b.npz",
+  "schema": "bb-irivm-call515-terminal-tail-section-energy-r2-v1-contract",
+  "status": "FROZEN_BEFORE_FIRST_CALL515_SECTION_ENERGY_CALL",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "topology": {
+    "bytes": 253799,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  },
+  "zero_openmm_preflight_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_PREAUTH_R2B_20260903.json"
+}

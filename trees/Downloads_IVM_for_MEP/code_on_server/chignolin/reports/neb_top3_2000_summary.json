@@ -1,0 +1,59 @@
+{
+  "source_scan_analysis": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/neb_scan_analysis.json",
+  "results": [
+    {
+      "name": "k1_a0p0001_ode",
+      "returncode": 0,
+      "wall_seconds": 495.0192029476166,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-top3-2000/k1_a0p0001_ode.log",
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k1_alpha0p0001_ode_budget2000.npz",
+      "configuration": {
+        "rank": 3,
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1_alpha0p0001_ode_budget500.npz",
+        "spring_k": 1.0,
+        "alpha": 0.0001,
+        "optimizer": "ode",
+        "score": 0.10989434666561411,
+        "i_perp_at_500": 0.5819488015101083,
+        "barrier_at_500_kcal": 23.546709976370217,
+        "physical_fmax_at_500": 0.0704961286424976
+      }
+    },
+    {
+      "name": "k20_a0p0001_ode",
+      "returncode": 0,
+      "wall_seconds": 492.7436900138855,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-top3-2000/k20_a0p0001_ode.log",
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k20_alpha0p0001_ode_budget2000.npz",
+      "configuration": {
+        "rank": 1,
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k20_alpha0p0001_ode_budget500.npz",
+        "spring_k": 20.0,
+        "alpha": 0.0001,
+        "optimizer": "ode",
+        "score": 0.06270804503482387,
+        "i_perp_at_500": 0.4547421847330934,
+        "barrier_at_500_kcal": 23.18524476688549,
+        "physical_fmax_at_500": 0.023501216309018014
+      }
+    },
+    {
+      "name": "k50_a0p0001_ode",
+      "returncode": 0,
+      "wall_seconds": 490.80824398994446,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-top3-2000/k50_a0p0001_ode.log",
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k50_alpha0p0001_ode_budget2000.npz",
+      "configuration": {
+        "rank": 2,
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k50_alpha0p0001_ode_budget500.npz",
+        "spring_k": 50.0,
+        "alpha": 0.0001,
+        "optimizer": "ode",
+        "score": 0.08315862680387597,
+        "i_perp_at_500": 0.47293697780050814,
+        "barrier_at_500_kcal": 23.298305814514375,
+        "physical_fmax_at_500": 0.024057591002739933
+      }
+    }
+  ]
+}

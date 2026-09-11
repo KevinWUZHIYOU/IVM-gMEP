@@ -1,0 +1,38 @@
+{
+  "child_pid": 14851,
+  "child_started_utc": "2026-09-03T19:41:41Z",
+  "command": [
+    "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+    "scripts/run_selected_ivm_full_state_history_replay_r6_nf30000.py",
+    "execute",
+    "--registration",
+    "registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B.json",
+    "--authorization",
+    "registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b.json",
+    "--mutagen-gate",
+    "registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_MUTAGEN_GATE_NF30000_20260904_R6B.json"
+  ],
+  "host": {
+    "architecture": "arm64",
+    "hostname": "Mac-mini.local",
+    "processor": "Apple M4"
+  },
+  "launch_disk": {
+    "free_bytes": 12120764416,
+    "path": "/Users/wuzhiyou/IVM_for_MEP",
+    "total_bytes": 245107195904,
+    "used_bytes": 232986431488
+  },
+  "lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "locks_acquired_utc": "2026-09-03T19:41:41Z",
+  "locks_released_utc": "2026-09-04T05:19:09Z",
+  "required_free_bytes": 8589934592,
+  "returncode": 0,
+  "schema": "bb-host-local-lock-launch-receipt-v1",
+  "status": "CHILD_EXITED_LOCKS_RELEASED",
+  "working_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+  "wrapper_pid": 14848
+}

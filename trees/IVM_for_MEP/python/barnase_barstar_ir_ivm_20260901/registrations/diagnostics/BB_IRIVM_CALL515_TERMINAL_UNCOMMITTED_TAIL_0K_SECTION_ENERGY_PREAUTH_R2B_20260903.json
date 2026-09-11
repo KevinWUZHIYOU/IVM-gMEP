@@ -1,0 +1,50 @@
+{
+  "canonical_two_lock_nonblocking_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "bytes": 4225,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_CONTRACT_R2B_20260903.json",
+    "sha256": "46996e90b3db4cf4496bca2b07532c963ec6b80fac7b270ac8a53a7632b2e4d7"
+  },
+  "coordinate_audit": {
+    "bytes": 2485,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.audit.json",
+    "sha256": "d8e1de581b4ae4c0ae4a742637cbee03658b464f21bf7169f3734b108a12b853"
+  },
+  "coordinate_manifest": {
+    "bytes": 135373288,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+    "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+  },
+  "created_utc": "2026-09-03T05:24:50.768610+00:00",
+  "evaluator": {
+    "bytes": 23078,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_call515_terminal_tail_0k_section_energy_r2.py",
+    "sha256": "7a0fc198c563700a85057dc83bd2d9a8335e2da15b079d5c6d5453708417e04a"
+  },
+  "force_calls": 0,
+  "observed_free_bytes": 28489281536,
+  "openmm_contexts_constructed": 0,
+  "optimization_N_F_contribution": 0,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_unused_path_stage_r2b.npz",
+  "path_stage_fresh_attempt_maximum": 0,
+  "physical_calls_started": 0,
+  "schema": "bb-irivm-call515-terminal-tail-section-energy-r2-v1-preauthorization-preflight",
+  "status": "PASS_ZERO_OPENMM_BEFORE_AUTHORIZATION",
+  "surface_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_energy_59x28_20260903_r2b.npz",
+  "surface_stage_fresh_attempt_maximum": 1650,
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "total_fresh_attempt_maximum": 1650
+}

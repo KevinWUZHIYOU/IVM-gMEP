@@ -1,0 +1,4 @@
+rank,spring_k,score,i_perp_at_2000,barrier_at_2000_kcal,physical_fmax_at_2000,tail_i_endpoint_change_percent,tail_i_range_percent,tail_barrier_drift_kcal,path
+1,20.0,0.04109863745121268,0.07435286149588331,20.487950853584056,0.00934844990675046,7.663637360167909,69.80057919950528,0.040176654184193694,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k20_alpha0p0001_ode_budget2000.npz
+2,1.0,0.06261759850417299,0.07920900217267207,20.279748869002937,0.013250487138493033,8.307239022861339,141.9865787880245,0.017167706609583888,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k1_alpha0p0001_ode_budget2000.npz
+3,50.0,0.0993056300535115,0.09436914712543307,20.57857284446772,0.01550365507996613,3.4526711548062883,67.9657246716619,0.027383107374152615,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k50_alpha0p0001_ode_budget2000.npz

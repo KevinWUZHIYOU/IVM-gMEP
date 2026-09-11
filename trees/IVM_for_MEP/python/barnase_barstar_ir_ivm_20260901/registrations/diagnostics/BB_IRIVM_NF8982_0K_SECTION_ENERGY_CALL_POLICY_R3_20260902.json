@@ -1,0 +1,39 @@
+{
+  "schema": "bb-irivm-nf8982-0k-section-energy-call-policy-v3",
+  "status": "FROZEN_BEFORE_ANY_SECTION_ENERGY_CALL",
+  "physical_energy_or_force_calls_started": 0,
+  "coordinate_geometry_reused_without_change": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_coordinates_59x28_20260902_r2.npz",
+    "sha256": "9259354b5fce0fb57e040436e7800cd1fc67cd7c1cc71305663fd915057cc02e"
+  },
+  "superseded_planning_fields_in_coordinate_manifest": {
+    "surface_energy_only_calls_planned": 1652,
+    "original_path_internal_energy_only_calls_planned": 30,
+    "total_energy_only_calls_planned": 1682,
+    "reason": "The R2 geometry is valid, but the execution count must inherit the two fixed endpoint energies rather than evaluate those two surface cells again."
+  },
+  "effective_energy_policy": {
+    "surface_energy_values_stored": 1652,
+    "surface_fresh_energy_only_attempts": 1650,
+    "surface_inherited_fixed_endpoint_values": 2,
+    "exact_original_path_internal_fresh_energy_only_attempts": 30,
+    "exact_original_path_inherited_fixed_endpoint_values": 2,
+    "total_fresh_energy_only_attempts": 1680,
+    "total_inherited_endpoint_values": 2,
+    "force_attempts": 0,
+    "optimization_N_F_contribution": 0
+  },
+  "endpoint_cache": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+    "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a",
+    "coordinate_pair_canonical_le_float64_sha256": "5788e22f86df91ed5500e88a8dc053f7408bd2fb39414de121a6eec36b833db1",
+    "energy_pair_canonical_le_float64_sha256": "24884695bc3bbecbf1e5007bf8f245bfe6d7eb5bf81725e986b8dd0ece088a31",
+    "force_pair_canonical_le_float64_sha256": "c28ab9e8ad515beb3cfd5de8cc09af542ff9c80a96815d8d1b8b17d03fd8e01c"
+  },
+  "attempt_policy": {
+    "maximum_lifetime_attempt_started_records": 1680,
+    "failed_or_open_attempt_policy": "fail closed; require a new superseding authorization and output rather than retrying under this authorization",
+    "successful_prefix_resume_policy": "exact coordinate-hash-bound successful WAL records may be reused",
+    "successes_are_not_substituted_for_attempts": true
+  }
+}

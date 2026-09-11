@@ -1,0 +1,26 @@
+{
+  "schema": "bb-irivm-nf8982-0k-section-coordinate-supersession-v1",
+  "status": "R1_SUPERSEDED_BEFORE_ANY_PHYSICAL_ENERGY_CALL",
+  "physical_energy_or_force_calls_started": 0,
+  "optimization_N_F_contribution": 0,
+  "superseded_contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_NF8982_0K_SECTION_FREEZE_CONTRACT_20260902_R1.json",
+    "sha256": "a2de54abef9445ed5c51d9a1765b02f088ee3843970b37e35c84018ff0ed8a87"
+  },
+  "superseded_coordinate_manifest": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_coordinates_59x28_20260902_r1.npz",
+    "sha256": "cc181fd6c6950cfbfc161a540b7651c026c0771cb7a0ba4ec3e1cab4806e8ea1"
+  },
+  "supersession_reasons": [
+    "The intended n=0 entry produced by np.arange was 1.3877787807814457e-17 rather than exact float64 zero, so the nominal center column was not byte-identical to center_path59_A.",
+    "The registered [-0.10, 0.44] Angstrom normal range did not cover the already known common-initial and early comparison paths, whose projected maxima reach approximately 0.624 Angstrom.",
+    "R1 did not store the exact original 32-image NF8982 path needed for separately accounted 30-internal-image energy evaluation."
+  ],
+  "replacement_policy": {
+    "schema": "bb-irivm-nf8982-0k-section-freeze-contract-v2",
+    "normal_grid": "n_j=-0.12+0.03*j Angstrom, j=0,...,27, with j=4 assigned exact float64 +0.0",
+    "surface_shape": [59, 28],
+    "stores_exact_original_path32": true,
+    "r1_data_forbidden_for_physical_evaluation": true
+  }
+}

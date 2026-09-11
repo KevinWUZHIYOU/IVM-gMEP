@@ -1,0 +1,123 @@
+{
+  "audit_sha256": "1734ae16beb7514a3c71aedbccf8857d227147abdee22ac08ea59a5f7c8af2f4",
+  "figure": "Figures/LEPS/leps_all_methods_metrics.pdf",
+  "figure_layout": {
+    "arrangement": "1x3",
+    "each_axes_box_aspect": 1.0,
+    "verified_display_width_to_height": [
+      1.0,
+      1.0,
+      1.0000000000000004
+    ]
+  },
+  "figure_sha256": "1176cc462bcf8275e6d55b86406e415cfb586778823bcf8f3676c0fdddc54a92",
+  "metric_contract": {
+    "densified_barrier": "500 total coordinate-wise linearly interpolated points",
+    "geometric_action": "sum over the 21 original segments of 0.5*(norm(grad V_i)+norm(grad V_{i+1}))*norm(x_{i+1}-x_i); all 22 nodes including endpoints, full gradient norm, no densification",
+    "geometric_action_tangent_note": "the full-gradient action is tangent-independent; the same Henkelman-Jonsson improved tangent is retained for I_perp",
+    "i_perp": "article path-length quadrature with Henkelman-Jonsson improved tangent",
+    "number_of_forces": "user-specified equivalent cost: uncached internal-image force evaluations + one per internal-image HVP; endpoints/cache hits excluded; all trials included",
+    "offline_metric_evaluations_counted_as_nof": false
+  },
+  "plot_script": "leps_action_baselines_20260910/analyze_and_plot.py",
+  "plot_script_sha256": "ce99b90b846e7b86bdce90518e0d8d682db6184f964d38ff92a189a7b6a707da",
+  "plotted_results": {
+    "IVM": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    },
+    "OBSM-FIRE": {
+      "path": "runs/obsm_fire/production_fire_stable_l0.85_n4_dt0.18_cfgc5d07bd3b321_budget3000.npz",
+      "sha256": "24dc2c8882d3cab39861fb69a8630b317532f26a79bd6c7fb913a1ce23faa456"
+    },
+    "OBSM-L-BFGS": {
+      "path": "runs/obsm_lbfgs/production_lbfgs_r5_l0.95_n1_s0.1_cfg78c1b29f7570_budget3000.npz",
+      "sha256": "b5ae71ab114e8dffb90be582b327c1c6468f13123289b4358cdd3ea143be22cb"
+    },
+    "ODE-NEB": {
+      "path": "runs/neb/neb_production_k10_cfgfe491f5a6c6f_budget5000.npz",
+      "sha256": "ae0c2bbf3f8fa8539bcaffaa98e0298b5f90661f145fcb5e7a5c6b61c4548b0a"
+    },
+    "Static-NEB": {
+      "path": "runs/neb/production_static_k10_dt0.05_cfgba1c63497f9a_budget3000.npz",
+      "sha256": "a8daa64a59d7316c4546f47591cbfcdd509c3744eb0def2390c3951c5cdcb046"
+    },
+    "String Method": {
+      "path": "runs/original_string/production_original_dt0.07_r1_cfg6446cefea5fd_budget3000.npz",
+      "sha256": "c480e8520ff37b493e20c8dd476655aee58d0ebbd119360eccd74f8971f1a4cd"
+    },
+    "StringNET": {
+      "configuration": {
+        "accounting": "force_plus_1_per_hvp_v3",
+        "beta": 1.0,
+        "budget": 20000,
+        "eligible": true,
+        "final_action": 1.6476674270699154,
+        "final_barrier": 1.3567196801149994,
+        "final_barrier_error": 0.01363360377089462,
+        "final_i_perp": 0.4038132837386064,
+        "force_calls": 11000,
+        "hvp": 8980,
+        "id": "f5637bc583dfb260",
+        "last_saved_nof": 19940,
+        "method": "StringNET",
+        "min_barrier_error": 0.006612729537974538,
+        "min_i_perp": 0.022060851431899616,
+        "nof": 19980,
+        "optimizer": "LBFGS",
+        "rate": 1.0,
+        "reparam": "ivm_spring",
+        "score": -8.340310123327846,
+        "source_sha256": "64452d7b67dad9dc457a57ad44a54cb160db7f17f89ad9de1f105881bea5ef1d",
+        "steps": 277,
+        "stop": "budget",
+        "switch_nof": 2040,
+        "tangent_backend": "batched_hj_verified_v1",
+        "threshold_nof": null,
+        "warmup": 50
+      },
+      "path": "leps_action_baselines_20260910/runs/f5637bc583dfb260.npz",
+      "sha256": "64452d7b67dad9dc457a57ad44a54cb160db7f17f89ad9de1f105881bea5ef1d"
+    },
+    "gMAM": {
+      "configuration": {
+        "accounting": "force_plus_1_per_hvp_v3",
+        "beta": null,
+        "budget": 20000,
+        "eligible": true,
+        "final_action": 6.875850462178222,
+        "final_barrier": 4.519322946393354,
+        "final_barrier_error": 3.176236870049249,
+        "final_i_perp": 0.08193844055993332,
+        "force_calls": 10000,
+        "hvp": 10000,
+        "id": "ac98a95a65d71eee",
+        "last_saved_nof": 19960,
+        "method": "gMAM",
+        "min_barrier_error": 3.168087434022235,
+        "min_i_perp": 0.08193844055993332,
+        "nof": 20000,
+        "optimizer": "Adam",
+        "rate": 0.01,
+        "reparam": "string",
+        "score": -3.2474545597148556,
+        "source_sha256": "381f891c559635ff7fb9038e48fb595d50e6d8d84188bd7aea5958a964977718",
+        "steps": 249,
+        "stop": "budget",
+        "switch_nof": null,
+        "tangent_backend": "batched_hj_verified_v1",
+        "threshold_nof": null,
+        "warmup": 0
+      },
+      "path": "leps_action_baselines_20260910/runs/ac98a95a65d71eee.npz",
+      "sha256": "381f891c559635ff7fb9038e48fb595d50e6d8d84188bd7aea5958a964977718"
+    }
+  },
+  "previous_registry": "leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_provenance.json",
+  "previous_registry_sha256": "98817eac71811c82ac8ce0ec7277ac628c2f7902ac2faf68923b6ab50503ebfd",
+  "replacement_date": "2026-09-10",
+  "selection": "leps_action_baselines_20260910/reports/selection.json",
+  "selection_sha256": "67bf7493301c8ecd1949401f88539952085655312b33340a73c1c14c984bdc98",
+  "source_csv": "leps_action_baselines_20260910/reports/leps_all_methods_metrics_source.csv",
+  "source_csv_sha256": "4ec052ae2aac367032bf838924ccd6b18d4aab3a135f44fb7f44d758cf23f958"
+}

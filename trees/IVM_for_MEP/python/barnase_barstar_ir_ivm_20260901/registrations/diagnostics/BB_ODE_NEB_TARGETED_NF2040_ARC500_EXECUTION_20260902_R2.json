@@ -1,0 +1,56 @@
+{
+  "schema": "bb-ode-neb-targeted-arc500-execution-contract-v1",
+  "status": "AUTHORIZED_AFTER_FROZEN_TARGET_SELECTION",
+  "physical_execution_authorized": true,
+  "activation_rule": "Activated only after the selected IR-IVM arc500 result/audit passed, targeted ODE-NEB round 1 passed, and the zero-OpenMM round-2 target selection froze the single official ODE-NEB N_F=2040 retained path.",
+  "target_selection": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R2.json",
+    "sha256": "8b5762aad446708b4f3cf3a68b588cf7c198a88acf22f6fa3ae99b922f445d24"
+  },
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_targeted_ode_neb_arc500.py",
+    "sha256": "4dd9c3f713b9d0729945c65d562652d13318ab626bfb25931a89622f109d157c"
+  },
+  "implementation_bindings": {
+    "target_selector": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_targeted_ode_neb_arc500.py",
+      "sha256": "f7ac46f21057fee888eb4d3af8c9aeacfde0af4dbbf1d8545f2ce23e49ce1242"
+    },
+    "common_arc500_evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ab56602fa94e3ab5f03b38b5210fc99430e128491ff3ea1e0b5967b21a2f5304"
+    },
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    }
+  },
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_targeted_nf2040_arc500_20260902_r2.npz",
+  "execution_protocol": {
+    "claim_mode": "observed",
+    "evaluate_only_paths_to_densify": true,
+    "distinct_retained_paths_only": true,
+    "energy_evaluations_per_path": 500,
+    "force_evaluations_per_path": 0,
+    "optimization_N_F_contribution": 0,
+    "fixed_endpoint_optimization_N_F": 0,
+    "allow_exact_energy_reuse": false,
+    "no_overwrite": true,
+    "append_only_energy_WAL": true,
+    "durable_attempt_started_before_each_physical_call": true,
+    "fsync_each_attempt_start_and_terminal_record": true
+  },
+  "lock_policy": {
+    "jobs_per_host": 1,
+    "acquire_both_before_first_physical_call": true,
+    "hold_both_through_last_physical_call": true,
+    "host_local_BB_locks": [
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ]
+  }
+}

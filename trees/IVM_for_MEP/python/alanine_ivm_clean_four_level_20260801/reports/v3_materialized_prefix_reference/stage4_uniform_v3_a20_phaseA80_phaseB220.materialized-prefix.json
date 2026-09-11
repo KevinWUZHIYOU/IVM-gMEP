@@ -1,0 +1,13 @@
+{
+  "alpha": 20.0,
+  "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v2_a20_phaseA80_phaseB220.npz",
+  "source_sha256": "32ea85cbb3278d084a0735af1d3d7d1546e51f272ef842a5cc76894baca55109",
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA80_phaseB220.npz",
+  "output_sha256": "668ff711b9293366ae7a5824aaa82a1fb181c8b9ae846855b3af64ac49049dfa",
+  "stop_rule_fired": true,
+  "selected_phase_b_call": 159,
+  "selected_total_force_evaluations": 2914,
+  "selected_i_perp": 0.00013475461874885676,
+  "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+  "independent_online_rerun_status": "pending_resource_release"
+}

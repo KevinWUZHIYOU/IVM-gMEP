@@ -1,0 +1,155 @@
+{
+  "closure": {
+    "WALs": [
+      {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.dense_joint_ef.wal.jsonl",
+        "sha256": "628698c646995e34c4835e5cc25e6acf4a8f3bf4636fc64fc806297c1903989d"
+      }
+    ],
+    "audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.audit.json",
+      "sha256": "101ea19a46d58d99d6e69a7368d9b341c1960764d78b94b634b3f422ff73e980"
+    },
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R4B.json",
+      "sha256": "3366d4f1aa304db127f3baf3c7feb6224dbe4aa3c7fff80b771b414bf6434f25"
+    },
+    "evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_ivm_short_four_joint_resume_r2.py",
+      "sha256": "dd0553dd303072c3e94d4779a46ab8431b1543a1304e495f8200f63870c3eae5"
+    },
+    "manifest": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.manifest.json",
+      "sha256": "1778e073196cd9394e6562b23a9049be5d6b5f95e70f22de28e7453fc53b0c49"
+    },
+    "result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.npz",
+      "sha256": "ca723874195d628f69748e174e9a08dd1dcdb6dd7415a057ebc14d0dcbaa0a14"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-02T14:22:27Z",
+  "include_all_pack_points": true,
+  "method": "IVM",
+  "pack_id": "ivm-early-four-measured-interim-r1",
+  "pack_spec_freezer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_joint_ef_cost_pack_spec.py",
+    "sha256": "beefa5cd731c52055be4ba7c34f9884b035917138ba827cddedcd94c82a49958"
+  },
+  "physical_calls_by_pack_spec_freezer": 0,
+  "points": [
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0002_arc500_joint_ef.npz",
+        "sha256": "3f844cfbaebe2e1a4b03359e533de9cc3c806275ba1a4f72b13f5dadf124a1af"
+      },
+      "densified_Delta_E_kcal_per_mol": 32534.508871798254,
+      "discrete_I_perp": 68167135.91306221,
+      "discrete_I_perp_evidence": {
+        "calls_per_image": 2,
+        "history_index": 1,
+        "kind": "sealed_online_history",
+        "replay_result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+          "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+        },
+        "verification_report": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+          "sha256": "dfa12125bd68420e9c196443121b34104f83202fde64113b37856281f7fae322"
+        },
+        "verification_schema": "bb-irivm-selected-legacy-replay-verification-v1",
+        "verification_status": "PASS_EXACT_OUTPUT_ONLY_PREFIX"
+      },
+      "label": "IVM_call2_NF60",
+      "optimization_N_F": 60,
+      "selected_path_sha256": "1bb9241f4c3ce5a8d89c9db5aa8386f2a243972ae648e79c4ddd18de69c1edf0"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0005_arc500_joint_ef.npz",
+        "sha256": "0122d171f8e4336642445b73d53a4d89d632f28b5ed0fe521716b5e808b7c465"
+      },
+      "densified_Delta_E_kcal_per_mol": 16762.917044769918,
+      "discrete_I_perp": 29407169.52263667,
+      "discrete_I_perp_evidence": {
+        "calls_per_image": 5,
+        "history_index": 4,
+        "kind": "sealed_online_history",
+        "replay_result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+          "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+        },
+        "verification_report": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+          "sha256": "dfa12125bd68420e9c196443121b34104f83202fde64113b37856281f7fae322"
+        },
+        "verification_schema": "bb-irivm-selected-legacy-replay-verification-v1",
+        "verification_status": "PASS_EXACT_OUTPUT_ONLY_PREFIX"
+      },
+      "label": "IVM_call5_NF150",
+      "optimization_N_F": 150,
+      "selected_path_sha256": "2b4291c4f83c8007bcded8ae3182fdbbd2519aa619a56e198c3f2af0afc3a0e4"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.shards/ivm_call0010_arc500_joint_ef_r2.npz",
+        "sha256": "83e933303caac9b2d21bc89284b25a7817c56688266a637d257ebf95888d0c02"
+      },
+      "densified_Delta_E_kcal_per_mol": 2255.5932804640006,
+      "discrete_I_perp": 897667.2039737597,
+      "discrete_I_perp_evidence": {
+        "calls_per_image": 10,
+        "history_index": 9,
+        "kind": "sealed_online_history",
+        "replay_result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+          "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+        },
+        "verification_report": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+          "sha256": "dfa12125bd68420e9c196443121b34104f83202fde64113b37856281f7fae322"
+        },
+        "verification_schema": "bb-irivm-selected-legacy-replay-verification-v1",
+        "verification_status": "PASS_EXACT_OUTPUT_ONLY_PREFIX"
+      },
+      "label": "IVM_call10_NF300",
+      "optimization_N_F": 300,
+      "selected_path_sha256": "b59b0c2647bc297fd551769e9b4a94e6e61a31eb1973e9afc3419a0cfcd22b8d"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.shards/ivm_call0050_arc500_joint_ef_r2.npz",
+        "sha256": "4bc40e92b4593f83491f463c7ce229088a7324f32d3a7bb05cd0cdff2d20ffbd"
+      },
+      "densified_Delta_E_kcal_per_mol": 602.8198952268627,
+      "discrete_I_perp": 952.0611021437114,
+      "discrete_I_perp_evidence": {
+        "calls_per_image": 50,
+        "history_index": 49,
+        "kind": "sealed_online_history",
+        "replay_result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+          "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+        },
+        "verification_report": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+          "sha256": "dfa12125bd68420e9c196443121b34104f83202fde64113b37856281f7fae322"
+        },
+        "verification_schema": "bb-irivm-selected-legacy-replay-verification-v1",
+        "verification_status": "PASS_EXACT_OUTPUT_ONLY_PREFIX"
+      },
+      "label": "IVM_call50_NF1329",
+      "optimization_N_F": 1329,
+      "selected_path_sha256": "39a429c34373b375a0edc5ad5c0f7bfc402c090acab2ae8c684447f4a2ac6a1f"
+    }
+  ],
+  "schema": "bb-joint-ef-cost-to-precision-pack-spec-v1",
+  "status": "COMPLETE_ZERO_OPENMM_VALIDATED_PACK"
+}

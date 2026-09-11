@@ -1,0 +1,31 @@
+{
+  "schema": "bb-remote-duplicate-old-data-cleanup-receipt-v1",
+  "status": "PASS_REMOTE_DUPLICATE_DELETED_LOCAL_COPY_RETAINED",
+  "created_utc": "2026-09-02T12:27:00Z",
+  "host": "wuzhiyou@100.74.85.3",
+  "authorization_basis": "User explicitly requested cleanup of obsolete, poor-performing, abandoned historical data.",
+  "purpose": "Provide headroom for the remote all-path history result and six preregistered arc-length-500 joint energy/full-force shards without lowering the disk reserve gate.",
+  "remote_target": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/ivm/ivm_idpp22_dbd_a10_step1_full500_central_state_ivm_cfge80d8e2ac545_budget500.npz",
+    "bytes_before": 777280291,
+    "sha256": "0a20af8148824a2def3a0f2e3e6f39f1ed79662827b7bcfe146c7cb89f06fc0b",
+    "open_file_matches": 0,
+    "current_campaign_reference_matches": 0
+  },
+  "recoverable_authoritative_copy": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_idpp22_20260804/runs/ivm/ivm_idpp22_dbd_a10_step1_full500_central_state_ivm_cfge80d8e2ac545_budget500.npz",
+    "host": "local",
+    "bytes": 777280291,
+    "sha256": "0a20af8148824a2def3a0f2e3e6f39f1ed79662827b7bcfe146c7cb89f06fc0b",
+    "byte_identical_to_remote_before_deletion": true
+  },
+  "deletion_scope": "the single remote duplicate file above; its local byte-identical copy is retained",
+  "postdelete_verification": {
+    "verified_utc": "2026-09-02T12:28:30Z",
+    "remote_target_absent": true,
+    "local_byte_identical_copy_present": true,
+    "filesystem_free_kib_after": 9728748,
+    "filesystem_free_gib_after": 9.278057098388672,
+    "current_remote_ir_ivm_process_unaffected": true
+  }
+}

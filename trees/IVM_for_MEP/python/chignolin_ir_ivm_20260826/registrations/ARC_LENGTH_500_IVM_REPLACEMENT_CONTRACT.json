@@ -1,0 +1,117 @@
+{
+  "contract_id": "chignolin_ir_ivm_promoted_to_ivm_arc_length_500_20260827_v1",
+  "purpose": "Redraw the Chignolin cost-to-precision candidate after promoting the selected IR-IVM result to the displayed IVM result and replacing every plotted dense barrier with one fixed whole-path arc-length 500-point diagnostic.",
+  "display_label_policy": "The selected IR-IVM run is displayed as IVM. The historical V9 IVM run is excluded, not overlaid.",
+  "source_old_candidate": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.pdf",
+    "pre_replacement_sha256": "0be0fb35fda72e4fa49582f3f86b4a1c23afe821716f642d76f287e600adb473"
+  },
+  "source_article_figure": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_cost_to_precision_total_nf_v9_20260730.pdf",
+    "sha256": "c56e61e7575b7f1cc784b946bd37e65682204579f7f85c3115b200b2dbdf37ff"
+  },
+  "baseline_summary": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_method_comparison_summary.json",
+    "sha256": "7d6c593ac70fe311d345364435e38d2941d494172c2dc70acfbfac922cb33754"
+  },
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/inputs/chignolin_clean.pdb",
+    "sha256": "04b122a0b98492b6fadae35772ffc307b8916ea65c8eaf959cb5187bbbfeab01",
+    "energy_backend": "real OpenMM CPU double precision"
+  },
+  "common_initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+  "optimization_cost_axis": "counter_vectors.sum(axis=1)",
+  "optimization_cost_includes_all_22_images": true,
+  "diagnostic_counts_excluded_from_optimization_axis": true,
+  "arc_length_500_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "endpoint_policy": "include_both_endpoints",
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "per_path_evaluator_policy": "direct OpenMMBackend.evaluate_joint at every grid point; exactly 500 fresh raw joint evaluations and no diagnostic cache",
+    "energy_backend": "real OpenMM CPU double precision",
+    "barrier_definition": "(max_j E(x(s_j)) - E(x(s_0))) in kcal/mol"
+  },
+  "independent_recomputation_source": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_arc500_independent_raw.npz",
+    "result_sha256": "15e4ed61e0e9c213055060566b98ee4739cc47263c2b5ab53f881153fe3a81f1",
+    "audit": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_arc500_independent_raw.json",
+    "audit_sha256": "c0adb3aa0f37692abd719f90be7afa8de6e1c88a007361885e2f4e33acddc1b7",
+    "calculation_script_sha256": "ae2fd312725be1d52ae2deb31a4b87b9e0e05142416e04389805ed236571ef60",
+    "path_binding_finalizer_sha256": "a3e8abb1a0e2125e98dc7be6db5fc69c24c9cc2c9110ee0a83a9890089c0d19c"
+  },
+  "temporal_sampling_policy": {
+    "IVM": "all publishable complete states: record zero or reparam_committed",
+    "ODE-NEB": "all 906 saved states, so the barrier first passage is exact over the stored history",
+    "Static-NEB": "the article standardized 48 checkpoints for the plotted curve; all 1000 raw states remain above the common I_perp threshold and this method is not used for speedup annotation",
+    "Original String": "the article standardized 48 checkpoints for the plotted curve; all 1000 raw states remain above the common I_perp threshold and this method is not used for speedup annotation",
+    "OBSM-FIRE": "all 168 saved states, so the barrier first passage is exact over the stored history"
+  },
+  "common_threshold_policy": "For each panel, use the strictest precision attained by all of IVM, ODE-NEB, and OBSM-FIRE; compute every first passage from the same metric history used in that panel.",
+  "methods": {
+    "IVM": {
+      "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+      "source_result_sha256": "e8ce449e55b975360bbc29fd49a8e28c1fe8c0618382eb37b0a86e022bdfe03a",
+      "source_algorithm_name": "IR-IVM",
+      "display_name": "IVM",
+      "eligibility": "initial_or_reparam_committed",
+      "record_selection": {
+        "policy": "all_eligible_states"
+      },
+      "resolved_record_indices_sha256": "4a1755efe78cd8a1acb6ba8354cb78dd5c8aa992ee76c33464225486f3ea0c8c",
+      "selection_role": "all 12 publishable complete IVM states"
+    },
+    "ODE-NEB": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_ode_k50_central_k50_alpha0p0001_ode_budget1000.npz",
+      "source_result_sha256": "68bc5c5a8608e173e650f194bf849127e583439862294f7afdae4fb4d03609ba",
+      "display_name": "ODE-NEB",
+      "eligibility": "all_saved_states",
+      "record_selection": {
+        "policy": "all_saved_states"
+      },
+      "resolved_record_indices_sha256": "80fb7167d0dda736d75a4a74824edf7733f887cbe2fef5a51c3bfba5e4a27479",
+      "selection_role": "all 906 stored states for exact barrier first passage"
+    },
+    "Static-NEB": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.npz",
+      "source_result_sha256": "8aa75a1cdee0cf82b2e46181c8633c6655277a18d37e9c738002546de0359fe0",
+      "display_name": "Static-NEB",
+      "eligibility": "explicit_saved_states",
+      "record_selection": {
+        "policy": "calls_from_dense_result",
+        "dense_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_static_k40_a0p012575_adaptive48.npz",
+        "dense_result_sha256": "5fda5bce0e2e4dc6f2397d7075b0f238d41010079b722daae3e24582f61cb0a3"
+      },
+      "resolved_record_indices_sha256": "89792f61eeb05885df05b99cb42c32dc41cc3c45fcecaeaf7c7558dc779e4231",
+      "selection_role": "article standardized 48 checkpoints, re-evaluated with arc-length 500"
+    },
+    "Original String": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.npz",
+      "source_result_sha256": "10778b9d36ffb6da7c2904cf024c5046137b6e103cd3581140ee440bd5ea5ea9",
+      "display_name": "Original String",
+      "eligibility": "explicit_saved_states",
+      "record_selection": {
+        "policy": "calls_from_dense_result",
+        "dense_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_original_dt0p012575_adaptive48.npz",
+        "dense_result_sha256": "b0e1b0edfd3bef041b545e674e4f81f286f834320e8881f097e7d2d37feafc9c"
+      },
+      "resolved_record_indices_sha256": "89792f61eeb05885df05b99cb42c32dc41cc3c45fcecaeaf7c7558dc779e4231",
+      "selection_role": "article standardized 48 checkpoints, re-evaluated with arc-length 500"
+    },
+    "OBSM-FIRE": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.npz",
+      "source_result_sha256": "0dc20cbb94fa5411d8bd6bd8d40f303766937c5327a7fbc2f965b71668bf7b4c",
+      "display_name": "OBSM-FIRE",
+      "eligibility": "all_saved_states",
+      "record_selection": {
+        "policy": "all_saved_states"
+      },
+      "resolved_record_indices_sha256": "1d9eab4d6a040a951015fe5d75e9c0d4de6ea4ac175f6f682d49896ad4d5e475",
+      "selection_role": "all 168 stored states for exact barrier first passage"
+    }
+  },
+  "diagnostic_output": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_ivm_arc_length_500.npz",
+  "candidate_figure_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.pdf",
+  "formal_figure_mutation_allowed": false
+}

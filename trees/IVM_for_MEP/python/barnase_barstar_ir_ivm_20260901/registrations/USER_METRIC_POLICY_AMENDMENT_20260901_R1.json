@@ -1,0 +1,103 @@
+{
+  "schema": "bb-ir-ivm-user-metric-policy-amendment-v1",
+  "amendment_id": "bb_ir_ivm_discrete_iperp_arc500_deltae_20260901_r1",
+  "created_utc": "2026-09-01T09:46:11Z",
+  "status": "USER_DIRECTED_ANALYSIS_AMENDMENT_BEFORE_FIRST_PROMOTION",
+  "parent_protocol": {
+    "path": "registrations/STAGED_SEARCH_PROTOCOL.json",
+    "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+  },
+  "user_direction": "The two primary metrics are discrete I_perp and densified Delta E.",
+  "timing_and_disclosure": {
+    "optimization_started_before_amendment": true,
+    "completed_screen_members_before_amendment": [
+      "bb_irivm_a1em1_r05_m05_inf480_r1"
+    ],
+    "running_screen_member_at_amendment": "bb_irivm_a1e1_r05_m05_inf480_r1",
+    "parameter_promotion_decisions_before_amendment": 0,
+    "observed_information_before_amendment": "The alpha=0.1 result and online sparse diagnostic logs for alpha=0.1 and the running alpha=10 member had been observed. This amendment is therefore reported as user-directed and not as outcome-blind preregistration.",
+    "bias_control": "Apply the same amended metric definitions to every eligible state of every candidate and every baseline before any promotion decision; do not selectively densify only favorable candidates."
+  },
+  "scope": {
+    "changes_optimization_algorithm": false,
+    "changes_optimization_NoF": false,
+    "changes_completed_or_running_trajectories": false,
+    "supersedes_for_parameter_ranking": "optimization_period_sparse_ranking in the parent protocol",
+    "supersedes_for_final_comparison": "the arc500 I_perp component of final_arc500_ranking in the parent protocol",
+    "preserves": [
+      "all frozen IR-IVM algorithm controls",
+      "all registered optimization budgets",
+      "eligible and ineligible path-state rules",
+      "the same-state rule",
+      "the staged controlled-scan and promotion counts",
+      "the optimization Number of Forces contract",
+      "the no-online-feedback rule"
+    ]
+  },
+  "primary_metrics": {
+    "discrete_I_perp": {
+      "path": "the scientifically eligible 32-image state",
+      "images": 32,
+      "optimized_internal_images": 30,
+      "tangent": "normalized central chord x[i+1]-x[i-1] on the 32-image path",
+      "quadrature": "interior half-adjacent-chord unnormalized integral",
+      "endpoint_force_contribution": 0,
+      "forces": "the already-paid forces at the 30 internal images of that exact eligible state",
+      "new_physical_calls": 0,
+      "units": "eV^2/A",
+      "article_label": "I_perp"
+    },
+    "densified_Delta_E": {
+      "source_path": "the same scientifically eligible 32-image state used for discrete I_perp",
+      "coordinate_space": "unweighted 3N Cartesian coordinates",
+      "path_representation": "piecewise linear through the 32 images",
+      "sampling": "equal cumulative arc length",
+      "number_of_points": 500,
+      "include_both_endpoints": true,
+      "grid_formula": "s_j = j L / 499 for j = 0,...,499",
+      "energy_evaluator": "the same canonical OpenMM 8.1.2 CPU/double energy oracle for every candidate, path state, and baseline",
+      "definition": "max_j E(x(s_j)) - E(x(s_0))",
+      "units": "kcal/mol",
+      "article_label": "Delta E",
+      "diagnostic_energy_evaluations_per_path": 500,
+      "diagnostic_force_evaluations_per_path": 0,
+      "optimization_NoF_contribution": 0,
+      "diagnostic_cache": false
+    }
+  },
+  "ranking_policy": {
+    "raw_metrics_are_primary": true,
+    "same_state_required": true,
+    "common_initial_path_densification": "Evaluate once with the identical 500-point rule and bind its path, coordinates, energies, and metric hashes.",
+    "normalization": {
+      "u_I": "discrete I_perp(state) / discrete I_perp(common initial path)",
+      "u_E": "densified Delta E(state) / densified Delta E(common initial path)",
+      "joint_score": "max(u_I, u_E)"
+    },
+    "per_run_score_at_budget_B": "Among eligible post-initial reparam_committed states with optimization NoF <= B, choose the one state with the smallest joint_score; never combine the I_perp from one state with the Delta E from another.",
+    "ranking_order": [
+      "smaller joint_score",
+      "smaller u_I on that same state",
+      "smaller u_E on that same state",
+      "smaller actual optimization NoF of that state",
+      "registered lexicographic order of alpha, then r, then m_max"
+    ],
+    "pareto_reporting": "Always report the two raw primary metrics and the Pareto relation. The joint score is a deterministic promotion rule, not a replacement for the two physical metrics.",
+    "right_censoring": "A valid run without a post-initial reparam_committed path is not rankable at that budget."
+  },
+  "diagnostic_execution_policy": {
+    "alpha_scan": "After all eight 480-NoF alpha members are sealed, evaluate densified Delta E for every eligible post-initial reparam_committed state before selecting the three alpha promotions.",
+    "later_stages": "At every promotion boundary, seal all optimization results in the comparison set first, then evaluate every eligible state under the same 500-point rule before selection.",
+    "failure_policy": "A path with any failed or missing densified energy evaluation has no valid densified Delta E and cannot be ranked; preserve its diagnostic ledger and do not substitute its sparse barrier.",
+    "no_feedback": "Offline diagnostics may select the next registered parameter setting or budget extension but may never alter a completed or running optimization trajectory.",
+    "ledger": "Record diagnostic energy attempts, successes, failures, point indices, source-path hash, densified-coordinate hash, energy hash, metric value, oracle hash, host, precision, and wall time separately from optimization NoF."
+  },
+  "plotting_policy": {
+    "left_metric": "discrete I_perp from the 32-image eligible path",
+    "right_metric": "densified Delta E from the uniform arc-length 500-point representation of that same eligible path",
+    "vertical_axis": "Number of Forces from optimization only",
+    "sparse_barrier_role": "runtime health diagnostic only; never plotted or used for ranking",
+    "dense_I_perp_role": "not a primary metric and not required for ranking or the requested figures"
+  },
+  "binding_rule": "Every selection receipt, densified diagnostic audit, promoted-member registration, final metric table, figure, and provenance document created after this amendment must record this amendment file and its SHA-256. Existing alpha-screen execution authorizations remain valid because this amendment changes only offline analysis and cannot affect their trajectories."
+}

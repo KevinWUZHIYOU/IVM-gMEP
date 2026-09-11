@@ -1,0 +1,59 @@
+{
+  "authorization_consequence": {
+    "bb_irivm_a1e1_r05_m08_inf4080_r1": "NOT_AUTHORIZED_AND_NOT_RUN",
+    "m_max_10_followup": "NOT_AUTHORIZED_AND_NOT_RUN"
+  },
+  "bindings": {
+    "candidate_A_diagnosis": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/diagnostics/BB_IRIVM_A1E1_R05_M05_INF4080_R2_CACHED_STALL_DIAGNOSIS_20260902.json",
+      "sha256": "2b573e99d936325034a6cad9b0426e906c7ade9028bff28f51c92b1ba01bc1ce"
+    },
+    "candidate_A_failure": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/failures/BB_IRIVM_A1E1_R05_M05_INF4080_R2_ALGORITHMIC_EARLY_STOP_20260902.json",
+      "sha256": "1d3eea23c847c7bfe537191eaa6f94e9b6686108352b41c84e5201c1976fba9a"
+    },
+    "candidate_B_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.audit.json",
+      "sha256": "c9535d06d6af06b83203fb3d55d8c171128da5b9bdb0b9c319115f7545eed930"
+    },
+    "candidate_B_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "sha256": "95870cc0f81d17caf62422f109cf5c77ea0e8240e4759aeb90a1e6de0f1d9d6b"
+    },
+    "candidate_B_lock_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf4080_r1.launch.json",
+      "sha256": "e6cd61167b188efe56c47d7e3cb5a7105ee940bb331dc3de58b6e58d4843a2db"
+    },
+    "candidate_B_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/screen/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "sha256": "6896c62db4964fcd218275e0898764519ee7906f249b11b03dce0df6232b7244"
+    },
+    "candidate_B_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.npz",
+      "sha256": "df069ff6cb3b36f2660d9f7b3403e260695f4b4b01b3da7ee3c436d9da56c275"
+    },
+    "candidate_B_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "prospective_design": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_CACHED_STALL_TARGETED_FOLLOWUP_DESIGN_20260902_R1.json",
+      "sha256": "50ac9fbb1d9d3870797a3d08b6c78e702d4242273c5520e5fc34165874815094"
+    }
+  },
+  "created_utc": "2026-09-01T20:21:59Z",
+  "decision_basis": {
+    "candidate_A_terminal_class": "ALGORITHMIC_EARLY_STOP",
+    "candidate_B_actual_optimization_N_F": 4056,
+    "candidate_B_post_initial_reparam_committed_path_count": 3,
+    "candidate_B_registered_optimization_N_F_upper_bound": 4080,
+    "candidate_B_remaining_registered_N_F": 24,
+    "candidate_B_terminal_class": "COMPLIANT_4080_UPPER_BOUND_WITH_ATOMIC_REMAINDER",
+    "interpretation": "Candidate B supplies a compliant long-budget IR-IVM trajectory with at least one post-initial reparameterization-committed path; therefore neither prospective trigger clause is satisfied.",
+    "prospective_logical_rule": "candidate B is classified ALGORITHMIC_EARLY_STOP after its terminal audit, or the terminal audits of candidates A and B establish that neither supplies a compliant 4080-N_F result",
+    "trigger_result": false
+  },
+  "diagnostic_information_used": false,
+  "schema": "bb-irivm-cached-stall-followup-trigger-decision-v1",
+  "status": "A8_NOT_TRIGGERED"
+}

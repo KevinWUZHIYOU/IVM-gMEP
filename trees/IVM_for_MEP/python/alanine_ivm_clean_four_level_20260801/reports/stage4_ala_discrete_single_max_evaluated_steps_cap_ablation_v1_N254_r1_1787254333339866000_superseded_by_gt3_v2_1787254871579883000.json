@@ -1,0 +1,37 @@
+{
+  "status": "superseded_unlaunched",
+  "superseded_protocol_id": "stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_v1",
+  "superseding_protocol_id": "stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_gt3_v2",
+  "created_unix": 1787254871.581438,
+  "reason": "user objective updated maxstep>3 before any launch",
+  "new_hard_constraint": "max_evaluated_steps > 3",
+  "superseded_preregistration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_v1_N254_r1_1787254333339866000_preregistered.json",
+    "sha256": "cb0fd4ef2368eed44f83180452d3939c9be44fb7cb8736379464e176394890c9"
+  },
+  "superseded_source_files_unchanged": {
+    "wrapper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_max_steps_cap_ablation.py",
+      "sha256": "d928c5afe373e8edb2e56772bcc8a790117b7d1fc458d0f70509ce985984d540"
+    },
+    "launcher": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_max_steps_cap_ablation_grid.py",
+      "sha256": "879adfe45ce260a27d361c9eb27c3f8f73a277fb93c75b28f270ca622bf4cdbf"
+    },
+    "tests": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_max_steps_cap_ablation.py",
+      "sha256": "caf136d8e4eb4fc6db6ffefb81d677e4c6d8dd090580a9f9e8d17286d6170796"
+    }
+  },
+  "zero_output_evidence": {
+    "checked_run_root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_v1",
+    "checked_log_root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_v1",
+    "run_file_count": 0,
+    "log_file_count": 0,
+    "planned_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_max_evaluated_steps_cap_ablation_v1_N254_r1_1787254333339866000.json",
+    "planned_report_exists": false,
+    "proof": "no v1 run/log files and no planned formal report before supersession"
+  },
+  "superseded_preregistration_remains_immutable": true,
+  "barrier_data_accessed": false
+}

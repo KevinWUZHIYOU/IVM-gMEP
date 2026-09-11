@@ -1,0 +1,70 @@
+{
+  "design_id": "bb_irivm_local_interaction_2x2x2_20260902_r1",
+  "created_utc": "2026-09-01T16:15:29Z",
+  "status": "FROZEN_BEFORE_FIRST_NEW_LOCAL_INTERACTION_PHYSICAL_CALL",
+  "fixed_controls": {
+    "optimization_Number_of_Forces_upper_bound": 480,
+    "physical_max_step_angstrom": 1.0,
+    "eta": 1.1,
+    "history": 7,
+    "reparameterization": "mandatory state_curve every outer iteration",
+    "fixed_endpoints_optimization_Number_of_Forces": 0
+  },
+  "factor_levels": {
+    "alpha": [10.0, 1.0],
+    "r": [0.1, 0.7],
+    "m_max": [5, 8]
+  },
+  "selection_bindings": {
+    "alpha": {
+      "path": "../reports/selections/BB_IRIVM_ALPHA_CONFIRMATION_SELECTION_20260901_R1.json",
+      "sha256": "e45fb79a37ac5ef87a86927ed0790490973c2ff4b6210a35f9f2cc4e3bd5f1a9"
+    },
+    "r": {
+      "path": "../reports/selections/BB_IRIVM_R_SCAN_SELECTION_20260901_R1.json",
+      "sha256": "ba588e8516e297cc85a3852e337c53e6543cf394d56586c11dbfaaf923311a97"
+    },
+    "m_max": {
+      "path": "../reports/selections/BB_IRIVM_M_MAX_SCAN_SELECTION_20260902_R1.json",
+      "sha256": "1c4cb4bc9b7a7dfc29f2e1fb798499413c57ba19e2e28ec79cfa91ebe36aa9b6"
+    },
+    "efficient_scan_amendment_sha256": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46",
+    "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+  },
+  "exact_existing_members": [
+    {
+      "alpha": 10.0,
+      "r": 0.1,
+      "m_max": 5,
+      "result": "../runs/screen/ivm_bb_irivm_a1e1_r01_m05_inf480_r1_central_state_ivm_cfg72506806a3aa_budget480_storagecommitted.npz",
+      "result_sha256": "c4d5dc51e2967235552ae8bb02e199a0b6ed74c367fe3526b6c21e41c8a64472",
+      "audit_sha256": "e7565cc62676c33d1ed6782b7e075cf9985839069d880bdf1dc081810a16703a"
+    },
+    {
+      "alpha": 10.0,
+      "r": 0.1,
+      "m_max": 8,
+      "result": "../runs/screen/ivm_bb_irivm_a1e1_r01_m08_inf480_r1_central_state_ivm_cfg67bbc85b263f_budget480_storagecommitted.npz",
+      "result_sha256": "b628e656d743c5dbc74886b90a4bb46a49e84129bff9f889780fb15641d3fcf8",
+      "audit_sha256": "c1c51907d96fa243d607b22c465352b39f1a90ad676131988a93aaa88ef40e23"
+    },
+    {
+      "alpha": 10.0,
+      "r": 0.7,
+      "m_max": 5,
+      "result": "../runs/screen/ivm_bb_irivm_a1e1_r07_m05_inf480_r1_central_state_ivm_cfg8e17e0864fdf_budget480_storagecommitted.npz",
+      "result_sha256": "f6dd1b05e376f528eb63aaa5d5368280418690ecfd31ac9ff76fd99ab14f20de",
+      "audit_sha256": "52c659156bf4e5453bc608520b9ac9dc1588444b9ebac722763c67ea0cd77c3c"
+    }
+  ],
+  "new_members": [
+    {"alpha": 10.0, "r": 0.7, "m_max": 8, "assigned_host": "local"},
+    {"alpha": 1.0, "r": 0.1, "m_max": 5, "assigned_host": "local"},
+    {"alpha": 1.0, "r": 0.1, "m_max": 8, "assigned_host": "remote"},
+    {"alpha": 1.0, "r": 0.7, "m_max": 5, "assigned_host": "remote"},
+    {"alpha": 1.0, "r": 0.7, "m_max": 8, "assigned_host": "remote"}
+  ],
+  "selection_rule": "freeze all eight physical results before any new arc-length-500 diagnostic; evaluate every eligible fully reparameterized state with exact-path reuse when hash-identical; select using the frozen same-state two-metric joint order while reporting raw metrics and Pareto relations",
+  "concurrency": "one BB task per host, jobs=1, all thread caps one, two host-local fcntl locks",
+  "schema": "bb-irivm-local-interaction-design-v1"
+}

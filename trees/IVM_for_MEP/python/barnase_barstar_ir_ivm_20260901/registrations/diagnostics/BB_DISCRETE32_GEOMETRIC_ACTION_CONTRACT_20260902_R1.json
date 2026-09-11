@@ -1,0 +1,145 @@
+{
+  "audit_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.audit.json",
+  "code_and_topology": {
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "contract_freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_discrete32_geometric_action_contract.py",
+      "sha256": "05a952a695d7c628881413668475e4bc5bf8abd6b0bd6d2a66cb18aff6f9e0dc"
+    },
+    "evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_discrete32_geometric_action.py",
+      "sha256": "c7139d24636c92f9b0c5d4fae408b010de1b2820f3e9c26caea69f35aa2227fb"
+    },
+    "execution_authorizer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_discrete32_geometric_action.py",
+      "sha256": "1f3efe02a8492f9a299a87670fdb0154d7dfb26af3fe59331ef0b9944946e453"
+    },
+    "plotter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/plot_bb_discrete32_geometric_action.py",
+      "sha256": "d67b93c824bef11c65031cd04d24f76574b1bddd1d2665333197a4006f93e4df"
+    },
+    "tests": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/tests/test_bb_discrete32_geometric_action.py",
+      "sha256": "cce6ad1640b2bb71aaea46236d8a7770364425249a0aba740627e58fc5ccd5e6"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_discrete32_geometric_action.py",
+    "sha256": "c7139d24636c92f9b0c5d4fae408b010de1b2820f3e9c26caea69f35aa2227fb"
+  },
+  "execution_authorization_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DISCRETE32_GEOMETRIC_ACTION_EXECUTION_AUTHORIZATION_20260902_R1.json",
+  "execution_authorizer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_discrete32_geometric_action.py",
+    "sha256": "1f3efe02a8492f9a299a87670fdb0154d7dfb26af3fe59331ef0b9944946e453"
+  },
+  "figure_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_near_nf9990_discrete32_geometric_action.pdf",
+  "figure_provenance_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_near_nf9990_discrete32_geometric_action_provenance.json",
+  "figure_publication_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_near_nf9990_discrete32_geometric_action_publication.json",
+  "formula": {
+    "action_unit": "eV (also stored after fixed conversion to kcal/mol)",
+    "energy_reference_term": false,
+    "force_identity": "OpenMM F=-grad(V), hence ||F||_2=||grad(V)||_2",
+    "force_unit": "eV/angstrom",
+    "id": "original32-segment-trapezoid-int-norm-gradV-dell-v1",
+    "mass_weighting": false,
+    "quadrature": "segmentwise trapezoidal rule on force norms",
+    "text": "S_hat[0]=0; S_hat[i]=sum_{k<i} 0.5*(||F_k||_2+||F_{k+1}||_2)*||x_{k+1}-x_k||_2",
+    "x_unit": "angstrom"
+  },
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "local",
+  "jobs": 1,
+  "joint_EF_WAL_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.joint_ef.wal.jsonl",
+  "label": "bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1",
+  "manuscript": {
+    "bb_metric_evidence": "main.tex lines 1959--1971; G=I_9396",
+    "definition_evidence": "main.tex lines 197--206; \\hat S=\\int_\\varphi |\\nabla V| d\\ell",
+    "excluded_distinct_metric": "I_arc in main.tex lines 1068--1070 is not used",
+    "full_oriented_action_evidence": "main.tex lines 823--836",
+    "source": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/main.tex",
+      "sha256": "6981b20e24fd83b5ad326a187a289e01c39e6e4252a3a4e6d321c61cea672a40"
+    }
+  },
+  "physical_call_policy": {
+    "IVM_fixed_endpoint_fresh_joint_EF_attempt_maximum": 0,
+    "IVM_internal_fresh_joint_EF_attempt_maximum": 30,
+    "ODE_NEB_fresh_joint_EF_attempt_maximum": 0,
+    "diagnostic_calls_only": true,
+    "joint_getState_getEnergy_and_getForces": true,
+    "maximum_joint_vs_energy_only_abs_drift_eV": 1e-06,
+    "optimization_N_F_contribution": 0
+  },
+  "physical_execution_requires_separate_authorization": true,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.npz",
+  "result_publication_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.publication.json",
+  "sampling": {
+    "coordinate_metric": "unweighted Cartesian Euclidean",
+    "densification": "none",
+    "images": 32,
+    "interpolation": "none",
+    "segments": 31,
+    "smoothing": "none"
+  },
+  "schema": "bb-discrete32-path-dependent-geometric-action-contract-v1",
+  "scientific_quantity": "fixed-endpoint path-dependent part of the geometric action",
+  "source_artifacts": {
+    "IVM_exact_path_and_energy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_original_path32_energy_20260902_r4.npz",
+      "sha256": "7f654f6aeda97698f8919e9c5e0275531c85108cd83dc5b8eb94fb920ae8e58b"
+    },
+    "IVM_exact_path_and_energy_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_original_path32_energy_20260902_r4.audit.json",
+      "sha256": "e4a121e6cb01de5b46b24ae1c1407024196a3078c7696c5de92e5265ebdbb79d"
+    },
+    "ODE_NEB_internal_joint_EF": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf09990_batch_0333_EF30.npz",
+      "sha256": "0f8c84b0e11fa191db9163c13fca8f10504aa685952a4c728b4043b5eba40ae0"
+    },
+    "fixed_endpoint_joint_EF_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    }
+  },
+  "source_paths": {
+    "IVM": {
+      "call_per_image": 318,
+      "optimization_N_F": 8982,
+      "path_sha256": "46f54b316a6138d294150c810c14b5eedb14921a4a02717f61239cce9b7965bb"
+    },
+    "ODE-NEB": {
+      "optimization_N_F": 9990,
+      "path_sha256": "4c40f30af44fdbda87684d887136bcb1b71f6b20f6785892d50fd10ffcfdff09"
+    }
+  },
+  "status": "FROZEN_BEFORE_FIRST_GEOMETRIC_ACTION_DIAGNOSTIC_CALL",
+  "storage_and_durability_policy": {
+    "all_32_coordinates_energies_full_forces_for_both_methods": true,
+    "append_only_fsync_WAL_with_base64_little_endian_full_force": true,
+    "atomic_no_overwrite_result_audit_figure_provenance": true,
+    "coordinate_energy_force_array_hashes": true,
+    "estimated_final_bytes": 67108864,
+    "failed_or_open_attempt_requires_superseding_authorization_and_new_output": true,
+    "minimum_free_bytes": 2147483648,
+    "successful_prefix_resume_requires_exact_coordinate_hash": true
+  },
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DISCRETE32_GEOMETRIC_ACTION_PREAUTH_PREFLIGHT_20260902_R1.json"
+}

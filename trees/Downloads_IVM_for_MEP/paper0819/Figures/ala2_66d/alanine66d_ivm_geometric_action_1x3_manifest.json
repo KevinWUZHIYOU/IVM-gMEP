@@ -1,0 +1,260 @@
+{
+  "status": "registered_and_cited_in_paper0819",
+  "purpose": "registered 1x3 cost-to-precision figure with discrete geometric action",
+  "manuscript_registration": {
+    "status": "registered",
+    "main_tex": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/main.tex",
+    "figure_copy": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/ala2_66d/alanine66d_ivm_geometric_action_1x3.pdf",
+    "figure_label": "fig:Ala2_convergence",
+    "registered_date": "2026-09-06"
+  },
+  "selected_ivm_controls": {
+    "alpha": 10.0,
+    "residual_ratio": 0.7,
+    "inner_max_steps": 5,
+    "total_internal_nf_budget": 5000
+  },
+  "action_definition": {
+    "display_symbol": "\\widehat{S}",
+    "continuous": "integral_path norm(grad V) d ell",
+    "discrete": "sum_i 0.5*(norm(gradV_i)+norm(gradV_(i+1)))*norm(x_(i+1)-x_i)",
+    "tangent": "normalized central difference: x[i+1] - x[i-1]",
+    "quadrature": "polygonal arc-length trapezoid",
+    "densification": false,
+    "unit": "kcal/mol"
+  },
+  "action_comparison": {
+    "target_kcal_per_mol": 5.0,
+    "threshold_policy": "fixed round plotting threshold selected after calculation for illustration only",
+    "ivm_first_passage_NF": 2233,
+    "ode_neb_first_passage_NF": 91382,
+    "ode_neb_over_ivm": 40.923421406180026,
+    "ivm_best_kcal_per_mol": 4.906956048883713,
+    "ode_neb_best_kcal_per_mol": 4.942399719945519
+  },
+  "common_y_axis": {
+    "label": "Number of Forces",
+    "minimum": 0,
+    "maximum": 110000
+  },
+  "marker_policy": {
+    "reference": "paper0819 Figure 4 shared-method trajectory markers",
+    "mapping": {
+      "ivm": {
+        "marker": "o",
+        "markersize": 3.1
+      },
+      "ode_neb": {
+        "marker": "s",
+        "markersize": 2.9
+      },
+      "static_neb": {
+        "marker": "v",
+        "markersize": 2.8
+      },
+      "original_string": {
+        "marker": "D",
+        "markersize": 2.7
+      },
+      "obsm_fire": {
+        "marker": "s",
+        "markersize": 2.8
+      },
+      "obsm_bfgs": {
+        "marker": "P",
+        "markersize": 2.8
+      }
+    },
+    "marker_face_color": "white",
+    "marker_edge_width": 0.7,
+    "target_markers_per_curve": 8,
+    "figure4_plotter": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_with_irivm.py",
+      "sha256": "1f890675445c62bec582438c4ac3ddc486ff066a6c9a7f80449294a9676d2202"
+    },
+    "figure4_style_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/plotting/plot_q10_article_muller12.py",
+      "sha256": "81c4c41bd79fdce97fc1b085c97918fbbf3982ecfbe02f6f49a5486b5b78a7fe"
+    }
+  },
+  "diagnostic": {
+    "contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/ala_discrete_geometric_action_v5_preregistered.json",
+      "sha256": "48eb99096e6aa1e569f6ef15a3b5c86dac0affcbaea2c563df42f60dcd55ffba"
+    },
+    "result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/ala_discrete_geometric_action_v5.npz",
+      "sha256": "d19d8efacf4b48b31ace4a87ff6857b04f65c6be9b3a1172db9e4506f58076eb"
+    },
+    "audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/ala_discrete_geometric_action_v5.audit.json",
+      "sha256": "797e24ffc28bd8684fccdb8b689089057dd6dd188ac53d80b383d387343c5ee3"
+    },
+    "selected_path_count": 5388,
+    "diagnostic_joint_evaluations": 118536,
+    "diagnostic_cost_excluded_from_optimization_axis": true
+  },
+  "original_two_panel_input": {
+    "manifest": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_delta_aware_grid_ivm_replacement_1x2_preview_manifest.json",
+      "sha256": "b6b8ebd220d81e750c0b5d9c6f4953df87fc9be00d30819ccac740c15e82c6b7"
+    },
+    "source_csv": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_delta_aware_grid_ivm_replacement_1x2_preview_source.csv",
+      "sha256": "93e9a938c289f964fb509f57ab861c8ce4e93e612c0f22820b2b5a699643176d"
+    },
+    "grid_ivm": {
+      "controls": {
+        "alpha": 10.0,
+        "residual_ratio": 0.7,
+        "inner_max_steps": 5,
+        "total_internal_nf_budget": 5000
+      },
+      "result": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_inexact_reparam_grid_v1/members/ivm_stage4_ala_discrete_inexact_reparam_grid_v1_a1e1_rr70_c05_tnf5000_r1_central_state_ivm_cfgc3a418a9c878_budget5000.npz",
+        "sha256": "0da1bbab469de81ca5b9229c4ebef656b7688ccb79c822ec14f0f4c92226d161"
+      },
+      "task_artifacts": [
+        {
+          "task_id": "88e150f45ce2b32ba3af5b98f94a96ac0a98495d73bb1ddb0efe7ac5c20f93ed",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/88/88e150f45ce2b32ba3af5b98f94a96ac0a98495d73bb1ddb0efe7ac5c20f93ed.json",
+          "sha256": "c4a78634eea12a4419d652a60ed1cc51b8042091690965ecb23468185a2e9c26"
+        },
+        {
+          "task_id": "0fc65c0fb54ae7fbd84ab1f79620ced185f51ab0586266635e9824790d0c7e5a",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/0f/0fc65c0fb54ae7fbd84ab1f79620ced185f51ab0586266635e9824790d0c7e5a.json",
+          "sha256": "9488642b6ce6c43f5130ef76401290819fe495580e079381c5184b064d7db961"
+        },
+        {
+          "task_id": "c2d8f2ff7c13c7ee67ba910917a0e98486d2d8e91f216102fde076cb5bd4c961",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/c2/c2d8f2ff7c13c7ee67ba910917a0e98486d2d8e91f216102fde076cb5bd4c961.json",
+          "sha256": "c0d90e1dcb9b996af859cf28aad9eb881b5ddba86c993f930bee4a68add05a47"
+        },
+        {
+          "task_id": "9d9138ed99ac4e4b48d13091d849bcce0b54e5f46c1d461f91154d2dcad02634",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/9d/9d9138ed99ac4e4b48d13091d849bcce0b54e5f46c1d461f91154d2dcad02634.json",
+          "sha256": "4d1fec4cd8d718b6b37978326f09114a84020837f69af2a2c1aba9f06689038d"
+        },
+        {
+          "task_id": "b54c792880bf4ff80c1021fa4286959c3240b54decc538b8231945d07f024fd7",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/b5/b54c792880bf4ff80c1021fa4286959c3240b54decc538b8231945d07f024fd7.json",
+          "sha256": "9c5648c7197930bc38413c0ea65128ea76d1e600d10357b35eb23c3b646f7b47"
+        },
+        {
+          "task_id": "c559eec3f21a3f93f88901624b7c94712831a160be700cdc45d478ee503bb5f7",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/c5/c559eec3f21a3f93f88901624b7c94712831a160be700cdc45d478ee503bb5f7.json",
+          "sha256": "f33aa8b94fe9dd0312c3304e447ffae3ea6c740732b39f01ac6b81738feaf9f5"
+        },
+        {
+          "task_id": "d51d0acc0b573d2d2c36717c550b77d6cb06b86bec7ef7075fdcc41053e588a3",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/d5/d51d0acc0b573d2d2c36717c550b77d6cb06b86bec7ef7075fdcc41053e588a3.json",
+          "sha256": "bdb14f596d7debe9c0217772c9f7f52342dbc692105f4c8d2b234ea7dcc341c0"
+        },
+        {
+          "task_id": "63062920f99f8b68b8faa5a34ce97b3e1f23c27721ca0bba051d008d5f8911db",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/63/63062920f99f8b68b8faa5a34ce97b3e1f23c27721ca0bba051d008d5f8911db.json",
+          "sha256": "d7cdc7396bace881066747359a950e01b84fb16a657fbdacc2c32d34be12ddb0"
+        },
+        {
+          "task_id": "6ce44411ec0b8bdf25f55130ed613d9023b979e6c811f9ccc632dc584b8d6e4b",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/6c/6ce44411ec0b8bdf25f55130ed613d9023b979e6c811f9ccc632dc584b8d6e4b.json",
+          "sha256": "2125e2da84bf899cc3a5fa6e5931a3a4f2d088028b75b09d21582a6f5d55d53b"
+        },
+        {
+          "task_id": "47b9d99ecc0e6dd99538d086721da493fe8d8a00b8979677fe1399975de273e9",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/47/47b9d99ecc0e6dd99538d086721da493fe8d8a00b8979677fe1399975de273e9.json",
+          "sha256": "58fe6ea33a29362525ed86568d6d7b1429eb0ff9aa2647605cccc221664de7c3"
+        },
+        {
+          "task_id": "b22e9bd7a7474d237b808ddc383beb699b54b9374d71dd0a0edc65627e4e8537",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/b2/b22e9bd7a7474d237b808ddc383beb699b54b9374d71dd0a0edc65627e4e8537.json",
+          "sha256": "fc208c7769f812e697cee0200854f7eefd10cc2fcdcf70101e0e18ac3752396d"
+        },
+        {
+          "task_id": "1ba992f74f88f2efd4edd747892ffb7424c6fcdbc9f60d7f95e5d225630543c2",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/1b/1ba992f74f88f2efd4edd747892ffb7424c6fcdbc9f60d7f95e5d225630543c2.json",
+          "sha256": "a823b34662e8c84ba18de3e3308b4d609ebc22d55fe48525048c8fa27be7f9bb"
+        },
+        {
+          "task_id": "6b049860d9203158840327ea06f9ea63e17e7a574cbf431f5556f89ce1e1006c",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/6b/6b049860d9203158840327ea06f9ea63e17e7a574cbf431f5556f89ce1e1006c.json",
+          "sha256": "df4953159aa75a1dfbec8ef6fa821a566dec5423869bfde14d999c850a989c03"
+        },
+        {
+          "task_id": "7d18fcab9168d1fc1b9f1564311f5b344df7cd274d92755dfe27ae850775574f",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/7d/7d18fcab9168d1fc1b9f1564311f5b344df7cd274d92755dfe27ae850775574f.json",
+          "sha256": "53166ccbaf54d940ca11c7f1b69e27bee5db6cd92f93c391fc906e969fb72760"
+        },
+        {
+          "task_id": "62449fd08ea4c4b078661c1c10905d929c0402a72b568a13c11bc2a2b7214ea0",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/62/62449fd08ea4c4b078661c1c10905d929c0402a72b568a13c11bc2a2b7214ea0.json",
+          "sha256": "93412c2dd04a71e0e2bc971115df5527f0cafbcd536d3a59525b4fbaf553e646"
+        },
+        {
+          "task_id": "ac20593bd6e2c3db54e78ebee97294aabe2cf3cb4959014ffcdebf83acfa2394",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/ac/ac20593bd6e2c3db54e78ebee97294aabe2cf3cb4959014ffcdebf83acfa2394.json",
+          "sha256": "54f97932d6b13ae67f9d99b38ec30fc00b2afa76c1ae9760c1a56d1ae79197b3"
+        },
+        {
+          "task_id": "d0b6961004291236a7aca6615422a4733543feb1ac0f9dfd337a92fdd59bc183",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/d0/d0b6961004291236a7aca6615422a4733543feb1ac0f9dfd337a92fdd59bc183.json",
+          "sha256": "e117d052e9d126813bdbb544a718397b9749be5217fad6da8e5dd5ee9891f5e4"
+        },
+        {
+          "task_id": "08b297d0f00771f766ea594953956d8de0a19ae5f1dd0c6c29416af516456ccb",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/08/08b297d0f00771f766ea594953956d8de0a19ae5f1dd0c6c29416af516456ccb.json",
+          "sha256": "7572dba80b494a2b801f01c703e7778486a686e61e4afe708b42313b88d4c3bd"
+        },
+        {
+          "task_id": "73c03a5917b6bd45ca12df188f76e74bc74524e6db327509421ee86e3c73e6af",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/73/73c03a5917b6bd45ca12df188f76e74bc74524e6db327509421ee86e3c73e6af.json",
+          "sha256": "91b6afd28ecba251d0bcd3fb4e22a9f25bdaa531981ae88a384ff778117d412d"
+        },
+        {
+          "task_id": "de3547b4df70e47f88d8757ab668a54e50a7e9af2b605967b1eb73f53fce089e",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/de/de3547b4df70e47f88d8757ab668a54e50a7e9af2b605967b1eb73f53fce089e.json",
+          "sha256": "9265edb7a67d5c41f8610b3444e76ded0384ecc61f0957ab15039cb519121fb3"
+        },
+        {
+          "task_id": "07df6f034b8aa00c55809343d80695b3114e01a089bcc0046225c1e619115811",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/07/07df6f034b8aa00c55809343d80695b3114e01a089bcc0046225c1e619115811.json",
+          "sha256": "c8c17c879454c644686379ac6a04a56925c07e4aa6638844f494ff5a653527e0"
+        },
+        {
+          "task_id": "88e60e0ddaca5ba742b57bb6b15e5137912f33c4cbfbefe3732c7853fb59be95",
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000/tasks/88/88e60e0ddaca5ba742b57bb6b15e5137912f33c4cbfbefe3732c7853fb59be95.json",
+          "sha256": "60a2c918c29fa12626c0688241b0f4d0fc5f8c69a44febdf9103c5d9e566aef8"
+        }
+      ],
+      "eligible_state_count": 22,
+      "iperp_record_count": 22,
+      "barrier_record_count": 7,
+      "best_barrier": 2.4626005431228144,
+      "best_barrier_nf": 672
+    }
+  },
+  "code": {
+    "plotter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/plotting/plot_ala_delta_aware_geometric_action_1x3.py",
+      "sha256": "7bf962ffb202af9ade5373595926ddf64ba5d174a294b051ccd1335ca69ee838"
+    },
+    "action_evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/metrics/postprocess_ala_geometric_action.py",
+      "sha256": "ee21e6f3ae143fbf8bb58277e7cd828c4259d2f0940085feda447f2f9ebad430"
+    },
+    "delta_plotter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/plotting/plot_ala_delta_aware_grid_ivm_replacement_preview.py",
+      "sha256": "d5fbd8bf6d281ad22000ee505be0639ed05b861034770c749c34e93bbe038528"
+    }
+  },
+  "outputs": {
+    "pdf": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_ivm_geometric_action_1x3.pdf",
+      "sha256": "1d2f82c1d33f423c844ae7de0272de7e8114b3b84a7607a85d096bc9f259adf0"
+    },
+    "source_csv": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_ivm_geometric_action_1x3_source.csv",
+      "sha256": "10fd5aab939d0d45ae4d6ca90ebce189d4bb1aed6de21bfe4cbdf2ef323eeca6"
+    }
+  }
+}

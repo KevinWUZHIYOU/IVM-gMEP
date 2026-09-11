@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_single_residual_ratio_ablation_v1",
+  "created_unix": 1787253500.288579,
+  "planned_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_residual_ratio_ablation_v1_N254_r1_1787253500284697000.json",
+  "one_factor_ablation": "discrete_residual_ratio",
+  "fixed_alpha": 12.5,
+  "new_residual_ratios": [
+    0.9,
+    0.5
+  ],
+  "reused_residual_ratio": 0.8,
+  "display_grid": [
+    0.9,
+    0.8,
+    0.5
+  ],
+  "new_member_tags": [
+    "rr090c10",
+    "rr050c10"
+  ],
+  "budget_per_image": 254,
+  "replicate": "r1",
+  "evaluated_step_cap": 10,
+  "lbfgs_history": 7,
+  "reparameterization_policy": "state_curve/per_image from first state",
+  "core_stop_mode_selector": "r08c10",
+  "core_stop_mode_selector_note": "legacy API name r08c10; actual ratio is the separately registered --discrete-residual-ratio value",
+  "stop_rule_template": "R/R0 <= registered ratio OR evaluated steps == 10",
+  "scientific_command_contract": "relative to the frozen alpha12.5 r=0.8 command, only --discrete-residual-ratio changes; output-dir and run-label are routing-only changes",
+  "reference_ratio_candidate_reused_not_rerun": true,
+  "same_alpha_legacy_control_reused_not_rerun": true,
+  "single_run_from_canonical_common_path": true,
+  "eligible_record_definition": "initial plus reparam_committed",
+  "mesh_gate": {
+    "segment_length_cv_max": 0.0065,
+    "segment_length_ratio_max": 1.03
+  },
+  "cost_to_precision_definition": "minimum actual optimization NF at I_perp <= threshold; no interpolation",
+  "reporting_anchors": [
+    1.0,
+    0.1,
+    0.05,
+    0.02,
+    0.01,
+    0.005,
+    0.002,
+    0.001,
+    0.0005,
+    0.0002,
+    0.00015
+  ],
+  "formal_selection_rule": "full-curve Iperp CTP on complete mesh-eligible states versus the same-alpha legacy control and separately official Stage-IV v4",
+  "primary_success_criterion": "a ratio candidate must weakly dominate every reachable threshold and be strict at least once versus both comparators; its tightest eligible I_perp must also be no larger than each comparator's tightest eligible I_perp",
+  "multiple_primary_winner_tiebreak": [
+    "lexicographically smallest candidate-minus-official NF vector at official thresholds ordered tight-to-loose",
+    "lexicographically smallest candidate-minus-legacy NF vector ordered tight-to-loose",
+    "smallest absolute log-distance from reused r=0.8"
+  ],
+  "no_primary_dominator_rule": {
+    "winner_claim_allowed": false,
+    "ratio_lock_allowed": false,
+    "post_hoc_grid_expansion_allowed": false,
+    "barrier_unembargo_allowed": false
+  },
+  "terminal_or_raw_iperp_ranking_allowed": false,
+  "barrier_fields_accessed_by_wrapper_or_launcher": false,
+  "sparse_barrier_role": "embargoed_not_read_not_reported_not_ranked",
+  "densified_energy_barrier_role": "embargoed_until_primary_ratio_lock",
+  "formal_refinement_analysis": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_iperp_ctp_readonly_v1_1787253163640931000.json",
+    "sha256": "8ff9d9824eb2d3719d28f73f33b92b62e115ff9f7449bf60be054298d7ba5212"
+  },
+  "canonical_common_initial_path": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+    "sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+    "initial_path_array_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e"
+  },
+  "formal_refinement_decision": {
+    "joint_full_curve_dominator_alphas": [],
+    "stop_ablation_center_alpha": 12.5,
+    "stop_ablation_center_is_not_a_winner": true
+  },
+  "reused_inputs": {
+    "reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfgfaf71a0dca2c_budget254.npz",
+      "sha256": "15df24a92b0a4a73e972be0574b5979d2e4eb7e7b980bc76cd58d474f9d8e835"
+    },
+    "reference_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1.json",
+      "sha256": "1cf4ec9619b41f7f5d3dc39e007e0d7fc95323f78d6900befa64f365f3b5bc5f"
+    },
+    "reference_command": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1/command.json",
+      "sha256": "628c7ca2d276bb48e46bbe903a1ee8ee9e5416cf9c032f69ecf1a82ffcfdf0ac"
+    },
+    "legacy_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1_central_state_ivm_cfg706082ab7a04_budget254.npz",
+      "sha256": "236c9e8f623fa297619d403163a33419a09f3069ef3d151cddd9dafb9cd11c70"
+    },
+    "legacy_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1.json",
+      "sha256": "7783ba8a42491ce8d23f7b321ee310a7fd47b48d1df23e4e42d24b30a211d2db"
+    },
+    "legacy_command": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a12p5_N254_legacy_r1/command.json",
+      "sha256": "db1c35940aea1e9d94a35ff32eab186c7af8e38d3453935b34ea833810783131"
+    }
+  },
+  "reference_mechanism_evidence": {
+    "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfgfaf71a0dca2c_budget254.npz",
+    "barrier_fields_accessed": false,
+    "frozen_subproblem_solve_count": 20,
+    "joint_step_count": 58,
+    "h0_selection_count": 38,
+    "lbfgs_selection_count": 20,
+    "maximum_history_count": 6,
+    "motivation": "r=0.90 probes earlier outer reparameterization; r=0.50 probes deeper inner solves and mature m7"
+  },
+  "registered_command_hashes": {
+    "rr090c10": "50358b8730c447e048ff1013ddd6426e1c0c1c07bc68da141beaa3d7e453db1a",
+    "rr050c10": "5cf8f19c57fed2d50361039c8e0bbdd08bd4b84bfacc9bb1f6152e538a281d66"
+  },
+  "run_source_manifest": {
+    "launcher": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_residual_ratio_ablation_grid.py",
+      "sha256": "9cb434663cad6d57634dc9b79d97044e1e7435cdff7a756af6d718e00ba3ebed"
+    },
+    "member_wrapper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_residual_ratio_ablation.py",
+      "sha256": "92dd95c4d8912cf6675112eff0307b7f6d8971b6b40566e0d14db12c565c2e05"
+    },
+    "frozen_alpha_refinement_wrapper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py",
+      "sha256": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62"
+    },
+    "frozen_single_wrapper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py",
+      "sha256": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6"
+    },
+    "frozen_single_implementation": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py",
+      "sha256": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845"
+    },
+    "legacy_command_helper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+      "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+    },
+    "core_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+    },
+    "ala_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+      "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+    },
+    "frozen_discrete_b040": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+      "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+    },
+    "formal_refinement_analyzer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_alpha_refinement_iperp_ctp.py",
+      "sha256": "15c7fdeb46c6d44556874df31bca8b4a37aabf1928ec571840cdfef50204eb2a"
+    }
+  },
+  "independent_member_paths_and_logs": true,
+  "overwrite_or_force_allowed": false,
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_residual_ratio_ablation_v1_N254_r1_1787253500284697000_preregistered.json",
+  "preregistration_sha256": "eba63e07899480b5a63af31a6b80c0262e97902a241a9b6a9bbc87f4e8c099d4",
+  "execution_jobs_operational_only": 2,
+  "started_unix": 1787253534.8682828,
+  "finished_unix": 1787253552.818249,
+  "formal_ranking_deferred_to_separate_readonly_iperp_ctp": true,
+  "results": [
+    {
+      "residual_ratio": 0.9,
+      "ratio_tag": "rr090c10",
+      "returncode": 0,
+      "wall_seconds": 17.944690227508545,
+      "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/audits/stage4_ala_discrete_single_residual_ratio_ablation_v1_rr090c10_a12p5_N254_discrete_b040_r1.json",
+      "member_audit_sha256": "530b9ad5a19f1e24281911823d3c457c384e092b357421576d755b955264424f",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr090c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg77f6ec2b26c7_budget254.npz",
+      "result_sha256": "3546360e801e0154ec5c977cd6982916b8a6daac4e288e4f36111150c53cb851",
+      "final_optimization_NF": 3207,
+      "mesh_eligible_complete_state_count": 23
+    },
+    {
+      "residual_ratio": 0.5,
+      "ratio_tag": "rr050c10",
+      "returncode": 0,
+      "wall_seconds": 17.78147006034851,
+      "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/audits/stage4_ala_discrete_single_residual_ratio_ablation_v1_rr050c10_a12p5_N254_discrete_b040_r1.json",
+      "member_audit_sha256": "0dd06ead6b9e940b9c988fc4d8b492d48cf08f8323b3979cec98246f07fbbd16",
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_residual_ratio_ablation_v1/members/ivm_stage4_ala_discrete_single_residual_ratio_ablation_v1_rr050c10_a12p5_N254_discrete_b040_r1_central_state_ivm_cfg7c3fa9819273_budget254.npz",
+      "result_sha256": "1aecf145c6747ba2c6956bdd419903c363d1445720f434bfe9332df3a676c1a6",
+      "final_optimization_NF": 3388,
+      "mesh_eligible_complete_state_count": 10
+    }
+  ]
+}

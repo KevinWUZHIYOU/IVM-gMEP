@@ -1,0 +1,27 @@
+{
+  "schema": "bb-dense-ivm-short-four-resume-launch-receipt-v1",
+  "status": "RUNNING",
+  "launch_local_hkt": "2026-09-02T21:39:45+08:00",
+  "unified_exec_session": 71128,
+  "process_pid": null,
+  "process_pid_note": "process-list access is unavailable in the workspace sandbox; unified exec session is authoritative",
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R3.json",
+    "sha256": "7969d4d88944ce53d30b2b27c4306b6dba2039d805d805acc239b5a78412fbcb"
+  },
+  "authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_dense_ivm_short_four_joint_ef_resume_20260902_r3.json",
+    "sha256": "e4caa05b8805b5f072b88d3315169a9f03a2116fda7ddf7436682b9ee9eaa778"
+  },
+  "authorized_entrypoint_sha256": "145afdab1863f32297466fbc887562bc5b71fe864c5daed0b1ac40657569e8ef",
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r3.npz",
+  "fresh_calls_only": [10, 50],
+  "optimization_N_F": [300, 1329],
+  "planned_joint_energy_force_attempts": 1000,
+  "optimization_N_F_contribution": 0,
+  "first_observed_success": {
+    "call_per_image": 10,
+    "point_index": 0,
+    "session_id": "b1a5fc1aa3614af4a45b6f0d584af7c0"
+  }
+}

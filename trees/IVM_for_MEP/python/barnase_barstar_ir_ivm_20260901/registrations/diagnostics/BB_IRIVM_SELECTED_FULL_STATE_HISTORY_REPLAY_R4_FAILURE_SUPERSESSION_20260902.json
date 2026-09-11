@@ -1,0 +1,150 @@
+{
+  "schema": "bb-irivm-selected-full-state-history-replay-failure-supersession-v3",
+  "status": "R4_FAILED_AT_DUPLICATE_CALL_RECORD_SUPERSEDED_NO_REUSE",
+  "created_utc": "2026-09-02T07:28:47Z",
+  "execution_authorized_by_this_file": false,
+  "failed_label": "bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4",
+  "host": "remote_mac_m4",
+  "failure": {
+    "child_returncode": 1,
+    "child_started_utc": "2026-09-02T06:57:57Z",
+    "locks_released_utc": "2026-09-02T07:00:30Z",
+    "traceback_exception": "RuntimeError: expected call 6, got 5",
+    "traceback_chain": [
+      "src/run_ivm_v9_spring_projected_production_20260730.py:7534 record(accepted_fraction=..., rejected=...)",
+      "src/run_ivm_v9_spring_projected_production_20260730.py:3810 should_store_path observer",
+      "scripts/full_state_history_recorder_r4.py:519 recorder.record(...) ",
+      "scripts/full_state_history_recorder_r4.py:204 require(call == index + 1)"
+    ],
+    "failure_phase": "the live outer-state record immediately after publication of the four first-outer discrete trial snapshots and before the first reparameterization attempt",
+    "root_cause": "R4 incorrectly equated raw production record ordinal with call_per_image. Production may emit multiple legitimate record callbacks at the same cumulative call count, and at finalization it stable-last deduplicates history by call_per_image. R4 durably stored raw ordinals 0..4 at calls 1..5, then rejected the next legitimate raw callback because it also had call_per_image=5.",
+    "failed_raw_record_ordinal_zero_based": 5,
+    "failed_record_call_per_image": 5,
+    "failed_record_optimization_N_F": 150,
+    "failed_record_counter_source_kind": "live_counter_arrays",
+    "lifetime_optimization_internal_joint_EF_attempts": 150,
+    "lifetime_optimization_N_F_proof": "The four first-outer internal image-band evaluations were all complete before their trace publication loop, producing cumulative optimization N_F 60, 90, 120, and 150 after the initial N_F30 state. The line-7534 duplicate-call record performs no OpenMM query. The next reparameterization branch starts only at line 7539, after the failing callback. Therefore lifetime optimization N_F remained 150.",
+    "lifetime_state_ledger": {
+      "durably_captured_raw_record_N_F": [30, 60, 90, 120, 150],
+      "failing_duplicate_call_record_N_F": 150,
+      "failing_duplicate_call_added_physical_N_F": 0,
+      "lifetime_paid_optimization_N_F": 150,
+      "reparameterization_physical_N_F_before_failure": 0
+    },
+    "fixed_endpoint_joint_EF_attempts": 0,
+    "fixed_endpoint_proof": "All five durable shard joint-evaluation vectors have zero endpoint entries. Fixed endpoints came from the inherited endpoint cache and are excluded from Number of Forces.",
+    "partial_cost_must_not_be_reused_or_hidden": true
+  },
+  "production_record_semantics": {
+    "raw_callback_may_repeat_call_per_image": true,
+    "hash_bound_production_deduplication": "lines 7673--7682 use np.unique on reversed calls_per_image and therefore keep the last raw record for each call before writing the formal result",
+    "sealed_successful_reference_raw_log_record_count": 455,
+    "sealed_successful_reference_unique_call_count": 352,
+    "sealed_successful_reference_call_range": [1, 352],
+    "replacement_requirement": "save all 455 raw callbacks by independent record ordinal, then create a no-copy canonical last-per-call index containing 352 references and verify it exactly against the formal result history"
+  },
+  "partial_outputs": {
+    "wal_line_count": 6,
+    "wal_contents": "header plus five record_committed events",
+    "committed_shard_count": 5,
+    "committed_raw_record_ordinals_zero_based": [0, 1, 2, 3, 4],
+    "committed_shard_calls": [1, 2, 3, 4, 5],
+    "committed_shard_optimization_N_F": [30, 60, 90, 120, 150],
+    "schema_gate_result": "call1 live exact8; calls2--5 historical exact7 with inherited_cache_entries explicitly unavailable and no numeric inherited vector",
+    "runtime_result_count": 0,
+    "runtime_audit_count": 0,
+    "manifest_count": 0,
+    "capture_audit_count": 0,
+    "scientifically_reportable_bundle_count": 0,
+    "R4_partial_shards_may_not_be_imported_into_R5": true
+  },
+  "lock_postcondition": {
+    "launch_receipt_status": "CHILD_EXITED_LOCKS_RELEASED",
+    "both_remote_process_ids_absent_after_exit": true,
+    "remote_BB_locks_released": true
+  },
+  "supersession": {
+    "R4_registration_may_not_be_reused": true,
+    "R4_authorization_may_not_be_reused": true,
+    "R4_label_output_and_partial_shards_may_not_be_reused": true,
+    "R4_sources_and_failure_artifacts_must_be_preserved": true,
+    "replacement_requires_new_R5_sources_registration_authorization_label_output": true,
+    "R5_must_not_assume_raw_record_ordinal_equals_call_per_image": true,
+    "R5_must_preserve_every_raw_callback_full_state": true,
+    "R5_must_verify_stable_last_per_call_against_formal_result": true
+  },
+  "bindings": {
+    "R4_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF9990_20260902_R4.json",
+      "sha256": "15d9efc8b80d9ded4d99f96cafd2c42c315035dc0174a809743af29d930f8903"
+    },
+    "R4_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4.json",
+      "sha256": "f45b04965482b4aa5fba4e464e6aec5887ee75b5254d73f41c5ade31e5768426"
+    },
+    "R4_remote_prelaunch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REMOTE_PRELAUNCH_20260902_R4.json",
+      "sha256": "c118c4e4cbb7678cde152d4ca424bf05924c4b2c25e7cd6f707796fcec54d9f4"
+    },
+    "R4_launch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4.launch.json",
+      "sha256": "0314aa11530b8aa23de8d96de96eead2b9391d8fda3f55dbd1f5eaa49372112c"
+    },
+    "R4_stdout_stderr_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/logs/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4.log",
+      "sha256": "2c709ab896086cbd9c0f657be374eb345c15494c093425e81236a88bb4fc9a4b"
+    },
+    "R4_WAL": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/full_state_history.wal.jsonl",
+      "sha256": "e3cc4538537c150321d74daa2c07de55b23f4d8837ec838af23b40342f23bf1f"
+    },
+    "R4_call1_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/shards/record_0000_call_0001.npz",
+      "sha256": "00567f29eebfbf1d021a3dc435464b7a299d1e8b3849b3d24a1cea60e1aea901"
+    },
+    "R4_call2_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/shards/record_0001_call_0002.npz",
+      "sha256": "be4ef363c8ac3db6a01fae95c8c453e3a2cd4876a0a2fc5bcea8766ed6050185"
+    },
+    "R4_call3_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/shards/record_0002_call_0003.npz",
+      "sha256": "1a33c76b7b2e5656c33e8e6f59029d9b6b884b6299cd053f7a2a61736c6baa2d"
+    },
+    "R4_call4_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/shards/record_0003_call_0004.npz",
+      "sha256": "9735e317841945bad54b28cb0f7b167541de571d78f584f293e74f6aef3ebb52"
+    },
+    "R4_call5_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4_observer/shards/record_0004_call_0005.npz",
+      "sha256": "c60ddb98f288979a6dbd4eef15c60be88d879585c566978be44fa5c3571ec349"
+    },
+    "sealed_selected_reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "sealed_successful_reference_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/logs/bb_irivm_a1e0_r01_m05_inf9990_r1.log",
+      "sha256": "bd92ad00144a622159a9bd7cd146c6453dcc0acfadc98ff9a11f6d656a17b9e7"
+    },
+    "production_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa"
+    },
+    "failed_R4_observer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/full_state_history_recorder_r4.py",
+      "sha256": "0e3382f92d40fe7412bd4c8ee8f6861689a6f23d682d5d792c35e6d5e71eacca"
+    },
+    "failed_R4_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay_r4.py",
+      "sha256": "36f9f0f8c400d9dca8d9832b1721072cc66db82efe3a72a32693c16d97960ff8"
+    },
+    "failed_R4_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay_r4.py",
+      "sha256": "79c0f5f8fc93da1a8a6331f21a2cd2d61aea60f7fd1ac030bf0ac9ea649e0507"
+    },
+    "failed_R4_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/tests/test_run_selected_ivm_full_state_history_replay_r4.py",
+      "sha256": "bcc5fea5e68d0135453e4303f90ef056cffde9dc73f618c2f47ea0304049c924"
+    }
+  }
+}

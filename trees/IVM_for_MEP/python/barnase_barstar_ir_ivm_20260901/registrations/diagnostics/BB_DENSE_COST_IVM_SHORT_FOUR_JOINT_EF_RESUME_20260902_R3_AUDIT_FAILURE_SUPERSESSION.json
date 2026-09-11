@@ -1,0 +1,19 @@
+{
+  "schema": "bb-dense-ivm-short-four-resume-audit-failure-supersession-v1",
+  "status": "SUPERSEDED_AFTER_USER_DIRECTED_INTERRUPT_NOT_A_SCIENTIFIC_FAILURE",
+  "interrupted_utc": "2026-09-02T13:43:12Z",
+  "reason": "independent pre-launch-closure audit found that the R3 contract did not bind its R3 freezer, authorizer, and test, and the entrypoint did not validate every authorization field",
+  "scientific_interpretation": "none; this was an execution-governance failure and user-directed interruption, not an algorithm or metric result",
+  "process": {"pid": 16288, "unified_exec_session": 71128, "exit": "KeyboardInterrupt_exit_1"},
+  "contract": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R3.json", "sha256": "7969d4d88944ce53d30b2b27c4306b6dba2039d805d805acc239b5a78412fbcb"},
+  "preauthorization_preflight": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R3_PREAUTH.json", "sha256": "13e0f0f2dc65144369d820ce655887b6b058acbb23e57dd47f6ab32ca621d63d"},
+  "authorization": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_dense_ivm_short_four_joint_ef_resume_20260902_r3.json", "sha256": "e4caa05b8805b5f072b88d3315169a9f03a2116fda7ddf7436682b9ee9eaa778"},
+  "launch_receipt": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_FOUR_JOINT_EF_RESUME_20260902_R3_LAUNCH.json", "sha256": "abcc6de26a0cd15539cf9ffb963da6169e236a86724502fd582de6548e2edb81"},
+  "dense_wal": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r3.dense_joint_ef.wal.jsonl", "sha256": "864ca2d7481f197fd26ab669fd588e944457a50b3be5143a2cfc0291301b2158"},
+  "source_wal": {"path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r3.source.wal.jsonl", "sha256": "ff50ad8dc22d142f56712b3a3e40a19395d740271c6cbaf797c6e36c76d917eb"},
+  "physical_attempt_lifetime": {"attempt_started": 117, "attempt_succeeded": 116, "attempt_failed": 0, "attempt_open": 1, "last_successful_call": 10, "last_successful_point_index": 115, "open_point_index": 116},
+  "published_artifacts": {"result": false, "audit": false, "manifest": false, "complete_R3_shards": 0},
+  "locks_after_exit": {"ivm_root_lock": "FREE", "downloads_root_lock": "FREE"},
+  "reuse_policy": {"R3_successes_reusable_by_R4": false, "R3_open_attempt_reusable": false, "R3_may_be_presented_as_metric_data": false},
+  "required_successor": "new R4 contract, authorization, WALs, shards, and result; no overwrite or continuation of R3"
+}

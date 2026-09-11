@@ -1,0 +1,24 @@
+{
+  "protocol": "clean-start four-level fixed-alpha Ala IVM audit",
+  "root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+  "common_initial_path": "inputs/common_initial_path_equidistant.npz",
+  "common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "runner_sha256": "d14312ea871bf6b4eb22286ed0966b708a2df22feb91eb7c55675cb05f834f71",
+  "orchestrator_sha256": "f5cfa54ea1249499ba8d86970c1432ee0e174157b66b01f782da6e3b8bc822fa",
+  "stages": {
+    "stage4": {
+      "output_dir": "runs/stage4_inexact_optimized_resample",
+      "budget": 300,
+      "rtols": [
+        0.8
+      ],
+      "description": "uniform optimized two-phase inexact IVM; fast projected path-sum phase then precision resampling"
+    }
+  },
+  "alphas": [
+    20.0
+  ],
+  "tasks": 1,
+  "jobs": 1,
+  "started_unix": 1785555820.9718442
+}

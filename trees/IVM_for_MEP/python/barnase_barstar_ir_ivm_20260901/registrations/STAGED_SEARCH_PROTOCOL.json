@@ -1,0 +1,368 @@
+{
+  "schema": "bb-chignolin-transfer-ir-ivm-staged-search-protocol-v1",
+  "protocol_id": "bb_chignolin_transfer_ir_ivm_staged_search_20260901_v1",
+  "created_utc": "2026-09-01T08:19:57Z",
+  "status": "PREREGISTERED_NOT_EXECUTION_AUTHORIZATION",
+  "purpose": "在不改变 Chignolin central-tangent IR-IVM 算法身份的前提下，以预登记的阶段式三参数搜索测试其在 Barnase--Barstar 上是否优于当前 IVM，并为统一的 arc-length 500 指标与最终作图选择正式路径。",
+  "bound_construction": {
+    "campaign_preregistration": {
+      "path": "registrations/CAMPAIGN_PREREGISTRATION.json",
+      "sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454"
+    },
+    "migration_contract": {
+      "path": "contracts/MIGRATION_CONTRACT.json",
+      "sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc"
+    },
+    "input_pointers": {
+      "path": "inputs/INPUT_POINTERS.json",
+      "sha256": "55457176b9183141db345414f1c3befd4c2b1aa739f9dfe755636fedc0a0fe0e"
+    },
+    "common_initial_path_file_sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "common_initial_path_array_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+    "endpoint_pair_sha256": "5788e22f86df91ed5500e88a8dc053f7408bd2fb39414de121a6eec36b833db1",
+    "endpoint_joint_ef_cache_sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a",
+    "pdb_sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "system_xml_sha256": "ef5d6907fe238ed54be5dcd11d900a7488fe0949a479e544e645c9d2711a9969"
+  },
+  "algorithm_identity": {
+    "name": "Chignolin-transfer IR-IVM, central-tangent branch",
+    "images": {
+      "total": 32,
+      "fixed_endpoints": 2,
+      "optimized_internal": 30
+    },
+    "tangent": "normalized central chord x[i+1]-x[i-1]",
+    "frozen_subproblem": "discrete_b040 joint inexact normal proximal subproblem",
+    "selector": "one-way FFrbk/L-BFGS takeover",
+    "selected_step_multiplier_eta": 1.1,
+    "history": 7,
+    "physical_max_atom_displacement_A": 1.0,
+    "outer_globalization": "I_perp monotone",
+    "reparameterization": "mandatory state_curve after every outer iteration",
+    "direct_acceptance": "per-image proximal objective",
+    "recovery": "the unchanged Chignolin/Ala recovery transaction: 320-call allowance, 15 inner calls, bicriteria merge, I_perp rtol 0",
+    "primary_selected_step_energy_fallback": false,
+    "only_tuned_controls": [
+      "alpha",
+      "relative residual r",
+      "evaluated whole-band inner-step limit m_max"
+    ],
+    "forbidden_changes_during_search": [
+      "changing the tangent definition",
+      "removing, delaying, weakening, or conditionally bypassing state_curve reparameterization or recovery",
+      "changing eta, history, the physical 1 A atom-step cap, FFrbk rebuild frequency, or shifted solve",
+      "introducing a fourth tuning control",
+      "using online arc-length diagnostics or baseline results to alter an optimization trajectory"
+    ]
+  },
+  "allowed_parameter_values": {
+    "alpha_article_labels_in_registered_order": [
+      "1e-1",
+      "1e0",
+      "1e1",
+      "1e2",
+      "1e3",
+      "1e4",
+      "1e5",
+      "1e6"
+    ],
+    "alpha_in_registered_order": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0
+    ],
+    "relative_residual_r_in_registered_order": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.8
+    ],
+    "inner_step_limit_m_max_in_registered_order": [
+      5,
+      8,
+      10,
+      15,
+      20,
+      50
+    ],
+    "full_cartesian_combination_count": 240
+  },
+  "number_of_forces_contract": {
+    "article_axis": "Number of Forces",
+    "definition": "本优化运行对 30 个内部图像发出的每一次真实联合 OpenMM energy/Force getState 尝试；一次尝试计一次 NoF。",
+    "fixed_endpoint_policy": {
+      "source": "hash-verified inherited canonical endpoint joint E/F cache",
+      "optimization_endpoint_getState_attempts_required": 0,
+      "optimization_endpoint_cache_misses_required": 0,
+      "optimization_endpoint_NoF": 0,
+      "endpoint_values_may_be_used_for_sparse_metrics_without_new_calls": true
+    },
+    "included": [
+      "accepted internal-image evaluations",
+      "rejected primary trials",
+      "direct reparameterization proposals",
+      "all recovery and rollback intermediate trials",
+      "charged terminal partial tails",
+      "failed internal getState attempts, with the run then classified as failed"
+    ],
+    "excluded": [
+      "hash-verified inherited endpoint cache hits",
+      "cache hits on previously evaluated internal coordinates",
+      "call-free geometry, sparse FFrbk construction, and linear algebra",
+      "all later arc-length 500 diagnostic calls"
+    ],
+    "registered_internal_budgets_and_expected_successful_terminal_NoF": [
+      240,
+      480,
+      990,
+      2040,
+      4080,
+      9990
+    ],
+    "no_endpoint_offset": true,
+    "successful_run_audit": "backend joint getState attempts = backend successful joint evaluations = sum of 30 internal-image cache misses = registered budget; endpoint attempts = endpoint misses = 0; no overshoot",
+    "failure_policy": "A failed getState attempt remains charged. The run is preserved and reported as failed, and it cannot enter scientific ranking."
+  },
+  "eligible_path_states": {
+    "scientifically_eligible": "the common initial path after its 30 internal E/F values are available, or a fully evaluated path with reparam_committed=true",
+    "promotion_requires": "at least one fully evaluated reparam_committed path after the initial path",
+    "ineligible": [
+      "primary-step intermediate paths",
+      "unaccepted direct reparameterization proposals",
+      "recovery intermediate trials",
+      "rolled-back paths",
+      "an open or partial terminal transaction"
+    ],
+    "same_state_rule": "I_perp and Delta E used together must come from the same eligible path state; minima from different states may not be combined."
+  },
+  "optimization_period_sparse_ranking": {
+    "purpose": "在正式 arc-length 500 之前，用优化已经支付的 32-image 路径数据进行控制变量筛选；这些量只用于选参，不能作为最终加密指标发表。",
+    "new_physical_calls": 0,
+    "sparse_I_perp": {
+      "tangent": "normalized central chord",
+      "quadrature": "interior half-adjacent-chord unnormalized integral",
+      "endpoint_force_contribution": 0,
+      "forces": "the 30 already-paid internal forces"
+    },
+    "sparse_Delta_E": {
+      "definition": "max energy among the 32 sparse images minus the first endpoint energy, converted to kcal/mol",
+      "endpoint_energy": "inherited canonical endpoint cache",
+      "diagnostic_limitation": "This sparse-image value may miss an inter-image energy maximum and is never renamed Delta E_500."
+    },
+    "per_state_normalization": {
+      "u_I": "sparse I_perp(state) / sparse I_perp(common initial path)",
+      "u_E": "sparse Delta E(state) / sparse Delta E(common initial path)",
+      "joint_score": "max(u_I, u_E)"
+    },
+    "per_run_score_at_budget_B": "Among eligible post-initial reparam_committed states with optimization NoF <= B, choose the one state with the smallest joint_score.",
+    "ranking_order": [
+      "smaller joint_score",
+      "smaller u_I on that same state",
+      "smaller u_E on that same state",
+      "smaller actual optimization NoF of that state",
+      "registered lexicographic order of alpha, then r, then m_max"
+    ],
+    "right_censoring": "A run that passes its NoF audit but has not produced a post-initial reparam_committed path is recorded as not yet rankable at that budget, not as having reached any precision."
+  },
+  "staged_search": [
+    {
+      "stage": "smoke",
+      "settings": {
+        "alpha": 10.0,
+        "r": 0.5,
+        "m_max": 5
+      },
+      "optimization_NoF_budget": 240,
+      "purpose": "exercise a full inexact update, mandatory state_curve reparameterization or recovery, and the 30-image NoF ledger before parameter search",
+      "pass_conditions": [
+        "all construction, input-hash, CPU1, lock, memory, and storage gates pass",
+        "optimization endpoint getState attempts and endpoint misses are both zero",
+        "the 30-image backend/ledger audit is exact and has no overshoot",
+        "at least one reparameterization transaction closes",
+        "a terminal partial tail, if present, is charged and quarantined"
+      ],
+      "registered_budget_extension": "If the 240-NoF run is otherwise valid but has not yet produced a post-initial reparam_committed path, repeat the identical setting from the common initial path at budget 480. Do not change a parameter or bypass reparameterization.",
+      "failure_action": "Do not begin parameter search until an audited smoke run passes."
+    },
+    {
+      "stage": "alpha_controlled_scan",
+      "fixed": {
+        "r": 0.5,
+        "m_max": 5
+      },
+      "varied_alpha": [
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0,
+        10000.0,
+        100000.0,
+        1000000.0
+      ],
+      "first_budget": 480,
+      "promotion": "Promote the best three audited parameter settings by the frozen sparse ranking to independent 990-NoF runs from the common initial path.",
+      "retained_for_interaction": "After the 990-NoF confirmation, retain alpha_star and the second-ranked alpha_2."
+    },
+    {
+      "stage": "r_controlled_scan",
+      "fixed": {
+        "alpha": "alpha_star from the confirmed alpha scan",
+        "m_max": 5
+      },
+      "varied_r": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.8
+      ],
+      "first_budget": 480,
+      "promotion": "Promote the best three audited parameter settings by the frozen sparse ranking to independent 990-NoF runs from the common initial path.",
+      "retained_for_interaction": "After the 990-NoF confirmation, retain r_star and the second-ranked r_2."
+    },
+    {
+      "stage": "m_max_controlled_scan",
+      "fixed": {
+        "alpha": "alpha_star",
+        "r": "r_star"
+      },
+      "varied_m_max": [
+        5,
+        8,
+        10,
+        15,
+        20,
+        50
+      ],
+      "first_budget": 480,
+      "promotion": "Promote the best three audited parameter settings by the frozen sparse ranking to independent 990-NoF runs from the common initial path.",
+      "retained_for_interaction": "After the 990-NoF confirmation, retain m_star and the second-ranked m_2."
+    },
+    {
+      "stage": "registered_local_interaction_check",
+      "parameter_product": "{alpha_star, alpha_2} x {r_star, r_2} x {m_star, m_2}",
+      "maximum_combinations": 8,
+      "optimization_NoF_budget": 990,
+      "reuse_rule": "An existing run is reused only when parameter values, budget, source closure, inputs, oracle, storage policy, thread policy, and all algorithm controls are hash-identical; otherwise an independent run is required."
+    },
+    {
+      "stage": "sparse_candidate_confirmation",
+      "candidate_pool": "all distinct audited settings with a 990-NoF result from the three controlled scans and the registered local interaction check",
+      "promotion": "Promote the best three settings by the frozen sparse ranking to independent 2040-NoF runs from the common initial path.",
+      "cross_host_control": "All promoted 2040-NoF runs must be repeated on one reference host chosen and recorded before their first E/F call, so final selection does not assume cross-host bitwise identity."
+    },
+    {
+      "stage": "arc500_candidate_confirmation",
+      "input": "the three frozen 2040-NoF candidates",
+      "diagnostic": "Apply the frozen arc-length 500 protocol to every scientifically eligible path of each candidate after all three optimization runs are sealed.",
+      "promotion": "Promote the best two settings by the final arc500 ranking to independent 4080-NoF runs from the common initial path on the same reference host."
+    },
+    {
+      "stage": "long_run_selection",
+      "input": "the two frozen 4080-NoF candidates",
+      "diagnostic": "Extend the same arc-length 500 histories with every newly eligible path after both optimization runs are sealed.",
+      "winner_rule": "The first-ranked setting by the final arc500 ranking always receives an independent 9990-NoF run from the common initial path.",
+      "runner_up_rule": "The second setting also receives a 9990-NoF run if its final joint score is no more than 1.10 times the first setting's score, or if their best eligible paths are Pareto-incomparable in arc500 I_perp and Delta E_500.",
+      "no_early_success_stop": true
+    },
+    {
+      "stage": "final_metrics",
+      "input": "every completed 9990-NoF IR-IVM result selected above, the immutable current BB IVM baseline, and the immutable standard ODE-NEB baseline",
+      "diagnostic": "Apply one identical arc-length 500 protocol to every plotted eligible path; diagnostic results cannot change an already completed optimization trajectory.",
+      "winner_prefix_reproducibility": "The selected 9990-NoF history must reproduce the same setting's shorter reference-host history through every fully closed state before the shorter budget boundary, excluding wall time and a quarantined terminal partial tail. A mismatch blocks the formal claim."
+    }
+  ],
+  "insufficient_rankable_results_rule": {
+    "at_480": "If fewer than the requested promotion count are rankable, extend every otherwise valid, audited, not-yet-rankable setting once to 990 before selecting. Do not fill a promotion place with a failed run.",
+    "at_990": "Continue with fewer candidates only if at least two audited settings are rankable for each two-value interaction set; otherwise stop and report the staged search as inconclusive.",
+    "all_failed_or_no_committed_paths": "Stop. Diagnose the migration without changing this protocol or launching a result-dependent replacement parameter."
+  },
+  "arc_length_500_protocol": {
+    "timing": "strictly offline after the relevant optimization results and candidate identities are sealed",
+    "coordinate_space": "unweighted 3N Cartesian coordinates",
+    "path_representation": "piecewise linear through the selected 32-image path",
+    "sampling": "equal cumulative arc length",
+    "number_of_points": 500,
+    "include_both_endpoints": true,
+    "grid_formula": "s_j = j L / 499 for j = 0,...,499",
+    "evaluator": "the same canonical OpenMM 8.1.2 CPU/double joint E/F oracle for every compared method and path",
+    "per_path_diagnostic_NoF": 500,
+    "diagnostic_cache": false,
+    "diagnostic_endpoint_calls": "Both endpoints are freshly evaluated as two of the 500 diagnostic points; these calls belong only to the diagnostic ledger and do not alter optimization NoF.",
+    "I_perp": "normalized central-chord perpendicular force with interior half-adjacent-chord unnormalized quadrature; endpoint contribution zero; units eV^2/A",
+    "Delta_E_500": "max_j E(x(s_j)) - E(x(s_0)), converted to kcal/mol",
+    "control_variable_rule": "Every compared eligible path uses exactly this same 500-point protocol; dense400 values may be used only as immutable historical checks and cannot be relabeled as arc500."
+  },
+  "final_arc500_ranking": {
+    "fixed_joint_targets": {
+      "I_perp_eV2_per_A_max": 1468.5712347872072,
+      "Delta_E_500_kcal_per_mol_max": 200.0,
+      "source": "the acceptance thresholds in the immutable official BB baseline index; the arc500 protocol itself remains newly and uniformly evaluated"
+    },
+    "per_state_joint_score": "max(I_perp_arc500 / 1468.5712347872072, Delta_E_500 / 200.0)",
+    "ranking_order": [
+      "smaller observed optimization NoF at which both fixed targets are first satisfied on the same eligible path",
+      "if no joint first passage exists, smaller minimum per-state joint score without mixing path states",
+      "smaller I_perp ratio on that same state",
+      "smaller Delta E_500 ratio on that same state",
+      "smaller actual optimization NoF",
+      "registered lexicographic parameter order"
+    ],
+    "right_censoring": "A method that has not reached both targets is reported as not yet observed to reach them by its last eligible optimization NoF; that last NoF is not called a first-passage cost."
+  },
+  "baseline_comparison": {
+    "official_index": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_r30h8_dense200_authorizer_20260831_r1/NEB_IVM_UNIFIED_DENSE400_BASELINE_INDEX.json",
+      "sha256": "db60ab89263b81cd353eff9b32780ea568122956c35505a5c66a5b2782924179"
+    },
+    "current_BB_IVM": "the immutable 32-image, 30-paid-interior DiscreteIVM30 alpha=0.020, no-reparameterization NF9990 producer bound by the official index",
+    "ODE_NEB": "the immutable 32-image standard ASE ode12r, k=0.1 eV/A^2, NF9990 producer bound by the official index",
+    "comparison_NoF": "Use each method's actual optimization Number of Forces. The inherited endpoint cache contributes zero optimization NoF to IR-IVM, matching the formal 30-interior accounting without an endpoint offset.",
+    "strict_success_against_current_IVM": [
+      "a smaller joint first-passage optimization NoF for the fixed two-metric targets",
+      "or, if joint first passage is not observed for both methods, a strict Pareto improvement at the same available optimization NoF: both arc500 metrics no worse and at least one strictly better"
+    ],
+    "incomparable_result": "If one arc500 metric improves and the other worsens, report the two methods as Pareto-incomparable rather than declaring a single winner."
+  },
+  "stopping_and_reproducibility": {
+    "registered_budgets_are_terminal": "Do not stop a run early because an online or offline metric looks favorable; stop only at its registered budget or a recorded failure/resource gate.",
+    "infrastructure_retry": "An infrastructure retry must use the same immutable member registration and execution authorization and is not a new scientific setting.",
+    "algorithmic_failure": "Preserve and report it; do not replace it with a favorable unregistered setting.",
+    "source_change": "Any source, algorithm, input, endpoint cache, oracle, or scientific storage-policy change after the first E/F call invalidates reuse of earlier members and requires a new versioned protocol rather than editing this file.",
+    "no_automatic_search_expansion": "Failure to beat the baseline ends this registered staged search as a negative or inconclusive result. Any broader search must be preregistered as a new campaign before its first E/F call."
+  },
+  "resource_and_storage_gates": {
+    "concurrency": "one heavy Barnase--Barstar run per host, host-local fcntl lock, jobs=1; an existing BB lock is never bypassed",
+    "threads": "OPENMM_CPU_THREADS, OMP_NUM_THREADS, MKL_NUM_THREADS, OPENBLAS_NUM_THREADS, VECLIB_MAXIMUM_THREADS, and NUMEXPR_NUM_THREADS all equal 1 before Python starts",
+    "ff_builder_workers": 1,
+    "mutagen": "Source, registrations, and sealed-result movement must pass the existing Mutagen gates; no alternate unsynchronized checkout may launch an authorized member.",
+    "reference_host": "The reference host for the 2040/4080/9990 confirmation sequence is selected for resource availability and frozen in the execution authorization before the first promoted E/F call, never from scientific results.",
+    "storage_mode": "committed: retain the initial path, every fully reparam-committed path, final eligible path, complete NoF/recovery audit arrays, WAL/seals, and hashes; storage history is never read by the online algorithm",
+    "storage_equivalence_gate": "The committed storage mode must pass the existing zero-Force full/thin prefix and final-state equivalence tests before authorization.",
+    "minimum_free_disk_guidance": {
+      "smoke_or_480_NoF_GiB": 2,
+      "2040_or_4080_NoF_GiB": 5,
+      "9990_plus_arc500_GiB": 8
+    },
+    "archive_policy": "Do not delete or compact an unsealed paid-E/F or diagnostic artifact. Seal hashes and provenance before any approved storage move."
+  },
+  "claim_scope": {
+    "search_description": "pre-registered staged three-parameter search with controlled one-parameter scans and one local 2 x 2 x 2 interaction check",
+    "maximum_distinct_parameter_combinations_before_budget_prolongation": 24,
+    "not_a_full_grid": true,
+    "forbidden_claims": [
+      "completed the full 240-combination Cartesian grid",
+      "found the global optimum over all 240 combinations",
+      "proved a parameter monotonicity outside the evaluated settings"
+    ],
+    "required_reporting": "List every executed parameter setting, actual optimization NoF, audit status, eligible committed-path count, right-censoring status, source/input hashes, and whether it arose from a controlled scan, interaction check, or budget prolongation. Unevaluated combinations remain explicitly untested."
+  },
+  "execution_gate": "This protocol authorizes no physical call by itself. Each run still requires an immutable per-member registration and a later execution authorization binding the hashes of that member registration, CAMPAIGN_PREREGISTRATION.json, MIGRATION_CONTRACT.json, and this STAGED_SEARCH_PROTOCOL.json."
+}

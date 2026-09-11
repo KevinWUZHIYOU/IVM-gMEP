@@ -1,0 +1,131 @@
+{
+  "status": "complete",
+  "alpha_grid": [
+    "1e-2",
+    "1e-1",
+    "1e0",
+    "1e1",
+    "1e2",
+    "1e3",
+    "1e4"
+  ],
+  "common_force_cutoff": 5000,
+  "stage1_title_basis": "Stage-I exact-like no-resampling run metadata: plbfgs_kkt_rtol=0.1",
+  "stage4_title_basis": "Stage-IV Phase A metadata: plbfgs_kkt_rtol=0.96; Phase B metadata: plbfgs_kkt_rtol=0.8; resampling every macrostep",
+  "overall_legend_title_removed": true,
+  "display_semantics": "uncensored raw I_perp trajectories through exact NF=5000; Stage-IV reference-free screen work is charged",
+  "best_so_far_frontier_used": false,
+  "spent_after_last_improvement_dashed_tail_used": false,
+  "trajectory_audit": {
+    "stage1": {
+      "0.01": {
+        "complete_states_and_cutoff_endpoint": 356,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 1.2391189501460698,
+        "raw_i_perp_increases": 0
+      },
+      "0.1": {
+        "complete_states_and_cutoff_endpoint": 535,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.018886075340518442,
+        "raw_i_perp_increases": 0
+      },
+      "1": {
+        "complete_states_and_cutoff_endpoint": 2058,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.0013518526080647524,
+        "raw_i_perp_increases": 0
+      },
+      "10": {
+        "complete_states_and_cutoff_endpoint": 508,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.0003923129967235701,
+        "raw_i_perp_increases": 4
+      },
+      "100": {
+        "complete_states_and_cutoff_endpoint": 294,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.451204185818383,
+        "raw_i_perp_increases": 73
+      },
+      "1000": {
+        "complete_states_and_cutoff_endpoint": 310,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.011504023897335009,
+        "raw_i_perp_increases": 31
+      },
+      "10000": {
+        "complete_states_and_cutoff_endpoint": 307,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.008349220246171865,
+        "raw_i_perp_increases": 19
+      }
+    },
+    "stage4": {
+      "0.01": {
+        "complete_states_and_cutoff_endpoint": 250,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.09990830232133564,
+        "raw_i_perp_increases": 0
+      },
+      "0.1": {
+        "complete_states_and_cutoff_endpoint": 417,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.010147132708322099,
+        "raw_i_perp_increases": 0
+      },
+      "1": {
+        "complete_states_and_cutoff_endpoint": 205,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.005720866463123027,
+        "raw_i_perp_increases": 0
+      },
+      "10": {
+        "complete_states_and_cutoff_endpoint": 180,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.00019153676123401646,
+        "raw_i_perp_increases": 0
+      },
+      "100": {
+        "complete_states_and_cutoff_endpoint": 254,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.0008484902731868514,
+        "raw_i_perp_increases": 0
+      },
+      "1000": {
+        "complete_states_and_cutoff_endpoint": 286,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.00239464646295207,
+        "raw_i_perp_increases": 0
+      },
+      "10000": {
+        "complete_states_and_cutoff_endpoint": 271,
+        "terminal_force": 5000,
+        "terminal_raw_i_perp": 0.003664321445873145,
+        "raw_i_perp_increases": 0
+      }
+    }
+  },
+  "protocol_validation": {
+    "stage1_r_values": [
+      0.1
+    ],
+    "stage4_phase_a_r_values": [
+      0.96
+    ],
+    "stage4_phase_b_r_values": [
+      0.8
+    ],
+    "stage4_reparam_every_values": [
+      1
+    ],
+    "validated_alpha_count_per_stage": 7
+  },
+  "outputs": [
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.pdf",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.svg",
+    "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.png"
+  ],
+  "new_dynamics_run": false,
+  "main_tex_modified": false
+}

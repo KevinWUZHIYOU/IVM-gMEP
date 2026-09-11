@@ -1,0 +1,38 @@
+{
+  "status": "preregistered",
+  "protocol_id": "stage4_ala_dsel_ffrbk_v2_sharedA34_phaseB_control_grid",
+  "scientific_question": "Can post-geometry H0-vs-legacy-LBFGS DSEL accelerate the expensive Phase-B tail while preserving the complete legacy Phase-A prefix?",
+  "legacy_prefix_is_reused_without_rerun": true,
+  "legacy_prefix_through_NF": 680,
+  "legacy_prefix_terminal_i_perp": 0.006584491730342424,
+  "legacy_phase_a": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseA_fast_a20_central_state_ivm_cfg09d74897c1ef_budget34.npz",
+  "legacy_phase_a_sha256": "9d9a5f692a5a65c82b0921d385dd9a36b8477b9fa9efa1df82c629f4fd8d9de5",
+  "legacy_phase_b_comparator": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseB_precision_a20_central_state_ivm_cfg21ee8dded116_budget220.npz",
+  "legacy_phase_b_sha256": "840b97a508242c3c187e390ed3bab34913fd50f9827dea26b1ab8963add10918",
+  "continuation": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/stage4_uniform_v3_continuations/phaseA34_terminal_a20.npz",
+  "continuation_sha256": "af68de5759ca0d267a627eb7936b4a25930ac4428b80e809ae534205a9ceea01",
+  "continuation_path_sha256": "4418a113c37836930685545c2a87a2e5e4e185836aba3e0afab5d5a835020726",
+  "alpha_grid": [
+    20.0
+  ],
+  "stop_modes": [
+    "c10",
+    "r08"
+  ],
+  "phase_b_budget_per_image": 6,
+  "selection_leakage_guard": "No densified reference barrier or barrier error is used for selection",
+  "ranking_metrics": [
+    "i_perp",
+    "barrier_kcal",
+    "physical_fmax"
+  ],
+  "source_sha256": {
+    "core": "e0650404b300e245264af28337237f8571fd746bc547597c0013ed3143e5e65d",
+    "wrapper": "b55ca028400d020a79fbbb7b9cdadca4fc8c85c54bfe96b6689f268867ed9e03",
+    "wrapper_implementation": "59a66e1f745fc1173398b6a8a656889a7eb419b6361f68a0f7226dd6595ad80d",
+    "launcher": "e23e21325d1d58d574f49476f2c4d8889e4ffb538749ec30edb7518227a5170e"
+  },
+  "jobs": 1,
+  "replicate": "r501",
+  "created_unix": 1787249528.982075
+}

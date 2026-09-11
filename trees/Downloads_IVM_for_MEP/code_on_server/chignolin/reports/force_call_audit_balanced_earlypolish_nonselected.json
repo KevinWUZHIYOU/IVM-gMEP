@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_balanced_earlypolish_production_central_hybrid_ff_cfg2b41fbf598f7_budget500.npz",
+      "method": "IVM",
+      "passed": true,
+      "failures": [],
+      "records": 500,
+      "horizontal_axis_definition": "max joint evaluations per internal image",
+      "final_internal_min": 380,
+      "final_internal_mean": 466.7,
+      "final_internal_max": 500,
+      "final_internal_sum": 9334,
+      "final_total_22_image_joint_evaluations": 9336,
+      "backend_raw_joint_evaluations": 9336,
+      "unchanged_saved_path_intervals_with_new_real_evaluations": 165,
+      "interpretation": "Such unchanged-path intervals prove that rejected evaluations remain in the counters rather than disappearing on rollback."
+    }
+  ]
+}

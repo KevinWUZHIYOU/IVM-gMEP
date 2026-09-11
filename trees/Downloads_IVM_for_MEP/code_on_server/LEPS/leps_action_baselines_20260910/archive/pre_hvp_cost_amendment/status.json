@@ -1,0 +1,177 @@
+{
+  "completed": 9,
+  "runs": [
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "4c6fed205691497a",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 0.01,
+        "reparam": "string",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 1.8592541217803955,
+      "steps": 498,
+      "stop": "budget"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "17202957b64c66cb",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 0.01,
+        "reparam": "ivm_spring",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "nonfinite objective/gradient",
+      "hvp": 900,
+      "nof": 900,
+      "seconds": 15.308049201965332,
+      "steps": 21,
+      "stop": "numerical_failure"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "ef9b7467149c210e",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 0.1,
+        "reparam": "string",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 1.9637529850006104,
+      "steps": 498,
+      "stop": "budget"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "0d31a3a67da3862e",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 0.1,
+        "reparam": "ivm_spring",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "nonfinite objective/gradient",
+      "hvp": 700,
+      "nof": 700,
+      "seconds": 10.92856478691101,
+      "steps": 16,
+      "stop": "numerical_failure"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "a92c87dda8d6d9e9",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 1.0,
+        "reparam": "string",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 1.6334950923919678,
+      "steps": 387,
+      "stop": "budget"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "d67ebb83d97ad305",
+        "method": "gMAM",
+        "optimizer": "LBFGS",
+        "rate": 1.0,
+        "reparam": "ivm_spring",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "nonfinite objective/gradient",
+      "hvp": 660,
+      "nof": 660,
+      "seconds": 12.478807926177979,
+      "steps": 15,
+      "stop": "numerical_failure"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "2a2735859190a3d0",
+        "method": "gMAM",
+        "optimizer": "Adam",
+        "rate": 0.001,
+        "reparam": "string",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 2.0101981163024902,
+      "steps": 499,
+      "stop": "budget"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "55645c8fee923677",
+        "method": "gMAM",
+        "optimizer": "Adam",
+        "rate": 0.001,
+        "reparam": "ivm_spring",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 127.82674789428711,
+      "steps": 499,
+      "stop": "budget"
+    },
+    {
+      "config": {
+        "beta": null,
+        "budget": 20000,
+        "id": "42875c67cc4024d5",
+        "method": "gMAM",
+        "optimizer": "Adam",
+        "rate": 0.01,
+        "reparam": "string",
+        "warmup": 0
+      },
+      "entered_gmam": true,
+      "failure": "",
+      "hvp": 20000,
+      "nof": 20000,
+      "seconds": 1.793823003768921,
+      "steps": 499,
+      "stop": "budget"
+    }
+  ],
+  "total": 60
+}

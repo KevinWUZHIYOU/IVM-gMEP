@@ -1,0 +1,41 @@
+{
+  "schema_version": "ala2d.v17.r6_draft_file_inventory.v1",
+  "status": "READ_ONLY_DRAFT_SNAPSHOT",
+  "formal_evidence": false,
+  "formal_execution_authorized": false,
+  "generated_date": "2026-09-05",
+  "hash_algorithm": "SHA-256",
+  "root": "ala2d_mfep_irivm_20260905_r6_formal_draft",
+  "scope": "Every authored source, registration, protocol, report, test, and test fixture present after the final draft edit, excluding this self-referential inventory and R6_READ_ONLY_SNAPSHOT.md.",
+  "excluded_generated_paths": [
+    ".pytest_cache/",
+    "src/__pycache__/",
+    "tests/__pycache__/"
+  ],
+  "known_inherited_core_failure_unresolved": true,
+  "files": {
+    "PROTOCOL_DRAFT.md": "fde4e99dbc51694acbc361a55aba462cfe3b06ff69b292fbc7d8cd14b72eb900",
+    "README.md": "193298c2aeb2d4d1c43ca2f617b34f105c5e3f4c3f667b8fa82ac4a79ee522f7",
+    "registrations/V17_FORMAL_CAMPAIGN_DRAFT.json": "45330660c509d99e36ea2231939ed034e3014e80790cfbd84be174e8665af530",
+    "reports/R6_TEST_CONTRACT.md": "a709e6a5fbd08ab5db5f3da93de7d96dc44680152454e7fad8faf17fcabbfb9b",
+    "reports/V17_FORMAL_ACTIVATION_PLAN.md": "1636eb15b67b0ddd2f29d6a2f174dee89501a64a3d9b1a0c4104a1a016fe27ad",
+    "reports/V17_FORMAL_DRAFT_DESIGN.md": "613fef5ac452ab324e22e6fdabc752b4bf187f389950a78390bb8a8894966eba",
+    "src/ala2d_article_neb_reparam.py": "5618a25f8125235c5225ff69dcf8db7e2d619f70f8748bc58f40cb0c40a7d59a",
+    "src/ala2d_irivm_v17.py": "eb59c06a933b8cbd9c256ff44e08839d791cd93bfa670cf6bebc0c97535af59d",
+    "src/ala2d_oracles.py": "2a58db318dd4dde034e8e83c56817d0b201a1a57250f24f875b120524db136a9",
+    "src/build_causal_shared_initial.py": "fe740c380198d0ef404722dee5bc9dbde3d39781052a9f3ea81f2d38af692313",
+    "src/campaign_acceptance.py": "c88add6aa41cda0aa787ee870975b94a9af9a99fc9535218d7652b73e94c2a79",
+    "src/campaign_analysis.py": "bc392753c2bfdc6b6e672990e76eeda0cf325507749b57f3452dacb836aacec4",
+    "src/formal_contract.py": "1b5f4f84c9c84f056380f539f4355abed13c35f4730cc77a36971b7f80a75a4c",
+    "src/plot_registered_figures.py": "ab75df7b4ec2dc66ab764c7bd84510a893a164528eb1d3300ae9b296b6c8bc88",
+    "src/riemannian_torus_geometry.py": "8cf1ed21f7858b2c7d41974c8a2c5c20cf24f95e5b7d61c882258c8691ba63f5",
+    "src/run_v17_formal_campaign.py": "ff1f957bf6c274c9022d065b591e6f191643602391db3a59941c7e09fc6f1b66",
+    "tests/fixtures/README.md": "5ae45ad4d05cabf392e62370c8c2a6fc0c18a0055f7e892fc2ca041d08e134fb",
+    "tests/fixtures/causal_initial_state0.npz": "ef14d24e98a8f6d640cd7dd9bb7786ee189710a95c980c62e1c8aff39194ef79",
+    "tests/test_acceptance_v17.py": "79e01db7bb4d55b7edcfd12e560456b672068664429df90ad1c7f4c4c260534c",
+    "tests/test_formal_contract.py": "7ae6d5ced125dfc9cd82ee2a3e2c511cfcd33a679d7c8ff786272c66006be281",
+    "tests/test_irivm_v17_core.py": "7c4d0a875ac31e142c8b3d14615481a303bfae347c1432f7bad627764537a9f0",
+    "tests/test_plot_registered_figures_v17.py": "089cb22d6506aa71c8c4f722e7dffb41e1ce2e8aec60f64ea32684dc88636218",
+    "tests/test_run_v17_formal_campaign.py": "127d3b6b19c496d361a0c106b214241be2ca8b1fc00fea7faeb6f6f72de8745d"
+  }
+}

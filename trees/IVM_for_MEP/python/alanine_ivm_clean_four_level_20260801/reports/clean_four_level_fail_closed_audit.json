@@ -1,0 +1,5034 @@
+{
+  "protocol": {
+    "common_initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      20.0,
+      30.0,
+      100.0,
+      1000.0,
+      10000.0,
+      "inf"
+    ],
+    "stage1_exact_like_definition": "finite KKT-controlled solve, r=0.2/0.1, inner cap 80, no resampling",
+    "stage2_exact_like_definition": "same operational exact-like solve plus geometric resampling",
+    "stage3_definition": "baseline inexact, r=0.8, five inner calls, geometric resampling",
+    "stage4_definition": "uniform two-phase fixed-alpha state-IVM with independently audited online stop",
+    "optimization_axis": "whole-path force evaluations only; dense diagnostics excluded"
+  },
+  "stage_counts": {
+    "stage1": 20,
+    "stage2": 20,
+    "stage3": 10,
+    "stage4": 10
+  },
+  "structural_theory_accounting_passed": true,
+  "failures": [],
+  "records": [
+    {
+      "stage": "stage1",
+      "alpha": 0.01,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a0p01_central_state_ivm_cfge1ea01c6ab8d_budget160.npz",
+      "sha256": "1909fbc0a01551275a93fd897aab09e0cf026fd46e130debff201d4139769678",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a0p01_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 0.1,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a0p1_central_state_ivm_cfg0749404f05ec_budget160.npz",
+      "sha256": "63dae17a66411e86bf22e3ea152ab0e57a012f0cc076aeaf6ebb83a351346624",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a0p1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10000.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a10000_central_state_ivm_cfg058d10f27eae_budget160.npz",
+      "sha256": "1a820596312acc84749ca484334af288a9ef1a23f4878b8f782393291add6f5f",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a10000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1000.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a1000_central_state_ivm_cfgfdd7b6107c52_budget160.npz",
+      "sha256": "d0526ed4683192ab1764fc8972f69cd43a95a8956017920b76ed997f8e928aa2",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a1000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 100.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a100_central_state_ivm_cfge7268d0f1e80_budget160.npz",
+      "sha256": "79ab2f50e53724b97ecf34be46d725093aa3e0c9960cae738545913f5326fbc7",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a100_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a10_central_state_ivm_cfg39e185e6b2c1_budget160.npz",
+      "sha256": "87a4864fca22d61f444ed73fa76efcf38820516e12649ee1d37ed4d21c172f5f",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a10_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a1_central_state_ivm_cfg9d6fcbca1a5c_budget160.npz",
+      "sha256": "68021afec9fa33f0e5aba0203227afa29d2039e13bd5b5747b6c57a2659f1e5d",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 20.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a20_central_state_ivm_cfg91d66d4e980f_budget160.npz",
+      "sha256": "9f3177dc5b9e5fc019708afc63d699630724a42db60a740c7b6eebcab61a12d6",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a20_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 30.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a30_central_state_ivm_cfga28ec9ddd22c_budget160.npz",
+      "sha256": "1b71e71be225d1023fa8faf85eb4a469d20a423df08ee5cbc6b6074bbf932b13",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_a30_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": "inf",
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_ainf_central_state_ivm_cfg39cf0343e9b6_budget160.npz",
+      "sha256": "b226ff0762790404804c84969cd7ff710368e9d1894405ac36d190838b343d38",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p1_ainf_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 0.01,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a0p01_central_state_ivm_cfg0c027485d38c_budget160.npz",
+      "sha256": "4d2f7262f415192a7d53ad39ce77f6a1a03157f674ba645f6907cd171f8941f1",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a0p01_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 0.1,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a0p1_central_state_ivm_cfg922e532ca81f_budget160.npz",
+      "sha256": "bf34547c256e731dc264c65c924d2fa09dfb980d6e3d45d1ce8af736a1b13466",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a0p1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10000.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a10000_central_state_ivm_cfga57bdeaaaac6_budget160.npz",
+      "sha256": "70210a55be54fb956d0666ee79e3dcbfff8278115fcfb37609ab1e26eea98b0b",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a10000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1000.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a1000_central_state_ivm_cfgf6396779e801_budget160.npz",
+      "sha256": "711aeba61faa5bf6ca4044db5f9e9c585de57f73a7f9947d2f7cbdaf5929f142",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a1000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 100.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a100_central_state_ivm_cfg01437b469cc7_budget160.npz",
+      "sha256": "dae4f43e8c70c66f86b710597a9d16a85c46c408ed2585e48e850abeaae3bf84",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a100_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a10_central_state_ivm_cfga450ff9485c4_budget160.npz",
+      "sha256": "db83c91040e9c3fcbb88176397cc31160eb484990edd07cd8c2b1d3b4ff1a066",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a10_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a1_central_state_ivm_cfgd6a9304fba86_budget160.npz",
+      "sha256": "ee8c583b8200cb8c4a8dd8eafc091f3372ee658c3fd3cc16ecd1871a4e2aeda4",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 20.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a20_central_state_ivm_cfg60053132167a_budget160.npz",
+      "sha256": "15a503d1b6a20882623f95035fdbb0a1fb6838f7be135a84faadf6a6c4d2e4f6",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a20_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": 30.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_a30_central_state_ivm_cfg2b8470db1a7b_budget160.npz",
+      "sha256": "dd190e2c60af6386ad08e2951d9cfac75581df4361bac21af93a1140862a1511",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_a30_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage1",
+      "alpha": "inf",
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p2_ainf_central_state_ivm_cfgddf721a94f02_budget160.npz",
+      "sha256": "b32e5de83ab8178010949e77957b9efb216e3b0e03722f602a9c6655ad7055e4",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage1_r0p2_ainf_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 0.01,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a0p01_central_state_ivm_cfgd5e5a7e31ea7_budget160.npz",
+      "sha256": "ed5bbc9b3a7b8414b8383d0baed987e59da2a9fc208f4944d920bea2068320fa",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a0p01_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 0.1,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a0p1_central_state_ivm_cfgb851107dc692_budget160.npz",
+      "sha256": "849fce261c97bf5a88a865c209201f45f98824dd52a739ff1ba69980557e2a18",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a0p1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 10000.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a10000_central_state_ivm_cfgd51727886e48_budget160.npz",
+      "sha256": "e1c8b03c11fe01756b57ca25ac3c169a49bb42556dc48c3e8e6705be1ed6b82a",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a10000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 1000.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a1000_central_state_ivm_cfga0aff43c9a77_budget160.npz",
+      "sha256": "bbbe405758ce962a21971171d64011c071b45158b2b256f7c78b540a13a9c1ec",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a1000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 100.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a100_central_state_ivm_cfg5a6dbe851726_budget160.npz",
+      "sha256": "b21cbd8583812c8cbe895a9c3c1fcb91371a49216665f7a762ec0c35a6083c37",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a100_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 10.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a10_central_state_ivm_cfgfd86bce88b4c_budget160.npz",
+      "sha256": "76812455b14636e1eacf09a4f59c8ea5ae952eee1cac1d82240d9f33dcb326cf",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a10_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 1.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a1_central_state_ivm_cfge6b3a5e9e416_budget160.npz",
+      "sha256": "57fb29603d8c41ac9e2cdda244aed0d9d2146cdc4ad08f5313b6fff610221c34",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 20.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a20_central_state_ivm_cfg737ee06e45ca_budget160.npz",
+      "sha256": "91c3d8c318b377f17e5ae2b12090b9c9bc1d7b87d73386ea00bfab7ea48077e4",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a20_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 30.0,
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_a30_central_state_ivm_cfg77415f6d4530_budget160.npz",
+      "sha256": "7852f018101ce9340f3e865cb05007f332865cc7040ece46f8e53b06690bc6bb",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_a30_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": "inf",
+      "rtol": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p1_ainf_central_state_ivm_cfg959a54141e5e_budget160.npz",
+      "sha256": "3816f15162e92525efb9bb56f2db324ccf7f34404d605cb51e6710da849afb21",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p1_ainf_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 0.01,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a0p01_central_state_ivm_cfg08c088fbcbcc_budget160.npz",
+      "sha256": "5f7c1dc194f2ccc8b4cecbb94437a75d052973a1debc408dc2325e7d24897ae9",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a0p01_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 0.1,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a0p1_central_state_ivm_cfgc4779a48044f_budget160.npz",
+      "sha256": "e5643f01791338f9e0f3830590344d5b4a2b422b754bf8d9904ed9f7024490a5",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a0p1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 10000.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a10000_central_state_ivm_cfgbcaad750a4ef_budget160.npz",
+      "sha256": "c3b14007a097e072009c7f3c3dbc012ef63fb339bc6cede99917900fc73e7ddf",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a10000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 1000.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a1000_central_state_ivm_cfge87528f3051f_budget160.npz",
+      "sha256": "5a9171c4925237609705bdad4f3d5678cd555a3d0a4f1941d977fe35e7b6da48",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a1000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 100.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a100_central_state_ivm_cfg7fcabac42275_budget160.npz",
+      "sha256": "c5f11a66189cb9ba4dd60129b7a26639feded6776ea45f665f3ae7ba0231677b",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a100_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 10.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a10_central_state_ivm_cfg4cd7d4b9bbbb_budget160.npz",
+      "sha256": "22b21a6ad27367ae9e0de3d72531ae25e513b71d41a4ae1bdeb66a0ee18bb6fe",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a10_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 1.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a1_central_state_ivm_cfg882bfed610ca_budget160.npz",
+      "sha256": "1e9ab4851bc4c17c3a00e6c969eee0b7156d13d0d38fc8b373493c4ad05f63d7",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 20.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a20_central_state_ivm_cfg3747889a8c09_budget160.npz",
+      "sha256": "5d275644d36cf30dd79de31c16f354702cdb6e68b1adf32321b8c93773aa1993",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a20_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": 30.0,
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_a30_central_state_ivm_cfgd884d57f52a7_budget160.npz",
+      "sha256": "e5ceaf3657b83f4d4de31a0e5915c6d9b3ae231a1c8491750b80edbccd9d995e",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_a30_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage2",
+      "alpha": "inf",
+      "rtol": 0.2,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage2_exact_resample/ivm_clean_stage2_r0p2_ainf_central_state_ivm_cfg2192c9d50e2b_budget160.npz",
+      "sha256": "15dd7b5424a07e912ed8085db55de4bd15058741069f515bdf54deaec007a163",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage2_r0p2_ainf_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 0.01,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a0p01_central_state_ivm_cfg16054394a5c2_budget220.npz",
+      "sha256": "41579629d106f8f0be4f415d42e0d961fdf97951cb6875710bb0e0218c28d487",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a0p01_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 0.1,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a0p1_central_state_ivm_cfg6dd072b255ab_budget220.npz",
+      "sha256": "7ab9b79d4b57b401b31cddb16d85ffa551913e367ffbb55ff87a6153c167c4ae",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a0p1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 10000.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a10000_central_state_ivm_cfgc245327daede_budget220.npz",
+      "sha256": "87ea9506b8846fb98dd5ff7f0f9bbdbc21e8d78ba6a338a6b8b1f73c0959dbf0",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a10000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 1000.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a1000_central_state_ivm_cfg069b6acde6a8_budget220.npz",
+      "sha256": "354485cb16295ea8edbbe29368ccc2b7880951400f86b311c4534b360c0f974e",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a1000_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 100.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a100_central_state_ivm_cfgd3bb3167b7ca_budget220.npz",
+      "sha256": "111c4a1aa140586d253e5f036a032ee0a368d996c1e9139ab14ae4bdb4669b62",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a100_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 10.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a10_central_state_ivm_cfg961537d5e26b_budget220.npz",
+      "sha256": "34123377bb53ce22173ff080d82195eb9614948149f3c0954b5c21dfe9bfb8d7",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a10_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 1.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a1_central_state_ivm_cfgfcf49853c822_budget220.npz",
+      "sha256": "3d87adbb7c1fe32c9d4f51cd0811245b47d23339ddd474fa0cbf7f78e17b06b0",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a1_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 20.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a20_central_state_ivm_cfg29dfadc130bb_budget220.npz",
+      "sha256": "a42a29fd5ca05d5b0a0ec09f7888d1dfbed294c0a747ddb8e0fa3995ed78edd0",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a20_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": 30.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_a30_central_state_ivm_cfgf3e4d4af4381_budget220.npz",
+      "sha256": "7dc462c51a8c40fbaf3f18dcc9bfa1a14d68ae78fab86522d8b597ed09e0101a",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_a30_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage3",
+      "alpha": "inf",
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage3_inexact_baseline_resample/ivm_clean_stage3_r0p8_ainf_central_state_ivm_cfgb66c8ec9bff9_budget220.npz",
+      "sha256": "71ebe2e6cd00577b272d286c0704dfd7de9a973fca5cc7100984dbb878714d39",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "method_ivm": true,
+        "alpha_fixed": true,
+        "active_alpha_fixed": true,
+        "force_counter_strict": true,
+        "finite_raw_i_perp": true,
+        "config_budget": true,
+        "config_inner_calls": true,
+        "config_plbfgs_kkt_rtol": true,
+        "config_reparam_every": true,
+        "config_reparam_mode": true,
+        "config_state_globalization": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage3_r0p8_ainf_common_checkpoints.npz",
+      "phase_a": null,
+      "phase_b": null,
+      "provenance": null
+    },
+    {
+      "stage": "stage4",
+      "alpha": 0.01,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a0p01_phaseA80_phaseB220.npz",
+      "sha256": "c5c1574fca1bbe3918fad4c13a44a8e49d3dd9a988a411d85bb454de0a6a795b",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a0p01_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a0p01_central_state_ivm_cfg5ab8a2613e9f_budget80.npz",
+        "sha256": "6ad67a20b282efeddc77a5765ee208d46d3ed3a58b02c033032369f5820ae768",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a0p01_central_state_ivm_cfg65cbb8d1bd43_budget220.npz",
+        "sha256": "2dee5c520180da7b40774bfb64ebd96817314b9add5d70e12a846d593926187d",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 0.1,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a0p1_phaseA80_phaseB220.npz",
+      "sha256": "f867b37f6ca466dfc7d985633f8eb4c406a698a9eb156540736552fee3cd6297",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a0p1_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a0p1_central_state_ivm_cfg90121fdddf46_budget80.npz",
+        "sha256": "ab773e667315f737d63d23bb34b99c210e81bff3382851c566a5dfca3a202ef9",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a0p1_central_state_ivm_cfgd7458345e14f_budget220.npz",
+        "sha256": "7c4ca2597ea4109109d63e5d16a3441853024a833fd84d650d65f34acb4673e5",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 1.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a1_phaseA80_phaseB220.npz",
+      "sha256": "7f82c5508a627a5e72494d3f7957ad85f8b34d5179596c52ae3d0e2eb53fcb08",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a1_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a1_central_state_ivm_cfg516aac910b0c_budget80.npz",
+        "sha256": "4facccfc2ae52d4598e5e465606e677b992a9e8b108a5c0ad9a906879ab8b134",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a1_central_state_ivm_cfg97f2d0b921a8_budget220.npz",
+        "sha256": "681c27772a806902655a70ba90b902214eaf9d97390b952dc07078978b825434",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 10.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a10_phaseA80_phaseB220.npz",
+      "sha256": "7d1acdb430f317d7eb4a7cd43c0a55f03347b9e7c2845619bbb6fd938f99ac5b",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a10_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a10_central_state_ivm_cfg978ffea43b25_budget80.npz",
+        "sha256": "4851cc4da49656ae0d7785df5abaed088e133e041c8703e2f036575c49ce6950",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a10_central_state_ivm_cfge7143da3ecd6_budget220.npz",
+        "sha256": "a2771029ddb2c138fcccc2732dd53066875a6d84752778669a0d335850299e50",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 20.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA80_phaseB220.npz",
+      "sha256": "e83c81244d29e05ef67f9667091e3ae7720977e8a7cee5132bb9a5bf6ae26ce7",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "best_alpha_independent_online": true,
+        "best_alpha_online_confirmed": true,
+        "best_alpha_stop_fired": true,
+        "best_alpha_terminal_commit": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a20_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseA_fast_a20_central_state_ivm_cfge2600bc730e9_budget80.npz",
+        "sha256": "62750a6fd03ac8bcf9e817a06a33a551063597bd5dad466bfda842916e05bf41",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v3_phaseB_precision_a20_central_state_ivm_cfg9dba7a7f4c8a_budget220.npz",
+        "sha256": "46e4e81884202f78734327e4ac39d2d4d29c9e832d20ba176b2756bbee1642e0",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "independent_online_execution",
+        "independent_online_rerun_status": "confirmed"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 30.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a30_phaseA80_phaseB220.npz",
+      "sha256": "4a645ee1550f02e6976d862c433486e4493b9725db91e307fbc7acb6282d3230",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a30_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a30_central_state_ivm_cfgd27a4a5b4e11_budget80.npz",
+        "sha256": "c40516619a9a56c7e5f4a0f32b7bb7203069c9c095f674509f5b4c0fbac43d0b",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a30_central_state_ivm_cfge8de0dfe51c1_budget220.npz",
+        "sha256": "2e3290ee7aef329e45676cfc8cc3d93d07d901c47220cedb4dbfaebe20e52e9c",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 100.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a100_phaseA80_phaseB220.npz",
+      "sha256": "42d23d298f2aad10e6a3d0bc9221cf9a83d93b68b60e85d5b08f02f1020fd7b8",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a100_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a100_central_state_ivm_cfg3da632b2bec3_budget80.npz",
+        "sha256": "9d72528976c6e5f3fe429b22eff2bfacc4cecb0b7d4ec32d78238311aed6230f",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a100_central_state_ivm_cfg0889a75d6bcd_budget220.npz",
+        "sha256": "c2e55541f32fb4c21a5917dbbd6b0dce55f445987d819fece910637376fddd07",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 1000.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a1000_phaseA80_phaseB220.npz",
+      "sha256": "30897f09219c1e51f46738440f8b54152a49c56cb2b20fa5b10748639d2cc574",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a1000_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a1000_central_state_ivm_cfge6be84a45666_budget80.npz",
+        "sha256": "e5fa63879826568f0c23819ea2b776ba80233d83486c41387104a626106dbac6",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a1000_central_state_ivm_cfge3f082f8c9d9_budget220.npz",
+        "sha256": "557806bfc4c20f8c7687f9456b3ac9fbededec36f9ec83e13c77a0c09de13aca",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": 10000.0,
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a10000_phaseA80_phaseB220.npz",
+      "sha256": "c91d137522c0733fec3f0b0ce48fd8fee1e0e4cf9753e2ae451772a9ed71a371",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a10000_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_a10000_central_state_ivm_cfg2fd8853ecf5f_budget80.npz",
+        "sha256": "3bb59b1fb0fe03d3ef3da29463c0a6dda4c7df96f7e94329115f322056185ea6",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_a10000_central_state_ivm_cfgfdb844536293_budget220.npz",
+        "sha256": "8234729cf2234fa12b6c5786eea208d9b82119ca16de38e45b4f08a9b1da4f8f",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    },
+    {
+      "stage": "stage4",
+      "alpha": "inf",
+      "rtol": 0.8,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_ainf_phaseA80_phaseB220.npz",
+      "sha256": "6afe3a9bee34b799359921bc0b0cda7e601ba2505a3b25dc12e2a3ca75d0a9d6",
+      "checks": {
+        "common_initial_path": true,
+        "alpha_on_grid": true,
+        "policy_version": true,
+        "fixed_across_both_phases": true,
+        "online_stop_target_uniform": true,
+        "force_counter_strict": true,
+        "raw_i_perp_monotone": true,
+        "phase_a_theory_configuration": true,
+        "phase_b_theory_configuration": true,
+        "dense_diagnostic_exists": true,
+        "dense_initial_hash": true,
+        "dense_calls_strict": true,
+        "dense_barrier_finite": true
+      },
+      "passed": true,
+      "dense_diagnostic": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_ainf_common_checkpoints.npz",
+      "phase_a": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseA_fast_ainf_central_state_ivm_cfge6d45701d928_budget80.npz",
+        "sha256": "2db358f61dbb0ad6e14cba797a92b45f7fd87f76f4a2a51a3110a5a038f757e2",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "phase_b": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/phases/ivm_clean_stage4_v2_phaseB_precision_ainf_central_state_ivm_cfg3620b39d7743_budget220.npz",
+        "sha256": "7a31a427b43b372419a94ae27d466c8f5c72428dad435faff7d75b55fdcbe19d",
+        "checks": {
+          "method": true,
+          "alpha_mode": true,
+          "inner_calls": true,
+          "reparam_every": true,
+          "state_globalization": true,
+          "plbfgs_kkt_rtol": true,
+          "reparam_mode": true,
+          "state_curve_direct_objective_acceptance": true,
+          "state_trust_fraction": true,
+          "active_alpha_fixed": true,
+          "force_counter_strict": true,
+          "finite_raw_i_perp": true
+        },
+        "passed": true
+      },
+      "provenance": {
+        "materialization_mode": "exact_prefix_of_completed_v2_trajectory",
+        "independent_online_rerun_status": "pending_resource_release"
+      }
+    }
+  ],
+  "online_prefix_verification": {
+    "actual": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA80_phaseB220.npz",
+    "actual_sha256": "e83c81244d29e05ef67f9667091e3ae7720977e8a7cee5132bb9a5bf6ae26ce7",
+    "materialized_prefix_reference": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/v3_materialized_prefix_reference/stage4_uniform_v3_a20_phaseA80_phaseB220.materialized-prefix.npz",
+    "materialized_prefix_reference_sha256": "668ff711b9293366ae7a5824aaa82a1fb181c8b9ae846855b3af64ac49049dfa",
+    "scientific_arrays_exactly_equal": true,
+    "online_rule_valid": true,
+    "metadata": {
+      "policy_version": "stage4_uniform_v3",
+      "alpha_mode": "fixed_across_both_phases",
+      "common_initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "stop_complete_iperp": 0.00015,
+      "stop_rule_fired": true,
+      "stop_reason": "complete_reparameterized_i_perp_target",
+      "terminal_reparam_committed": true,
+      "materialization_mode": "independent_online_execution",
+      "independent_online_rerun_status": "confirmed",
+      "terminal_force_evaluations": 2914,
+      "terminal_i_perp": 0.00013475461874885676
+    },
+    "array_comparisons": {
+      "alpha": {
+        "shape_actual": [],
+        "shape_replay": [],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "phase_labels": {
+        "shape_actual": [
+          2
+        ],
+        "shape_replay": [
+          2
+        ],
+        "exact_equal": true
+      },
+      "phase_transition_macro_index": {
+        "shape_actual": [],
+        "shape_replay": [],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "phase_transition_force_offset": {
+        "shape_actual": [],
+        "shape_replay": [],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "macro_calls": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "total_force_evaluations": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "i_perp": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "sparse_barrier_kcal": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "physical_fmax": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "segment_length_cv": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "equidistance_relative_defect": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "phase": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "stored_force_evaluations": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "stored_macro_calls": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "stored_phase": {
+        "shape_actual": [
+          222
+        ],
+        "shape_replay": [
+          222
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "stored_paths": {
+        "shape_actual": [
+          222,
+          22,
+          66
+        ],
+        "shape_replay": [
+          222,
+          22,
+          66
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "final_path": {
+        "shape_actual": [
+          22,
+          66
+        ],
+        "shape_replay": [
+          22,
+          66
+        ],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      },
+      "raw_iperp_rises": {
+        "shape_actual": [],
+        "shape_replay": [],
+        "exact_equal": true,
+        "max_abs_difference": 0.0
+      }
+    },
+    "status": "passed"
+  },
+  "alpha20_dense_barrier_stability": {
+    "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_a20_complete_macrostates.npz",
+    "calls": [
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      200,
+      300,
+      480,
+      520,
+      740,
+      1060,
+      1180,
+      1386,
+      1446,
+      1488,
+      1666,
+      1829,
+      1849,
+      2023,
+      2101,
+      2304,
+      2596,
+      2616,
+      2914
+    ],
+    "barrier_kcal": [
+      44.56000757481355,
+      7.515360933696145,
+      3.7205782721638716,
+      3.28845564952697,
+      3.119145322147477,
+      3.0167980133741064,
+      2.8023687849881993,
+      2.660908571528611,
+      2.5529348882038283,
+      2.5386571328783902,
+      2.485963381835966,
+      2.475631225612118,
+      2.488381642737835,
+      2.5250014961449385,
+      2.5287802765418697,
+      2.5401341539762687,
+      2.515587927085708,
+      2.5745467095612486,
+      2.576102874991806,
+      2.5536958521691204,
+      2.555173812137179,
+      2.528329211912789,
+      2.4851864984111707,
+      2.485790531739838,
+      2.487096512307285
+    ],
+    "absolute_error_kcal": [
+      42.10392506168824,
+      5.059278420570836,
+      1.2644957590385633,
+      0.8323731364016616,
+      0.6630628090221689,
+      0.560715500248798,
+      0.34628627186289096,
+      0.2048260584033028,
+      0.09685237507851996,
+      0.08257461975308189,
+      0.029880868710657538,
+      0.01954871248680945,
+      0.03229912961252657,
+      0.06891898301963018,
+      0.07269776341656131,
+      0.0840516408509604,
+      0.05950541396039988,
+      0.1184641964359403,
+      0.12002036186649745,
+      0.09761333904381209,
+      0.09909129901187086,
+      0.07224669878748058,
+      0.029103985285862333,
+      0.029708018614529763,
+      0.031013999181976448
+    ],
+    "barrier_rises": 9,
+    "absolute_error_rises": 9,
+    "maximum_error_after_first_below_0p05": 0.12002036186649745,
+    "terminal_error_kcal": 0.031013999181976448,
+    "strict_no_oscillation_passed": false
+  },
+  "all_methods_audit": {
+    "ivm_policy": "stage4_uniform_v4_pareto_archive",
+    "ivm_alpha": 20,
+    "ivm_selected_optimization_NF": 2507,
+    "ivm_screen_force_equivalent_NF": 2301,
+    "ivm_selected_total_charged_NF": 4808,
+    "ivm_selected_i_perp": 0.00018216907465962214,
+    "ivm_selected_dense_barrier": 2.4551593991015093,
+    "ivm_barrier_abs_error": 0.0009231140237990765,
+    "ode_terminal_i_perp": 0.00020406804672111045,
+    "ode_terminal_barrier_abs_error": 0.03607305433804209,
+    "ivm_beats_ode_i_perp": true,
+    "ivm_beats_ode_barrier_error": true,
+    "pareto_disclosure": {
+      "raw_complete_candidate_barrier_error_max": 0.20155680818239263,
+      "raw_complete_candidate_barrier_error_rises": 4,
+      "published_incumbent_barrier_error_rises": 0,
+      "accepted_calls": [
+        660,
+        680,
+        829,
+        943,
+        2507
+      ],
+      "accepted_charged_force": [
+        871,
+        1100,
+        1458,
+        1781,
+        4808
+      ],
+      "accepted_i_perp": [
+        0.006889354808869684,
+        0.006584491730342424,
+        0.0034644624572146097,
+        0.0018424108929185675,
+        0.00018216907465962214
+      ],
+      "accepted_barrier20_kcal": [
+        2.5015005537398483,
+        2.497368345313599,
+        2.4913029042616177,
+        2.4908191977367014,
+        2.4551593991015093
+      ],
+      "accepted_barrier20_abs_error": [
+        0.04541804061453991,
+        0.04128583218829052,
+        0.03522039113630937,
+        0.03473668461139301,
+        0.0009231140237990765
+      ],
+      "screen_force_equivalent_evaluations": 2301
+    },
+    "first_passage_speedups": {
+      "i_perp": {
+        "threshold": 0.00021,
+        "ivm_force": 4808,
+        "ode_neb_force": 83522,
+        "speedup": 17.37146422628952
+      },
+      "dense_barrier_error": {
+        "threshold": 0.017,
+        "ivm_force": 4808,
+        "ode_neb_force": 19222,
+        "speedup": 3.9979201331114806
+      }
+    },
+    "initial_path_max_abs_differences": {
+      "ivm": 0.0,
+      "ode_neb": 0.0,
+      "original_string": 0.0,
+      "static_neb": 0.0,
+      "obsm_bfgs": 0.0,
+      "obsm_fire": 0.0
+    },
+    "outputs": {
+      "descent": {
+        ".pdf": "9479e3d0aa9a42dbf59f30d6c9f96d3ae3e559b8dcbc469a1b385400c4187335",
+        ".svg": "fc9652566ba12eb5b402b09b1052540a67a62c43987a49349d133fc908422c91",
+        ".png": "683e9b9bfd002fae0475a3cd8852a190345dda35715a877b07b23f50cdb6e94a"
+      },
+      "cost_and_paths": {
+        ".pdf": "482018313ac47271a6f4e3f4a61cb503a2b27d0ab326c4ea1fbb3d5ef056cbe9",
+        ".svg": "3df93286e538260f2fb92098e9e30147e05921336d038f11621b77a1e85693e5",
+        ".png": "8cbb71e68ebf4a31913bed0011d9c5389dac0ce2dc543c726b42a9b8e969643b"
+      },
+      "evolution": {
+        ".pdf": "9ce3f5f6de360597ae884fc63f7f1404d3ad2d6ad4f1fecb72941307fefda80b",
+        ".svg": "9977f12e6365cb4d4ec46b4876cd0a89d793855246f82fdbac6f4f85afbb856c",
+        ".png": "ba73ca18d6fff6c865b2920b366b4987ed275d5a881a8b7c1c7e869230c1954b"
+      }
+    },
+    "cost_rows": [
+      [
+        "ivm",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.00023101297000831605,
+        4808
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.0003511191734215131,
+        4808
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.0005336699231206312,
+        4808
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.0008111308307896872,
+        4808
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.0012328467394420659,
+        4808
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.001873817422860383,
+        1781
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.002848035868435802,
+        1781
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.004328761281083062,
+        1458
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.006579332246575682,
+        1458
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.01,
+        520
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.01519911082952933,
+        360
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.023101297000831605,
+        240
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.03511191734215131,
+        180
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.05336699231206313,
+        140
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.08111308307896872,
+        100
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.12328467394420659,
+        100
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.1873817422860385,
+        80
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.2848035868435802,
+        80
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.43287612810830617,
+        80
+      ],
+      [
+        "ivm",
+        "i_perp",
+        0.6579332246575682,
+        80
+      ],
+      [
+        "ivm",
+        "i_perp",
+        1.0,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        1.5199110829529332,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        2.310129700083158,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        3.5111917342151346,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        5.336699231206313,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        8.111308307896872,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        12.32846739442066,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        18.73817422860383,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        28.48035868435805,
+        60
+      ],
+      [
+        "ivm",
+        "i_perp",
+        43.287612810830616,
+        40
+      ],
+      [
+        "ivm",
+        "i_perp",
+        65.79332246575683,
+        40
+      ],
+      [
+        "ivm",
+        "i_perp",
+        100.0,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        4808
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        1100
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        871
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        871
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        871
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        440
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        440
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        300
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        300
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        200
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        140
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        100
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        100
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        100
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        60
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        60
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        60
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        60
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        60
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        40
+      ],
+      [
+        "ivm",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        40
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.00023101297000831605,
+        74682
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0003511191734215131,
+        57842
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0005336699231206312,
+        47562
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0008111308307896872,
+        39342
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.0012328467394420659,
+        33182
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.001873817422860383,
+        27642
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.002848035868435802,
+        22722
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.004328761281083062,
+        17602
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.006579332246575682,
+        13562
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.01,
+        9522
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.01519911082952933,
+        6082
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.023101297000831605,
+        4122
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.03511191734215131,
+        3042
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.05336699231206313,
+        2222
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.08111308307896872,
+        1822
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.12328467394420659,
+        1422
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.1873817422860385,
+        1242
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.2848035868435802,
+        1102
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.43287612810830617,
+        982
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        0.6579332246575682,
+        982
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        1.0,
+        882
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        1.5199110829529332,
+        822
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        2.310129700083158,
+        722
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        3.5111917342151346,
+        682
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        5.336699231206313,
+        542
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        8.111308307896872,
+        462
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        12.32846739442066,
+        342
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        18.73817422860383,
+        262
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        28.48035868435805,
+        202
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        43.287612810830616,
+        162
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        65.79332246575683,
+        122
+      ],
+      [
+        "ode_neb",
+        "i_perp",
+        100.0,
+        102
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        ""
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        ""
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        ""
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        ""
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        ""
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        19222
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        19222
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        19222
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        14602
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        14602
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        14602
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        11102
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        8422
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        8422
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        6402
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        4862
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        3682
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        2802
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        2122
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        1622
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        1222
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        1222
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        922
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        922
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        682
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        682
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        542
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        542
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        302
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        202
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        122
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        102
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        62
+      ],
+      [
+        "ode_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        62
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.00023101297000831605,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0003511191734215131,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0005336699231206312,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0008111308307896872,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.0012328467394420659,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.001873817422860383,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.002848035868435802,
+        ""
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.004328761281083062,
+        51022
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.006579332246575682,
+        38442
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.01,
+        26902
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.01519911082952933,
+        17462
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.023101297000831605,
+        11382
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.03511191734215131,
+        7822
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.05336699231206313,
+        5602
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.08111308307896872,
+        4482
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.12328467394420659,
+        3922
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.1873817422860385,
+        3562
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.2848035868435802,
+        3262
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.43287612810830617,
+        3002
+      ],
+      [
+        "original_string",
+        "i_perp",
+        0.6579332246575682,
+        2762
+      ],
+      [
+        "original_string",
+        "i_perp",
+        1.0,
+        2562
+      ],
+      [
+        "original_string",
+        "i_perp",
+        1.5199110829529332,
+        2342
+      ],
+      [
+        "original_string",
+        "i_perp",
+        2.310129700083158,
+        2142
+      ],
+      [
+        "original_string",
+        "i_perp",
+        3.5111917342151346,
+        1942
+      ],
+      [
+        "original_string",
+        "i_perp",
+        5.336699231206313,
+        1762
+      ],
+      [
+        "original_string",
+        "i_perp",
+        8.111308307896872,
+        1562
+      ],
+      [
+        "original_string",
+        "i_perp",
+        12.32846739442066,
+        1362
+      ],
+      [
+        "original_string",
+        "i_perp",
+        18.73817422860383,
+        1182
+      ],
+      [
+        "original_string",
+        "i_perp",
+        28.48035868435805,
+        982
+      ],
+      [
+        "original_string",
+        "i_perp",
+        43.287612810830616,
+        802
+      ],
+      [
+        "original_string",
+        "i_perp",
+        65.79332246575683,
+        602
+      ],
+      [
+        "original_string",
+        "i_perp",
+        100.0,
+        422
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        ""
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        ""
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        ""
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        ""
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        50002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        48002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        46002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        43502
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        40002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        36502
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        33002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        28502
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        24002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        20002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        16002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        13002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        10002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        8002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        6002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        4002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        4002
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        1662
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        1302
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        1042
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        842
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        662
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        502
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        382
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        262
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        182
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        122
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        82
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        42
+      ],
+      [
+        "original_string",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        42
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.00023101297000831605,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0003511191734215131,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0005336699231206312,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0008111308307896872,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.0012328467394420659,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.001873817422860383,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.002848035868435802,
+        ""
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.004328761281083062,
+        55222
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.006579332246575682,
+        41542
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.01,
+        29022
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.01519911082952933,
+        18822
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.023101297000831605,
+        12262
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.03511191734215131,
+        8422
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.05336699231206313,
+        5882
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.08111308307896872,
+        4182
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.12328467394420659,
+        3202
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.1873817422860385,
+        2622
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.2848035868435802,
+        2202
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.43287612810830617,
+        1862
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        0.6579332246575682,
+        1582
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        1.0,
+        1322
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        1.5199110829529332,
+        1102
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        2.310129700083158,
+        902
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        3.5111917342151346,
+        702
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        5.336699231206313,
+        542
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        8.111308307896872,
+        422
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        12.32846739442066,
+        322
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        18.73817422860383,
+        262
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        28.48035868435805,
+        222
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        43.287612810830616,
+        182
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        65.79332246575683,
+        142
+      ],
+      [
+        "static_neb",
+        "i_perp",
+        100.0,
+        122
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        ""
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        ""
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        ""
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        ""
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        55002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        55002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        55002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        50002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        45002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        40002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        40002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        35002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        30002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        25002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        20002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        16002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        12002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        8002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        8002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        4002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        4002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        2002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        2002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        2002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        1002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        1002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        1002
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        402
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        402
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        202
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        102
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        102
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        42
+      ],
+      [
+        "static_neb",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        42
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.00023101297000831605,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0003511191734215131,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0005336699231206312,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0008111308307896872,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.0012328467394420659,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.001873817422860383,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.002848035868435802,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.004328761281083062,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.006579332246575682,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.01,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.01519911082952933,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.023101297000831605,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.03511191734215131,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.05336699231206313,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.08111308307896872,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.12328467394420659,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.1873817422860385,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.2848035868435802,
+        622
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.43287612810830617,
+        622
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        0.6579332246575682,
+        562
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        1.0,
+        562
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        1.5199110829529332,
+        562
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        2.310129700083158,
+        502
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        3.5111917342151346,
+        502
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        5.336699231206313,
+        442
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        8.111308307896872,
+        442
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        12.32846739442066,
+        382
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        18.73817422860383,
+        382
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        28.48035868435805,
+        322
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        43.287612810830616,
+        322
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        65.79332246575683,
+        262
+      ],
+      [
+        "obsm_bfgs",
+        "i_perp",
+        100.0,
+        202
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        ""
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        1932
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        1859
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        1859
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        1789
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        1719
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        1649
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        1579
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        1509
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        1442
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        1376
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        1246
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        1181
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        1116
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        988
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        863
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        742
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        622
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        562
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        502
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        442
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        382
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        382
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        322
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        322
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        262
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        262
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        202
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        202
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        142
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        142
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        142
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        82
+      ],
+      [
+        "obsm_bfgs",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        82
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0001,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0001519911082952933,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.00023101297000831605,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0003511191734215131,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0005336699231206312,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0008111308307896872,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.0012328467394420659,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.001873817422860383,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.002848035868435802,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.004328761281083062,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.006579332246575682,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.01,
+        29622
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.01519911082952933,
+        19222
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.023101297000831605,
+        12502
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.03511191734215131,
+        8582
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.05336699231206313,
+        6022
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.08111308307896872,
+        4262
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.12328467394420659,
+        3302
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.1873817422860385,
+        2662
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.2848035868435802,
+        2262
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.43287612810830617,
+        1862
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        0.6579332246575682,
+        1622
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        1.0,
+        1382
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        1.5199110829529332,
+        1142
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        2.310129700083158,
+        982
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        3.5111917342151346,
+        822
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        5.336699231206313,
+        742
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        8.111308307896872,
+        662
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        12.32846739442066,
+        582
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        18.73817422860383,
+        502
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        28.48035868435805,
+        422
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        43.287612810830616,
+        342
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        65.79332246575683,
+        262
+      ],
+      [
+        "obsm_fire",
+        "i_perp",
+        100.0,
+        182
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.005,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.006565162172439418,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.008620270870085892,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.011318695246493872,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.014861813974730293,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.019514043784146166,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.025622572416600597,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.03364326863801118,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.04417470292389771,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.058002817722944446,
+        ""
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.07615958096191475,
+        36502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.1,
+        32502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.13130324344878838,
+        26502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.17240541740171794,
+        22502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.22637390492987747,
+        18502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.2972362794946059,
+        14502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.3902808756829234,
+        12502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.5124514483320121,
+        10502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.6728653727602236,
+        10502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        0.8834940584779547,
+        10502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.1600563544588895,
+        10502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        1.523191619238295,
+        1782
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.0000000000000004,
+        1382
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        2.6260648689757677,
+        1062
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        3.4481083480343577,
+        822
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        4.527478098597552,
+        662
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        5.944725589892119,
+        502
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        7.805617513658469,
+        342
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        10.24902896664024,
+        262
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        13.457307455204475,
+        182
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        17.669881169559098,
+        182
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        23.201127089177795,
+        102
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        30.463832384765908,
+        102
+      ],
+      [
+        "obsm_fire",
+        "dense_barrier_abs_error_kcal_per_mol",
+        40.0,
+        102
+      ]
+    ]
+  },
+  "strict_user_acceptance_passed": false,
+  "status": "structurally_passed_but_strict_barrier_stability_unmet"
+}

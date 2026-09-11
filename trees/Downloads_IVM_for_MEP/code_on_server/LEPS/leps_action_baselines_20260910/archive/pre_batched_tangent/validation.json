@@ -1,0 +1,27 @@
+{
+  "accounting_checks_passed": true,
+  "derivatives": [
+    {
+      "beta": null,
+      "max_gradient_error": 1.1700379554113738e-09
+    },
+    {
+      "beta": 0.1,
+      "max_gradient_error": 2.0503789777137627e-09
+    },
+    {
+      "beta": 0.3,
+      "max_gradient_error": 1.0593723676066702e-09
+    },
+    {
+      "beta": 1.0,
+      "max_gradient_error": 1.50313886337905e-10
+    },
+    {
+      "beta": 3.0,
+      "max_gradient_error": 7.169443511090279e-11
+    }
+  ],
+  "passed": true,
+  "source_sha256": "55b92a7713b80737f71ba63288810678f53421bc53a8e6f1bbfdb2b4e4868e17"
+}

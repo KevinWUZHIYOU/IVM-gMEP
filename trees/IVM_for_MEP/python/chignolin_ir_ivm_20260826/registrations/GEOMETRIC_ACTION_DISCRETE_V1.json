@@ -1,0 +1,74 @@
+{
+  "registered_utc": "2026-09-03T16:08:45.228044+00:00",
+  "purpose": "Additional discrete geometric-action diagnostic; no optimizer rerun",
+  "formula": "sum_i 0.5*(norm(gradV_i)+norm(gradV_(i+1)))*norm(x_(i+1)-x_i)",
+  "gradient": "full physical gradient; not normal force; no extra gradV dot tangent term",
+  "tangent": "normalized central difference: x[i+1] - x[i-1]",
+  "quadrature": "polygonal arc-length trapezoid",
+  "interior_weights": "chignolin_core.local_path_weights",
+  "endpoint_policy": "include half-segment endpoint terms",
+  "spatial_nodes": 22,
+  "densification": false,
+  "n_atoms": 166,
+  "coordinate_space": "unweighted 498D Cartesian, Angstrom",
+  "output_unit": "kcal/mol",
+  "ev_to_kcal": 23.0605,
+  "source_contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/ARC_LENGTH_500_IVM_REPLACEMENT_CONTRACT.json",
+  "source_contract_sha256": "f351020439a1ef7d75bd0c21ae6d843722d813912542bf5cef984f3f0ab424b8",
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/inputs/chignolin_clean.pdb",
+    "sha256": "04b122a0b98492b6fadae35772ffc307b8916ea65c8eaf959cb5187bbbfeab01",
+    "energy_backend": "real OpenMM CPU double precision"
+  },
+  "common_initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+  "methods": {
+    "IVM": {
+      "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+      "source_result_sha256": "e8ce449e55b975360bbc29fd49a8e28c1fe8c0618382eb37b0a86e022bdfe03a",
+      "eligibility": "initial_or_reparam_committed"
+    },
+    "ODE-NEB": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_ode_k50_central_k50_alpha0p0001_ode_budget1000.npz",
+      "source_result_sha256": "68bc5c5a8608e173e650f194bf849127e583439862294f7afdae4fb4d03609ba",
+      "eligibility": "all_saved_states"
+    },
+    "Static-NEB": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.npz",
+      "source_result_sha256": "8aa75a1cdee0cf82b2e46181c8633c6655277a18d37e9c738002546de0359fe0",
+      "eligibility": "all_saved_states"
+    },
+    "Original String": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.npz",
+      "source_result_sha256": "10778b9d36ffb6da7c2904cf024c5046137b6e103cd3581140ee440bd5ea5ea9",
+      "eligibility": "all_saved_states"
+    },
+    "OBSM-FIRE": {
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.npz",
+      "source_result_sha256": "0dc20cbb94fa5411d8bd6bd8d40f303766937c5327a7fbc2f965b71668bf7b4c",
+      "eligibility": "all_saved_states"
+    }
+  },
+  "counts": {
+    "IVM": 12,
+    "ODE-NEB": 906,
+    "Static-NEB": 1000,
+    "Original String": 1000,
+    "OBSM-FIRE": 168
+  },
+  "selected_path_count": 3086,
+  "expected_diagnostic_joint_evaluations": 67892,
+  "selected_paths_sha256": "4923efb85f8e20ed2d6a1372817723ef0aac21812d0bd09f8aac63cb3c98b278",
+  "jobs": 1,
+  "openmm_cpu_threads": 1,
+  "host_lock": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/logs/chignolin_ir_ivm_host.lock",
+  "diagnostic_cost_excluded_from_optimization_axis": true,
+  "optimization_cost": "counter_vectors.sum(axis=1), all 22 images",
+  "iperp_verification_rtol": 1e-05,
+  "iperp_verification_atol": 1e-08,
+  "threshold_policy": "max(method minimum) over IVM, ODE-NEB, OBSM-FIRE; only ODE-NEB arrows",
+  "sources": {
+    "src/postprocess_geometric_action.py": "959167006d816b4346b9b8a569d2349632a256309340c7ff558511855b6dc1e0",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/chignolin_core.py": "ad5d6532f7acd7c7b2560fdb68e6ead796374bcf0b24d1c0790b7e51fa5e4faa",
+    "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/plot_chignolin_ivm_arc500.py": "62d30b5b81e0ab3b42bdf080308e95c615a4ecee0b960946b1df4dd15e0743b9"
+  }
+}

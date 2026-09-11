@@ -1,0 +1,40 @@
+{
+  "amendment_id": "bb_irivm_registered_budget_atomicity_20260901_r1",
+  "applies_to": "all Barnase--Barstar IR-IVM members in this campaign, prospectively and retrospectively",
+  "created_utc": "2026-09-01T13:56:48Z",
+  "decision_timing": "after the alpha=10 r3 terminal NoF ledger was available and before any densified Delta E diagnostic for the 990-N_F confirmations",
+  "diagnostic_values_used_for_this_decision": false,
+  "hard_budget_rule": {
+    "cost_axis_value": "actual optimization Number of Forces consumed",
+    "registered_budget_B": "a hard upper bound, not permission to overshoot in order to reach equality",
+    "valid_exact_case": "N_F = B",
+    "valid_atomic_remainder_case": [
+      "N_F < B",
+      "all physical joint attempts equal all successful joint evaluations and the sum over the 30 internal-image cache misses",
+      "fixed-endpoint attempts and misses are zero",
+      "total_internal_nf_budget_no_overshoot is true",
+      "total_internal_nf_budget_stop_reason is total_internal_joint_budget_insufficient_for_full_band",
+      "total_internal_nf_full_band_preflight_zero_step_stops is positive",
+      "total_internal_nf_complete_band_budget_stop_count is positive",
+      "0 < B - N_F < 30",
+      "the terminal partial tail is present and quarantined"
+    ],
+    "invalid_cases": "overshoot, failed physical attempt, inconsistent counters, endpoint charge, unquarantined partial tail, or any other early-stop reason"
+  },
+  "observed_trigger": {
+    "actual_optimization_Number_of_Forces": 986,
+    "audit": "runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf990_r3_central_state_ivm_cfg2a53ad9cf3db_budget990_storagecommitted.audit.json",
+    "audit_sha256": "cb0d98cfa7f3d998edac577d4acf266b12abf52261e8374b25a735a84311e354",
+    "registered_budget": 990,
+    "remaining_budget": 4,
+    "result": "runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf990_r3_central_state_ivm_cfg2a53ad9cf3db_budget990_storagecommitted.npz",
+    "result_sha256": "800f13c3a88eeb3fbb3ee62670a9ecc57f547397de2751191a8a3627024f0768",
+    "terminal_partial_tail_Number_of_Forces": 270,
+    "terminal_partial_tail_quarantined": true
+  },
+  "parent_staged_search_protocol": "registrations/STAGED_SEARCH_PROTOCOL.json",
+  "parent_staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "reason": "An indivisible complete-band preflight must stop before overshoot when the remaining budget cannot fund the next atomic band. Requiring numerical equality would reject the only counter-consistent no-overshoot terminal state and would encourage incorrect over-counting or overshoot.",
+  "schema": "bb-irivm-budget-atomicity-amendment-v1",
+  "status": "OPERATIVE_ACCOUNTING_CORRECTION"
+}

@@ -1,0 +1,237 @@
+{
+  "R1_quarantine": {
+    "accepted_metric_values": 0,
+    "calls_per_image": 10,
+    "complete_shard_published": false,
+    "may_be_reused_by_R2": false,
+    "may_be_used_as_a_metric_result": false,
+    "open_attempt_coordinate_sha256": "09d05c6dc3067d1e592bed8f384a268785dcd9d773b62e668e72af10f7d67de5",
+    "open_attempt_id": "82c106c4c8cf4d0482df3a300f6069d2:2:dense_arc500_joint_EF:35:1036",
+    "open_interrupted_attempts": 1,
+    "optimization_N_F": 300,
+    "pause_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_R1_PLOT_PRIORITY_PAUSE_20260902.json",
+      "sha256": "c35831d5e9f560ff82afb0c0903c23f3344f0604fc248643a3d6aed2e3480a8a"
+    },
+    "source_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_FOUR_JOINT_EF_SHORT_PREFIX_20260902_R1.json",
+      "sha256": "c0350c283e53f81a3446918b92319f1bbeb7cbd80cf5e7493e5a635f8ac5810a"
+    },
+    "successful_joint_energy_force_attempts": 35
+  },
+  "bb_core": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+    "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "contract_freezer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_dense_ivm_short_four_joint_resume_r2_contract.py",
+    "sha256": "899e91e6edac9d3e20ec36be7be602c8aea523f89a3a40367492910294a3a383"
+  },
+  "durability_policy": {
+    "aggregate_publication_footer_in_each_R2_WAL": true,
+    "append_only_fsync_R2_source_and_dense_WAL": true,
+    "atomic_no_overwrite_R2_complete_path_shard": true,
+    "failed_or_open_R2_attempt_requires_new_registration": true,
+    "manifest_hash_binds_all_imported_and_fresh_shards": true,
+    "same_R2_registration_retry_forbidden": true,
+    "unique_R1_quarantine_marker_in_each_R2_WAL": true
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_ivm_short_four_joint_resume_r2.py",
+    "sha256": "dd0553dd303072c3e94d4779a46ab8431b1543a1304e495f8200f63870c3eae5"
+  },
+  "frozen": true,
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "local",
+  "jobs": 1,
+  "joint_engine": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+    "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+  },
+  "method": "IVM",
+  "metric_policy": {
+    "R1_complete_shard_reuse": "calls_2_and_5_exact_hash_validated_zero_new_calls",
+    "R1_partial_tail_policy": "call_10_35_successes_plus_1_open_attempt_quarantined_not_reused",
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_fixed_endpoint_diagnostic_force_evaluations": 2,
+    "dense_force_use": "stored_only_not_used_by_metrics_or_optimization",
+    "dense_physical_call": "one_joint_energy_full_force_getState_per_point",
+    "discrete_I_perp_implementation": "bb_core.path_diagnostics",
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_state": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+    "original_fixed_endpoint_diagnostic_force_evaluations": 0,
+    "sampling": "uniform_cartesian_arclength",
+    "tangent": "normalized central difference: x[i+1] - x[i-1]",
+    "weight": "half sum of adjacent Cartesian chord lengths"
+  },
+  "optimization_accounting": {
+    "all_R1_and_R2_arc500_joint_EF_calls_are_diagnostics": true,
+    "optimization_N_F_contribution": 0,
+    "optimization_N_F_source": "sealed_short_replay_counter_vectors",
+    "reported_optimization_N_F": [
+      60,
+      150,
+      300,
+      1329
+    ]
+  },
+  "paths": [
+    {
+      "R2_action": "import_complete_R1_shard",
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0002_arc500_joint_ef.npz",
+        "sha256": "3f844cfbaebe2e1a4b03359e533de9cc3c806275ba1a4f72b13f5dadf124a1af"
+      },
+      "dense_policy": "hash_revalidate_complete_R1_arc500_joint_EF_shard_zero_new_calls",
+      "host_role": "local",
+      "label": "IVM_call2_NF60",
+      "method": "IVM",
+      "online_discrete_I_perp": 68167135.91306221,
+      "optimization_N_F": 60,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 2,
+        "fully_evaluated_current_path": true,
+        "history_index": 1,
+        "terminal_tail": false
+      },
+      "path_sha256": "1bb9241f4c3ce5a8d89c9db5aa8386f2a243972ae648e79c4ddd18de69c1edf0",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "R2_action": "import_complete_R1_shard",
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0005_arc500_joint_ef.npz",
+        "sha256": "0122d171f8e4336642445b73d53a4d89d632f28b5ed0fe521716b5e808b7c465"
+      },
+      "dense_policy": "hash_revalidate_complete_R1_arc500_joint_EF_shard_zero_new_calls",
+      "host_role": "local",
+      "label": "IVM_call5_NF150",
+      "method": "IVM",
+      "online_discrete_I_perp": 29407169.52263667,
+      "optimization_N_F": 150,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 5,
+        "fully_evaluated_current_path": true,
+        "history_index": 4,
+        "terminal_tail": false
+      },
+      "path_sha256": "2b4291c4f83c8007bcded8ae3182fdbbd2519aa619a56e198c3f2af0afc3a0e4",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "R2_action": "fresh_R2_complete_path",
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_shard",
+      "host_role": "local",
+      "label": "IVM_call10_NF300",
+      "method": "IVM",
+      "online_discrete_I_perp": 897667.2039737597,
+      "optimization_N_F": 300,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 10,
+        "fully_evaluated_current_path": true,
+        "history_index": 9,
+        "terminal_tail": false
+      },
+      "path_sha256": "b59b0c2647bc297fd551769e9b4a94e6e61a31eb1973e9afc3419a0cfcd22b8d",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "R2_action": "fresh_R2_complete_path",
+      "dense_policy": "fresh_exactly_500_uniform_cartesian_arc_length_joint_EF_then_atomic_shard",
+      "host_role": "local",
+      "label": "IVM_call50_NF1329",
+      "method": "IVM",
+      "online_discrete_I_perp": 952.0611021437114,
+      "optimization_N_F": 1329,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 50,
+        "fully_evaluated_current_path": true,
+        "history_index": 49,
+        "terminal_tail": false
+      },
+      "path_sha256": "39a429c34373b375a0edc5ad5c0f7bfc402c090acab2ae8c684447f4a2ac6a1f",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    }
+  ],
+  "physical_call_policy": {
+    "all_six_thread_caps": 1,
+    "dense_full_force_storage": true,
+    "failed_or_open_R2_attempt_policy": "fail_closed_require_new_superseding_registration",
+    "fresh_R2_accepted_successes": 1000,
+    "fresh_R2_dense_joint_EF_per_path": 500,
+    "fresh_R2_endpoint_joint_EF_per_path": 2,
+    "fresh_R2_maximum_attempt_started_records": 1000,
+    "fresh_R2_paths": 2,
+    "imported_R1_complete_paths": 2,
+    "imported_R1_dense_joint_EF_values": 1000,
+    "imported_R1_new_physical_calls": 0,
+    "jobs": 1,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_new_calls_per_path": 0,
+    "quarantined_R1_call10_open_attempts": 1,
+    "quarantined_R1_call10_successes": 35,
+    "quarantined_R1_values_accepted": 0,
+    "two_host_local_fcntl_locks": true
+  },
+  "purpose": "continue the interrupted short BB IVM diagnostic by importing two complete R1 paths and freshly evaluating only calls 10 and 50",
+  "r1_contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_FOUR_JOINT_EF_SHORT_PREFIX_20260902_R1.json",
+    "sha256": "c0350c283e53f81a3446918b92319f1bbeb7cbd80cf5e7493e5a635f8ac5810a"
+  },
+  "r1_dense_wal_at_pause": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.dense_joint_ef.wal.jsonl",
+    "sha256": "7384ee9babf516e6470a4db308a14964dcda68c2a978628ca422ed68b51411ba"
+  },
+  "r1_evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_ivm_short_four_joint.py",
+    "sha256": "020e70db46e52529cebfc01481541b8b76a767d0e5372dd14c83dcf6e99f16c6"
+  },
+  "r1_pause_receipt": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_SHORT_R1_PLOT_PRIORITY_PAUSE_20260902.json",
+    "sha256": "c35831d5e9f560ff82afb0c0903c23f3344f0604fc248643a3d6aed2e3480a8a"
+  },
+  "r1_source_wal_at_pause": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.source.wal.jsonl",
+    "sha256": "bef4608247b4543bfbc1ba7d685b84dbaafe4f516d41c43ef7941a336933a160"
+  },
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r2.npz",
+  "schema": "bb-dense-ivm-short-four-joint-ef-resume-contract-v2",
+  "status": "FROZEN_BEFORE_ANY_R2_OPENMM_OR_PHYSICAL_CALL",
+  "storage_policy": {
+    "R2_fresh_shard_contains_dense_coordinates_energy_full_force": true,
+    "aggregate_role": "index_metrics_and_plot_compatible_dense_energy_not_dense_coordinates_or_forces",
+    "authoritative_unit": "complete_atomic_path_shard",
+    "estimated_uncompressed_shard_bytes_per_path": 85961984,
+    "import_R1_shards_by_reference_no_copy": true,
+    "minimum_free_bytes_reserve": 8589934592,
+    "restart_reuse_unit": "complete_fully_validated_path_shard_only",
+    "reuse_individual_incomplete_WAL_successes": false
+  },
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  }
+}

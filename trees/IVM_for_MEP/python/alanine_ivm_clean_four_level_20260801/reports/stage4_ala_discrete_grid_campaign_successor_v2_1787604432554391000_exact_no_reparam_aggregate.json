@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_grid_campaign_successor_v2",
+  "family": "exact_no_reparam",
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_campaign_successor_v2_1787604432554391000_preregistered.json",
+  "preregistration_sha256": "d3ebf3239931dfde104342b791d8ed096b4ddef597c1bee0de4cb32b4b289aa3",
+  "required_hosts": [
+    "local",
+    "remote"
+  ],
+  "expected_cell_count": 8,
+  "unique_cell_count": 8,
+  "host_reports": {
+    "local": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_campaign_successor_v2_1787604432554391000_exact_no_reparam_local_worker.json",
+      "sha256": "8d1f75527ac04402b05fe08220a24f8ed24043853888d9cafa9d58a091f44c48"
+    },
+    "remote": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_campaign_successor_v2_1787604432554391000_exact_no_reparam_remote_worker.json",
+      "sha256": "640947cdb4c3981e3b5950235eba2d2f9ec8497336b1e7d5a662e7e06580bccb"
+    }
+  },
+  "host_machine_fingerprints": {
+    "local": "5b1f55bbdf3bbd0345e40c54062b9cae2f7914456d4244c23b234e6158f3ddc4",
+    "remote": "2f91c6feaaf871d8493d8b8b284e953458df9f0c49974098460e6f289ef1d8ed"
+  },
+  "scientific_runtime_sha256": "d34e76f312ac1ca097dcb13fef70f685911f00bb739916cbeb195147d034b6e2",
+  "completed_unix": 1787604999.9234781,
+  "primary_barrier": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_campaign_successor_v2_1787604432554391000_inexact_reparam_aggregate.json",
+    "sha256": "95b2be41434f452a58c49698af89b2ccf993c933e12667476af442da84250807"
+  }
+}

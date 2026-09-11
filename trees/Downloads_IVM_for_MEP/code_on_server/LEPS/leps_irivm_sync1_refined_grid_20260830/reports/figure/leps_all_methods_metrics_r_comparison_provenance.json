@@ -1,0 +1,24 @@
+{
+  "compared_ir_ivm": {
+    "IR-IVM ($r=10^{-3}$)": {
+      "path": "leps_irivm_ala_chig_every1_sync1_20260830/runs/356307bb5a618535.npz",
+      "sha256": "3b15974315d318dce5c2cdc0cf0f7d9474cce3936c03a2fb581af5c47092d740"
+    },
+    "IR-IVM ($r=3\\times10^{-3}$)": {
+      "path": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    }
+  },
+  "figure": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/leps_all_methods_metrics_r_comparison.pdf",
+  "figure_sha256": "81a26450a804f0942e7ec7362738a48ebf075b2d6b9704e54a26c003d37d829d",
+  "metric_contract": {
+    "densified_barrier": "500 total coordinate-wise linearly interpolated points",
+    "i_perp": "article Henkelman-Jonsson improved-tangent integral",
+    "number_of_forces": "uncached joint energy-force evaluations over the 20 internal images"
+  },
+  "plot_source": "leps_irivm_sync1_refined_grid_20260830/src/plot_all_methods_r_comparison.py",
+  "plot_source_sha256": "cb7652c0a5fda9dbbdd69f8c975c5e3fd770abc05c0a156e6f33ffc9e8b85267",
+  "source_csv": "leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_r_comparison_source.csv",
+  "source_csv_sha256": "89de1f8e067e540c9f5ee11098740f3634b20b4f08e60dc8b4df8a9c6a451eee",
+  "temporary_comparison": true
+}

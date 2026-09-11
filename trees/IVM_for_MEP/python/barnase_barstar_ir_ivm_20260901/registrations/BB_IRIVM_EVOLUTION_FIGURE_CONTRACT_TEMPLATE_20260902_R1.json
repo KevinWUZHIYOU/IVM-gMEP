@@ -1,0 +1,163 @@
+{
+  "schema": "bb-irivm-evolution-figure-contract-v1",
+  "status": "TEMPLATE_REQUIRES_SELECTED_9990_TERMINAL_GATES_AND_HASHES",
+  "created_utc": "2026-09-02T00:00:00Z",
+  "activation_rule": "Copy this template to a new immutable registration only after the selected 9990 result, producer audit, terminal verification, and exact-prefix verification all exist. Replace every angle-bracket placeholder with an actual path, SHA-256, or integer NoF. Then set status to FINAL_INPUTS_FROZEN_AFTER_SELECTED_9990_TERMINAL_GATES. This template itself is not execution authorization.",
+  "figure_identity": {
+    "scientific_identity": "new Barnase--Barstar selected IR-IVM evolution",
+    "legacy_reproduction_claim": false,
+    "legacy_reference_role": "style and calibrated coordinate/PES context only; the exact one-off generator of the legacy PDF is absent",
+    "required_output_stem_prefix": "barnase_barstar_ir_ivm_evolution"
+  },
+  "outputs": {
+    "pdf_filename": "<SET_EXACT_FINAL_FILENAME_STARTING_barnase_barstar_ir_ivm_evolution_AND_ENDING_.pdf>",
+    "provenance_filename": "<SET_EXACT_SAME_STEM_FILENAME_ENDING_.json>"
+  },
+  "selected_run": {
+    "expected_label": "bb_irivm_a1e0_r01_m05_inf9990_r1",
+    "expected_setting": {
+      "alpha": 1.0,
+      "r": 0.1,
+      "m_max": 5,
+      "registered_optimization_N_F_upper_bound": 9990,
+      "fixed_endpoint_optimization_N_F": 0
+    },
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    },
+    "result": {
+      "path": "<TERMINAL_SELECTED_9990_RESULT_NPZ>",
+      "sha256": "<TERMINAL_SELECTED_9990_RESULT_SHA256>"
+    },
+    "audit": {
+      "path": "<TERMINAL_SELECTED_9990_AUDIT_JSON>",
+      "sha256": "<TERMINAL_SELECTED_9990_AUDIT_SHA256>"
+    },
+    "terminal_verification": {
+      "path": "<PASS_SELECTED_9990_TERMINAL_VERIFICATION_JSON>",
+      "sha256": "<PASS_SELECTED_9990_TERMINAL_VERIFICATION_SHA256>"
+    },
+    "exact_prefix_verification": {
+      "path": "<PASS_SELECTED_9990_EXACT_PREFIX_VERIFICATION_JSON>",
+      "sha256": "<PASS_SELECTED_9990_EXACT_PREFIX_VERIFICATION_SHA256>"
+    }
+  },
+  "coordinate_surface": {
+    "coordinate_definition": "old calibrated path progress s and signed calibrated path-normal n in Angstrom",
+    "surface_format": "legacy_calibrated_cv_multistart_scattered",
+    "cv_definition": {
+      "path": "/Users/wuzhiyou/Code/IVM/Data/barnase_barstar/bb_neb_step7a2_calibrated_signed_normal_cv.npz",
+      "sha256": "ab5b426e1a838c6248599c17f15f97d02b3bfefd1369b7fe48cef2976d31cf5c"
+    },
+    "pes_data": {
+      "path": "/Users/wuzhiyou/Code/IVM/Data/barnase_barstar/bb_neb_step7b_extended_multistart_results.npz",
+      "sha256": "64a73e9b15ca4d62b4c1d095bc342b3d24c4125bf7d808b88f091886d62eb52d"
+    }
+  },
+  "style_reference_pdf": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/barnase_branch_local_true0k_evolution.pdf",
+    "sha256": "26625a3f4a3a23c4d4302be6283e8a07879d7ca6fe569abec276f2e0ee8f9394"
+  },
+  "ode_neb_paid_path_ledger": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_ALL_PAID_BATCHES_ARC500_20260902_R2.json",
+    "sha256": "ca5a0f15a36f2daa52b3116da1bd4cfaf1fb966b52ffbe20a5a956664baae997"
+  },
+  "ode_neb_snapshots": [
+    {
+      "optimization_N_F": 240,
+      "batch_id": 8,
+      "ledger_state_role": "trial",
+      "path_archive": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0008_paid_coordinates30_A.npz",
+        "sha256": "dfd355dc2bc2291e437cfc03c2467278ae82176855bc7775dce620a4afea64f4"
+      },
+      "path_key": "coordinates30_A",
+      "endpoint_keys": [
+        "endpoint0_A",
+        "endpoint1_A"
+      ],
+      "official_path32_sha256": "8bfa2c2109fad930d2f6969768be1b6b561a3d82f8aecbc89b9873312a1b250b"
+    },
+    {
+      "optimization_N_F": 480,
+      "batch_id": 16,
+      "ledger_state_role": "trial",
+      "path_archive": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0016_paid_coordinates30_A.npz",
+        "sha256": "0bae3210dc79ec06c9158fcb8c53c8c8529f087d06c7b1d4154e9ab499307e45"
+      },
+      "path_key": "coordinates30_A",
+      "endpoint_keys": [
+        "endpoint0_A",
+        "endpoint1_A"
+      ],
+      "official_path32_sha256": "9524d3bc6a62f96bbdd0eb3491680ef1cb744e0a88a30c29d29722f41feeb186"
+    },
+    {
+      "optimization_N_F": 990,
+      "batch_id": 33,
+      "ledger_state_role": "trial",
+      "path_archive": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0033_paid_coordinates30_A.npz",
+        "sha256": "453e69dcc3358c23741a8bd842fb656968ea9971b11efe1e6733ab04882df464"
+      },
+      "path_key": "coordinates30_A",
+      "endpoint_keys": [
+        "endpoint0_A",
+        "endpoint1_A"
+      ],
+      "official_path32_sha256": "3ab9750f0701c26c001ba684dda27ff269148e02239a127155cc4edf66ff3ab0"
+    },
+    {
+      "optimization_N_F": 9990,
+      "batch_id": 333,
+      "ledger_state_role": "trial",
+      "path_archive": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0333_paid_coordinates30_A.npz",
+        "sha256": "7dd2411869c4128f6e15e9568dab027fd3c7da8d105254302aa6224283f213a5"
+      },
+      "path_key": "coordinates30_A",
+      "endpoint_keys": [
+        "endpoint0_A",
+        "endpoint1_A"
+      ],
+      "official_path32_sha256": "3b017361c8922cfa07013a6240b0bf7f608f406449865535c66deee6944fb500"
+    }
+  ],
+  "panels": [
+    {
+      "ivm_optimization_N_F": 210,
+      "ode_neb_optimization_N_F": 240
+    },
+    {
+      "ivm_optimization_N_F": 429,
+      "ode_neb_optimization_N_F": 480
+    },
+    {
+      "ivm_optimization_N_F": "<SELECT_A_POST_INITIAL_REPARAM_COMMITTED_NOF_AFTER_TERMINAL>",
+      "ode_neb_optimization_N_F": "<SELECT_THE_REGISTERED_ODE_NEB_COMPARISON_NOF>"
+    }
+  ],
+  "plot": {
+    "layout": "1x4: initial path plus three IVM/ODE-NEB comparisons",
+    "method_labels": [
+      "IVM",
+      "ODE-NEB"
+    ],
+    "axis_limits": {
+      "s": [
+        -0.08,
+        1.12
+      ],
+      "n_A": [
+        -0.34,
+        0.34
+      ]
+    },
+    "color_map": "cividis",
+    "color_transform": "log1p(scale=40) then 1-(1-t)^2.5",
+    "ivm_color": "#0072B2",
+    "ode_neb_color": "#D55E00"
+  }
+}

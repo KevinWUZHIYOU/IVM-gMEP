@@ -1,0 +1,91 @@
+{
+  "name": "production_top3_inf5000",
+  "records": [
+    {
+      "alpha": 10.0,
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/run_chignolin_ir_ivm_member.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826",
+        "--alpha",
+        "10",
+        "--residual-ratio",
+        "0.5",
+        "--inner-max-steps",
+        "5",
+        "--internal-nf-budget",
+        "5000",
+        "--tier",
+        "production"
+      ],
+      "finished_unix": 1787686243.754497,
+      "index": 0,
+      "label": "chig_irivm_a1e1_r05_m05_inf5000_r1",
+      "m_max": 5,
+      "r": 0.5,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/production/ivm_chig_irivm_a1e1_r05_m05_inf5000_r1_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+      "returncode": 0,
+      "started_unix": 1787686028.708662,
+      "status": "complete"
+    },
+    {
+      "alpha": 10.0,
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/run_chignolin_ir_ivm_member.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826",
+        "--alpha",
+        "10",
+        "--residual-ratio",
+        "0.3",
+        "--inner-max-steps",
+        "8",
+        "--internal-nf-budget",
+        "5000",
+        "--tier",
+        "production"
+      ],
+      "finished_unix": 1787686454.131388,
+      "index": 1,
+      "label": "chig_irivm_a1e1_r03_m08_inf5000_r1",
+      "m_max": 8,
+      "r": 0.3,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/production/ivm_chig_irivm_a1e1_r03_m08_inf5000_r1_central_state_ivm_cfg3e87b7770138_budget5000.npz",
+      "returncode": 0,
+      "started_unix": 1787686243.7564118,
+      "status": "complete"
+    },
+    {
+      "alpha": 10.0,
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/run_chignolin_ir_ivm_member.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826",
+        "--alpha",
+        "10",
+        "--residual-ratio",
+        "0.3",
+        "--inner-max-steps",
+        "20",
+        "--internal-nf-budget",
+        "5000",
+        "--tier",
+        "production"
+      ],
+      "finished_unix": 1787686754.998215,
+      "index": 2,
+      "label": "chig_irivm_a1e1_r03_m20_inf5000_r1",
+      "m_max": 20,
+      "r": 0.3,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/production/ivm_chig_irivm_a1e1_r03_m20_inf5000_r1_central_state_ivm_cfg6f886412ac9b_budget5000.npz",
+      "returncode": 0,
+      "started_unix": 1787686454.1330628,
+      "status": "complete"
+    }
+  ],
+  "started_unix": 1787686028.7083771,
+  "updated_unix": 1787686754.9986088
+}

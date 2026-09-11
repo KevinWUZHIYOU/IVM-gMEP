@@ -1,0 +1,85 @@
+{
+  "schema": "bb-ir-ivm-user-alpha-scope-amendment-v1",
+  "amendment_id": "bb_ir_ivm_exclude_alpha_1e6_20260901_r1",
+  "created_utc": "2026-09-01T09:50:19Z",
+  "status": "USER_DIRECTED_SCOPE_REDUCTION_BEFORE_CANCELLED_MEMBER_START",
+  "parent_protocol": {
+    "path": "registrations/STAGED_SEARCH_PROTOCOL.json",
+    "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+  },
+  "metric_policy_amendment": {
+    "path": "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+    "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+  },
+  "user_direction": "Do not include an obviously excessive value such as alpha=1e6 in the grid search.",
+  "scope_change": {
+    "original_alpha_values": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0
+    ],
+    "executed_or_retained_alpha_values": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0
+    ],
+    "cancelled_alpha_values": [
+      1000000.0
+    ],
+    "new_executed_upper_bound": 100000.0,
+    "alpha_scan_member_count_after_amendment": 7
+  },
+  "cancelled_member": {
+    "label": "bb_irivm_a1e6_r05_m05_inf480_r1",
+    "alpha": 1000000.0,
+    "r": 0.5,
+    "m_max": 5,
+    "registered_optimization_NoF": 480,
+    "actual_optimization_NoF": 0,
+    "started": false,
+    "result_exists": false,
+    "classification": "AUTHORIZED_BUT_NOT_STARTED_USER_CANCELLED",
+    "registration_and_authorization_policy": "Retain the immutable registration and authorization as audit evidence; never count this member as completed, failed, or scientifically evaluated."
+  },
+  "timing_and_disclosure": {
+    "completed_alpha_members_before_amendment": [
+      "bb_irivm_a1em1_r05_m05_inf480_r1",
+      "bb_irivm_a1e1_r05_m05_inf480_r1"
+    ],
+    "running_alpha_member_at_amendment": "bb_irivm_a1e3_r05_m05_inf480_r1",
+    "parameter_promotion_decisions_before_amendment": 0,
+    "alpha_1e6_physical_calls_before_amendment": 0
+  },
+  "host_allocation_after_amendment": {
+    "local_serial_batch": [
+      0.1,
+      10.0,
+      1000.0,
+      100000.0
+    ],
+    "remote_serial_batch_after_mutagen_and_gate_validation": [
+      1.0,
+      100.0,
+      10000.0
+    ],
+    "jobs_per_host": 1,
+    "maximum_concurrent_BB_members_per_host": 1
+  },
+  "scientific_effect": {
+    "optimization_algorithm_changed": false,
+    "completed_or_running_trajectory_changed": false,
+    "remaining_search_domain_changed": true,
+    "ranking_rule": "Rank only the seven retained alpha values using the user metric-policy amendment after all seven results and their diagnostics are sealed.",
+    "claim_limit": "Report alpha=1e6 as untested by user-directed cancellation. Do not claim an eight-value scan or any conclusion about alpha=1e6."
+  },
+  "binding_rule": "Every alpha-selection receipt, promoted-member registration, result table, figure, and provenance document created after this amendment must record this amendment file and its SHA-256."
+}

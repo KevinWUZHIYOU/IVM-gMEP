@@ -1,0 +1,205 @@
+{
+  "purpose": "Densified OpenMM barrier errors for the final 20% of each requested total-force budget.",
+  "requested_total_force_budgets": [
+    1000,
+    3000,
+    6000,
+    10000
+  ],
+  "trailing_window_fraction": 0.25,
+  "samples_per_window": 7,
+  "production_barrier_kcal": 20.373739515742795,
+  "diagnostic_calls_excluded_from_force_axis": true,
+  "records": [
+    {
+      "alpha": 0.03,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a0p03_central_state_ivm_cfg6fa220c21f2d_budget500.npz",
+      "source_result_sha256": "27bf910947564471a0b1613481d199e3ff02fe66ff3248ede5c26e4195d4dda1",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p03.npz",
+      "result_sha256": "b96c3ed303fdce7a93c1f1ba695c995496c977eec35dd9443c75524f5c0a27d6",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p03.audit.json",
+      "audit_sha256": "aef25d556f4d3db781f2640b238eb8e0e3b6325c8baf7c3ded6b5b1dfbc0406f",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 0.05,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a0p05_central_state_ivm_cfg23fd16d0bd4c_budget500.npz",
+      "source_result_sha256": "026a33df6ddcb0e779eff3094fc6982fce88a6b0fd419eba389632afc03446fc",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p05.npz",
+      "result_sha256": "494dfb03a92eefb17eb751c9d370c65dde7994c7fdf39cf35dcd92fe17b6f148",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p05.audit.json",
+      "audit_sha256": "89f21880760f87d4acfcabf3ef334cf711b42c6cbd183d751c0dc3571fe0f69f",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 0.1,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a0p1_central_state_ivm_cfgb68c187548f8_budget500.npz",
+      "source_result_sha256": "6f95e19f9c3a96572e3cbde319e242eb0106fa012ad4154b67e93b2f9f0c26c2",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p1.npz",
+      "result_sha256": "c488aca6f56520287f84503cb884152823b6392fdd4ae8d475c4f2d6c239a52d",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p1.audit.json",
+      "audit_sha256": "ee77a0f3b2de5c525358dbaf6c9dd41a8ed999ee3fa54231a2e7fcaef88c18b2",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 0.2,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p2_central_state_ivm_cfg11d850c43744_budget300.npz",
+      "source_result_sha256": "20184b17c6f8f9a73a3c451ae174d7081cfd513f6d656b3e01d0bd97fce089d2",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p2.npz",
+      "result_sha256": "3506ed60ec94b89adf75ca04dd03d175e3de14f27fd954b353286c1d7fa430cb",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p2.audit.json",
+      "audit_sha256": "e2e756b4f3f4c7d1ae0571966d99c5a17939b43654e87a2a931669af687fc3b3",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 0.3,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_proximal_only_a0p3_central_state_ivm_cfg0c4ab64a0848_budget300.npz",
+      "source_result_sha256": "893d93bf20a038975b7932ceeec4d47d62fcb5f8fd707212881d5ee96a49f3e0",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p3.npz",
+      "result_sha256": "803dd2240e77b7ca4aab224bf16ac391bb02ee2c971175587311e4e587a4124e",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p3.audit.json",
+      "audit_sha256": "c5f854d151ff31d21b5d3d2866a5cd5cb289f515b12410ce92b3ee151c1677bc",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 0.5,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p5_central_state_ivm_cfgd123ba880c78_budget300.npz",
+      "source_result_sha256": "932d326d30e8afc71795e45deb5088500c872df22588ee683423fb2b9b3a927c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p5.npz",
+      "result_sha256": "12bcfcd94c5eacff18cd6e5865f9c82f74b77b594b32a8c42f857fd5c94f0138",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a0p5.audit.json",
+      "audit_sha256": "ca8a5b501b3299b4f4aca9e9c122900f24372e4a315947d2779aea5fed8cd872",
+      "diagnostic_joint_evaluations": 11734
+    },
+    {
+      "alpha": 1.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_alpha_mechanism_proximal_only_a1_full_central_state_ivm_cfg85ee8e3b477d_budget500.npz",
+      "source_result_sha256": "9c9fa42e7b53d6982ba8e5807aaaed09ed39cd472f12f62b5138dd622f6aef1e",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a1.npz",
+      "result_sha256": "61b91bc737a33980db87781c574b97a3b4b4e85b295ff7300985587a62b0b13f",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a1.audit.json",
+      "audit_sha256": "25b995ff16ae1390cba9d90940fb0339d9624c1047a3159cb6e960d44d0184d8",
+      "diagnostic_joint_evaluations": 10896
+    },
+    {
+      "alpha": 2.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a2_central_state_ivm_cfga597ac795b58_budget500.npz",
+      "source_result_sha256": "b0ee53e6db8838cbbf6ae979fa99f8d85bbc051bd0c10eec75aee43d17feb96a",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a2.npz",
+      "result_sha256": "efcddc61d5cd61e0193153ce45c2a1721bd233dbc3a6d64e55a0dcf69b027f4a",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a2.audit.json",
+      "audit_sha256": "74f543c4d37c0dd912c7557aeb6315cb7095874761505c37c90a86697580b312",
+      "diagnostic_joint_evaluations": 7963
+    },
+    {
+      "alpha": 3.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a3_central_state_ivm_cfg88edfed8da6e_budget500.npz",
+      "source_result_sha256": "698cc62e87e6434b8133bdc6d1e6d7850f6487d1609d0a8f96c5b49bc27bfa46",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a3.npz",
+      "result_sha256": "806d4fc3152aa50df6f9f58a0af0375aabc090e88293c43cf7972483429d3460",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a3.audit.json",
+      "audit_sha256": "264f97766864ab153816e07db7663f28ad3a9fa9784e4ef122712aeb2569d772",
+      "diagnostic_joint_evaluations": 7125
+    },
+    {
+      "alpha": 5.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a5_central_state_ivm_cfg0aff772802df_budget500.npz",
+      "source_result_sha256": "fd0297e4e2ef05b498f5568f8b46c3f96b32e136bc2aa0be2d027b6f3bc6fede",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a5.npz",
+      "result_sha256": "ea8e2314a2651231db5910f40641024c1742273515ad97cfa828956166572075",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a5.audit.json",
+      "audit_sha256": "b46dcc89b2a113e46c2f8168ce80db8c092ac5858f5735a88771eebc5a94b4b1",
+      "diagnostic_joint_evaluations": 8801
+    },
+    {
+      "alpha": 10.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a10_central_state_ivm_cfg43a8281a0c0e_budget500.npz",
+      "source_result_sha256": "32756339a06524d7f2eff8a1feec7dfbb4e0952e0e0466a7e6bd96ca1aedc18c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a10.npz",
+      "result_sha256": "f0ce9bd5d2dc55438557b2c08a48319e69b852e9e97017da4cfa244cf79a81bb",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a10.audit.json",
+      "audit_sha256": "845fb0459f787e955e52dad4a79c470998d1a361dd908fd0fc67291bbffd9430",
+      "diagnostic_joint_evaluations": 7963
+    },
+    {
+      "alpha": 15.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a15_central_state_ivm_cfga92c99d0c525_budget500.npz",
+      "source_result_sha256": "34d708032b8f859d5c70a28d5bd5b5511441d9fc412032383383abc61ed6c84d",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a15.npz",
+      "result_sha256": "1a7eee0cc2dba430fbc4353c66239b76eeed58a9ea095bdfb33cece78cea0c1f",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a15.audit.json",
+      "audit_sha256": "f378a9bbc11c0d733ac8f15671a8aaaeea644970568852c1675d2faa2ab892b9",
+      "diagnostic_joint_evaluations": 7544
+    },
+    {
+      "alpha": 20.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a20_central_state_ivm_cfgba5279a6d337_budget500.npz",
+      "source_result_sha256": "7ed86937f7551fec987ce4e813f60664637db03e4c5bf375322a69c1190aad45",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a20.npz",
+      "result_sha256": "366344d65da06e3956d9579468589d50de248a4c7718e6d533ce8c2582758597",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a20.audit.json",
+      "audit_sha256": "17eaf581d31b9b70b042e7690e36d822fec914826e10b214ffb523cf2bfc8ea4",
+      "diagnostic_joint_evaluations": 9220
+    },
+    {
+      "alpha": 30.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a30_central_state_ivm_cfga633a2cf2b56_budget500.npz",
+      "source_result_sha256": "7aa01be87b3d2e4db878996ef8274f17c203538c13a17550c0b3b847a72672e8",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a30.npz",
+      "result_sha256": "2e6146ddef1d6d17f37b806df3204b5d97d9e2ac2e16efc5e5f47a39ec40fdaa",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a30.audit.json",
+      "audit_sha256": "c4693832ea8457af6e13d9ef459f889cb781966e75a749a0eeb2bd555aae8c98",
+      "diagnostic_joint_evaluations": 8382
+    },
+    {
+      "alpha": 50.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a50_central_state_ivm_cfgf046965ac476_budget500.npz",
+      "source_result_sha256": "84ff7a08d60c3c547d34199aef68915576f99c455fc72c440d2f94e85f828935",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a50.npz",
+      "result_sha256": "78bcd0786362c67237f2c758a2ae9267eed0e3870ef9d3b7087f433c2ae2f5a4",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a50.audit.json",
+      "audit_sha256": "424ec4064f086d52e39763256e924735b016d562f0af44d34aff98c48851f623",
+      "diagnostic_joint_evaluations": 6706
+    },
+    {
+      "alpha": 70.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a70_central_state_ivm_cfg88a7b6807754_budget500.npz",
+      "source_result_sha256": "ed9a5f6602302279c434a23b91dae8431c88c2de01f97cd783f64966881a13cd",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a70.npz",
+      "result_sha256": "e5b440fb2e0fdb71be0671ccc0edcbdf0668a7403e08aa7069b226d0845661dd",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a70.audit.json",
+      "audit_sha256": "825d727ea78e2cd1ef50a08e81b68373024fd982429395b54015298716dc2b8f",
+      "diagnostic_joint_evaluations": 8382
+    },
+    {
+      "alpha": 100.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_long_a100_central_state_ivm_cfgc2afb4a987fb_budget500.npz",
+      "source_result_sha256": "11cd4896babef4bb565732dabac568b00327d7ac3182b586856b7986eb6f7fdc",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a100.npz",
+      "result_sha256": "bd0b10c578058cb7a96b2ffd08834a99b36bee27d6c86bfac9882e31f5beb21d",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a100.audit.json",
+      "audit_sha256": "cb90f3f1621a12c5f11875a0f63a72e9325a32157386b05282e174b133286317",
+      "diagnostic_joint_evaluations": 5868
+    },
+    {
+      "alpha": 300.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a300_central_state_ivm_cfg253b6ba3f794_budget500.npz",
+      "source_result_sha256": "67e4531de06cc8cba475b00e995d007da6723aed78d8b88436c0fd888da46f98",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a300.npz",
+      "result_sha256": "8a26173f871f7a846e4b59f56207c1fa0a45e34bcf15b1489d1d6d42394ca483",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a300.audit.json",
+      "audit_sha256": "900460221e085bed5a5eeb8e0c9c51a6a50d0912fc5d467f0ed08e32d91fe2f9",
+      "diagnostic_joint_evaluations": 8382
+    },
+    {
+      "alpha": 1000.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a1000_central_state_ivm_cfg80b6da0f8b21_budget500.npz",
+      "source_result_sha256": "d078948cc5894c26339c6f567fea2371f2c5aec6b54682b094400934e2032f2d",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a1000.npz",
+      "result_sha256": "2386ab6f87d6450e60c22298bcd225c7849ecefbebf7332a4c5276029543fa62",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_production_style_trailing_w25_a1000.audit.json",
+      "audit_sha256": "4801aabebb27ec6a83f2273760add8910854ed3305aff6430eba767a7d3c0aee",
+      "diagnostic_joint_evaluations": 4611
+    }
+  ]
+}

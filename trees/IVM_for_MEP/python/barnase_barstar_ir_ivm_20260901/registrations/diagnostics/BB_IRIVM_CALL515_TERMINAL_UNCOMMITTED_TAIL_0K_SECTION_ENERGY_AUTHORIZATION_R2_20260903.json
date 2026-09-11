@@ -1,0 +1,61 @@
+{
+  "authorized_stages": [
+    "original_path32",
+    "surface"
+  ],
+  "canonical_two_lock_second_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "bytes": 4220,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_CONTRACT_R2_20260903.json",
+    "sha256": "aa8e678079637510ddfe4399871f41b6a97e3df7f8da5a2f184f12275652a5b0"
+  },
+  "coordinate_audit": {
+    "bytes": 2485,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.audit.json",
+    "sha256": "d8e1de581b4ae4c0ae4a742637cbee03658b464f21bf7169f3734b108a12b853"
+  },
+  "coordinate_manifest": {
+    "bytes": 135373288,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+    "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+  },
+  "created_utc": "2026-09-03T05:23:26.536717+00:00",
+  "enabled": true,
+  "evaluator": {
+    "bytes": 22789,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_call515_terminal_tail_0k_section_energy_r2.py",
+    "sha256": "bf20f9bffee0ef04dda3d93217c6f837ad577cfb635847deef8bcfe187cf44d9"
+  },
+  "host_role": "local",
+  "jobs": 1,
+  "maximum_energy_only_attempts": 1650,
+  "maximum_force_calls": 0,
+  "maximum_original_internal_energy_only_attempts": 0,
+  "maximum_surface_energy_only_attempts": 1650,
+  "optimization_N_F_contribution": 0,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_unused_path_stage_r2.npz",
+  "physical_calls_started_before_authorization": 0,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_energy_59x28_20260903_r2.npz",
+  "schema": "bb-irivm-call515-terminal-tail-section-energy-r2-v1-authorization",
+  "state_role": "returned terminal state; terminal uncommitted charged tail; not committed IVM",
+  "status": "AUTHORIZED_AFTER_ZERO_OPENMM_PREFLIGHT",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight": {
+    "bytes": 2593,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_TERMINAL_UNCOMMITTED_TAIL_0K_SECTION_ENERGY_PREAUTH_R2_20260903.json",
+    "sha256": "7e5a7cc06e07008f5051760ef8682144b7b7b11d2fd0d069c4fb6b7b60b08dab"
+  }
+}

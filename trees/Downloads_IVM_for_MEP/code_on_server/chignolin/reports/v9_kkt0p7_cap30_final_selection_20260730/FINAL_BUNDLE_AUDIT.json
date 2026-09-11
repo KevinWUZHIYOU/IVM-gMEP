@@ -1,0 +1,229 @@
+{
+  "verified": true,
+  "cost_axis": "all 22 image joint energy-force evaluations",
+  "initial_path_sha256": "57b61ab0fd61d2a177c91e6b9e70b7ff72b40f7f4f03c41f91d80d8efa5e2996",
+  "tangent": "normalized central difference: x[i+1] - x[i-1]",
+  "selected_alpha": 1.0,
+  "sparse_barrier_used": false,
+  "dense_barrier_protocol": "Real OpenMM Cartesian-linear 10/20 subdivisions per segment; 40/80 while successive barriers differ by >0.05 kcal/mol.",
+  "dense_diagnostic_calls_excluded_from_optimization_axis": true,
+  "optimization_alpha_grid_audits": [
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a0p3_central_state_ivm_cfga87b8c20e926_budget500.audit.json",
+      "sha256": "cc6db717ac1c576bffa0cff10a14d30baaf430d51f4edbb3523bbd879f1ebd9a",
+      "backend_joint_evaluations": 10002,
+      "sum_per_image_joint_evaluations": 10002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a0p5_central_state_ivm_cfg072b8c253a0c_budget650.audit.json",
+      "sha256": "828ee991d5dabec11c604b86b9230196de9b655bb1acba3056132471047f0e1c",
+      "backend_joint_evaluations": 12887,
+      "sum_per_image_joint_evaluations": 12887,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a0p75_central_state_ivm_cfgaf789d9b46ff_budget650.audit.json",
+      "sha256": "5b7fd7ceb3903af5492bcfb2d8ba750e60fb1cdb2a832b0664696c81efb7914b",
+      "backend_joint_evaluations": 12780,
+      "sum_per_image_joint_evaluations": 12780,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a1_central_state_ivm_cfg9b5a238786a3_budget650.audit.json",
+      "sha256": "eb907f224a93a257dee3b25f72e5a0418a7a9202654f701e27411f1205a605d1",
+      "backend_joint_evaluations": 12479,
+      "sum_per_image_joint_evaluations": 12479,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a1p25_central_state_ivm_cfg5f83106ea463_budget650.audit.json",
+      "sha256": "a7eb24ee7a796b2faf1fee1ea89f2ecfb0933ba84bc430c9a033bea89c9f7189",
+      "backend_joint_evaluations": 13002,
+      "sum_per_image_joint_evaluations": 13002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a1p5_central_state_ivm_cfg4b06717d1815_budget650.audit.json",
+      "sha256": "1634185c571b1bdd46768ac2d995969200525e150645776a8adb64b81f77c058",
+      "backend_joint_evaluations": 13002,
+      "sum_per_image_joint_evaluations": 13002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a2_central_state_ivm_cfg78291c149943_budget650.audit.json",
+      "sha256": "7a16fe04308aec52a5d26f001d768fe4e5558e7abeabb6526c750b934d72c7cf",
+      "backend_joint_evaluations": 13002,
+      "sum_per_image_joint_evaluations": 13002,
+      "n_image_counters": 22
+    }
+  ],
+  "selected_method_optimization_audits": [
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_fixed_alpha_v9_kkt0p7_cap30_a1_central_state_ivm_cfg9b5a238786a3_budget650.audit.json",
+      "sha256": "eb907f224a93a257dee3b25f72e5a0418a7a9202654f701e27411f1205a605d1",
+      "backend_joint_evaluations": 12479,
+      "sum_per_image_joint_evaluations": 12479,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_ode_k50_central_k50_alpha0p0001_ode_budget1000.audit.json",
+      "sha256": "c660c6530ac9abddfc409e89b04bf4c1bc7864a19ab8ed932e744ec848622839",
+      "backend_joint_evaluations": 20002,
+      "sum_per_image_joint_evaluations": 20002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.audit.json",
+      "sha256": "58001f77e9730317e58f3769303182afd7ddd976e993a45de8cef1834c62e54a",
+      "backend_joint_evaluations": 20002,
+      "sum_per_image_joint_evaluations": 20002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.audit.json",
+      "sha256": "abd95428d5ad648fd1b2f571112a21c245e26fdb0b4f15fc504a21bfde35770e",
+      "backend_joint_evaluations": 20002,
+      "sum_per_image_joint_evaluations": 20002,
+      "n_image_counters": 22
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.audit.json",
+      "sha256": "9feacd1cea18c553e51f459f6d62da14d83849bd53bfdd1d39496767a7daebe4",
+      "backend_joint_evaluations": 19982,
+      "sum_per_image_joint_evaluations": 19982,
+      "n_image_counters": 22
+    }
+  ],
+  "alpha_grid_dense_audits": [
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a0p3.audit.json",
+      "sha256": "421d19f4ef2ea4b63f3e05b294fcad1c010abf34d000674c9766ab85381f85e5",
+      "diagnostic_backend_joint_evaluations": 19697,
+      "diagnostic_cache_misses": 19697,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a0p5.audit.json",
+      "sha256": "c3d0e4c2d906e0da960b77381aafd97eefa651101027012cd61e73a6ce743b99",
+      "diagnostic_backend_joint_evaluations": 19701,
+      "diagnostic_cache_misses": 19701,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a0p75.audit.json",
+      "sha256": "8f7e4a8cd64d4c5ddbec64dd73de6a7e9f2b8d33677d509da2287d7b9545a440",
+      "diagnostic_backend_joint_evaluations": 19701,
+      "diagnostic_cache_misses": 19701,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a1.audit.json",
+      "sha256": "e45eb0f72c26c6a77444246469400adad3e4ce8cc37b360ed83b9883f6675a1e",
+      "diagnostic_backend_joint_evaluations": 19282,
+      "diagnostic_cache_misses": 19282,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a1p25.audit.json",
+      "sha256": "ae299e2c703ce62e09c339bf4fb79e93c5c83358a7759e16d1961f454e263710",
+      "diagnostic_backend_joint_evaluations": 17187,
+      "diagnostic_cache_misses": 17187,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a1p5.audit.json",
+      "sha256": "ff3b77ac98bf9c8f0a1ea7afaed49c28d6f4ee5a3e07558123c0fabea890ac82",
+      "diagnostic_backend_joint_evaluations": 17187,
+      "diagnostic_cache_misses": 17187,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a2.audit.json",
+      "sha256": "d1ac49352490da187b7d16aca3792281d3e485ecf56021669c49f78abd6c40e3",
+      "diagnostic_backend_joint_evaluations": 16349,
+      "diagnostic_cache_misses": 16349,
+      "excluded_from_optimization_cost": true
+    }
+  ],
+  "selected_method_dense_audits": [
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_v9_kkt0p7_cap30_anytime_grid_20260730_a1.audit.json",
+      "sha256": "e45eb0f72c26c6a77444246469400adad3e4ce8cc37b360ed83b9883f6675a1e",
+      "diagnostic_backend_joint_evaluations": 19282,
+      "diagnostic_cache_misses": 19282,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_ode_k50_adaptive48.audit.json",
+      "sha256": "68acc22a03837f8e68b0e3650a8059a4ff507d1c83c745e4bacb20b29e14c4d9",
+      "diagnostic_backend_joint_evaluations": 22216,
+      "diagnostic_cache_misses": 22216,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_static_k40_a0p012575_adaptive48.audit.json",
+      "sha256": "b60bc48078d4338aebec65cd72ca5bcad5fff52753a229f744ffb7611e5b6865",
+      "diagnostic_backend_joint_evaluations": 23476,
+      "diagnostic_cache_misses": 23476,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_original_dt0p012575_adaptive48.audit.json",
+      "sha256": "9745b1c76932efe8f1b000763a9364083b950ccdb24ecabd5c751b8a1bac22b0",
+      "diagnostic_backend_joint_evaluations": 23476,
+      "diagnostic_cache_misses": 23476,
+      "excluded_from_optimization_cost": true
+    },
+    {
+      "audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_paper_total_nf_confirmed1000_obsm_l0p9_n5_dt0p12_adaptive48.audit.json",
+      "sha256": "840f8e45cb78f5d0bebd6f3128078f80dec50d748dd25308a87b1c8b60bfa409",
+      "diagnostic_backend_joint_evaluations": 20116,
+      "diagnostic_cache_misses": 20116,
+      "excluded_from_optimization_cost": true
+    }
+  ],
+  "alpha_grid_dense_diagnostic_total": 129104,
+  "preserved_cap_assets": {
+    "verified": true,
+    "file_count": 31,
+    "manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/preserved_cap_assets_20260729/PREEXISTING_CAP_ASSETS_SHA256.json",
+    "manifest_sha256": "5810e9ebef10df3acc73b8ba4511d4e8c59d481944cc57879e76ac305d345bd7"
+  },
+  "figures": {
+    "chignolin_main_metrics_total_nf": {
+      "source": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_main_metrics_total_nf.pdf",
+      "source_sha256": "b808143a8046080c9258cd4ccef37414d5153be8ad4d30a9cfdc508e3dd99887",
+      "article_copy": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_main_metrics_total_nf_v9_20260730.pdf",
+      "article_copy_sha256": "b808143a8046080c9258cd4ccef37414d5153be8ad4d30a9cfdc508e3dd99887"
+    },
+    "chignolin_cost_to_precision_total_nf": {
+      "source": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_cost_to_precision_total_nf.pdf",
+      "source_sha256": "c56e61e7575b7f1cc784b946bd37e65682204579f7f85c3115b200b2dbdf37ff",
+      "article_copy": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_cost_to_precision_total_nf_v9_20260730.pdf",
+      "article_copy_sha256": "c56e61e7575b7f1cc784b946bd37e65682204579f7f85c3115b200b2dbdf37ff"
+    },
+    "chignolin_ivm_fixed_alpha_sensitivity_total_nf": {
+      "source": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_ivm_fixed_alpha_sensitivity_total_nf.pdf",
+      "source_sha256": "6ac9c94495d0c7ce77d3f4fb99356f70e6a3264cd1c64f9b4be1eb3fc0a39c4d",
+      "article_copy": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/chignolin_ivm_fixed_alpha_sensitivity_total_nf_v9_20260730.pdf",
+      "article_copy_sha256": "6ac9c94495d0c7ce77d3f4fb99356f70e6a3264cd1c64f9b4be1eb3fc0a39c4d"
+    }
+  },
+  "article": {
+    "main_tex": "/Users/wuzhiyou/Downloads/IVM_for_MEP/main.tex",
+    "main_tex_sha256": "50b6feb8f3beebd45597343bae7dc1fc45a90ca104db66c6836743f7fbb3acbd",
+    "main_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/main.pdf",
+    "main_pdf_sha256": "43fceb829d5da9e67c77ad86f3cf33df9d4ec61f0db8bf0565cb7b9ecbd0e765"
+  },
+  "source_reports": {
+    "grid": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/v9_kkt0p7_cap30_final_grid_20260730/v9_kkt0p7_cap30_grid_summary.json",
+    "grid_sha256": "e1fa6f7715b797f2fc8ec3796b90b1264b44b826083c7a6b36cf5f947a6ba1c2",
+    "dense": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/v9_kkt0p7_cap30_final_dense_20260730/dense_manifest.json",
+    "dense_sha256": "789448fc09edb848f2dc66538b8c7438c1489334b1de503641fef6440bd247e9",
+    "selection": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/v9_kkt0p7_cap30_final_selection_20260730/V9_ALPHA_FINAL_WINDOW_SCORES.json",
+    "selection_sha256": "c03337600480a405abda1e18eb330eafbcf984298dd9d68269b43081467ac75c",
+    "methods": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/figures/article_update_20260730_v9_final/chignolin_method_comparison_summary.json",
+    "methods_sha256": "7d6c593ac70fe311d345364435e38d2941d494172c2dc70acfbfac922cb33754"
+  }
+}

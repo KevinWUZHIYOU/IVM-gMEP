@@ -1,0 +1,48 @@
+{
+  "action": "remove_incomplete_local_mutagen_mirror_after_session_pause",
+  "authoritative_remote_copy": {
+    "canonical_record_count": 515,
+    "file_count": 521,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b",
+    "source_result_sha256": "f600757982e35dd89910e91a1ae8f10c98481ea9d550128fa27659c15bd7de2a",
+    "total_bytes": 3651942899,
+    "tree_digest_sha256": "2ac4527497d41119577969486a215bcdbecdfb7f13b5121abd924c864ed65b33",
+    "verification_status": [
+      "PASS_R5B_EXACT_PREFIX318_AND_DYNAMIC_STABLE_LAST_FULL_STATE_REPLAY",
+      "PASS_R5B_EXACT_COUNTER_SCHEMA_AND_ARTIFACT_CLOSURE"
+    ]
+  },
+  "created_utc": "2026-09-02T18:16:26Z",
+  "local_target": {
+    "complete_authoritative_copy": false,
+    "file_count": 516,
+    "missing": [
+      "terminal result",
+      "terminal result audit",
+      "full-state manifest",
+      "canonical index",
+      "full-state audit"
+    ],
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b",
+    "total_bytes": 2485410646
+  },
+  "mutagen_session": {
+    "name": "bb-irivm-20260901",
+    "status_before_removal": "paused",
+    "terminated_before_removal": true
+  },
+  "overlapping_broad_mutagen_session": {
+    "name": "ivm-for-mep",
+    "status_before_removal": "paused",
+    "terminated_before_removal": true
+  },
+  "postcondition": {
+    "local_target_absent": true,
+    "local_filesystem_available_kib": 10440700,
+    "remote_authoritative_result_present": true,
+    "remote_authoritative_tree_kib": 3567144
+  },
+  "reason": "The local tree was an incomplete, non-authoritative transfer that consumed the space required by the preregistered local ODE-NEB screening run. The verified complete remote tree is retained unchanged.",
+  "recoverability": "The removed incomplete mirror can be reconstructed from the unchanged verified remote authoritative tree after sufficient local storage is available.",
+  "schema": "bb-irivm-incomplete-local-mirror-removal-v1"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "bb-irivm-smoke-240-gate-v1",
+  "sealed_utc": "2026-09-01T09:01:20Z",
+  "status": "PASS",
+  "member": {
+    "label": "bb_irivm_a1e1_r05_m05_inf240_r1",
+    "alpha": 10.0,
+    "r": 0.5,
+    "m_max": 5,
+    "registered_Number_of_Forces": 240,
+    "host": "local"
+  },
+  "optimization_ledger": {
+    "backend_joint_attempts": 240,
+    "backend_successful_joint_evaluations": 240,
+    "sum_internal_image_misses": 240,
+    "per_internal_image_misses": 8,
+    "endpoint_getState_attempts": 0,
+    "endpoint_cache_misses": 0,
+    "endpoint_inherited_cache_entries": 2,
+    "endpoint_budget_blocked_misses": 0,
+    "internal_budget_blocked_misses": 1,
+    "budget_exhaustion_observed_at_internal_cache_miss": true,
+    "budget_exhausted": true,
+    "budget_overshoot": 0,
+    "budget_stop_interpretation": "After exactly 240 paid internal calls, the next attempted internal cache miss was blocked before OpenMM; it is a zero-NoF stopping sentinel, not a failed getState."
+  },
+  "mandatory_reparameterization": {
+    "mode": "state_curve",
+    "attempts": 2,
+    "accepted_transactions": 1,
+    "first_post_initial_committed_Number_of_Forces": 90,
+    "direct_joint_evaluations_in_committed_transaction": 30,
+    "recovery_joint_evaluations_in_committed_transaction": 0,
+    "segment_length_cv_before": 0.0016603381513103652,
+    "segment_length_cv_after": 3.9416240524970275e-12,
+    "reparam_committed": true
+  },
+  "scientifically_eligible_sparse_states": [
+    {
+      "role": "common initial path",
+      "Number_of_Forces": 30,
+      "I_perp_eV2_per_A": 3310616093.2793417,
+      "sparse_Delta_E_kcal_per_mol": 33212.873123197765,
+      "segment_length_cv": 0.0016652635357709657
+    },
+    {
+      "role": "first fully reparameterization-committed path",
+      "Number_of_Forces": 90,
+      "I_perp_eV2_per_A": 68348514.32327402,
+      "sparse_Delta_E_kcal_per_mol": 33121.16107175912,
+      "segment_length_cv": 3.9416240524970275e-12,
+      "I_perp_improvement_factor_vs_initial": 48.43727952330943
+    }
+  ],
+  "terminal_tail": {
+    "charged_Number_of_Forces": 150,
+    "terminal_Number_of_Forces": 240,
+    "terminal_sparse_I_perp_eV2_per_A": 17456326.129370656,
+    "terminal_sparse_Delta_E_kcal_per_mol": 10155.183175538132,
+    "complete_reparameterization_committed_state": false,
+    "quarantined_from_scientific_ranking": true
+  },
+  "pass_conditions": {
+    "exact_internal_NoF_ledger": true,
+    "fixed_endpoint_zero_NoF": true,
+    "at_least_one_closed_reparameterization_transaction": true,
+    "at_least_one_post_initial_reparam_committed_path": true,
+    "terminal_partial_tail_charged_and_quarantined": true,
+    "parameter_search_may_begin": true
+  },
+  "bound_files_sha256": {
+    "result_npz": "22f2d7d7f23674ec0a5be6260236871039c5b37b97fdc385a6eaea56b3a68876",
+    "result_audit_json": "dced32621466d587871705f064aa9b17f42a558eb9cbfea7b19b00d3ba96541c",
+    "member_registration": "538313d76a2404438498a01cfa8b811e6979647277264d8c68e7b69f4e09b728",
+    "execution_authorization": "9855dc98a380adf18b2c1c674b781e3d39e37ba244c5b50eb9cb5440403b1892",
+    "campaign_status": "1db54dbd0bc9344d034b8d14caae36811470dc03561ad75e6b5cc627f388410e",
+    "ff_builder_parity_gate": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+    "staged_search_protocol": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+  },
+  "selection_note": "Only the initial and fully reparameterization-committed states are eligible. The lower terminal metrics at 240 NoF belong to an open charged tail and are not used for parameter ranking."
+}

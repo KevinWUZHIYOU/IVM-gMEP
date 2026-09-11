@@ -1,0 +1,3 @@
+metric,shared_precision_threshold,baseline,ivm_number_of_forces,baseline_number_of_forces,ivm_speedup_vs_baseline
+i_perp,0.21242215133173672,ODE-NEB,905,17662,19.516022099447515
+barrier_500_kcal,24.17608142601358,ODE-NEB,905,15842,17.504972375690606

@@ -1,0 +1,102 @@
+{
+  "schema": "bb-irivm-ode-neb-cost-densification-selection-correction-v2",
+  "status": "R1_SUPERSEDED_TIMING_CORRECTION_NO_NEW_SELECTION",
+  "created_utc": "2026-09-02T04:53:06Z",
+  "created_after_new_metric_calls_started": true,
+  "prospective_selection_authority": false,
+  "physical_calls_made_by_this_correction": 0,
+  "execution_authorized_by_this_file": false,
+  "correction": {
+    "superseded_file": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_ODE_NEB_COST_DENSIFICATION_SELECTION_20260902_R1.json",
+      "sha256": "556661d6c899e7b8858fc455325478d8ab85c025dca219aedc20f72c31904647"
+    },
+    "superseded_claims": [
+      "R1 status FROZEN_BEFORE_ANY_NEW_ARC500_OR_ODE_DIAGNOSTIC_FORCE_CALL",
+      "R1 decision_timing statement that it was created before any new arc-length-500 energy or ODE--NEB diagnostic-force call",
+      "use of R1 itself as prospective selection authority"
+    ],
+    "reason": "R1 created_utc=2026-09-02T04:48:03Z is later than the dense-four ODE--NEB force-WAL header at 2026-09-02T04:43:52.218757Z, first force attempt at 2026-09-02T04:43:56.683703Z, energy-WAL header at 2026-09-02T04:43:52.219504Z, and first energy attempt at 2026-09-02T04:44:42.298649Z.",
+    "retained_fact": "R1's listed calls, N_F values, and ODE--NEB paths happen to reproduce the earlier authoritative materials below, but R1 may be used only as a superseded historical record and never as evidence that the selection was frozen prospectively."
+  },
+  "authoritative_pre_metric_materials": {
+    "IR_IVM_fixed_call_and_reporting_policy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_REPORTING_INTERMEDIATE_STATES_AMENDMENT_20260902_R1.json",
+      "sha256": "de426ab62e1e25bc65b9f03d1b265912387268a3d46c1361d29120e4a59459e6",
+      "role": "The final corrected amendment existed before the new ODE--NEB metric calls and fixed calls 1,2,5,10,20,50, new calls 2,5,10,50, the same-path two-metric rule, and the cost-only ODE--NEB matching rule. It does not authorize the already-launched replay."
+    },
+    "IR_IVM_launch_time_replay_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+      "sha256": "aa7994abec1339bf9c9ae915b9982e8134363baf8966b9bb221ca244ab5808a2",
+      "role": "Prospectively froze the output-only legacy storage calls before replay physical execution."
+    },
+    "ODE_NEB_frozen_execution_contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_ODE_FOUR_20260902_R1.json",
+      "sha256": "c0e8230d00ff7935a6d89d520208c62ac6a2f062fecaf4666082187cbece53f4",
+      "role": "Before its WAL headers and first physical calls, froze exactly the four ODE--NEB retained paths at N_F=60,150,300,1320, their source archives and hashes, the arc-length-500 protocol, and fresh 30-internal-image force diagnostics."
+    },
+    "official_ODE_NEB_retained_path_ledger": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R2.json",
+      "sha256": "8b5762aad446708b4f3cf3a68b588cf7c198a88acf22f6fa3ae99b922f445d24",
+      "role": "Authoritative 333-paid-state ledger from which the distinct-retained-path first occurrences are determined."
+    }
+  },
+  "pre_metric_WAL_header_evidence": {
+    "force_WAL": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_dense_four_arc500_20260902_r1.force.wal.jsonl",
+      "header_created_utc": "2026-09-02T04:43:52.218757+00:00",
+      "first_attempt_started_utc": "2026-09-02T04:43:56.683703+00:00",
+      "header_contract_sha256": "c0e8230d00ff7935a6d89d520208c62ac6a2f062fecaf4666082187cbece53f4",
+      "file_sha256_intentionally_omitted_while_append_only_WAL_is_active": true
+    },
+    "energy_WAL": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_dense_four_arc500_20260902_r1.energy.wal.jsonl",
+      "header_created_utc": "2026-09-02T04:43:52.219504+00:00",
+      "first_attempt_started_utc": "2026-09-02T04:44:42.298649+00:00",
+      "header_contract_sha256": "c0e8230d00ff7935a6d89d520208c62ac6a2f062fecaf4666082187cbece53f4",
+      "file_sha256_intentionally_omitted_while_append_only_WAL_is_active": true
+    }
+  },
+  "materialized_without_new_selection": {
+    "IR_IVM": [
+      {"call_per_image": 1, "optimization_N_F": 30, "new_reporting_path": false},
+      {"call_per_image": 2, "optimization_N_F": 60, "new_reporting_path": true},
+      {"call_per_image": 5, "optimization_N_F": 150, "new_reporting_path": true},
+      {"call_per_image": 10, "optimization_N_F": 300, "new_reporting_path": true},
+      {"call_per_image": 20, "optimization_N_F": 429, "new_reporting_path": false},
+      {"call_per_image": 50, "optimization_N_F": 1329, "new_reporting_path": true}
+    ],
+    "ODE_NEB": [
+      {
+        "optimization_N_F_first_occurrence": 60,
+        "paid_batch_id_first_occurrence": 2,
+        "official_path32_sha256": "dd1ea8ac4b6ac094b3967b1fde770d5b4851b77270bde2e92c958cd8dd68bb99"
+      },
+      {
+        "optimization_N_F_first_occurrence": 150,
+        "paid_batch_id_first_occurrence": 5,
+        "official_path32_sha256": "64c0a32b94a860b51ccd6290b96221f2c116243b40fd736521a49b696f59bc85"
+      },
+      {
+        "optimization_N_F_first_occurrence": 300,
+        "paid_batch_id_first_occurrence": 10,
+        "official_path32_sha256": "5cd502e6eff9294e9c7381aa4cb6b0a7653fa2eff921aeafdf68d562a7cfadbe"
+      },
+      {
+        "optimization_N_F_first_occurrence": 1320,
+        "paid_batch_id_first_occurrence": 44,
+        "official_path32_sha256": "bed299e3446182e72d9468d32527ec13e4823d87cc61627eb2de9219f9e4d2ae"
+      }
+    ],
+    "statement": "These rows are copied from the earlier authoritative materials; R2 makes no new choice and must not be cited as prospective selection evidence."
+  },
+  "metric_and_claim_guard": {
+    "same_frozen_path_for_both_metrics": true,
+    "metric_feedback_into_optimization_or_selection": "forbidden",
+    "fixed_endpoint_optimization_N_F": 0,
+    "diagnostic_calls_are_optimization_N_F": false,
+    "terminal_partial_or_uncommitted_tail": "excluded",
+    "Delta_E_monotonicity_assumed": false,
+    "allowed_sparse_curve_claim": "observed lower envelope and earliest observed first passage only"
+  }
+}

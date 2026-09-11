@@ -1,0 +1,46 @@
+{
+  "schema": "bb-ode-neb-nf4080-arc500-zero-openmm-preflight-receipt-v1",
+  "status": "PASS",
+  "observed_utc": "2026-09-01T20:57:54Z",
+  "scope": "ODE-NEB_NF4080_SINGLE_RETAINED_PATH_ONLY",
+  "all_path_ode_neb_arc500_task": "REMAINS_PAUSED",
+  "bindings": {
+    "contract": {
+      "path": "../../registrations/diagnostics/BB_ODE_NEB_NF4080_ARC500_20260902_R1.json",
+      "sha256": "ef518b0df2cab6533b4e93db11d431edb69907441041a36806c5712454878686"
+    },
+    "single_path_evaluator": {
+      "path": "../../scripts/evaluate_ode_neb_nf4080_arc500.py",
+      "sha256": "2622dd5ff149c0a06f91810d53b88c105a629854369074d1142c4d2f6575590c"
+    }
+  },
+  "command": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OPENMM_CPU_THREADS=1 PYTHONPATH=src:scripts /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python scripts/evaluate_ode_neb_nf4080_arc500.py --contract registrations/diagnostics/BB_ODE_NEB_NF4080_ARC500_20260902_R1.json --output runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.npz --validate-only",
+  "physical_calls": {
+    "new_OpenMM_energy_attempts": 0,
+    "new_OpenMM_force_attempts": 0,
+    "optimization_N_F_contribution": 0,
+    "physical_evaluation_locks_acquired": false
+  },
+  "source_validation": {
+    "optimization_N_F": 4080,
+    "batch_id": 136,
+    "discrete_I_perp_eV2_per_A": 4371.16533670238,
+    "official_path32_sha256": "eb21e326ccbefe8919c022bfc842ae0b6518de0136f4ef2336bb57a8af9a2461",
+    "raw_path_sha256": "b28a7222e61e457eae7e3b3dcfd90f83fec6b78728d64497914e1f607f4343d7",
+    "internal_images_match_paid_force_coordinates_bytewise": true,
+    "fixed_endpoints_match_cache_bytewise": true
+  },
+  "prospective_dense_grid": {
+    "number_of_points": 500,
+    "dense_coordinate_sha256": "d84ddb9b2d0631a3c55e020fffb81e35faec3ddef37c40d17e4b52feb81ff874",
+    "total_arclength_A": 3815.4968403147122,
+    "dense_spacing_A": 7.646286253135696,
+    "minimum_original_segment_length_A": 122.28026625289239,
+    "maximum_original_segment_length_A": 123.2629909276891
+  },
+  "output_state_after_preflight": {
+    "npz_absent": true,
+    "audit_absent": true,
+    "energy_WAL_absent": true
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.1.0",
+  "plan_id": "ala2d-irivm-v15-development-screen-r1",
+  "status": "frozen-before-first-v15-grid-result",
+  "formal_evidence": false,
+  "new_restrained_md_authorized": false,
+  "purpose": "Test the frozen V15 state-machine revision on the unchanged systematic parameter family before any separately sealed restrained-MD campaign.",
+  "algorithm": {
+    "required_implementation_prefix": "ala2d-riemannian-v15",
+    "required_implementation_sha256": "07ff2d70216bae7d3f95997805835b652bc755ab8f16cb4e82a489ae69ba56dc",
+    "mathematical_description": "frozen-frame projected proximal root solver on article-reparameterized public paths",
+    "design_specification": "reports/V15_STATE_MACHINE_DESIGN.md",
+    "optimizer_may_use_article_performance_metrics": false,
+    "unselected_candidate_oracle_queries": false,
+    "exact_center_resampling_is_public": true,
+    "resampling_reuses_identical_path_bytes": true,
+    "common_initial_policy": "One explicit initial_no_se_special_case: uncertainty is unavailable rather than zero, exactly one initial-scale proposal is allowed, and all later noise decisions require real blocks.",
+    "relative_residual_stop_policy": "After at least one movement, stop the frozen inner solve only when the one-sided confidence condition U(P_j) <= r L(P_0) is true. If it is false, including interval overlap or any other unresolved stop decision, continue with an admissible movement until a clear stop or m_max; do not purchase an exact-center resample merely to resolve r.",
+    "unresolved_lbfgs_advantage_policy": "Before global warm takeover, select L-BFGS only when its positive score advantage over H0 is statistically resolved. Otherwise H0 is the required fallback: move with H0 only when H0 is valid and its own improvement lower confidence bound is strictly positive; if that H0 lower bound is nonpositive with positive reducible uncertainty, HOLD is allowed. The nonselected L-BFGS candidate's own lower bound cannot bypass an unresolved takeover comparison.",
+    "post_takeover_policy": "The one-way warm takeover and its bounded warm scalar safeguard are unchanged; after takeover H0 remains forbidden. An invalid warm candidate with positive reducible uncertainty selects exact-center HOLD, while an invalid warm candidate without reducible uncertainty terminates without another query."
+  },
+  "revision_rationale": {
+    "prior_plan_id": "ala2d-irivm-v14-development-screen-r1",
+    "prior_plan_sha256": "2399bfa55445374644d72faec09c29a6b645b31b9fd081faddbc90022a527dd8",
+    "prior_analysis_sha256": "fcbb44d0a90f0b4975de7196ff9664e6a5469d3f0fa447b25e82d7817e815c98",
+    "prior_complete_exact_run_count": 48,
+    "prior_decision": "NO_COMBINATION_PASSED",
+    "role_in_v15": "Revision rationale only. No V14 path, metric, diagnostic rank, or outcome is used to change the V15 grid, horizon, acceptance rules, passing order, or selection baseline.",
+    "observed_failure_mode": "Under calibrated synthetic noise, the symmetric residual ambiguity rule and unresolved direction-comparison rule could repeatedly select exact-center HOLD, so V15 removes those two avoidable ambiguity traps without changing the scientific performance screen."
+  },
+  "parameter_grid": {
+    "alpha": [
+      0.00010,
+      0.00013,
+      0.00016
+    ],
+    "alpha_integer_mantissa_notation": [
+      "10e-5",
+      "13e-5",
+      "16e-5"
+    ],
+    "r": [
+      0.4,
+      0.7
+    ],
+    "m_max": [
+      4,
+      8
+    ],
+    "complete_factorial_combination_count": 12,
+    "story": "The complete V14 factorial is repeated unchanged so the effect of the V15 state-machine revision is not confounded with post-result parameter refinement. Alpha retains integer mantissas; the two r and m_max levels remain separated enough to expose genuine outer/inner trajectory changes."
+  },
+  "oracles": {
+    "deterministic": {
+      "class": "ala2d_oracles.SurrogateOracle",
+      "repetitions": 1,
+      "single_block_standard_error_policy": "exactly zero in this development oracle only",
+      "formal_evidence": false
+    },
+    "calibrated_synthetic_noise": {
+      "class": "ala2d_development_oracles.CalibratedSyntheticNoiseOracle",
+      "master_seeds": [
+        1401,
+        1402,
+        1403
+      ],
+      "neighbor_count": 64,
+      "neighbor_bandwidth_rad": 0.2,
+      "maximum_nearest_calibration_distance_rad": 0.6,
+      "maximum_farthest_neighbor_distance_rad": 0.7,
+      "noise_scale": 1.0,
+      "metric_noise": true,
+      "calibration": "inputs/noise_calibration/r1_v13_confirmed_block_noise.npz",
+      "formal_evidence": false
+    }
+  },
+  "cost_horizon": {
+    "internal_images": 20,
+    "query_equivalents_per_complete_band": 20,
+    "incremental_query_equivalent_budget_per_run": 2000,
+    "checkpoint_spacing": 20,
+    "common_initial_incremental_cost": 0,
+    "development_query_equivalents_are_not_formal_nof": true
+  },
+  "posthoc_scoring": {
+    "scoring_oracle": "the deterministic FES spline plus frozen historical-M interpolant",
+    "algorithm_access_to_scoring_oracle": false,
+    "candidate_paths_scored": "every public path at its exact 20-query-equivalent checkpoint",
+    "baseline": "actual archived current-IVM paths through 2000 incremental NoF, rescored by the same deterministic scoring oracle",
+    "barrier_quantity": "absolute error relative to the frozen FES minimax barrier",
+    "barrier_reference_kcal_per_mol": 1.1433272313575527,
+    "front_middle": {
+      "start": 20,
+      "stop": 1600,
+      "step": 20,
+      "required_for_full_screen_pass": {
+        "I_perp_G": "three-synthetic-seed median strictly lower than current IVM at every checkpoint",
+        "I_arc": "three-synthetic-seed median no higher than current IVM at every checkpoint",
+        "Delta_F_error": "three-synthetic-seed median strictly lower than current IVM at every checkpoint"
+      }
+    },
+    "tail": {
+      "start": 1620,
+      "stop": 2000,
+      "step": 20,
+      "checkpoint_count": 20,
+      "for_I_perp_G_and_Delta_F_error": {
+        "minimum_median_checkpoint_win_fraction": 0.8,
+        "candidate_tail_median_strictly_lower": true,
+        "candidate_median_normalized_auc_strictly_lower": true,
+        "minimum_individual_synthetic_seeds_with_lower_auc": 2
+      },
+      "for_I_arc": {
+        "median_no_higher_at_every_checkpoint": true,
+        "minimum_individual_synthetic_seeds_with_lower_auc": 2
+      }
+    },
+    "deterministic_guard": "The deterministic trajectory must satisfy the same front/middle pointwise rules and all three lower tail AUCs; it cannot be rescued by noisy repetitions.",
+    "correct_path_guard": {
+      "required_for_deterministic_and_every_synthetic_repetition": true,
+      "terminal_checkpoint": 2000,
+      "maximum_segment_rad": 0.35,
+      "maximum_nearest_fes_minimax_path_distance_rad": 0.75,
+      "rms_nearest_fes_minimax_path_distance_rad": 0.45,
+      "minimax_saddle_proximity_rad": 0.6,
+      "maximum_barrier_error_kcal_per_mol": 0.5,
+      "article_reparameterization_output_residual_strictly_less_than": 1e-6
+    }
+  },
+  "selection_rule": {
+    "eligible": "valid exact-prefix runs that pass the correct-path guard",
+    "primary": "full deterministic guard and full three-seed synthetic front/middle plus noisy-tail screen pass",
+    "passing_order": [
+      "larger count of joint front/middle checkpoint wins",
+      "larger minimum component tail checkpoint win fraction",
+      "smaller worst individual synthetic-seed normalized tail I_perp_G AUC ratio",
+      "smaller worst individual synthetic-seed normalized tail Delta_F_error AUC ratio",
+      "smaller deterministic worst all-metric checkpoint ratio",
+      "smaller alpha",
+      "smaller r",
+      "smaller m_max"
+    ],
+    "if_no_combination_passes": "Do not promote a merely best-looking failure to formal MD; diagnose or revise the algorithm, then freeze a complete new development screen.",
+    "if_fewer_than_three_pass": "A formal pilot may include the passing combinations only after registration; any further parameter refinement must first be a complete predeclared factorial bracket rather than isolated additions.",
+    "selection_is_not_formal_acceptance": true
+  },
+  "required_before_execution": [
+    "V15 source passes frozen-frame, post-reparameterization-step, secant, noise, resampling, takeover, one-sided confident r stop, unresolved-LBFGS H0 fallback, m_max, NoF, resume, and budget-prefix tests.",
+    "Algorithm source and this plan are hashed into the development result manifest.",
+    "Formal paper PDFs remain byte-for-byte unchanged."
+  ]
+}

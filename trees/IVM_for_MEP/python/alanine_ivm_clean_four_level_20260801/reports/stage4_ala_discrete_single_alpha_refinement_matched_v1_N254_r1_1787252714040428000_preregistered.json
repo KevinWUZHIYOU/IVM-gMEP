@@ -1,0 +1,253 @@
+{
+  "status": "preregistered",
+  "protocol_id": "stage4_ala_discrete_single_alpha_refinement_matched_v1",
+  "created_unix": 1787252714.0565,
+  "planned_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000.json",
+  "alpha_only_refinement": true,
+  "new_alpha_grid": [
+    5.0,
+    7.5,
+    12.5,
+    15.0
+  ],
+  "coarse_bracket": {
+    "lower_alpha": 1.0,
+    "upper_alpha": 20.0,
+    "new_points_strictly_inside": true
+  },
+  "locked_neighborhood_definition": "inside coarse bracket (1,20), with 5 <= alpha < 20",
+  "locked_center_alpha_reused_not_rerun": 10.0,
+  "upper_boundary_alpha_reused_not_rerun": 20.0,
+  "one_candidate_and_one_same_alpha_legacy_control_per_new_alpha": true,
+  "budget_per_image": 254,
+  "replicate": "r1",
+  "candidate": {
+    "subproblem": "discrete_b040",
+    "fixed_alpha_throughout": true,
+    "stop_rule": "R/R0 <= 0.8 OR evaluated accepted steps == 10"
+  },
+  "matched_control": {
+    "subproblem": "legacy",
+    "same_alpha_same_initial_path_same_outer_policy": true
+  },
+  "scientific_command_contract": "exact frozen coarse-v2 command at each new alpha after removing only output-dir and run-label routing",
+  "all_non_alpha_scientific_flags_frozen": true,
+  "tested_stop_variants": false,
+  "reparameterization_policy": "state_curve/per_image from first state",
+  "single_run_from_canonical_common_path": true,
+  "eligible_record_definition": "initial plus reparam_committed states",
+  "mesh_gate": {
+    "segment_length_cv_max": 0.0065,
+    "segment_length_ratio_max": 1.03
+  },
+  "cost_to_precision_definition": "minimum actual optimization NF at I_perp <= threshold; no interpolation",
+  "reporting_anchors": [
+    1.0,
+    0.1,
+    0.05,
+    0.02,
+    0.01,
+    0.005,
+    0.002,
+    0.001,
+    0.0005,
+    0.0002,
+    0.00015
+  ],
+  "formal_selection_rule": "full-curve Iperp CTP on complete mesh-eligible states versus the same-alpha control and separately official Stage-IV v4; no terminal rank",
+  "primary_success_criterion": "candidate must simultaneously full-curve dominate its same-alpha legacy control and the frozen official Stage-IV v4 post-activation tail",
+  "alpha_lock_requires_primary_success": true,
+  "no_primary_dominator_rule": {
+    "winner_claim_allowed": false,
+    "barrier_unembargo_allowed": false,
+    "only_allowed_followup": "choose the center alpha for a separately preregistered, single-variable stop-rule ablation",
+    "eligible_center_alphas": [
+      5.0,
+      7.5,
+      10.0,
+      12.5,
+      15.0,
+      20.0
+    ],
+    "official_tail_deficit_order": [
+      "fewest unreachable frozen official-v4 Pareto thresholds in its I_perp<=0.007 domain",
+      "smallest tightest eligible complete-mesh I_perp",
+      "lexicographically smallest candidate-minus-official NF vector at official Pareto thresholds ordered tight-to-loose; unreachable is positive infinity",
+      "smaller numeric alpha only as an exact deterministic tie-break"
+    ],
+    "selection_is_not_an_alpha_winner_claim": true
+  },
+  "terminal_or_raw_iperp_ranking_allowed": false,
+  "iperp_only_scientific_response_during_refinement": true,
+  "sparse_barrier_role": "embargoed_not_read_not_reported_not_ranked",
+  "densified_energy_barrier_role": "embargoed_until_alpha_is_locked",
+  "barrier_fields_accessed_by_wrapper_or_launcher": false,
+  "decision_inputs": {
+    "coarse_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000_preregistered.json",
+      "sha256": "ad6996e1751e5095beb5db6695d9c6c0e2944825efd5d84c9b623089ae542823"
+    },
+    "coarse_complete_report": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000.json",
+      "sha256": "179a00246f01af6cb3955d018830a0d4eb818cdd4053477a0648d82698ed819a"
+    },
+    "coarse_readonly_iperp_ctp_report": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_fixedalpha_matched_v2_N254_r1_1787251461968963000_iperp_ctp_readonly_v1_1787252176364307000.json",
+      "sha256": "34a7710b2404ac1469158c28636f9b8441b3ff6695c2a35d2f3af3681d3ac587"
+    },
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+      "sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b"
+    },
+    "official_stage4_v4_comparator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+      "sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc"
+    }
+  },
+  "coarse_decision_findings": {
+    "coarse_joint_full_curve_dominators": [],
+    "coarse_near_miss_deficit_pareto_alphas": [
+      "0.1",
+      "1",
+      "10",
+      "20",
+      "30",
+      "10000",
+      "inf"
+    ],
+    "locked_center_alpha": 10.0,
+    "upper_boundary_alpha": 20.0,
+    "reference_cells_reused_not_rerun": {
+      "alpha10": {
+        "candidate": {
+          "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_r08c10_a10_N254_discrete_b040_r1_central_state_ivm_cfgffb5ffd94f4a_budget254.npz",
+          "result_sha256": "0343705f66678cf1d2031b9bf146c9e8659335e13e5362cf83c121b75d085b0e",
+          "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_r08c10_a10_N254_discrete_b040_r1.json",
+          "member_audit_sha256": "a86f38fb7d5572c156bbc8d013bd0544c6d864fd449c0fd7768e332ddfd2a9e8"
+        },
+        "matched_control": {
+          "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a10_N254_legacy_r1_central_state_ivm_cfgab23c94352d6_budget254.npz",
+          "result_sha256": "4217108b6e519e61d9b8d267cf2e8d1207fcd895c9c05406e42ab6453bb7eaa1",
+          "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a10_N254_legacy_r1.json",
+          "member_audit_sha256": "bf5f898da01fcad46b1e7e06a57cfa5de5a27381eae18ab864bd802de653d340"
+        }
+      },
+      "alpha20": {
+        "candidate": {
+          "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_r08c10_a20_N254_discrete_b040_r1_central_state_ivm_cfg539237df964b_budget254.npz",
+          "result_sha256": "8ad8ad19f469752e2ebbd6c4b73eca12eadbfc09eb5df2d12ba5cf92e14d63ae",
+          "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_r08c10_a20_N254_discrete_b040_r1.json",
+          "member_audit_sha256": "8f71542c46c732204c908bfda3de015680d1084820ec7688ec1f454730fc8c0e"
+        },
+        "matched_control": {
+          "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/members/ivm_stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a20_N254_legacy_r1_central_state_ivm_cfg26035919ed6a_budget254.npz",
+          "result_sha256": "2688b7b75fb79efb11a00ad9da3f426930a5f9e0f6f25c45c138c2945feb2176",
+          "member_audit": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_v2/audits/stage4_ala_discrete_single_fixedalpha_v2_legacy_stop_a20_N254_legacy_r1.json",
+          "member_audit_sha256": "556ed435e62e0700b2a303ad932c22a6db5e848b5c9241a71ebbb2684f2c98e4"
+        }
+      }
+    },
+    "frozen_coarse_source_manifest_verified": {
+      "core": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+        "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+      },
+      "ala_core": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+        "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+      },
+      "frozen_discrete_b040": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+        "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+      },
+      "legacy_command_helper": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+        "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+      },
+      "complete_state_protocol_reference": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/build_pareto_archive.py",
+        "sha256": "ae71cab4bb760cf83edabcf4799c45313188102695b79ba9698abda0c6d786fd"
+      },
+      "wrapper_alias": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py",
+        "sha256": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6"
+      },
+      "wrapper_implementation": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py",
+        "sha256": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845"
+      },
+      "launcher_alias": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha_grid.py",
+        "sha256": "0d6e04401c69fb20a9c5314df97114923e0ddce4f3376b8e3e33995489f8163f"
+      },
+      "launcher": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha_grid.py",
+        "sha256": "cb5f7eae1a1a9d10473ee6a25d3b39678230b4d77e1571cd2758c9dfedb4dd69"
+      }
+    }
+  },
+  "run_source_manifest": {
+    "refinement_launcher": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement_grid.py",
+      "sha256": "e592b7b905f04d9522d435ddd53e3722f43f3263ce4a004ed00ced4f01b8e724"
+    },
+    "refinement_member_wrapper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py",
+      "sha256": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62"
+    },
+    "frozen_coarse_wrapper_alias": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py",
+      "sha256": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6"
+    },
+    "frozen_coarse_wrapper_implementation": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py",
+      "sha256": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845"
+    },
+    "legacy_command_helper": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+      "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+    },
+    "core_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+    },
+    "ala_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+      "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+    },
+    "frozen_discrete_b040": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+      "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+    }
+  },
+  "decision_source_manifest": {
+    "complete_state_protocol_reference": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/build_pareto_archive.py",
+      "sha256": "ae71cab4bb760cf83edabcf4799c45313188102695b79ba9698abda0c6d786fd"
+    },
+    "coarse_ctp_analyzer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/analyze_stage4_ala_discrete_single_iperp_ctp.py",
+      "sha256": "13dda1798c530a3629cb25c4ecbd13ad1e1c7a52ce5950b2b2a2a3a2c8edf60e"
+    }
+  },
+  "registered_command_hashes": {
+    "alpha5": {
+      "candidate_command_sha256": "355e47eea30cf25493086d9efc4641a9dbab4815fc79f19081545d68b8165a8b",
+      "matched_control_command_sha256": "0f2b16b78fafb97d120974078ee023828b2969af43f67b48704f7fc8df0c015e"
+    },
+    "alpha7.5": {
+      "candidate_command_sha256": "ad5741e926d1ffccce811684d0626dc914c051612e5f623cc499861ccfa3ee8a",
+      "matched_control_command_sha256": "553bdb44b5152be9e672dd2d2781ab7844d7a2d6de1527b1eaf5bb822939c097"
+    },
+    "alpha12.5": {
+      "candidate_command_sha256": "33247163b6566c536b01ee3fcec18bbf174eb9df28bc144de34f15982fc2e552",
+      "matched_control_command_sha256": "924d154180bf3de2ca41f1a1450888ff6e77d9f53dbd5bd8a088cd5446d75b7d"
+    },
+    "alpha15": {
+      "candidate_command_sha256": "a7d2d3f427677e6ef322ee8e5ca6c13d93ab96f9cba6c1edf821effd43a63fc4",
+      "matched_control_command_sha256": "423994b566dfe5e061c6569af707c9befad1a48117f1f87dc40c6ed0690fec8d"
+    }
+  },
+  "member_policy_version": "stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1",
+  "independent_member_paths_and_logs": true
+}

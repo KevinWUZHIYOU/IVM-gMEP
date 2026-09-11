@@ -1,0 +1,59 @@
+{
+  "schema": "bb-irivm-nf8982-0k-section-freeze-contract-v2",
+  "status": "FROZEN_BEFORE_ANY_SECTION_ENERGY_CALL",
+  "physical_execution_authorized": false,
+  "scientific_identity": "unrelaxed Cartesian 0 K section centered on the selected IR-IVM NF8982 path",
+  "center_policy": {
+    "source": "last complete post-initial reparameterization-committed selected IR-IVM path",
+    "optimization_N_F": 8982,
+    "terminal_N_F_9985_partial_tail_forbidden": true,
+    "center_sampling": "59 points uniformly spaced in unweighted Cartesian arc length",
+    "normal_construction": "common initial minus center at matched center_s, remove central tangent component, normalize; nearest valid normal fallback"
+  },
+  "geometry": {
+    "center_points": 59,
+    "normal_points": 28,
+    "normal_start_A": -0.12,
+    "normal_stop_A": 0.69,
+    "normal_step_A": 0.03,
+    "zero_normal_index": 4,
+    "zero_normal_is_exact_float64_zero": true
+  },
+  "normal_range_rationale": {
+    "known_projected_range_A": [-0.01715, 0.62376],
+    "common_initial_max_A": 0.6237545,
+    "IR_IVM_call7_max_A": 0.55177,
+    "ODE_NEB_NF240_max_A": 0.62162,
+    "ODE_NEB_NF480_max_A": 0.61106,
+    "policy": "cover every already selected comparison path with margin, without changing the registered 59x28 grid size"
+  },
+  "planned_diagnostics": {
+    "surface_energy_only_calls": 1652,
+    "exact_original_path_internal_energy_only_calls": 30,
+    "surface_and_original_path_accounted_separately": true,
+    "fixed_endpoint_energy_calls": 0,
+    "force_calls": 0,
+    "optimization_N_F_contribution": 0
+  },
+  "base_evolution_contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_EVOLUTION_FIGURE_CONTRACT_20260902_R1.json",
+    "sha256": "269b7195e8c7c1185abc5479bc1c244c657d26c96f42a1123f17b8ef784f3a5a"
+  },
+  "builder": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_nf8982_0k_section_r2.py",
+    "sha256": "b2afe18a2e2de30c6ee077f4482b59009c11203657cc1e5e24154e82eb5b1e73"
+  },
+  "supersession_receipt": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_R1_SUPERSESSION_20260902.json",
+    "sha256": "4719d7b66086f80df983e248a9fbb5c64a022660bf4781606ab20243767ed778"
+  },
+  "output_policy": {
+    "stores_all_1652_surface_coordinates": true,
+    "stores_exact_original_path32": true,
+    "stores_cellwise_coordinate_sha256": true,
+    "approximate_coordinate_or_energy_reuse_forbidden": true,
+    "refuse_overwrite": true,
+    "atomic_hardlink_publish_and_parent_fsync": true
+  },
+  "planned_coordinate_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_coordinates_59x28_20260902_r2.npz"
+}

@@ -1,0 +1,51 @@
+{
+  "canonical_two_lock_nonblocking_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "completed_utc": "2026-09-02T11:39:36.179378+00:00",
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_CONTRACT_R4_20260902.json",
+    "sha256": "3f7efd0eea0b03d7f1553f7e2fa4538851eea9dffdf8a394fa8fbc2199d1662d"
+  },
+  "coordinate_manifest": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_coordinates_59x28_20260902_r2.npz",
+    "sha256": "9259354b5fce0fb57e040436e7800cd1fc67cd7c1cc71305663fd915057cc02e"
+  },
+  "endpoint_cache": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+    "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "endpoint_coordinate_pair_sha256": "5788e22f86df91ed5500e88a8dc053f7408bd2fb39414de121a6eec36b833db1",
+  "endpoint_energy_pair_sha256": "24884695bc3bbecbf1e5007bf8f245bfe6d7eb5bf81725e986b8dd0ece088a31",
+  "energy_call_policy": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_CALL_POLICY_R3_20260902.json",
+    "sha256": "87b620557e2f920597194ac58c0f6f0f2f36c823291ffee72bce1b04d881bb32"
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_nf8982_0k_section_energy_r4.py",
+    "sha256": "3d3049d2710274b4cf8d7c36bd40a0fd912332c4b51c509c55401b609d4db07b"
+  },
+  "observed_free_bytes": 12750110720,
+  "openmm_contexts_constructed": 0,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_original_path32_energy_20260902_r4.npz",
+  "path_stage_fresh_attempt_maximum": 30,
+  "physical_calls_started": 0,
+  "required_free_bytes": 8925478912,
+  "schema": "bb-irivm-nf8982-0k-section-energy-preauthorization-preflight-v2",
+  "status": "PASS_ZERO_OPENMM_BEFORE_AUTHORIZATION",
+  "surface_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_energy_59x28_20260902_r4.npz",
+  "surface_stage_fresh_attempt_maximum": 1650,
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "total_fresh_attempt_maximum": 1680
+}

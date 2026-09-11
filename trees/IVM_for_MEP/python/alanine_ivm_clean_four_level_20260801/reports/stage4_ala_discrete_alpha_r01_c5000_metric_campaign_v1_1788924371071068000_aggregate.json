@@ -1,0 +1,2647 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1",
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000_preregistered.json",
+  "preregistration_sha256": "540b6a985d09219cb112093003ce7f63de709cd3cb071a9f9e78645a2dd201a4",
+  "run_report": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000_local_run_report.json",
+    "sha256": "f5f7fdf368faec673576ac2cb36f83f84d6a7059fa814d1f1f91897e8b2e0d22"
+  },
+  "source_cell_count": 8,
+  "eligible_state_reference_count": 121,
+  "unique_path_task_count": 114,
+  "reused_metric_v2_path_task_count": 114,
+  "new_local_openmm_path_task_count": 0,
+  "optimization_nf_charged": 0,
+  "new_diagnostic_raw_joint_evaluations": 0,
+  "reused_historical_diagnostic_raw_joint_evaluations": 383154,
+  "all_four_dense_levels_required": true,
+  "selected_subdivisions": 160,
+  "dense_convergence_tolerance_kcal_per_mol": 0.001,
+  "delta_E_definition": "(max(dense_energy_eV)-first_dense_energy_eV)*23.0605",
+  "all_eligible_states_dense_converged": true,
+  "state_metrics": [
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 42.90168568240129,
+      "segment_length_cv": 0.00018776706215354488,
+      "segment_length_ratio": 1.0005351324950904,
+      "path_sha256": "040d64eb3c5068990c8904b1c484c8cdb70f8347456912631ca9c41ffb938a5d",
+      "path_task_id": "80dbf223eadfe114c339e5c7fe268b9a6d13f4ca4d90283d3e6e3c029b8f90d3",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/80/80dbf223eadfe114c339e5c7fe268b9a6d13f4ca4d90283d3e6e3c029b8f90d3.json",
+        "sha256": "5355fb9d868f78fa04f0d237a129452db6f748bbbf5c74db122188fca771dd60"
+      },
+      "densified_delta_E_kcal_per_mol": 16.442114427187143,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.067690639990133e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 6,
+      "optimization_nf": 140,
+      "raw_i_perp": 14.234187662433701,
+      "segment_length_cv": 0.0004205609927246223,
+      "segment_length_ratio": 1.001472387632441,
+      "path_sha256": "32bb6706e72a7b80d31ffcc31aa41be9d3d71b85869d7f9f40a220877fa402ff",
+      "path_task_id": "59ccd78abf09bd8ec8c5784cd3b3408ac1e8cc6b1d9b089ac57954a6841cbfe7",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/59/59ccd78abf09bd8ec8c5784cd3b3408ac1e8cc6b1d9b089ac57954a6841cbfe7.json",
+        "sha256": "14facda4fd6bdd8921db9adf75d4f4b7ca1957cd15e3a76f8f04a54ae81a2f59"
+      },
+      "densified_delta_E_kcal_per_mol": 10.961365890328397,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 9,
+      "optimization_nf": 200,
+      "raw_i_perp": 7.296459291720108,
+      "segment_length_cv": 0.0005906218106711047,
+      "segment_length_ratio": 1.002138643978934,
+      "path_sha256": "07f504072379c81ca31aac886c6bec7580f446fbd73b35fcabbbb22a70260b5e",
+      "path_task_id": "336ebe9c4dbc40797ca8ba30f5efea9218881bdf439ea1ed592b54f991af1bfe",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/33/336ebe9c4dbc40797ca8ba30f5efea9218881bdf439ea1ed592b54f991af1bfe.json",
+        "sha256": "4d440bc39e338dfad50d6f37c68aeb7d6882535c6e9aba16589cb2977c29b3d1"
+      },
+      "densified_delta_E_kcal_per_mol": 8.536589454284178,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 12,
+      "optimization_nf": 260,
+      "raw_i_perp": 4.392659688835375,
+      "segment_length_cv": 0.0006834059963689275,
+      "segment_length_ratio": 1.002391405197407,
+      "path_sha256": "d4aa1205f3cbe954b83ec68635ffef16a0edd48ed005c5c99974131d818f0991",
+      "path_task_id": "dad948363101d17384d586adc22feeb8dc218fcb050ca56cdd8d302cf76463c8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/da/dad948363101d17384d586adc22feeb8dc218fcb050ca56cdd8d302cf76463c8.json",
+        "sha256": "b71bc8699d7f76efce2ae5c94585248e34342eeb296321dfe495d9a7973bbd56"
+      },
+      "densified_delta_E_kcal_per_mol": 7.119105763578531,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 7.315028110355115e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 15,
+      "optimization_nf": 320,
+      "raw_i_perp": 2.8264516781447164,
+      "segment_length_cv": 0.0007065658925587846,
+      "segment_length_ratio": 1.0024176379485261,
+      "path_sha256": "0a473a1c5f2e4b8989f27be8e615bdffc8a26fbdc7d5e8a21c461f2aa0edd9db",
+      "path_task_id": "1fbe8da3daf71585fd5bd2b35d0691842a5d07b4ea69af3b7b755591619c51a4",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/1f/1fbe8da3daf71585fd5bd2b35d0691842a5d07b4ea69af3b7b755591619c51a4.json",
+        "sha256": "505abaf92b7b89f9f6740bd2324a9f00c93323fd31f994008430e34cb5b06e15"
+      },
+      "densified_delta_E_kcal_per_mol": 6.184056108354737,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 18,
+      "optimization_nf": 380,
+      "raw_i_perp": 1.8774588590254087,
+      "segment_length_cv": 0.0006738957520251723,
+      "segment_length_ratio": 1.002261688535014,
+      "path_sha256": "d25b1d8db69d36b83b865d4b7694e5bda5c7abb613f882e6b09723479df25643",
+      "path_task_id": "1f8b5f12a5a9dbaedb1692f6280baffa97004dfdc5f990b0fcd939e07b22802e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/1f/1f8b5f12a5a9dbaedb1692f6280baffa97004dfdc5f990b0fcd939e07b22802e.json",
+        "sha256": "25ea579021dc93227c3fed842b96e1e410c8b98d9c0289abef4f7d4cb44fa90d"
+      },
+      "densified_delta_E_kcal_per_mol": 5.527656308500662,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 21,
+      "optimization_nf": 440,
+      "raw_i_perp": 1.3176951632211285,
+      "segment_length_cv": 0.0007199286668769495,
+      "segment_length_ratio": 1.0022627681321898,
+      "path_sha256": "db38b54274d1c3633304354d81faf1271be984b9af3096a2e44ebe895898c674",
+      "path_task_id": "91dbb93a99474231e6938551067189e4f1e47d6fbb296d91a6d5344e4cd7a430",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/91/91dbb93a99474231e6938551067189e4f1e47d6fbb296d91a6d5344e4cd7a430.json",
+        "sha256": "0bed5c56955d0e3267c85266df94a34aef6c0a64581069f5bfaec29a2345d84c"
+      },
+      "densified_delta_E_kcal_per_mol": 5.049247083946218,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.4118455012333015e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 24,
+      "optimization_nf": 500,
+      "raw_i_perp": 0.8080696718547821,
+      "segment_length_cv": 0.0005545420399153849,
+      "segment_length_ratio": 1.0019311314487833,
+      "path_sha256": "769ca0741986d3a83517efa5dde1f4a85367bdd8bf7474dc92b340881d378265",
+      "path_task_id": "3245ad7861577222a9c8d051c767d2ce64e16015d17ed70de815cca59f93e54b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/32/3245ad7861577222a9c8d051c767d2ce64e16015d17ed70de815cca59f93e54b.json",
+        "sha256": "71c72c0df00625e60d1aa32f283ca2774333e44b3a1df63de1bfd44272d5b8a8"
+      },
+      "densified_delta_E_kcal_per_mol": 4.441829559831087,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.5105319306485399e-07
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 27,
+      "optimization_nf": 560,
+      "raw_i_perp": 0.517389609298377,
+      "segment_length_cv": 0.0004590741122704576,
+      "segment_length_ratio": 1.0015860586035077,
+      "path_sha256": "4c5243ca91880ad5c8b89ddcd7670de6b2d5b08ef34b32f6a5ff5453315c0b66",
+      "path_task_id": "27f54eabde3059f10a1eba9d959866970f846961d6a4fd92d7187eaa7928243a",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/27/27f54eabde3059f10a1eba9d959866970f846961d6a4fd92d7187eaa7928243a.json",
+        "sha256": "2a3c670e57362a633dd31d70b16b38c587e619faf1862f21ab00da2a36893310"
+      },
+      "densified_delta_E_kcal_per_mol": 4.068477924427781,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 5.457607501035966e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 31,
+      "optimization_nf": 640,
+      "raw_i_perp": 0.2924330994725998,
+      "segment_length_cv": 0.0002995952751109994,
+      "segment_length_ratio": 1.001086550985789,
+      "path_sha256": "3071e1bc37a7c08d3870119f6ec18ce2a94c4007485abccb26030fb518128411",
+      "path_task_id": "3f611664875f945aa6e0d6467e6757f6366e8ac036d635959fda582a826119fb",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/3f/3f611664875f945aa6e0d6467e6757f6366e8ac036d635959fda582a826119fb.json",
+        "sha256": "0b2b656816d77c03be8f3ed6b480aef0db873b01446e2fa787493f4f4315761a"
+      },
+      "densified_delta_E_kcal_per_mol": 3.7318410658473335,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.53979578729502e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 36,
+      "optimization_nf": 740,
+      "raw_i_perp": 0.16505283092263298,
+      "segment_length_cv": 0.00019079023699245266,
+      "segment_length_ratio": 1.000706293672942,
+      "path_sha256": "727627aa42b6ad0cba151e6754cc707f86b71977227ea1616747f577bb3f2ab5",
+      "path_task_id": "5a853e803dd1fc408db1c9e5a4021d37579eaeca732190d734af977330206d2e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/5a/5a853e803dd1fc408db1c9e5a4021d37579eaeca732190d734af977330206d2e.json",
+        "sha256": "aa06cc00306a8bb74c941a86a17d994b80d59939c1fab58a67f0b81b223920b9"
+      },
+      "densified_delta_E_kcal_per_mol": 3.487909956984195,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.2805921994374359e-05
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 43,
+      "optimization_nf": 880,
+      "raw_i_perp": 0.09655956997992354,
+      "segment_length_cv": 0.00014104388044038462,
+      "segment_length_ratio": 1.0005389221954535,
+      "path_sha256": "14b84a74049c979914e77280b63b50a5f9ed99921ecca59ff527319ce3f4b738",
+      "path_task_id": "68cc4380d8c55d84f765fbf5cc4e3820139353c08a96677251eff58167eac5b5",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/68/68cc4380d8c55d84f765fbf5cc4e3820139353c08a96677251eff58167eac5b5.json",
+        "sha256": "de67fe832e33f2875e3c0b337948557d371ed5f46d0c4861865e810626307c55"
+      },
+      "densified_delta_E_kcal_per_mol": 3.294135347953088,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.152498959244852e-05
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 51,
+      "optimization_nf": 1040,
+      "raw_i_perp": 0.06754956814047686,
+      "segment_length_cv": 0.00014206015834671227,
+      "segment_length_ratio": 1.0005744203350242,
+      "path_sha256": "2c066a0795dab510f0131c6afd7b291558cee4ae7ff0d7e75c3583324a6cb027",
+      "path_task_id": "d9cdcfd871308d43ebd73fe880bc1d4e38680d2aa48a9650265af0a09756fcdf",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d9/d9cdcfd871308d43ebd73fe880bc1d4e38680d2aa48a9650265af0a09756fcdf.json",
+        "sha256": "1ccb2fb1457e7e1777fc571365ba09578fa685e2fd4deea6cfaeb61c005bfb6b"
+      },
+      "densified_delta_E_kcal_per_mol": 3.16223345769909,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 59,
+      "optimization_nf": 1200,
+      "raw_i_perp": 0.0529763476316893,
+      "segment_length_cv": 0.00015115421874072383,
+      "segment_length_ratio": 1.0006077532451252,
+      "path_sha256": "73cc011d11016757b3246503a893da41d7c572ae5a375adbe75087bcf4050c43",
+      "path_task_id": "e5e34012826430c011b140fca9dccda0b1fff921191c7d5e42ba86c4fed494f0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/e5/e5e34012826430c011b140fca9dccda0b1fff921191c7d5e42ba86c4fed494f0.json",
+        "sha256": "ff2dda84b8a55d0a5e118d4ac18470a063be8619299479f72441964b7adb351b"
+      },
+      "densified_delta_E_kcal_per_mol": 3.0705913055053773,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 2.2097371235041408e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 66,
+      "optimization_nf": 1340,
+      "raw_i_perp": 0.044761783388579605,
+      "segment_length_cv": 0.00015814772282733046,
+      "segment_length_ratio": 1.0006257282432323,
+      "path_sha256": "2092e647eea25011b49853643791d86fe8cb49b94f5e3417165fc981cc33ea4a",
+      "path_task_id": "e8a1304c37f8a20bc14dbc6428eafcc1d4e02ded357a165bc245b8bb735c001b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/e8/e8a1304c37f8a20bc14dbc6428eafcc1d4e02ded357a165bc245b8bb735c001b.json",
+        "sha256": "560588f6ca72ae7e228ce85c3d13de8bc827ab7658ac4ca9fd0ef42f509198ca"
+      },
+      "densified_delta_E_kcal_per_mol": 3.0091420115159,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.547785931232397e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 73,
+      "optimization_nf": 1480,
+      "raw_i_perp": 0.038673129825821766,
+      "segment_length_cv": 0.00016423387430723751,
+      "segment_length_ratio": 1.0006378373033022,
+      "path_sha256": "88b03856003da48f17f8f49f9ebc621da63eff511e1e74470e3318342effe976",
+      "path_task_id": "5510406983b9f4ea99301ccd83f9fba0376455cd33743765bb3d6fae49bc0c58",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/55/5510406983b9f4ea99301ccd83f9fba0376455cd33743765bb3d6fae49bc0c58.json",
+        "sha256": "cb114ad06801f9a7c05e2ff52b91f5e11211a7b58fef11670157f05edb5546c8"
+      },
+      "densified_delta_E_kcal_per_mol": 2.958230062227365,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 5.330544112780444e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 80,
+      "optimization_nf": 1620,
+      "raw_i_perp": 0.03399816904856207,
+      "segment_length_cv": 0.00016970880032358897,
+      "segment_length_ratio": 1.0006790690549914,
+      "path_sha256": "ded04c2611eae26a86c1d4d39c43a5e8555e93ca0172c3d749cab9fad65e033f",
+      "path_task_id": "1205c86b6bf9536be59e5287b55881c998daab338408a7ce7acde7eaffaada2f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/12/1205c86b6bf9536be59e5287b55881c998daab338408a7ce7acde7eaffaada2f.json",
+        "sha256": "36bca17d9b803e118932172e5114a1013e54dff65f5a10a4b2cd71265fc24545"
+      },
+      "densified_delta_E_kcal_per_mol": 2.917042720585126,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 87,
+      "optimization_nf": 1760,
+      "raw_i_perp": 0.030331087733234802,
+      "segment_length_cv": 0.00017477753454630938,
+      "segment_length_ratio": 1.0007136752139918,
+      "path_sha256": "57de0705d3794277ab027f68f0bec93a6e02c11b21dec803014b73f3383c437a",
+      "path_task_id": "12a768ecacfd0fab4a908983465da151728b605658206ef4a59534e06027b68b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/12/12a768ecacfd0fab4a908983465da151728b605658206ef4a59534e06027b68b.json",
+        "sha256": "c8df376dc7f656c350bd3b3c497e2d9812cab54e8ea9d6d6aea6865c6ffe0ead"
+      },
+      "densified_delta_E_kcal_per_mol": 2.8814108246388526,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.3527857816164612e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 94,
+      "optimization_nf": 1900,
+      "raw_i_perp": 0.027405410013905028,
+      "segment_length_cv": 0.0001795671886720556,
+      "segment_length_ratio": 1.000742100812577,
+      "path_sha256": "95993498cbc24fa4a653aaf644239b57064437307c1cb7e1a4957fc7915cb080",
+      "path_task_id": "047b4a56e48f381acc767690c7d8ca8d3823663fe99cea3f71f1f5e3c2a8b7e4",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/04/047b4a56e48f381acc767690c7d8ca8d3823663fe99cea3f71f1f5e3c2a8b7e4.json",
+        "sha256": "5ae74400ec4a21e980aa2dfca0364bb56a0e8b17970014d99dcf62df9499691e"
+      },
+      "densified_delta_E_kcal_per_mol": 2.8500411466172078,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 101,
+      "optimization_nf": 2040,
+      "raw_i_perp": 0.025034159278164884,
+      "segment_length_cv": 0.0001841669269242617,
+      "segment_length_ratio": 1.000765224605276,
+      "path_sha256": "986694d5b84615a1110c6b906c2731d34078eda683f60e462dbcb9ff26df0b58",
+      "path_task_id": "7ac78bc348ffe5cc24534604a017498f24a3a373343e322c176eeca8d24f5ec7",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/7a/7ac78bc348ffe5cc24534604a017498f24a3a373343e322c176eeca8d24f5ec7.json",
+        "sha256": "d1268661ac55fc74c8d1be3f4d4a5f722c783c4dff444c3235b63df572a90f96"
+      },
+      "densified_delta_E_kcal_per_mol": 2.821952768631948,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.307521223827052e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 107,
+      "optimization_nf": 2160,
+      "raw_i_perp": 0.023387862777227094,
+      "segment_length_cv": 0.0001879035146945124,
+      "segment_length_ratio": 1.0007811634595116,
+      "path_sha256": "dc55492faa9fd7a494277b2e698cf4ad821513819efbfedb72b90f445efe3574",
+      "path_task_id": "703bf5734c09f4d5bfc594354c061425bc11cd1520e2aca6993cf9f56900e6f7",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/70/703bf5734c09f4d5bfc594354c061425bc11cd1520e2aca6993cf9f56900e6f7.json",
+        "sha256": "b9c6d8937e243b4a5ff5907a33d610e09bf0a53f9c7e4b505a2fa20e39e9be0d"
+      },
+      "densified_delta_E_kcal_per_mol": 2.800642094142454,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 113,
+      "optimization_nf": 2280,
+      "raw_i_perp": 0.02197266946044709,
+      "segment_length_cv": 0.0001915773094354402,
+      "segment_length_ratio": 1.0007946655573194,
+      "path_sha256": "f83a63367c51f01e8d6d72f7a364b2ce327d0654f78489811156d894906e0a8b",
+      "path_task_id": "e766808c82adaea2ce533e1ee389dbb3c13a02282b995332b2eab33522b2d95f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/e7/e766808c82adaea2ce533e1ee389dbb3c13a02282b995332b2eab33522b2d95f.json",
+        "sha256": "11d53c1c01c619384cfab3d73afea14fa50d0d8e0c7468b4049912450c935b4f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.780840133846446,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.2255185717346961e-05
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 119,
+      "optimization_nf": 2400,
+      "raw_i_perp": 0.02074361633888026,
+      "segment_length_cv": 0.00019522515428792493,
+      "segment_length_ratio": 1.0008062713769637,
+      "path_sha256": "cad4e8303276c6823071116a48c1cf6b51abfb1f51d903e09f7332ab67c46b1d",
+      "path_task_id": "278a458dff495ef380388c9eeb9f309823f038152d083f952866bcf68271ef5e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/27/278a458dff495ef380388c9eeb9f309823f038152d083f952866bcf68271ef5e.json",
+        "sha256": "ffce80c8b50d0eba58601793f38e169b6236008c390f2c45a7b7c0f1d65adca7"
+      },
+      "densified_delta_E_kcal_per_mol": 2.762323900934995,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 125,
+      "optimization_nf": 2520,
+      "raw_i_perp": 0.019665809277793687,
+      "segment_length_cv": 0.00019886764167669418,
+      "segment_length_ratio": 1.0008164025178568,
+      "path_sha256": "a170dc8de68b0af1c89d7f5bc77c11e92ae8ac0a8abc2328a8ca12f88b44ca7e",
+      "path_task_id": "f205f8b4e4d12c46aca6c44c192e48cd9084fdca79ee6735199260ff42feb11d",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/f2/f205f8b4e4d12c46aca6c44c192e48cd9084fdca79ee6735199260ff42feb11d.json",
+        "sha256": "21388eb9701795529e987731fbff7192c33c04246ee266a4ba0d6ad2d9a5a0ae"
+      },
+      "densified_delta_E_kcal_per_mol": 2.7449237748551525,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.4167836000520424e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 131,
+      "optimization_nf": 2640,
+      "raw_i_perp": 0.018711638506088778,
+      "segment_length_cv": 0.00020252319672703936,
+      "segment_length_ratio": 1.0008254058081798,
+      "path_sha256": "6f1bb2a243c0bb311ff09d6dd34fed8f411b50be7a870bdb94470d822aada152",
+      "path_task_id": "9da441056947818f4770655a2dd1a96262763090b1860b8710cb448c8b715f77",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/9d/9da441056947818f4770655a2dd1a96262763090b1860b8710cb448c8b715f77.json",
+        "sha256": "2a1889e07aba83445e1aff54f7107749a71da378696b9ba27700f7be4a0a4799"
+      },
+      "densified_delta_E_kcal_per_mol": 2.728506946819404,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 137,
+      "optimization_nf": 2760,
+      "raw_i_perp": 0.01785946407984336,
+      "segment_length_cv": 0.00020620390019812862,
+      "segment_length_ratio": 1.0008335426817776,
+      "path_sha256": "f1defa4b00c22084d7a64aaed76006cbbefbfb26bfb9d215626cef5557789c30",
+      "path_task_id": "bbcbc9c4382270cc75fa40f2fb8219fcc430702ec3af14b66c2efadf453a5d18",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/bb/bbcbc9c4382270cc75fa40f2fb8219fcc430702ec3af14b66c2efadf453a5d18.json",
+        "sha256": "f42fc371de9a0df82f25219bd0e173de918f593754ba5c24d98f980c70e9fe7b"
+      },
+      "densified_delta_E_kcal_per_mol": 2.7129507818346483,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 143,
+      "optimization_nf": 2880,
+      "raw_i_perp": 0.01709199779387292,
+      "segment_length_cv": 0.0002099170244410722,
+      "segment_length_ratio": 1.0008409938765606,
+      "path_sha256": "8d18e717d544a468cd6b05fb20b266f70310b2f641236f99bf9a8334b060b930",
+      "path_task_id": "50fd3aa35d6b647960039a0fe9473b03418e69484203e976665d7e957cb9805f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/50/50fd3aa35d6b647960039a0fe9473b03418e69484203e976665d7e957cb9805f.json",
+        "sha256": "35f118395109737936cdd85ed32770977b42f961ec43310f082166958b689282"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6981881236253837,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 149,
+      "optimization_nf": 3000,
+      "raw_i_perp": 0.016395594629836797,
+      "segment_length_cv": 0.00021366677051154866,
+      "segment_length_ratio": 1.0008478769735276,
+      "path_sha256": "9a949c07209c5b2ef6064516f46bb57925f08eb22b175d6a3760dbe9306eabc0",
+      "path_task_id": "432533a8ad69e4ebf26d6a46ac696341a481c4953755ba849290167be6bc1098",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/43/432533a8ad69e4ebf26d6a46ac696341a481c4953755ba849290167be6bc1098.json",
+        "sha256": "b05158758685cbdb63bc274120de22a9174328f8281837667f954ebe2e83963a"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6841633776168967,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 155,
+      "optimization_nf": 3120,
+      "raw_i_perp": 0.01575922487612141,
+      "segment_length_cv": 0.00021745624301359299,
+      "segment_length_ratio": 1.0008542692524771,
+      "path_sha256": "e16dd23319da763bf542a3b06381d4645c698c4d25fe1cef2601dc4ad45fba7c",
+      "path_task_id": "ad49fad213cc152beaac0abcbf37024ddceca72faceb2bb847ab92085de5b288",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/ad/ad49fad213cc152beaac0abcbf37024ddceca72faceb2bb847ab92085de5b288.json",
+        "sha256": "f7ba147c68180d4b2be15c1ac84923ba67de2f104d41196d5fb8c004e1fc850a"
+      },
+      "densified_delta_E_kcal_per_mol": 2.670826407441822,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.84587821614602e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 161,
+      "optimization_nf": 3240,
+      "raw_i_perp": 0.015174039855611492,
+      "segment_length_cv": 0.00022128234247125226,
+      "segment_length_ratio": 1.0008601895335851,
+      "path_sha256": "ee2c84158df0efeb68c4588697ea3cfa4ef0d632dd7c8e77e75a5179a602feb2",
+      "path_task_id": "d31bc103b57c937494885d5410aff543ada1268c05105eef1572dd7039f0d0af",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d3/d31bc103b57c937494885d5410aff543ada1268c05105eef1572dd7039f0d0af.json",
+        "sha256": "f01a0f5e7c3ae767ba74865bcb7060a2ecd60a7ca99e2ad00f0b56889990507d"
+      },
+      "densified_delta_E_kcal_per_mol": 2.659260377822884,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 167,
+      "optimization_nf": 3360,
+      "raw_i_perp": 0.014632798889757515,
+      "segment_length_cv": 0.00022514272286914725,
+      "segment_length_ratio": 1.0008656367495181,
+      "path_sha256": "f8008cba54d41e52791d4231ebd264629e9bc931bf7b0ef1ac988c29e0381e19",
+      "path_task_id": "c92deea5f445e66df5f799e98ea8aeabb205a37e4d798bf2b42a101358eedc88",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c9/c92deea5f445e66df5f799e98ea8aeabb205a37e4d798bf2b42a101358eedc88.json",
+        "sha256": "1babc18865d4040ccbe2726c8791eacfbf618f84730162393b4b94a863198ea3"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6498195643071423,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.663548810260096e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 173,
+      "optimization_nf": 3480,
+      "raw_i_perp": 0.014129951895515958,
+      "segment_length_cv": 0.00022900969487308435,
+      "segment_length_ratio": 1.0008707556258678,
+      "path_sha256": "de15d4622529e5265531f4188cb2e73f79a117b76e3de87269967771a760713e",
+      "path_task_id": "e4fe81e8a74965b62d5e62fd34aecfde9e84400d490e52e54a74d57450ced859",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/e4/e4fe81e8a74965b62d5e62fd34aecfde9e84400d490e52e54a74d57450ced859.json",
+        "sha256": "d5c8f33f120991044fa2765b9aa3e1ec4965fc4a89b509b54a546d78e7a5db97"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6409545936311094,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.482857066305911e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 193,
+      "optimization_nf": 3614,
+      "raw_i_perp": 0.013660135344107609,
+      "segment_length_cv": 0.00023303140901379516,
+      "segment_length_ratio": 1.0008762098754131,
+      "path_sha256": "ada528c51de67b62878ea49676d65817575b47d3f3dcd9c393a26b645bc58e0a",
+      "path_task_id": "c2cb8b941a0147891af9913815eb16fb5361f0825ba40ecfa4f4a50d089c5ea0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c2/c2cb8b941a0147891af9913815eb16fb5361f0825ba40ecfa4f4a50d089c5ea0.json",
+        "sha256": "11d5c3832062b6fda5763ad71e615ee19d2f96d5b4a9db39e46920470786a2d0"
+      },
+      "densified_delta_E_kcal_per_mol": 2.632598140910623,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 198,
+      "optimization_nf": 3714,
+      "raw_i_perp": 0.013306942070034451,
+      "segment_length_cv": 0.00023605782423554718,
+      "segment_length_ratio": 1.0008825300896889,
+      "path_sha256": "503c9544450008675822ba1a922d0364c727a623a1426c099afc54b588479c8e",
+      "path_task_id": "2c826f4f308c5471a6f83dcfecf0aad77cb02e825ecb608c3dc6ce271e087ad0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/2c/2c826f4f308c5471a6f83dcfecf0aad77cb02e825ecb608c3dc6ce271e087ad0.json",
+        "sha256": "9f519b135ea4ed1a1700b14f1b649d8a831a3fd1d447f9d9c19a47c279d915f1"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6262816279155587,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.3409369101768931e-05
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 204,
+      "optimization_nf": 3815,
+      "raw_i_perp": 0.012970579985205588,
+      "segment_length_cv": 0.00023919387804031367,
+      "segment_length_ratio": 1.000897261597679,
+      "path_sha256": "ea6669f219eaac56c0e80ede53899eff4942787a25e12279ffc123f760baa9b5",
+      "path_task_id": "0cb14066aba80f32a5696d86fe0629f2b2bb052a3412be0c15f1aa8a629b714c",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/0c/0cb14066aba80f32a5696d86fe0629f2b2bb052a3412be0c15f1aa8a629b714c.json",
+        "sha256": "fec284a8b53efdf51c18f247e56250555c2832ae6252d7d738421e4cea38ced3"
+      },
+      "densified_delta_E_kcal_per_mol": 2.620227457788704,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.59859981100297e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 209,
+      "optimization_nf": 3915,
+      "raw_i_perp": 0.012649466937606976,
+      "segment_length_cv": 0.0002423261543286555,
+      "segment_length_ratio": 1.0009117631459814,
+      "path_sha256": "49054b78f860ac8a5b8e2a119c68a3c3336e4c12b373bc8fed8109d1e4a64b28",
+      "path_task_id": "f007b8b3c312a4c07142224ab11b5d28ffa3e0e20bafa8a1728bbbbcfe7d6356",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/f0/f007b8b3c312a4c07142224ab11b5d28ffa3e0e20bafa8a1728bbbbcfe7d6356.json",
+        "sha256": "3518c5ddc74c031a2c7faa1cdbf2357d31180c207c6164f44c06a9306040ecd4"
+      },
+      "densified_delta_E_kcal_per_mol": 2.614436518357528,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 214,
+      "optimization_nf": 4015,
+      "raw_i_perp": 0.012342316420980248,
+      "segment_length_cv": 0.0002454613933419176,
+      "segment_length_ratio": 1.0009261927168687,
+      "path_sha256": "5ed9001b42df9b2bda70077eb458c3027ca927c6669201a7723ba9d831cb97a0",
+      "path_task_id": "49ae1a0362858a18d08e8c4332051e02a52313225fb3636cfe1f021b5c0f143f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/49/49ae1a0362858a18d08e8c4332051e02a52313225fb3636cfe1f021b5c0f143f.json",
+        "sha256": "91bb7a0d7cc76db4609eadd682355bdf491a834988b2d293719732b8d2c774fe"
+      },
+      "densified_delta_E_kcal_per_mol": 2.608896532262545,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.0835075434201258e-05
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 219,
+      "optimization_nf": 4115,
+      "raw_i_perp": 0.012047992651207541,
+      "segment_length_cv": 0.00024858916012325186,
+      "segment_length_ratio": 1.0009404898615109,
+      "path_sha256": "0ed83926e5e6803987a65bf169880b38c0851a3f4ba4de8dbbe5d86e1839ea8c",
+      "path_task_id": "32fecf141527498e776489b9df8e410912fd5db0c5f650e9746f7d0f334e8662",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/32/32fecf141527498e776489b9df8e410912fd5db0c5f650e9746f7d0f334e8662.json",
+        "sha256": "97d1b99141dc1b3d9df39e5dcb2f7785b62ba468e662e78897aee6867b148ced"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6035664989359932,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 224,
+      "optimization_nf": 4215,
+      "raw_i_perp": 0.011765548664783708,
+      "segment_length_cv": 0.0002516990335771622,
+      "segment_length_ratio": 1.0009547077852248,
+      "path_sha256": "705b20ed7063afe6d8146c03b5c2e83802a850cece522ea3b864fcccfb0e0e13",
+      "path_task_id": "c603503a06de7b123ff65f82dcf8af553b8a9884eccda7c9da5f1f8eb42f2867",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c6/c603503a06de7b123ff65f82dcf8af553b8a9884eccda7c9da5f1f8eb42f2867.json",
+        "sha256": "b9a03e7acacc1c8b236191bd0c28f02a4f2379f1271121e184e474ac3a049935"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5984622945751017,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 229,
+      "optimization_nf": 4315,
+      "raw_i_perp": 0.011493957260959167,
+      "segment_length_cv": 0.00025480003584621354,
+      "segment_length_ratio": 1.000968693743778,
+      "path_sha256": "6865b8c782c7cf4288c97ae37a4394045693e62178ee63d77ebc2abb797d5d5e",
+      "path_task_id": "4c25b632144a6fae00a3574e4e633325669421ef96a0c327f69aeb8d32f9ad73",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/4c/4c25b632144a6fae00a3574e4e633325669421ef96a0c327f69aeb8d32f9ad73.json",
+        "sha256": "317fc6ec91cd9dd517082003000ea03a8f8e6a993ac88a520444ae193ed65722"
+      },
+      "densified_delta_E_kcal_per_mol": 2.593545626026348,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 234,
+      "optimization_nf": 4415,
+      "raw_i_perp": 0.01123252057738322,
+      "segment_length_cv": 0.0002578828603516939,
+      "segment_length_ratio": 1.0009825010801792,
+      "path_sha256": "432db9fdcc398693fa3cede6933628dd38b71674a622af8cfcf956b4b138b839",
+      "path_task_id": "d2bc8691b7658c16e17244f83718f091083fde4136fbb3b5c11fb283710bb442",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d2/d2bc8691b7658c16e17244f83718f091083fde4136fbb3b5c11fb283710bb442.json",
+        "sha256": "8844cc613c360b80b85f7575b0f0914ea4597d46594377e8fcdf253d9f3273f6"
+      },
+      "densified_delta_E_kcal_per_mol": 2.588818509308607,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 239,
+      "optimization_nf": 4515,
+      "raw_i_perp": 0.010980672480923468,
+      "segment_length_cv": 0.00026092808480344563,
+      "segment_length_ratio": 1.0009963023653894,
+      "path_sha256": "2ded8cf82956d90603f841f8fe206c7e3d91892e9bfc918839f44a5037d63e23",
+      "path_task_id": "711b15dafe3e652957f4d5c35054aa0eac1f5126c1367c1add21a20c8f0a70ae",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/71/711b15dafe3e652957f4d5c35054aa0eac1f5126c1367c1add21a20c8f0a70ae.json",
+        "sha256": "6151c74919f396b5a810c5a8e8dcf88254feb09f46901129bc48d33456315d45"
+      },
+      "densified_delta_E_kcal_per_mol": 2.584284005850261,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 244,
+      "optimization_nf": 4615,
+      "raw_i_perp": 0.010737570996030777,
+      "segment_length_cv": 0.00026395289932991894,
+      "segment_length_ratio": 1.001009808276426,
+      "path_sha256": "9d6ccdc9dcb1deb292ba53bc0ef3ca45e4b5923fccc7556da1854a1f10312f1b",
+      "path_task_id": "9812d63480fcfd6639f38a45376662df7b582f7009390b6105702a50cab93405",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/98/9812d63480fcfd6639f38a45376662df7b582f7009390b6105702a50cab93405.json",
+        "sha256": "98bdfdf2bede3141a53bd79813b40bbdf0a4cb641a367f77773ae22076b73c45"
+      },
+      "densified_delta_E_kcal_per_mol": 2.579911851506502,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.144688813160883e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 263,
+      "optimization_nf": 4729,
+      "raw_i_perp": 0.01050262807766649,
+      "segment_length_cv": 0.00026660512981844684,
+      "segment_length_ratio": 1.0010199339412995,
+      "path_sha256": "bcb83d3fdacce651b8a6a4b211c1b6d077ea9808bca8846f8214ee40a47f729b",
+      "path_task_id": "70d67a03822bda9839c483914fb567eb570a83bb11c8a44a026386c48b7c9582",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/70/70d67a03822bda9839c483914fb567eb570a83bb11c8a44a026386c48b7c9582.json",
+        "sha256": "89e59c1739f12a26d63ba76c7a7002096a003ae4f5047f13a7d51eeb273c4444"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5757026888647165,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 269,
+      "optimization_nf": 4830,
+      "raw_i_perp": 0.010275491573976595,
+      "segment_length_cv": 0.00026971959297550076,
+      "segment_length_ratio": 1.001034287375507,
+      "path_sha256": "fd8d661789deb73e91d124c5a1533fd3c7d614e35568d55826032ab36685c61c",
+      "path_task_id": "25858d74ba3b98be3db8403fd570e1569448bbd20a7b33272242fea11b0f56a5",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/25/25858d74ba3b98be3db8403fd570e1569448bbd20a7b33272242fea11b0f56a5.json",
+        "sha256": "67e458246d64f89dda5968c6c327a231cefac0d8e2d1f56605f506eee8daf41f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5716350923288154,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.5994299567576604e-06
+    },
+    {
+      "cell_id": "bc751602e2be9e9b",
+      "alpha": 0.1,
+      "trajectory_index": 274,
+      "optimization_nf": 4930,
+      "raw_i_perp": 0.010055654533986281,
+      "segment_length_cv": 0.0002728419442919488,
+      "segment_length_ratio": 1.001048790257356,
+      "path_sha256": "9d84aad6374e99865bb637c8b998e87907bd5ba6da670454c4fff5915ca651d0",
+      "path_task_id": "ef392610134c77836331e47fbdec116cfe5830accb35ac365a7a88b2c7c18538",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/ef/ef392610134c77836331e47fbdec116cfe5830accb35ac365a7a88b2c7c18538.json",
+        "sha256": "fc6da9ff195001bdd16d94cfe6d50451ab95add619b84dd3e604194eb8f4959a"
+      },
+      "densified_delta_E_kcal_per_mol": 2.567714903781198,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.405786296959093e-07
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 4,
+      "optimization_nf": 100,
+      "raw_i_perp": 0.9264676530912379,
+      "segment_length_cv": 0.003225648855243868,
+      "segment_length_ratio": 1.0093483435073343,
+      "path_sha256": "f33d13cf5598a67385a6d22d09087eae102d94b217e84dfbc4b8c2d9e00480ee",
+      "path_task_id": "698c4d2456f286e48b1f0fee6c87d27fc6bbab66a89e09498f410fab844540df",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/69/698c4d2456f286e48b1f0fee6c87d27fc6bbab66a89e09498f410fab844540df.json",
+        "sha256": "976ba804e5b1881253555c7705e3946431b4c2bc8889ba18bcf34b2569f4e776"
+      },
+      "densified_delta_E_kcal_per_mol": 4.122708442074245,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.43281657116745e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 8,
+      "optimization_nf": 180,
+      "raw_i_perp": 0.11022654187402503,
+      "segment_length_cv": 0.0008042663561587739,
+      "segment_length_ratio": 1.003105725500722,
+      "path_sha256": "ad2ccd36781758be14a2e3de20d66e0646f8afdfe428561bb8eaa1cc0eec0a3c",
+      "path_task_id": "2a0eacd9bd0386b558387abdbfd4cd2009d67f7677a0ed473b77814dd942bc9e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/2a/2a0eacd9bd0386b558387abdbfd4cd2009d67f7677a0ed473b77814dd942bc9e.json",
+        "sha256": "26103adc8aab8a5428a8b542426704d15f8555b70cb717e0020c14dbd65a3a6f"
+      },
+      "densified_delta_E_kcal_per_mol": 3.2841827992277746,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 12,
+      "optimization_nf": 260,
+      "raw_i_perp": 0.06275797168420635,
+      "segment_length_cv": 6.495823847959611e-10,
+      "segment_length_ratio": 1.0000000018322173,
+      "path_sha256": "851bdacae5e71b72fcfd247f23d7084fcfb4c7951e0a4f21942a1b312b8d26d7",
+      "path_task_id": "ed0ea48a11d9cc6bd81248bdfa0fdd826ae3f7cdfef5253181e1111ce7a5a052",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/ed/ed0ea48a11d9cc6bd81248bdfa0fdd826ae3f7cdfef5253181e1111ce7a5a052.json",
+        "sha256": "aecef171b6d8ff97ce7a7b7ba0fc72315801e9257ead4168b5e0d12f8dd71ba0"
+      },
+      "densified_delta_E_kcal_per_mol": 3.1185980138448746,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.508682397043941e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 16,
+      "optimization_nf": 340,
+      "raw_i_perp": 0.04570722527954885,
+      "segment_length_cv": 6.691204960673452e-10,
+      "segment_length_ratio": 1.0000000018873492,
+      "path_sha256": "89215ad7f0b67ec7687279ad33842a28a53753ee2abf61d912be1d727c2a3e84",
+      "path_task_id": "fe502459410321a210e90eb1d67ee1979623c5ceba72b5b62e0bf6467f26ab23",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/fe/fe502459410321a210e90eb1d67ee1979623c5ceba72b5b62e0bf6467f26ab23.json",
+        "sha256": "7ae8c9f29a6c667e72871617c24cb3be78b997e00f77882119fc04bf2e962d6b"
+      },
+      "densified_delta_E_kcal_per_mol": 3.0115972786332925,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 20,
+      "optimization_nf": 420,
+      "raw_i_perp": 0.036082775416398497,
+      "segment_length_cv": 6.531773907877614e-10,
+      "segment_length_ratio": 1.000000001842396,
+      "path_sha256": "253d3c32368010843e2d583508f73dc21822ed42be136c34a7614d0768b8c5b5",
+      "path_task_id": "76d9ee9ebc6541037ecc9b54931d1169e096526e496db973a0be148172af5d12",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/76/76d9ee9ebc6541037ecc9b54931d1169e096526e496db973a0be148172af5d12.json",
+        "sha256": "27d30640e0e630c8eea80a71cfc46406b4f49cd8519970cb9b9cfc91844cae8f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.9341645620024,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 24,
+      "optimization_nf": 500,
+      "raw_i_perp": 0.029806963302476886,
+      "segment_length_cv": 6.536085974448543e-10,
+      "segment_length_ratio": 1.000000001843625,
+      "path_sha256": "e5070f165a40175c5ccfccd6abc05963e3d78ea923e1880779442d75703747ec",
+      "path_task_id": "96ce64e48dbb8ed073a8b962ce7f8ffbefb8cecfb29f9ae1faa30514c199229f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/96/96ce64e48dbb8ed073a8b962ce7f8ffbefb8cecfb29f9ae1faa30514c199229f.json",
+        "sha256": "66b51b87f86518dc718790dada0a37c8ec59c1e4ca45a2dba0c56fe8dc6936a7"
+      },
+      "densified_delta_E_kcal_per_mol": 2.8748508033968556,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 28,
+      "optimization_nf": 580,
+      "raw_i_perp": 0.025427345639386475,
+      "segment_length_cv": 6.61733969698684e-10,
+      "segment_length_ratio": 1.0000000018665476,
+      "path_sha256": "dee164fe0d0af5bec7353f37a18582e9f033f928c9b849fed43ba15f55d7494b",
+      "path_task_id": "9d130704af89624050abaed75900204d5329ca4bb45a5d317a054ef385687bd1",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/9d/9d130704af89624050abaed75900204d5329ca4bb45a5d317a054ef385687bd1.json",
+        "sha256": "b4e6360367e90af817fdd786002cfb4e60f787fab7333a053c3c80b387899801"
+      },
+      "densified_delta_E_kcal_per_mol": 2.8269958289552353,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 9.029666950155502e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 33,
+      "optimization_nf": 680,
+      "raw_i_perp": 0.021829962617319693,
+      "segment_length_cv": 0.0007675327108319206,
+      "segment_length_ratio": 1.0030669581258949,
+      "path_sha256": "6b9b01d296b1df4636af8a7e9a01f9c044bd9a4f13e5a06a53d2411f1bb9c431",
+      "path_task_id": "9f3c09f9c759d62936727a3a23d365114f65296be201aa7921969215fbc0e812",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/9f/9f3c09f9c759d62936727a3a23d365114f65296be201aa7921969215fbc0e812.json",
+        "sha256": "b0e8f76fbe24d00471c0873b756b6488b82093062c8f940f3d528c6cf0aa4495"
+      },
+      "densified_delta_E_kcal_per_mol": 2.767178031492861,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 9.752372784888053e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 36,
+      "optimization_nf": 740,
+      "raw_i_perp": 0.019032717208897643,
+      "segment_length_cv": 6.534183091816743e-10,
+      "segment_length_ratio": 1.0000000018430844,
+      "path_sha256": "6194dd10b9881e9990f3bafd696225c75ca771f8904256efcde939f8c0ac7511",
+      "path_task_id": "d4afa193eec6bd98db90890328b42a4a4129a6348362e7bb6f96de8e0183b7e0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d4/d4afa193eec6bd98db90890328b42a4a4129a6348362e7bb6f96de8e0183b7e0.json",
+        "sha256": "f5ca653c29086937cdc142e1de2303841e8cb621323b166899686745be78ce0c"
+      },
+      "densified_delta_E_kcal_per_mol": 2.731831938666591,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 39,
+      "optimization_nf": 800,
+      "raw_i_perp": 0.017328821755172873,
+      "segment_length_cv": 6.494456580820282e-10,
+      "segment_length_ratio": 1.0000000018318653,
+      "path_sha256": "deb18f3da1b49be9ca3fa2aaf63b973b78be8cbb2856823612888b5dd3798999",
+      "path_task_id": "822ab330e7a3e7eefe52a2f27401c949d7fdcc7f96a7325f76cd96c2e90a6123",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/82/822ab330e7a3e7eefe52a2f27401c949d7fdcc7f96a7325f76cd96c2e90a6123.json",
+        "sha256": "5529f0312f105ed7d4bb67e98c9592c2ee13c4a5d1ad77b9df1afd24a9b3a8e2"
+      },
+      "densified_delta_E_kcal_per_mol": 2.7002810990480395,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.988046138469485e-07
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 42,
+      "optimization_nf": 860,
+      "raw_i_perp": 0.015924342469165288,
+      "segment_length_cv": 6.555018934786199e-10,
+      "segment_length_ratio": 1.0000000018489332,
+      "path_sha256": "016e8f035173dfe8042aa2ac991e381f6e8d3e2a5d99eac1d83029778894d3a1",
+      "path_task_id": "d07faf481ae2a173356f50d69776f0e2e39dc7786611c396dbcf76b977aaed04",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d0/d07faf481ae2a173356f50d69776f0e2e39dc7786611c396dbcf76b977aaed04.json",
+        "sha256": "e08c4957feb1c1766983cd6d84b07f734aa06743aeb8bf55e27dd0563751df89"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6717930070560585,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 9.933351848179228e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 45,
+      "optimization_nf": 920,
+      "raw_i_perp": 0.014736797848122483,
+      "segment_length_cv": 6.495997518895889e-10,
+      "segment_length_ratio": 1.0000000018322588,
+      "path_sha256": "8adcf4687dd342f2eca0e347374b60dc8eacedc610cb159d8a46e93c5da1724f",
+      "path_task_id": "dcd32f78fde1ea9ac9f972bb3861dcf467517bf66d59a900636824cc5b1eec81",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/dc/dcd32f78fde1ea9ac9f972bb3861dcf467517bf66d59a900636824cc5b1eec81.json",
+        "sha256": "0d6afbefae477ac16f08cccfd4d3557766c7b2343ac97c7824a333577fc9acef"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6500181898520494,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 48,
+      "optimization_nf": 980,
+      "raw_i_perp": 0.013712825841074725,
+      "segment_length_cv": 6.469839449617412e-10,
+      "segment_length_ratio": 1.0000000018248467,
+      "path_sha256": "0ee8fea159bc9b7096049c9952ed4bbeee7ecc7a3385cb589d3c5df0b09072cb",
+      "path_task_id": "2141ed394b1934803d67836eef598d0bf99a0077c002c810a4bfda01f1bc0ddf",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/21/2141ed394b1934803d67836eef598d0bf99a0077c002c810a4bfda01f1bc0ddf.json",
+        "sha256": "ecb7c939fb78f53f5bb881ebb6904fcf4c101bd051796c41f98536dab9dceaff"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6322654077563126,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 52,
+      "optimization_nf": 1060,
+      "raw_i_perp": 0.012710558583780021,
+      "segment_length_cv": 0.0006434001062943369,
+      "segment_length_ratio": 1.0021034971435068,
+      "path_sha256": "599f8ab1879ec8b11d2ab5f2c954207cd12a23c18faca70d52d96877eb006f3c",
+      "path_task_id": "45be9c5b8e6ccfbcd3e5c8b1e98a60e03fdfe097ba44a41409ee90d2b4a2db4b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/45/45be9c5b8e6ccfbcd3e5c8b1e98a60e03fdfe097ba44a41409ee90d2b4a2db4b.json",
+        "sha256": "f3ab4bfe6e76278527715f587d2af796b023f5bf84ab22d210485bd5ee5a3a1f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.6146482675395526,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 56,
+      "optimization_nf": 1140,
+      "raw_i_perp": 0.011717818740041106,
+      "segment_length_cv": 0.0007919402035128174,
+      "segment_length_ratio": 1.0023532893455473,
+      "path_sha256": "5726fe8c6e4dd4a368b852126d199267a95442bc6edbb6dca9a38217fc323d36",
+      "path_task_id": "303da9d6c32d84619071382f92e9dae31f1694df8f4e51a1d531c55b533d3fc9",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/30/303da9d6c32d84619071382f92e9dae31f1694df8f4e51a1d531c55b533d3fc9.json",
+        "sha256": "09d99b09d844d2a21c1f181a25b7a13637cbde23de179b4ef74e94ff57bb265f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.598661707102692,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 60,
+      "optimization_nf": 1220,
+      "raw_i_perp": 0.010905862104184571,
+      "segment_length_cv": 0.0008250339227991915,
+      "segment_length_ratio": 1.0025637299716925,
+      "path_sha256": "458ae7835a4ef4a54ef5996d045177f245ed5d79357dddf3b8f24ff961b7d0c6",
+      "path_task_id": "12a274888ff42a23ab2d219d9376852e659f7638719d9e69c4ee5e0ba4f84e34",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/12/12a274888ff42a23ab2d219d9376852e659f7638719d9e69c4ee5e0ba4f84e34.json",
+        "sha256": "78a5a368b00ec3bcfc9eee3ea400e6fab1571a235a790c83d41e5207631ab8e5"
+      },
+      "densified_delta_E_kcal_per_mol": 2.584136766507477,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 2.7521050558476645e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 64,
+      "optimization_nf": 1300,
+      "raw_i_perp": 0.010193232128163426,
+      "segment_length_cv": 0.0009092835806637022,
+      "segment_length_ratio": 1.0027402128792648,
+      "path_sha256": "d5db20761c90768cbbcb443715c0440a099bac6d66e719ac3d886ee86142f813",
+      "path_task_id": "4fc5b9466bf39e1f54a926e5a21911ac50cc39e9836de43fde0e7f6a420339da",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/4f/4fc5b9466bf39e1f54a926e5a21911ac50cc39e9836de43fde0e7f6a420339da.json",
+        "sha256": "2644a3dc3f8c4dc0bce4dc99a5cf7386595be22e77bc870dd248d8c6f969f15f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.572671953737738,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 2.6823766163808216e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 68,
+      "optimization_nf": 1380,
+      "raw_i_perp": 0.009557329145992765,
+      "segment_length_cv": 0.0009552795203048185,
+      "segment_length_ratio": 1.0028873149049793,
+      "path_sha256": "faabc0058c9102dce3f315ba6b89d42642adf5597eba5a6fb996d55818a001f1",
+      "path_task_id": "c743172d032d6819db9e476e1c8a00d9b45a0cc1fd2b37bd4a3aed4f03127990",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c7/c743172d032d6819db9e476e1c8a00d9b45a0cc1fd2b37bd4a3aed4f03127990.json",
+        "sha256": "9e57daea7131ed107fad307fb5b189d6e8f82adc6b15cd02edbc91f6af6657db"
+      },
+      "densified_delta_E_kcal_per_mol": 2.562388801797549,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 72,
+      "optimization_nf": 1460,
+      "raw_i_perp": 0.008981508608138991,
+      "segment_length_cv": 0.0009854359449429071,
+      "segment_length_ratio": 1.0030101569008605,
+      "path_sha256": "8804fad302bae1aa5c02178937041ff08e9199b41fa2967b769f9066bc6d420b",
+      "path_task_id": "74f9f4044d69ed5065e7a65ff243eb5055fd312e9dcabfc404275ac3dd9af76b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/74/74f9f4044d69ed5065e7a65ff243eb5055fd312e9dcabfc404275ac3dd9af76b.json",
+        "sha256": "58aed76f275e348822862c20437f442cb2ed83436179543080eae0afbca71b1f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5530755339443085,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.324871971217448e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 76,
+      "optimization_nf": 1540,
+      "raw_i_perp": 0.008457155147219817,
+      "segment_length_cv": 0.0010035594795300945,
+      "segment_length_ratio": 1.0031093065818473,
+      "path_sha256": "70771e32373bcab845dc609072c2e70c19789501b892893a6f176b3da814920c",
+      "path_task_id": "00ac4a32c9a65ac78921f5a1b55e46197d8dd2bee558c9f26c9d51d6a1c979f4",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/00/00ac4a32c9a65ac78921f5a1b55e46197d8dd2bee558c9f26c9d51d6a1c979f4.json",
+        "sha256": "7a9cf522db700eda72abb7ad43204f42193e5c8df35ad7cd08b08ec7e0f1a0a1"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5446350714976513,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 5.425634142852687e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 80,
+      "optimization_nf": 1620,
+      "raw_i_perp": 0.007975368361462166,
+      "segment_length_cv": 0.0010226320292749354,
+      "segment_length_ratio": 1.0031886264988914,
+      "path_sha256": "59afc735de484a4392dafe69a31c8f90801352f4b0135693b898f0cfabf0150d",
+      "path_task_id": "9fb12dd8bc4ab0fa50e5178c0380acf71e3c928705d3aaf6a4d6b8ccdf0aeb4e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/9f/9fb12dd8bc4ab0fa50e5178c0380acf71e3c928705d3aaf6a4d6b8ccdf0aeb4e.json",
+        "sha256": "b1925c427bbc1e4b7bd167c57b9417494f553dc28126b5857b743cef48e49244"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5369286732756633,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.725665779162e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 84,
+      "optimization_nf": 1700,
+      "raw_i_perp": 0.007511749656577709,
+      "segment_length_cv": 0.0010444851679560112,
+      "segment_length_ratio": 1.003251239541624,
+      "path_sha256": "ed378992a98014edd829491527a79c994e57bf957cc25c391d99398d8e2ff049",
+      "path_task_id": "e317325f04ef926f68d0bccd37f88be6d02818bad8b2eca98b08f2eb7e43cda3",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/e3/e317325f04ef926f68d0bccd37f88be6d02818bad8b2eca98b08f2eb7e43cda3.json",
+        "sha256": "f4dbae9cd8110e3aeb3a728f2478d9e8165af5bc078d89d67f7b4d591e7074c3"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5298449702839805,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 88,
+      "optimization_nf": 1780,
+      "raw_i_perp": 0.0070836281856160605,
+      "segment_length_cv": 0.00101818505199712,
+      "segment_length_ratio": 1.0032996141257478,
+      "path_sha256": "79ab369a83f0ba330b4f87113c94dbfca46a021fa6b9dcfd7928db830db01b01",
+      "path_task_id": "88e28ac641903a7cac3452c3ca6b4dd66265593177140cd341942cce41feb647",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/88/88e28ac641903a7cac3452c3ca6b4dd66265593177140cd341942cce41feb647.json",
+        "sha256": "6ff0f47088e9bd0a8d2cb2508071dedd6aa73d84c4f0cc12b42cd369d5e2de56"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5233300901217843,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.024515756486437e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 92,
+      "optimization_nf": 1860,
+      "raw_i_perp": 0.006687031437389778,
+      "segment_length_cv": 0.001037115819864291,
+      "segment_length_ratio": 1.0033340355192035,
+      "path_sha256": "6b5eff36d2f80fd88a1a7c5e8501377d8648743bc29fd36639e4e7bdff50aba9",
+      "path_task_id": "b8bd09b4bdb5ad5dc3928d17afb14d92e1554911f7ec4e8cbf3efe04ba9e1fd8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/b8/b8bd09b4bdb5ad5dc3928d17afb14d92e1554911f7ec4e8cbf3efe04ba9e1fd8.json",
+        "sha256": "529f6a917031830d7e9a56413c72af6e6698d4a6616dbca44dd3da28e712a257"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5173025425782822,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 96,
+      "optimization_nf": 1940,
+      "raw_i_perp": 0.006318222444107444,
+      "segment_length_cv": 0.0010488191244735832,
+      "segment_length_ratio": 1.0033552306363815,
+      "path_sha256": "ddc31a5ce882b8cef91d62bfc7270a7e228dd1510a4797cb5e802aec8902d9c0",
+      "path_task_id": "2d8f3220074ff357e8dc87277e90eb9e503ba4140e382290654c734af2da55e0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/2d/2d8f3220074ff357e8dc87277e90eb9e503ba4140e382290654c734af2da55e0.json",
+        "sha256": "ec5beecc63101e96682a15b32cb6b735990685b710e55a06130619219d7e3abc"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5117143851546175,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 100,
+      "optimization_nf": 2020,
+      "raw_i_perp": 0.005973404672437669,
+      "segment_length_cv": 0.0010817877139715929,
+      "segment_length_ratio": 1.0033659042633134,
+      "path_sha256": "01a0dbfd64367b67e5842446b24a7943204840c689d2ad3c575c1a642f8799d0",
+      "path_task_id": "80e5ba184b3a9cd996eeb07f810e20efe2f18985c6377d5b8cab44d923899416",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/80/80e5ba184b3a9cd996eeb07f810e20efe2f18985c6377d5b8cab44d923899416.json",
+        "sha256": "d020d279a01f6fbd810196066e725b49000f2b89877591d21eb67c310c7fb30a"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5064865034930137,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 104,
+      "optimization_nf": 2100,
+      "raw_i_perp": 0.0056414557338566864,
+      "segment_length_cv": 0.0010789723373827102,
+      "segment_length_ratio": 1.0033160593400556,
+      "path_sha256": "f5c6a9c2f4da1513da00b628a7319f1fb7c30e426b48b6549ab261d1c3f9974e",
+      "path_task_id": "7dca682d0a9d811eb326b7cdb32a87443f2dfd480ea6c00f2360f7c9194f2974",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/7d/7dca682d0a9d811eb326b7cdb32a87443f2dfd480ea6c00f2360f7c9194f2974.json",
+        "sha256": "6cf22f0bf87a4d67e6ccdab25afdc29a04a4017a95677927c044e807ccc4bee8"
+      },
+      "densified_delta_E_kcal_per_mol": 2.501647065191241,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 108,
+      "optimization_nf": 2180,
+      "raw_i_perp": 0.005330292143343463,
+      "segment_length_cv": 0.0010932018058370464,
+      "segment_length_ratio": 1.0034714176988389,
+      "path_sha256": "4dd8d29b35bd05f5723fbb85671ae30d6377333b8fffe815c204d0923640438e",
+      "path_task_id": "9f9ebf3290aa9f942628a5921676a7b7991f05e297c1a7eb2f552ecadeb331d8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/9f/9f9ebf3290aa9f942628a5921676a7b7991f05e297c1a7eb2f552ecadeb331d8.json",
+        "sha256": "40b6ddea70450136840f8826339a2156d3b7fffd73bc2c6225714457937f3d57"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4971319187847625,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 112,
+      "optimization_nf": 2260,
+      "raw_i_perp": 0.005035709476474166,
+      "segment_length_cv": 0.0011039988635110412,
+      "segment_length_ratio": 1.003612566020778,
+      "path_sha256": "5db3d597a45197afc636ba8631154f38c7dfddb01e4a89eb955f28270cf6d257",
+      "path_task_id": "c98e801b2cf5b20832aeae69b072eeef55db000433c2ed58b2179ce8f47426e6",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c9/c98e801b2cf5b20832aeae69b072eeef55db000433c2ed58b2179ce8f47426e6.json",
+        "sha256": "4965db5ca925c37f56b2304003275786cbe40ac961678ef609e5e186a5e876cd"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4929194851211194,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 116,
+      "optimization_nf": 2340,
+      "raw_i_perp": 0.00476207077397012,
+      "segment_length_cv": 0.0011107176569765285,
+      "segment_length_ratio": 1.003740046988352,
+      "path_sha256": "ea1aac7aa91f0be958bb4a41eb371e84c516cdca99c6bd51992c87305e6f6b8b",
+      "path_task_id": "5fb2ed9d359a51ccd0d3603bb322b8e53a4f0d20192152e23672beafe20d4926",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/5f/5fb2ed9d359a51ccd0d3603bb322b8e53a4f0d20192152e23672beafe20d4926.json",
+        "sha256": "a122eec4d0ac2332decb15c0480f0a8dac5cbad47a9f9486a4bfb733eb4688ce"
+      },
+      "densified_delta_E_kcal_per_mol": 2.489008618425042,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 120,
+      "optimization_nf": 2420,
+      "raw_i_perp": 0.004504095115907149,
+      "segment_length_cv": 0.0011985539876237692,
+      "segment_length_ratio": 1.0038544596236703,
+      "path_sha256": "dd4dee23d5afa4e0caec6c6d7148e3ca8f422cf6f02642a42cbbbf2af68ef3bd",
+      "path_task_id": "602cc26a5e04092b4065727bfae7f6ab7de9087e88b60e186dfa85f2b07089c9",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/60/602cc26a5e04092b4065727bfae7f6ab7de9087e88b60e186dfa85f2b07089c9.json",
+        "sha256": "d465c878fc223b839523606cd28f1769715f0fe4b788b0f75fd41c4f59aa3536"
+      },
+      "densified_delta_E_kcal_per_mol": 2.485385468887972,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.3504954526233348e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 130,
+      "optimization_nf": 2525,
+      "raw_i_perp": 0.004222700211543501,
+      "segment_length_cv": 0.0019681627122211834,
+      "segment_length_ratio": 1.0066610040365571,
+      "path_sha256": "07a8c5db3fce74d24dfebdfb7773498a4169f2ec5279c0face56b35d3f87070d",
+      "path_task_id": "bc8bc96614e570df4dad5a3bdec04cfa713ef66cbd62d291224bafe49b325d02",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/bc/bc8bc96614e570df4dad5a3bdec04cfa713ef66cbd62d291224bafe49b325d02.json",
+        "sha256": "b15037603a305979f8a0fb5c4d3c109ca799977d4c8cfd98697c76afc1bb8e82"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4805185105625918,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 135,
+      "optimization_nf": 2625,
+      "raw_i_perp": 0.003883917194741983,
+      "segment_length_cv": 0.0025981860179497417,
+      "segment_length_ratio": 1.0086231163567814,
+      "path_sha256": "6c6d77ae007078ba9020534eea70dcc46d15868043e6d66ffd5c31a6a3a7239e",
+      "path_task_id": "85b3d0d6227903451c7911122d41b1f76b6665782768e63af9a90e8360a9ed28",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/85/85b3d0d6227903451c7911122d41b1f76b6665782768e63af9a90e8360a9ed28.json",
+        "sha256": "ad9217b08d3ef1dced14a066c6ae76206bc637cac7e23faa41cc1a4885238ae1"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4741066634936035,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 8.186640946483692e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 141,
+      "optimization_nf": 2726,
+      "raw_i_perp": 0.00356757370523482,
+      "segment_length_cv": 0.002648886070301078,
+      "segment_length_ratio": 1.008364874385772,
+      "path_sha256": "a43cb955a3645201bed16f6bbc6d6b760311043c0cbea218ef4ba9d4296e5e00",
+      "path_task_id": "d2985b306c9dfdee95163efe483e4176e93eb776009e30888c3c84c45cfe7b9d",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d2/d2985b306c9dfdee95163efe483e4176e93eb776009e30888c3c84c45cfe7b9d.json",
+        "sha256": "69cb3bfa0e07c4ea40e2d2b4370d65472bf695e319544463aa12f97033fd477c"
+      },
+      "densified_delta_E_kcal_per_mol": 2.468957851940252,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.4162614181987294e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 146,
+      "optimization_nf": 2826,
+      "raw_i_perp": 0.003284492054957684,
+      "segment_length_cv": 0.0026361372829583458,
+      "segment_length_ratio": 1.0081234282785096,
+      "path_sha256": "a2b7ae1d8dda83928aacd210144e057ef9c5555a167ec8dad8249ad48d0df8fe",
+      "path_task_id": "41ce59ccad3e500b040081492b0f902d7c9ad8949e04338b50a77376019d377f",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/41/41ce59ccad3e500b040081492b0f902d7c9ad8949e04338b50a77376019d377f.json",
+        "sha256": "11226d82e4948ee81e8750a4cea6ebf8cdce707efca3b8c97f9500ee0db1b6dc"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4644556668386444,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 151,
+      "optimization_nf": 2926,
+      "raw_i_perp": 0.0030307476582791364,
+      "segment_length_cv": 0.0026203508072838964,
+      "segment_length_ratio": 1.008136737672628,
+      "path_sha256": "05e4b4e4faf9dc7624afb761f2423a07f3ebbff88c3403e4a8e42f05f0dccf1a",
+      "path_task_id": "611608379b1967dc4783051828e1c77fb393366e3a9d0f689c54723d1bf1f9f8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/61/611608379b1967dc4783051828e1c77fb393366e3a9d0f689c54723d1bf1f9f8.json",
+        "sha256": "273e54b4ee62c2e7f1843836808114529b6f032cfc1d5d4e76173c812309fcaf"
+      },
+      "densified_delta_E_kcal_per_mol": 2.467080987628135,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 2.5095834010890883e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 156,
+      "optimization_nf": 3026,
+      "raw_i_perp": 0.002802755388893725,
+      "segment_length_cv": 0.0026040341138934206,
+      "segment_length_ratio": 1.0082052466672433,
+      "path_sha256": "a35850ff9beaf7c2b0021a305bef3bb687404627b8f574a78cfc2c31bb2f3034",
+      "path_task_id": "cef2224dbc3234a650a853b1b56cf4e7d4fc8924433e3e3c102ccb607bc86a11",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/ce/cef2224dbc3234a650a853b1b56cf4e7d4fc8924433e3e3c102ccb607bc86a11.json",
+        "sha256": "af435648076645a56fc144942c7f97c13a57a5a904c33865352f42a3239086ee"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4702441771568946,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 161,
+      "optimization_nf": 3126,
+      "raw_i_perp": 0.0025974293318860465,
+      "segment_length_cv": 0.0025871518038126343,
+      "segment_length_ratio": 1.0082624789115984,
+      "path_sha256": "c1457503117158214eb93774b100bed67a1a377b174bc70e073002ff70081e50",
+      "path_task_id": "096cd3fb3d3b6580085d723c38ecbdad3e10924b5c5e97a006a8fd4d1594bc49",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/09/096cd3fb3d3b6580085d723c38ecbdad3e10924b5c5e97a006a8fd4d1594bc49.json",
+        "sha256": "e0a49ced8c6febe39bd2091acdade973fcc37ac09296449802d522ba786fd83f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4737614403966397,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 166,
+      "optimization_nf": 3226,
+      "raw_i_perp": 0.0024117707303112205,
+      "segment_length_cv": 0.002569936704610623,
+      "segment_length_ratio": 1.0083101695572096,
+      "path_sha256": "d0f064b7df64ab08cbdfd2ee8e2c8c435301183601b6a4b6431407495b58c795",
+      "path_task_id": "503adaff5fdba1946b77e214653d08677f40528ca00c893a47af8e4667ad6e26",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/50/503adaff5fdba1946b77e214653d08677f40528ca00c893a47af8e4667ad6e26.json",
+        "sha256": "45eaaebe79d32dfec68bbdb6f1d09dcd6fe93364333fa7ca2c3f87b6773c389f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4775156267261442,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 183,
+      "optimization_nf": 3338,
+      "raw_i_perp": 0.00224361051286354,
+      "segment_length_cv": 0.0025556403498980234,
+      "segment_length_ratio": 1.0083839672346218,
+      "path_sha256": "7234224ba72138ea76c6818d395bb6b7f7b94aa5f3c43f6b4ebf64b9f69e7b86",
+      "path_task_id": "ddb952aee136df219939f0dac4212679031c0cf38ee0801443e05c2725d35520",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/dd/ddb952aee136df219939f0dac4212679031c0cf38ee0801443e05c2725d35520.json",
+        "sha256": "6bf27747a7c1d42fb1db6999dd08870c04dcbfc53cd00710a0a22e2461822b40"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4813236406531547,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.0079965343301467e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 188,
+      "optimization_nf": 3438,
+      "raw_i_perp": 0.0020908278471572016,
+      "segment_length_cv": 0.002534661544271753,
+      "segment_length_ratio": 1.0083755741369065,
+      "path_sha256": "0442fe9c7f3a4990a382e757c835fd4a9006e4020962c63a04d015758cf06b5c",
+      "path_task_id": "a144a4a2a6587f1a007af6799a48330840cdda12907745326f93e00962573582",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/a1/a144a4a2a6587f1a007af6799a48330840cdda12907745326f93e00962573582.json",
+        "sha256": "5c3eb4a6a7ada476a4c64f435afc32213e8b618869aab5ea8082b93f16a7fbdb"
+      },
+      "densified_delta_E_kcal_per_mol": 2.485157666757844,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 193,
+      "optimization_nf": 3538,
+      "raw_i_perp": 0.001951801239820655,
+      "segment_length_cv": 0.002516326067159533,
+      "segment_length_ratio": 1.0083924013695935,
+      "path_sha256": "740a3e24a9da1b8b5377ef0081f326de3a08001f3f27a92a68d3fec3da66bb3c",
+      "path_task_id": "d7b2c42c706c6563a4f60f003961212ee5e4363f847a71666962900b664c9ab5",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d7/d7b2c42c706c6563a4f60f003961212ee5e4363f847a71666962900b664c9ab5.json",
+        "sha256": "633f9756e420151498f045fcc959800edf77a940316e13d687d4ea799cf97f0f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.488839459062872,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 6.006026334937076e-06
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 198,
+      "optimization_nf": 3638,
+      "raw_i_perp": 0.0018248022704566154,
+      "segment_length_cv": 0.0024972371872379238,
+      "segment_length_ratio": 1.0084780077286195,
+      "path_sha256": "7b3261a62d3fab6896c03de110e6ed069fc99e4b0d8ef4e8504e2aca023adb48",
+      "path_task_id": "1bb20d8bb8da137c712f0aeb5e003f3aaac54ec79eaa2fdd34511fd06b0e9312",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/1b/1bb20d8bb8da137c712f0aeb5e003f3aaac54ec79eaa2fdd34511fd06b0e9312.json",
+        "sha256": "687ab4397ec40b1ed569c852e496904e0938afde18e991b11d6fcbffa1334e50"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4924415575885446,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 203,
+      "optimization_nf": 3738,
+      "raw_i_perp": 0.0017086238602270446,
+      "segment_length_cv": 0.0024775412033398946,
+      "segment_length_ratio": 1.0085541830457831,
+      "path_sha256": "fed2a02e1117ad48f05b4666908d5a8454b20d01aaf1ba30c0f40e7a4b58f47b",
+      "path_task_id": "71117a7639794d7a7a8f3209c03c3983a3bc91d2be28657a3ae888efeee3a450",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/71/71117a7639794d7a7a8f3209c03c3983a3bc91d2be28657a3ae888efeee3a450.json",
+        "sha256": "58ff9ea1c2437dbcdd6b2ca1eb3bfb8dbcf875f1ca4de2c7d485c6539752f3ce"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4958782120491136,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.5176451589856725e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 209,
+      "optimization_nf": 3839,
+      "raw_i_perp": 0.001602183056505813,
+      "segment_length_cv": 0.0024559753535593775,
+      "segment_length_ratio": 1.0086116488190653,
+      "path_sha256": "cd84c4a29f0bb764f6ea2ff898e9425bda3b7138e77a8d3a47af9c11ddfade8a",
+      "path_task_id": "d2d9462509d373c807189eb9d89f433a58bd739186d72c8e805001db70ea43a6",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d2/d2d9462509d373c807189eb9d89f433a58bd739186d72c8e805001db70ea43a6.json",
+        "sha256": "e64b0f5514a577f3c15e2b05fde1bceeb4a92f8ce180e21d325bd7f0b251fe55"
+      },
+      "densified_delta_E_kcal_per_mol": 2.4991131167429743,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 214,
+      "optimization_nf": 3939,
+      "raw_i_perp": 0.0015043355753603666,
+      "segment_length_cv": 0.0024359013132802566,
+      "segment_length_ratio": 1.0086516388652655,
+      "path_sha256": "97c395803137fb3d1d81efd79528598c6c0ce66a5a9ef0814d42c096de11f246",
+      "path_task_id": "2641dd8d95db5baa05e808a5ab79111c7057993956612cb6c62a7c7f6cd7706e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/26/2641dd8d95db5baa05e808a5ab79111c7057993956612cb6c62a7c7f6cd7706e.json",
+        "sha256": "1c5e722cb9e6b0d70d3ffb41c4f023ca0d96e9ae66fd84306b4ffaba57bab5c9"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5021601338596633,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 219,
+      "optimization_nf": 4039,
+      "raw_i_perp": 0.001414333205822118,
+      "segment_length_cv": 0.002413873893044536,
+      "segment_length_ratio": 1.0086749661549983,
+      "path_sha256": "098939c1b5dff4aa36841fd8b4c0ef23cdafb628f00ac6583e2d7af8d003b5f2",
+      "path_task_id": "3350db42740b5441125ff07844853da44bc7cf091fbda2c3b6bfb760503ce5fe",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/33/3350db42740b5441125ff07844853da44bc7cf091fbda2c3b6bfb760503ce5fe.json",
+        "sha256": "c54692592d286b479302d2379e42212d927fa2434684e060addddf9d442585a6"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5049841435048243,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 2.384389072718207e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 224,
+      "optimization_nf": 4139,
+      "raw_i_perp": 0.001330012669573008,
+      "segment_length_cv": 0.0025472559708723847,
+      "segment_length_ratio": 1.0093095065651418,
+      "path_sha256": "d98ac644b2d4888dfb2a3adb85c9d7d8aa2e24d06c6494697da02b0b13d609d4",
+      "path_task_id": "d72b2bdbd9c13cf13914e969a2674e18d8a17c99a38ebf25959bd0fb3b72c592",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d7/d72b2bdbd9c13cf13914e969a2674e18d8a17c99a38ebf25959bd0fb3b72c592.json",
+        "sha256": "f3ae2afcbfe6130bfcc62a1694ba77827417afe5d98d063311c9bd0e9586d74f"
+      },
+      "densified_delta_E_kcal_per_mol": 2.507314647021932,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.792146634802208e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 241,
+      "optimization_nf": 4232,
+      "raw_i_perp": 0.0012612405452394919,
+      "segment_length_cv": 0.001508989060318192,
+      "segment_length_ratio": 1.0048817551323925,
+      "path_sha256": "6d3f19632d7d83bfae64e33500f28c2dff5b7e00e0b707f7d0e07c3922a869a0",
+      "path_task_id": "5e82ac9692bbe8cb8e396e2d0f3cb7c0793ec09d612837bd86376c26d3bc603b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/5e/5e82ac9692bbe8cb8e396e2d0f3cb7c0793ec09d612837bd86376c26d3bc603b.json",
+        "sha256": "8ed718511cf06830c74d626ab8a86e8a5f0bd681e673cb92aca2bbae12c4e5e2"
+      },
+      "densified_delta_E_kcal_per_mol": 2.511760882551384,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 259,
+      "optimization_nf": 4326,
+      "raw_i_perp": 0.0011999276648629047,
+      "segment_length_cv": 0.001493156181820446,
+      "segment_length_ratio": 1.0048834633720216,
+      "path_sha256": "da550b830999313cb090cdc0bfef7e86966cce152bc12546d1a846e62ac73ae2",
+      "path_task_id": "62280b7599043d384f154e276d7aa35d7d09bf5b4ed3dd1564c3174bfb88217e",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/62/62280b7599043d384f154e276d7aa35d7d09bf5b4ed3dd1564c3174bfb88217e.json",
+        "sha256": "5c2c5d7c635cedd33089fb30059c4953fba5b30944ee518092bf70d14192e3a7"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5144237691204294,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 263,
+      "optimization_nf": 4406,
+      "raw_i_perp": 0.001142554382907638,
+      "segment_length_cv": 0.0014791636280986084,
+      "segment_length_ratio": 1.0048485036582706,
+      "path_sha256": "ad20ef154d22865a403452a9aba1ca15b91829cb242f76805eff76dd2be8bfde",
+      "path_task_id": "7a2cc68e43a5bf725b855fdda7a7ef2b413005d9d97f402baf93aabc14de008b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/7a/7a2cc68e43a5bf725b855fdda7a7ef2b413005d9d97f402baf93aabc14de008b.json",
+        "sha256": "c63bd0a823351407d04464f40e50ab17cc1b3bb945c2ca68a2ccd3038c9f3032"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5169637671263927,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 268,
+      "optimization_nf": 4487,
+      "raw_i_perp": 0.0010888041229078895,
+      "segment_length_cv": 0.001461708818587829,
+      "segment_length_ratio": 1.0048076615057147,
+      "path_sha256": "03583035b4d9699d6ce4abd848fefed1dd08553fb0a2905ba13852b7d33a9e45",
+      "path_task_id": "d754c53df6c88271580e8eae9f21d8631a650976305191086c4318c5a86faf14",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d7/d754c53df6c88271580e8eae9f21d8631a650976305191086c4318c5a86faf14.json",
+        "sha256": "0163c2b9bed275a257ee4815a5fdf3a9ec89a84411c7ca4884fa06e0b3bdedd1"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5194002786460707,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 3.400016261956296e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 272,
+      "optimization_nf": 4567,
+      "raw_i_perp": 0.0010381951664778506,
+      "segment_length_cv": 0.001445526522791848,
+      "segment_length_ratio": 1.0047622088380734,
+      "path_sha256": "b2bf65075259336a64e99f70e91e64185718ebb9e7800735e9c588d1e72a8114",
+      "path_task_id": "8b6dc70972217f754d617634827745f1aa201b45b91d256dd916789187d8c5b7",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/8b/8b6dc70972217f754d617634827745f1aa201b45b91d256dd916789187d8c5b7.json",
+        "sha256": "7d2c91789ca6f730618ac261c082ba7a6c70e29a3636e0ddc4837846f072f45d"
+      },
+      "densified_delta_E_kcal_per_mol": 2.521716410611509,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.594926370549146e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 276,
+      "optimization_nf": 4647,
+      "raw_i_perp": 0.000990709011415116,
+      "segment_length_cv": 0.0014279691784981213,
+      "segment_length_ratio": 1.004713901386666,
+      "path_sha256": "3dc8bbc899345c5c7f7d974f92449fe813c6caa8e137edf8635171f7a70000e7",
+      "path_task_id": "4fa39be9be50d3e2364dc52297d7330113e13d320ba2628c485e9bd55a695db0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/4f/4fa39be9be50d3e2364dc52297d7330113e13d320ba2628c485e9bd55a695db0.json",
+        "sha256": "c21758ed60dad9e0194b0086095b29225c600f4e6c0f0b0b64beb51d63ffa817"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5238960087820694,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.336466913201775e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 294,
+      "optimization_nf": 4741,
+      "raw_i_perp": 0.0009461702246614098,
+      "segment_length_cv": 0.0014079607480362777,
+      "segment_length_ratio": 1.0046617897166497,
+      "path_sha256": "9ba331e30faaf073d3609bc615846f3d1e79c76bf9ee92c953b0a3c05e09ad92",
+      "path_task_id": "7385e7375c8943561f4fe8b275491c3baf5aad0866559ddd644a9fae6c5de1c6",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/73/7385e7375c8943561f4fe8b275491c3baf5aad0866559ddd644a9fae6c5de1c6.json",
+        "sha256": "88d1c927e6f6a740d3147234b72ee297f948434f46ac1a08208675e1c8ff38ad"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5259415622914667,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 1.823357386721014e-05
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 298,
+      "optimization_nf": 4821,
+      "raw_i_perp": 0.0009041403508039082,
+      "segment_length_cv": 0.0013916944837330332,
+      "segment_length_ratio": 1.004608667283915,
+      "path_sha256": "6d6b7e877bf9e2af35379b1c19d2059f3b6e3c05fef715b36838294d5bd36cce",
+      "path_task_id": "9296f9b6d7c6c67821e0d6502b123fe542609ed44b80d1f729522748398516bb",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/92/9296f9b6d7c6c67821e0d6502b123fe542609ed44b80d1f729522748398516bb.json",
+        "sha256": "e604bd5e701b3cc080344a72b31b11fe1867efdfae1506a21aee11fc2cb93a3e"
+      },
+      "densified_delta_E_kcal_per_mol": 2.527820874983186,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "92d93e4889c749dd",
+      "alpha": 1.0,
+      "trajectory_index": 316,
+      "optimization_nf": 4915,
+      "raw_i_perp": 0.0008647606960975867,
+      "segment_length_cv": 0.001371651651106014,
+      "segment_length_ratio": 1.0045531458337214,
+      "path_sha256": "5add887d8d30cc76f754cfcefc77dcd78530b1d44529ddcf85fa5084bd888d89",
+      "path_task_id": "8a65f07f0fcc0c37a0cf42f17ceda3fea2db7cb92a7cdd67f75a1415afe0d876",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/8a/8a65f07f0fcc0c37a0cf42f17ceda3fea2db7cb92a7cdd67f75a1415afe0d876.json",
+        "sha256": "1cbbd5247f5a5d7be2c4ace0512e1fe33f6909f2700b58a3af392294dbac9108"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5295975004316933,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.25554495599401,
+      "segment_length_cv": 6.453008411779529e-10,
+      "segment_length_ratio": 1.0000000018200905,
+      "path_sha256": "b2e15cb2df79f950edf4162ee1e49708eb5e1a81c36a9bd90ef89e6708596293",
+      "path_task_id": "c1a5074b3d1fce8c4c425081e7b67e67f76e049ca4e0675c49b37931589bf7b0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/c1/c1a5074b3d1fce8c4c425081e7b67e67f76e049ca4e0675c49b37931589bf7b0.json",
+        "sha256": "eac54f87eff6b4d49e0d670f28f11d8b9debe809e7fbc0381784898e41903943"
+      },
+      "densified_delta_E_kcal_per_mol": 3.9864920502819765,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 11,
+      "optimization_nf": 202,
+      "raw_i_perp": 0.02743859837046087,
+      "segment_length_cv": 0.0017234355315762476,
+      "segment_length_ratio": 1.0068610782039809,
+      "path_sha256": "fef7f02d22c4744e16338d254cec4bbe0caf88a227f3fb34406f96325af31d26",
+      "path_task_id": "580d3ca52c1423930e0d8cb0ba745841c99b3432dd04cd4924276f0a9a66bb15",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/58/580d3ca52c1423930e0d8cb0ba745841c99b3432dd04cd4924276f0a9a66bb15.json",
+        "sha256": "723b6f349aac7d1f9bbb276d16e02b727a44d498c6f7be9a70436ab801a17a2d"
+      },
+      "densified_delta_E_kcal_per_mol": 2.8403386309897436,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 9.86797382251936e-06
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 26,
+      "optimization_nf": 516,
+      "raw_i_perp": 0.012942445476800166,
+      "segment_length_cv": 0.006289770737409718,
+      "segment_length_ratio": 1.024015604930619,
+      "path_sha256": "52c9e9255098ff77100937035e22601d2e6fb85ec043c24af5b683b14946e822",
+      "path_task_id": "12db14dc88b414ba5cc048bbfb7718798ef573ed2949b1a363ff052f2ee6b203",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/12/12db14dc88b414ba5cc048bbfb7718798ef573ed2949b1a363ff052f2ee6b203.json",
+        "sha256": "0af1a518cee82da291ef5b6f228dad56fac6fb4fd2a17b0924f21bdac0c80490"
+      },
+      "densified_delta_E_kcal_per_mol": 2.590738999433883,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 197,
+      "optimization_nf": 3221,
+      "raw_i_perp": 0.000181013570676595,
+      "segment_length_cv": 0.004902200403066582,
+      "segment_length_ratio": 1.0193893690936748,
+      "path_sha256": "32916afe0742681e8adafd821e1538f497de9923cc02d49ef33ba3ba891dfbce",
+      "path_task_id": "7817e58178af2988f22b22609f5922ae1fc0c63c60e69124e175cb251f1b16a2",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/7817e58178af2988f22b22609f5922ae1fc0c63c60e69124e175cb251f1b16a2.json",
+        "sha256": "9e2b073851547cb3034a33dc8d1cc4c9dbdb4d08ca809ec54d293002abaa2114"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5445041415966494,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "d868b4142dfc91be",
+      "alpha": 10.0,
+      "trajectory_index": 273,
+      "optimization_nf": 3773,
+      "raw_i_perp": 0.0001638913199230967,
+      "segment_length_cv": 0.006164181668243242,
+      "segment_length_ratio": 1.0228461648535632,
+      "path_sha256": "097410d0d7addb018ecb21fbf7e3ee80f7d9bba9cee74078122670cca8cd7550",
+      "path_task_id": "4d17b7a1124acec8c26ebabbf32ed7b1066262d8175f9f9d065f0b430e6e56c0",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/4d/4d17b7a1124acec8c26ebabbf32ed7b1066262d8175f9f9d065f0b430e6e56c0.json",
+        "sha256": "caa5c6ad1a50933a48fbe1f7abfa57c9855b4138984b06842a878cf4e6494cb3"
+      },
+      "densified_delta_E_kcal_per_mol": 2.5446395488285063,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "458966519a0d3102",
+      "alpha": 100.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "458966519a0d3102",
+      "alpha": 100.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.7182816342184974,
+      "segment_length_cv": 6.268890384220758e-10,
+      "segment_length_ratio": 1.0000000017681623,
+      "path_sha256": "2154f178a412a9b31c8f7299f623c78a41f2963e8fcff64ec964759d0ba70006",
+      "path_task_id": "a7dba88bd14168530d3c93ef11221fbc7270c6a846dbca9813c61b2a39ce27fc",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/a7/a7dba88bd14168530d3c93ef11221fbc7270c6a846dbca9813c61b2a39ce27fc.json",
+        "sha256": "c591d959b7642ff3504e46d397d6b36f7031f809f8b59f2ff4165a5a7be7819b"
+      },
+      "densified_delta_E_kcal_per_mol": 3.8539657859365946,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "9e27489c7a10bd39",
+      "alpha": 1000.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "9e27489c7a10bd39",
+      "alpha": 1000.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.776660301046959,
+      "segment_length_cv": 6.24992124235544e-10,
+      "segment_length_ratio": 1.000000001762802,
+      "path_sha256": "a49606cd2497af9e862a0d557d01d25c997b95dcdd6f9c485cbe8c0f10a55694",
+      "path_task_id": "49f36385efca2ce1d7832ba17e5548a58a83543564e25de8fd25f37d5e23285b",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/49/49f36385efca2ce1d7832ba17e5548a58a83543564e25de8fd25f37d5e23285b.json",
+        "sha256": "3c88852c3221218a914470c0b2c0fa31d058c2b7e2dea7c57fda40ef9af527a1"
+      },
+      "densified_delta_E_kcal_per_mol": 3.842686374394839,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 4.7239884022332035e-06
+    },
+    {
+      "cell_id": "451f9da7e4d09f99",
+      "alpha": 10000.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "451f9da7e4d09f99",
+      "alpha": 10000.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.782633726438977,
+      "segment_length_cv": 6.240745762783806e-10,
+      "segment_length_ratio": 1.0000000017602133,
+      "path_sha256": "ac2328590edff5aeeffea2bdf3080a4bedbfb69f0590b4d39facb1b86e16953a",
+      "path_task_id": "d68094487020adfc1fe99e7edcb6e4a46887de04f2b1632fad4ef64ad5d568c5",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d6/d68094487020adfc1fe99e7edcb6e4a46887de04f2b1632fad4ef64ad5d568c5.json",
+        "sha256": "75135a4f42c669768351468d9062033eb4f6774948954d31c9407a87b3829f27"
+      },
+      "densified_delta_E_kcal_per_mol": 3.8415700326235678,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "0576be0fa8e5df90",
+      "alpha": 100000.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "0576be0fa8e5df90",
+      "alpha": 100000.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.78323443153585,
+      "segment_length_cv": 6.239814660388143e-10,
+      "segment_length_ratio": 1.0000000017599509,
+      "path_sha256": "3938ebca56d325a024792305216d97dff9e1c386529bf740a1f9096b8b593e15",
+      "path_task_id": "37c294b0fce09c10a4717e554388e8e019b514c82cd327e24f7513f97472b998",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/37/37c294b0fce09c10a4717e554388e8e019b514c82cd327e24f7513f97472b998.json",
+        "sha256": "0b72de84fae4942733d0a3b8f1eb8bf6a7575cd143b704a821c8850c559e85c7"
+      },
+      "densified_delta_E_kcal_per_mol": 3.8414647374283444,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "45d0f09b7ca35781",
+      "alpha": 1000000.0,
+      "trajectory_index": 0,
+      "optimization_nf": 20,
+      "raw_i_perp": 776.2298999129312,
+      "segment_length_cv": 1.479724507567486e-15,
+      "segment_length_ratio": 1.0000000000000078,
+      "path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+      "path_task_id": "78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/78/78e31c767d49e98e26cf56fc6d6043a89ea5f4c7c9a2c2edfe3a3420bd1941e8.json",
+        "sha256": "9a9c3e2e31798d3774d0b7024effd2d6fd9a85749a4063bc1c26e55f4fa0d7fd"
+      },
+      "densified_delta_E_kcal_per_mol": 44.56000757481355,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    },
+    {
+      "cell_id": "45d0f09b7ca35781",
+      "alpha": 1000000.0,
+      "trajectory_index": 3,
+      "optimization_nf": 80,
+      "raw_i_perp": 7.783293284710023,
+      "segment_length_cv": 6.239718613800391e-10,
+      "segment_length_ratio": 1.000000001759924,
+      "path_sha256": "4a87a9a03e72c24b315bb69aa9bb1de25bf2bb918df65dcfa5102e55cd464bd1",
+      "path_task_id": "f28cfef30370099cc9c0ec089962371d17074979d96dd71a329e7bf98ae6e4f2",
+      "metric_execution_mode": "reuse_verified_metric_v2",
+      "metric_artifact": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/f2/f28cfef30370099cc9c0ec089962371d17074979d96dd71a329e7bf98ae6e4f2.json",
+        "sha256": "5d39684a4930ac0876af7d80ac06b2941d6ed4a1fb524fb3ef702d871f2941cb"
+      },
+      "densified_delta_E_kcal_per_mol": 3.841463327927556,
+      "selected_subdivisions": 160,
+      "dense_converged": true,
+      "final_level_difference_kcal_per_mol": 0.0
+    }
+  ],
+  "alpha_summaries": [
+    {
+      "alpha": 0.1,
+      "eligible_state_count": 47,
+      "dense_converged_state_count": 47,
+      "final_eligible_state": {
+        "cell_id": "bc751602e2be9e9b",
+        "alpha": 0.1,
+        "trajectory_index": 274,
+        "optimization_nf": 4930,
+        "raw_i_perp": 0.010055654533986281,
+        "segment_length_cv": 0.0002728419442919488,
+        "segment_length_ratio": 1.001048790257356,
+        "path_sha256": "9d84aad6374e99865bb637c8b998e87907bd5ba6da670454c4fff5915ca651d0",
+        "path_task_id": "ef392610134c77836331e47fbdec116cfe5830accb35ac365a7a88b2c7c18538",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/ef/ef392610134c77836331e47fbdec116cfe5830accb35ac365a7a88b2c7c18538.json",
+          "sha256": "fc6da9ff195001bdd16d94cfe6d50451ab95add619b84dd3e604194eb8f4959a"
+        },
+        "densified_delta_E_kcal_per_mol": 2.567714903781198,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 6.405786296959093e-07
+      }
+    },
+    {
+      "alpha": 1.0,
+      "eligible_state_count": 58,
+      "dense_converged_state_count": 58,
+      "final_eligible_state": {
+        "cell_id": "92d93e4889c749dd",
+        "alpha": 1.0,
+        "trajectory_index": 316,
+        "optimization_nf": 4915,
+        "raw_i_perp": 0.0008647606960975867,
+        "segment_length_cv": 0.001371651651106014,
+        "segment_length_ratio": 1.0045531458337214,
+        "path_sha256": "5add887d8d30cc76f754cfcefc77dcd78530b1d44529ddcf85fa5084bd888d89",
+        "path_task_id": "8a65f07f0fcc0c37a0cf42f17ceda3fea2db7cb92a7cdd67f75a1415afe0d876",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/8a/8a65f07f0fcc0c37a0cf42f17ceda3fea2db7cb92a7cdd67f75a1415afe0d876.json",
+          "sha256": "1cbbd5247f5a5d7be2c4ace0512e1fe33f6909f2700b58a3af392294dbac9108"
+        },
+        "densified_delta_E_kcal_per_mol": 2.5295975004316933,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    },
+    {
+      "alpha": 10.0,
+      "eligible_state_count": 6,
+      "dense_converged_state_count": 6,
+      "final_eligible_state": {
+        "cell_id": "d868b4142dfc91be",
+        "alpha": 10.0,
+        "trajectory_index": 273,
+        "optimization_nf": 3773,
+        "raw_i_perp": 0.0001638913199230967,
+        "segment_length_cv": 0.006164181668243242,
+        "segment_length_ratio": 1.0228461648535632,
+        "path_sha256": "097410d0d7addb018ecb21fbf7e3ee80f7d9bba9cee74078122670cca8cd7550",
+        "path_task_id": "4d17b7a1124acec8c26ebabbf32ed7b1066262d8175f9f9d065f0b430e6e56c0",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/4d/4d17b7a1124acec8c26ebabbf32ed7b1066262d8175f9f9d065f0b430e6e56c0.json",
+          "sha256": "caa5c6ad1a50933a48fbe1f7abfa57c9855b4138984b06842a878cf4e6494cb3"
+        },
+        "densified_delta_E_kcal_per_mol": 2.5446395488285063,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    },
+    {
+      "alpha": 100.0,
+      "eligible_state_count": 2,
+      "dense_converged_state_count": 2,
+      "final_eligible_state": {
+        "cell_id": "458966519a0d3102",
+        "alpha": 100.0,
+        "trajectory_index": 3,
+        "optimization_nf": 80,
+        "raw_i_perp": 7.7182816342184974,
+        "segment_length_cv": 6.268890384220758e-10,
+        "segment_length_ratio": 1.0000000017681623,
+        "path_sha256": "2154f178a412a9b31c8f7299f623c78a41f2963e8fcff64ec964759d0ba70006",
+        "path_task_id": "a7dba88bd14168530d3c93ef11221fbc7270c6a846dbca9813c61b2a39ce27fc",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/a7/a7dba88bd14168530d3c93ef11221fbc7270c6a846dbca9813c61b2a39ce27fc.json",
+          "sha256": "c591d959b7642ff3504e46d397d6b36f7031f809f8b59f2ff4165a5a7be7819b"
+        },
+        "densified_delta_E_kcal_per_mol": 3.8539657859365946,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    },
+    {
+      "alpha": 1000.0,
+      "eligible_state_count": 2,
+      "dense_converged_state_count": 2,
+      "final_eligible_state": {
+        "cell_id": "9e27489c7a10bd39",
+        "alpha": 1000.0,
+        "trajectory_index": 3,
+        "optimization_nf": 80,
+        "raw_i_perp": 7.776660301046959,
+        "segment_length_cv": 6.24992124235544e-10,
+        "segment_length_ratio": 1.000000001762802,
+        "path_sha256": "a49606cd2497af9e862a0d557d01d25c997b95dcdd6f9c485cbe8c0f10a55694",
+        "path_task_id": "49f36385efca2ce1d7832ba17e5548a58a83543564e25de8fd25f37d5e23285b",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/49/49f36385efca2ce1d7832ba17e5548a58a83543564e25de8fd25f37d5e23285b.json",
+          "sha256": "3c88852c3221218a914470c0b2c0fa31d058c2b7e2dea7c57fda40ef9af527a1"
+        },
+        "densified_delta_E_kcal_per_mol": 3.842686374394839,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 4.7239884022332035e-06
+      }
+    },
+    {
+      "alpha": 10000.0,
+      "eligible_state_count": 2,
+      "dense_converged_state_count": 2,
+      "final_eligible_state": {
+        "cell_id": "451f9da7e4d09f99",
+        "alpha": 10000.0,
+        "trajectory_index": 3,
+        "optimization_nf": 80,
+        "raw_i_perp": 7.782633726438977,
+        "segment_length_cv": 6.240745762783806e-10,
+        "segment_length_ratio": 1.0000000017602133,
+        "path_sha256": "ac2328590edff5aeeffea2bdf3080a4bedbfb69f0590b4d39facb1b86e16953a",
+        "path_task_id": "d68094487020adfc1fe99e7edcb6e4a46887de04f2b1632fad4ef64ad5d568c5",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/d6/d68094487020adfc1fe99e7edcb6e4a46887de04f2b1632fad4ef64ad5d568c5.json",
+          "sha256": "75135a4f42c669768351468d9062033eb4f6774948954d31c9407a87b3829f27"
+        },
+        "densified_delta_E_kcal_per_mol": 3.8415700326235678,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    },
+    {
+      "alpha": 100000.0,
+      "eligible_state_count": 2,
+      "dense_converged_state_count": 2,
+      "final_eligible_state": {
+        "cell_id": "0576be0fa8e5df90",
+        "alpha": 100000.0,
+        "trajectory_index": 3,
+        "optimization_nf": 80,
+        "raw_i_perp": 7.78323443153585,
+        "segment_length_cv": 6.239814660388143e-10,
+        "segment_length_ratio": 1.0000000017599509,
+        "path_sha256": "3938ebca56d325a024792305216d97dff9e1c386529bf740a1f9096b8b593e15",
+        "path_task_id": "37c294b0fce09c10a4717e554388e8e019b514c82cd327e24f7513f97472b998",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/37/37c294b0fce09c10a4717e554388e8e019b514c82cd327e24f7513f97472b998.json",
+          "sha256": "0b72de84fae4942733d0a3b8f1eb8bf6a7575cd143b704a821c8850c559e85c7"
+        },
+        "densified_delta_E_kcal_per_mol": 3.8414647374283444,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    },
+    {
+      "alpha": 1000000.0,
+      "eligible_state_count": 2,
+      "dense_converged_state_count": 2,
+      "final_eligible_state": {
+        "cell_id": "45d0f09b7ca35781",
+        "alpha": 1000000.0,
+        "trajectory_index": 3,
+        "optimization_nf": 80,
+        "raw_i_perp": 7.783293284710023,
+        "segment_length_cv": 6.239718613800391e-10,
+        "segment_length_ratio": 1.000000001759924,
+        "path_sha256": "4a87a9a03e72c24b315bb69aa9bb1de25bf2bb918df65dcfa5102e55cd464bd1",
+        "path_task_id": "f28cfef30370099cc9c0ec089962371d17074979d96dd71a329e7bf98ae6e4f2",
+        "metric_execution_mode": "reuse_verified_metric_v2",
+        "metric_artifact": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/stage4_ala_discrete_alpha_r01_c5000_metric_campaign_v1_1788924371071068000/tasks/f2/f28cfef30370099cc9c0ec089962371d17074979d96dd71a329e7bf98ae6e4f2.json",
+          "sha256": "5d39684a4930ac0876af7d80ac06b2941d6ed4a1fb524fb3ef702d871f2941cb"
+        },
+        "densified_delta_E_kcal_per_mol": 3.841463327927556,
+        "selected_subdivisions": 160,
+        "dense_converged": true,
+        "final_level_difference_kcal_per_mol": 0.0
+      }
+    }
+  ]
+}

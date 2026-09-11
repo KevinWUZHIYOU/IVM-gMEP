@@ -1,0 +1,334 @@
+{
+  "case": "fixed-Q unperturbed 10D Muller-Brown",
+  "contour_checkpoint_forces": {
+    "10_interior": {
+      "IVM": 599.0,
+      "OBSM-LBFGS": 2982.0,
+      "ODE-NEB": 2970.0
+    },
+    "20_interior": {
+      "IVM": 2363.0,
+      "OBSM-LBFGS": 2737.0,
+      "ODE-NEB": 2800.0
+    }
+  },
+  "contour_checkpoint_policy": "last actually paid checkpoint with total forces <= 3000",
+  "contour_methods": [
+    "IVM",
+    "OBSM-LBFGS",
+    "ODE-NEB"
+  ],
+  "cost_axis": "direct sum of uncached force calls over all interior images",
+  "energy_barrier_metric": "500-point coordinate-wise linear densification; raw Delta E, not barrier error",
+  "energy_barrier_y_axis": "standard logarithmic scale",
+  "experiment_code": {
+    "formal_irivm_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/q10_irivm_atomic_tangent_secant_core.py",
+      "role": "IR-IVM tangent/secant core",
+      "sha256": "2e12b8817730b56ddef0594c932cfc0c3f4642795af25c623ca82c7a726a66a0"
+    },
+    "formal_irivm_optimizer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/src/q10_horizon_control_probe_optimizer.py",
+      "role": "formal IR-IVM optimizer",
+      "sha256": "3fcffd7df4d5d92cacafa7ba835e9ca748c57bcd8d7c5f6baa6d1a6ba6147342"
+    },
+    "formal_irivm_runner_and_scorer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/src/run_and_score.py",
+      "role": "IR-IVM run and metric entry point",
+      "sha256": "b1567bf94d84bd737fe4df970897b922ac5fc809c78c1d462e954724483bac5b"
+    },
+    "independent_metric_auditor": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_unified_cycle_frozen_reproduction_v2_20260831/src/final_audit_core.py",
+      "role": "independent QM10 metric auditor",
+      "sha256": "025ced529539937587dc00e2638c46a45c583899dbe474728119ee43495749cb"
+    }
+  },
+  "formal_ivm_inputs": {
+    "N10": {
+      "algorithm_sha256_recorded_by_summary": "3fcffd7df4d5d92cacafa7ba835e9ca748c57bcd8d7c5f6baa6d1a6ba6147342",
+      "summary": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_summary.json",
+        "role": "N10 formal IVM run summary",
+        "sha256": "97bdf86d2facd3726aefb5045eb7bcbba90b98e9e858e42f174e37afd5c2460a"
+      },
+      "trajectory": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_trajectory.npz",
+        "role": "N10 formal IVM trajectory",
+        "sha256": "921163458325091d7ef260d41d74bc6241b0a853c7410835be81055b0ea7c200"
+      },
+      "variant": "horizon_control_probe"
+    },
+    "N20": {
+      "algorithm_sha256_recorded_by_summary": "3fcffd7df4d5d92cacafa7ba835e9ca748c57bcd8d7c5f6baa6d1a6ba6147342",
+      "summary": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_summary.json",
+        "role": "N20 formal IVM run summary",
+        "sha256": "ae178584b439369f2e3a829e46afa61a518152f443438cb01f59aa944a99920d"
+      },
+      "trajectory": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_trajectory.npz",
+        "role": "N20 formal IVM trajectory",
+        "sha256": "9799c7108f7772db632670637e1b555bfcd6b45eb9cb1669d7183885fe92b705"
+      },
+      "variant": "horizon_control_probe"
+    }
+  },
+  "formal_ivm_parameters": {
+    "N10": {
+      "alpha": 0.003,
+      "m_max": 7,
+      "r": 0.1,
+      "terminal_nof": 599
+    },
+    "N20": {
+      "alpha": 0.001,
+      "m_max": 8,
+      "r": 0.3,
+      "terminal_nof": 2363
+    }
+  },
+  "formal_ivm_validation": {
+    "article_ivm_included": false,
+    "by_resolution": {
+      "N10": {
+        "checkpoint_count": 60,
+        "figure_label": "IVM",
+        "source_role": "new unified IR-IVM",
+        "terminal_nof": 599.0,
+        "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_trajectory.npz",
+        "trajectory_sha256": "921163458325091d7ef260d41d74bc6241b0a853c7410835be81055b0ea7c200"
+      },
+      "N20": {
+        "checkpoint_count": 116,
+        "figure_label": "IVM",
+        "source_role": "new unified IR-IVM",
+        "terminal_nof": 2363.0,
+        "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_trajectory.npz",
+        "trajectory_sha256": "9799c7108f7772db632670637e1b555bfcd6b45eb9cb1669d7183885fe92b705"
+      }
+    },
+    "new_irivm_included_as_ivm": true,
+    "previous_irivm_included": false,
+    "series_count_per_row": 1
+  },
+  "geometric_action_included": false,
+  "i_perp_y_axis": "compressed logarithmic scale",
+  "ivm_series_policy": "the new unified IR-IVM trajectory is the sole series labeled IVM; the article IVM and Previous IR-IVM are excluded",
+  "layout": "2x3; 10 interior images above 20 interior images",
+  "legacy_filename_note": "the historical filename contains 2x4_geometric_action, but this registered artifact is the formal 2x3 comparison without a geometric-action panel",
+  "manuscript_reference": {
+    "figure_label": "fig:M10_density",
+    "includegraphics_path": "Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x4_geometric_action_linear3000.pdf",
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/main.tex",
+    "qm10_section_sha256": "9df638c81f3aff991a7f045294bfb2fe3f852d5e74d74516e64204925c332bab",
+    "section_label": "subsubsec:Muller10"
+  },
+  "methods": [
+    "IVM",
+    "ODE-NEB",
+    "Static NEB",
+    "Original String",
+    "OBSM-FIRE",
+    "OBSM-LBFGS"
+  ],
+  "outputs": {
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x4_geometric_action_linear3000.pdf": "bbc4c79af73ab93fd5196c7aa078209d0a43a6cfdfbb370bb2995e2e02e68b9a",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x4_geometric_action_linear3000.png": "bbab4654ba7b972593f5443bcc2faa5333235b1ba66b4be4bf49f219a2718269"
+  },
+  "panels": [
+    "I_perp",
+    "densified Delta E",
+    "path contour"
+  ],
+  "plot_source": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_no_action.py",
+    "sha256": "dc53a1407dc9dda6a0e38f5ac226520e4b74942aca5cd95867aae761bede9099"
+  },
+  "plotted_input_data": [
+    {
+      "case": "10 interior images",
+      "method": "IVM",
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_trajectory.npz",
+      "role": "10 interior images; IVM plotted trajectory",
+      "sha256": "921163458325091d7ef260d41d74bc6241b0a853c7410835be81055b0ea7c200"
+    },
+    {
+      "case": "10 interior images",
+      "method": "ODE-NEB",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/ode_neb_k2000_selected.npz",
+      "role": "10 interior images; ODE-NEB plotted trajectory",
+      "sha256": "6b989a3a7de47a21698e2da41857b9e2415fa2d0bacabb5ab28be88ed8feb8b8"
+    },
+    {
+      "case": "10 interior images",
+      "method": "Static NEB",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/static_neb_selected.npz",
+      "role": "10 interior images; Static NEB plotted trajectory",
+      "sha256": "c8b8813fae3735026ace1458023bb0ff164d8d79a978c90c53ff681174929823"
+    },
+    {
+      "case": "10 interior images",
+      "method": "Original String",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/original_string_selected.npz",
+      "role": "10 interior images; Original String plotted trajectory",
+      "sha256": "a5a6183ffc52940c0bac2419244edf049e95c084b1fa1820882c57de7b4162a5"
+    },
+    {
+      "case": "10 interior images",
+      "method": "OBSM-FIRE",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/obsm_fire_selected.npz",
+      "role": "10 interior images; OBSM-FIRE plotted trajectory",
+      "sha256": "8a7f012f33f28fe41b32759643488d598d446c563e225c2bfbb79ddec463f84c"
+    },
+    {
+      "case": "10 interior images",
+      "method": "OBSM-LBFGS",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/obsm_lbfgs_selected.npz",
+      "role": "10 interior images; OBSM-LBFGS plotted trajectory",
+      "sha256": "5b74ddcfad4cae1d1acd3211c20fa2fb36bc018e58d4cfdae355e9954f25aafa"
+    },
+    {
+      "case": "20 interior images",
+      "method": "IVM",
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_trajectory.npz",
+      "role": "20 interior images; IVM plotted trajectory",
+      "sha256": "9799c7108f7772db632670637e1b555bfcd6b45eb9cb1669d7183885fe92b705"
+    },
+    {
+      "case": "20 interior images",
+      "method": "ODE-NEB",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/ode_neb_k1000_selected.npz",
+      "role": "20 interior images; ODE-NEB plotted trajectory",
+      "sha256": "0c37cffbfbdb25a2388b48abf2aa7c18b2eb1178c450cf065fa5fd1641985c11"
+    },
+    {
+      "case": "20 interior images",
+      "method": "Static NEB",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/static_neb_selected.npz",
+      "role": "20 interior images; Static NEB plotted trajectory",
+      "sha256": "b1defffeaa72f0c62192cda812fbd5d6bb7787df19e13b342e8fed41213ec4dc"
+    },
+    {
+      "case": "20 interior images",
+      "method": "Original String",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/original_string_selected.npz",
+      "role": "20 interior images; Original String plotted trajectory",
+      "sha256": "94a1c4c65dd7d98a2dbab65b236f61fa702662c31ce53560db0b81ef5a94b727"
+    },
+    {
+      "case": "20 interior images",
+      "method": "OBSM-FIRE",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/obsm_fire_selected.npz",
+      "role": "20 interior images; OBSM-FIRE plotted trajectory",
+      "sha256": "82a9ac0f623d7f6f08f43f1fd69e3c4241e70936a447425d14b4be024c586546"
+    },
+    {
+      "case": "20 interior images",
+      "method": "OBSM-LBFGS",
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/obsm_lbfgs_selected.npz",
+      "role": "20 interior images; OBSM-LBFGS plotted trajectory",
+      "sha256": "82a7a74dbfbaa251ff9d514230f6e4313a57a571c91260faa9aa5936523fdc81"
+    }
+  ],
+  "plotting_code_dependencies": {
+    "base_qm10_comparison_loader": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/plotting/plot_q10_article_n10_n20_2x3_linear3000.py",
+      "role": "base_qm10_comparison_loader",
+      "sha256": "c27096da643a82ccfdf33d435076b3af14c2ab08ad4b792d8b1412eae45e5800"
+    },
+    "formal_plotting_notebook_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/plotting/reference/figure_M10_N20_v2.ipynb",
+      "role": "formal_plotting_notebook_source",
+      "sha256": "f549e862ba701281ad19f258766dddd334e58b9cfb8ec0fe9f38ff159bd2c88f"
+    },
+    "legacy_layout_and_validation_helper": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x4_geometric_action.py",
+      "role": "legacy_layout_and_validation_helper",
+      "sha256": "6c93f8b7d295962089967a1f8b07faeac69f9765862ab45a3dae0da0283d77c0"
+    },
+    "n10_formal_plotting_adapter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/code/plotting/plot_q10_article_muller12.py",
+      "role": "n10_formal_plotting_adapter",
+      "sha256": "81c4c41bd79fdce97fc1b085c97918fbbf3982ecfbe02f6f49a5486b5b78a7fe"
+    },
+    "qm10_improved_tangent": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/ivm/q10_ivm_core.py",
+      "role": "qm10_improved_tangent",
+      "sha256": "3faf0483605906cf1985e6f99d6d5ea24a79c5ffc7b0af44b4364d3fa3830b19"
+    },
+    "qm10_potential": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/common/q10_potential.py",
+      "role": "qm10_potential",
+      "sha256": "fddf4727c12df28d307fc7e74649f49a320cc7035e914815d1815cd6d8fec1aa"
+    },
+    "registered_irivm_overlay_loader": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_with_irivm.py",
+      "role": "registered_irivm_overlay_loader",
+      "sha256": "1f890675445c62bec582438c4ac3ddc486ff066a6c9a7f80449294a9676d2202"
+    },
+    "registered_no_action_plot": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_no_action.py",
+      "role": "registered_no_action_plot",
+      "sha256": "dc53a1407dc9dda6a0e38f5ac226520e4b74942aca5cd95867aae761bede9099"
+    }
+  },
+  "provenance": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x4_geometric_action_linear3000_PROVENANCE.md",
+    "sha256": "36349eb94b2544f32e5fef7adcd2292d25859ba5ee2ae87241d91e626ba2f99d"
+  },
+  "q_matrix": {
+    "array_bytes_sha256": "372962a47504e6df28a20d8b022482a6835680765434b4385a6dba0e826974bc",
+    "coordinate_convention": "z=Q@x; x=Q.T@z",
+    "maximum_orthogonality_error": 2.101301137200267e-15,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/code/inputs/Q_data.npz",
+    "sha256": "9a57ca4ce0aa39886aacbfa935c8c7db1423a7f7de3deb937697e72578415aca"
+  },
+  "reference_barrier": 67.50188060819488,
+  "registered_curve_validation": {
+    "comparison_policy": "ordered row-by-row after excluding article IVM and Previous IR-IVM and relabeling new IR-IVM as IVM; duplicates retained",
+    "duplicate_case_method_nof_rows_preserved": 2,
+    "excluded_article_ivm_rows": 179,
+    "excluded_previous_irivm_rows": 176,
+    "formal_figure_rows": 3763,
+    "maximum_delta_e_difference": 0.0,
+    "maximum_i_perp_difference": 0.0,
+    "new_irivm_rows_relabeled_ivm": 176,
+    "registered_source_rows": 4118,
+    "retained_baseline_rows": 3587
+  },
+  "reproduction": {
+    "command": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_no_action.py",
+    "matplotlib_version": "3.7.2",
+    "numpy_version": "1.24.4",
+    "python_executable": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+    "python_version": "3.8.20",
+    "working_directory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819"
+  },
+  "schema_version": 3,
+  "source_csv": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x4_geometric_action_linear3000_source.csv",
+    "sha256": "aecfafe6ec55857edca80c3457d86512b7f74513332b402e03a8b7b5a9e259ea",
+    "source_record_index_origin": 0
+  },
+  "status": "visual_qa_passed",
+  "visual_qa": {
+    "figure_pdf_render": "passed; one-page 2x3 layout, labels legible, no clipping or overlap",
+    "manuscript_preview": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/tmp/vscode-latex/main.pdf",
+    "manuscript_pages_inspected": [
+      14,
+      15,
+      16
+    ],
+    "result": "passed"
+  },
+  "validation_reference": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x3_linear3000_source.csv",
+    "role": "registered pre-removal 2x3 curve table used for rowwise audit",
+    "sha256": "0dacb5e256d8c24f3a58654f91a36c63e85d352a18c96223a5deca9e5b62dd93"
+  },
+  "xlim": [
+    0,
+    3000
+  ],
+  "xscale": "linear"
+}

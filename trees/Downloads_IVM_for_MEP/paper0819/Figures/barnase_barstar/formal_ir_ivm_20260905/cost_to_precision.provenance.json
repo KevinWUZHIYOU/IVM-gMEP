@@ -1,0 +1,204 @@
+{
+  "cost_protocol": {
+    "IR_IVM_prefix": "all formally reportable R6B states at or below N_F=20000",
+    "ODE_NEB_history": "current accepted path after each paid batch; rejected paid trials retain the preceding current path",
+    "additional_physical_calls": 0,
+    "curve": "strict cumulative-best first-passage frontier; no metric or N_F interpolation",
+    "fixed_endpoint_optimization_N_F": 0,
+    "metric_optimization_N_F_contribution": 0,
+    "quantity": "optimization Number of Forces"
+  },
+  "created_utc": "2026-09-05T20:04:39Z",
+  "data": {
+    "bytes": 8460160,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_cost_to_precision_1x3.data.json",
+    "sha256": "4f15b7457b85a1c3fc6c014fb20ba89ef842028c128a1ef40637ae03342800a2"
+  },
+  "figure": {
+    "bytes": 60093,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_cost_to_precision_1x3.pdf",
+    "sha256": "f4d132b858b9e8ba7c667a2e534861059b6be8b6723f6615324b6a059ebbd51a"
+  },
+  "figure_contract": {
+    "IR_IVM_display_budget": "20k (actual N_F=19993)",
+    "ODE_NEB_display_budget": "30k (actual N_F=30000)",
+    "all_metrics_from_same_native_state": true,
+    "display_windows": {
+      "Delta_E_kcal_per_mol": [
+        1000.0,
+        80.0
+      ],
+      "I_perp": [
+        10000.0,
+        5.0
+      ],
+      "discrete_action_kcal_per_mol": [
+        100000.0,
+        3000.0
+      ]
+    },
+    "each_axes_box_aspect": 1.0,
+    "layout": "1x3",
+    "legend_labels": [
+      "IVM",
+      "ODE-NEB"
+    ],
+    "panels": [
+      "I_perp",
+      "Delta E",
+      "discrete geometric action"
+    ],
+    "x_axis_scale": "reversed logarithmic for all three panels"
+  },
+  "history_summary": {
+    "IVM": {
+      "R5B_local_transport_shards": 515,
+      "R6B_compact_metric_ledger": {
+        "bytes": 242125,
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/plot_inputs/bb_irivm_r6b_calls0516_0693_20260905_r1/r6b_calls0516_0693_native32_metrics.json",
+        "sha256": "0a4abdb4b1661e492749bf0798929a8d877fee085882284b93aba1ed7b4d9ccd"
+      },
+      "R6B_formal_last_complete_N_F": 23512,
+      "R6B_formal_last_complete_call": 818,
+      "R6B_remote_compact_metric_rows": 178,
+      "R6B_terminal_uncommitted_tail_excluded": true,
+      "selected_call_count": 693,
+      "selected_last_N_F": 19993,
+      "selected_last_call": 693
+    },
+    "ODE-NEB": {
+      "accepted_or_initial_batches": 886,
+      "batches": 1000,
+      "last_N_F": 30000,
+      "rejected_paid_batches": 114,
+      "spring_k_eV_per_A2": 0.1,
+      "terminal_audit": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/terminal_audits/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1.terminal-audit.json",
+        "sha256": "e8a3f797b5c2d0ef31b36e9222a14a2fb7f23e58e0ae220cca6af4bba648f579"
+      },
+      "transport": {
+        "exact_run_dir": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1",
+        "mutagen_session_identifier": "sync_wluhxwR03mFsMVwykAr1wJZEhU2OBSLb9h1LhC0Dus0",
+        "physical_calls": 0,
+        "preaudit_diagnostic_cache_reused": false,
+        "prestart": {
+          "bytes": 5648,
+          "local_mode_octal": "0600",
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1/PRESTART.json",
+          "remote_receipt_mode_octal": "0444",
+          "sha256": "1c5aa970ab806eccb785e41cb273c52bf5d38b087c834d5dda5fc09555522422"
+        },
+        "schema": "bb-nf30000-local-mutagen-replica-cache-binding-v1",
+        "status": "PASS_EXACT_REPLICA_ADAPTER_BOUND",
+        "transport_receipt": {
+          "bytes": 4863,
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/LOCAL_MUTAGEN_REPLICA_TRANSPORT_RECEIPT_R2.json",
+          "sha256": "7164b8b2593ae1d6a592e11da8b8d99b94578ab631b8527f9f752ec301a41213"
+        },
+        "wrapper": {
+          "bytes": 14754,
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/cache_formal_discrete32_incrementally_r2.py",
+          "sha256": "e77c92187a25dc2c11e776d4405b6edd0563e00e7cc1291369ae4f6400142464"
+        }
+      }
+    }
+  },
+  "methods": {
+    "IVM": "selected BB IR-IVM: alpha=1, r=0.1, m_max=5, equal-arclength reparameterization",
+    "ODE-NEB": "ASE NEBOptimizer(method='ODE'), k=0.1 eV A^-2"
+  },
+  "metric_protocol": {
+    "delta_e": "max(E_0,...,E_31)-E_0 on the same stored 32-image path",
+    "densification": false,
+    "energy_and_action_conversion": {
+      "factor": 23.0605,
+      "from": "eV",
+      "to": "kcal mol^-1"
+    },
+    "geometric_action": {
+      "continuous_parent": "\\widehat{S}(\\varphi)=\\int_\\varphi |\\nabla V|\\,\\mathrm{d}\\ell",
+      "discrete_formula": "sum_{i=0}^{30} 0.5*(||F_i||_2+||F_{i+1}||_2)*||x_{i+1}-x_i||_2",
+      "force_identity": "stored OpenMM Force=-grad V, so Euclidean norms agree",
+      "formula_id": "native32-cartesian-trapezoid-norm-force-action-v1",
+      "latex": "\\widehat S",
+      "name": "discrete action"
+    },
+    "i_perp": "central-difference tangent; normal full Force; local Cartesian Voronoi weights",
+    "images": 32,
+    "interpolation": false,
+    "mass_weighting": false,
+    "segments": 31,
+    "smoothing": false
+  },
+  "optimization_N_F_contribution": 0,
+  "physical_calls": 0,
+  "plot_and_analysis_code": {
+    "bytes": 44881,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/plot_bb_irivm20k_ode30k_cost_to_precision_1x3.py",
+    "sha256": "138984019a4f7d54d174fe8682a576724c82e16cfac53da0c24b621cab5bc3ee"
+  },
+  "schema": "bb-irivm20k-ode30k-discrete-cost-provenance-v1",
+  "source_bindings": {
+    "ODE_decoder": {
+      "bytes": 32241,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_kgrid_nf6000_nf30000_20260903_r1/src/full_batch_recorder.py",
+      "sha256": "5443a20ebfc0d8d3635a0bcab37fa134a0ec442953297d2f11e9bc01c3ef204c"
+    },
+    "ODE_final_cache": {
+      "bytes": 840259,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/formal_discrete32_cache_r2_audited_v2_local_mutagen/formal_discrete32_cache_FINAL.json",
+      "sha256": "74a80bc1e608ad39404220ed39f13a2537a5ffbc36f96d58988a89d03c484958"
+    },
+    "R5B_primary": {
+      "bytes": 391104,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+      "sha256": "5cfd64d971a735850ba9756be342cd402ec7480f0e32a7e38f100567f7a9ccf7"
+    },
+    "R5B_supplemental": {
+      "bytes": 301954,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_SUPPLEMENTAL.json",
+      "sha256": "92080e6f64ebd5c5e3819976c9e7605c83c88f99c5b594c568163f1e1ab99362"
+    },
+    "R6B_compact_metric_generator": {
+      "bytes": 9501,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/generate_bb_irivm_r6b_20k_suffix_metrics_remote.py",
+      "sha256": "c2bff2b466680e15536d350d3a7fc0cbca5aef307b835a107c46b6dbc65095e3"
+    },
+    "R6B_compact_metric_suffix": {
+      "bytes": 242125,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/plot_inputs/bb_irivm_r6b_calls0516_0693_20260905_r1/r6b_calls0516_0693_native32_metrics.json",
+      "sha256": "0a4abdb4b1661e492749bf0798929a8d877fee085882284b93aba1ed7b4d9ccd"
+    },
+    "R6B_primary": {
+      "bytes": 779926,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_PRIMARY.json",
+      "sha256": "00a215f4e2953a551b7d5294780f65368b3ce4545dcd28f4623dd2645a7c1345"
+    },
+    "R6B_supplemental": {
+      "bytes": 616261,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_SUPPLEMENTAL.json",
+      "sha256": "2e0516dc2a2cdeb2f72f3fcdb3b5d4b9f5ba5801e3e962bebfe2d845e141a556"
+    }
+  },
+  "status": "PASS_VISUALLY_CONFIRMED_300_DPI",
+  "strictest_common_thresholds": {
+    "delta_e_kcal_per_mol": {
+      "IVM_first_passage_N_F": 5163,
+      "Number_of_Forces_ratio_ODE_over_IVM": 5.810575246949448,
+      "ODE_NEB_first_passage_N_F": 30000,
+      "strictest_common_threshold": 188.6913326226986
+    },
+    "geometric_action_kcal_per_mol": {
+      "IVM_first_passage_N_F": 5223,
+      "Number_of_Forces_ratio_ODE_over_IVM": 5.732337736932797,
+      "ODE_NEB_first_passage_N_F": 29940,
+      "strictest_common_threshold": 9869.258893192564
+    },
+    "i_perp": {
+      "IVM_first_passage_N_F": 5104,
+      "Number_of_Forces_ratio_ODE_over_IVM": 5.871865203761756,
+      "ODE_NEB_first_passage_N_F": 29970,
+      "strictest_common_threshold": 83.5449690444816
+    }
+  }
+}

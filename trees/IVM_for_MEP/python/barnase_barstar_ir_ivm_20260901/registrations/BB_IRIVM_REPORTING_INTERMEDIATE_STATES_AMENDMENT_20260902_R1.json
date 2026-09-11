@@ -1,0 +1,115 @@
+{
+  "schema": "bb-irivm-reporting-intermediate-states-amendment-v1",
+  "status": "FROZEN_AFTER_REPLAY_LAUNCH_BEFORE_ANY_NEW_REPORTING_METRIC_CALL",
+  "created_utc": "2026-09-02T04:37:18Z",
+  "decision_timing": "The replay registration was prospectively frozen before replay launch. This reporting-only amendment was created after replay child_started_utc=2026-09-02T04:36:54Z and does not claim or infer the time of the first replay OpenMM call. It was frozen before any new arc-length-500 energy or ODE--NEB diagnostic-force call for this densification.",
+  "purpose": "Permit a prospectively fixed subset of fully evaluated current IR-IVM states to be retained for reporting without changing the online IR-IVM algorithm or feeding any reporting diagnostic back into optimization.",
+  "scope": {
+    "method": "selected Barnase--Barstar IR-IVM with alpha=1, r=0.1, m_max=5",
+    "replay_label": "bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1",
+    "fixed_reporting_calls": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50
+    ],
+    "new_reporting_calls": [
+      2,
+      5,
+      10,
+      50
+    ],
+    "expected_call_to_actual_optimization_N_F_from_the_sealed_reference": {
+      "1": 30,
+      "2": 60,
+      "5": 150,
+      "10": 300,
+      "20": 429,
+      "50": 1329
+    },
+    "expected_terminal_consumed_optimization_N_F": 1479,
+    "expected_terminal_call": 55,
+    "expected_registered_budget": 1500
+  },
+  "scientific_eligibility": {
+    "allowed": "a nonterminal path recorded by the unchanged online runner at one of the fixed reporting calls, with a complete 32-image current path, finite discrete I_perp, a counter-bound actual optimization N_F, and exact online-history prefix agreement with the sealed selected 9990-N_F reference",
+    "why_noncommitted_intermediate_states_are_allowed": "reparameterization commitment is an online transaction label, not evidence that an ordinary recorded current path lacks energies or forces; the replay verifier must independently prove that every admitted record is fully evaluated and belongs to the exact selected trajectory",
+    "forbidden": [
+      "the terminal appended path or any terminal uncommitted/partial charged tail",
+      "a rejected proposal that was not promoted to the current algorithm state",
+      "a path chosen after inspecting its new densified Delta E",
+      "a path from another hyperparameter setting",
+      "a path whose replay prefix differs from the sealed selected 9990-N_F reference"
+    ]
+  },
+  "metric_and_cost_policy": {
+    "same_frozen_path_for_both_metrics": true,
+    "left_metric": "discrete unnormalized normal residual I_perp from the exact fully evaluated online record",
+    "right_metric": "densified 0 K forward barrier Delta E on 500 points uniformly spaced in unweighted Cartesian arc length along the same frozen piecewise-linear 32-image path, including both endpoints",
+    "optimization_cost_axis": "actual sum of successful physical joint energy/force cache misses over the 30 internal images at that record",
+    "fixed_endpoint_optimization_N_F": 0,
+    "diagnostic_energy_and_force_calls_are_optimization_N_F": false,
+    "diagnostic_calls_must_be_reported_separately": true,
+    "diagnostic_feedback_into_optimization": "forbidden"
+  },
+  "selection_policy": {
+    "IVM_rule": "include every fixed legacy-storage milestone through call 50 and merge, by exact path identity and actual optimization N_F, with all previously registered selected-IR-IVM committed paths",
+    "ODE_NEB_rule": "for each new IR-IVM actual optimization N_F, select the latest first occurrence of a distinct official retained ODE--NEB current path whose optimization N_F does not exceed that IR-IVM value",
+    "ODE_NEB_expected_new_N_F": [
+      60,
+      150,
+      300,
+      1320
+    ],
+    "rejected_ODE_NEB_trials_create_new_reporting_paths": false,
+    "duplicate_retained_path_cost": "earliest official optimization N_F at which the identical retained path first occurred",
+    "metric_values_used_to_choose_the_new_ODE_NEB_paths": false,
+    "Delta_E_monotonicity_assumed": false,
+    "allowed_curve_claim": "observed lower envelope and earliest observed first passage only"
+  },
+  "planned_new_physical_calls": {
+    "IR_IVM_replay_optimization_joint_EF_expected": 1479,
+    "IR_IVM_replay_optimization_joint_EF_hard_upper_bound": 1500,
+    "IR_IVM_new_arc500_energy": 2000,
+    "IR_IVM_new_diagnostic_force": 0,
+    "ODE_NEB_new_arc500_energy": 2000,
+    "ODE_NEB_new_diagnostic_force": 120,
+    "expected_total_new_physical_state_calls": 5599,
+    "hard_upper_bound_total_new_physical_state_calls": 5620
+  },
+  "execution_assignment": {
+    "ODE_NEB_four_path_metric_evaluation_host": "wuzhiyoudeMacBook-Air-206.local",
+    "ODE_NEB_jobs": 1,
+    "one_BB_task_on_this_host": true,
+    "host_local_BB_locks_required": true,
+    "all_thread_caps": 1,
+    "Mutagen_and_result_validation_gates_may_not_be_bypassed": true
+  },
+  "evidence_used_for_the_fixed_call_schedule": {
+    "legacy_storage_milestones_are_source_coded_before_this_decision": true,
+    "new_densified_Delta_E_values_seen_before_freezing": false,
+    "existing_discrete_I_perp_history_was_already_available": true,
+    "all_source_coded_legacy_milestones_through_call_50_are_included": true
+  },
+  "bindings": {
+    "replay_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+      "sha256": "aa7994abec1339bf9c9ae915b9982e8134363baf8966b9bb221ca244ab5808a2"
+    },
+    "selected_9990_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "storage_policy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/storage_policy.py",
+      "sha256": "30621a7fcd14400b97ff75643d8d2a9596dd9b665bd20df48fa0985ccd8cc0c2"
+    },
+    "official_ODE_NEB_retained_path_ledger": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R2.json",
+      "sha256": "8b5762aad446708b4f3cf3a68b588cf7c198a88acf22f6fa3ae99b922f445d24"
+    }
+  },
+  "execution_authorized_by_this_file": false
+}

@@ -1,0 +1,28 @@
+{
+  "candidate_summary": "leps_irivm_sync1_refined_grid_20260830/reports/acceptance/candidate_summary.csv",
+  "candidate_summary_sha256": "32dd0c92ff31b96cad0c1edd69548b05214fad069fd9f0898247da9776dcb940",
+  "figure_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/leps_irivm_refined_grid_selection.pdf",
+  "figure_pdf_sha256": "effe8b59d73623f91875e20fa971252d43ff4ad2848199d42a87c59d99aaf0f0",
+  "figure_png": "leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_irivm_refined_grid_selection.png",
+  "figure_png_sha256": "8a4a7b3b776d6aa9297a792b9091cf58419d3ff5bda80d652e3bda66b6356d9a",
+  "plot_source": "leps_irivm_sync1_refined_grid_20260830/src/plot_refined_grid.py",
+  "plot_source_sha256": "e0f314219904759662cbb4a325c1ad33374a44359e20e11a5c49dd2bcc9d212d",
+  "selection_manifest": "leps_irivm_sync1_refined_grid_20260830/reports/acceptance/selection_manifest.json",
+  "selection_manifest_sha256": "4ca04977a7331a93290a8f1b272b58213ef3f8c0bb502fa64d3c2611f44a1094",
+  "winner": {
+    "alpha": 100.0,
+    "check_count": 21,
+    "first_failed_nf": 150,
+    "last_available_path_nf": 1528,
+    "m_max": 5,
+    "mean_joint_ratio": 0.18588458192513613,
+    "passing_checks": 19,
+    "r": 0.003,
+    "result": "leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+    "run_id": "3c62d93a051be116",
+    "stop_reason": "stationary",
+    "strict_pass": false,
+    "terminal_article_nf": 1558,
+    "worst_joint_ratio": 1.0648296617000004
+  }
+}

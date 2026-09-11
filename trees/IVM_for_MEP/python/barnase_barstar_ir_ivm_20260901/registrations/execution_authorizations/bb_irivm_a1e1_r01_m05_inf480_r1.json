@@ -1,0 +1,37 @@
+{
+  "authorization_scope": "one exact fresh non-resumed registered member",
+  "campaign_preregistration_sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+  "concurrency": "one BB task on this host, two host-local fcntl locks, jobs=1",
+  "controlled_scan_gate": {
+    "alpha_confirmation_selection": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_ALPHA_CONFIRMATION_SELECTION_20260901_R1.json",
+    "alpha_confirmation_selection_sha256": "e45fb79a37ac5ef87a86927ed0790490973c2ff4b6210a35f9f2cc4e3bd5f1a9",
+    "efficiency_amendment": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_EFFICIENT_CONTROLLED_SCAN_AMENDMENT_20260901_R1.json",
+    "efficiency_amendment_sha256": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46",
+    "registered_new_r_values": [
+      0.1,
+      0.3,
+      0.7,
+      0.8
+    ],
+    "same_state_two_metric_selection_required": true,
+    "stage": "r_controlled_scan_480_N_F"
+  },
+  "diagnostic_feedback": "forbidden during optimization",
+  "enabled": true,
+  "ff_builder_parity_gate_sha256": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+  "fixed_endpoint_policy": "hash-bound inherited endpoint E/F; endpoint getState attempts, misses, and optimization NoF must remain zero",
+  "issued_utc": "2026-09-01T14:21:08Z",
+  "label": "bb_irivm_a1e1_r01_m05_inf480_r1",
+  "member_registration_sha256": "4717e5adf2a72164b2c053e55f307d43d8d952c63c2a9da0fd81b434f11aa8ea",
+  "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+  "registered_controls": {
+    "alpha": 10.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 480,
+    "r": 0.1
+  },
+  "schema": "bb-irivm-per-member-execution-authorization-v1",
+  "smoke_240_gate_sha256": "6c259716dce2e91db9d4dddd6555c54bb9f2183749169b3229da7465db01c4d4",
+  "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "tier": "screen"
+}

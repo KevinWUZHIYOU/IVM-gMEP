@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-04",
+  "purpose": "postprocessing only; no optimization or reselection",
+  "figure": {
+    "path": "Figures/LEPS/leps_all_methods_geometric_action.pdf",
+    "sha256": "f3fc9baf613327b8dd4ae4cc88878f8e9732716e91a087fb52ef4b3a1762dfbd"
+  },
+  "output_copy": {
+    "path": "output/pdf/leps_all_methods_geometric_action.pdf",
+    "sha256": "f3fc9baf613327b8dd4ae4cc88878f8e9732716e91a087fb52ef4b3a1762dfbd"
+  },
+  "script": {
+    "path": "code_on_server/LEPS/leps_geometric_action_20260904/src/plot_leps_geometric_action.py",
+    "sha256": "6c5f420a090de7d7d3d3c5e2b1d816d01e50290ac5164b10082a8a3b867f4aa9"
+  },
+  "original_figure_unchanged": {
+    "path": "Figures/LEPS/leps_all_methods_metrics.pdf",
+    "sha256": "081aad16011737c67d8d9eaded57559655f9b45f6ab18817940ca019c17f66b4"
+  },
+  "original_registry": {
+    "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_provenance.json",
+    "sha256": "98817eac71811c82ac8ce0ec7277ac628c2f7902ac2faf68923b6ab50503ebfd"
+  },
+  "original_plotted_points": {
+    "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_source.csv",
+    "sha256": "5fbccdaba1ca0b8612ff3860b52cadea4be0bf0aa7b42889e6b8ad95a3712138"
+  },
+  "original_plot_script": {
+    "path": "code_on_server/LEPS/leps_geometric_action_20260904/src/remake_leps_all_methods_three_metrics.py",
+    "sha256": "107942f1ece049e223fa47ca9536eacbeb6ab326d51a5b9db30ec1dd0af202fe"
+  },
+  "frozen_plot_primitives": {
+    "path": "code_on_server/LEPS/ir_ivm_qm10_v2p20_microrefine_20260829/src/remake_leps_all_methods.py",
+    "sha256": "8ee8b750f899b886a80ad2aeab0b52ec9239f5e425301f35f12af9c3bb67cf2e"
+  },
+  "leps_energy_gradient_and_tangent_code": {
+    "path": "code_on_server/LEPS/src/leps_core.py",
+    "sha256": "a80f0c23252a2e273f4cf77d156c9a26de91b4559f56a4fad264638fa0e57aca"
+  },
+  "raw_results": {
+    "IVM": {
+      "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    },
+    "ODE-NEB": {
+      "path": "code_on_server/LEPS/runs/neb/neb_production_k10_cfgfe491f5a6c6f_budget5000.npz",
+      "sha256": "ae0c2bbf3f8fa8539bcaffaa98e0298b5f90661f145fcb5e7a5c6b61c4548b0a"
+    },
+    "Static-NEB": {
+      "path": "code_on_server/LEPS/runs/neb/production_static_k10_dt0.05_cfgba1c63497f9a_budget3000.npz",
+      "sha256": "a8daa64a59d7316c4546f47591cbfcdd509c3744eb0def2390c3951c5cdcb046"
+    },
+    "Original String": {
+      "path": "code_on_server/LEPS/runs/original_string/production_original_dt0.07_r1_cfg6446cefea5fd_budget3000.npz",
+      "sha256": "c480e8520ff37b493e20c8dd476655aee58d0ebbd119360eccd74f8971f1a4cd"
+    },
+    "OBSM-FIRE": {
+      "path": "code_on_server/LEPS/runs/obsm_fire/production_fire_stable_l0.85_n4_dt0.18_cfgc5d07bd3b321_budget3000.npz",
+      "sha256": "24dc2c8882d3cab39861fb69a8630b317532f26a79bd6c7fb913a1ce23faa456"
+    },
+    "OBSM-L-BFGS": {
+      "path": "code_on_server/LEPS/runs/obsm_lbfgs/production_lbfgs_r5_l0.95_n1_s0.1_cfg78c1b29f7570_budget3000.npz",
+      "sha256": "b5ae71ab114e8dffb90be582b327c1c6468f13123289b4358cdd3ea143be22cb"
+    }
+  },
+  "source_csv": {
+    "path": "code_on_server/LEPS/leps_geometric_action_20260904/reports/leps_all_methods_geometric_action_source.csv",
+    "sha256": "480ba3b12514726788006e99fe4d6b99d913c430b3123a00b324add2b02a11d1"
+  },
+  "quadrature_and_tangent_audit": {
+    "path": "code_on_server/LEPS/leps_geometric_action_20260904/reports/quadrature_and_tangent_audit.npz",
+    "sha256": "d4f4cbda9069760fbfd640ebf1ed2ca5d29bfdf50be13f314dc56e40adc56618"
+  },
+  "summary": {
+    "path": "code_on_server/LEPS/leps_geometric_action_20260904/reports/summary.json",
+    "sha256": "78a69773d7aa84a287d6fc85c1052a43b113af2c0d4de2b0c61ea9f675d33006"
+  },
+  "ivm_parameters": {
+    "alpha": 100,
+    "r": 0.003,
+    "m_max": 5
+  },
+  "metric_contract": {
+    "definition": "integral of full Euclidean gradient norm over path arc length",
+    "quadrature": "sum_i 0.5*(norm(g_i)+norm(g_{i+1}))*norm(x_{i+1}-x_i)",
+    "nodes": "original 22 nodes, including both endpoints; no densification",
+    "coordinates": "same flat 6D coordinates as LEPS; active coordinates 0 and 3",
+    "tangent": "leps_core.improved_tangents / ASE Henkelman-Jonsson ImprovedTangentMethod",
+    "tangent_role": "original I_perp alignment audit only; full-gradient action is tangent-independent",
+    "nof": "exactly the original figure's optimization ledger; postprocessing excluded",
+    "curves": "all original plotted states <=20000 NoF, raw values, no best-so-far envelope or extrapolation",
+    "ivm_last_path_nof": 1528,
+    "ivm_terminal_optimization_nof": 1558,
+    "caution": "coarse trapezoidal action is not an exact continuum integral or convergence certificate"
+  },
+  "checks": {
+    "all_raw_result_hashes_match_registration": true,
+    "all_inputs_preserved": true,
+    "all_nof_points_match_original_csv": true,
+    "all_methods_share_initial_path": true,
+    "quadrature_unit_tests_pass": true,
+    "node_weight_and_segment_sum_agree": true,
+    "max_i_perp_absolute_disagreement": 4.263256414560601e-14,
+    "max_improved_tangent_unit_norm_error": 2.220446049250313e-16,
+    "total_paths": 3577,
+    "diagnostic_gradient_node_evaluations": 78694
+  },
+  "runtime": {
+    "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:48:42) \n[Clang 17.0.6 ]",
+    "executable": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "numpy": "1.24.4",
+    "matplotlib": "3.7.2",
+    "ase": "3.23.0"
+  }
+}

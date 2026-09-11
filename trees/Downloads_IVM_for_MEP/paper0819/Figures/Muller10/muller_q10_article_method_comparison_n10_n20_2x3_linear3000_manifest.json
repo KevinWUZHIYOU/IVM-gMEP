@@ -1,0 +1,159 @@
+{
+  "base_frozen_runs": {
+    "10_interior": {
+      "ivm": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/tuned_ivm_alpha2e3_selected.npz",
+        "sha256": "a09bdc481d98c37b448ae9efaff045aba6208f247b8bcbf6d296b1f1ec7a7a40"
+      },
+      "obsm_fire": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/obsm_fire_selected.npz",
+        "sha256": "8a7f012f33f28fe41b32759643488d598d446c563e225c2bfbb79ddec463f84c"
+      },
+      "obsm_lbfgs": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/obsm_lbfgs_selected.npz",
+        "sha256": "5b74ddcfad4cae1d1acd3211c20fa2fb36bc018e58d4cfdae355e9954f25aafa"
+      },
+      "ode_neb": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/ode_neb_k2000_selected.npz",
+        "sha256": "6b989a3a7de47a21698e2da41857b9e2415fa2d0bacabb5ab28be88ed8feb8b8"
+      },
+      "original_string": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/original_string_selected.npz",
+        "sha256": "a5a6183ffc52940c0bac2419244edf049e95c084b1fa1820882c57de7b4162a5"
+      },
+      "static_neb": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/static_neb_selected.npz",
+        "sha256": "c8b8813fae3735026ace1458023bb0ff164d8d79a978c90c53ff681174929823"
+      }
+    },
+    "20_interior": {
+      "ivm": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/tuned_ivm_alpha1e3_selected.npz",
+        "sha256": "3cf6649deb4b6bd2c11da51ca204a06513cad8e6702867e59619a2956d52162b"
+      },
+      "obsm_fire": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/obsm_fire_selected.npz",
+        "sha256": "82a9ac0f623d7f6f08f43f1fd69e3c4241e70936a447425d14b4be024c586546"
+      },
+      "obsm_lbfgs": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/obsm_lbfgs_selected.npz",
+        "sha256": "82a7a74dbfbaa251ff9d514230f6e4313a57a571c91260faa9aa5936523fdc81"
+      },
+      "ode_neb": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/ode_neb_k1000_selected.npz",
+        "sha256": "0c37cffbfbdb25a2388b48abf2aa7c18b2eb1178c450cf065fa5fd1641985c11"
+      },
+      "original_string": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/original_string_selected.npz",
+        "sha256": "94a1c4c65dd7d98a2dbab65b236f61fa702662c31ce53560db0b81ef5a94b727"
+      },
+      "static_neb": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/static_neb_selected.npz",
+        "sha256": "b1defffeaa72f0c62192cda812fbd5d6bb7787df19e13b342e8fed41213ec4dc"
+      }
+    }
+  },
+  "base_registered_figure": {
+    "manifest": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/figures/active_candidates/muller_q10_article_method_comparison_n10_n20_2x3_linear3000_manifest.json",
+    "manifest_sha256": "ff73c35b43fe83a64bd1d52f012f4deb275b42fc95e6e1bc2f38c566e7737e81",
+    "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/figures/active_candidates/muller_q10_article_method_comparison_n10_n20_2x3_linear3000.pdf",
+    "sha256": "9f2350844a42311a12bac182fd3dc5e13f83d5b775040fae028d6ede2a2f9be7"
+  },
+  "case": "fixed-Q unperturbed 10D Muller-Brown",
+  "contour_checkpoint_forces": {
+    "10_interior": {
+      "IVM": 951.0,
+      "OBSM-LBFGS": 2982.0,
+      "ODE-NEB": 2970.0
+    },
+    "20_interior": {
+      "IVM": 2377.0,
+      "OBSM-LBFGS": 2737.0,
+      "ODE-NEB": 2800.0
+    }
+  },
+  "contour_checkpoint_policy": "last actually paid checkpoint with total forces <= 3000",
+  "contour_methods": [
+    "IVM",
+    "OBSM-LBFGS",
+    "ODE-NEB"
+  ],
+  "cost_axis": "direct sum of uncached force calls over all interior images",
+  "energy_barrier_metric": "500-point coordinate-wise linear densified Delta E",
+  "energy_barrier_y_axis": "raw Delta E on standard logarithmic scale",
+  "irivm_inputs": {
+    "N10:IR-IVM": {
+      "summary": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_summary.json",
+      "summary_sha256": "97bdf86d2facd3726aefb5045eb7bcbba90b98e9e858e42f174e37afd5c2460a",
+      "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n10_trajectory.npz",
+      "trajectory_sha256": "921163458325091d7ef260d41d74bc6241b0a853c7410835be81055b0ea7c200"
+    },
+    "N10:Previous IR-IVM": {
+      "summary": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/previous_n10_summary.json",
+      "summary_sha256": "b682617d1f275c8566e3dd3c15ac47c01b07be3cfb13c0beeafe479ef26963df",
+      "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/previous_n10_trajectory.npz",
+      "trajectory_sha256": "921163458325091d7ef260d41d74bc6241b0a853c7410835be81055b0ea7c200"
+    },
+    "N20:IR-IVM": {
+      "summary": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_summary.json",
+      "summary_sha256": "ae178584b439369f2e3a829e46afa61a518152f443438cb01f59aa944a99920d",
+      "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/irivm_n20_trajectory.npz",
+      "trajectory_sha256": "9799c7108f7772db632670637e1b555bfcd6b45eb9cb1669d7183885fe92b705"
+    },
+    "N20:Previous IR-IVM": {
+      "summary": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/previous_n20_summary.json",
+      "summary_sha256": "8489e96090bbadb0babb7e4e78bc62ce5f92a5e6148d4d54034cb301718f28d3",
+      "trajectory": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/data/irivm_overlay/previous_n20_trajectory.npz",
+      "trajectory_sha256": "54828893a8a8d8de3edff367651595f2b59781f6bf9004b5d1392eb995d0c40a"
+    }
+  },
+  "irivm_validation": {
+    "N10_predecessor_equals_current_bitwise": true,
+    "N20_current_joint_strict_checkpoints": "98/98",
+    "N20_current_rises": 0,
+    "N20_predecessor_equals_current_from_nof": 100,
+    "N20_predecessor_rises": 1
+  },
+  "layout": "2x3; 10 interior images above 20 interior images",
+  "methods": [
+    "IVM",
+    "Previous IR-IVM",
+    "IR-IVM",
+    "ODE-NEB",
+    "Static NEB",
+    "Original String",
+    "OBSM-FIRE",
+    "OBSM-LBFGS"
+  ],
+  "outputs": {
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x3_linear3000.pdf": "d6d80dc7c30d5b64ccca43062dbc20d0b702b9952878b05266e01316498807de",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x3_linear3000.png": "aef6a313e40073830f349031ffb93537363f1884fa239e7b098353f68f37336a"
+  },
+  "plot_source": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/plot_muller_q10_article_method_comparison_n10_n20_2x3_with_irivm.py",
+    "sha256": "1f890675445c62bec582438c4ac3ddc486ff066a6c9a7f80449294a9676d2202"
+  },
+  "schema_version": 2,
+  "source_csv": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/paper0819/Figures/Muller10/muller_q10_article_method_comparison_n10_n20_2x3_linear3000_source.csv",
+    "sha256": "0dacb5e256d8c24f3a58654f91a36c63e85d352a18c96223a5deca9e5b62dd93"
+  },
+  "original_curve_validation": {
+    "added_irivm_rows": 352,
+    "max_delta_e_difference": 0.0,
+    "max_i_perp_difference": 0.0,
+    "redrawn_original_rows": 3766,
+    "registered_rows": 3766
+  },
+  "rendered_visual_qa": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/tmp/pdfs/muller_q10_irivm_2x3/page-final.png",
+    "sha256": "5fcfe21e1da444f5808d33c02bf4a4ccb98bd2f4910a0839c8b974ad782d1c77",
+    "visual_defects": 0
+  },
+  "status": "visual_qa_passed",
+  "xlim": [
+    0,
+    3000
+  ],
+  "xscale": "linear"
+}

@@ -1,0 +1,94 @@
+{
+  "bindings": {
+    "arc500_contract_freezer": {
+      "path": "../../scripts/freeze_selected_9990_arc500_contract.py",
+      "sha256": "3da07da4c25f7e7f719062ad463d59867d20e75e47bd952f680bbce71f6df8b8"
+    },
+    "arc500_evaluator": {
+      "path": "../../scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ab56602fa94e3ab5f03b38b5210fc99430e128491ff3ea1e0b5967b21a2f5304"
+    },
+    "exact_prefix_verifier": {
+      "path": "../../scripts/verify_selected_9990_prefix.py",
+      "sha256": "d70f44dc12d219b9e075cbbc19dcf19fda5cfac99b3be1606f0d67b469f5e5a3"
+    },
+    "long_member_verifier": {
+      "path": "../../scripts/verify_long_budget_member.py",
+      "sha256": "33e668e9ab063e259a75cfc87d93ffdd1348b5a7caffef5b3dfa34e6969d2d9b"
+    },
+    "prefix_criterion": {
+      "path": "../BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json",
+      "sha256": "a1e485cda26065ae1c91188589450053c4a25d0e7c871ee5ac9faa5dee6c6432"
+    },
+    "reference_4080_arc500": {
+      "path": "../../runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.npz",
+      "sha256": "0c64468d16ae3f01367b00a8b56b9450be1ac405966508f8ab52d4ca89b7d329"
+    },
+    "reference_4080_arc500_audit": {
+      "path": "../../runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.audit.json",
+      "sha256": "a2893048d8086b573c107450ad9feeb19fe3e54aec6fb288178a95560c6e66d7"
+    },
+    "reference_4080_registration": {
+      "path": "../screen/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "sha256": "6896c62db4964fcd218275e0898764519ee7906f249b11b03dce0df6232b7244"
+    },
+    "reference_4080_result": {
+      "path": "../../runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.npz",
+      "sha256": "df069ff6cb3b36f2660d9f7b3403e260695f4b4b01b3da7ee3c436d9da56c275"
+    },
+    "reference_4080_verification": {
+      "path": "../../reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "selected_9990_design": {
+      "path": "../BB_IRIVM_SELECTED_9990_DESIGN_20260902_R1.json",
+      "sha256": "e36b596113fc1dd8cfddf1aa37efb124182c5c7dcd2aedcdf88e7253ebc182e2"
+    },
+    "selected_authorization": {
+      "path": "../execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "5306d0cd6470068a9719383b567761614022391b02ebdc3d47812d1121dd6785"
+    },
+    "selected_registration": {
+      "path": "../production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    }
+  },
+  "created_utc": "2026-09-01T21:29:22Z",
+  "incomplete_9990_result_read": false,
+  "ordered_terminal_gates": [
+    {
+      "name": "zero-OpenMM terminal member verification",
+      "proves": "NoF four-ledger identity, zero fixed-endpoint calls, atomic budget accounting, reference host, pre-child locks, and authorized launch-disk gate",
+      "requires": "terminal producer NPZ/audit and CHILD_EXITED_LOCKS_RELEASED receipt",
+      "stage": 1
+    },
+    {
+      "name": "exact reference-host 4080-prefix reproduction",
+      "proves": "eligible N_F sequence, committed paths, discrete I_perp, and online history are byte-exact with no tolerance fallback",
+      "requires": "PASS stage 1 receipt",
+      "stage": 2
+    },
+    {
+      "name": "zero-OpenMM selected-9990 arc500 contract freeze",
+      "proves": "complete eligible path list and exact reused/fresh path partition before any new diagnostic energy call",
+      "requires": "PASS stages 1 and 2",
+      "stage": 3
+    },
+    {
+      "name": "offline arc-length-500 energy diagnostic",
+      "proves": "500 uniform-arclength energies per unique path, zero force requests, zero optimization N_F contribution",
+      "requires": "frozen stage 3 contract",
+      "stage": 4
+    }
+  ],
+  "physical_E_or_F_calls_made_by_this_freeze": 0,
+  "schema": "bb-irivm-selected-9990-postrun-pipeline-v1",
+  "scope": "minimal terminal validation, exact 4080-prefix test, and arc-length-500 path/reuse freeze",
+  "status": "FROZEN_DURING_ACTIVE_OPTIMIZATION_WITHOUT_READING_AN_INCOMPLETE_RESULT",
+  "terminal_command_templates": {
+    "stage_1": "python scripts/verify_long_budget_member.py --registration registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json --authorization registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_r1.json --lock-receipt runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_r1.launch.json --result <TERMINAL_9990_RESULT.npz> --audit <TERMINAL_9990_RESULT.audit.json> --output reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json",
+    "stage_2": "python scripts/verify_selected_9990_prefix.py --criterion registrations/BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json --reference-registration registrations/screen/bb_irivm_a1e0_r01_m05_inf4080_r1.json --reference-result runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.npz --reference-verification reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json --selected-registration registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json --selected-result <TERMINAL_9990_RESULT.npz> --selected-verification reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json --output reports/verifications/BB_IRIVM_SELECTED_9990_EXACT_4080_PREFIX_20260902_R1.json",
+    "stage_3": "python scripts/freeze_selected_9990_arc500_contract.py --selected-result <TERMINAL_9990_RESULT.npz> --selected-audit <TERMINAL_9990_RESULT.audit.json> --selected-verification reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json --prefix-verification reports/verifications/BB_IRIVM_SELECTED_9990_EXACT_4080_PREFIX_20260902_R1.json --reuse-diagnostics runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.npz --reuse-audit runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.audit.json --output registrations/diagnostics/BB_IRIVM_SELECTED_9990_ARC500_20260902_R1.json",
+    "stage_4": "env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OPENMM_CPU_THREADS=1 PYTHONPATH=src:scripts /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python scripts/evaluate_discrete_iperp_densified_barrier.py --contract registrations/diagnostics/BB_IRIVM_SELECTED_9990_ARC500_20260902_R1.json --output runs/diagnostics/bb_irivm_selected_9990_arc500_20260902_r1.npz --reuse-diagnostics runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.npz --reuse-diagnostic-audit runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.audit.json"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "authorization_scope": "one exact fresh non-resumed registered member",
+  "campaign_preregistration_sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+  "concurrency": "one BB task on this host, two host-local fcntl locks, jobs=1",
+  "diagnostic_feedback": "forbidden during optimization",
+  "enabled": true,
+  "ff_builder_parity_gate_sha256": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+  "fixed_endpoint_policy": "hash-bound inherited endpoint E/F; endpoint getState attempts, misses, and optimization NoF must remain zero",
+  "issued_utc": "2026-09-01T09:04:41Z",
+  "label": "bb_irivm_a1e5_r05_m05_inf480_r1",
+  "member_registration_sha256": "de00fcda3acfb6250f156bb0ddd8f19259d535e983ff73072ea026a067e8fc36",
+  "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+  "registered_controls": {
+    "alpha": 100000.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 480,
+    "r": 0.5
+  },
+  "schema": "bb-irivm-per-member-execution-authorization-v1",
+  "smoke_240_gate_sha256": "6c259716dce2e91db9d4dddd6555c54bb9f2183749169b3229da7465db01c4d4",
+  "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "tier": "screen"
+}

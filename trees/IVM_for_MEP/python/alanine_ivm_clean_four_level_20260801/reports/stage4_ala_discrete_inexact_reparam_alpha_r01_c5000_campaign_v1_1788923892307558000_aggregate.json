@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "protocol_id": "stage4_ala_discrete_inexact_reparam_alpha_r01_c5000_campaign_v1",
+  "preregistration": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_inexact_reparam_alpha_r01_c5000_campaign_v1_1788923892307558000_preregistered.json",
+  "preregistration_sha256": "da1ded53f6dc11ac71ebe5bae64ba452f19c95fdc60467be220ff630912b6a05",
+  "cell_count": 8,
+  "unique_cell_count": 8,
+  "all_inner_caps_nonbinding": true,
+  "local_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_inexact_reparam_alpha_r01_c5000_campaign_v1_1788923892307558000_local_report.json",
+  "local_report_sha256": "78ef8b82b7b7a8dbc2b6f4f62d8728fb216c1494fce46a95bbddce5241592362",
+  "completed_unix": 1788924113.332135
+}

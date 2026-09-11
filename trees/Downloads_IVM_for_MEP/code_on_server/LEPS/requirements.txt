@@ -1,0 +1,6 @@
+numpy==1.24.4
+scipy==1.10.1
+matplotlib==3.7.2
+ase==3.23.0
+# Used only by the regression test against the historical PyTorch notebook.
+torch==2.5.0.dev20240729

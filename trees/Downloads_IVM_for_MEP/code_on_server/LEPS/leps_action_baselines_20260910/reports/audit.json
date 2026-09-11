@@ -1,0 +1,13 @@
+{
+  "analyzer_sha256": "30deb67e36eb9f96d041255a126165c2c64f3309adeb96e1cc746d6c5bdaf9de",
+  "ase_improved_tangent_crosscheck": true,
+  "checked_runs": 60,
+  "common_initial_path": true,
+  "energy_force_crosscheck": true,
+  "fixed_endpoints": true,
+  "force_plus_one_hvp_ledger_check": true,
+  "objective_crosscheck": true,
+  "passed": true,
+  "phase_switch_check": true,
+  "registration_sha256": "b715db668586c6c776f9c92dec93a331d756d110db380755b04edc3f06efed81"
+}

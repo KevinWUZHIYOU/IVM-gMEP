@@ -1,0 +1,37 @@
+{
+  "schema": "bb-irivm-long-prefix-reproducibility-criterion-v1",
+  "status": "FROZEN_BEFORE_FIRST_4080_RESULT_AND_BEFORE_9990_AUTHORIZATION",
+  "scope": "the selected 9990-N_F run versus the same setting's completed 4080-N_F run on the frozen remote reference host",
+  "reference_host": {
+    "hostname": "Mac-mini.local",
+    "address": "100.74.85.3",
+    "architecture": "arm64",
+    "processor": "Apple M4"
+  },
+  "cross_host_short_runs": {
+    "used_for_exact_prefix_test": false,
+    "reason": "the pre-4080 selected shorter trajectories were produced on the local Mac; the staged protocol does not assume cross-host bitwise identity"
+  },
+  "required_identity_before_comparison": [
+    "common initial path SHA-256",
+    "topology and endpoint-cache SHA-256",
+    "physical oracle and source closure SHA-256",
+    "alpha, r, m_max, eta, history, tangent, reparameterization, storage, thread, and endpoint controls",
+    "remote reference host and one-thread execution policy"
+  ],
+  "comparison_domain": "every fully reparameterization-committed state in the 4080 result, ordered by its actual optimization Number of Forces; wall time and any terminal uncommitted charged partial tail are excluded",
+  "exact_tests": [
+    "the eligible optimization-N_F sequence is an exact prefix of the 9990 eligible sequence",
+    "each corresponding stored 32-image Cartesian path is byte-identical after canonical little-endian float64 serialization",
+    "each corresponding discrete I_perp value and all online state/history arrays are byte-identical",
+    "endpoint getState attempts and endpoint cache misses remain zero in both runs"
+  ],
+  "tolerance_fallback": "forbidden",
+  "failure_rule": "any exact-prefix mismatch blocks the formal 9990 claim and is reported; no result-dependent tolerance or replacement setting is permitted",
+  "bindings": {
+    "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+    "long_budget_design_sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629",
+    "efficient_scan_amendment_sha256": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46",
+    "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc"
+  }
+}

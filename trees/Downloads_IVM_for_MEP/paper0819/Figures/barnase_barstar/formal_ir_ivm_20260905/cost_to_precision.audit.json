@@ -1,0 +1,55 @@
+{
+  "schema": "bb-irivm20k-ode30k-discrete-cost-pdf-qa-v2",
+  "status": "PASS_VISUALLY_CONFIRMED_300_DPI",
+  "created_local": "2026-09-06T04:16:39+08:00",
+  "pdf": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_cost_to_precision_1x3.pdf",
+    "sha256": "f4d132b858b9e8ba7c667a2e534861059b6be8b6723f6615324b6a059ebbd51a",
+    "bytes": 60093,
+    "pages": 1,
+    "page_size_points": [509.76, 232.56],
+    "encrypted": false
+  },
+  "render": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/tmp/pdfs/bb_irivm20k_ode30k_cost_qa_v2/figure.png",
+    "sha256": "790169a3ae013c988ceb113f9732ce6fa23e8e35f80abbdac3f112b1e451296d",
+    "dpi": 300,
+    "pixel_dimensions": [2124, 969]
+  },
+  "visual_checks": {
+    "three_panels_present": true,
+    "each_panel_square": true,
+    "legend_exact": ["IVM", "ODE-NEB"],
+    "panel_labels_exact": ["a", "b", "c"],
+    "x_labels_exact": ["I_perp", "Delta E", "S_hat"],
+    "y_label_exact": "Number of Forces",
+    "all_x_axes_reversed_logarithmic": true,
+    "display_windows": {
+      "I_perp": [10000.0, 5.0],
+      "Delta_E_kcal_per_mol": [1000.0, 80.0],
+      "S_hat_disc_kcal_per_mol": [100000.0, 3000.0]
+    },
+    "ratio_labels_exact": ["5.9×", "5.8×", "5.7×"],
+    "ratio_labels_bold_and_right_of_arrow_midpoint": true,
+    "threshold_guides_present": true,
+    "no_subtitle": true,
+    "no_clipped_or_overlapping_text": true,
+    "curves_and_first_passage_arrows_legible": true,
+    "embedded_fonts": true
+  },
+  "scientific_checks": {
+    "IVM_rows": 693,
+    "IVM_last_call": 693,
+    "IVM_last_optimization_N_F": 19993,
+    "ODE_NEB_rows": 1000,
+    "ODE_NEB_last_optimization_N_F": 30000,
+    "native_images": 32,
+    "native_segments": 31,
+    "densification": false,
+    "terminal_uncommitted_IR_tail_included": false,
+    "strict_first_passage_computed_before_display_clipping": true,
+    "physical_calls": 0,
+    "optimization_N_F_contribution": 0,
+    "independent_call693_metric_and_path_E_force_hash_spot_check": "PASS_BIT_EXACT"
+  }
+}

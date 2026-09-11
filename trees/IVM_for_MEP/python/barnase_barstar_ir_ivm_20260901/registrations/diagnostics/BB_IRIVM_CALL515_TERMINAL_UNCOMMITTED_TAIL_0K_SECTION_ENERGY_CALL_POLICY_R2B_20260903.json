@@ -1,0 +1,22 @@
+{
+  "coordinate_audit": {
+    "bytes": 2485,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.audit.json",
+    "sha256": "d8e1de581b4ae4c0ae4a742637cbee03658b464f21bf7169f3734b108a12b853"
+  },
+  "coordinate_manifest": {
+    "bytes": 135373288,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_0k_section_coordinates_59x28_20260903_r2.npz",
+    "sha256": "8d84d1a5e2881306e02cacfb035d16e21f8a02666911f90cc57d89dde6611bea"
+  },
+  "created_utc": "2026-09-03T05:24:50.621763+00:00",
+  "force_calls": 0,
+  "fresh_energy_only_attempts": 1650,
+  "inherited_fixed_endpoint_energy_values": 2,
+  "optimization_N_F_contribution": 0,
+  "physical_energy_or_force_calls_started": 0,
+  "schema": "bb-irivm-call515-terminal-tail-section-energy-r2-v1-call-policy",
+  "state_role": "returned terminal state; terminal uncommitted charged tail; not committed IVM",
+  "status": "FROZEN_BEFORE_FIRST_CALL515_SECTION_ENERGY_CALL",
+  "surface_energy_values": 1652
+}

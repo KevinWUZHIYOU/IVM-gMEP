@@ -1,0 +1,128 @@
+{
+  "all_candidates": [
+    {
+      "checkpoint_total_forces": 4920,
+      "dense_barrier_error": 0.009241692618516595,
+      "i_perp": 2.4091343395337926e-05,
+      "i_perp_rise_count_through_5000": 7,
+      "joint_log10_product": -6.6523874622904255,
+      "k": 0.1,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_273fa8bedd3c_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4980,
+      "dense_barrier_error": 0.011176612783600604,
+      "i_perp": 1.6907367292942984e-05,
+      "i_perp_rise_count_through_5000": 6,
+      "joint_log10_product": -6.723613807739108,
+      "k": 0.3,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_5ba27dc4e2c9_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4820,
+      "dense_barrier_error": 0.01270448219359821,
+      "i_perp": 0.00011764139965055185,
+      "i_perp_rise_count_through_5000": 7,
+      "joint_log10_product": -5.8254828482001555,
+      "k": 1.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_725ea2ec5ecf_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4880,
+      "dense_barrier_error": 0.02009240069493501,
+      "i_perp": 0.0002493111982258595,
+      "i_perp_rise_count_through_5000": 6,
+      "joint_log10_product": -5.3002263834614745,
+      "k": 3.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_389eeea12ddd_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4860,
+      "dense_barrier_error": 0.03833498910148592,
+      "i_perp": 0.0006191126321980303,
+      "i_perp_rise_count_through_5000": 6,
+      "joint_log10_product": -4.62463499055188,
+      "k": 10.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_e95df0b37436_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4820,
+      "dense_barrier_error": 0.06358927058246877,
+      "i_perp": 0.0019351167258906438,
+      "i_perp_rise_count_through_5000": 6,
+      "joint_log10_product": -3.9099089899678408,
+      "k": 20.0,
+      "run": "runs/ode_default_local_production/ode_neb/ode_neb_d45cb9845e79_budget5000.npz"
+    },
+    {
+      "checkpoint_total_forces": 4880,
+      "dense_barrier_error": 0.07248065268582593,
+      "i_perp": 0.0009144350902023542,
+      "i_perp_rise_count_through_5000": 5,
+      "joint_log10_product": -4.178625021339706,
+      "k": 30.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_7da75bf09cae_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4840,
+      "dense_barrier_error": 0.0006538470442194466,
+      "i_perp": 0.0013993496104046702,
+      "i_perp_rise_count_through_5000": 5,
+      "joint_log10_product": -6.038597603974747,
+      "k": 100.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_dca647081057_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4840,
+      "dense_barrier_error": 0.02777649150812067,
+      "i_perp": 0.0012532697306922179,
+      "i_perp_rise_count_through_5000": 5,
+      "joint_log10_product": -4.458278060947511,
+      "k": 300.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_a826ae6f933b_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4940,
+      "dense_barrier_error": 0.00030011012654540536,
+      "i_perp": 1.4334791920248223e-05,
+      "i_perp_rise_count_through_5000": 3,
+      "joint_log10_product": -8.366327956797956,
+      "k": 1000.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_17cd3c104e33_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4820,
+      "dense_barrier_error": 0.0014047240759538226,
+      "i_perp": 8.202685120189472e-06,
+      "i_perp_rise_count_through_5000": 1,
+      "joint_log10_product": -7.938452933589521,
+      "k": 3000.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_850a5565b410_budget500.npz"
+    },
+    {
+      "checkpoint_total_forces": 4780,
+      "dense_barrier_error": 0.0004404564606090844,
+      "i_perp": 0.002244909693993938,
+      "i_perp_rise_count_through_5000": 0,
+      "joint_log10_product": -6.004898140083783,
+      "k": 10000.0,
+      "run": "runs/ode_default_screen/ode_neb/ode_neb_b56457d69066_budget500.npz"
+    }
+  ],
+  "ase_optimizer_constructor": "NEBOptimizer(neb, method=\"ode\")",
+  "case": "fixed-Q unperturbed 10D Muller-Brown, 22 images",
+  "k20_interpretation": "fast before about 1000 total forces, but rebounds and is inferior at the 5000-force endpoint",
+  "only_tuned_parameter": "k",
+  "selected": {
+    "checkpoint_total_forces": 4940,
+    "dense_barrier_error": 0.00030011012654540536,
+    "i_perp": 1.4334791920248223e-05,
+    "i_perp_rise_count_through_5000": 3,
+    "joint_log10_product": -8.366327956797956,
+    "k": 1000.0,
+    "run": "runs/ode_default_screen/ode_neb/ode_neb_17cd3c104e33_budget500.npz"
+  },
+  "selected_k": 1000.0,
+  "selection_budget_total_forces": 5000,
+  "selection_rule": "Pareto/joint endpoint tradeoff in I_perp and densified barrier error"
+}

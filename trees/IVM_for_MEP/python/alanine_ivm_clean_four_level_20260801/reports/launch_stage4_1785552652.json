@@ -1,0 +1,41 @@
+{
+  "protocol": "clean-start four-level fixed-alpha Ala IVM audit",
+  "root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+  "common_initial_path": "inputs/common_initial_path_equidistant.npz",
+  "common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "runner_sha256": "accc408ee088d641f78e966bf18a1cafef385a0cf710e20494cb64e81320af15",
+  "orchestrator_sha256": "7b039a971ecd65d4ed8a7f2f27a62fad6d823c243381daf6316633a2da77bc9f",
+  "stages": {
+    "stage4": {
+      "output_dir": "runs/stage4_inexact_optimized_resample",
+      "budget": 500,
+      "rtols": [
+        0.8
+      ],
+      "description": "uniform optimized inexact IVM; projected resampling and run-local L-BFGS history"
+    }
+  },
+  "alphas": [
+    20.0
+  ],
+  "tasks": 1,
+  "jobs": 1,
+  "started_unix": 1785552652.8588202,
+  "finished_unix": 1785552669.50424,
+  "results": [
+    {
+      "stage": "stage4",
+      "alpha": 20.0,
+      "rtol": 0.8,
+      "budget": 220,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 16.63971209526062,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/ivm_clean_stage4_r0p8_a20_central_state_ivm_cfg030b1adbb2b9_budget220.npz",
+      "result_sha256": "adfb331626b7dd961ba725c062ba86cd3e75a1767a74b9519c0ca5efa13b1939",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_r0p8_a20_b220"
+    }
+  ],
+  "successful": 1,
+  "failed": 0
+}

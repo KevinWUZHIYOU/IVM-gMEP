@@ -1,0 +1,617 @@
+{
+  "budget": 20000,
+  "configs": [
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "4c6fed205691497a",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "17202957b64c66cb",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "ef9b7467149c210e",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "0d31a3a67da3862e",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "a92c87dda8d6d9e9",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "d67ebb83d97ad305",
+      "method": "gMAM",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "2a2735859190a3d0",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "55645c8fee923677",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "42875c67cc4024d5",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "3a4a068873ae51e5",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "7351c46150139342",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 0
+    },
+    {
+      "beta": null,
+      "budget": 20000,
+      "id": "eeac1b9645e9d6be",
+      "method": "gMAM",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 0
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "63182610a0bc7e44",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "354b0543a0339f1a",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "e507e92261e9a477",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "c5ed334fb00e5875",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "34d04ca468952ffe",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "102d5509f001736e",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "8f7ad9f02a9d99bf",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "80b80875663c66bd",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "d279a2855445d34c",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "95c572bbe1f529fd",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "bb0acf3f6de30aab",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.1,
+      "budget": 20000,
+      "id": "764e44f4b57dbf52",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "b8f2c5c26e51323d",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "4fc361628dd7b282",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "06080d554957c59e",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "f85cac1b2ba7565a",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "53d079258dc3592e",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "adcdf313953a9f72",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "cf3e23e48724cddc",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "85feecd6edfe0644",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "723be9dc54ef5a26",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "34fb8c298fc0adf9",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "7e4e3872dcd7fbab",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 0.3,
+      "budget": 20000,
+      "id": "5fdafe14bca5969e",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "8f12e028b7f8aebd",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "b164adaa4c1ae234",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "c761a7e5593b812e",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "6ddc4fc71980269f",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "b3aea75a8936209b",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "bb187b0b46993616",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "4b0ea1b6bdf0e05c",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "4441c7d84f0e3d10",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "24029ae8b4633dd9",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "e9a74d630a02ec10",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "60c519b3b7fcebd1",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 1.0,
+      "budget": 20000,
+      "id": "3dd27e750972d9b8",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "64fa4da4bb9c8da4",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "d0ec16c10d894272",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "e29f204f31ecdd3a",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "fe0f2364c93b1828",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "64b37bb45381d9e6",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "ecb52a92aeb42254",
+      "method": "StringNET",
+      "optimizer": "LBFGS",
+      "rate": 1.0,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "f4217e9f22a40716",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "19571f6e35b5fc02",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.001,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "99d7873090a7b4f2",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "bf9598797f2b8571",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.01,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "5089a58cdf25935a",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "string",
+      "warmup": 50
+    },
+    {
+      "beta": 3.0,
+      "budget": 20000,
+      "id": "ed711cb721d4d669",
+      "method": "StringNET",
+      "optimizer": "Adam",
+      "rate": 0.1,
+      "reparam": "ivm_spring",
+      "warmup": 50
+    }
+  ],
+  "derivative_validation": "48ef334dbc4e6f73a3f393a57cfc257e1c514c3261767e345b25438b3251a80e",
+  "inputs": {
+    "inputs/common_initial_path.npz": "59ce6ed37215299177bf28b7756e8045b530ff08bd8e5d557945106fdc373da4",
+    "leps_action_baselines_20260910/PROTOCOL.md": "f839790436ee133a4374c422fdd51f3438a8e071481b9f945438154c76d00e6d",
+    "leps_action_baselines_20260910/run_experiments.py": "4e1ccff1b7ce6d5c4356ec4e4bc80282b99e054dfaad20f869bfe4e20e676bb6",
+    "leps_irivm_ala_chig_lepsnative_20260829/src/leps_irivm_lepsnative.py": "8e58791bc9c702de630dec8f034eab8c8b327f51150e7d8f7695e9dd9f6fdc1e",
+    "src/leps_core.py": "a80f0c23252a2e273f4cf77d156c9a26de91b4559f56a4fad264638fa0e57aca",
+    "src/run_string_baseline.py": "7b053a6110b6750f8c09a81ece8d3589f862cf6e7dff6f9cacac7546d40352a1",
+    "src/torch_leps.py": "6933391494ede30c90cfdc7086607c76a32451579e7df35c7a325934792edbd1"
+  },
+  "registered_before_runs": true,
+  "selection": "mean normalized log I_perp + log absolute barrier error at 1000:1000:20000"
+}

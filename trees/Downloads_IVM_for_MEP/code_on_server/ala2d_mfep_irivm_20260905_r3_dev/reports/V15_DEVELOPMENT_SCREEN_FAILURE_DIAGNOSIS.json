@@ -1,0 +1,368 @@
+{
+  "schema_version": "ala2d.irivm.v15.development_screen.failure_diagnosis.v1",
+  "created_utc": "2026-09-05T04:56:14Z",
+  "development_only": true,
+  "formal_evidence": false,
+  "implementation_id": "ala2d-riemannian-v15-development-one-sided-r-resolved-lbfgs",
+  "decision": {
+    "status": "INCOMPLETE_SCREEN_NO_SELECTION",
+    "recommended_parameter_id": null,
+    "diagnostic_parameter_id": null,
+    "formal_md_authorized": false,
+    "formal_pdf_replacement_authorized": false,
+    "reason": "Only 30 of 48 registered trajectories contain every exact 0,20,...,2000 checkpoint; LOCF, ranking, selection, and formal-MD promotion are forbidden."
+  },
+  "registered_analyzer_refusal": {
+    "command": "env PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python src/analyze_development_screen.py",
+    "exit_code": 2,
+    "stderr": "ERROR: development screen is incomplete: 30/48 runs contain every exact checkpoint through 2000; LOCF and selection are forbidden",
+    "selection_executed": false,
+    "last_observation_carried_forward": false
+  },
+  "integrity_verification": {
+    "all_checks_passed": true,
+    "validated_run_count": 48,
+    "verified_completion_json_count": 48,
+    "verified_public_state_ledger_count": 48,
+    "verified_public_state_file_count": 3210,
+    "plan_sha256": "38c9c8aee4974a692949ce5b665979cfba12453562c7d4e303d18cf49f4cbd4c",
+    "execution_manifest_sha256": "bdd531d70d540bbf5fa0e9d5e3394fbf5f52d149b85ff85ecb17126fb9dbaac7",
+    "validated_inventory_digest": "6efa8aa9560cb69df73279d5d1ce75ae935fcb94e0ec710e0e24244a2805d0d7",
+    "core_source_sha256": "07ff2d70216bae7d3f95997805835b652bc755ab8f16cb4e82a489ae69ba56dc",
+    "runner_source_sha256": "7e2afcccb267817d534b8999d2d0ad21aeb3d0874ffa3d2a993d95ed32ff8b46",
+    "analyzer_source_sha256": "9c4fc954cc141ab67f844fa479151882a8d6c2d0cdf48d8c920722c3453ce3f6",
+    "analyzer_nonselecting_inventory_report": "reports/development_screen_analysis.json",
+    "analyzer_nonselecting_inventory_report_sha256": "08ad79068d9a2c0b041c4a645c5867d33ac22fab5514153c361bbf4014c8939b",
+    "campaign_analysis_source_sha256": "51c7733cc1e6fdf22d9fa89a3ca59f5c77a87c5c40f17eab52f99aaccb0daf13",
+    "formal_pdf_unchanged_sha256": {
+      "Figures/ala2_2d_FreeEnergy/MFEP_IVM_vs_FENEB_bestpair_threepanel.pdf": "ed57a7089730e760862ac435545d7e9fc8534601ee8c9008635b1a16d54b9932",
+      "Figures/ala2_2d_FreeEnergy/MFEP_IVM_vs_FENEB_contour_fourpanel.pdf": "e872be9fd9d4cea83df67f1f94fe04e6a06ff3d5093108a4afc07877f8b993e1"
+    }
+  },
+  "campaign_counts": {
+    "registered_trajectory_count": 48,
+    "complete_exact_0_to_2000_count": 30,
+    "algorithmic_zero_query_stop_count": 18,
+    "execution_failure_count": 0,
+    "development_query_equivalents_total": 63240,
+    "development_query_equivalents_are_formal_mean_force_evaluations": false,
+    "complete_band_internal_image_count": 20,
+    "complete_band_development_query_equivalents": 20,
+    "mean_force_vector_components_per_collective_variable_point": 2,
+    "components_jointly_count_as_one_evaluation_at_one_point": true
+  },
+  "by_oracle_stream": [
+    {
+      "oracle_kind": "deterministic",
+      "master_seed": null,
+      "complete": 12,
+      "algorithmic_stop": 0,
+      "execution_failure": 0,
+      "development_query_equivalents": 24000,
+      "stop_reason_counts": {}
+    },
+    {
+      "oracle_kind": "synthetic",
+      "master_seed": 1401,
+      "complete": 5,
+      "algorithmic_stop": 7,
+      "execution_failure": 0,
+      "development_query_equivalents": 11060,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 4,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 3
+      }
+    },
+    {
+      "oracle_kind": "synthetic",
+      "master_seed": 1402,
+      "complete": 7,
+      "algorithmic_stop": 5,
+      "execution_failure": 0,
+      "development_query_equivalents": 14820,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 5,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 0
+      }
+    },
+    {
+      "oracle_kind": "synthetic",
+      "master_seed": 1403,
+      "complete": 6,
+      "algorithmic_stop": 6,
+      "execution_failure": 0,
+      "development_query_equivalents": 13360,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 3,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 3
+      }
+    }
+  ],
+  "failure_modes": [
+    {
+      "name": "post_reparameterization_path_exceeds_frozen_anchor_trust_radii",
+      "count": 12,
+      "all_before_global_warm_takeover": true,
+      "all_h0_error": true,
+      "all_warm_error_none": true,
+      "interpretation": "The normal proposal was capped without accounting for the current displacement from the frozen anchor, and article reparameterization could move the resulting path outside the remaining trust region."
+    },
+    {
+      "name": "whole_band_cap_failed_to_enforce_every_image_radius",
+      "count": 6,
+      "all_before_global_warm_takeover": true,
+      "all_h0_error": true,
+      "all_warm_error_none": true,
+      "interpretation": "A single nextafter correction did not robustly enforce every binary64 radius; this is an implementation-level globalization failure, not evidence of a wrong physical path."
+    }
+  ],
+  "by_parameter": [
+    {
+      "parameter_id": "a10em5_r0p4_m4",
+      "alpha": 0.0001,
+      "r": 0.4,
+      "m_max": 4,
+      "complete": 3,
+      "algorithmic_stop": 1,
+      "stop_reason_counts": {"whole_band_cap_failed_to_enforce_every_image_radius": 1},
+      "early_stop_last_query_equivalents": {"1403": 160}
+    },
+    {
+      "parameter_id": "a10em5_r0p4_m8",
+      "alpha": 0.0001,
+      "r": 0.4,
+      "m_max": 8,
+      "complete": 4,
+      "algorithmic_stop": 0,
+      "stop_reason_counts": {},
+      "early_stop_last_query_equivalents": {}
+    },
+    {
+      "parameter_id": "a10em5_r0p7_m4",
+      "alpha": 0.0001,
+      "r": 0.7,
+      "m_max": 4,
+      "complete": 2,
+      "algorithmic_stop": 2,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 1,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 1
+      },
+      "early_stop_last_query_equivalents": {"1402": 220, "1403": 160}
+    },
+    {
+      "parameter_id": "a10em5_r0p7_m8",
+      "alpha": 0.0001,
+      "r": 0.7,
+      "m_max": 8,
+      "complete": 2,
+      "algorithmic_stop": 2,
+      "stop_reason_counts": {"post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 2},
+      "early_stop_last_query_equivalents": {"1401": 300, "1402": 220}
+    },
+    {
+      "parameter_id": "a13em5_r0p4_m4",
+      "alpha": 0.00013,
+      "r": 0.4,
+      "m_max": 4,
+      "complete": 1,
+      "algorithmic_stop": 3,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 2,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 1
+      },
+      "early_stop_last_query_equivalents": {"1401": 100, "1402": 100, "1403": 220}
+    },
+    {
+      "parameter_id": "a13em5_r0p4_m8",
+      "alpha": 0.00013,
+      "r": 0.4,
+      "m_max": 8,
+      "complete": 2,
+      "algorithmic_stop": 2,
+      "stop_reason_counts": {
+        "post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 1,
+        "whole_band_cap_failed_to_enforce_every_image_radius": 1
+      },
+      "early_stop_last_query_equivalents": {"1401": 100, "1402": 180}
+    },
+    {
+      "parameter_id": "a13em5_r0p7_m4",
+      "alpha": 0.00013,
+      "r": 0.7,
+      "m_max": 4,
+      "complete": 2,
+      "algorithmic_stop": 2,
+      "stop_reason_counts": {"post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 2},
+      "early_stop_last_query_equivalents": {"1401": 100, "1402": 100}
+    },
+    {
+      "parameter_id": "a13em5_r0p7_m8",
+      "alpha": 0.00013,
+      "r": 0.7,
+      "m_max": 8,
+      "complete": 3,
+      "algorithmic_stop": 1,
+      "stop_reason_counts": {"whole_band_cap_failed_to_enforce_every_image_radius": 1},
+      "early_stop_last_query_equivalents": {"1401": 100}
+    },
+    {
+      "parameter_id": "a16em5_r0p4_m4",
+      "alpha": 0.00016,
+      "r": 0.4,
+      "m_max": 4,
+      "complete": 3,
+      "algorithmic_stop": 1,
+      "stop_reason_counts": {"post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 1},
+      "early_stop_last_query_equivalents": {"1403": 300}
+    },
+    {
+      "parameter_id": "a16em5_r0p4_m8",
+      "alpha": 0.00016,
+      "r": 0.4,
+      "m_max": 8,
+      "complete": 3,
+      "algorithmic_stop": 1,
+      "stop_reason_counts": {"whole_band_cap_failed_to_enforce_every_image_radius": 1},
+      "early_stop_last_query_equivalents": {"1401": 140}
+    },
+    {
+      "parameter_id": "a16em5_r0p7_m4",
+      "alpha": 0.00016,
+      "r": 0.7,
+      "m_max": 4,
+      "complete": 3,
+      "algorithmic_stop": 1,
+      "stop_reason_counts": {"post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 1},
+      "early_stop_last_query_equivalents": {"1403": 260}
+    },
+    {
+      "parameter_id": "a16em5_r0p7_m8",
+      "alpha": 0.00016,
+      "r": 0.7,
+      "m_max": 8,
+      "complete": 2,
+      "algorithmic_stop": 2,
+      "stop_reason_counts": {"post_reparameterization_path_exceeds_frozen_anchor_trust_radii": 2},
+      "early_stop_last_query_equivalents": {"1401": 220, "1403": 260}
+    }
+  ],
+  "seed_1401_diagnostic": {
+    "selection_evidence": false,
+    "scoring": "Read-only deterministic post-hoc scoring at exact shared checkpoints; no LOCF.",
+    "complete_trajectory_count": 5,
+    "algorithmic_stop_count": 7,
+    "movement_complete_band_count": 333,
+    "exact_center_hold_complete_band_count": 220,
+    "movement_development_query_equivalents": 6660,
+    "exact_center_resample_development_query_equivalents": 4400,
+    "hold_reason_counts": {
+      "selected_admissibility_score_LCB_nonpositive": 110,
+      "invalid_warm_candidate_with_reducible_noise": 108,
+      "anchor_lower_bound_zero_exact_center_resample": 2
+    },
+    "long_invalid_warm_holds": [
+      {
+        "parameter_id": "a10em5_r0p7_m4",
+        "first_hold_query_equivalents": 1260,
+        "last_hold_query_equivalents": 2000,
+        "consecutive_hold_count": 38,
+        "last_movement_query_equivalents": 1240
+      },
+      {
+        "parameter_id": "a16em5_r0p7_m4",
+        "first_hold_query_equivalents": 620,
+        "last_hold_query_equivalents": 2000,
+        "consecutive_hold_count": 70,
+        "last_movement_query_equivalents": 600
+      }
+    ],
+    "complete_trajectory_metrics": [
+      {
+        "parameter_id": "a10em5_r0p4_m4",
+        "terminal_correct_path_guard_pass": true,
+        "front_middle_joint_win_count_out_of_80": 3,
+        "front_middle_I_perp_win_count_out_of_80": 5,
+        "front_middle_Delta_F_error_win_count_out_of_80": 11,
+        "tail_I_perp_win_fraction": 0.7,
+        "tail_I_perp_normalized_auc_ratio_to_current_ivm": 0.9138807844544261,
+        "tail_Delta_F_error_win_fraction": 0.3,
+        "tail_Delta_F_error_normalized_auc_ratio_to_current_ivm": 1.0071067246671501,
+        "tail_I_arc_win_fraction": 1.0
+      },
+      {
+        "parameter_id": "a10em5_r0p4_m8",
+        "terminal_correct_path_guard_pass": true,
+        "front_middle_joint_win_count_out_of_80": 0,
+        "front_middle_I_perp_win_count_out_of_80": 2,
+        "front_middle_Delta_F_error_win_count_out_of_80": 0,
+        "tail_I_perp_win_fraction": 0.0,
+        "tail_I_perp_normalized_auc_ratio_to_current_ivm": 3.3719647941013338,
+        "tail_Delta_F_error_win_fraction": 0.0,
+        "tail_Delta_F_error_normalized_auc_ratio_to_current_ivm": 1.1746665232522244,
+        "tail_I_arc_win_fraction": 1.0
+      },
+      {
+        "parameter_id": "a10em5_r0p7_m4",
+        "terminal_correct_path_guard_pass": true,
+        "front_middle_joint_win_count_out_of_80": 1,
+        "front_middle_I_perp_win_count_out_of_80": 5,
+        "front_middle_Delta_F_error_win_count_out_of_80": 13,
+        "tail_I_perp_win_fraction": 0.05,
+        "tail_I_perp_normalized_auc_ratio_to_current_ivm": 1.3267518620962067,
+        "tail_Delta_F_error_win_fraction": 0.35,
+        "tail_Delta_F_error_normalized_auc_ratio_to_current_ivm": 0.9999670342598651,
+        "tail_I_arc_win_fraction": 1.0
+      },
+      {
+        "parameter_id": "a16em5_r0p4_m4",
+        "terminal_correct_path_guard_pass": true,
+        "front_middle_joint_win_count_out_of_80": 3,
+        "front_middle_I_perp_win_count_out_of_80": 3,
+        "front_middle_Delta_F_error_win_count_out_of_80": 17,
+        "tail_I_perp_win_fraction": 0.15,
+        "tail_I_perp_normalized_auc_ratio_to_current_ivm": 1.1962032992435085,
+        "tail_Delta_F_error_win_fraction": 0.35,
+        "tail_Delta_F_error_normalized_auc_ratio_to_current_ivm": 0.9996651148602057,
+        "tail_I_arc_win_fraction": 1.0
+      },
+      {
+        "parameter_id": "a16em5_r0p7_m4",
+        "terminal_correct_path_guard_pass": true,
+        "front_middle_joint_win_count_out_of_80": 2,
+        "front_middle_I_perp_win_count_out_of_80": 2,
+        "front_middle_Delta_F_error_win_count_out_of_80": 10,
+        "tail_I_perp_win_fraction": 0.0,
+        "tail_I_perp_normalized_auc_ratio_to_current_ivm": 1.8500921005721627,
+        "tail_Delta_F_error_win_fraction": 0.15,
+        "tail_Delta_F_error_normalized_auc_ratio_to_current_ivm": 1.015577206262076,
+        "tail_I_arc_win_fraction": 1.0
+      }
+    ],
+    "interpretation": "All five complete paths remain in the registered MFEP channel and all dominate Current IVM in I_arc, but no seed-1401 trajectory simultaneously satisfies the tail I_perp and barrier-error requirements. This single inspected stream cannot supply the registered three-seed median or authorize selection."
+  },
+  "v16_minimal_correction_directions": [
+    {
+      "name": "anchor_aware_trust_globalization",
+      "scope": "pre- and post-takeover geometric candidate construction",
+      "requirements": [
+        "Cap one common scalar using the remaining radius from the current paid path to the frozen outer anchor, not the step norm alone.",
+        "After article reparameterization, permit only a fixed preregistered finite sequence of zero-query common-scale backtracks and accept only when every internal image is inside its frozen trust radius.",
+        "If the finite backtrack sequence fails, permit at most one durable zero-query outer-frame refresh per exact current-path hash; a second failure at the same path is terminal.",
+        "Use an explicit binary64 safety margin instead of relying on one nextafter correction."
+      ]
+    },
+    {
+      "name": "single_independent_warm_validation_and_bounded_restart",
+      "scope": "post-takeover warm candidate uncertainty",
+      "requirements": [
+        "Freeze the candidate path, actual post-reparameterization normal step, outer frame, and candidate hash before validation.",
+        "Use exactly one fresh exact-center complete band to validate the frozen candidate with raw, not shrinkage-centered, proximal improvement statistics.",
+        "Separate lower-bound-positive, upper-bound-nonpositive, and still-crossing-zero outcomes; never label the crossing-zero outcome as a confirmed bad direction.",
+        "For confirmed-bad or unresolved-after-one-validation outcomes, keep the global one-way takeover latch true, exclude all pre-reset observations from future secants, refresh the outer frame at zero query cost, and continue only with a persisted warm scalar safeguard until two new qualified secants exist.",
+        "Permit at most one warm restart per exact current-path hash; otherwise terminate durably and never restore H0 motion."
+      ],
+      "data_independence": "The inspected V15 seeds are design data. V16 acceptance must use newly preregistered, previously unseen synthetic streams; V15 seed 1401 cannot be reused as independent confirmation."
+    }
+  ]
+}

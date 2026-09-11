@@ -1,0 +1,111 @@
+{
+  "closure": {
+    "WALs": [
+      {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.dense_joint_ef.wal.jsonl",
+        "sha256": "dc2e25c2847280cb471c2cf518bef66f9d5735f83326bb1df205732621ea54a7"
+      }
+    ],
+    "audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.audit.json",
+      "sha256": "18512bdae33a82d9cf2810172bc8f0fa21e244d7b0938a3ea39191a7f3702b2c"
+    },
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_LATE_FOUR_JOINT_EF_ARC500_20260902_R1.json",
+      "sha256": "386f6088ff38410e0829338c65d6fd08452148c81eeeefc7c3a1ca1ea31359d4"
+    },
+    "evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_ode_neb_late_four_joint_ef.py",
+      "sha256": "fbd0612b9ace3378f0314f2bf14460c2e5024d8b90f69affd733a4a4664eea0e"
+    },
+    "manifest": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.manifest.json",
+      "sha256": "08bd4b14fd3f812f3fada42623688a47f6741dd8ca51e0069615a9456034d513"
+    },
+    "result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.npz",
+      "sha256": "a60bc51386c4b74351bcef2015052911b53d345c593cfa90fc52212e7cecbe23"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-02T14:22:59Z",
+  "include_all_pack_points": true,
+  "method": "ODE-NEB",
+  "pack_id": "ode-late-four-measured-interim-r1",
+  "pack_spec_freezer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_joint_ef_cost_pack_spec.py",
+    "sha256": "beefa5cd731c52055be4ba7c34f9884b035917138ba827cddedcd94c82a49958"
+  },
+  "physical_calls_by_pack_spec_freezer": 0,
+  "points": [
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.shards/ode_neb_nf02040_arc500_joint_ef_late_r1.npz",
+        "sha256": "e03a565034963c4e1341350c882d2771cb3c536bd50cafcc15931b4ebbeb843d"
+      },
+      "densified_Delta_E_kcal_per_mol": 1110.6269076536107,
+      "discrete_I_perp": 21120.477930239103,
+      "discrete_I_perp_evidence": {
+        "force_key": "paid_internal_force_eV_per_A",
+        "kind": "recomputed_original_internal_force"
+      },
+      "label": "ODE-NEB_NF2040",
+      "optimization_N_F": 2040,
+      "selected_path_sha256": "01935fb657b4b1d102564a496d86598df72a1b6db33ce5f0da5ec5546c1a16b0"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.shards/ode_neb_nf04080_arc500_joint_ef_late_r1.npz",
+        "sha256": "ed39787159b7c86ccabc805148d46322f09d5ee4aea16e8e2e8186c1228b80df"
+      },
+      "densified_Delta_E_kcal_per_mol": 912.3728204381405,
+      "discrete_I_perp": 4371.16533670238,
+      "discrete_I_perp_evidence": {
+        "force_key": "paid_internal_force_eV_per_A",
+        "kind": "recomputed_original_internal_force"
+      },
+      "label": "ODE-NEB_NF4080",
+      "optimization_N_F": 4080,
+      "selected_path_sha256": "b28a7222e61e457eae7e3b3dcfd90f83fec6b78728d64497914e1f607f4343d7"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.shards/ode_neb_nf08160_arc500_joint_ef_late_r1.npz",
+        "sha256": "ac29c2c115594a29d9b5dbbf3d04912aa82714a610d6da532255e09cf4556746"
+      },
+      "densified_Delta_E_kcal_per_mol": 2866.723138079531,
+      "discrete_I_perp": 1387.2479290694707,
+      "discrete_I_perp_evidence": {
+        "force_key": "paid_internal_force_eV_per_A",
+        "kind": "recomputed_original_internal_force"
+      },
+      "label": "ODE-NEB_NF8160",
+      "optimization_N_F": 8160,
+      "selected_path_sha256": "544b19638a79182cc665cc3e40c3cef2c69e9944db19dcf6ee6eecbe5a562c20"
+    },
+    {
+      "authoritative_shard": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.shards/ode_neb_nf09990_arc500_joint_ef_late_r1.npz",
+        "sha256": "53e20b9e5bb502b393ac11a484bd8e117ed5453750c9a0d42494667150392531"
+      },
+      "densified_Delta_E_kcal_per_mol": 1025.6896221952336,
+      "discrete_I_perp": 631.9043986870009,
+      "discrete_I_perp_evidence": {
+        "force_key": "paid_internal_force_eV_per_A",
+        "kind": "recomputed_original_internal_force"
+      },
+      "label": "ODE-NEB_NF9990",
+      "optimization_N_F": 9990,
+      "selected_path_sha256": "4c40f30af44fdbda87684d887136bcb1b71f6b20f6785892d50fd10ffcfdff09"
+    }
+  ],
+  "schema": "bb-joint-ef-cost-to-precision-pack-spec-v1",
+  "status": "COMPLETE_ZERO_OPENMM_VALIDATED_PACK"
+}

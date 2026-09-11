@@ -1,0 +1,98 @@
+{
+  "schema": "bb-irivm-r6b-postrun-verification-readiness-v1",
+  "status": "FROZEN_READY_WAITING_FOR_RUNNING_CHILD_TO_EXIT",
+  "created_utc": "2026-09-03T20:59:12Z",
+  "created_hkt": "2026-09-04T04:59:12+0800",
+  "execution_authorized_by_this_file": false,
+  "physical_execution_modified_or_interrupted": false,
+  "OpenMM_imported_or_called": false,
+  "optimization_N_F_contribution": 0,
+  "purpose": "freeze the zero-query R6B post-run acceptance commands before the N_F=30000 child completes",
+  "experiment_registration_unchanged": true,
+  "do_not_execute_verify_until": {
+    "receipt": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/campaign_status/bb-irivm-fullstate-nf30000-remote-r6b-lock-receipt.json",
+    "required_status": "CHILD_EXITED_LOCKS_RELEASED",
+    "required_returncode": 0,
+    "required_unique_runtime_result_count": 1,
+    "required_unique_runtime_audit_count": 1,
+    "required_capture_terminal_files": [
+      "full_state_history.manifest.json",
+      "full_state_history.canonical_index.json",
+      "full_state_history.audit.json"
+    ]
+  },
+  "frozen_scripts": {
+    "postrun_driver": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay_r6b_postrun.py",
+      "sha256": "9619fc9458d0f91e3ba4b591fdca539997434faadf6f9bdbbd870c380017c5a7",
+      "bytes": 7462
+    },
+    "supplemental_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay_r6b_supplemental.py",
+      "sha256": "638060240cd5d10dd53759b4c848c6d5a970e7ea460751e6c7655842e15cdb8a",
+      "bytes": 11371
+    }
+  },
+  "bound_existing_gates": {
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B.json",
+      "sha256": "0c0c1d9df6113bc67eedb83ea0a6a2b5abc8b3042acb6d6913dfb702a351c5b2"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b.json",
+      "sha256": "8be7c1b6eb5ea3d7379312734cc8ceae7c85ceb453a2db65060d6ffa6ec5c00e"
+    },
+    "Mutagen_gate": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_MUTAGEN_GATE_NF30000_20260904_R6B.json",
+      "sha256": "e070a97a50a6df972f08485ff42a8c099c0f243496d16a90797919f677d54d5f"
+    }
+  },
+  "synthetic_preflight_tests": {
+    "fixture_path_is_temporary_not_a_formal_artifact": "/private/tmp/test_bb_r6b_terminal_acceptance_helpers.py",
+    "fixture_sha256": "35d786217b7d6faac2395037ce3a018422fb792adcc54b12995b91690c0e0cf6",
+    "new_R6B_cases": 6,
+    "combined_relevant_tests": 19,
+    "result": "19 passed in 0.65s",
+    "covered": [
+      "exact N_F=30000 budget closure accepted",
+      "N_F=29983 with 17-force atomic remainder and quarantined tail accepted",
+      "runtime and shard fixed endpoints both zero accepted",
+      "nonzero fixed endpoint rejected",
+      "clean terminal lock receipt accepted",
+      "nonzero locked-child return code rejected"
+    ]
+  },
+  "remote_frozen_source_inventory_preflight": {
+    "checked_sources": 18,
+    "mismatches": [],
+    "status": "PASS_REMOTE_FROZEN_SOURCE_INVENTORY"
+  },
+  "observed_exact_closed_prefix_preflight": {
+    "R6B_closed_calls_compared": 135,
+    "R5B_available_calls": 515,
+    "fields": [
+      "call_per_image",
+      "optimization_N_F",
+      "path_sha256",
+      "energy_sha256",
+      "force_sha256"
+    ],
+    "mismatches": [],
+    "status": "PASS_EXACT_CLOSED_PREFIX"
+  },
+  "remote_commands_after_child_exit_only": {
+    "working_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+    "readiness": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python scripts/run_selected_ivm_full_state_history_replay_r6b_postrun.py status",
+    "formal_acceptance": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python scripts/run_selected_ivm_full_state_history_replay_r6b_postrun.py verify"
+  },
+  "prospective_outputs": {
+    "primary": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_PRIMARY.json",
+    "supplemental": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_SUPPLEMENTAL.json"
+  },
+  "estimated_post_child_duration": {
+    "primary_and_supplemental_external_disk_scan_minutes": "3-8",
+    "Mutagen_flush_and_local_hash_confirmation_minutes": "1-3",
+    "total_minutes": "4-11"
+  },
+  "known_residual_risk": "The live recorder must atomically finalize the last pending shard, result, audit, manifest, canonical index, and capture audit before the locked child exits. If producer finalization itself fails, the WAL and shards remain evidence but verify intentionally fails closed; no recovery is attempted while the experiment is running."
+}

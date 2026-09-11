@@ -1,0 +1,86 @@
+{
+  "schema": "bb-irivm-user-scope-cancelled-member-closure-v1",
+  "created_utc": "2026-09-01T10:06:48Z",
+  "status": "PASS_THREE_RETAINED_MEMBERS_COMPLETE_ONE_QUEUED_MEMBER_CANCELLED_PRESTART",
+  "raw_batch_status": {
+    "path": "reports/campaign_status/bb-irivm-alpha-scan-local-even-480-20260901-r1.json",
+    "sha256": "ee6fe5225efb0feffe479367fca21aa458add40890fa2a4a689c403fa23ab0e0",
+    "terminal_status": "failed",
+    "interpretation": "The raw runner uses a fail-closed missing-authorization exit for a member that the user cancelled after the serialized run had already been launched. This is an expected prestart cancellation, not a failed optimization trajectory."
+  },
+  "operative_alpha_scope": {
+    "path": "registrations/USER_ALPHA_SCOPE_AMENDMENT_20260901_R2.json",
+    "sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f",
+    "retained_upper_bound": 1000.0
+  },
+  "completed_retained_members": [
+    {
+      "label": "bb_irivm_a1em1_r05_m05_inf480_r1",
+      "alpha": 0.1,
+      "optimization_N_F": 480,
+      "audit_consistent": true
+    },
+    {
+      "label": "bb_irivm_a1e1_r05_m05_inf480_r1",
+      "alpha": 10.0,
+      "optimization_N_F": 480,
+      "audit_consistent": true
+    },
+    {
+      "label": "bb_irivm_a1e3_r05_m05_inf480_r1",
+      "alpha": 1000.0,
+      "optimization_N_F": 480,
+      "result_sha256": "ff8a36be77750ecd3336c36a8e30980215a082160a679f537cc86bbe6f2f85d1",
+      "audit_sha256": "1cb97c975945f1cd74662616c316441c206a1a4168a16edf42d491ac7e5dd150",
+      "audit_consistent": true,
+      "joint_energy_force_attempts": 480,
+      "successful_joint_energy_force_evaluations": 480,
+      "internal_image_evaluations": 480,
+      "fixed_endpoint_getState_attempts": 0,
+      "fixed_endpoint_cache_misses": 0,
+      "inherited_fixed_endpoint_entries": 2,
+      "per_internal_image_evaluations": 16,
+      "eligible_reparameterized_states": [
+        {
+          "optimization_N_F": 90,
+          "discrete_I_perp": 68388140.05875194
+        },
+        {
+          "optimization_N_F": 300,
+          "discrete_I_perp": 6065453.612210596
+        }
+      ],
+      "terminal_uncommitted_charged_evaluations": 180,
+      "terminal_partial_state_quarantined": true
+    }
+  ],
+  "cancelled_queued_member": {
+    "label": "bb_irivm_a1e5_r05_m05_inf480_r1",
+    "alpha": 100000.0,
+    "registered_optimization_N_F": 480,
+    "actual_optimization_N_F": 0,
+    "result_files": 0,
+    "audit_files": 0,
+    "active_authorization_present_at_attempt": false,
+    "preserved_cancelled_authorization": "registrations/cancelled_execution_authorizations/bb_irivm_a1e5_r05_m05_inf480_r1.json",
+    "preserved_cancelled_authorization_sha256": "4d9370c839e2da20000b13540254773393989b94f0c42e674514027f7f23a695",
+    "classification": "USER_CANCELLED_BEFORE_OPENMM_RUNTIME",
+    "scientific_failure": false
+  },
+  "prestart_gate_evidence": {
+    "member_runner": "src/run_barnase_barstar_ir_ivm_member.py",
+    "member_runner_sha256": "a5d07fc5b85a294122ecbbf433d0568674f665c92348c5cff976e6d4e694b61e",
+    "order": "run_member calls _require_execution_authorization before runtime.main; the missing active authorization raises before construction of the OpenMM optimization runtime",
+    "observed_exception": "construction is zero-Force only: immutable per-member execution authorization has not been issued",
+    "higher_alpha_result_counts": {
+      "alpha_1e4": 0,
+      "alpha_1e5": 0,
+      "alpha_1e6": 0
+    }
+  },
+  "resource_closure": {
+    "local_BB_locks_open_after_terminal_exit": 0,
+    "jobs": 1
+  },
+  "reporting_rule": "Count the three retained local alpha values as completed. Report alpha=1e5 as untested by user-directed cancellation with 0 N_F; never include it in a failure rate or scientific ranking."
+}

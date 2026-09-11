@@ -1,0 +1,29 @@
+{
+  "schema": "bb-irivm-ff-builder-parity-zero-force-gate-v1",
+  "checked_utc": "2026-09-01T08:48:15Z",
+  "status": "PASS",
+  "internal_image": 1,
+  "matrix_shape": [9396, 9396],
+  "reference_nnz": 305064,
+  "accelerated_nnz": 305064,
+  "difference_nnz": 0,
+  "max_abs_difference": 0.0,
+  "backend_raw_joint_attempts": 0,
+  "backend_raw_joint_evaluations": 0,
+  "held_locks": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "system_xml_sha256_verified_by_backend_construction": "ef5d6907fe238ed54be5dcd11d900a7488fe0949a479e544e645c9d2711a9969",
+  "source_sha256": {
+    "scripts/verify_ff_builder_parity_zero_force.py": "b67eef33053e10d21408e4769d33a0f74389278f921da4a88679eaa1dbbefbf0",
+    "src/bb_ffprecon.py": "248f030d8f2e11ea1c5ac6d7cfd3d5fb1966c22162a33216c7d285d75d1d1df1",
+    "src/bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "input_sha256": {
+    "inputs/complex_fixed.pdb": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "inputs/common_initial_path32.npz": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "inputs/endpoint_joint_ef_cache.npz": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "claim": "The nonperiodic direct-displacement FF builder is numerically identical to the reference builder for the registered canonical BB image and makes zero OpenMM joint E/F calls."
+}

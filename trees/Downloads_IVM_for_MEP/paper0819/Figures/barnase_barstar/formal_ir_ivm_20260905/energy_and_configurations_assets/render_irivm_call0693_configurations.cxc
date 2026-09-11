@@ -1,0 +1,34 @@
+close all
+windowsize 1200 1200
+open "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_snapshots_plus_energy_assets/irivm_call0693_nf19993_separated_to_bound.pdb" coordsets true autoStyle false
+set bgColor white
+preset 1
+camera ortho
+lighting gentle
+material dull
+graphics silhouettes true color #202020 width 1.5
+show #1 models
+show #1 atoms
+coordset #1 25
+view #1 pad 0.08
+hide #1 atoms
+cartoon #1
+show #1 cartoons
+cartoon style #1 width 1.8 thickness 0.35 xsection oval
+color #1/C #4C78A8 target c
+color #1/F #F28E2B target c
+turn y 8
+turn x -6
+coordset #1 25
+wait 2
+save "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_snapshots_plus_energy_assets/irivm_frame_25.png" width 1800 height 1800 supersample 3 transparentBackground false
+coordset #1 27
+wait 2
+save "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_snapshots_plus_energy_assets/irivm_frame_27.png" width 1800 height 1800 supersample 3 transparentBackground false
+coordset #1 29
+wait 2
+save "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_snapshots_plus_energy_assets/irivm_frame_29.png" width 1800 height 1800 supersample 3 transparentBackground false
+coordset #1 32
+wait 2
+save "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_irivm20k_ode30k_snapshots_plus_energy_assets/irivm_frame_32.png" width 1800 height 1800 supersample 3 transparentBackground false
+exit

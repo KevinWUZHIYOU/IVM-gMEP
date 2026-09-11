@@ -1,0 +1,56 @@
+{
+  "diagnostic_returned_terminal": {
+    "additional_physical_calls_from_analysis": 0,
+    "call_per_image": 515,
+    "delta_e32_eV": 5.228353617533173,
+    "delta_e32_kcal_per_mol": 120.56844859712375,
+    "energy_sha256": "4ac71534483349e235a902d7bc4f7728692031131ee07210cc29d2bcc70e2d6e",
+    "force_sha256": "1ea5f7ccf254bc1194deb29ed8625760b8d2c5d8c33b1d68d044b8e32b9a58a1",
+    "formally_reportable": false,
+    "i_perp": 15.513490059900775,
+    "optimization_N_F": 14983,
+    "path_sha256": "5a4ba3c5dc8f7063c1963f0bfd951f82356e60d0ad9c4fc17c0bc8b0d36d8569",
+    "shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0515_stable_last.npz",
+      "sha256": "6f5a3241ba8f1341d4d497a1682b4d245b7309cbd7c497734f038966b2868077"
+    },
+    "state_role": "terminal_uncommitted_charged_tail"
+  },
+  "formal_terminal": {
+    "additional_physical_calls_from_analysis": 0,
+    "call_per_image": 318,
+    "delta_e32_eV": 6.447599820288019,
+    "delta_e32_kcal_per_mol": 148.68487565575188,
+    "energy_sha256": "a0acb7ab91f9326d807ccb37eae6f5de9a626aeac36b217705c79a2b344b73c7",
+    "force_sha256": "13e49b5dc3729c88fbc69423b53cb229a900e9edad76426f91b13c8a2431ec66",
+    "formally_reportable": true,
+    "i_perp": 34.37233486771936,
+    "optimization_N_F": 8982,
+    "path_sha256": "46f54b316a6138d294150c810c14b5eedb14921a4a02717f61239cce9b7965bb",
+    "shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/shards/call_0318_stable_last.npz",
+      "sha256": "b21e7ebc6ab3be201a848f0c36ef70c1dda675788051f1b222679a439dfb9626"
+    },
+    "state_role": "last_formally_reportable_committed_state"
+  },
+  "interpretation": {
+    "calls_319_through_515": "charged, fully evaluated terminal tail not committed by the final reparameterization",
+    "cost_to_precision_and_same_nf": "use the formal history through call 318 only",
+    "energy_profile_and_evolution": "call 515 may appear only with an explicit uncommitted diagnostic label",
+    "surface_center": "if used, call 515 must be named an uncommitted diagnostic center, not a formal IVM terminal"
+  },
+  "metric_protocol": {
+    "delta_e32": "max(E_0,...,E_31)-E_0 on the stored 32-image path",
+    "densification": false,
+    "fixed_endpoint_optimization_N_F": 0,
+    "i_perp": "central-difference tangent, normal full Force, local Cartesian Voronoi weights",
+    "path_images": 32
+  },
+  "physical_force_calls": 0,
+  "schema": "bb-irivm-r2-formal-and-diagnostic-state-binding-v1",
+  "status": "PASS_ZERO_PHYSICAL_INPUT_BINDING",
+  "verification": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+    "sha256": "5cfd64d971a735850ba9756be342cd402ec7480f0e32a7e38f100567f7a9ccf7"
+  }
+}

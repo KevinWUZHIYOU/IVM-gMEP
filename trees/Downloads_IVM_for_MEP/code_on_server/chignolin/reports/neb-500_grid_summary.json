@@ -1,0 +1,1331 @@
+{
+  "grid": "neb-500",
+  "workers": 4,
+  "cpu_threads_per_worker": 2,
+  "wall_seconds": 1429.552640914917,
+  "n_total": 66,
+  "n_success": 41,
+  "n_failed": 25,
+  "results": [
+    {
+      "name": "neb500_k0p1_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 101.81648397445679,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k0p1_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 102.57803297042847,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k0p1_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 97.42422604560852,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k0p1_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 97.31160306930542,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k0p1_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 101.586590051651,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k0p1_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "0.1",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 100.54075574874878,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k0p1_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k1000_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 167.40689992904663,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k1000_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.4168579578399658,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k1000_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 169.65943384170532,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k1000_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.2972180843353271,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k1000_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 136.14490604400635,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k1000_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1000",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.0187537670135498,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1000_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k100_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 148.72052192687988,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k100_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.1854281425476074,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k100_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 150.58015894889832,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k100_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.8084251880645752,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k100_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 150.90741395950317,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k100_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "100",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.1428630352020264,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k100_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k10_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 114.33762502670288,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k10_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.8228788375854492,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k10_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 113.72219491004944,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k10_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.9288990497589111,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k10_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 113.4215738773346,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k10_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "10",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.6832277774810791,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k10_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k1_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 99.14349269866943,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k1_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 99.05362272262573,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k1_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 99.31183505058289,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k1_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 99.01177787780762,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k1_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 98.3974609375,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k1_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "1",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 98.22902202606201,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k1_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k2000_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 167.5304799079895,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k2000_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.198713779449463,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k2000_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 103.83106207847595,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k2000_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 2.1431238651275635,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k2000_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 170.19229102134705,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k2000_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "2000",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.4023079872131348,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k2000_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k20_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 184.1889946460724,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k20_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.6912438869476318,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k20_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 181.4592249393463,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k20_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.4062867164611816,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k20_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 185.9841079711914,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k20_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "20",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.6698288917541504,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k20_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k500_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 132.78200793266296,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k500_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.5912830829620361,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k500_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 130.62511944770813,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k500_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.0057568550109863,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k500_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 130.07427191734314,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k500_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "500",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.8674638271331787,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k500_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k50_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 177.02436590194702,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k50_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.6703619956970215,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k50_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 180.87296390533447,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k50_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.2755494117736816,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k50_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 180.99215078353882,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k50_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "50",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.8430690765380859,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k50_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k5_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 98.82482886314392,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k5_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 101.24413108825684,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k5_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 112.09159684181213,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k5_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 0.9588470458984375,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k5_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 97.93027091026306,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k5_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "5",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 99.10970377922058,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k5_a3e-05_staged.log"
+    },
+    {
+      "name": "neb500_k80_a0p0001_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 177.80662298202515,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a0p0001_ode.log"
+    },
+    {
+      "name": "neb500_k80_a0p0001_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "0.0001",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.1867268085479736,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a0p0001_staged.log"
+    },
+    {
+      "name": "neb500_k80_a0p0003_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 151.9752869606018,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a0p0003_ode.log"
+    },
+    {
+      "name": "neb500_k80_a0p0003_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "0.0003",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.3391780853271484,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a0p0003_staged.log"
+    },
+    {
+      "name": "neb500_k80_a3e-05_ode",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "ode",
+        "--budget",
+        "500"
+      ],
+      "returncode": 0,
+      "wall_seconds": 177.8534710407257,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a3e-05_ode.log"
+    },
+    {
+      "name": "neb500_k80_a3e-05_staged",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/run_neb.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--spring-k",
+        "80",
+        "--alpha",
+        "3e-05",
+        "--optimizer",
+        "staged",
+        "--budget",
+        "500"
+      ],
+      "returncode": 2,
+      "wall_seconds": 1.4861409664154053,
+      "log": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/neb-500/neb500_k80_a3e-05_staged.log"
+    }
+  ]
+}

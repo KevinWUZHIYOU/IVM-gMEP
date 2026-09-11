@@ -1,0 +1,27 @@
+{
+  "actual_number_of_forces": {
+    "0": 0,
+    "1500": 1500,
+    "3500": 3500,
+    "500": 500
+  },
+  "alpha": 0.001,
+  "continuous_path_points": 5001,
+  "coordinate_system": "natural Muller coordinates z = Qx",
+  "displayed_image_markers": 22,
+  "figure": "1x4 continuous NN-IVM path evolution",
+  "force_cost_definition": "direct sum of all 20 sample-force streams",
+  "main_tex_updated": false,
+  "q_file": "inputs/Q_data.npz",
+  "q_sha256": "9a57ca4ce0aa39886aacbfa935c8c7db1423a7f7de3deb937697e72578415aca",
+  "run": "runs/nn_ivm_fine_production/production_fixed_alpha_nn_ivm/q10_nn_ivm_fourier_9ba4d6d6c194.npz",
+  "saddle_markers": false,
+  "snapshot_number_of_forces": [
+    0,
+    500,
+    1500,
+    3500
+  ],
+  "source_data": "figures/nn_ivm/muller22_q10_nn_ivm_path_evolution_1x4_source_data.csv",
+  "tangent": "NEB Henkelman-Jonsson improved tangent"
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "bb-dense-cost-superseded-run-receipt-v1",
+  "created_utc": "2026-09-02T05:19:06Z",
+  "status": "ABORTED_AND_SUPERSEDED",
+  "reason": "The user requires every arc-length-500 point to retain coordinates, energy, and the complete force vector. The R1 evaluators retained dense energies but not dense force arrays, so continuing them could not satisfy the requested data contract.",
+  "reuse_policy": "Preserve both append-only WAL pairs as interruption evidence. Do not delete, overwrite, resume, or use their incomplete rows as final scientific data.",
+  "optimization_N_F_contribution": 0,
+  "physical_failure": false,
+  "runs": [
+    {
+      "method": "ODE-NEB",
+      "host_role": "local",
+      "contract": "registrations/diagnostics/BB_DENSE_COST_ODE_FOUR_20260902_R1.json",
+      "contract_sha256": "c0e8230d00ff7935a6d89d520208c62ac6a2f062fecaf4666082187cbece53f4",
+      "termination": "SIGINT sent to the verified local evaluator process after the storage-policy upgrade",
+      "verified_pid": 79538,
+      "signal": "SIGINT",
+      "terminal_exception": "KeyboardInterrupt while OpenMM Context.getState(getEnergy=True, getForces=False) was servicing energy attempt 1215",
+      "numeric_exit_status": "not retained by the detached session controller",
+      "process_after_termination": "not present",
+      "host_local_locks_after_termination": "FREE",
+      "aggregate_output_created": false,
+      "force_wal": {
+        "path": "runs/diagnostics/bb_ode_neb_dense_four_arc500_20260902_r1.force.wal.jsonl",
+        "sha256": "9f4b4a29019f422c33fef7fd84789da141599d6e4a8a1db9f4c1390be4b4f209",
+        "bytes": 65562,
+        "lines": 181,
+        "header_records": 1,
+        "attempt_started": 90,
+        "attempt_succeeded": 90,
+        "attempt_failed": 0,
+        "unmatched_started": 0,
+        "per_row_succeeded": [30, 30, 30, 0],
+        "scope": "discrete 32-image-path internal-image E/F diagnostics only; full force arrays were not persisted"
+      },
+      "energy_wal": {
+        "path": "runs/diagnostics/bb_ode_neb_dense_four_arc500_20260902_r1.energy.wal.jsonl",
+        "sha256": "0c4120df42ac0f82294ff90c574fd36353b9fe301d71a79da492bba75ef28097",
+        "bytes": 761643,
+        "lines": 2430,
+        "header_records": 1,
+        "attempt_started": 1215,
+        "attempt_succeeded": 1214,
+        "attempt_failed": 0,
+        "unmatched_started_attempt": 1215,
+        "completed_dense_rows": 2,
+        "partial_dense_row_index": 2,
+        "partial_dense_row_successes": 214,
+        "per_row_started": [500, 500, 215, 0],
+        "per_row_succeeded": [500, 500, 214, 0]
+      }
+    },
+    {
+      "method": "IR-IVM",
+      "host_role": "remote_mac",
+      "contract": "registrations/diagnostics/BB_DENSE_COST_IVM_FOUR_20260902_R1.json",
+      "contract_sha256": "34a49f7b81a4f6c866b74fde139d1c1d62bca856710737a0480182de33f4a52f",
+      "termination": "user-requested interruption of the remote energy-only evaluator; remote process and both host-local locks were subsequently verified absent/free",
+      "process_after_termination": "not present",
+      "host_local_locks_after_termination": "FREE",
+      "aggregate_output_created": false,
+      "force_wal": {
+        "path": "runs/diagnostics/bb_irivm_dense_four_arc500_20260902_r1.force.wal.jsonl",
+        "sha256": "394ad8563100d257f147c0302b11863f33e8c7bfa0dba1e92875ae003727e1cb",
+        "bytes": 794,
+        "lines": 3,
+        "header_records": 1,
+        "online_paid_history_reuse_records": 2,
+        "diagnostic_force_attempts": 0,
+        "attempt_failed": 0,
+        "scope": "scalar online I_perp reuse declarations only; no dense force arrays were persisted"
+      },
+      "energy_wal": {
+        "path": "runs/diagnostics/bb_irivm_dense_four_arc500_20260902_r1.energy.wal.jsonl",
+        "sha256": "eab6fd5485c07a8ba86ec21d867f0d70a071d0a2ca9cae40d5ce4f03ed1f368a",
+        "bytes": 326944,
+        "lines": 1044,
+        "header_records": 1,
+        "attempt_started": 522,
+        "attempt_succeeded": 521,
+        "attempt_failed": 0,
+        "unmatched_started_attempt": 522,
+        "completed_dense_rows": 1,
+        "partial_dense_row_index": 1,
+        "partial_dense_row_successes": 21,
+        "per_row_started": [500, 22, 0, 0],
+        "per_row_succeeded": [500, 21, 0, 0]
+      }
+    }
+  ],
+  "synchronization_receipt": {
+    "session": "bb-irivm-20260901",
+    "state_after_flush": "Connected/Watching",
+    "note": "The local hashes above were computed after a forced Mutagen synchronization cycle."
+  },
+  "successor_requirement": {
+    "arc_length_points_per_path": 500,
+    "per_point_payload": [
+      "coordinates_A",
+      "energy_eV",
+      "force_eV_per_A"
+    ],
+    "durability": "append-only attempt WAL plus atomic per-path shard before final aggregation",
+    "hashes": [
+      "coordinate_sha256",
+      "energy_sha256",
+      "force_sha256",
+      "path_sha256"
+    ],
+    "metric_policy": "Article I_perp remains the discrete 32-image-path metric; densified Delta E uses the same uniformly arc-length sampled 500 coordinates. Dense forces are retained for audit/reuse and do not alter either algorithm or optimization N_F."
+  }
+}

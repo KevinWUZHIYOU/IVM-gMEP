@@ -1,0 +1,221 @@
+{
+  "status": "validated",
+  "display_label_policy": "The selected IR-IVM run is displayed as IVM; historical V9 IVM excluded",
+  "method_order": [
+    "IVM",
+    "ODE-NEB",
+    "Static-NEB",
+    "Original String",
+    "OBSM-FIRE"
+  ],
+  "contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/ARC_LENGTH_500_IVM_REPLACEMENT_CONTRACT.json",
+  "contract_sha256": "f351020439a1ef7d75bd0c21ae6d843722d813912542bf5cef984f3f0ab424b8",
+  "arc_length_500_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_ivm_arc_length_500.npz",
+  "arc_length_500_result_sha256": "3def8ffb3c70342d61285813511203c2970e30cb0146f37aa1d99aa3ce20a564",
+  "arc_length_500_audit": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_ivm_arc_length_500.audit.json",
+  "arc_length_500_audit_sha256": "03bca53e4390fd2a0373901ef7cea3897ffb4ff69717418924306defd17cd509",
+  "arc_length_500_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "endpoint_policy": "include_both_endpoints",
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "per_path_evaluator_policy": "direct OpenMMBackend.evaluate_joint at every grid point; exactly 500 fresh raw joint evaluations and no diagnostic cache",
+    "energy_backend": "real OpenMM CPU double precision",
+    "barrier_definition": "(max_j E(x(s_j)) - E(x(s_0))) in kcal/mol"
+  },
+  "diagnostic_counts_excluded_from_optimization_axis": true,
+  "paper_cost_axis": "counter_vectors.sum(axis=1)",
+  "paper_cost_includes_all_22_images": true,
+  "selected_path_counts": {
+    "IVM": 12,
+    "ODE-NEB": 906,
+    "Static-NEB": 48,
+    "Original String": 48,
+    "OBSM-FIRE": 168
+  },
+  "thresholds": {
+    "i_perp": 0.21242215133173672,
+    "barrier_500_kcal": 24.17608142601358,
+    "definition": "I_perp and Delta E use strictest precision reached by IVM, ODE-NEB, OBSM-FIRE",
+    "action_kcal": 101.69006490845834,
+    "action_definition": "exact minimum discrete action recorded by ODE-NEB; no rounding"
+  },
+  "first_passage_total_nf": {
+    "IVM": {
+      "i_perp": 905,
+      "barrier_500_kcal": 905,
+      "action_kcal": 905
+    },
+    "ODE-NEB": {
+      "i_perp": 17662,
+      "barrier_500_kcal": 15842,
+      "action_kcal": 20002
+    },
+    "Static-NEB": {
+      "i_perp": null,
+      "barrier_500_kcal": null,
+      "action_kcal": null
+    },
+    "Original String": {
+      "i_perp": null,
+      "barrier_500_kcal": null,
+      "action_kcal": null
+    },
+    "OBSM-FIRE": {
+      "i_perp": 19942,
+      "barrier_500_kcal": 19942,
+      "action_kcal": null
+    }
+  },
+  "speedup_vs_baselines": {
+    "i_perp": {
+      "ODE-NEB": 19.516022099447515
+    },
+    "barrier_500_kcal": {
+      "ODE-NEB": 17.504972375690606
+    },
+    "action_kcal": {
+      "ODE-NEB": 22.101657458563537
+    }
+  },
+  "source_results": {
+    "IVM": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/repro_cpu1/ivm_chig_irivm_a1e1_r05_m05_inf5000_cpu1_prefix_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+      "sha256": "e8ce449e55b975360bbc29fd49a8e28c1fe8c0618382eb37b0a86e022bdfe03a"
+    },
+    "ODE-NEB": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_ode_k50_central_k50_alpha0p0001_ode_budget1000.npz",
+      "sha256": "68bc5c5a8608e173e650f194bf849127e583439862294f7afdae4fb4d03609ba"
+    },
+    "Static-NEB": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_paper_production_confirmed1000_static_k40_a0p012575_central_k40_alpha0p012575_static_budget1000.npz",
+      "sha256": "8aa75a1cdee0cf82b2e46181c8633c6655277a18d37e9c738002546de0359fe0"
+    },
+    "Original String": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_original_dt0p012575_original_nolambda_dt0p012575_r1_cfg17accb085b5c_budget1000.npz",
+      "sha256": "10778b9d36ffb6da7c2904cf024c5046137b6e103cd3581140ee440bd5ea5ea9"
+    },
+    "OBSM-FIRE": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/confirmed1000_productions_20260728c/confirmed1000_productions_20260728c_paper_production_confirmed1000_obsm_l0p9_n5_dt0p12_fire_lam0p9_inner5_r1_nocap_cfgb34d772e4eb2_budget1000.npz",
+      "sha256": "0dc20cbb94fa5411d8bd6bd8d40f303766937c5327a7fbc2f965b71668bf7b4c"
+    }
+  },
+  "figure_revision": "2026-09-06: geometric action added; all three axes boxes square; action label standardized to S-hat without a discretization subscript",
+  "panel_order": [
+    "i_perp",
+    "barrier_500_kcal",
+    "action_kcal"
+  ],
+  "axes_box_aspect": 1.0,
+  "delta_e_panel": {
+    "scale": "reversed_linear",
+    "visible_xlim_kcal_per_mol": [
+      100.0,
+      19.5
+    ],
+    "plotting_policy": "Plot the complete Pareto polyline, then clip it to the unchanged visible x range",
+    "full_recorded_range_kcal_per_mol": [
+      20.47781711656785,
+      2465.8680747572216
+    ],
+    "initial_value_kcal_per_mol": 2465.8680747572216,
+    "records_above_100_by_method": {
+      "IVM": 2,
+      "ODE-NEB": 31,
+      "Static-NEB": 14,
+      "Original String": 14,
+      "OBSM-FIRE": 4
+    }
+  },
+  "action_definition": "sum_i 0.5*(norm(gradV_i)+norm(gradV_(i+1)))*norm(x_(i+1)-x_i)",
+  "action_unit": "kcal/mol",
+  "action_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.npz",
+  "action_result_sha256": "1c0acd1d423be9bddd77e3a4cade5008f4cff438e747d5bd83b3849e581e5921",
+  "action_contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/GEOMETRIC_ACTION_DISCRETE_V1.json",
+  "action_contract_sha256": "87777a9461eba26693ce01903eb6993f7bf81603dddb7e771c931a029d585760",
+  "action_diagnostic_audit": {
+    "status": "validated",
+    "contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/GEOMETRIC_ACTION_DISCRETE_V1.json",
+    "contract_sha256": "87777a9461eba26693ce01903eb6993f7bf81603dddb7e771c931a029d585760",
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.npz",
+    "result_sha256": "1c0acd1d423be9bddd77e3a4cade5008f4cff438e747d5bd83b3849e581e5921",
+    "csv": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.csv",
+    "csv_sha256": "06c21d74969c27a7e7899fe366e10eec9da965223794d16824628c1e9d80e142",
+    "selected_path_count": 3086,
+    "counts": {
+      "IVM": 12,
+      "ODE-NEB": 906,
+      "Static-NEB": 1000,
+      "Original String": 1000,
+      "OBSM-FIRE": 168
+    },
+    "diagnostic_joint_evaluations": 67892,
+    "diagnostic_cost_excluded_from_optimization_axis": true,
+    "backend_platform": "CPU",
+    "backend_requested_precision": "double",
+    "actual_precision_note": "Same production CPU backend; precision keyword configures only GPU platforms in core",
+    "openmm_cpu_threads": 1,
+    "maximum_iperp_absolute_difference": 0.0,
+    "maximum_iperp_relative_difference": 0.0
+  },
+  "action_selected_path_counts": {
+    "IVM": 12,
+    "ODE-NEB": 906,
+    "Static-NEB": 1000,
+    "Original String": 1000,
+    "OBSM-FIRE": 168
+  },
+  "source_alignment": "Every arc500 row matches action method, record, NoF, Iperp, path SHA, source path and source SHA",
+  "source_availability_note": "Historical source paths are pinned by the contracts; combined plot validates immutable diagnostic artifacts without recalculating physics",
+  "plot_code": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/plot_chignolin_ivm_three_metrics.py",
+  "generated_files": {
+    "pdf": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.pdf",
+      "sha256": "06f402095523217f04ea2847e2e9b7a9d1f7d141fa807393be68b3f04c709396"
+    },
+    "svg": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.svg",
+      "sha256": "30256a759252ccbf930508d24fa72a07618e668502adb40e665727fd1dff7ce4"
+    },
+    "png": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.png",
+      "sha256": "3a88ebf4a8563cf3084569cf3150b13b38ca76f96affa03657c494b7a38a7d45"
+    },
+    "frontier": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf_frontier.csv",
+      "sha256": "3705876f7a14861b242d6f65dfa027c2e30acb9d67e48840b0f16d945294b6ab"
+    },
+    "annotations": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf_annotations.csv",
+      "sha256": "d714baaea66997aeeefb2b768e6ca846fc99b40518d79cec0501b1a71ce3fe6c"
+    }
+  },
+  "annotations": [
+    {
+      "metric": "i_perp",
+      "precision_threshold": 0.21242215133173672,
+      "baseline": "ODE-NEB",
+      "ivm_number_of_forces": 905,
+      "baseline_number_of_forces": 17662,
+      "ode_neb_over_ivm": 19.516022099447515
+    },
+    {
+      "metric": "barrier_500_kcal",
+      "precision_threshold": 24.17608142601358,
+      "baseline": "ODE-NEB",
+      "ivm_number_of_forces": 905,
+      "baseline_number_of_forces": 15842,
+      "ode_neb_over_ivm": 17.504972375690606
+    },
+    {
+      "metric": "action_kcal",
+      "precision_threshold": 101.69006490845834,
+      "baseline": "ODE-NEB",
+      "ivm_number_of_forces": 905,
+      "baseline_number_of_forces": 20002,
+      "ode_neb_over_ivm": 22.101657458563537
+    }
+  ],
+  "plot_code_sha256": "689e1a4322305a4e1b2d79ee9b557f2fa20625d6ac648550e91b9ca15c18bf73"
+}

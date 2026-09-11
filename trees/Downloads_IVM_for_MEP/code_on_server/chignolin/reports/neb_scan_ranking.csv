@@ -1,0 +1,12 @@
+rank,path,spring_k,alpha,optimizer,score,i_perp_at_500,barrier_at_500_kcal,physical_fmax_at_500
+1,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k20_alpha0p0001_ode_budget500.npz,20.0,0.0001,ode,0.06270804503482387,0.4547421847330934,23.18524476688549,0.023501216309018014
+2,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k50_alpha0p0001_ode_budget500.npz,50.0,0.0001,ode,0.08315862680387597,0.47293697780050814,23.298305814514375,0.024057591002739933
+3,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1_alpha0p0001_ode_budget500.npz,1.0,0.0001,ode,0.10989434666561411,0.5819488015101083,23.546709976370217,0.0704961286424976
+4,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k10_alpha0p0001_ode_budget500.npz,10.0,0.0001,ode,0.11294595464765193,0.46531852475765434,23.23861375266076,0.024098148423297307
+5,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k0p1_alpha0p0001_ode_budget500.npz,0.1,0.0001,ode,0.12002167274122677,0.5498755313207975,24.112041411263096,0.024294399124280924
+6,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k5_alpha0p0001_ode_budget500.npz,5.0,0.0001,ode,0.26059337299689794,0.6268401445824099,24.022293652170912,0.029427841145604497
+7,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k80_alpha0p0001_ode_budget500.npz,80.0,0.0001,ode,0.41578075547892784,0.7630133581397754,24.682780675036035,0.032833238826286
+8,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k100_alpha0p0001_ode_budget500.npz,100.0,0.0001,ode,0.6247403540541517,1.0677446020287151,25.754115318688307,0.039833121697784565
+9,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k500_alpha0p0001_ode_budget500.npz,500.0,0.0001,ode,2.9791705141996214,18.842789946411617,36.361350183843456,0.27865626472992217
+10,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1000_alpha0p0001_ode_budget500.npz,1000.0,0.0001,ode,3.99206221693313,62.721588164435985,59.26544005033389,0.5255409882190581
+11,/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k2000_alpha0p0001_ode_budget500.npz,2000.0,0.0001,ode,4.873271097639611,194.39931562079045,89.68497522202262,1.106515527693091

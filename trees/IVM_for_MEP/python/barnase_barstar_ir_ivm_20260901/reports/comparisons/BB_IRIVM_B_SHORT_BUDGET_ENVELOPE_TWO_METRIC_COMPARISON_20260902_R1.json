@@ -1,0 +1,128 @@
+{
+  "schema": "bb-irivm-budget-envelope-two-metric-comparison-v1",
+  "status": "PASS_ZERO_OPENMM_AGGREGATION_OF_SEALED_RESULTS",
+  "created_utc": "2026-09-01T19:39:22Z",
+  "scope": "sealed short-budget evidence for IR-IVM setting alpha=1, r=0.1, m_max=5 versus the immutable current BB IVM and ODE--NEB milestones",
+  "metric_identity": {
+    "discrete_I_perp": "32-image normalized-central-chord perpendicular-force residual with interior half-adjacent-chord unnormalized quadrature",
+    "densified_Delta_E": "500 equal-Cartesian-arclength points on the same selected 32-image piecewise-linear path",
+    "same_path_rule": true
+  },
+  "IR_IVM_eligible_paths": [
+    {
+      "optimization_Number_of_Forces": 210,
+      "discrete_I_perp_eV2_per_A": 8483398.585299263,
+      "densified_Delta_E_kcal_per_mol": 10814.684022034557,
+      "path_sha256": "d737fa00edc9f2e371f2a92e24cfe946c50a1a70d87205bddd801716af2573b3",
+      "eligibility": "reparam_committed"
+    },
+    {
+      "optimization_Number_of_Forces": 429,
+      "discrete_I_perp_eV2_per_A": 77444.13564174288,
+      "densified_Delta_E_kcal_per_mol": 900.1006835316789,
+      "path_sha256": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad",
+      "eligibility": "reparam_committed"
+    }
+  ],
+  "budget_envelope_comparisons": [
+    {
+      "budget_upper_bound": 240,
+      "strict_equal_actual_Number_of_Forces": false,
+      "IR_IVM_actual_Number_of_Forces": 210,
+      "ODE_NEB_actual_Number_of_Forces": 240,
+      "current_IVM_actual_Number_of_Forces": 240,
+      "IR_IVM": {
+        "discrete_I_perp_eV2_per_A": 8483398.585299263,
+        "densified_Delta_E_kcal_per_mol": 10814.684022034557
+      },
+      "ODE_NEB": {
+        "discrete_I_perp_eV2_per_A": 34309746.1027556,
+        "densified_Delta_E_kcal_per_mol": 25282.607134527127
+      },
+      "current_IVM": {
+        "discrete_I_perp_eV2_per_A": 45725826.197773464,
+        "densified_Delta_E_kcal_per_mol": 26612.822746013706
+      },
+      "IR_IVM_reduction_factors": {
+        "versus_ODE_NEB_discrete_I_perp": 4.044339748719384,
+        "versus_ODE_NEB_densified_Delta_E": 2.337803590286564,
+        "versus_current_IVM_discrete_I_perp": 5.390036285340992,
+        "versus_current_IVM_densified_Delta_E": 2.4608044665744253
+      },
+      "relation": "IR-IVM uses 30 fewer force evaluations and is strictly smaller in both metrics than either comparator"
+    },
+    {
+      "budget_upper_bound": 480,
+      "strict_equal_actual_Number_of_Forces": false,
+      "IR_IVM_actual_Number_of_Forces": 429,
+      "ODE_NEB_actual_Number_of_Forces": 480,
+      "current_IVM_actual_Number_of_Forces": 480,
+      "IR_IVM": {
+        "discrete_I_perp_eV2_per_A": 77444.13564174288,
+        "densified_Delta_E_kcal_per_mol": 900.1006835316789
+      },
+      "ODE_NEB": {
+        "discrete_I_perp_eV2_per_A": 3818398.9909359566,
+        "densified_Delta_E_kcal_per_mol": 11652.176100500441
+      },
+      "current_IVM": {
+        "discrete_I_perp_eV2_per_A": 20572680.228369214,
+        "densified_Delta_E_kcal_per_mol": 18728.989002889903
+      },
+      "IR_IVM_reduction_factors": {
+        "versus_ODE_NEB_discrete_I_perp": 49.30520509131767,
+        "versus_ODE_NEB_densified_Delta_E": 12.945414122763905,
+        "versus_current_IVM_discrete_I_perp": 265.64542373535653,
+        "versus_current_IVM_densified_Delta_E": 20.8076600157706
+      },
+      "relation": "IR-IVM uses 51 fewer force evaluations and is strictly smaller in both metrics than either comparator"
+    }
+  ],
+  "reporting_constraints": [
+    "these rows are budget-envelope comparisons, not equal-abscissa matched-N_F points",
+    "the charged N_F=459 terminal partial tail of the short IR-IVM run is quarantined and excluded",
+    "the currently running 4080-upper-bound candidate B is excluded until its terminal result and Number-of-Forces ledger are sealed",
+    "online discrete values are not substituted for arc-length-500 metrics"
+  ],
+  "bindings": {
+    "IR_IVM_result": {
+      "path": "runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf480_r1_central_state_ivm_cfg3e09b12c5016_budget480_storagecommitted.npz",
+      "sha256": "00889bf3d276a129957549b28c69ea12926da70d8e88fe9ee583a643490aab44"
+    },
+    "IR_IVM_optimization_audit": {
+      "path": "runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf480_r1_central_state_ivm_cfg3e09b12c5016_budget480_storagecommitted.audit.json",
+      "sha256": "8956fd8c0499687f0ada9bd6303cae9de00ce45465213c44a0ff51d77dfb312f"
+    },
+    "IR_IVM_arc500_result": {
+      "path": "runs/diagnostics/bb_irivm_local_interaction_arc500_20260902_r2.npz",
+      "sha256": "c3dc4cada961013fb3a968ac471f243783c25ed224af553b0f64519fc96dd8f3"
+    },
+    "IR_IVM_arc500_audit": {
+      "path": "runs/diagnostics/bb_irivm_local_interaction_arc500_20260902_r2.audit.json",
+      "sha256": "f3997bfc9f6fb0d942c9d0ae60697daf97a3bdd693177ee9a064bba8f6d2099d"
+    },
+    "current_IVM_arc500_result": {
+      "path": "runs/diagnostics/bb_original_ivm_arc500_20260901_r1.npz",
+      "sha256": "909bd969e1001ab8f6002cbb58791ffe8ca24e5f612359e6add7a72a807ad244"
+    },
+    "current_IVM_arc500_audit": {
+      "path": "runs/diagnostics/bb_original_ivm_arc500_20260901_r1.audit.json",
+      "sha256": "4a1376c1c6afb03a2905c79c9cc823fb433aff43644edcebbc9b535c52640d31"
+    },
+    "ODE_NEB_arc500_result": {
+      "path": "runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.npz",
+      "sha256": "b8feb051df121a29da01c93c6c0a2e1324dc189a07b5d44e6c8b3269b960e989"
+    },
+    "ODE_NEB_arc500_audit": {
+      "path": "runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.audit.json",
+      "sha256": "22115e01097ea77c66a0ab2801cdce2c04e4e9e2d13a7e6dfd58388a89e94ee1"
+    },
+    "metric_policy": {
+      "path": "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    }
+  },
+  "new_OpenMM_energy_attempts": 0,
+  "new_OpenMM_force_attempts": 0,
+  "optimization_Number_of_Forces_contribution": 0
+}

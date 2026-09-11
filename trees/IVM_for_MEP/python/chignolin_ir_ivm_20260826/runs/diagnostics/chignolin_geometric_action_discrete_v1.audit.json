@@ -1,0 +1,25 @@
+{
+  "status": "validated",
+  "contract": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/registrations/GEOMETRIC_ACTION_DISCRETE_V1.json",
+  "contract_sha256": "87777a9461eba26693ce01903eb6993f7bf81603dddb7e771c931a029d585760",
+  "result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.npz",
+  "result_sha256": "1c0acd1d423be9bddd77e3a4cade5008f4cff438e747d5bd83b3849e581e5921",
+  "csv": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/chignolin_geometric_action_discrete_v1.csv",
+  "csv_sha256": "06c21d74969c27a7e7899fe366e10eec9da965223794d16824628c1e9d80e142",
+  "selected_path_count": 3086,
+  "counts": {
+    "IVM": 12,
+    "ODE-NEB": 906,
+    "Static-NEB": 1000,
+    "Original String": 1000,
+    "OBSM-FIRE": 168
+  },
+  "diagnostic_joint_evaluations": 67892,
+  "diagnostic_cost_excluded_from_optimization_axis": true,
+  "backend_platform": "CPU",
+  "backend_requested_precision": "double",
+  "actual_precision_note": "Same production CPU backend; precision keyword configures only GPU platforms in core",
+  "openmm_cpu_threads": 1,
+  "maximum_iperp_absolute_difference": 0.0,
+  "maximum_iperp_relative_difference": 0.0
+}

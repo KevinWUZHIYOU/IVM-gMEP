@@ -1,0 +1,23 @@
+{
+  "schema": "bb-irivm-per-member-execution-authorization-v1",
+  "issued_utc": "2026-09-01T08:49:33Z",
+  "enabled": true,
+  "label": "bb_irivm_a1e1_r05_m05_inf240_r1",
+  "tier": "smoke",
+  "registered_controls": {
+    "alpha": 10.0,
+    "r": 0.5,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 240
+  },
+  "member_registration_sha256": "538313d76a2404438498a01cfa8b811e6979647277264d8c68e7b69f4e09b728",
+  "campaign_preregistration_sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+  "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+  "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "ff_builder_parity_gate_sha256": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+  "fixed_endpoint_policy": "use the hash-bound inherited canonical endpoint joint E/F cache; endpoint getState attempts, misses, and optimization NoF must remain zero",
+  "success_ledger": "backend attempts = successful joint evaluations = 30-image internal misses = 240; registered budget exhausted with no overshoot",
+  "concurrency": "one BB task on this host, two host-local fcntl locks, jobs=1",
+  "diagnostic_feedback": "forbidden during optimization",
+  "authorization_scope": "exactly one fresh non-resumed smoke member with the bound source, input, contract, protocol, and zero-Force parity-gate hashes"
+}

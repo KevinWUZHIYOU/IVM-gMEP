@@ -1,0 +1,60 @@
+{
+  "initial_path_sha256": "d2470e4fde723f07e1053eaae9ecd1f2f639ef8ca75586798f79f38d81dbf081",
+  "selection_variables": [
+    "spring_k"
+  ],
+  "optimizer": "NEBOptimizer(method='ODE')",
+  "fixed_interface_alpha": 0.0001,
+  "alpha_used_by_ode": false,
+  "score_definition": "log-area ratios to the three-run pointwise I_perp and raw-barrier envelopes over calls 2-2000, plus half-weight final ratios",
+  "selected_fixed_neb": {
+    "rank": 1,
+    "spring_k": 20.0,
+    "score": 0.04109863745121268,
+    "i_perp_at_2000": 0.07435286149588331,
+    "barrier_at_2000_kcal": 20.487950853584056,
+    "physical_fmax_at_2000": 0.00934844990675046,
+    "tail_i_endpoint_change_percent": 7.663637360167909,
+    "tail_i_range_percent": 69.80057919950528,
+    "tail_barrier_drift_kcal": 0.040176654184193694,
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k20_alpha0p0001_ode_budget2000.npz"
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "spring_k": 20.0,
+      "score": 0.04109863745121268,
+      "i_perp_at_2000": 0.07435286149588331,
+      "barrier_at_2000_kcal": 20.487950853584056,
+      "physical_fmax_at_2000": 0.00934844990675046,
+      "tail_i_endpoint_change_percent": 7.663637360167909,
+      "tail_i_range_percent": 69.80057919950528,
+      "tail_barrier_drift_kcal": 0.040176654184193694,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k20_alpha0p0001_ode_budget2000.npz"
+    },
+    {
+      "rank": 2,
+      "spring_k": 1.0,
+      "score": 0.06261759850417299,
+      "i_perp_at_2000": 0.07920900217267207,
+      "barrier_at_2000_kcal": 20.279748869002937,
+      "physical_fmax_at_2000": 0.013250487138493033,
+      "tail_i_endpoint_change_percent": 8.307239022861339,
+      "tail_i_range_percent": 141.9865787880245,
+      "tail_barrier_drift_kcal": 0.017167706609583888,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k1_alpha0p0001_ode_budget2000.npz"
+    },
+    {
+      "rank": 3,
+      "spring_k": 50.0,
+      "score": 0.0993056300535115,
+      "i_perp_at_2000": 0.09436914712543307,
+      "barrier_at_2000_kcal": 20.57857284446772,
+      "physical_fmax_at_2000": 0.01550365507996613,
+      "tail_i_endpoint_change_percent": 3.4526711548062883,
+      "tail_i_range_percent": 67.9657246716619,
+      "tail_barrier_drift_kcal": 0.027383107374152615,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_top3_central_k50_alpha0p0001_ode_budget2000.npz"
+    }
+  ]
+}

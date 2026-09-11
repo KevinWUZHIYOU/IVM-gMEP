@@ -1,0 +1,129 @@
+{
+  "bindings": {
+    "alpha_scope_R2": {
+      "path": "../USER_ALPHA_SCOPE_AMENDMENT_20260901_R2.json",
+      "sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f"
+    },
+    "budget_atomicity_amendment": {
+      "path": "../USER_BUDGET_ATOMICITY_AMENDMENT_20260901_R1.json",
+      "sha256": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680"
+    },
+    "cached_stall_followup_design": {
+      "path": "../BB_IRIVM_CACHED_STALL_TARGETED_FOLLOWUP_DESIGN_20260902_R1.json",
+      "sha256": "50ac9fbb1d9d3870797a3d08b6c78e702d4242273c5520e5fc34165874815094"
+    },
+    "cached_stall_trigger_decision": {
+      "path": "../../reports/decisions/BB_IRIVM_CACHED_STALL_FOLLOWUP_DECISION_20260902_R1.json",
+      "sha256": "9b3cbbbcaa3c2e4ea4f91239a7431e3c57bc97196d8308921bc08eae9d375934"
+    },
+    "diagnostic_evaluator": {
+      "path": "../../scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ab56602fa94e3ab5f03b38b5210fc99430e128491ff3ea1e0b5967b21a2f5304"
+    },
+    "exact_path_reuse_amendment": {
+      "path": "../USER_EXACT_PATH_DIAGNOSTIC_REUSE_AMENDMENT_20260901_R1.json",
+      "sha256": "1da0658a7f80908e08184cd54d21bc0e5ca73b7f589784be41337902e30998f9"
+    },
+    "long_budget_design": {
+      "path": "../BB_IRIVM_LONG_BUDGET_DESIGN_20260902_R1.json",
+      "sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629"
+    },
+    "long_member_verification": {
+      "path": "../../reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "metric_policy_amendment": {
+      "path": "../USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "parent_protocol": {
+      "path": "../STAGED_SEARCH_PROTOCOL.json",
+      "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+    }
+  },
+  "common_initial_path": {
+    "array_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+    "file_sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "path": "../../inputs/common_initial_path32.npz"
+  },
+  "contract_id": "bb_irivm_candidate_b_long_arc500_20260902_r1",
+  "created_utc": "2026-09-01T20:22:05Z",
+  "diagnostic_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "force_evaluations_per_path": 0,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "sampling": "uniform_cartesian_arclength",
+    "sparse_barrier_used_for_selection": false
+  },
+  "eligible_path_policy": "post-initial reparameterization-committed stored paths only",
+  "exact_path_reuse_policy": "Reuse only hash-identical path/grid/oracle rows from a PASS diagnostic; every absent path receives 500 fresh energy-only evaluations.",
+  "runs": [
+    {
+      "actual_optimization_N_F": 4056,
+      "alpha": 1.0,
+      "eligible_committed_calls": [
+        7,
+        20,
+        72
+      ],
+      "eligible_states_at_freeze": [
+        {
+          "calls_per_image": 7,
+          "discrete_I_perp": 8483398.585299263,
+          "history_index": 6,
+          "optimization_N_F": 210,
+          "path_sha256": "d737fa00edc9f2e371f2a92e24cfe946c50a1a70d87205bddd801716af2573b3",
+          "verifier_path_sha256": "ea3cd456fca7103d67d227bb095b93e2d7fba3c794e6081b7ac1951d53de9b7f"
+        },
+        {
+          "calls_per_image": 20,
+          "discrete_I_perp": 77444.13564174288,
+          "history_index": 19,
+          "optimization_N_F": 429,
+          "path_sha256": "276a01883c0363c81faa404f1228bb9ebed062874ff8df1029f28d8d32d11cad",
+          "verifier_path_sha256": "f12eb157d86dec8bf6f7342926b0dcfbb53b8a2c334146d4ca2ae69d0081a6af"
+        },
+        {
+          "calls_per_image": 72,
+          "discrete_I_perp": 440.84086783217526,
+          "history_index": 71,
+          "optimization_N_F": 1993,
+          "path_sha256": "7161dab1eb057d958e0af032626e5113de85b0b5725e085b56bf065d79060e66",
+          "verifier_path_sha256": "0da18b88d1bd6776f612a2f034f8b573824137216135a46277dc0c78c59a6db7"
+        }
+      ],
+      "execution_authorization": "../execution_authorizations/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "execution_authorization_sha256": "95870cc0f81d17caf62422f109cf5c77ea0e8240e4759aeb90a1e6de0f1d9d6b",
+      "execution_host": "Mac-mini.local / Apple M4 / arm64",
+      "label": "bb_irivm_a1e0_r01_m05_inf4080_r1",
+      "m_max": 5,
+      "member_registration": "../screen/bb_irivm_a1e0_r01_m05_inf4080_r1.json",
+      "member_registration_sha256": "6896c62db4964fcd218275e0898764519ee7906f249b11b03dce0df6232b7244",
+      "r": 0.1,
+      "registered_optimization_N_F": 4080,
+      "source_audit": "../../runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.audit.json",
+      "source_audit_sha256": "c9535d06d6af06b83203fb3d55d8c171128da5b9bdb0b9c319115f7545eed930",
+      "source_result": "../../runs/screen/ivm_bb_irivm_a1e0_r01_m05_inf4080_r1_central_state_ivm_cfg47c24114c93c_budget4080_storagecommitted.npz",
+      "source_result_sha256": "df069ff6cb3b36f2660d9f7b3403e260695f4b4b01b3da7ee3c436d9da56c275",
+      "terminal_verification": "../../reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "terminal_verification_sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    }
+  ],
+  "schema": "bb-irivm-discrete-iperp-densified-barrier-contract-v1",
+  "scientific_terms": {
+    "cost_axis": "actual optimization Number of Forces N_F",
+    "energetic_diagnostic": "densified 0 K forward barrier Delta E",
+    "stationarity_diagnostic": "discrete unnormalized normal residual I_perp"
+  },
+  "selection_decisions_made_after_long_candidate_result": 0,
+  "selection_rule": "apply the frozen same-state two-metric joint order and report raw Pareto relations",
+  "status": "FROZEN_AFTER_TERMINAL_VERIFICATION_AND_BEFORE_LONG_CANDIDATE_DENSIFIED_DIAGNOSTICS",
+  "topology": {
+    "path": "../../inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  }
+}

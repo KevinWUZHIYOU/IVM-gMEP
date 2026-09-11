@@ -1,0 +1,253 @@
+{
+  "comparison": {
+    "energy_profile_budget_N_F": 30000,
+        "evolution_same_N_F_budgets": [
+            2040,
+            15000,
+            30000
+        ],
+        "evolution_surface_envelope_registration": {
+            "alternative_geometry_valid_budget_N_F": 990,
+            "alternative_geometry_valid_budget_projection": {
+                "IVM": {
+                    "actual_optimization_N_F": 969,
+                    "normal_max_A": 0.4513690503490503,
+                    "normal_min_A": 0.0,
+                    "strict_envelope_pass": true
+                },
+                "ODE-NEB": {
+                    "actual_optimization_N_F": 990,
+                    "normal_max_A": 0.640372983587181,
+                    "normal_min_A": 0.0,
+                    "strict_envelope_pass": true
+                }
+            },
+            "alternative_not_selected_reason": "NF2040 was selected instead because it is closer to the legacy figure's first relaxed comparison at IVM NF2792 and ODE-NEB NF2852; neither choice used performance",
+            "excluded_budget_N_F": 240,
+            "excluded_budget_projection": {
+                "IVM": {
+                    "actual_optimization_N_F": 240,
+                    "normal_max_A": 0.6275520851946432,
+                    "normal_min_A": 0.0,
+                    "strict_envelope_pass": true
+                },
+                "ODE-NEB": {
+                    "actual_optimization_N_F": 240,
+                    "normal_max_A": 0.7038122887583026,
+                    "normal_min_A": 0.0,
+                    "strict_envelope_pass": false
+                }
+            },
+            "grid_normal_max_A": 0.69,
+            "grid_normal_min_A": -0.12,
+            "path_clipping_permitted": false,
+            "pre_final_protocol_amendment": true,
+            "requested_budgets_N_F": [
+                2040,
+                15000,
+                30000
+            ],
+            "selection_not_based_on_performance": true,
+            "selection_reason": "NF2040 is a retained-state, geometry-valid milestone chosen before the ODE NF30000 result after excluding NF240 for full-envelope failure; it is closer to the legacy figure's first relaxed comparison at IVM NF2792 and ODE-NEB NF2852; it was not selected by performance",
+            "terminal_budget_requires_fresh_strict_envelope_pass": true
+        },
+        "legacy_evolution_layout_reference": {
+            "layout": "1x4 panels, 7.2x2.38 inch, shared x/y, right-side colorbar",
+            "panel_checkpoint_labels_not_number_of_forces": [
+                0,
+                50,
+                200,
+                500
+            ],
+            "panel_number_of_forces": {
+                "200": {
+                    "IVM": 11309,
+                    "ODE-NEB": 11402
+                },
+                "50": {
+                    "IVM": 2792,
+                    "ODE-NEB": 2852
+                },
+                "500": {
+                    "IVM": 28073,
+                    "ODE-NEB": 28502
+                }
+            },
+            "pdf": {
+                "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/barnase_branch_local_true0k_evolution.pdf",
+                "sha256": "26625a3f4a3a23c4d4302be6283e8a07879d7ca6fe569abec276f2e0ee8f9394"
+            },
+            "plot_source": {
+                "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_chigstyle/src/plot_manuscript_candidate.py",
+                "sha256": "aa30cd8530c67df66de511868db88711c2614193396aefc93627d59be060151c"
+            }
+        },
+        "same_N_F_budgets": [
+      30,
+      240,
+      480,
+      990,
+      2040,
+      4080,
+      6000,
+      9990,
+      12000,
+      15000,
+      18000,
+      21000,
+      24000,
+      27000,
+      30000
+    ]
+  },
+  "inputs": {
+    "endpoint_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "formal_ode_neb": {
+      "incremental_cache": null,
+      "run_dir": null,
+      "terminal_audit": null
+    },
+    "ir_centered_surface_audit": null,
+    "ir_centered_surface_bundle": null,
+    "ir_ivm_full_state": {
+      "shard_root_override": null,
+      "state_binding": {
+        "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/IR_CALL318_CALL515_STATE_BINDING_R2.json",
+        "sha256": "ce042982bdef76693459ffce876598b96b9d6f330f2af102ffa11a3f19e8882c"
+      },
+      "state_interpretation": {
+        "last_formally_reportable_call": 318,
+        "last_formally_reportable_optimization_N_F": 8982,
+        "returned_terminal_call": 515,
+        "returned_terminal_formally_reportable": false,
+        "returned_terminal_optimization_N_F": 14983,
+        "returned_terminal_state_role": "terminal_uncommitted_charged_tail"
+      },
+      "verification": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+        "sha256": "5cfd64d971a735850ba9756be342cd402ec7480f0e32a7e38f100567f7a9ccf7"
+      }
+    },
+    "ode_source_root": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_kgrid_nf6000_nf30000_20260903_r1",
+    "original_ivm_snapshots": [
+      {
+        "optimization_N_F": 30,
+        "snapshot": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/original_ivm_source_snapshots_nf30_240_480_990_9990/nf00030.npz",
+          "sha256": "91513c624f2b2431a328135dca800138369a3d6aae6b9848de8541841778535e"
+        }
+      },
+      {
+        "optimization_N_F": 240,
+        "snapshot": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/original_ivm_source_snapshots_nf30_240_480_990_9990/nf00240.npz",
+          "sha256": "2091895e6865a4a46da60911ce888eeab41245484e86edd799f3bf8ebeda9ba0"
+        }
+      },
+      {
+        "optimization_N_F": 480,
+        "snapshot": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/original_ivm_source_snapshots_nf30_240_480_990_9990/nf00480.npz",
+          "sha256": "4779414604f04a0d1f46d35f9100b7e1bb079bd3f1248c394aaeecb7a356d620"
+        }
+      },
+      {
+        "optimization_N_F": 990,
+        "snapshot": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/original_ivm_source_snapshots_nf30_240_480_990_9990/nf00990.npz",
+          "sha256": "da1126294c816c196973d28646eff6e805ce677d964b50f9ce9101f01ec276d2"
+        }
+      },
+      {
+        "optimization_N_F": 9990,
+        "snapshot": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/original_ivm_source_snapshots_nf30_240_480_990_9990/nf09990.npz",
+          "sha256": "80f01ca006da806dda8fa67c833133cac9654514e7bf25d62cb9992e7e2a1db0"
+        }
+      }
+    ],
+    "screening_traces": [
+      {
+        "compact_audit": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_audits/fresh-nonresume-bb-neb-aseode-k0p1-screen-nf6000-remote-20260903-r1.compact-trace-audit.json",
+          "sha256": "c131cdc7fa777f2888af2841bd647809ebcfbd2e8ee586762c8c73f6f2e97da6"
+        },
+        "spring_k_eV_per_A2": 0.1,
+        "trace": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_traces/fresh-nonresume-bb-neb-aseode-k0p1-screen-nf6000-remote-20260903-r1.compact-metric-trace.json",
+          "sha256": "49c4c1ffad85786ed2d18e679ca32caa083d3a656e66683bec9bfb799555380a"
+        }
+      },
+      {
+        "compact_audit": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_audits/fresh-nonresume-bb-neb-aseode-k1-screen-nf6000-remote-20260903-r1.compact-trace-audit.json",
+          "sha256": "0a2637049879d6d3d0f0cae6890e34a8e8772513bdae2cb69fc381dcd92d721e"
+        },
+        "spring_k_eV_per_A2": 1,
+        "trace": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_traces/fresh-nonresume-bb-neb-aseode-k1-screen-nf6000-remote-20260903-r1.compact-metric-trace.json",
+          "sha256": "a06e5cdce5b10066bc714b39821e565cd787c7af1de922b9e34d2cd1ff41fda7"
+        }
+      },
+      {
+        "compact_audit": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_audits/fresh-nonresume-bb-neb-aseode-k10-screen-nf6000-remote-20260903-r1.compact-trace-audit.json",
+          "sha256": "6e4bf2c50b13e0d4fd0d2ff5116fe7e181d70e871e02b2b2eea8ef4e016b294f"
+        },
+        "spring_k_eV_per_A2": 10,
+        "trace": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_traces/fresh-nonresume-bb-neb-aseode-k10-screen-nf6000-remote-20260903-r1.compact-metric-trace.json",
+          "sha256": "b2f4dd11b57ced6b349694e8d69a1f8889a06413b1cbd9871da67d2cf295c2d9"
+        }
+      },
+      {
+        "compact_audit": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_audits/fresh-nonresume-bb-neb-aseode-k100-screen-nf6000-remote-20260903-r1.compact-trace-audit.json",
+          "sha256": "7451af6d8cf5faa5bcb7be06578fb82d9f3105a96f1341a345bd8f00025aa4b7"
+        },
+        "spring_k_eV_per_A2": 100,
+        "trace": {
+          "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/compact_traces/fresh-nonresume-bb-neb-aseode-k100-screen-nf6000-remote-20260903-r1.compact-metric-trace.json",
+          "sha256": "c346fa4bf6d5dfba4d029494f9dadde0e35a8982ed595bd6d583bb1bba72870b"
+        }
+      }
+    ],
+    "selection_receipt": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf15000_20260903_r1/selection/BB_ASEODE_KGRID_SELECTION_NF6000_20260903_R1.json",
+      "sha256": "4da93e5f277acfa3e9f0dc3a170968abd081dba9689bac4cb60eb1edd60551fc"
+    },
+    "surface_center_state_audit": null,
+    "surface_center_state": {
+      "call_per_image": 515,
+      "formally_reportable": false,
+      "method": "IVM",
+      "optimization_N_F": 14983,
+      "path_sha256": "5a4ba3c5dc8f7063c1963f0bfd951f82356e60d0ad9c4fc17c0bc8b0d36d8569",
+      "state_role": "terminal_uncommitted_charged_tail"
+    }
+  },
+  "outputs": {
+    "final": {
+      "comparison_pack_json": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_comparison.json",
+      "cost_to_precision_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_cost_to_precision.pdf",
+      "energy_vs_arc_length_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_energy_vs_arc_length.pdf",
+      "evolution_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_evolution.pdf",
+      "pdf_qa_json": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_pdf_qa.json",
+      "provenance_md": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_provenance.md",
+      "completion_audit_json": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_completion_audit.json",
+      "same_N_F_table_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_discrete32_ode_nf30000_r2_same_nf.csv"
+    },
+    "live": {
+      "comparison_pack_json": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_discrete32_ode_nf30000_r2_preview.json",
+      "cost_to_precision_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_discrete32_ode_nf30000_r2_cost_preview.pdf",
+      "energy_vs_arc_length_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_discrete32_ode_nf30000_r2_energy_preview.pdf",
+      "evolution_pdf": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_discrete32_ode_nf30000_r2_evolution_preview.pdf",
+      "same_N_F_table_csv": "/Users/wuzhiyou/Downloads/IVM_for_MEP/output/pdf/barnase_barstar_discrete32_ode_nf30000_r2_same_nf_preview.csv"
+    }
+  },
+  "schema": "bb-discrete32-ode-nf30000-r2-analysis-manifest-v1",
+  "status": "WAITING_FOR_ODE_NF30000_AND_SURFACE"
+}

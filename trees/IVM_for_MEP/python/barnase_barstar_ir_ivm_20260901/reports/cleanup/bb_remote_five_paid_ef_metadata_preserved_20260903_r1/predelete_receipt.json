@@ -1,0 +1,83 @@
+{
+  "schema": "bb-remote-paid-ef-redundant-copy-predelete-v1",
+  "receipt_id": "remote_five_paid_ef_redundant_copy_predelete_20260902_r1",
+  "status": "GO_EXACT_FIVE_REMOTE_FILES_ONLY",
+  "verified_at_utc": "2026-09-01T21:09:49Z",
+  "authorization": {
+    "source": "explicit user instructions in the active thread",
+    "scope": "clean obsolete, poor-performing, or abandoned historical data and release remote space for the current Barnase--Barstar IR-IVM campaign",
+    "narrowing": "retain every scientific byte in a verified local recovery archive before deleting only the five exact remote redundant paid_ef.pack files"
+  },
+  "reason": "The selected independent 9990-N_F IR-IVM member has a prospectively frozen 8 GiB remote start gate. The remote host has 5747560 KiB free. These five terminal old DeepLR packs are not referenced by the current IR-IVM, ODE--NEB, or original-IVM baselines and total 3613238254 bytes.",
+  "remote_host": "wuzhiyou@100.74.85.3",
+  "remote_free_kib_before": 5747560,
+  "local_recovery_root": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1",
+  "rsync_exit_code": 0,
+  "mutagen_scope_check": "No active Mutagen session directly covers any of the five remote source directories or the local recovery root.",
+  "live_process_check": "No matching Python, OpenMM, or rsync computation process was present after the archive transfer.",
+  "targets": [
+    {
+      "campaign": "d7fp1r2",
+      "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel1_r30a3_a025d7fp1r2_h0mmap_nf9990_remote_20260831_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel1-r30a3-a025d7fp1r2-h0mmap-nf9990-remote-20260831-r1/paid_ef.pack",
+      "local_recovery_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel1_r30a3_a025d7fp1r2_h0mmap_nf9990_remote_20260831_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel1-r30a3-a025d7fp1r2-h0mmap-nf9990-remote-20260831-r1/paid_ef.pack",
+      "bytes": 722745382,
+      "sha256": "50d16a18544dc11baf96622d59d43b24d7ad0ff7cbf1d11c5eca54a810674de0",
+      "remote_device": 16777231,
+      "remote_inode": 43655529,
+      "remote_open_handles": 0,
+      "complete_json_sha256": "b72f0312580e015d63bdd181215bbdab32e29ebe5066735d5bcaa105907249fd"
+    },
+    {
+      "campaign": "r30cycle333",
+      "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30cycle333_a025d11cycle_symh0_h0mmap_nf9990_remote_20260901_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30cycle333-a025d11cycle-symh0-h0mmap-nf9990-remote-20260901-r1/paid_ef.pack",
+      "local_recovery_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30cycle333_a025d11cycle_symh0_h0mmap_nf9990_remote_20260901_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30cycle333-a025d11cycle-symh0-h0mmap-nf9990-remote-20260901-r1/paid_ef.pack",
+      "bytes": 722665694,
+      "sha256": "f039cd06104d17e1feafce6b8624520ee6955ac656086ba2731fbbef14981ced",
+      "remote_device": 16777231,
+      "remote_inode": 43818915,
+      "remote_open_handles": 0,
+      "complete_json_sha256": "d4c9f1343b3e30ca8a839e534176cf53c3bdbf18dfc6a782749ca43dd824eef3"
+    },
+    {
+      "campaign": "d4pg",
+      "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30a3_a025d4pg_nf9990_remote_20260828_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30a3-a025d4pg-nf9990-remote-20260828-r1/paid_ef.pack",
+      "local_recovery_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30a3_a025d4pg_nf9990_remote_20260828_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30a3-a025d4pg-nf9990-remote-20260828-r1/paid_ef.pack",
+      "bytes": 722650026,
+      "sha256": "9c7a829be00f410c218afb4d39f5c917a2c1bd578f6a8975c168fa1310d6d681",
+      "remote_device": 16777231,
+      "remote_inode": 43475640,
+      "remote_open_handles": 0,
+      "complete_json_sha256": "3fee5da3088b933f57d47cf78c77787c0d8727670bf6e387e6faf066188d3b42"
+    },
+    {
+      "campaign": "gs30lb8_d5lc",
+      "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb8_trust8_dsel4_r30a4_a025d5lc_h0mmap_nf9990_remote_20260830_r4/runs/fresh-nonresume-gs30lb8-trust8-dsel4-r30a4-a025d5lc-h0mmap-nf9990-remote-20260830-r4/paid_ef.pack",
+      "local_recovery_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb8_trust8_dsel4_r30a4_a025d5lc_h0mmap_nf9990_remote_20260830_r4/runs/fresh-nonresume-gs30lb8-trust8-dsel4-r30a4-a025d5lc-h0mmap-nf9990-remote-20260830-r4/paid_ef.pack",
+      "bytes": 722603625,
+      "sha256": "7407d446823081919b25def4144b80234930ef0eba8c75af708433bd85838580",
+      "remote_device": 16777231,
+      "remote_inode": 43540390,
+      "remote_open_handles": 0,
+      "complete_json_sha256": "42e0783e6442063ffea8e29d47132e2f7b293c2a2950231c618dbea8d7e104c7"
+    },
+    {
+      "campaign": "d6sam",
+      "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30a4_a025d6sam_h0mmap_nf9990_remote_20260830_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30a4-a025d6sam-h0mmap-nf9990-remote-20260830-r1/paid_ef.pack",
+      "local_recovery_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_remote_paid_ef_recovery_20260902_r1/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_gs30lb6_trust8_dsel4_r30a4_a025d6sam_h0mmap_nf9990_remote_20260830_r1/runs/fresh-nonresume-gs30lb6-trust8-dsel4-r30a4-a025d6sam-h0mmap-nf9990-remote-20260830-r1/paid_ef.pack",
+      "bytes": 722573527,
+      "sha256": "0d48ef04e74d7e44f12c934555d31534567485699d0f8a25265ca61149db216e",
+      "remote_device": 16777231,
+      "remote_inode": 43602972,
+      "remote_open_handles": 0,
+      "complete_json_sha256": "0d1b5e0d3e7e3433daf6903e13885b3e51f06b9eb879360af34bfa234028ac7d"
+    }
+  ],
+  "total_bytes": 3613238254,
+  "deletion_semantics": {
+    "exact_files_only": true,
+    "glob_for_deletion": false,
+    "parent_directory_deletion": false,
+    "preserve_COMPLETE_PRESTART_WAL_snapshots_sources": true,
+    "recoverable_byte_for_byte_from_local_archive": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "purpose": "Full-budget counterfactual for the selected Chignolin alpha: remove only the refreshed-I_perp outer globalization guard.",
+  "alpha": 1.0,
+  "alpha_mode": "fixed",
+  "state_globalization": "proximal_only",
+  "budget_per_internal_image": 500,
+  "production_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_ivm_equal_idpp_v52_fixed_alpha1_production_central_state_ivm_cfg31b81924ce51_budget500.npz",
+  "production_sha256": "7f99e96d1337283fc2361752e16ccfac1bd9679b085ea099f9268d2de19267d7",
+  "counterfactual_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_alpha_mechanism_proximal_only_a1_full_central_state_ivm_cfg85ee8e3b477d_budget500.npz",
+  "counterfactual_sha256": "9c9fa42e7b53d6982ba8e5807aaaed09ed39cd472f12f62b5138dd622f6aef1e",
+  "stop_reason": "lbfgsb_no_progress",
+  "final_call_per_internal_image": 342,
+  "backend_raw_joint_evaluations": 6823,
+  "sum_image_joint_evaluations": 6823,
+  "counter_audit_consistent": true,
+  "initial_path_equal": true,
+  "all_common_fields_equal_except": [
+    "configuration_sha256",
+    "run_label",
+    "wall_seconds"
+  ],
+  "identical_scientific_arrays": [
+    "calls_per_image",
+    "counter_vectors",
+    "i_perp",
+    "barrier_kcal",
+    "physical_fmax",
+    "final_path",
+    "stored_path_calls",
+    "stored_paths",
+    "accepted_fraction",
+    "rejected_images",
+    "active_alpha"
+  ],
+  "production_results_overwritten": false
+}

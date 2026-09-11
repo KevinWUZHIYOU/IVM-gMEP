@@ -1,0 +1,76 @@
+{
+  "schema": "bb-irivm-selected-full-state-history-remote-prelaunch-v4",
+  "status": "PASS_READY_FOR_ONE_FRESH_REMOTE_R4_REPLAY",
+  "created_utc": "2026-09-02T06:55:16Z",
+  "execution_host": {
+    "address": "100.74.85.3",
+    "role": "remote Mac mini",
+    "user": "wuzhiyou"
+  },
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF9990_20260902_R4.json",
+    "sha256": "15d9efc8b80d9ded4d99f96cafd2c42c315035dc0174a809743af29d930f8903"
+  },
+  "authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r4.json",
+    "sha256": "f45b04965482b4aa5fba4e464e6aec5887ee75b5254d73f41c5ade31e5768426"
+  },
+  "R3_failure_supersession": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_R3_FAILURE_SUPERSESSION_20260902.json",
+    "sha256": "41de0d406d562a409990cbbed168fc5baf698cfeb237db444f16a42989ed9b6a"
+  },
+  "source_hashes": {
+    "full_state_history_recorder_r4.py": "0e3382f92d40fe7412bd4c8ee8f6861689a6f23d682d5d792c35e6d5e71eacca",
+    "run_selected_ivm_full_state_history_replay_r4.py": "36f9f0f8c400d9dca8d9832b1721072cc66db82efe3a72a32693c16d97960ff8",
+    "verify_selected_ivm_full_state_history_replay_r4.py": "79c0f5f8fc93da1a8a6331f21a2cd2d61aea60f7fd1ac030bf0ac9ea649e0507",
+    "test_run_selected_ivm_full_state_history_replay_r4.py": "bcc5fea5e68d0135453e4303f90ef056cffde9dc73f618c2f47ea0304049c924"
+  },
+  "tests": {
+    "local": "8/8 PASS",
+    "remote": "8/8 PASS",
+    "py_compile_local": "PASS",
+    "py_compile_remote": "PASS",
+    "production_record_callsites": 24,
+    "live_counter_callsites": 18,
+    "historical_counter_callsites": 6,
+    "accepted_counter_schemas": "live exact-8; historical exact-7 or exact-8; no guessed or backfilled field",
+    "independent_read_only_audit": "PASS_READY"
+  },
+  "mutagen": {
+    "dedicated_session_name": "bb-irivm-20260901",
+    "dedicated_session_identifier": "sync_EaEvvA9594NRGtMQSN0jneepyUq2tCef27jljwXXPc9",
+    "flush_exit_code": 0,
+    "alpha_connected": true,
+    "beta_connected": true,
+    "status": "Watching for changes",
+    "transition_problems": 0
+  },
+  "remote_hashes_match_local": true,
+  "remote_gates": {
+    "both_host_local_fcntl_locks": "FREE",
+    "matching_full_state_processes": 0,
+    "minimum_free_disk_bytes": 6442450944,
+    "observed_free_disk_bytes": 8339750912,
+    "output_absent_no_overwrite_gate": true,
+    "launch_receipt_absent_no_overwrite_gate": true,
+    "zero_OpenMM_preflight": "PASS_R4_ZERO_OPENMM_PREFLIGHT"
+  },
+  "full_state_capture": {
+    "expected_records": 352,
+    "new_energy_or_force_calls_from_capture": 0,
+    "output_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r4",
+    "stores_each_record": [
+      "path32_A",
+      "energy_eV32",
+      "force_eV_per_A32",
+      "discrete_I_perp",
+      "every genuinely available evaluator counter vector"
+    ]
+  },
+  "thread_and_lock_policy": {
+    "all_six_thread_caps": 1,
+    "jobs": 1,
+    "one_BB_task_on_remote_host": true,
+    "two_host_local_fcntl_locks_required": true
+  }
+}

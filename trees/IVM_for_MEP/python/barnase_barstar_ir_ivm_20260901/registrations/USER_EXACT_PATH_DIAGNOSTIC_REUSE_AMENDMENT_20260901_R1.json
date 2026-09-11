@@ -1,0 +1,37 @@
+{
+  "amendment_id": "bb_irivm_exact_path_arc500_energy_reuse_20260901_r1",
+  "applies_to": "all subsequent Barnase--Barstar arc-length-500 diagnostics in this campaign",
+  "created_utc": "2026-09-01T14:00:04Z",
+  "decision_timing": "after all three alpha-confirmation optimization trajectories were sealed and before evaluating the new alpha=10 N_F=716 path",
+  "diagnostic_values_used_for_this_decision": false,
+  "exact_reuse_rule": {
+    "allowed_only_if_all_match": [
+      "selected 32-image path SHA-256",
+      "500-point densified coordinate SHA-256",
+      "unweighted 3N Cartesian piecewise-linear equal-arclength construction",
+      "grid s_j = j L / 499 including both endpoints",
+      "topology SHA-256",
+      "canonical OpenMM CPU/double energy oracle and force-request count zero",
+      "source diagnostic output and audit SHA-256 with PASS status",
+      "source row contains exactly 500 successful energy evaluations and no failed energy evaluation"
+    ],
+    "forbidden": "parameter-based, metric-based, approximate-coordinate, interpolated-energy, or cross-oracle reuse",
+    "new_path_rule": "a path hash absent from the audited source must receive 500 fresh energy-only evaluations",
+    "reporting": "record source diagnostic row and hashes per reused path; report newly executed and lineage-bound diagnostic energy counts separately",
+    "optimization_Number_of_Forces_contribution": 0
+  },
+  "metric_policy_interpretation": "This supersedes diagnostic_cache=false only for exact, hash-identical path/grid/oracle reuse. It does not change either metric definition and applies symmetrically to every method and parameter setting.",
+  "parent_metric_policy": "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+  "parent_metric_policy_sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5",
+  "registered_source_diagnostic": {
+    "audit": "runs/diagnostics/bb_irivm_alpha_discrete_iperp_densified_delta_e_500_20260901_r1.audit.json",
+    "audit_sha256": "1cac17a892385fe50b8277490bee6f75c7019dcf2fc75d03e7cf2bc242e483f2",
+    "energy_wal": "runs/diagnostics/bb_irivm_alpha_discrete_iperp_densified_delta_e_500_20260901_r1.energy.wal.jsonl",
+    "energy_wal_sha256": "28b681c0c148fbcc855593b442dcced0b29b54eed97fa40551b45fddf9da9d70",
+    "output": "runs/diagnostics/bb_irivm_alpha_discrete_iperp_densified_delta_e_500_20260901_r1.npz",
+    "output_sha256": "d1528c65ca71a3e291997aae83450a001afab1dc44e93f7604237c4292a12e56",
+    "status": "PASS"
+  },
+  "schema": "bb-irivm-exact-path-diagnostic-reuse-amendment-v1",
+  "status": "OPERATIVE_EFFICIENCY_AMENDMENT"
+}

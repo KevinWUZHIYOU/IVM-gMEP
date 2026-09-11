@@ -1,0 +1,87 @@
+{
+  "case": "fixed-Q unperturbed 10D Muller-Brown",
+  "coordinate_convention": "z=Q@x; x=Q.T@z",
+  "images_total": 22,
+  "internal_images": 20,
+  "q_sha256": "372962a47504e6df28a20d8b022482a6835680765434b4385a6dba0e826974bc",
+  "selected": {
+    "obsm_fire": {
+      "config": {
+        "diagnostic_interval": 5,
+        "fire_beta": 1.0,
+        "fire_dt": 0.01,
+        "inner": 4,
+        "lambda": 0.8,
+        "reparam_interval": 5,
+        "solver": "fire"
+      },
+      "dense_barrier_error": 0.0018851895764555593,
+      "final_calls_per_image": 365,
+      "final_i_perp": 2.866763587456266e-23,
+      "run": "runs/refinement_production/obsm_fire/obsm_fire_463d17670289_budget4000.npz",
+      "stop_reason": "stationary"
+    },
+    "obsm_lbfgs": {
+      "config": {
+        "diagnostic_interval": 5,
+        "inner": 2,
+        "lambda": 0.2,
+        "reparam_interval": 1,
+        "solver": "lbfgs"
+      },
+      "dense_barrier_error": 0.0018851895764413484,
+      "final_calls_per_image": 927,
+      "final_i_perp": 5.229002341194406e-22,
+      "run": "runs/refinement_production/obsm_lbfgs/obsm_lbfgs_b36a738c93cc_budget5000.npz",
+      "stop_reason": "stationary"
+    },
+    "ode_neb": {
+      "ase_optimizer_constructor": "NEBOptimizer(neb, method=\"ode\")",
+      "config": {
+        "diagnostic_interval": 10,
+        "fmax": 1e-14,
+        "k": 1000.0
+      },
+      "dense_barrier_error": 0.0018882218238616133,
+      "final_calls_per_image": 4998,
+      "final_i_perp": 1.807288437826114e-11,
+      "final_total_force_evaluations": 99960,
+      "only_tuned_parameter": "k",
+      "run": "runs/ode_default_production/ode_neb/ode_neb_17cd3c104e33_budget5000.npz",
+      "selection_report": "reports/q10_ode_k_selection_at_5000.json",
+      "selection_standard": "barrier error at 5000 total forces <= 2e-3, then early-window performance ranking",
+      "selection_window_total_forces": [
+        0,
+        5000
+      ],
+      "stop_reason": "budget"
+    },
+    "original_string": {
+      "config": {
+        "diagnostic_interval": 25,
+        "dt": 3e-05,
+        "reparam_interval": 2
+      },
+      "dense_barrier_error": 6.046293322015117e-06,
+      "final_calls_per_image": 4976,
+      "final_i_perp": 591.8708879185932,
+      "run": "runs/refinement_screen/original_string/original_string_cdb218376d2e_budget5000.npz",
+      "stop_reason": "budget"
+    },
+    "static_neb": {
+      "config": {
+        "alpha": 0.0003,
+        "diagnostic_interval": 10,
+        "fmax": 1e-14,
+        "k": 200.0,
+        "optimizer_method": "static"
+      },
+      "dense_barrier_error": 0.0013126593276524545,
+      "final_calls_per_image": 4991,
+      "final_i_perp": 4.229282808598215e-08,
+      "run": "runs/refinement_production/static_neb/static_neb_9506398ecdd4_budget5000.npz",
+      "stop_reason": "budget"
+    }
+  },
+  "tangent": "ASE Henkelman-Jonsson improved tangent"
+}

@@ -1,0 +1,27 @@
+{
+  "case": "fixed-Q unperturbed 10D Muller-Brown, 22 images / 20 internal samples",
+  "figure_status": "production theory-audited fixed-alpha NN-IVM comparison",
+  "ivm_highest_zorder": true,
+  "main_tex_updated": false,
+  "method_order": [
+    "IVM",
+    "NN-IVM",
+    "OBSM-FIRE",
+    "OBSM-LBFGS",
+    "Original String",
+    "ODE-NEB",
+    "Static NEB"
+  ],
+  "metrics": [
+    "5001-point densified I_perp",
+    "5001-point densified Delta E error"
+  ],
+  "source_report": "/Users/wuzhiyou/Downloads/IVM_for_MEP/muller_q10_ivm/reports/q10_nn_ivm_dense_comparison.json",
+  "tangent": "NEB Henkelman-Jonsson improved tangent",
+  "xlim": [
+    0,
+    5000
+  ],
+  "xscale": "linear",
+  "yscale": "log"
+}

@@ -1,0 +1,159 @@
+{
+  "protocol": "clean-start four-level fixed-alpha Ala IVM audit",
+  "root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+  "common_initial_path": "inputs/common_initial_path_equidistant.npz",
+  "common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "runner_sha256": "74a6cf216c82f4c22fd3b8ce993b2369aa967319f62c632b856d69870bc3ac43",
+  "orchestrator_sha256": "f5cfa54ea1249499ba8d86970c1432ee0e174157b66b01f782da6e3b8bc822fa",
+  "stages": {
+    "stage1": {
+      "output_dir": "runs/stage1_exact_no_resample",
+      "budget": 160,
+      "rtols": [
+        0.2,
+        0.1
+      ],
+      "description": "exact-like frozen-normal IVM; no reparameterization"
+    }
+  },
+  "alphas": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    20.0,
+    30.0,
+    100.0,
+    1000.0,
+    10000.0,
+    Infinity
+  ],
+  "tasks": 10,
+  "jobs": 2,
+  "started_unix": 1785598032.4814951,
+  "finished_unix": 1785598243.528417,
+  "results": [
+    {
+      "stage": "stage1",
+      "alpha": 0.01,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 141.55692195892334,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a0p01_central_state_ivm_cfg663f68b9ca9c_budget1000.npz",
+      "result_sha256": "13a7f00abb6b4459f504a7e04d211d85a945f546362ff05fa250cf4eda44f2e6",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a0p01_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 0.1,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 77.81168818473816,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a0p1_central_state_ivm_cfg157cb7bedd64_budget1000.npz",
+      "result_sha256": "991d9c6d0ccc49fdd5f09c0ac7399514802c34ef7038168ac76eedc8e2219c51",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a0p1_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 27.14517307281494,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a1_central_state_ivm_cfg80e7debad975_budget1000.npz",
+      "result_sha256": "b5f719f04bb9de7a34165f3fcbf2e38726208761382d547e38c91653cba8d652",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a1_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 15.710565090179443,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a10_central_state_ivm_cfgb67485ad269a_budget1000.npz",
+      "result_sha256": "09f8e2576cbe371386e9cb3cdb6003017da6e5592d9cf68b396be43d5c01ac2a",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a10_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 20.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 9.491012811660767,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a20_central_state_ivm_cfgeef86c84390d_budget1000.npz",
+      "result_sha256": "4ec125ac864f57034292cc06550493853d9e5b76d0492c33038ce1e7a7ae9ddc",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a20_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 30.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 22.118919849395752,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a30_central_state_ivm_cfg16556ce65790_budget1000.npz",
+      "result_sha256": "b490c7bf59c8df10760455f0461798bf0b814c1aea1db4244c15c001fab60efe",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a30_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 100.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 32.354928970336914,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a100_central_state_ivm_cfgec8b9b26dc27_budget1000.npz",
+      "result_sha256": "95dd734518f5c419a530ea478fb659f737d224748615019356a700dbc010e5d2",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a100_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 1000.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 28.53236722946167,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a1000_central_state_ivm_cfg7b684d5ecb8f_budget1000.npz",
+      "result_sha256": "4d21ca1085a7c22a2f48370682a9d4fc0167a58b2f14e58c56ae5b2229a29e8a",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a1000_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": 10000.0,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 29.65157699584961,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a10000_central_state_ivm_cfg6fe22f30c936_budget1000.npz",
+      "result_sha256": "e4d9e4c00a1e89c39a8972e7a5c873218d8289ba011766a7dd49519f346bf24f",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a10000_b1000"
+    },
+    {
+      "stage": "stage1",
+      "alpha": Infinity,
+      "rtol": 0.1,
+      "budget": 1000,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 30.195664882659912,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_ainf_central_state_ivm_cfg3c0c8b66f79f_budget1000.npz",
+      "result_sha256": "3d525189e647bd1a6fb370a23301c35fbc1674e7221860dda40e871f71d7a905",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_ainf_b1000"
+    }
+  ],
+  "successful": 10,
+  "failed": 0
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "bb-ir-ivm-user-alpha-scope-amendment-v2",
+  "amendment_id": "bb_ir_ivm_alpha_upper_bound_1e3_20260901_r2",
+  "created_utc": "2026-09-01T09:50:19Z",
+  "status": "USER_DIRECTED_SCOPE_REDUCTION_BEFORE_CANCELLED_MEMBERS_START",
+  "supersedes": {
+    "path": "registrations/USER_ALPHA_SCOPE_AMENDMENT_20260901_R1.json",
+    "sha256": "620c238433cfdd4adba9c03f7e205820ac3caffbd07086e7895d234217759dec",
+    "reason": "The user immediately refined the upper bound from excluding only 1e6 to alpha <= 1e3."
+  },
+  "parent_protocol": {
+    "path": "registrations/STAGED_SEARCH_PROTOCOL.json",
+    "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+  },
+  "metric_policy_amendment": {
+    "path": "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+    "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+  },
+  "user_direction": "Use alpha=1e3 as the grid-search upper bound.",
+  "scope_change": {
+    "retained_alpha_values": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "cancelled_alpha_values": [
+      10000.0,
+      100000.0,
+      1000000.0
+    ],
+    "executed_upper_bound": 1000.0,
+    "alpha_scan_member_count_after_amendment": 5
+  },
+  "timing_and_disclosure": {
+    "completed_members_before_amendment": [
+      "bb_irivm_a1em1_r05_m05_inf480_r1",
+      "bb_irivm_a1e1_r05_m05_inf480_r1"
+    ],
+    "running_member_at_amendment": "bb_irivm_a1e3_r05_m05_inf480_r1",
+    "parameter_promotion_decisions_before_amendment": 0,
+    "cancelled_members_total_physical_calls_before_amendment": 0
+  },
+  "cancelled_members": [
+    {
+      "label": "bb_irivm_a1e4_r05_m05_inf480_r1",
+      "alpha": 10000.0,
+      "actual_optimization_NoF": 0,
+      "started": false,
+      "classification": "AUTHORIZED_BUT_NOT_STARTED_USER_CANCELLED",
+      "authorization_original_sha256": "7dccd63a50b45ed50c0f3a7b78931872dd2e6f500511b4c4594d399cc8e01c0a",
+      "authorization_quarantine_path": "registrations/cancelled_execution_authorizations/bb_irivm_a1e4_r05_m05_inf480_r1.json"
+    },
+    {
+      "label": "bb_irivm_a1e5_r05_m05_inf480_r1",
+      "alpha": 100000.0,
+      "actual_optimization_NoF": 0,
+      "started": false,
+      "classification": "AUTHORIZED_BUT_NOT_STARTED_USER_CANCELLED",
+      "authorization_original_sha256": "4d9370c839e2da20000b13540254773393989b94f0c42e674514027f7f23a695",
+      "authorization_quarantine_path": "registrations/cancelled_execution_authorizations/bb_irivm_a1e5_r05_m05_inf480_r1.json"
+    },
+    {
+      "label": "bb_irivm_a1e6_r05_m05_inf480_r1",
+      "alpha": 1000000.0,
+      "actual_optimization_NoF": 0,
+      "started": false,
+      "classification": "AUTHORIZED_BUT_NOT_STARTED_USER_CANCELLED",
+      "authorization_original_sha256": "bf91f3c41f23fd9fbb6536e6e71fdcea95bc859532e75f7ae2314789e1e0c58b",
+      "authorization_quarantine_path": "registrations/cancelled_execution_authorizations/bb_irivm_a1e6_r05_m05_inf480_r1.json"
+    }
+  ],
+  "prestart_enforcement": {
+    "mechanism": "Move the three still-immutable authorization files out of registrations/execution_authorizations into registrations/cancelled_execution_authorizations.",
+    "runner_order_verified": "The member runner validates the exact authorization path before checking thread variables and before calling runtime.main, so a cancelled member cannot construct the OpenMM runtime or spend an E/F call.",
+    "current_local_batch_behavior": "After alpha=1e3 completes, the already-running batch may attempt its originally queued alpha=1e5 member; the missing active authorization must fail closed at 0 NoF. That expected prestart cancellation is not a scientific failure.",
+    "preservation": "Original authorization bytes, modes, and hashes are preserved in the cancellation directory."
+  },
+  "host_allocation_after_amendment": {
+    "local_completed_or_running": [
+      0.1,
+      10.0,
+      1000.0
+    ],
+    "remote_serial_after_mutagen_and_gate_validation": [
+      1.0,
+      100.0
+    ],
+    "jobs_per_host": 1,
+    "maximum_concurrent_BB_members_per_host": 1
+  },
+  "scientific_effect": {
+    "optimization_algorithm_changed": false,
+    "completed_or_running_trajectory_changed": false,
+    "remaining_search_domain_changed": true,
+    "ranking_rule": "Rank only alpha in {0.1,1,10,100,1000} using discrete I_perp and arc-length-500 densified Delta E after all five retained results and diagnostics are sealed.",
+    "claim_limit": "Report alpha=1e4, 1e5, and 1e6 as untested by user-directed cancellation. Do not infer their performance or claim the original eight-value scan was completed."
+  },
+  "binding_rule": "Every alpha-selection receipt, promoted-member registration, result table, figure, and provenance document created after this amendment must bind this R2 file and its SHA-256; R2 is the operative alpha-scope rule."
+}

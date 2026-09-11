@@ -1,0 +1,18 @@
+{
+  "schema": "bb-ode-neb-all-batch-diagnostic-precall-failure-v1",
+  "status": "RECORDED_PRECALL_IMPORT_FAILURE_NO_SCIENTIFIC_RESULT",
+  "created_utc": "2026-09-01T18:35:52Z",
+  "contract": "registrations/diagnostics/BB_ODE_NEB_ALL_PAID_BATCHES_ARC500_20260902_R2.json",
+  "contract_sha256": "ca5a0f15a36f2daa52b3116da1bd4cfaf1fb966b52ffbe20a5a956664baae997",
+  "failed_shard": 0,
+  "shard_count": 16,
+  "failure": "The launch environment omitted the experiment src directory from PYTHONPATH, so importing bb_core failed before OpenMMBackend construction.",
+  "partial_wal": "runs/diagnostics/bb_ode_neb_all_paid_batches_arc500_20260902_r2/shard_00_of_16.energy.wal.jsonl",
+  "partial_wal_line_count": 1,
+  "partial_wal_content": "header only",
+  "diagnostic_energy_attempts": 0,
+  "diagnostic_energy_successes": 0,
+  "diagnostic_force_requests": 0,
+  "optimization_N_F_contribution": 0,
+  "disposition": "Preserve the partial WAL and retry into a fresh r3 output directory with an explicit experiment-src PYTHONPATH; the frozen scientific contract and evaluator remain unchanged."
+}

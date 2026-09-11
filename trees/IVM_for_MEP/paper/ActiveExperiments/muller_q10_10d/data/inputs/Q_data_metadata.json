@@ -1,0 +1,13 @@
+{
+  "contains_sincos_perturbation": false,
+  "determinant": -0.9999999999999999,
+  "dimension": 10,
+  "factorization": "A = Q @ R; diagonal(R) sign-normalized nonnegative",
+  "inverse_coordinate_map": "x = Q.T @ z",
+  "orthogonality_inf_error": 2.0464075346237923e-15,
+  "potential_coordinate_convention": "z = Q @ x for column vectors",
+  "q_sha256_float64_c_order": "372962a47504e6df28a20d8b022482a6835680765434b4385a6dba0e826974bc",
+  "reconstruction_inf_error": 4.343747583845925e-15,
+  "rng": "numpy.random.default_rng(PCG64)",
+  "seed": 0
+}

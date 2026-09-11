@@ -1,0 +1,49 @@
+{
+  "authorized_stages": [
+    "original_path32",
+    "surface"
+  ],
+  "authorized_utc": "2026-09-02T11:31:53.668611+00:00",
+  "canonical_two_lock_second_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_CONTRACT_R3_20260902.json",
+    "sha256": "da265c2715ead5c408aeff66a2d88aa22df52d470b0fea26f4f1eda2d15f987d"
+  },
+  "enabled": true,
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_nf8982_0k_section_energy.py",
+    "sha256": "af17cda66bee788d23b3948f6a0cb0ebad9ab8d061fac6cbf62a96e3a0000c9c"
+  },
+  "failed_or_open_attempt_policy": "fail closed; require a superseding authorization and new output",
+  "host_role": "local",
+  "jobs": 1,
+  "maximum_energy_only_attempts": 1680,
+  "maximum_force_calls": 0,
+  "maximum_original_internal_energy_only_attempts": 30,
+  "maximum_surface_energy_only_attempts": 1650,
+  "optimization_N_F_contribution": 0,
+  "original_path32_result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_original_path32_energy_20260902_r3.npz",
+  "physical_calls_started_before_authorization": 0,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_energy_59x28_20260902_r3.npz",
+  "schema": "bb-irivm-nf8982-0k-section-energy-authorization-v2",
+  "status": "AUTHORIZED_AFTER_ZERO_OPENMM_PREFLIGHT",
+  "successful_prefix_resume_policy": "reuse only exact coordinate-hash-bound successful WAL entries",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_NF8982_0K_SECTION_ENERGY_PREAUTH_PREFLIGHT_R3_20260902.json",
+    "sha256": "3e083fbbe1663765e1714c5ce92fafe3ad305c845193442bc3e29be3637b5dd1"
+  }
+}

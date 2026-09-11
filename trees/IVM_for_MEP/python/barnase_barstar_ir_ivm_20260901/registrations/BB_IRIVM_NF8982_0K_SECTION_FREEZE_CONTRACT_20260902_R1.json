@@ -1,0 +1,51 @@
+{
+  "schema": "bb-irivm-nf8982-0k-section-freeze-contract-v1",
+  "status": "FROZEN_BEFORE_ANY_SECTION_ENERGY_CALL",
+  "center_policy": {
+    "source": "last complete post-initial reparameterization-committed selected IR-IVM path",
+    "optimization_N_F": 8982,
+    "terminal_N_F_9985_partial_tail_forbidden": true,
+    "center_points": 59,
+    "center_sampling": "uniform Cartesian arc length",
+    "normal_construction": "common initial minus center at matched center_s, remove central tangent component, normalize; nearest valid normal fallback",
+    "normal_coordinate_rms_A": {"start": -0.10, "stop": 0.44, "step": 0.02, "count": 28}
+  },
+  "execution_policy": {
+    "physical_execution_authorized": false,
+    "freeze_stage_makes_physical_calls": false,
+    "energy_only_required": true,
+    "force_calls": 0,
+    "optimization_N_F_contribution": 0,
+    "exact_coordinate_hash_reuse_only": true,
+    "approximate_energy_reuse_forbidden": true,
+    "sharding": "future evaluator shards immutable flattened (center_index, normal_index) ranges"
+  },
+  "base_evolution_contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_EVOLUTION_FIGURE_CONTRACT_20260902_R1.json",
+    "sha256": "269b7195e8c7c1185abc5479bc1c244c657d26c96f42a1123f17b8ef784f3a5a"
+  },
+  "builder": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_nf8982_0k_section.py",
+    "sha256": "5c6e964e0fd399da3b7cbffa631200fcf9e0926e9f17bc7c2bc05aae04bffa4c"
+  },
+  "method_and_style_references_only": {
+    "old_surface": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_chigstyle/figures/manuscript_candidate_20260727/manuscript_branch_local_true0k_pes.npz",
+      "sha256": "dd33a71420723bd62b0e91df602a0435e226c01c26ec69e8863452e811cf0584"
+    },
+    "old_plotter": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/barnase_barstar_chigstyle/src/plot_manuscript_candidate.py",
+      "sha256": "aa30cd8530c67df66de511868db88711c2614193396aefc93627d59be060151c"
+    },
+    "old_formal_pdf": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/barnase_branch_local_true0k_evolution.pdf",
+      "sha256": "26625a3f4a3a23c4d4302be6283e8a07879d7ca6fe569abec276f2e0ee8f9394"
+    }
+  },
+  "scientific_limitations_for_final_provenance": [
+    "The new section is centered on the current selected IR-IVM NF8982 path and is not algorithm-neutral.",
+    "The background is one signed-normal section of a high-dimensional potential-energy surface.",
+    "Background colors are contextual section energies, not pointwise energies evaluated along each plotted path."
+  ],
+  "planned_coordinate_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_nf8982_0k_section_coordinates_59x28_20260902_r1.npz"
+}

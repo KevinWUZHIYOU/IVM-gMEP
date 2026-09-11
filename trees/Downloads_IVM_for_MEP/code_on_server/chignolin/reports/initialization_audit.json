@@ -1,0 +1,18 @@
+{
+  "path_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/inputs/common_initial_path.npz",
+  "path_shape": [
+    22,
+    498
+  ],
+  "path_sha256": "d2470e4fde723f07e1053eaae9ecd1f2f639ef8ca75586798f79f38d81dbf081",
+  "n_internal": 20,
+  "tangent_definition": "normalized central difference: x[i+1] - x[i-1]",
+  "tangent_norm_min": 0.9999999999999999,
+  "tangent_norm_max": 1.0,
+  "start_exact": true,
+  "end_exact": true,
+  "segment_length_min_A": 3.60642269176328,
+  "segment_length_mean_A": 4.831632889295556,
+  "segment_length_max_A": 6.751475706674961,
+  "segment_length_ratio": 1.872069993929075
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "bb-irivm-full-state-history-remote-prelaunch-receipt-v2",
+  "status": "PASS_BEFORE_FIRST_PHYSICAL_CALL",
+  "created_utc": "2026-09-02T05:39:46Z",
+  "host": "remote_mac_m4",
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF9990_20260902_R2.json",
+    "sha256": "544c73045dee6644bb85201b1945cd636cda6e4690e9b667993b052d1f2532d0"
+  },
+  "authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2.json",
+    "sha256": "a9582fd4407b1f670e67a6d1df312ccc907ec009a85f485f8d8b84f6cfa90fa7"
+  },
+  "source_sha256_verified_on_remote": {
+    "full_state_history_recorder.py": "ac20c0339ec2782f5c6018752ce23607f35168b96eb2a4d50a6556ce243359d4",
+    "run_selected_ivm_full_state_history_replay.py": "3daf8c8b1dd776ee215075f7dfa25d7494c33e4dd80e57590c369dad83e791a5",
+    "verify_selected_ivm_full_state_history_replay.py": "114e5a4fa5e466bc50dee70d6c7094ff798883daf7c4dad6b745b4119cc1697e"
+  },
+  "zero_openmm_gates": {
+    "local_source_tests": "6/6 PASS",
+    "remote_preflight_status": "PASS_ZERO_OPENMM_PREFLIGHT",
+    "remote_preflight_openmm_imported_or_called": false,
+    "runtime_argv_difference_count": 2,
+    "runtime_argv_differences": [
+      "--run-label",
+      "--output-dir"
+    ],
+    "path_storage_mode": "committed"
+  },
+  "synchronization": {
+    "mechanism": "standalone Mutagen sync session",
+    "session": "bb-irivm-20260901",
+    "flush_completed_before_remote_hash_and_preflight": true,
+    "alpha_connected": true,
+    "beta_connected": true,
+    "status": "Watching",
+    "project_session_named_ivm-for-mep_is_irrelevant": true
+  },
+  "remote_resources": {
+    "observed_free_disk_bytes": 8705024000,
+    "minimum_required_free_disk_bytes": 6442450944,
+    "disk_gate": "PASS",
+    "both_host_local_BB_locks": "FREE",
+    "other_BB_evaluator_processes": 0,
+    "jobs": 1,
+    "all_six_thread_caps": 1
+  },
+  "planned_capture": {
+    "optimization_N_F_budget": 9990,
+    "expected_actual_optimization_N_F_under_strict_no_overshoot": 9985,
+    "expected_outer_records": 352,
+    "per_record_arrays": [
+      "path32_A",
+      "energy_eV[32]",
+      "force_eV_per_A[32,9396]"
+    ],
+    "additional_physical_calls_from_capture": 0,
+    "reportable_call_range_after_exact_verification": [
+      1,
+      318
+    ],
+    "quarantined_terminal_tail_call_range": [
+      319,
+      352
+    ]
+  }
+}

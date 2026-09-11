@@ -1,0 +1,200 @@
+{
+  "algorithm_controls": {
+    "alpha": 1.0,
+    "eta": 1.1,
+    "history": 7,
+    "m_max": 5,
+    "physical_max_step_A": 1.0,
+    "r": 0.1,
+    "reparameterization": "state_curve every outer iteration with the unchanged direct proposal and recovery transaction"
+  },
+  "bindings": {
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/common_initial_path32.npz",
+      "sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf"
+    },
+    "endpoint_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "metric_policy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "migration_contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/contracts/MIGRATION_CONTRACT.json",
+      "sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc"
+    },
+    "selected_exact_prefix_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_9990_EXACT_4080_PREFIX_20260902_R1.json",
+      "sha256": "182d096300578fc2cc192b5fc6245b69e15da24c877c0ef31f717087245526c1"
+    },
+    "selected_member_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    },
+    "selected_terminal_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.audit.json",
+      "sha256": "1d82aa3026faf2834ce1050de7c8454dab17c51433a1574563c24742772b6e39"
+    },
+    "selected_terminal_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "selected_terminal_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json",
+      "sha256": "af362a3db925399a5bdc49a5107f8d1988341d0ee3fd0dbfed20d31ae628b584"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "concurrency": {
+    "all_thread_caps": 1,
+    "dedicated_Mutagen_session_must_be_connected": "bb-irivm-20260901",
+    "jobs": 1,
+    "minimum_free_disk_bytes_before_child": 8589934592,
+    "one_BB_task_on_host": true,
+    "two_host_local_fcntl_locks_required_before_child": true
+  },
+  "created_utc": "2026-09-02T04:35:46Z",
+  "diagnostic_feedback_into_optimization": "forbidden",
+  "label": "bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1",
+  "only_permitted_runtime_differences_from_selected_9990": {
+    "--budget": "1500",
+    "--output-dir": "runs/dense_replay",
+    "--path-storage-mode": "legacy",
+    "--run-label": "bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1",
+    "--total-internal-nf-budget": "1500"
+  },
+  "purpose": "Replay the exact selected IR-IVM prefix solely to retain a prospectively fixed set of fully evaluated current paths for an offline two-metric curve.",
+  "reference_label": "bb_irivm_a1e0_r01_m05_inf9990_r1",
+  "replay": {
+    "eligible_state_definition": "fully evaluated current path at a prospectively registered legacy call; terminal partial/uncommitted tail excluded",
+    "fixed_endpoint_optimization_N_F": 0,
+    "fresh_from_common_initial_path": true,
+    "output_subdir": "runs/dense_replay",
+    "path_storage_affects_online_algorithm": false,
+    "path_storage_mode": "legacy",
+    "prospective_reporting_calls": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50
+    ],
+    "total_internal_optimization_N_F_budget": 1500,
+    "warm_start": false
+  },
+  "runtime_argv": [
+    "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/run_barnase_barstar_ir_ivm_member.py",
+    "--root",
+    "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+    "--initial-path-file",
+    "inputs/common_initial_path32.npz",
+    "--output-dir",
+    "runs/dense_replay",
+    "--run-label",
+    "bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1",
+    "--solver",
+    "state_ivm",
+    "--alpha",
+    "1",
+    "--alpha-mode",
+    "fixed",
+    "--alpha-min",
+    "0.01",
+    "--alpha-max",
+    "inf",
+    "--max-step",
+    "1",
+    "--history",
+    "7",
+    "--stop-iperp",
+    "-1",
+    "--budget",
+    "1500",
+    "--path-storage-mode",
+    "legacy",
+    "--state-globalization",
+    "iperp_monotone",
+    "--state-trust-fraction",
+    "2",
+    "--state-polish-trust-fraction",
+    "2",
+    "--state-polish-alpha-factor",
+    "0.5",
+    "--inner-calls",
+    "15",
+    "--plbfgs-kkt-rtol",
+    "0.8",
+    "--reparam-mode",
+    "state_curve",
+    "--reparam-every",
+    "1",
+    "--state-curve-direct-solve",
+    "--state-curve-direct-trial-calls",
+    "15",
+    "--state-curve-direct-objective-acceptance",
+    "per_image",
+    "--state-curve-immediate-block-relock",
+    "--state-curve-stall-free-polish",
+    "--state-curve-stall-free-polish-count",
+    "1",
+    "--reparam-ready-relative-iperp",
+    "2",
+    "--reparam-cv-trigger",
+    "0.001",
+    "--reparam-strict-cv-trigger",
+    "0.001",
+    "--reparam-retry-reduction",
+    "0.8",
+    "--reparam-recovery-calls",
+    "320",
+    "--reparam-recovery-inner-calls",
+    "15",
+    "--reparam-recovery-merge",
+    "bicriteria",
+    "--reparam-recovery-iperp-rtol",
+    "0",
+    "--reparam-equidistance-contraction",
+    "0.2",
+    "--stop-complete-iperp",
+    "-1",
+    "--frozen-subproblem",
+    "discrete_b040",
+    "--discrete-inner-max-steps",
+    "5",
+    "--discrete-stop-mode",
+    "r08c10",
+    "--discrete-residual-ratio",
+    "0.1",
+    "--discrete-history",
+    "7",
+    "--discrete-step-multiplier-eta",
+    "1.1",
+    "--plbfgs-kkt-atol",
+    "0",
+    "--discrete-ffrbk-selector-mode",
+    "one_way_takeover",
+    "--total-internal-nf-budget",
+    "1500"
+  ],
+  "schema": "bb-irivm-selected-output-only-legacy-replay-v1",
+  "source_sha256": {
+    "bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d",
+    "bb_ffprecon.py": "248f030d8f2e11ea1c5ac6d7cfd3d5fb1966c22162a33216c7d285d75d1d1df1",
+    "frozen_discrete_b040.py": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "run_barnase_barstar_ir_ivm_member.py": "ebb9d2c52d5e3a12c477c0e735797d9aff5fee5df311b8c84f87f0b39f4cfd85",
+    "run_ivm_v9_discrete_ffrbk_takeover_grid_shim.py": "b93a0156bd05cf1f1eafced5a07d608160e2f9ec440136c2ed5961a240709d2b",
+    "run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py": "75f4dc5f4d7ab6c7af13e5b8e15a0f81b41b4a937346233a20a3e20e0de160f4",
+    "run_ivm_v9_discrete_selected_eta_shim.py": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9",
+    "run_ivm_v9_spring_projected_production_20260730.py": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa",
+    "run_ivm_v9_total_internal_nf_budget.py": "71e82c4d32b07e9295b44e2af18b9b6c0e7dbad0d5cbc4a517288ce213d03e22",
+    "run_selected_ivm_legacy_replay.py": "0259a8aabd5d4722e5a98b063e34851f7f55bf520249778ad9fc0dcb25f9d8c7",
+    "storage_policy.py": "30621a7fcd14400b97ff75643d8d2a9596dd9b665bd20df48fa0985ccd8cc0c2"
+  },
+  "status": "FROZEN_BEFORE_FIRST_REPLAY_PHYSICAL_CALL"
+}

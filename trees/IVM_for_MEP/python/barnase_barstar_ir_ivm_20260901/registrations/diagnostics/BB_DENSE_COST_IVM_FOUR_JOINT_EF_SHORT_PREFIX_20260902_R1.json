@@ -1,0 +1,186 @@
+{
+  "bb_core": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+    "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "contract_freezer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_dense_ivm_short_four_joint_contract.py",
+    "sha256": "2a5a876d661ecc9c926e9977f6e618a19208cba681793c416e153bfd7fd35c26"
+  },
+  "durability_policy": {
+    "atomic_complete_path_shard": true,
+    "manifest_binds_every_shard_and_array_hash": true,
+    "refuse_final_output_overwrite": true,
+    "restart_reuse_unit": "complete_fully_validated_path_shard",
+    "reuse_individual_incomplete_WAL_successes": false,
+    "separate_source_and_dense_append_only_fsync_WAL": true,
+    "shard_contains_dense_coordinates_energy_full_force": true,
+    "source_and_dense_WAL_bind_published_shard": true
+  },
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_ivm_short_four_joint.py",
+    "sha256": "020e70db46e52529cebfc01481541b8b76a767d0e5372dd14c83dcf6e99f16c6"
+  },
+  "frozen": true,
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "jobs": 1,
+  "joint_engine": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+    "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+  },
+  "method": "IVM",
+  "metric_policy": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_fixed_endpoint_diagnostic_force_evaluations": 2,
+    "dense_force_use": "stored_only_not_used_by_metrics_or_optimization",
+    "dense_physical_call": "one_joint_energy_full_force_getState_per_point",
+    "discrete_I_perp_implementation": "bb_core.path_diagnostics",
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_state": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+    "original_fixed_endpoint_diagnostic_force_evaluations": 0,
+    "sampling": "uniform_cartesian_arclength",
+    "tangent": "normalized central difference: x[i+1] - x[i-1]",
+    "weight": "half sum of adjacent Cartesian chord lengths"
+  },
+  "paths": [
+    {
+      "dense_policy": "fresh_or_complete_validated_shard_500_joint_EF",
+      "host_role": "local",
+      "label": "IVM_call2_NF60",
+      "method": "IVM",
+      "online_discrete_I_perp": 68167135.91306221,
+      "optimization_N_F": 60,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 2,
+        "fully_evaluated_current_path": true,
+        "history_index": 1,
+        "terminal_tail": false
+      },
+      "path_sha256": "1bb9241f4c3ce5a8d89c9db5aa8386f2a243972ae648e79c4ddd18de69c1edf0",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "dense_policy": "fresh_or_complete_validated_shard_500_joint_EF",
+      "host_role": "local",
+      "label": "IVM_call5_NF150",
+      "method": "IVM",
+      "online_discrete_I_perp": 29407169.52263667,
+      "optimization_N_F": 150,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 5,
+        "fully_evaluated_current_path": true,
+        "history_index": 4,
+        "terminal_tail": false
+      },
+      "path_sha256": "2b4291c4f83c8007bcded8ae3182fdbbd2519aa619a56e198c3f2af0afc3a0e4",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "dense_policy": "fresh_or_complete_validated_shard_500_joint_EF",
+      "host_role": "local",
+      "label": "IVM_call10_NF300",
+      "method": "IVM",
+      "online_discrete_I_perp": 897667.2039737597,
+      "optimization_N_F": 300,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 10,
+        "fully_evaluated_current_path": true,
+        "history_index": 9,
+        "terminal_tail": false
+      },
+      "path_sha256": "b59b0c2647bc297fd551769e9b4a94e6e61a31eb1973e9afc3419a0cfcd22b8d",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    },
+    {
+      "dense_policy": "fresh_or_complete_validated_shard_500_joint_EF",
+      "host_role": "local",
+      "label": "IVM_call50_NF1329",
+      "method": "IVM",
+      "online_discrete_I_perp": 952.0611021437114,
+      "optimization_N_F": 1329,
+      "original_discrete_policy": "verified_short_replay_path_and_sealed_online_Iperp_zero_new_calls",
+      "path_identifier": {
+        "calls_per_image": 50,
+        "fully_evaluated_current_path": true,
+        "history_index": 49,
+        "terminal_tail": false
+      },
+      "path_sha256": "39a429c34373b375a0edc5ad5c0f7bfc402c090acab2ae8c684447f4a2ac6a1f",
+      "short_replay_source": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+        "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+      }
+    }
+  ],
+  "physical_call_policy": {
+    "all_six_thread_caps": 1,
+    "dense_endpoint_joint_EF_per_path": 2,
+    "dense_full_force_storage": true,
+    "dense_joint_EF_per_path": 500,
+    "jobs": 1,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_new_calls_per_path": 0,
+    "two_host_local_fcntl_locks": true
+  },
+  "purpose": "fresh joint-E/F arc500 for four verified exact-prefix short-replay IVM paths",
+  "schema": "bb-dense-four-ivm-short-prefix-joint-ef-contract-v1",
+  "short_replay_closure": {
+    "amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_REPORTING_INTERMEDIATE_STATES_AMENDMENT_20260902_R1.json",
+      "sha256": "de426ab62e1e25bc65b9f03d1b265912387268a3d46c1361d29120e4a59459e6"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1.json",
+      "sha256": "2d3cd0e99ce20f5c4834331fde081240051a9b4a7436a6577aad2ef0e1875748"
+    },
+    "reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+      "sha256": "aa7994abec1339bf9c9ae915b9982e8134363baf8966b9bb221ca244ab5808a2"
+    },
+    "replay_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.audit.json",
+      "sha256": "820e49a978e2448a8ff778666d698375b8daeb1abce9328d8989d1c4ac850653"
+    },
+    "replay_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/dense_replay/ivm_bb_irivm_a1e0_r01_m05_inf1500_legacy_replay_r1_central_state_ivm_cfgb1c3f0d4f950_budget1500_storagelegacy.npz",
+      "sha256": "22650571690a4bca2784b9df99598e8bf6d05987094f756474a38c68e1dd120f"
+    }
+  },
+  "short_replay_verification": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+    "sha256": "dfa12125bd68420e9c196443121b34104f83202fde64113b37856281f7fae322"
+  },
+  "storage_policy": {
+    "aggregate_role": "index_metrics_and_plot_compatible_dense_energy_not_dense_coordinates_or_forces",
+    "authoritative_unit": "complete_atomic_path_shard",
+    "estimated_uncompressed_shard_bytes_per_path": 85961984,
+    "minimum_free_bytes_reserve": 8589934592
+  },
+  "topology": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  }
+}

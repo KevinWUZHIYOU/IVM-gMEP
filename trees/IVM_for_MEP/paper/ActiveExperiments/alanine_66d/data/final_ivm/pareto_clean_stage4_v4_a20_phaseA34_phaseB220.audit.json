@@ -1,0 +1,41 @@
+{
+  "status": "target_reached",
+  "policy_version": "stage4_uniform_v4_pareto_archive",
+  "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA34_phaseB220.npz",
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+  "alpha": 20.0,
+  "activation_iperp": 0.007,
+  "target_iperp": 0.00019,
+  "screen_subdivisions": 10,
+  "reference_barrier_used": false,
+  "candidate_calls": [
+    660,
+    680,
+    829,
+    943,
+    1059,
+    1173,
+    1357,
+    1694,
+    1984,
+    2276,
+    2507
+  ],
+  "accepted_calls": [
+    660,
+    680,
+    829,
+    943,
+    2507
+  ],
+  "selected_call": 2507,
+  "selected_i_perp": 0.00018216907465962214,
+  "selected_screen_barrier_kcal": 2.4533951937867173,
+  "optimization_force_evaluations_at_selection": 2507,
+  "screen_force_equivalent_evaluations": 2301,
+  "total_charged_force_equivalent_evaluations": 4808,
+  "backend_raw_joint_evaluations": 2301,
+  "evaluator_cache_misses": 2301,
+  "accounting_consistent": true,
+  "materialization_mode": "deterministic reference-free online-equivalent prefix replay"
+}

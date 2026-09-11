@@ -1,0 +1,16 @@
+{
+  "schema": "bb-ode-neb-all-batch-diagnostic-precall-failure-v1",
+  "status": "RECORDED_PRECALL_SCHEMA_FAILURE_NO_SCIENTIFIC_RESULT",
+  "created_utc": "2026-09-01T18:34:51Z",
+  "contract": "registrations/diagnostics/BB_ODE_NEB_ALL_PAID_BATCHES_ARC500_20260902_R1.json",
+  "contract_sha256": "dc649e1e4feb5892e1b71b3af4bafb56264613a916a99e2d60ee2d1930e86587",
+  "failed_shard": 0,
+  "shard_count": 16,
+  "failure": "Legacy four-path ODE--NEB preview NPZ lacks the later diagnostic_energy_successes_per_path field required by the shared reuse loader.",
+  "diagnostic_energy_attempts": 0,
+  "diagnostic_energy_successes": 0,
+  "diagnostic_force_requests": 0,
+  "optimization_N_F_contribution": 0,
+  "partial_artifacts_created": false,
+  "disposition": "R1 remains immutable and excluded; issue R2 after adding a strict legacy-schema loader that binds the passing 2000-attempt/2000-success audit and energy WAL hashes."
+}

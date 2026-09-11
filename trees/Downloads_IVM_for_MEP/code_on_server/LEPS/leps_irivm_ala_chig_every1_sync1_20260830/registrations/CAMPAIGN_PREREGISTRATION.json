@@ -1,0 +1,102 @@
+{
+  "article_nf_budget_per_run": 3000,
+  "campaign_id": "leps-irivm-ala-chig-every1-sync1-grid-20260830",
+  "created_utc": "2026-08-29T16:42:31Z",
+  "dependency_sha256": {
+    "leps_irivm_ala_chig_20260829/src/audit_and_select.py": "0daf84ea932024187b6fa8c1c94c2bb45b1ef0328273e21c10504fcbdea85f56",
+    "leps_irivm_ala_chig_every1_20260830/src/leps_irivm_every1.py": "27b20ba67bd83b2c8dcd1443132bb1b48e08913671106b0b770aa131d7638fad",
+    "leps_irivm_ala_chig_every1_sync1_20260830/PROTOCOL.md": "ebc820eda68509908fc0338e8a72e91dea62f1b4c790e3406bafe0555c9cf68d",
+    "leps_irivm_ala_chig_every1_sync1_20260830/src/audit_and_select.py": "e6b85ff03656b20ca0cf9b63f43c046a189869c4bb04d5e2065c474ad85cdbac",
+    "leps_irivm_ala_chig_every1_sync1_20260830/src/run_grid.py": "b85e2fd6c2a2f6102b163b7159d12e13f36c2a4afee8cf32a61fe48374466cc6",
+    "leps_irivm_ala_chig_lepsnative_20260829/src/leps_irivm_lepsnative.py": "8e58791bc9c702de630dec8f034eab8c8b327f51150e7d8f7695e9dd9f6fdc1e",
+    "src/leps_core.py": "a80f0c23252a2e273f4cf77d156c9a26de91b4559f56a4fad264638fa0e57aca"
+  },
+  "diagnostic_change": {
+    "changed_component": "recovery only",
+    "new_recovery": "one complete-band normal proposal, one zero-NoF regularized global step selection, at most one complete-band recovery evaluation, unchanged bicriteria merge and atomic commit or rollback",
+    "old_recovery": "repeated synchronized one-accepted-step cycles with up to 320 calls per image including direct",
+    "other_algorithm_rules_changed": false,
+    "prior_results_reused_as_new_results": false
+  },
+  "formal_acceptance": {
+    "baseline": "article IVM",
+    "checkpoints": [
+      66,
+      150,
+      278,
+      468,
+      666,
+      874,
+      1052,
+      1240,
+      1413,
+      1578,
+      1727,
+      1862,
+      1982,
+      2097,
+      2194,
+      2280,
+      2357,
+      2423,
+      2481,
+      2531,
+      2572
+    ],
+    "common_initial_path_at_nf_20": "exactly equal and excluded from the strict claim",
+    "delta_e_metric": "absolute error of the coordinate-wise linearly densified 500-point energy barrier relative to the independent LEPS saddle reference",
+    "i_perp_metric": "article path-length quadrature with Henkelman-Jonsson improved tangent",
+    "selection": "strict pass first, then smallest worst joint metric ratio, mean joint ratio, terminal NoF, alpha, r, m_max",
+    "state_selection": "last accepted algorithm state at or below each checkpoint (LOCF); rejected direct and recovery trials remain charged but are not states",
+    "strict_rule": "candidate I_perp < article IVM I_perp AND candidate densified Delta E absolute error < article IVM error at every checkpoint"
+  },
+  "implementation_sha256": "8b1f848d6a2f03090b4851b6bd4a45d55a61fbee4025dfa50f5e59e2084ea49a",
+  "input_sha256": {
+    "inputs/common_initial_path.npz": "59ce6ed37215299177bf28b7756e8045b530ff08bd8e5d557945106fdc373da4",
+    "runs/ivm/ivm_production_alpha30_tight_reparam_cfg29674d42197b_budget500.npz": "2f43cd57182af04de40fd33ef4a825ec49cfe0e9c9d6f24f43a800367be6e65c"
+  },
+  "method_contract": {
+    "main_state_globalization": "Ala/Chignolin I_perp-monotone atomic complete-band commit with charged rollback",
+    "main_subproblem": "current IR-IVM complete-normal proximal Armijo L-BFGS",
+    "optimizer_forbidden_inputs": [
+      "article IVM trajectory",
+      "reference saddle barrier",
+      "densified Delta E",
+      "formal acceptance result"
+    ],
+    "recovery": "single synchronized complete-normal regularized-prediction proposal followed by the Ala/Chignolin bicriteria merge; main r unread",
+    "regularized_prediction": "maximize -t gTd - t^2 ||d||^2/(2 alpha) over 0<=t<=1 using direct cached gradients",
+    "maximum_direct_joint_evaluations_per_transaction": 20,
+    "maximum_recovery_joint_evaluations_per_transaction": 20,
+    "maximum_transaction_joint_evaluations": 40,
+    "reparameterization_period_complete_main_stages": 1,
+    "tangent": "Henkelman-Jonsson improved everywhere; central difference forbidden",
+    "trust_radius": "LEPS-native total max-atomic-displacement radius min(2 times median segment RMS length, 1); deterministic and not tuned"
+  },
+  "registered_before_first_optimization_run": true,
+  "registered_grid_axes": {
+    "alpha": [
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "m_max": [
+      4,
+      5,
+      6,
+      8
+    ],
+    "r": [
+      0.001,
+      0.01,
+      0.1,
+      0.3
+    ]
+  },
+  "registered_grid_member_count": 48,
+  "runner_policy": {
+    "host_local_lock": true,
+    "jobs": 1,
+    "overwrite_existing_result": false
+  }
+}

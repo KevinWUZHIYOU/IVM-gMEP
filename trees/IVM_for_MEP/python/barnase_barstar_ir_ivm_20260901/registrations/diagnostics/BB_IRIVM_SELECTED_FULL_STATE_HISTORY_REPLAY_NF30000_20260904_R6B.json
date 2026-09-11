@@ -1,0 +1,241 @@
+{
+  "Mutagen_gate_contract": {
+    "canonical_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_MUTAGEN_GATE_NF30000_20260904_R6B.json",
+    "generator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay_r5.py",
+      "sha256": "f1a0c709d3d98a7d84c3d5b66eb3f34ee4c7c6a7fa51ecab60f6b8ff67edc93d"
+    },
+    "required_session_identifier": "sync_E3qb26wEIMCi85xMPMQBLwdKzhlUiYTUSQnB6KgAM7b",
+    "required_session_name": "bb-irivm-nf30000-20260904",
+    "schema": "bb-irivm-full-state-r6b-nf30000-mutagen-gate-v1"
+  },
+  "algorithm_identity": {
+    "all_numerical_controls_except_budget_byte_for_byte_equal_to_R5B": true,
+    "native_save_all_paths_retained": true,
+    "reason_fresh_deterministic_replay_required": "R5B stores paths, energies and forces but not the live L-BFGS correction pairs and outer control state; terminal-path warm start would change the algorithm",
+    "same_32_images": true,
+    "same_fixed_endpoint_N_F_policy": true,
+    "same_registered_common_initial_path": true,
+    "same_tangent_and_reparameterization": true,
+    "user_authorized_budget_extension_15000_to_30000": true,
+    "warm_start": false
+  },
+  "bindings": {
+    "R5B_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b.json",
+      "sha256": "817799d981c43edddcb3c8940b10035959ff98cf30cb395218b76e21c7ec2a57"
+    },
+    "R5B_capture_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.audit.json",
+      "sha256": "cb5a2f8f9b878c88622ca1c9c7262c209f54b87e2929ebd57ee8bc940d8accd4"
+    },
+    "R5B_capture_manifest": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.manifest.json",
+      "sha256": "4e966b115f73fc773da33b6567cd8942875abe1969a1ac27fed4e45c76e958a2"
+    },
+    "R5B_primary_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+      "sha256": "5cfd64d971a735850ba9756be342cd402ec7480f0e32a7e38f100567f7a9ccf7"
+    },
+    "R5B_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B.json",
+      "sha256": "7149bf52c733004f13e15b3a7685a6ba2dc9ec8106308f8e786a9f18f5aa1246"
+    },
+    "R5B_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/ivm_bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_central_state_ivm_cfgf5e79e830f27_budget15000_storagelegacy.npz",
+      "sha256": "f600757982e35dd89910e91a1ae8f10c98481ea9d550128fa27659c15bd7de2a"
+    },
+    "R5B_runtime_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/ivm_bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_central_state_ivm_cfgf5e79e830f27_budget15000_storagelegacy.audit.json",
+      "sha256": "00ba2b73aee998b0934c10e63a87596a63f30ef23eb5bf9e9300caaf2545fd38"
+    },
+    "R6_prelaunch_gate_failure_supersession": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_R6_PRELAUNCH_GATE_FAILURE_SUPERSESSION_20260904.json",
+      "sha256": "d448e9968b8837229ef50e125f1da73c7ca32a20a2918ad3e1000e0e71b9163b"
+    },
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/common_initial_path32.npz",
+      "sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf"
+    },
+    "endpoint_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "metric_policy": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "selected_member_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/production/bb_irivm_a1e0_r01_m05_inf9990_r1.json",
+      "sha256": "f6168c528554e9e4055732add7a825a9acdb5a5fecc02a58abb88c18a534af86"
+    },
+    "selected_terminal_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-03T19:40:07Z",
+  "execution_authorized_by_this_file": false,
+  "label": "bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+  "only_runtime_argv_differences_from_R5B": {
+    "--budget": 30000,
+    "--output-dir": "/Volumes/GM7_1TB/IVM_for_MEP/active_runs/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+    "--run-label": "bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+    "--total-internal-nf-budget": 30000
+  },
+  "prospective_outputs": {
+    "Mutagen_gate": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_MUTAGEN_GATE_NF30000_20260904_R6B.json",
+    "authorization": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b.json",
+    "lock_receipt": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/campaign_status/bb-irivm-fullstate-nf30000-remote-r6b-lock-receipt.json",
+    "primary_verification": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B_PRIMARY.json",
+    "registration": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6B.json",
+    "runtime_output_directory": "/Volumes/GM7_1TB/IVM_for_MEP/active_runs/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b"
+  },
+  "purpose": "extend the selected Barnase--Barstar IR-IVM experiment to N_F <= 30000 while retaining every canonical path, its 32 energies, and full 32-image forces",
+  "reference_label": "bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b",
+  "resource_policy": {
+    "all_six_thread_caps": 1,
+    "host": "remote Mac mini",
+    "host_local_BB_locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "jobs": 1,
+    "minimum_external_free_bytes": 107374182400,
+    "runtime_output_on_external_disk": "/Volumes/GM7_1TB/IVM_for_MEP/active_runs/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b"
+  },
+  "runtime_argv": [
+    "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/run_barnase_barstar_ir_ivm_member.py",
+    "--root",
+    "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+    "--initial-path-file",
+    "inputs/common_initial_path32.npz",
+    "--output-dir",
+    "/Volumes/GM7_1TB/IVM_for_MEP/active_runs/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+    "--run-label",
+    "bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+    "--solver",
+    "state_ivm",
+    "--alpha",
+    "1",
+    "--alpha-mode",
+    "fixed",
+    "--alpha-min",
+    "0.01",
+    "--alpha-max",
+    "inf",
+    "--max-step",
+    "1",
+    "--history",
+    "7",
+    "--stop-iperp",
+    "-1",
+    "--budget",
+    "30000",
+    "--path-storage-mode",
+    "legacy",
+    "--state-globalization",
+    "iperp_monotone",
+    "--state-trust-fraction",
+    "2",
+    "--state-polish-trust-fraction",
+    "2",
+    "--state-polish-alpha-factor",
+    "0.5",
+    "--inner-calls",
+    "15",
+    "--plbfgs-kkt-rtol",
+    "0.8",
+    "--reparam-mode",
+    "state_curve",
+    "--reparam-every",
+    "1",
+    "--state-curve-direct-solve",
+    "--state-curve-direct-trial-calls",
+    "15",
+    "--state-curve-direct-objective-acceptance",
+    "per_image",
+    "--state-curve-immediate-block-relock",
+    "--state-curve-stall-free-polish",
+    "--state-curve-stall-free-polish-count",
+    "1",
+    "--reparam-ready-relative-iperp",
+    "2",
+    "--reparam-cv-trigger",
+    "0.001",
+    "--reparam-strict-cv-trigger",
+    "0.001",
+    "--reparam-retry-reduction",
+    "0.8",
+    "--reparam-recovery-calls",
+    "320",
+    "--reparam-recovery-inner-calls",
+    "15",
+    "--reparam-recovery-merge",
+    "bicriteria",
+    "--reparam-recovery-iperp-rtol",
+    "0",
+    "--reparam-equidistance-contraction",
+    "0.2",
+    "--stop-complete-iperp",
+    "-1",
+    "--frozen-subproblem",
+    "discrete_b040",
+    "--discrete-inner-max-steps",
+    "5",
+    "--discrete-stop-mode",
+    "r08c10",
+    "--discrete-residual-ratio",
+    "0.1",
+    "--discrete-history",
+    "7",
+    "--discrete-step-multiplier-eta",
+    "1.1",
+    "--plbfgs-kkt-atol",
+    "0",
+    "--discrete-ffrbk-selector-mode",
+    "one_way_takeover",
+    "--total-internal-nf-budget",
+    "30000",
+    "--save-all-paths"
+  ],
+  "schema": "bb-irivm-selected-full-state-history-budget-extension-v6b",
+  "source_sha256": {
+    "bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d",
+    "bb_ffprecon.py": "248f030d8f2e11ea1c5ac6d7cfd3d5fb1966c22162a33216c7d285d75d1d1df1",
+    "frozen_discrete_b040.py": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "full_state_history_recorder.py": "ac20c0339ec2782f5c6018752ce23607f35168b96eb2a4d50a6556ce243359d4",
+    "full_state_history_recorder_r4.py": "0e3382f92d40fe7412bd4c8ee8f6861689a6f23d682d5d792c35e6d5e71eacca",
+    "full_state_history_recorder_r5.py": "16faa440598463abed44761d7d34517f35d65bb4794bb92526c7c4aa8997c9aa",
+    "run_barnase_barstar_ir_ivm_member.py": "ebb9d2c52d5e3a12c477c0e735797d9aff5fee5df311b8c84f87f0b39f4cfd85",
+    "run_ivm_v9_discrete_ffrbk_takeover_grid_shim.py": "b93a0156bd05cf1f1eafced5a07d608160e2f9ec440136c2ed5961a240709d2b",
+    "run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py": "75f4dc5f4d7ab6c7af13e5b8e15a0f81b41b4a937346233a20a3e20e0de160f4",
+    "run_ivm_v9_discrete_selected_eta_shim.py": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9",
+    "run_ivm_v9_spring_projected_production_20260730.py": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa",
+    "run_ivm_v9_total_internal_nf_budget.py": "71e82c4d32b07e9295b44e2af18b9b6c0e7dbad0d5cbc4a517288ce213d03e22",
+    "run_selected_ivm_full_history_replay.py": "a56983444ea33ddfc15100d36ea8c183326020dea73d97adf42994aa9588fc59",
+    "run_selected_ivm_full_state_history_replay_r5.py": "f1a0c709d3d98a7d84c3d5b66eb3f34ee4c7c6a7fa51ecab60f6b8ff67edc93d",
+    "run_selected_ivm_full_state_history_replay_r6_nf30000.py": "a33ff86c937d91fdcbb16516dc25021ddae7ca1ea37ac2246aefd371bb55bd93",
+    "storage_policy.py": "30621a7fcd14400b97ff75643d8d2a9596dd9b665bd20df48fa0985ccd8cc0c2",
+    "verify_selected_ivm_full_state_history_replay.py": "114e5a4fa5e466bc50dee70d6c7094ff798883daf7c4dad6b745b4119cc1697e",
+    "verify_selected_ivm_full_state_history_replay_r5.py": "b6d4e7b8258e338f2b689c67be073e164c5440a6d84998bd7d352388935c1d0b"
+  },
+  "status": "FROZEN_BEFORE_FIRST_R6B_NF30000_PHYSICAL_CALL",
+  "storage_only_capture": {
+    "additional_physical_calls": 0,
+    "each_shard": [
+      "path32_A",
+      "energy_eV32",
+      "force_eV_per_A32"
+    ],
+    "maximum_canonical_calls": 30000,
+    "maximum_raw_callbacks": 120001,
+    "native_stored_paths": true,
+    "one_stable_last_shard_per_canonical_call": true,
+    "optimization_N_F_contribution": 0
+  }
+}

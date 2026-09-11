@@ -1,0 +1,169 @@
+{
+  "protocol": "common log-cost and I_perp first-passage checkpoints",
+  "started_unix": 1785565990.276525,
+  "tasks": 13,
+  "results": [
+    {
+      "stage": "stage4",
+      "alpha": 10000.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a10000_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 0.1,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a0p1_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 0.01,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a0p01_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 1000.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a1000_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 100.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a100_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 10.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a10_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 15.0,
+      "rtol": 0.8,
+      "status": "completed",
+      "returncode": 0,
+      "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a15_phaseA80_phaseB220.npz",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a15_common_checkpoints.npz",
+      "selected_labels": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        180,
+        280,
+        440,
+        520,
+        700,
+        1080,
+        1455,
+        1636,
+        1689,
+        2208,
+        2617
+      ],
+      "wall_seconds": 24.99033284187317
+    },
+    {
+      "stage": "stage4",
+      "alpha": 1.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a1_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 20.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a20_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 30.0,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a30_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": Infinity,
+      "rtol": 0.8,
+      "status": "skipped",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_ainf_common_checkpoints.npz"
+    },
+    {
+      "stage": "stage4",
+      "alpha": 18.0,
+      "rtol": 0.8,
+      "status": "completed",
+      "returncode": 0,
+      "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a18_phaseA80_phaseB220.npz",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a18_common_checkpoints.npz",
+      "selected_labels": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        180,
+        280,
+        420,
+        520,
+        660,
+        961,
+        1022,
+        1208,
+        1370,
+        1583,
+        1912,
+        2449
+      ],
+      "wall_seconds": 32.946731090545654
+    },
+    {
+      "stage": "stage4",
+      "alpha": 12.0,
+      "rtol": 0.8,
+      "status": "completed",
+      "returncode": 0,
+      "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a12_phaseA80_phaseB220.npz",
+      "output": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/diagnostics/dense_barrier_clean_stage4_v3_r0p8_a12_common_checkpoints.npz",
+      "selected_labels": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        200,
+        320,
+        500,
+        520,
+        780,
+        957,
+        1225,
+        1279,
+        1622,
+        1953,
+        2216,
+        2885,
+        3083
+      ],
+      "wall_seconds": 33.71497893333435
+    }
+  ],
+  "finished_unix": 1785566024.1153998,
+  "failed": 0
+}

@@ -1,0 +1,180 @@
+{
+  "initial_path_sha256": "d2470e4fde723f07e1053eaae9ecd1f2f639ef8ca75586798f79f38d81dbf081",
+  "n_configurations": 11,
+  "scan_variable": "spring_k_only",
+  "spring_constants": [
+    0.1,
+    1.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    80.0,
+    100.0,
+    500.0,
+    1000.0,
+    2000.0
+  ],
+  "optimizer": "NEBOptimizer(method='ODE')",
+  "fixed_interface_alpha": 0.0001,
+  "alpha_used_by_ode": false,
+  "score_definition": "log-area ratios to the pointwise I_perp and raw-barrier envelopes, plus half-weight final ratios",
+  "top_three": [
+    {
+      "rank": 1,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k20_alpha0p0001_ode_budget500.npz",
+      "spring_k": 20.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.06270804503482387,
+      "i_perp_at_500": 0.4547421847330934,
+      "barrier_at_500_kcal": 23.18524476688549,
+      "physical_fmax_at_500": 0.023501216309018014
+    },
+    {
+      "rank": 2,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k50_alpha0p0001_ode_budget500.npz",
+      "spring_k": 50.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.08315862680387597,
+      "i_perp_at_500": 0.47293697780050814,
+      "barrier_at_500_kcal": 23.298305814514375,
+      "physical_fmax_at_500": 0.024057591002739933
+    },
+    {
+      "rank": 3,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1_alpha0p0001_ode_budget500.npz",
+      "spring_k": 1.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.10989434666561411,
+      "i_perp_at_500": 0.5819488015101083,
+      "barrier_at_500_kcal": 23.546709976370217,
+      "physical_fmax_at_500": 0.0704961286424976
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k20_alpha0p0001_ode_budget500.npz",
+      "spring_k": 20.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.06270804503482387,
+      "i_perp_at_500": 0.4547421847330934,
+      "barrier_at_500_kcal": 23.18524476688549,
+      "physical_fmax_at_500": 0.023501216309018014
+    },
+    {
+      "rank": 2,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k50_alpha0p0001_ode_budget500.npz",
+      "spring_k": 50.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.08315862680387597,
+      "i_perp_at_500": 0.47293697780050814,
+      "barrier_at_500_kcal": 23.298305814514375,
+      "physical_fmax_at_500": 0.024057591002739933
+    },
+    {
+      "rank": 3,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1_alpha0p0001_ode_budget500.npz",
+      "spring_k": 1.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.10989434666561411,
+      "i_perp_at_500": 0.5819488015101083,
+      "barrier_at_500_kcal": 23.546709976370217,
+      "physical_fmax_at_500": 0.0704961286424976
+    },
+    {
+      "rank": 4,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k10_alpha0p0001_ode_budget500.npz",
+      "spring_k": 10.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.11294595464765193,
+      "i_perp_at_500": 0.46531852475765434,
+      "barrier_at_500_kcal": 23.23861375266076,
+      "physical_fmax_at_500": 0.024098148423297307
+    },
+    {
+      "rank": 5,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k0p1_alpha0p0001_ode_budget500.npz",
+      "spring_k": 0.1,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.12002167274122677,
+      "i_perp_at_500": 0.5498755313207975,
+      "barrier_at_500_kcal": 24.112041411263096,
+      "physical_fmax_at_500": 0.024294399124280924
+    },
+    {
+      "rank": 6,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k5_alpha0p0001_ode_budget500.npz",
+      "spring_k": 5.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.26059337299689794,
+      "i_perp_at_500": 0.6268401445824099,
+      "barrier_at_500_kcal": 24.022293652170912,
+      "physical_fmax_at_500": 0.029427841145604497
+    },
+    {
+      "rank": 7,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k80_alpha0p0001_ode_budget500.npz",
+      "spring_k": 80.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.41578075547892784,
+      "i_perp_at_500": 0.7630133581397754,
+      "barrier_at_500_kcal": 24.682780675036035,
+      "physical_fmax_at_500": 0.032833238826286
+    },
+    {
+      "rank": 8,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k100_alpha0p0001_ode_budget500.npz",
+      "spring_k": 100.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 0.6247403540541517,
+      "i_perp_at_500": 1.0677446020287151,
+      "barrier_at_500_kcal": 25.754115318688307,
+      "physical_fmax_at_500": 0.039833121697784565
+    },
+    {
+      "rank": 9,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k500_alpha0p0001_ode_budget500.npz",
+      "spring_k": 500.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 2.9791705141996214,
+      "i_perp_at_500": 18.842789946411617,
+      "barrier_at_500_kcal": 36.361350183843456,
+      "physical_fmax_at_500": 0.27865626472992217
+    },
+    {
+      "rank": 10,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k1000_alpha0p0001_ode_budget500.npz",
+      "spring_k": 1000.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 3.99206221693313,
+      "i_perp_at_500": 62.721588164435985,
+      "barrier_at_500_kcal": 59.26544005033389,
+      "physical_fmax_at_500": 0.5255409882190581
+    },
+    {
+      "rank": 11,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_central_k2000_alpha0p0001_ode_budget500.npz",
+      "spring_k": 2000.0,
+      "alpha": 0.0001,
+      "optimizer": "ode",
+      "score": 4.873271097639611,
+      "i_perp_at_500": 194.39931562079045,
+      "barrier_at_500_kcal": 89.68497522202262,
+      "physical_fmax_at_500": 1.106515527693091
+    }
+  ]
+}

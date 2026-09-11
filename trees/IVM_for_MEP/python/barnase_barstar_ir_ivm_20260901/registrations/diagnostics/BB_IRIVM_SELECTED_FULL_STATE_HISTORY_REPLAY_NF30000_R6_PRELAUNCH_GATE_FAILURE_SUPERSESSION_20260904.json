@@ -1,0 +1,29 @@
+{
+  "schema": "bb-irivm-nf30000-r6-prelaunch-gate-failure-supersession-v1",
+  "status": "R6_PRELAUNCH_MUTAGEN_SESSION_ABSENT_SUPERSEDED_BY_R6B_NO_PHYSICAL_CALLS",
+  "created_utc": "2026-09-03T19:39:14Z",
+  "physical_execution": {
+    "OpenMM_imported_or_called": false,
+    "optimization_N_F": 0,
+    "output_directory_created": false
+  },
+  "failure": {
+    "stage": "Mutagen flush gate",
+    "reason": "the historical session bb-irivm-20260901 was no longer installed",
+    "gate_failed_closed": true
+  },
+  "superseded_registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF30000_20260904_R6.json",
+    "sha256": "818d78874c93a6d587c7597072e1662f306fd0bbdf4095a7494947cf3a3f3a29"
+  },
+  "superseded_authorization": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6.json",
+    "sha256": "2a25ab6f7e62c96148ce87823ec417072e20d120a9805067fd10853510542be7"
+  },
+  "superseded_runner_sha256": "419272407a00086f437cf1ce62141454e0a00e6ec78af6b8d5ee14da86e24927",
+  "replacement": {
+    "label": "bb_irivm_a1e0_r01_m05_inf30000_fullstate_r6b",
+    "requires_new_registration_authorization_and_Mutagen_gate": true,
+    "scientific_runtime_delta_from_R5B_remains_budget_and_identity_only": true
+  }
+}

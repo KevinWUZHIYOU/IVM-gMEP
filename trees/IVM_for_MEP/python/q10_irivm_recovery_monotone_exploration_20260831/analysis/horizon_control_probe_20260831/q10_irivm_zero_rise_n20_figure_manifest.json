@@ -1,0 +1,36 @@
+{
+  "controls": {
+    "alpha": "1e-3",
+    "m_max": 8,
+    "r": 0.3
+  },
+  "inputs": {
+    "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/tuned_ivm_alpha1e3_selected.npz": "3cf6649deb4b6bd2c11da51ca204a06513cad8e6702867e59619a2956d52162b",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/runs/exact_envelope_n20_a0p001_r0p3_m8/summary.json": "8489e96090bbadb0babb7e4e78bc62ce5f92a5e6148d4d54034cb301718f28d3",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/runs/exact_envelope_n20_a0p001_r0p3_m8/trajectory.npz": "54828893a8a8d8de3edff367651595f2b59781f6bf9004b5d1392eb995d0c40a",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/runs/horizon_control_probe_n20_a0p001_r0p3_m8_b3000_root_audit/summary.json": "ae178584b439369f2e3a829e46afa61a518152f443438cb01f59aa944a99920d",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/runs/horizon_control_probe_n20_a0p001_r0p3_m8_b3000_root_audit/trajectory.npz": "9799c7108f7772db632670637e1b555bfcd6b45eb9cb1669d7183885fe92b705"
+  },
+  "n_internal": 20,
+  "outputs": {
+    "/Users/wuzhiyou/IVM_for_MEP/output/pdf/q10_irivm_zero_rise_n20_comparison.pdf": "6ae78fd5d1cd1d31b7c726191e2728b37aeec75c1cf6091d590fc0cc3d9c3b03",
+    "/Users/wuzhiyou/IVM_for_MEP/output/pdf/q10_irivm_zero_rise_n20_comparison.png": "d29f5e80e02609a80f5b6cfb20f7d63384a7e04a7415afca381db1fdb05f8d08",
+    "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_recovery_monotone_exploration_20260831/analysis/horizon_control_probe_20260831/q10_irivm_zero_rise_n20_source.csv": "3003f3b1ac7430aa1379d89a1d5cb8901d8b9da1e0615e1ac00018820eb5d2c3"
+  },
+  "plot_source_sha256": "0bce074bf4283b00866d4c5469aa0922095ed09fa8f6ba5c4b4a267bc6fb9883",
+  "question": "Eliminate the public I_perp rise without weakening the registered checkpoints",
+  "rendered_qa": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/tmp/pdfs/q10_irivm_zero_rise_n20/page-final3.png",
+    "sha256": "afccf15f640d595bfb8a0e08199b91ba02d0dfc3f71c5b2761b3f5a6d5427ff1",
+    "visual_defects": 0
+  },
+  "reference_barrier": 67.50188060819488,
+  "schema_version": 1,
+  "status": "visual_qa_passed",
+  "verified_claims": {
+    "bitwise_equal_from_nof": 100,
+    "previous_i_perp_rises": 1,
+    "zero_rise_i_perp_rises": 0,
+    "zero_rise_joint_strict_checkpoints": "98/98"
+  }
+}

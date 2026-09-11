@@ -1,0 +1,82 @@
+{
+  "schema": "bb-irivm-selected-full-state-history-replay-failure-supersession-v1",
+  "status": "R2_FAILED_AFTER_INITIAL_EVALUATION_SUPERSEDED_NO_REUSE",
+  "created_utc": "2026-09-02T05:45:19Z",
+  "execution_authorized_by_this_file": false,
+  "failed_label": "bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2",
+  "host": "remote_mac_m4",
+  "failure": {
+    "child_returncode": 1,
+    "child_started_utc": "2026-09-02T05:40:50Z",
+    "locks_released_utc": "2026-09-02T05:41:13Z",
+    "traceback_exception": "KeyError: 'energies'",
+    "traceback_source": "scripts/full_state_history_recorder.py:264 in observed_should_store_path",
+    "root_cause": "the nested production record frame contains path/history/diagnostic but does not close over energies or forces; R2 incorrectly read energies and forces from that record frame",
+    "failure_phase": "first record immediately after the fully evaluated initial 32-image path",
+    "optimization_internal_joint_EF_attempts": 30,
+    "fixed_endpoint_joint_EF_attempts": 0,
+    "number_of_forces_accounting": "the first record is reached after the initial path evaluation; the two fixed endpoints are inherited cache hits and the 30 internal images each incurred one joint E/F attempt; the supervisor independently observed the same N_F=30",
+    "partial_cost_must_not_be_reused_or_hidden": true
+  },
+  "partial_outputs": {
+    "wal_line_count": 1,
+    "wal_contents": "header only",
+    "committed_shard_count": 0,
+    "runtime_result_count": 0,
+    "runtime_audit_count": 0,
+    "manifest_count": 0,
+    "capture_audit_count": 0,
+    "scientifically_reportable_data_count": 0
+  },
+  "lock_postcondition": {
+    "launch_receipt_status": "CHILD_EXITED_LOCKS_RELEASED",
+    "remote_nonblocking_fcntl_recheck": "BOTH_REMOTE_LOCKS_FREE",
+    "rechecked_utc": "2026-09-02T05:45:19Z",
+    "local_host_lock_state_is_irrelevant_to_remote_failure": true
+  },
+  "supersession": {
+    "R2_registration_may_not_be_reused": true,
+    "R2_authorization_may_not_be_reused": true,
+    "R2_label_and_output_may_not_be_reused": true,
+    "R2_sources_and_failure_artifacts_must_be_preserved": true,
+    "replacement_requires_new_R3_sources_registration_authorization_label_output": true
+  },
+  "bindings": {
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF9990_20260902_R2.json",
+      "sha256": "544c73045dee6644bb85201b1945cd636cda6e4690e9b667993b052d1f2532d0"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2.json",
+      "sha256": "a9582fd4407b1f670e67a6d1df312ccc907ec009a85f485f8d8b84f6cfa90fa7"
+    },
+    "remote_prelaunch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REMOTE_PRELAUNCH_20260902_R2.json",
+      "sha256": "52edaf868526464120d2d53755e33a31ff75adccef7cd3b3fbbb4bf960ac1f31"
+    },
+    "launch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2.launch.json",
+      "sha256": "ac3659f4bb533b56481a030d3734a85b3f43e5ebd1deb191ebe014d8db1611ca"
+    },
+    "failure_log": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/logs/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2.log",
+      "sha256": "f758710f4aed1cdf9c8fddd585d96836407a6dd855a54672bcf4bb4a4f55293b"
+    },
+    "header_only_WAL": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r2_observer/full_state_history.wal.jsonl",
+      "sha256": "b2e7bed8b722302d59f7c5152149fb872eef41679480af1eaa2d70738806b09a"
+    },
+    "failed_runner_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay.py",
+      "sha256": "3daf8c8b1dd776ee215075f7dfa25d7494c33e4dd80e57590c369dad83e791a5"
+    },
+    "failed_recorder_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/full_state_history_recorder.py",
+      "sha256": "ac20c0339ec2782f5c6018752ce23607f35168b96eb2a4d50a6556ce243359d4"
+    },
+    "failed_verifier_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay.py",
+      "sha256": "114e5a4fa5e466bc50dee70d6c7094ff798883daf7c4dad6b745b4119cc1697e"
+    }
+  }
+}

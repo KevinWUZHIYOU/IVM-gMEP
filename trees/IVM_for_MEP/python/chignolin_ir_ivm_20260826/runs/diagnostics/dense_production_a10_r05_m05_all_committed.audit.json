@@ -1,0 +1,162 @@
+{
+  "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/production/ivm_chig_irivm_a1e1_r05_m05_inf5000_r1_central_state_ivm_cfg844e61a3b6af_budget5000.npz",
+  "source_result_sha256": "7aacaed4a604b18e165e461115bd8c089542fe3319c2aebd3416c2d6ad868c9b",
+  "source_optimization_audit": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/production/ivm_chig_irivm_a1e1_r05_m05_inf5000_r1_central_state_ivm_cfg844e61a3b6af_budget5000.audit.json",
+  "source_optimization_audit_sha256": "394566efa314eb1966409e4e1eed769c68c4b36b4bb5b26db8cb5079860dbebe",
+  "source_optimization_backend_raw_joint_evaluations": 4993,
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/dense_production_a10_r05_m05_all_committed.npz",
+  "output_sha256": "9e58964588bd7ad42b271d4579969134d398b5e92b8720784c01a687091cd84b",
+  "source_selected_paths_sha256": "ac6b0f52e75c3c4069d8378bed365ac623f9415b67c36631e631e1d4ae4c1e6a",
+  "complete_state_definition": "initial_or_reparam_committed",
+  "eligibility_rule": "record_index == 0 or reparam_committed[record_index]",
+  "all_selected_records_eligible": true,
+  "path_mapping_policy": "audited_one_to_one_history_order",
+  "optimization_cost_axis": "counter_vectors.sum(axis=1)",
+  "cost_includes_all_22_images": true,
+  "fixed_endpoint_first_evaluations_included": true,
+  "diagnostic_counts_excluded_from_optimization_axis": true,
+  "barrier_protocol": {
+    "energy_backend": "real OpenMM CPU double precision",
+    "interpolation": "linear Cartesian interpolation per segment",
+    "initial_subdivisions": 10,
+    "comparison_subdivisions": 20,
+    "adaptive_threshold_kcal": 0.05,
+    "maximum_subdivisions": 80
+  },
+  "records": [
+    {
+      "record_index": 0,
+      "stored_path_index": 0,
+      "complete_state_kind": "initial",
+      "reparam_committed": false,
+      "paper_total_nf": 22,
+      "i_perp": 126945.61151332226,
+      "adaptive_dense_barrier_kcal": 2473.320730352419,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 421
+    },
+    {
+      "record_index": 7,
+      "stored_path_index": 7,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 126,
+      "i_perp": 3877.951861562667,
+      "adaptive_dense_barrier_kcal": 107.56459320427169,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 11,
+      "stored_path_index": 11,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 210,
+      "i_perp": 19.13561711371391,
+      "adaptive_dense_barrier_kcal": 32.46869200271844,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 20,
+      "stored_path_index": 20,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 385,
+      "i_perp": 2.6612629477905707,
+      "adaptive_dense_barrier_kcal": 27.43555016042178,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 30,
+      "stored_path_index": 30,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 570,
+      "i_perp": 0.5681097877376575,
+      "adaptive_dense_barrier_kcal": 25.487489444320254,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 40,
+      "stored_path_index": 40,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 734,
+      "i_perp": 0.342500491430936,
+      "adaptive_dense_barrier_kcal": 24.602932984957587,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 54,
+      "stored_path_index": 54,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 966,
+      "i_perp": 0.18532060528280517,
+      "adaptive_dense_barrier_kcal": 23.933581823471446,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 68,
+      "stored_path_index": 68,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1190,
+      "i_perp": 0.1080327305013346,
+      "adaptive_dense_barrier_kcal": 23.633978201476634,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 81,
+      "stored_path_index": 81,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1419,
+      "i_perp": 0.08595194586227034,
+      "adaptive_dense_barrier_kcal": 23.01690967279007,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 110,
+      "stored_path_index": 110,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1751,
+      "i_perp": 0.06850587927099215,
+      "adaptive_dense_barrier_kcal": 22.125658937058343,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    },
+    {
+      "record_index": 121,
+      "stored_path_index": 121,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 1987,
+      "i_perp": 0.06490332453632065,
+      "adaptive_dense_barrier_kcal": 21.845532543523653,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 419
+    }
+  ],
+  "selected_initial_states": 1,
+  "selected_committed_reparameterizations": 10,
+  "diagnostic_backend_raw_joint_evaluations": 4611,
+  "diagnostic_evaluator_cache_misses": 4611,
+  "diagnostic_row_joint_evaluations": 4611,
+  "diagnostic_energy_requests": 6952,
+  "diagnostic_force_requests": 0,
+  "diagnostic_cache_hits": 2341,
+  "selected_subdivision_counts": {
+    "20": 11,
+    "40": 0,
+    "80": 0
+  }
+}

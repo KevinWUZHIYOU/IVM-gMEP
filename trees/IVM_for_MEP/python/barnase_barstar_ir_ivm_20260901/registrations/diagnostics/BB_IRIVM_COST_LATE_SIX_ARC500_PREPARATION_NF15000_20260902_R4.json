@@ -1,0 +1,365 @@
+{
+  "OpenMM_imported_or_called_by_freezer": false,
+  "R5B_final_artifacts_read": false,
+  "bindings": {
+    "audited_dense_delegate": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_late_six_joint_ef.py",
+      "sha256": "85fbc4ec68a8c0d05d7b725b6747c493c8be4777fb0ae26682a275340643e77e"
+    },
+    "authorized_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_cost_late_six_arc500_r4.py",
+      "sha256": "717caea1d008faedb108490266e850cab6e8fab5bcfdf8540ee9c942d147e6ca"
+    },
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "contract_freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_cost_late_six_arc500_r4.py",
+      "sha256": "5ed3c6fc8c76c4e6546ff88638ef43ef5833ca0770db7967d3f6b36e7ca2a467"
+    },
+    "cost_only_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_PREREG_NF15000_20260902_R3.json",
+      "sha256": "0957e5f432173a6b8aa972310391e74f0e244f9bab10e661c7e7218650be8b8e"
+    },
+    "cost_only_selector": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_cost_only_late_six_r3.py",
+      "sha256": "9eb8ff190e68d1fea0b200145dfd326e99bc24fef561a02279a8829308f84979"
+    },
+    "dual_host_split_template": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_DUAL_HOST_TEMPLATE_NF15000_20260902_R3.json",
+      "sha256": "2a49f4cdd5dada6f899e9bf49b10c781ba09f65a870bfcbf6e6a4cb5b9068078"
+    },
+    "endpoint_joint_EF_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "execution_authorizer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_irivm_cost_late_six_arc500_r4.py",
+      "sha256": "504b9fac38047d7b9ac0d1fb83cc973cf1af4978582abf0a416fd77f3dd689a9"
+    },
+    "joint_EF_engine": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+      "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    },
+    "zero_physical_tests": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/tests/test_bb_irivm_cost_late_six_arc500_r4.py",
+      "sha256": "51c456d32ff6659e0a935369f5ad057f3d64c9e68a0bb3d955df46dcd1d21103"
+    }
+  },
+  "command_templates": {
+    "authorization_mutagen_gate": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_cost_late_six_arc500_r4.py",
+      "mutagen-authorization-gate",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--remote-authorization",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json",
+      "--local-authorization",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_AUTHORIZATION_MUTAGEN_GATE_20260902_R4.json"
+    ],
+    "environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "freeze_contracts": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_cost_late_six_arc500_r4.py",
+      "freeze-contracts",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--selection",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_SELECTION_NF15000_20260902_R3.json",
+      "--input-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_INPUT_MUTAGEN_GATE_20260902_R4.json",
+      "--remote-contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+      "--local-contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json"
+    ],
+    "input_mutagen_gate": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_cost_late_six_arc500_r4.py",
+      "mutagen-input-gate",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--selection",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_SELECTION_NF15000_20260902_R3.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_INPUT_MUTAGEN_GATE_20260902_R4.json"
+    ],
+    "local_authorize": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_irivm_cost_late_six_arc500_r4.py",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "local",
+      "--preflight",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_20260902_R4.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json"
+    ],
+    "local_preflight": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_cost_late_six_arc500_r4.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "local",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_local2_arc500_joint_ef_20260902_r3.npz",
+      "--preflight-receipt",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_20260902_R4.json",
+      "--preflight-only"
+    ],
+    "local_run": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_cost_late_six_arc500_r4.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--authorization",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json",
+      "--authorization-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_AUTHORIZATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "local",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_local2_arc500_joint_ef_20260902_r3.npz"
+    ],
+    "publication_mutagen_gate": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_cost_late_six_arc500_r4.py",
+      "mutagen-publication-gate",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--remote-contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+      "--local-contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json"
+    ],
+    "python": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+    "remote_authorize": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_irivm_cost_late_six_arc500_r4.py",
+      "--preparation",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "remote",
+      "--preflight",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_20260902_R4.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json"
+    ],
+    "remote_preflight": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_cost_late_six_arc500_r4.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "remote",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_remote4_arc500_joint_ef_20260902_r3.npz",
+      "--preflight-receipt",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_20260902_R4.json",
+      "--preflight-only"
+    ],
+    "remote_run": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_cost_late_six_arc500_r4.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+      "--bundle",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+      "--publication-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+      "--authorization",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json",
+      "--authorization-gate",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_AUTHORIZATION_MUTAGEN_GATE_20260902_R4.json",
+      "--host-role",
+      "remote",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_remote4_arc500_joint_ef_20260902_r3.npz"
+    ],
+    "remote_ssh_argv_prefix": [
+      "ssh",
+      "-i",
+      "/Users/wuzhiyou/.ssh/ivm_mac_mini_ed25519",
+      "-o",
+      "BatchMode=yes",
+      "-o",
+      "ConnectTimeout=8",
+      "-o",
+      "UserKnownHostsFile=/Users/wuzhiyou/.ssh/known_hosts",
+      "-o",
+      "StrictHostKeyChecking=yes",
+      "wuzhiyou@100.74.85.3"
+    ],
+    "remote_working_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+    "selection": [
+      "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_cost_only_late_six_r3.py",
+      "select",
+      "--preregistration",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_PREREG_NF15000_20260902_R3.json",
+      "--split-template",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_DUAL_HOST_TEMPLATE_NF15000_20260902_R3.json",
+      "--primary-verification",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+      "--supplemental-verification",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_SUPPLEMENTAL.json",
+      "--manifest",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.manifest.json",
+      "--canonical-index",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.canonical_index.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_SELECTION_NF15000_20260902_R3.json"
+    ],
+    "working_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901"
+  },
+  "created_utc": "2026-09-02T14:29:06.181878+00:00",
+  "execution_authorized_by_this_file": false,
+  "fail_closed_order": [
+    "R5B primary PASS and supplemental PASS",
+    "freeze metric-blind R3 selection",
+    "dedicated Mutagen input flush gate",
+    "freeze disjoint remote4/local2 contracts and bundle",
+    "dedicated Mutagen publication flush gate",
+    "run nonblocking zero-physical preflight on each assigned host",
+    "issue separate host authorization bound to its preflight receipt",
+    "dedicated Mutagen authorization publication flush gate",
+    "launch both authorized host commands concurrently"
+  ],
+  "frozen": true,
+  "future_paths": {
+    "authorization_Mutagen_gate": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_AUTHORIZATION_MUTAGEN_GATE_20260902_R4.json",
+    "bundle": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_DUAL_HOST_BUNDLE_20260902_R4.json",
+    "input_Mutagen_gate": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_INPUT_MUTAGEN_GATE_20260902_R4.json",
+    "local_authorization": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json",
+    "local_contract": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+    "local_preflight": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_20260902_R4.json",
+    "local_result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_local2_arc500_joint_ef_20260902_r3.npz",
+    "publication_Mutagen_gate": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PUBLICATION_MUTAGEN_GATE_20260902_R4.json",
+    "remote_authorization": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json",
+    "remote_contract": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+    "remote_preflight": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_20260902_R4.json",
+    "remote_result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_remote4_arc500_joint_ef_20260902_r3.npz"
+  },
+  "host_plans": {
+    "local": {
+      "authorization_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_local2_arc500_20260902_r3.json",
+      "contract_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_CONTRACT_20260902_R3.json",
+      "fresh_joint_EF_calls": 996,
+      "host_identity": {
+        "hostname": "wuzhiyoudeMacBook-Air-206.local",
+        "machine": "arm64",
+        "platform": "Darwin"
+      },
+      "host_role": "local",
+      "path_count": 2,
+      "preflight_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_LOCAL2_ARC500_20260902_R4.json",
+      "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_local2_arc500_joint_ef_20260902_r3.npz",
+      "selection_roles": [
+        "nearest_unused_to_NF2000",
+        "nearest_unused_to_NF4000"
+      ],
+      "stored_arc500_joint_EF_values": 1000
+    },
+    "remote": {
+      "authorization_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_cost_late_six_remote4_arc500_20260902_r3.json",
+      "contract_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_CONTRACT_20260902_R3.json",
+      "fresh_joint_EF_calls": 1992,
+      "host_identity": {
+        "address": "100.74.85.3",
+        "hostname": "Mac-mini.local",
+        "machine": "arm64",
+        "platform": "Darwin"
+      },
+      "host_role": "remote",
+      "path_count": 4,
+      "preflight_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/preflights/BB_IRIVM_COST_LATE_SIX_REMOTE4_ARC500_20260902_R4.json",
+      "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_cost_late_six_remote4_arc500_joint_ef_20260902_r3.npz",
+      "selection_roles": [
+        "highest_legal_NF_not_above_15000",
+        "nearest_unused_to_NF8982",
+        "nearest_unused_to_NF8000",
+        "nearest_unused_to_NF6000"
+      ],
+      "stored_arc500_joint_EF_values": 2000
+    }
+  },
+  "metric_values_read": false,
+  "resource_policy": {
+    "dual_host_local_fcntl_locks": [
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "estimated_uncompressed_shard_bytes_per_path": 85961984,
+    "jobs": 1,
+    "minimum_free_bytes_reserve": 2147483648,
+    "nonblocking_lock_probe_required_before_authorization": true,
+    "one_BB_process_per_host": true,
+    "thread_caps": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "schema": "bb-irivm-cost-late-six-arc500-preparation-v4",
+  "scientific_policy": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_grid": "500 uniform arc-length points including endpoints",
+    "endpoint_joint_EF_source": "sealed shared endpoint cache",
+    "endpoint_new_physical_calls_per_path": 0,
+    "fresh_dense_interior_joint_EF_calls_per_path": 498,
+    "joint_energy_full_force_stored_per_path": 500,
+    "optimization_N_F_contribution": 0,
+    "original30_new_physical_calls": 0,
+    "original32_energy_full_force_source": "selected R5B stable-last shard"
+  },
+  "selection_read": false,
+  "status": "FROZEN_ZERO_PHYSICAL_BEFORE_R5B_FINAL_SELECTION"
+}

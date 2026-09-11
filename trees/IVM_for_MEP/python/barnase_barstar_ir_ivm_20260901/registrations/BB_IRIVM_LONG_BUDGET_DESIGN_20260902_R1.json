@@ -1,0 +1,215 @@
+{
+  "accounting": {
+    "all_getState_attempts_for_internal_images_count": true,
+    "fixed_endpoint_optimization_Number_of_Forces": 0,
+    "paid_images": 30
+  },
+  "after_both_4080_runs": "seal and audit both runs, reproduce every fully closed shorter-budget prefix, then apply the same offline arc-length-500 diagnostic before selecting 9990",
+  "created_utc": "2026-09-01T17:30:58Z",
+  "efficient_scan_amendment": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_EFFICIENT_CONTROLLED_SCAN_AMENDMENT_20260901_R1.json",
+    "sha256": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46"
+  },
+  "execution": {
+    "all_thread_caps": 1,
+    "candidate_count": 2,
+    "diagnostic_feedback_during_optimization": "forbidden",
+    "fresh_from_common_initial_path": true,
+    "host_local_fcntl_locks_required": true,
+    "jobs": 1,
+    "one_BB_task_on_host": true,
+    "optimization_Number_of_Forces_upper_bound": 4080,
+    "same_reference_host": true,
+    "tier": "screen"
+  },
+  "full_cost_precision_pareto_set": [
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 592.6693535828132,
+      "discrete_I_perp": 16324.730005390877,
+      "joint_target_score": 11.116062754529095,
+      "m_max": 5,
+      "optimization_N_F": 716,
+      "r": 0.5,
+      "source_label": "bb_irivm_a1e1_r05_m05_inf990_r3",
+      "source_selection": "alpha"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 900.1006835316789,
+      "discrete_I_perp": 77444.13564174288,
+      "joint_target_score": 52.73434056671031,
+      "m_max": 5,
+      "optimization_N_F": 429,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e0_r01_m05_inf480_r1",
+      "source_selection": "interaction"
+    },
+    {
+      "alpha": 0.1,
+      "densified_Delta_E_kcal_per_mol": 2203.8977864083176,
+      "discrete_I_perp": 167639.5569297204,
+      "joint_target_score": 114.15146433397969,
+      "m_max": 5,
+      "optimization_N_F": 360,
+      "r": 0.5,
+      "source_label": "bb_irivm_a1em1_r05_m05_inf990_r1",
+      "source_selection": "alpha"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 1855.3657972671724,
+      "discrete_I_perp": 512257.8829267063,
+      "joint_target_score": 348.81377953785903,
+      "m_max": 5,
+      "optimization_N_F": 360,
+      "r": 0.5,
+      "source_label": "bb_irivm_a1e0_r05_m05_inf990_r1",
+      "source_selection": "alpha"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 3280.2849765975243,
+      "discrete_I_perp": 1147534.4464568794,
+      "joint_target_score": 781.3951541977156,
+      "m_max": 5,
+      "optimization_N_F": 300,
+      "r": 0.7,
+      "source_label": "bb_irivm_a1e0_r07_m05_inf480_r1",
+      "source_selection": "interaction"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 3280.2849765975243,
+      "discrete_I_perp": 1147534.4464568794,
+      "joint_target_score": 781.3951541977156,
+      "m_max": 8,
+      "optimization_N_F": 300,
+      "r": 0.7,
+      "source_label": "bb_irivm_a1e0_r07_m08_inf480_r1",
+      "source_selection": "interaction"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 10814.684022034557,
+      "discrete_I_perp": 8483398.585299263,
+      "joint_target_score": 5776.634040178847,
+      "m_max": 8,
+      "optimization_N_F": 210,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e0_r01_m08_inf480_r1",
+      "source_selection": "interaction"
+    },
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 9643.6671906903,
+      "discrete_I_perp": 8879640.455846146,
+      "joint_target_score": 6046.448579072698,
+      "m_max": 8,
+      "optimization_N_F": 212,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e1_r01_m08_inf480_r1",
+      "source_selection": "m_max"
+    },
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 9643.6671906903,
+      "discrete_I_perp": 8879640.455846146,
+      "joint_target_score": 6046.448579072698,
+      "m_max": 10,
+      "optimization_N_F": 212,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e1_r01_m10_inf480_r1",
+      "source_selection": "m_max"
+    },
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 9643.6671906903,
+      "discrete_I_perp": 8879640.455846146,
+      "joint_target_score": 6046.448579072698,
+      "m_max": 15,
+      "optimization_N_F": 212,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e1_r01_m15_inf480_r1",
+      "source_selection": "m_max"
+    },
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 9643.6671906903,
+      "discrete_I_perp": 8879640.455846146,
+      "joint_target_score": 6046.448579072698,
+      "m_max": 20,
+      "optimization_N_F": 212,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e1_r01_m20_inf480_r1",
+      "source_selection": "m_max"
+    },
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 9643.6671906903,
+      "discrete_I_perp": 8879640.455846146,
+      "joint_target_score": 6046.448579072698,
+      "m_max": 50,
+      "optimization_N_F": 212,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e1_r01_m50_inf480_r1",
+      "source_selection": "m_max"
+    }
+  ],
+  "pareto_definition": "no other tested setting is no worse in optimization N_F, discrete I_perp, and arc-length-500 densified Delta E, and strictly better in at least one",
+  "promoted_4080_settings_in_order": [
+    {
+      "alpha": 10.0,
+      "densified_Delta_E_kcal_per_mol": 592.6693535828132,
+      "discrete_I_perp": 16324.730005390877,
+      "joint_target_score": 11.116062754529095,
+      "m_max": 5,
+      "optimization_N_F": 716,
+      "r": 0.5,
+      "source_label": "bb_irivm_a1e1_r05_m05_inf990_r3",
+      "source_selection": "alpha"
+    },
+    {
+      "alpha": 1.0,
+      "densified_Delta_E_kcal_per_mol": 900.1006835316789,
+      "discrete_I_perp": 77444.13564174288,
+      "joint_target_score": 52.73434056671031,
+      "m_max": 5,
+      "optimization_N_F": 429,
+      "r": 0.1,
+      "source_label": "bb_irivm_a1e0_r01_m05_inf480_r1",
+      "source_selection": "interaction"
+    }
+  ],
+  "ranking_targets": {
+    "densified_Delta_E_kcal_per_mol": 200.0,
+    "discrete_I_perp": 1468.5712347872072
+  },
+  "reference_host": {
+    "address": "100.74.85.3",
+    "architecture": "arm64",
+    "hostname": "Mac-mini.local",
+    "processor": "Apple M4",
+    "selection_basis": "chosen before either 4080 call because measured throughput is about twice the local Mac; both candidates run serially on this same host"
+  },
+  "schema": "bb-irivm-long-budget-design-v1",
+  "selection_bindings": {
+    "alpha": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_ALPHA_CONFIRMATION_SELECTION_20260901_R1.json",
+      "sha256": "e45fb79a37ac5ef87a86927ed0790490973c2ff4b6210a35f9f2cc4e3bd5f1a9"
+    },
+    "interaction": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_LOCAL_INTERACTION_SELECTION_20260902_R1.json",
+      "sha256": "8e5094fc0075847001f00f1b9b6e0ea532608eb17e77aa4da76e9411edc32b21"
+    },
+    "m_max": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_M_MAX_SCAN_SELECTION_20260902_R1.json",
+      "sha256": "1c4cb4bc9b7a7dfc29f2e1fb798499413c57ba19e2e28ec79cfa91ebe36aa9b6"
+    },
+    "r": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_R_SCAN_SELECTION_20260901_R1.json",
+      "sha256": "ba588e8516e297cc85a3852e337c53e6543cf394d56586c11dbfaaf923311a97"
+    }
+  },
+  "status": "FROZEN_BEFORE_FIRST_4080_PHYSICAL_CALL"
+}

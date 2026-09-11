@@ -1,0 +1,41 @@
+{
+  "protocol": "clean-start four-level fixed-alpha Ala IVM audit",
+  "root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+  "common_initial_path": "inputs/common_initial_path_equidistant.npz",
+  "common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "runner_sha256": "accc408ee088d641f78e966bf18a1cafef385a0cf710e20494cb64e81320af15",
+  "orchestrator_sha256": "93bd5374dedf1282528a9a199af020b627435bbfdbc38d1b0d7ffe4ee83ddef9",
+  "stages": {
+    "stage4": {
+      "output_dir": "runs/stage4_inexact_optimized_resample",
+      "budget": 300,
+      "rtols": [
+        0.8
+      ],
+      "description": "uniform optimized two-phase inexact IVM; fast projected path-sum phase then precision resampling"
+    }
+  },
+  "alphas": [
+    20.0
+  ],
+  "tasks": 1,
+  "jobs": 1,
+  "started_unix": 1785553369.598869,
+  "finished_unix": 1785553421.066983,
+  "results": [
+    {
+      "stage": "stage4",
+      "alpha": 20.0,
+      "rtol": 0.8,
+      "budget": 300,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 51.45953989028931,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v2_a20_phaseA80_phaseB220.npz",
+      "result_sha256": "32ea85cbb3278d084a0735af1d3d7d1546e51f272ef842a5cc76894baca55109",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_r0p8_a20_b300"
+    }
+  ],
+  "successful": 1,
+  "failed": 0
+}

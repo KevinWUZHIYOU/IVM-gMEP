@@ -1,0 +1,2726 @@
+{
+  "bindings": {
+    "evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_ode_neb_all_batches_arc500.py",
+      "sha256": "3b839d22ec4404ca0453674f75f18c008201d2fc07facf0118523575c39639f4"
+    },
+    "frozen_endpoints": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/frozen_endpoints_A.npy",
+      "sha256": "2a5a48c2a42fc3952384d7da7c12d17ffd5f4e0fc5f19f26ccc6b56f5e571d38"
+    },
+    "optimization_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/OPTIMIZATION_AUDIT.json",
+      "sha256": "5f84495087e0e9ea91feb29b33603301a8157f027a07407316eb115194c43cc3"
+    },
+    "optimization_complete": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/OPTIMIZATION_COMPLETE.json",
+      "sha256": "6dc07e421d49d303d6b174ada620e243145cf59ce7c6e1ce42711eaf73f8665e"
+    },
+    "optimization_wal": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/optimization_force_wal.jsonl",
+      "sha256": "6eec7bed765a30e8c777d5922c1a3362c95c1d92ba0489397182e079a1d94792"
+    },
+    "reuse_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.audit.json",
+      "sha256": "22115e01097ea77c66a0ab2801cdce2c04e4e9e2d13a7e6dfd58388a89e94ee1"
+    },
+    "reuse_diagnostics": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.npz",
+      "sha256": "b8feb051df121a29da01c93c6c0a2e1324dc189a07b5d44e6c8b3269b960e989"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "diagnostic_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "energy_evaluations_per_path": 500,
+    "force_evaluations_per_path": 0,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "identical_path_policy": "exact dense-grid and energy-vector reuse only after exact 32-image path hash equality",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "sampling": "uniform_cartesian_arclength"
+  },
+  "paths": [
+    {
+      "batch_id": 1,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0001_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c4fa781efc0bd3fcd73e58d5e8a725f9d7bed4890bf341edafa4fb382c394d58",
+      "official_path32_sha256": "8fadf37e320c936deeac7d7d24bfd8a9b789916d156c9ecf185b55fc6dbe8ae7",
+      "optimization_N_F": 30,
+      "state_role": "current_initial"
+    },
+    {
+      "batch_id": 2,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0002_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3f067aea28c3d8934c2a1cedd6c371ec8a92c70ddc23e836a61e133fa98dbb25",
+      "official_path32_sha256": "dd1ea8ac4b6ac094b3967b1fde770d5b4851b77270bde2e92c958cd8dd68bb99",
+      "optimization_N_F": 60,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 3,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0003_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8791a25e7b0f86ee14dd4b07ff4bf4622f752c3f0f0045c3bf1ebeb151d3a572",
+      "official_path32_sha256": "24562a0fcb90fccfee42c0582fcea38c3076a5085b1b0cd5aaa9038e4a6e0f90",
+      "optimization_N_F": 90,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 4,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0004_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5e9ac68a4d695e8919ad992476ccdfa453de2815e7861dc572314aafcae50a21",
+      "official_path32_sha256": "ac5a147d2f513738a78962a01ad021f58795758b0b65892d09b2711ae83929ab",
+      "optimization_N_F": 120,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 5,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0005_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d6910b5911026a63906768bcccafaddf5ab0c5740aaaecf7e1861615cb73cbf5",
+      "official_path32_sha256": "64c0a32b94a860b51ccd6290b96221f2c116243b40fd736521a49b696f59bc85",
+      "optimization_N_F": 150,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 6,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0006_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "daa6171d00aa56721c8b6ae96fe235232a25ab2fc93877027b0cc3f724894e0c",
+      "official_path32_sha256": "c994ae64cc676cb4822111cbc9abb0f43e936a4041b5e299715d4d0e368f5c88",
+      "optimization_N_F": 180,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 7,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0007_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "12e39a09e020dfea6b2189c2669908a1e01787bf57f82fdc5c4d1c1791c384b1",
+      "official_path32_sha256": "e0cfad6bda753a176d2c1b5a22a2aee74315420fa06c9a19ffb5b719d4d4c329",
+      "optimization_N_F": 210,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 8,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0008_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "dfd355dc2bc2291e437cfc03c2467278ae82176855bc7775dce620a4afea64f4",
+      "official_path32_sha256": "8bfa2c2109fad930d2f6969768be1b6b561a3d82f8aecbc89b9873312a1b250b",
+      "optimization_N_F": 240,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 9,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0009_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e1095185629b64618275fd1dbd1e4bf5f12d0c99568f6bfb535c83c15ea96dff",
+      "official_path32_sha256": "61372a2684b6932aca7bc8452ee030b7f0cf423e94516fde9a361b3c83d2ba31",
+      "optimization_N_F": 270,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 10,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0010_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d407371bad5e8f0f888c79ee68457c18a9e9443b619a886b9e4b47764a44a62d",
+      "official_path32_sha256": "5cd502e6eff9294e9c7381aa4cb6b0a7653fa2eff921aeafdf68d562a7cfadbe",
+      "optimization_N_F": 300,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 11,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0011_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bf54d42eed546e1e53b22c1c21c01c47ed27ecd131e366f9eebf25957a1baa8f",
+      "official_path32_sha256": "656bfb975b92a44bc06db6605a1c5067c1d28d51205c95dee4f2d5d4bf431bec",
+      "optimization_N_F": 330,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 12,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0012_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0b8844f5087fe4dc7c79681783e8f1e8637da275ba689ce0b77c92b935f9b190",
+      "official_path32_sha256": "30bdfe3f73da20d182480ca75f26be08d429e535a4d2fc56f8fa8eec38f2789c",
+      "optimization_N_F": 360,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 13,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0013_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bced6aa6e43bb6597a9219c2a1cb7f1162f8b825cab849a67c3ed6f3a108ac29",
+      "official_path32_sha256": "2b28a485bce8323122e039f7d22ca5e7a67fa5536ff64fe0c4cc2269813746f3",
+      "optimization_N_F": 390,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 14,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0014_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b409f295f48c08fa607e80c77a35f136f33b364da31476115bdc3e809a6927f5",
+      "official_path32_sha256": "eaf968d5cd8b2de92dfeb2a602798aeb0b8f446a3fdb9a7dc2545fe411e6c069",
+      "optimization_N_F": 420,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 15,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0015_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bef326155c4a731be03ce0db2946ed9d34cfc18c2d9e9ac391346f6689ed4bf1",
+      "official_path32_sha256": "109f0512a41f67d6cc636f85c9fbedd166786159e9e8c9257ae64d13d2542d0f",
+      "optimization_N_F": 450,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 16,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0016_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0bae3210dc79ec06c9158fcb8c53c8c8529f087d06c7b1d4154e9ab499307e45",
+      "official_path32_sha256": "9524d3bc6a62f96bbdd0eb3491680ef1cb744e0a88a30c29d29722f41feeb186",
+      "optimization_N_F": 480,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 17,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0017_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "aecf42b792cf4f7a9d7993e8baa0a4b3d5c339ca4efb94c99d238b3ba0fccd74",
+      "official_path32_sha256": "729afb9697bd2a08851a57ec1882ad7eaaaa37141797cefdc1fb35feb4edeb43",
+      "optimization_N_F": 510,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 18,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0018_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "93ee8655a074929242bae71d7db4cc603b67a6e88efe89de55a567cccfdcfb27",
+      "official_path32_sha256": "79e72219ecc70b2ed7779c5b0d0e5747102225057e5205cabb0eba61a95638ff",
+      "optimization_N_F": 540,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 19,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0019_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "47ab6890e68b55edbc48405c6751d9bff9ad53110d37faacfe5c3830815a2044",
+      "official_path32_sha256": "c33aac31d50a17721a7e7164f7ea2b0f0be0f40fa5517b5bb51cac55c0832828",
+      "optimization_N_F": 570,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 20,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0020_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "49cf9bddbffb2d75451041424ff557d6058790ec74e914b97c182ef00e952fcb",
+      "official_path32_sha256": "eb6d703d803b95dffb292ddaab1bd76f6ebdbfee20f6aa03e1efbc61edacbbfd",
+      "optimization_N_F": 600,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 21,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0021_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0eefc6bd52d9bac81dac0b0b31bedd35abc722a775b509687bf55bdd40819ae1",
+      "official_path32_sha256": "6760d39cdbcb35a3e9c918ae291950c9eab7f0f595900cf0e77c2a45d6181802",
+      "optimization_N_F": 630,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 22,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0022_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "61563528634c1eab7c57791a0a143bde81373e45a10f2273af999e186678da8e",
+      "official_path32_sha256": "308338037334b48004d6a3c589c0ff0e9248b9c6f6e1ec5fa55a54f31109d9df",
+      "optimization_N_F": 660,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 23,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0023_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "38314efc32f2cc95047c0918b23d9972238924eb117cc42e52759283e8017298",
+      "official_path32_sha256": "431193200bd56510a51e77d82e0e2f8c278ef9ca72e2d84a022641b1393ec608",
+      "optimization_N_F": 690,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 24,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0024_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "963b6becc6cdd7cbb9880abb7a9e81373cf3a553cf844ce4efa57f119ca3e983",
+      "official_path32_sha256": "2937a34d8c94216559a7a6cb8898fefd4a819c8d21f81ae18980929d8dcd1054",
+      "optimization_N_F": 720,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 25,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0025_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e1e86f80bd30b1876c7d7b3ad611d33cd5c82576e3045deb95299ab1fbafbcfc",
+      "official_path32_sha256": "c23979f0ba84c67fec084d2e9647190997b4b106d97eeed1feb2ff407812564e",
+      "optimization_N_F": 750,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 26,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0026_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9bddc8d0693f8d343c15b23c88ca1410929feb484b8ba3f1ef3c734bb18b16b2",
+      "official_path32_sha256": "da1935c36cfc5d35fac81871fe4b7a5b2c161bfd078889aaf9467fcb2f062778",
+      "optimization_N_F": 780,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 27,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0027_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f02ad07673fe59dcef0a08aa1a9858d413a72535aa8c11b0d76da73f151aa5a3",
+      "official_path32_sha256": "1b4d7f03560b576300d30f671eab85daa6310b4747aec8dbc44254ea5ec8b77b",
+      "optimization_N_F": 810,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 28,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0028_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2fab908e1068d356616e88c04f87a1bd48e7c73263ca12b95e86ce633bbc9d4e",
+      "official_path32_sha256": "977ea0c04a1c3a9c5c1773829f3feaa9a39f5c7869786306a2bb5b859b01af4c",
+      "optimization_N_F": 840,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 29,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0029_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "6fdba874cc604a0afa17a1cbdfafde85a2a84e4e6b6abb5f49ac2ba28205207f",
+      "official_path32_sha256": "571840c6ec7cde222c9fa1eccb2c51e60033e802a1fb7fbdf1a3940de2c8ee7c",
+      "optimization_N_F": 870,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 30,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0030_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cae1e3a57b1abb60d3d488f63ec334803a6e033a56911b2a79e5d373969e68f1",
+      "official_path32_sha256": "9d6403bb2c423ceb0084a938c7f9bb9dfc189dcc42480632d58d2ed525fa33ca",
+      "optimization_N_F": 900,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 31,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0031_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b90c09069510c4655d7b556ba7f135108b951344c4ab3dfb88a3fdc2691c0998",
+      "official_path32_sha256": "3587900fb92a55e206d0e5f8a82ea6b5562f727a133f175f15543b2c6815af42",
+      "optimization_N_F": 930,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 32,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0032_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "39711beb668a16d520bc990b0c452ba842ffabb3df4c6c4e7a2eaf062100ffb6",
+      "official_path32_sha256": "a5b5037614ff2a20c82981e32a10948bef059e2ed68d32960e17aeb7ae8a4c63",
+      "optimization_N_F": 960,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 33,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0033_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "453e69dcc3358c23741a8bd842fb656968ea9971b11efe1e6733ab04882df464",
+      "official_path32_sha256": "3ab9750f0701c26c001ba684dda27ff269148e02239a127155cc4edf66ff3ab0",
+      "optimization_N_F": 990,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 34,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0034_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "fbae2ad931389cbdedab37116231bb76747f29f3186bcf7898167add89a71b71",
+      "official_path32_sha256": "c4dda35aa174f53fd726b9efc3f5ffe441987b33e33d1f66b3bead76a2a57641",
+      "optimization_N_F": 1020,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 35,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0035_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9376e59c4d9748b9301ead39d2422660c35b6d4f2874575bea87e898d9f98c77",
+      "official_path32_sha256": "27546b134a421e2d8e09e9c2a415196d73c3094c8431e7aed4457358faf6ff08",
+      "optimization_N_F": 1050,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 36,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0036_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d13a860f6efb6c6eb092c260e2f712eb1c8ea7ee7fa2ce7b531db45a63266aea",
+      "official_path32_sha256": "efb1836dead5f9002e9c979180b3020e5be358c9d9af9c36e374412724403141",
+      "optimization_N_F": 1080,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 37,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0037_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b23be61566fa7888c753113da707bcccea3e931a134c348499fce9ebadf92488",
+      "official_path32_sha256": "f5528720639491133fa2430b45939b5c6a25dd2f3833c85f7d8e89ffd74541b0",
+      "optimization_N_F": 1110,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 38,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0038_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c735cfcc671762cce2b7ee094641d59257d37c0283743b50cc62552a41d06dd6",
+      "official_path32_sha256": "654fd932ecc30441cbf851535a3bef1ff1c97da913988f5c981f217fe26dcc97",
+      "optimization_N_F": 1140,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 39,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0039_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c61f08bb1808e9af687c9deef1f2549c06a748af38952c79fcdc9c34222e206a",
+      "official_path32_sha256": "4845dd3c9748fcc352df39873e3b9b635ffa68acd8d3548e6df5ee02ff32249a",
+      "optimization_N_F": 1170,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 40,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0040_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "aa568c8f4d27a56571d1ab58412bad74042e818f3f3bad3d09692343a943bcce",
+      "official_path32_sha256": "2e36ccda906d4a63b543610d5414009a407a5798258b54392c1d5d4797ec104b",
+      "optimization_N_F": 1200,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 41,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0041_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "79b60a832250a46dadb83aae01eeeaa6348e031b6095a1e9ebdce178fb5fff45",
+      "official_path32_sha256": "441bea12cb816d84b43e72afd3185097d671776847a0d7857ef7b39189529662",
+      "optimization_N_F": 1230,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 42,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0042_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e2e31fcd8032a680b2daa8caf3c43fb7fe6a6c549d3a2bb9cbe626370d44a137",
+      "official_path32_sha256": "fa7e68b6f4a3a59425e1a650b91545540300b3d6bf0acf6918e76c81043cafb5",
+      "optimization_N_F": 1260,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 43,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0043_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3051764bfd915b2bec07369ef550c81a0d7927cf3f34fa5b6b2169be5fd420cb",
+      "official_path32_sha256": "00619caeb8e528ef8a5f450cc1b5c5ddc32766ad4f6e6d7d5c06f27f13eb1865",
+      "optimization_N_F": 1290,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 44,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0044_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "dff2d6ba9f74df46c2e4e575e1aadd9f8ceb206f9a7cde9ebf9b55e98ab3387a",
+      "official_path32_sha256": "bed299e3446182e72d9468d32527ec13e4823d87cc61627eb2de9219f9e4d2ae",
+      "optimization_N_F": 1320,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 45,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0045_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "60bb4af20caaf70b8cd413ade40cf278fe19ad834895896f418c6096bb8668c2",
+      "official_path32_sha256": "c446c7b4f3ff45811aa9bb2c536eeb6dac83444a7b7db4d35eab0c7ff32926b6",
+      "optimization_N_F": 1350,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 46,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0046_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "19ee9691ecda0df3eb9072991e811e050ab53dd65278936387180f9ce1e3ee59",
+      "official_path32_sha256": "ca605b04ded509d3ffd6c4a2b04ae34e969eb6ee7ec876ae3a1207332f51d3b0",
+      "optimization_N_F": 1380,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 47,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0047_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d314f6a72fab9df90104d374d62ba8e2e5f04f49df278cfdc3bfe17953adef2e",
+      "official_path32_sha256": "75bf11722c03cfce83fbd5f8f1a2c73502ce1776d110863d98266266c4f351b5",
+      "optimization_N_F": 1410,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 48,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0048_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c0d6fcc58704aae7aef7d7fe447b38106b1b04fab65fd526a9912b099238140c",
+      "official_path32_sha256": "6f27454aefebdc505f4560391ff3600b43ed9cd265c1b146c82f31807e36a11c",
+      "optimization_N_F": 1440,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 49,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0049_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5a14936c1cd1db0c09a02198a8993fb1dee4829d9bbf58ac8311bf51e791bbfe",
+      "official_path32_sha256": "9244b38d3d7350df400f01b875dc7c238d7a3e535079b5652868e1b7ad15e9e3",
+      "optimization_N_F": 1470,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 50,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0050_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c61ea0d970dc0b09f461c3addbb8b69f649e921d1f002828e81eb6a519b7c8cd",
+      "official_path32_sha256": "53307fbe5e797119995a874d90628b862538e15f20e2733d447a1ce6806dd69c",
+      "optimization_N_F": 1500,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 51,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0051_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "699eba9cd748ee07a5be46e3cb70cbe69b2f45502d8020ee7c6433b09838a05d",
+      "official_path32_sha256": "d280501eb4e066b7996e9e7875238cde13b3ef244cacf9cfacc65d8f4182472b",
+      "optimization_N_F": 1530,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 52,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0052_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2b59b4c5a1e8de9b7b5f4b0b9288795f3594ac4d6879bfa61675ea8edc54612e",
+      "official_path32_sha256": "2ab86b45a0762de8e0edc64163f63dc91c2a67a31274f06d557097c860e7bffe",
+      "optimization_N_F": 1560,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 53,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0053_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b78439a13e95019ac04402fe3190c4f34de758e810788daabacc6e85df55bfcc",
+      "official_path32_sha256": "1ec6906fff21d27fa1f3b0e96db5e8e7e80040dcd27042e416b7d90cc5382ebc",
+      "optimization_N_F": 1590,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 54,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0054_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "08e7b4582572fad9f9ede4f76f57fab30647447f741b109cd1e6d812970ce9eb",
+      "official_path32_sha256": "643a42f2abc43b4f9ef4f4cbc8a5565f171a8ee6650544f8e712bc63a1263dbe",
+      "optimization_N_F": 1620,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 55,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0055_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f9491c34f079e33c1e488e84e586519594097e90a0a427709cb3d6649d3ea44a",
+      "official_path32_sha256": "d4ceb5af64894e2088f490127d391c4893691b9e0c3e5bfe982f472843931451",
+      "optimization_N_F": 1650,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 56,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0056_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5ce0f1103053925ef170aba8d526a89fc34bee7f29814daab43b17a9e6bfb92f",
+      "official_path32_sha256": "f1a9b6a3e2013a51f8a3c8e33c09c56db046c4f12957e83f0c02c74f253c65cc",
+      "optimization_N_F": 1680,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 57,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0057_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4ddbd04d94d6ef883d177250ee28add92d66a45744af3e851544391913dfea21",
+      "official_path32_sha256": "487d62453b35bcfa9a25433ce040890d3aa8e12b1dd6904709cf7fe8f2fc76e3",
+      "optimization_N_F": 1710,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 58,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0058_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f956a5c0c2649bb4c2375ce0d8719ee2cc142bc29ac62f6723da8fe74c75aab2",
+      "official_path32_sha256": "5e9de25376ab1cc954945e6e0ba9b1586b4bb57c89830ce3598a3b9f8b5f2ef0",
+      "optimization_N_F": 1740,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 59,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0059_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e07a6bbcc9634232c5e1929c7cbd29e8d7c27810d6a1d2110cd2cea4f3ea6e86",
+      "official_path32_sha256": "9733f1c5b9ff387055a7f20fddc9b0cde9de15021e5fd79696cccb8075e6580d",
+      "optimization_N_F": 1770,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 60,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0060_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8b102c55f036087e18f6d11f2919dd6e688a0fba98760ebc81b53130e861e77c",
+      "official_path32_sha256": "55a28ca098d76cabf95b146d1c63a5d0484914dc4cd13142ba5b802b3ea79fe2",
+      "optimization_N_F": 1800,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 61,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0061_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5ebf1b7905c41385c6ab1644a31bd7fb5a826ea83132d6d0aee09c494d7a985d",
+      "official_path32_sha256": "4c4e9bfc4a220b31dd2e4aa5d5e776f82eea9e2e393140ef2e0c021c9157c462",
+      "optimization_N_F": 1830,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 62,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0062_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c48782ccd3f1c1e1bc41b100684b9bc3c897562ce2ae33b078c2bf5c9683da46",
+      "official_path32_sha256": "624f034351dbbccb32f874d98a64309007785d1cc6be8bfe6dd04ffc16c1f02f",
+      "optimization_N_F": 1860,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 63,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0063_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b4cc7fed7c1a5f5222e7016a22e54a9abf0f1c0601aca97e41ffc436c2965dca",
+      "official_path32_sha256": "9c33a0d48035659ca7719800cc19a1124e6fda07663b49248f1283508ce0d181",
+      "optimization_N_F": 1890,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 64,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0064_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "967ca0e1c658f068570b3be45e5490314041cc050626b3b03ac30a4a0cb6dd3d",
+      "official_path32_sha256": "af72600f847927826332901cc2df00309edd4e3316da6f008067d8e62023ab5a",
+      "optimization_N_F": 1920,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 65,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0065_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c134c887f4fc6c1957f2e09f4320295e1dd835d6b027140f1ed1e11f3853a0ff",
+      "official_path32_sha256": "d46d80959a7b124b694d5768b1a46c27fc571ebf4ded9e675262e81e463d5980",
+      "optimization_N_F": 1950,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 66,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0066_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0d821a924b411036ffbbb9bcd6d137fd412f496cfc2e6d3ba64b29d32529c833",
+      "official_path32_sha256": "c3be69c6679bdd2bb1951261173da7784cbf14271b521c2cc7421b1d3e3261db",
+      "optimization_N_F": 1980,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 67,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0067_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3822ff2588469dda1a3273ca6333dc627f88e69a3699b47d2b8c99917a0603a6",
+      "official_path32_sha256": "f525839ddffceb8ada73d39f6d14d741aa025833df890242329174323977beba",
+      "optimization_N_F": 2010,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 68,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0068_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2cc44ffa9177dc469725bf4198f81a64677593eaa028128c6a977548be7d8e84",
+      "official_path32_sha256": "325131ed0c90f20df1cd17579a6b7b01817e468162f151134bcc541137f65671",
+      "optimization_N_F": 2040,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 69,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0069_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "21cf79a0062ae82ab60f67031df2ebfd2b3f3b837d4c70b0080c0a5d0ee0d7b2",
+      "official_path32_sha256": "38451e1517e55434b9206592ec1c4ebddd924934d4acf8b4189d28a3b77231c4",
+      "optimization_N_F": 2070,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 70,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0070_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2770cb3449a89cc53f1812e30d86f7d98b5ea69c3559b2b0bbc07ec0f4d01048",
+      "official_path32_sha256": "23356c1d79057baeab78aaa827ebb2d35e7bae6b7a5bde9ab3559faa31e1c7a7",
+      "optimization_N_F": 2100,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 71,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0071_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c220a49beaf82578039cf779b3b5d9c269b27bbc0fae32c47f785a2fc54abeac",
+      "official_path32_sha256": "8575795f8495bf4bcc7b53b97dbddd9ada91d52c6c5d2a0f742a02fabf0cc46b",
+      "optimization_N_F": 2130,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 72,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0072_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "137953774e393dd1a0d529d576531544946e225f3fccf9bb955f8adb6dd7d9b7",
+      "official_path32_sha256": "ba676eeffba24e29506a81db0e0fa148f81813cae1d3bd5804e8b8f5585c4e65",
+      "optimization_N_F": 2160,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 73,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0073_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "484e94f291fd464646d6762fc709dd6b3cdbf3b125951aeb206d3d4b67e85a2b",
+      "official_path32_sha256": "17c895a4325f5037467542fc41666695c0dd102f2e20c1b5574943925140401e",
+      "optimization_N_F": 2190,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 74,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0074_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a1ef7ec854ce00b5604c32d64dfbb6099bcf12cd22abb228abd0bd875e84b9d4",
+      "official_path32_sha256": "b5fb8f72ae0960c6921e8f8cceb0cadf02cdf2e36d297222ba73d91cddffd371",
+      "optimization_N_F": 2220,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 75,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0075_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "96950f8bb7c8904b2d81ff2eaa281362ce286094289449ca69f72f40a9df2c3b",
+      "official_path32_sha256": "1c707cbb1ce4ffbf63ea20b0219c1d3c28b9ed04d15b0961d238f885cfc22a96",
+      "optimization_N_F": 2250,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 76,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0076_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b7656c69b09f5fe604617a2bf5c9bda09ec3fb5d125a8382c5a2bf36dec9163a",
+      "official_path32_sha256": "62e0c3dee3ffa2082032a9d2062b0a314563138db657c70f5c9614b76b1322f1",
+      "optimization_N_F": 2280,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 77,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0077_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7a96c65e8a4eba20a4613449e5da00f715077b109678daee6cf9129dc5f05fdc",
+      "official_path32_sha256": "5ff92f7a2063bd9ea24d14ebec3df0b3f5f59e211f53876f3bd2b8d168f902e2",
+      "optimization_N_F": 2310,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 78,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0078_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "31ba0550b6e2e68c33521d1c93e0bc6d6eae2465d607d52b707dd46ab75d8168",
+      "official_path32_sha256": "c72064edcb13542268177b161c5a0d17c9259f3e7e13e3088ca6373e078be0e6",
+      "optimization_N_F": 2340,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 79,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0079_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "929705042158201dcec895c919acb9971de739000d9d1691ee7301501ae0da22",
+      "official_path32_sha256": "8843a51954027cf4d8e134406e4bc607eb0c28b971cd0af511054d4e8357f2fc",
+      "optimization_N_F": 2370,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 80,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0080_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ca465a0a821ffd6bbf9e8d9634185749d34369f03d4cf623b6a63ecce463c0a3",
+      "official_path32_sha256": "ac60dba672b381ac181a95e498dd096de1c24bc7c65a019642a2374d800aa6b1",
+      "optimization_N_F": 2400,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 81,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0081_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "dfb051161e95032e9d3d570214a299e70c5a5da776c2c039bcac2aee5f0bdeb5",
+      "official_path32_sha256": "cd4dca78444655f159b558b3ad3c54ebdfaac60c65066dd12279b35850bc44b6",
+      "optimization_N_F": 2430,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 82,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0082_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1c5a7d40045b613d03018876a40d2a55b55fea3d8fe7fce891be19a7b56727d1",
+      "official_path32_sha256": "2791b8de5c966e6dcc46cd489d04812e2af690bf36bbaca3bad62aa5c2977463",
+      "optimization_N_F": 2460,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 83,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0083_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b5072df552767184e91b9fe5a0df1a7a7b785675ae05b6ca18bc0c3e0e874d33",
+      "official_path32_sha256": "d9102d1c9d5ccb65f4772100f29264b35d7c94e98212680a0953a2186472a78a",
+      "optimization_N_F": 2490,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 84,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0084_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e05f95b18623d7c53ce5ed5c334ae0b03e4ed2bfb70b67cc6dc99ed13a080d37",
+      "official_path32_sha256": "babd26da45a8f53e349ca92f66198c2b8a32c3bd4ab740061abc09f00d5e3aa5",
+      "optimization_N_F": 2520,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 85,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0085_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d8e3a6a21bcded1533ecde2f43741fbed61f9b315609f598853571915339b005",
+      "official_path32_sha256": "0c821c88467cce5490643e28a299a305c168cee43a0fc1a591b35f2ad5216721",
+      "optimization_N_F": 2550,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 86,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0086_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0c31484899f7617cd12b198dffbef761050fae2dab669b97baa567e3ce01d622",
+      "official_path32_sha256": "7803fa629b6c4054864b6b0ee7d12da10fcf0816188b880f490511ff32a8b9a8",
+      "optimization_N_F": 2580,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 87,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0087_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "788a8278cad6af11b4907ef0a7bff8e72668d71062cfb508e4e9c0acab8ead91",
+      "official_path32_sha256": "4e456b6808e420571bda008236a1a0ed3b62792c18591cd2995e8dd69762103f",
+      "optimization_N_F": 2610,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 88,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0088_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a81115fcd2b06e82af6047093192bab769d7fccd3c72e2bbe6fe055aaeeaeb3b",
+      "official_path32_sha256": "9b86cfcf1e0a82f7ff28568ac68360530e0395839212eb26dd0357413118ea49",
+      "optimization_N_F": 2640,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 89,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0089_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "409fe4b0c08acc93889ab6875155206da3dca2a3b5626bfc95d9b963faa2596a",
+      "official_path32_sha256": "ea779edf8ce7743a0f9970e3485ad64ca3c93218817bb26a2951d5f6054e509e",
+      "optimization_N_F": 2670,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 90,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0090_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1710d2db2a88c1210eb61d5c8d63ba28767133efaec37c2121e513af03de7a3c",
+      "official_path32_sha256": "946a148cd15e9d091d303347b8879396d9817fc8a09dbfa4798b62c4b1ebe366",
+      "optimization_N_F": 2700,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 91,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0091_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ad03c2043eeaa12d1def4b34f39914a5e4f7756598748dd9e49c88e0561436de",
+      "official_path32_sha256": "8d6d7044e4f917af8b33a3be464485bb39884a0e6b349146fe3db66e95d8c3a7",
+      "optimization_N_F": 2730,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 92,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0092_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4f062d059ed0445d69b886c374189a5755a23094cc67b182d64f832776193daa",
+      "official_path32_sha256": "bd07f98dfb1083391eba90e2651860065d0bd912be46b2fef45729e5e94fc0e1",
+      "optimization_N_F": 2760,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 93,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0093_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9e05b5f6e1264f89ef1c3b5965d1fb0326567a66daa3b4f85499511fad537b48",
+      "official_path32_sha256": "7d0a8c4adbd7a67975756e5a9656ee03415543a3a9f8ab7e95866688d30d87aa",
+      "optimization_N_F": 2790,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 94,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0094_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c8c724a92e7603579dc6f47b44797ddc0f6395736ad5808ea6b516b9882b1dda",
+      "official_path32_sha256": "bb329d0f32a9cca8cb7df0ec5018c5662b689fc67f23b69c18cb0b8ed924a69a",
+      "optimization_N_F": 2820,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 95,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0095_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a4ff19220a8caf3c0fb83f8d3f2173a25d440564746dae50c63b8459f8195f84",
+      "official_path32_sha256": "401b104a669cf1f2b9865f2ed81117a458d2e87a7bbd2659880f588807dd08d8",
+      "optimization_N_F": 2850,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 96,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0096_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c54bffd53d23a3132cd953c96a9a7ecf05604b5936dc4e2c75493e837a06521b",
+      "official_path32_sha256": "f66b5cf51533908634bb02df161a911717a644ed73a00f22c1f1b7b8f762888e",
+      "optimization_N_F": 2880,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 97,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0097_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "15cb15021c880038395b8f507c0ea1564b61b2276c5261a95c2d83cde5adb142",
+      "official_path32_sha256": "1822095c72d280d7793e82f9e752548b4428878046c7d26874b86e7019b96b49",
+      "optimization_N_F": 2910,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 98,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0098_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c3b5966ea2244e5919a932dfde56c5769b55870e5e92a5b096cab7370b2d1f8a",
+      "official_path32_sha256": "aacd307bd314dc66997aa0ae8e79cd7618bee8f9262f4b2ab2924a720a1a195e",
+      "optimization_N_F": 2940,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 99,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0099_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a706afbd1fa28d487111be7abdcc2bf6699917e7d1d615d8c1238f1cbd17ebee",
+      "official_path32_sha256": "4419de8ac8c77339b31dd437af9b35383157f95e0464d2727227742158b38f17",
+      "optimization_N_F": 2970,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 100,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0100_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "68aa35489c197101f824da9d2159dc90ae2decbd15ec3796895544f8353c5683",
+      "official_path32_sha256": "8b821ec1db74c177c9213e5aee8f2320821c82bce8758886eb3dce5c28f341d2",
+      "optimization_N_F": 3000,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 101,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0101_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a44d3a8102db85d174df139d5c0cf8d517fdecd9e96792857b1f6cd1231861c0",
+      "official_path32_sha256": "5471da2f2ca8d545b3bd290a1685cb32d1bbc07d446ad0eddb0861e87d1e55a0",
+      "optimization_N_F": 3030,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 102,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0102_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "6cd1e1f36af620bcca067870c984f4cd9fccfb902243bdfb975c601628e2e316",
+      "official_path32_sha256": "dd0da498c54074ae16d75787d45df2570425725e3b841cb0c01774c652cb6775",
+      "optimization_N_F": 3060,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 103,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0103_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7263eab43efdbf1e5d704897711d9afc63c6f41ddce76e9b992baec978cdb495",
+      "official_path32_sha256": "1cdb3e719045dfd283abbed55d64f2d9c58273003c603ebeaa36d9bfa2e4178b",
+      "optimization_N_F": 3090,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 104,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0104_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f47b136b6e192f79b22c68001613183e5136cddb41abd2ab443e6bf8dda1e33f",
+      "official_path32_sha256": "24c917925031822bf7f89965f4346bd52a95fe5dde41ae55821e0a300f7c88d0",
+      "optimization_N_F": 3120,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 105,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0105_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c83c76810771c2b2fa6aa42754b17f2b112dfd61d44733d4f514ef9e7906a334",
+      "official_path32_sha256": "e1c9fc8798868643e5cfa3ad2dfeb5e6e5db850c1fdfb319117fcb4f0f2c9a3e",
+      "optimization_N_F": 3150,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 106,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0106_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "563ee65920c0c77947660164cd8d43c7161d91f8d66cbdc15a0f65c8a8d35a2c",
+      "official_path32_sha256": "a9730259e8497dd6166ebd15dcd6c9384ee3bb43365ee09f84e8147fba37e038",
+      "optimization_N_F": 3180,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 107,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0107_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "659334cb1584fbcd77bce5d7b67ec950a9815577ec8dd66f3cb5d55c55482961",
+      "official_path32_sha256": "95399faacc22f5850b468178cf25de9f056329a80c94766ed13b679089766ef5",
+      "optimization_N_F": 3210,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 108,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0108_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9cff2faf9fa448d42be38aa1ed1a4bc3538b1fea71ec49c7697983dc8e51f8ac",
+      "official_path32_sha256": "5872404d4ca624c306fc91e626a843ead3b2c7ebc8b33c64a9df973f4ae61ae6",
+      "optimization_N_F": 3240,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 109,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0109_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a77a858b5db2951a32d1b4f5763a15ae787b0cc2e3ee105ae9d35e753d542fb1",
+      "official_path32_sha256": "dab1cb6b7dc43e63a1345ab4035e254c838b78f2b016c7664b56d8c08ac60978",
+      "optimization_N_F": 3270,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 110,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0110_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4c5a4ff40f3467cb453d7d5151ebae35927273c93ea80e5acc09ba8d9179285e",
+      "official_path32_sha256": "606002a1670327d2d9eddbd85faf94a5db62b42c19d6a664d500f251bb8d706c",
+      "optimization_N_F": 3300,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 111,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0111_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1be85a05bcb54cf8154caf4c1061ae82da806d3533848c222ede1a2256666f36",
+      "official_path32_sha256": "a7af3e54f6ad8e376b7d1e8e5b4dbf8196f75ad666cdc28a3cce23ef81fd27b0",
+      "optimization_N_F": 3330,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 112,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0112_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9f78dd301bd3330b79b2c4f84f33969d58867326467f06ed923c68d48073e905",
+      "official_path32_sha256": "607cecdb1bca832113761ff355c93c08221f21988858a2a431bb62bf10e3168b",
+      "optimization_N_F": 3360,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 113,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0113_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "927743a13a2f16a315c6ee7406b630ff4d5b6c050a091bba20e1b90614cf1013",
+      "official_path32_sha256": "2760b82b2a17a3f95b224e809b85d5a4f6ee78c970f299f205d9fa8a096156ce",
+      "optimization_N_F": 3390,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 114,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0114_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8cdff8aecf399685273de1ce4f1a529cf762793957de22a4ce1c31509236076f",
+      "official_path32_sha256": "4179e97af4a944ffc8ddbb58ae595fc7dfc9db618be3311aa570dc6af207a5ce",
+      "optimization_N_F": 3420,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 115,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0115_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f99f61f96360c23e3782c808d1b08b8a3de3313e2b0cf19b48718736e6a35cf7",
+      "official_path32_sha256": "a755f6658f9ba3829221d4b36f76e5a127fe23a81221334a126bad76c7a73f08",
+      "optimization_N_F": 3450,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 116,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0116_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "df44a38ef3b2b80e44e74f8ecac9c336687c2113be5e445dc1162a931d757f50",
+      "official_path32_sha256": "658e0f90e715ef0d4894237e2fa66b2432f74a6aa722fff95fc624ac41d2f5f3",
+      "optimization_N_F": 3480,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 117,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0117_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "69cfd950dd7636e31ce069c86401f4b983783fbaaebccccd49686103c48028dc",
+      "official_path32_sha256": "736b6345e79056ce949d265b6924df35aae896e6dd722e367bd3c4225c7070f7",
+      "optimization_N_F": 3510,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 118,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0118_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3b2792bc529287243d8e9dcc8f392aba5389e3b6049e82b64050a3703ba075cf",
+      "official_path32_sha256": "351fafaea677a398738947ab22cd513ab904cb05baf6aa9c82e3f4b24d6eab10",
+      "optimization_N_F": 3540,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 119,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0119_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8573eddc96e00d4b4dc6c332f2cddee37ee9cc0f3c9b043671b1d5e54f873a7a",
+      "official_path32_sha256": "e7bf5645b72fe09f7e548084f3152877da2f61f08aeebf9cc5294fc7540498fc",
+      "optimization_N_F": 3570,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 120,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0120_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "599f4a420f7c9a77370d1445742be5402db1cdda6ab043c3475302777713878a",
+      "official_path32_sha256": "f41efabe9b0b3dfded860889313cd0ecc792aac24c34afc843eb4b577397894f",
+      "optimization_N_F": 3600,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 121,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0121_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "27960549d38c18662643420c079be3a53285fafa04c14b33e32b5dd975f873ff",
+      "official_path32_sha256": "b445682687929bb0321088341af55060fa6d1fadd121c18a26162783b0836e35",
+      "optimization_N_F": 3630,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 122,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0122_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a75e5a7372b1404102744db4904a6aadba20e26dcb2a0f858061adb3e5492952",
+      "official_path32_sha256": "d5b9866eac0e0b1647edd9595bde906237aa66e5c1d2e6060c10b026b6ba9f7a",
+      "optimization_N_F": 3660,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 123,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0123_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "68ac4e69f12f6f0c93eb78211b872ad28fff29635bd386762f9d4941678e5b80",
+      "official_path32_sha256": "512520e63938ab63b990c55054ad23a25028154062bdcf7efc59a7be260020fb",
+      "optimization_N_F": 3690,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 124,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0124_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4ff882c7e4d4d9e1eff27a794d0a1c754fb33ec6c5846bbc08eb3c9d8ec9dbac",
+      "official_path32_sha256": "3fddbb1679b3a36bddf551ba387fd3288323ffec80043f6d41ecf997b90668aa",
+      "optimization_N_F": 3720,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 125,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0125_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "44ad1c93e197a06b4e9cb080918f28de215ef2f47dade8160cc659a9a796f52c",
+      "official_path32_sha256": "35c486a36142d5060dbaef4a31228fe00d2e6ab888b6f20f2b628e90786f7083",
+      "optimization_N_F": 3750,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 126,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0126_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d3b7e8921440a5edf1f167c99eaf032a2a67dd0eb434a9db83314e444d97f907",
+      "official_path32_sha256": "c95f598a94e6b1afe1c0904c0836101347e336a09b8d33a22e45486b9112ad52",
+      "optimization_N_F": 3780,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 127,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0127_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f9f684557408cb743351cc68bc92e28c8d0a738c94057933140761c03d49baa8",
+      "official_path32_sha256": "18363f229ebd52ab911f9c9b8d81b61a080071272c76bdcf535b933fe6239cfa",
+      "optimization_N_F": 3810,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 128,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0128_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c081dbda314dfc67950d277e7126b588f2ec4028d4250b81f9a5b8b5759c199f",
+      "official_path32_sha256": "2baf16cf6b3438785f3e95330dc84f5f8381d25f1247215ac0783233aa1899f9",
+      "optimization_N_F": 3840,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 129,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0129_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c11c261a4248d633c303429e0a0f4bee0465fb9a358276d1e7dc0e1391ec10d8",
+      "official_path32_sha256": "1737c4ef4ebbb16b6ded11cb47177bf930423226d738af9e26214b143f2c5d5a",
+      "optimization_N_F": 3870,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 130,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0130_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f706c92c6c3c99d12c007d8c265b44c760cc486d9c8cde49801c9c0d2f7e882d",
+      "official_path32_sha256": "c1e9fd48273eff4e91ede9610e27df389271e9ecdc9ef23143460acbc866daca",
+      "optimization_N_F": 3900,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 131,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0131_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d1fe8eac4d61a65b48ac0f4e97f28e69d8acdadce6a9456e86060fe4eec0afe9",
+      "official_path32_sha256": "86ac6476fc99a8d1af882d8d609ce2427716f3f28e3c49ad8761dcd2351c4453",
+      "optimization_N_F": 3930,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 132,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0132_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bb9f47d3768ec3584450c73de61b8c8f43afd6a8dbc6bb6550765ae6f4ab63c3",
+      "official_path32_sha256": "97069107590cb4a720a0aa45e66e454ee4566f4e1f613a457e613f79c9566a2e",
+      "optimization_N_F": 3960,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 133,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0133_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9e64b7bdc236267ae430d253c14b9fe4b3f08d227b487d3c57475dcc92532f76",
+      "official_path32_sha256": "5fe2cdb10640d3c7f8a73265a235dd3516896fc27d1401c8524dc5153ff5b4a8",
+      "optimization_N_F": 3990,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 134,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0134_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e3c4d3049e93a978558eea6a904ed0e3172543630fe22d7d4675d0a4ae369294",
+      "official_path32_sha256": "7c87327b64cd0af034ca94feaca644fe1e798f690dff541556b6baa685054ec8",
+      "optimization_N_F": 4020,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 135,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0135_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "038cce27806a9eff7575ddc2d52326e359fd41a5f39ab1146f84c404b15beb89",
+      "official_path32_sha256": "849544cb2b7efd3e4c35a13de20c0b92f72a2f1b8b8baa46deb1ec911db28f16",
+      "optimization_N_F": 4050,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 136,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0136_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "20f1854187b261c14ee09313f07a6346b27694beea9a53d5e23b0ccd3f41f351",
+      "official_path32_sha256": "eb21e326ccbefe8919c022bfc842ae0b6518de0136f4ef2336bb57a8af9a2461",
+      "optimization_N_F": 4080,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 137,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0137_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "164a698592817357a0b53e5069f6bbe1f993a116996a7f67ceaeda2450277f2e",
+      "official_path32_sha256": "5080c83697f386ae3a5d1b009030284235b405567ffd79d1d4c6ebb53f3f514c",
+      "optimization_N_F": 4110,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 138,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0138_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9728901fadab59b09cb8061edf0b917039ae058aa83dea5c26aa49914c22c8b4",
+      "official_path32_sha256": "47ebd9fc3245891be636a64c60a03191b3b3a16bb71a17d8cec8f3879ac33377",
+      "optimization_N_F": 4140,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 139,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0139_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "af164f9ff8555322b99d19d83b9768df14fb4f3bd697ee06aa174ebcca6d451f",
+      "official_path32_sha256": "af8e399befeb34e936fa5cc8cde60f1d4ceb271110a80cfba0d9f5b6c23f8123",
+      "optimization_N_F": 4170,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 140,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0140_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2ec0fa5db3e7caa6ce1b566f5117058dfe2e63938dad23dcfac8fd5a7ee76324",
+      "official_path32_sha256": "940ed04b361f6ac63d34b013fd692b6bf13b44cd265d38c690f41e719b4d4b48",
+      "optimization_N_F": 4200,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 141,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0141_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4a21587525eb6c84173a75b7c52792806001f694237b2fec0d2db8c6b560f64f",
+      "official_path32_sha256": "6d91ea0435598d9c6fef345ae865cdc44108cfdbcdfbdf528d9cf56cc9740272",
+      "optimization_N_F": 4230,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 142,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0142_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cae2c27aae59139f56a0e951a3f4ea09b12148697099fedc1dd9eeb3c749f54b",
+      "official_path32_sha256": "c27491c4669d5f11116c922e9760a0e861d1cd919f2931245a66c88efe720dd0",
+      "optimization_N_F": 4260,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 143,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0143_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9f5e655284dfa35d2ed6fa7fa54109ca497bbc46e6f8c10ff9ec78dcbed1cfb5",
+      "official_path32_sha256": "b4375fb00c6c7c08d00a6c07892e348494056e773ac24a7d151d8677a536c73f",
+      "optimization_N_F": 4290,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 144,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0144_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "06c62ed937fb4cb2a5dff4404b3df5aec293983be9381a89a923b73f294caa16",
+      "official_path32_sha256": "a112bda5e488c4a53872fb57a8c3de2a101dfb6512cc552fe3c36c79634e3513",
+      "optimization_N_F": 4320,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 145,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0145_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "fbc639bb2f03773253ac5480d81e999ee6e0e39990130493198bfea842a3e5fb",
+      "official_path32_sha256": "489e8114cc1baa914acb9779489f2e6038d7e5ad00dae0b817649ca499fa2e10",
+      "optimization_N_F": 4350,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 146,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0146_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "043e7f99dc79f21128789087400705cb6d5b6455bdbfb599922bbc8da1ac0567",
+      "official_path32_sha256": "b65e6f69cbf4a546e0df74b211008f0eed3b93038fbd9ad8f5c9229a0717d2aa",
+      "optimization_N_F": 4380,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 147,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0147_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f265d00a6127bdc562b6e9dbe519bd56613e512a855228cf94dadf5fcde7b908",
+      "official_path32_sha256": "5e6692cbcce49a792fbf1f6dc7fe3db650aa5bc375de4a882431bcde43a9f840",
+      "optimization_N_F": 4410,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 148,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0148_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5f76ce9fca8c782063068ad65874defcc5f9de97e2f820220f9ff14ebed4376c",
+      "official_path32_sha256": "5387c1556dc9abe10c552de36f4c78b82fee8fde140ad6520a55e91b4c4d47bb",
+      "optimization_N_F": 4440,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 149,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0149_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cb50310e3ddcddfcf1bb97c452f79f14ccbde2395bf637c6eeb855298b097bb7",
+      "official_path32_sha256": "feef58c359abc1980fe08d1d32c34238a02ee3531dd7e7765433a84bbb7d7e36",
+      "optimization_N_F": 4470,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 150,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0150_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5a6a780617f09454adc81aa21c1a92b4f2ee415b8555a1833a775001a31efec9",
+      "official_path32_sha256": "12e77550f4bf6d25d8b86836cd8adf41fbd15d8f4e50b1e2d891d8831fa606b7",
+      "optimization_N_F": 4500,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 151,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0151_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7557cfc067200c1efc42395d926bba94b50408a87905dc4091ad8e2db35cb02c",
+      "official_path32_sha256": "8827adc10eacf450b53c6e8dd919d06e76495a647cfb85abb2ec77851a42109e",
+      "optimization_N_F": 4530,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 152,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0152_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "09c75b972261fdc2eac1d7215c878c0d0947d422cf280dccca991d6cf7ac330a",
+      "official_path32_sha256": "c99aa7adfd93baf808f305dfda4468a2ea2baba3eeec338850cb9150b3bc6ea9",
+      "optimization_N_F": 4560,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 153,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0153_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b2cf5ddf02f12c2bb66155c301cbb69ee53e3ede9f2e397b2df17bf7059f02d8",
+      "official_path32_sha256": "1dec4951cecdecd8c68b37f714f92c1518da24efd5c6a74a47242aba73831b84",
+      "optimization_N_F": 4590,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 154,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0154_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1385be5505efa66774a662a2e1fd97c5f530d7369d4277f30a737bf4323589df",
+      "official_path32_sha256": "098d4d7ac4268bc37110e23ec36400c2fcb6374c6685d926f5171a108d4acecb",
+      "optimization_N_F": 4620,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 155,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0155_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a93d55e611260eedc4cd51000d25ea465d0b61cc6e648f5d87fafad443743846",
+      "official_path32_sha256": "b9cdf9344c9c738178dddcdcfcc62b9579f5622f62d115c914bba135a74426e6",
+      "optimization_N_F": 4650,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 156,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0156_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "adf9bb5312a192f23cf5e0a7f1853e58aeddfe3356aa9fe2db12963285a1947f",
+      "official_path32_sha256": "f4956764f6f062a039750a2fcc438a0de3e771b903b086a8eb0612e8e3e7b2d3",
+      "optimization_N_F": 4680,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 157,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0157_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4a9613300a795b4936766654a6521f6a993068d2804e656bbce28172a662fd4e",
+      "official_path32_sha256": "e5ccb1c0dd3c8957e76096d844919c1326aa221e9ef5c71a734b2d307c93f380",
+      "optimization_N_F": 4710,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 158,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0158_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2b1ab3e61a9beb02968e48e7c6bca1ec9c72913c71d020c983767298a2ef8568",
+      "official_path32_sha256": "c1b204812a1577a8afeb8e129034c3f485303b74847bf58812917875527cbefb",
+      "optimization_N_F": 4740,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 159,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0159_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ad123ebbc5dc798313b4ce692e5947707b77acc13e66e6ebbd88042fce88c8a9",
+      "official_path32_sha256": "ed69d3d68a9ffc284e617497ed8626740acc7ec315f12565b6aa05476f5bc5da",
+      "optimization_N_F": 4770,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 160,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0160_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8a30bd5dcf5104b076994f73c328b8aa6e4365f745423a7dd36653c9d73194c1",
+      "official_path32_sha256": "82595b2ec8525e5c37a43b08bf6e1f9e3cc4d08623b47a278a942d1154dc76c7",
+      "optimization_N_F": 4800,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 161,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0161_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "13b96a392125ecb91303753e0a08a534b14be72b9c87fca0f5f5eec5834c06b9",
+      "official_path32_sha256": "3206305c4ed600aa937ce7f118cdb95c9a12ee969367d821e83e9487b3556c26",
+      "optimization_N_F": 4830,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 162,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0162_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "30294221c002df5a33cadd303578910a3efe6efff196b2f53dd944e79041f560",
+      "official_path32_sha256": "b15134a8eca35549b9a7c48165c82a06f3b33d2846d5dd1849f8f57745002631",
+      "optimization_N_F": 4860,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 163,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0163_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "61b5f6f9b65de45fa8a6ae3fada5101648d59c25fdd9ba10576a894a88062f44",
+      "official_path32_sha256": "abd5f6faa2b9e763428427601ce2675bf9413f75107eb7263985c06762e005ed",
+      "optimization_N_F": 4890,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 164,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0164_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3ccbd33afe6f5956b631554da80efce32cab1a0ab29dd2ee14589b8c46d1ceb6",
+      "official_path32_sha256": "91c9c4c8ddd60fc149616fdd15f753dff41f4043de1ee5b8ed4a9beed2457dd7",
+      "optimization_N_F": 4920,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 165,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0165_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "db7fdcbc6050a5c3d560a25d1f275946fc83c19d79043327ce8c9d90e381fec4",
+      "official_path32_sha256": "cbc26dac6470f67d4822aa079626fd6577edb4c81666176353b8d6e98e9cc54f",
+      "optimization_N_F": 4950,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 166,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0166_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "058ef85e7d5524ace2bdeb450d291de4b6df749d74a65ef82200d39d66785eb5",
+      "official_path32_sha256": "f3ead0b45d0d5582faa52170901db953327cdf7546ae9d04e770fe672fa42525",
+      "optimization_N_F": 4980,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 167,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0167_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3814cd23401bb247ce332e3d6550f7ed480130c34f34d73cad0fff66bbe08b58",
+      "official_path32_sha256": "058daea389823c678a4e0e7fd767bee840b75a148378f4cd581700ac6c441fbc",
+      "optimization_N_F": 5010,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 168,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0168_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "48c7e78fa775b8329a96a6be658628f5b0d8828562083f4f7a6bea9ad289f0f3",
+      "official_path32_sha256": "9353aea9b7b722a42e2f5df223d7615a2f854d1be0dce9028f7b4711a0558379",
+      "optimization_N_F": 5040,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 169,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0169_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d21cc23d75b2eeb462e5e0ed77e9f9a732f3ba82c1ef2492b8437532a4224ecc",
+      "official_path32_sha256": "98fd83c58fac6372c07fe9da660350f29ecb9468ba20649000374b36ba584e7c",
+      "optimization_N_F": 5070,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 170,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0170_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f3e2498c1844869c7191fc333b6a3653023ad2c73cda92cf57c2abaeb05e6296",
+      "official_path32_sha256": "abb1a90b95215bdd2bc0f3c0f9cf1e1aa0ea6ecd49e6d7359e39be4b91aafffb",
+      "optimization_N_F": 5100,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 171,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0171_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f583ce5090217c65935055ea9ec7f2e848e227a59d2917d2dfe02ca366656b39",
+      "official_path32_sha256": "026ffa98db0a975fd128cdab9081c17407d909f2d99771e956df1e2abac8120f",
+      "optimization_N_F": 5130,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 172,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0172_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "dd07b2af286ee7d179263399d2a01eb0a5ef3fcf2a5612a6d4e2eddd85a2a2bf",
+      "official_path32_sha256": "222a052c0eb387bf0121ec214fdc8d2a202ef78b8ab79e7be75ea6dd2ef53fd6",
+      "optimization_N_F": 5160,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 173,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0173_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5c03fa9ac37c70ab26f454b421b4f6de1a4c165a266da58ece15ff9cd3e65c88",
+      "official_path32_sha256": "4fedd25dbd61f4a0e1947cc2bb1a03f2f626b3f25da9d864076725d689ac55bf",
+      "optimization_N_F": 5190,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 174,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0174_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8cf2a51652d09de8300adbeaa2fa712187662c2d67edf39ef104153f1d72ca45",
+      "official_path32_sha256": "edc6559b247fe60813fb046a39c75a0a2099f743d3e37d7694b75762bd0f201b",
+      "optimization_N_F": 5220,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 175,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0175_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "54e0d66214e2dfdaf0122d1a837b79bb14e16fee0f19d2a6bc0e40410a4d7be1",
+      "official_path32_sha256": "67b53f4615574c3c22a38bad69887bcd7e0599de5f67b077bb924029cd604622",
+      "optimization_N_F": 5250,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 176,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0176_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "fbb02dd782e2d8d17cc11e6e23db4f9e34a655346a94ae61297b9dda75b531a0",
+      "official_path32_sha256": "fb4c25544ad8ee38b9b1933067b416be76e8530a0fada5bfa5d0b1f59cb0bc3e",
+      "optimization_N_F": 5280,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 177,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0177_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "62b2e9d6961682b7ca820cd81d34713714a5d1090c9c3b74366f92de0d73bf34",
+      "official_path32_sha256": "49f014297b1b920c7c3599e5b9d2643626d915a22c8c6175ded84ba313b79115",
+      "optimization_N_F": 5310,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 178,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0178_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a010f40aa6e361e48c690e2acf22ea676aafd2b8a275f53f52fe7f7c2c75a6a0",
+      "official_path32_sha256": "0606ce83359fba32aa8b9356217eed1ca17564dc8af4a7afdc802fe803946a06",
+      "optimization_N_F": 5340,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 179,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0179_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7087d927baa8a41e25e887cde68c0095c15fac6946a0c8ec9462b81e9504d636",
+      "official_path32_sha256": "a1e82298ab6e210c6bdfb101cc86ff86512e4f31649efcd51700f4aa66338522",
+      "optimization_N_F": 5370,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 180,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0180_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "02337c222c28f14e282b0037729253377f38d6251501cb2eae67f5b8d7fc2f76",
+      "official_path32_sha256": "c850059488f18ed0100898be81040ce1270e2294c53fb443d76dd3ea078f1789",
+      "optimization_N_F": 5400,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 181,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0181_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "835749cdefa26ceb177bbc6462e78c855bcdf6519d827ec63a7a39c4a19728df",
+      "official_path32_sha256": "a587975fadfe980031e6836f3d06ea61f78da2d2fa6eaf33602b6a67882e2755",
+      "optimization_N_F": 5430,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 182,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0182_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e80977427106680ad3d5ae1793a2112181cf63ccbd0238d12e84e2ca1427302b",
+      "official_path32_sha256": "1f66fa365bcf12110a26f6edf96575cc57ca074607774d93734e6eb47a3de7dc",
+      "optimization_N_F": 5460,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 183,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0183_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cbda68c72b9be54ef8c1e43da85004cb67e54683abeb2833ea2f7ede1f5d5e01",
+      "official_path32_sha256": "2e410d683cc3cb604562b7182cabb79ab4e97a3c39bfc77a45eda52985d6030d",
+      "optimization_N_F": 5490,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 184,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0184_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f2f61a34faccc5344421221c9e6164dd237da3ded138d50c35470b686b753d49",
+      "official_path32_sha256": "04e5ab37c1f86e99ee6a6512ed9aff7a28128853a694db9830750449b291cae4",
+      "optimization_N_F": 5520,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 185,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0185_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5ecf2c3e937aaddd24bee535759a03a55a5af729c1816861a81b720f36b52fd9",
+      "official_path32_sha256": "726d778149dc4b80fcc1e2a4194caa3218b82070bfea8976a2971b4d71bf9c16",
+      "optimization_N_F": 5550,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 186,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0186_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "60f7a6afc9c1a16c64255de255669375adab2c5303296429d1a2a7ea6de92f28",
+      "official_path32_sha256": "4b694b18fc9ed461e8bd74e1f4d3cd12f8b6012a431a89c4771aaa9d3669564e",
+      "optimization_N_F": 5580,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 187,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0187_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "646fe77660a798c2065bfb08f961eb802494bf759d1ca8b744d9ab002760f008",
+      "official_path32_sha256": "59047c4d4dd423401a96a6138d0f84d08d372337f9267d979a9d18e0ef84daf4",
+      "optimization_N_F": 5610,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 188,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0188_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9584016d2b1afaa5b53662b76599f5fc9dfde0d00ab97ad9d1c29c86b178bb55",
+      "official_path32_sha256": "edbf5a2224fe8a51cde95e6cfd48571db3fdb948dc2a48c06e0a100f57748089",
+      "optimization_N_F": 5640,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 189,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0189_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f8b100cf6934c36e9f85aec808988a1fa0bd072bf01ff7509d25c66969562aed",
+      "official_path32_sha256": "d41ddf70672578ff418af8076c8557bba3fd174f0cb76a82b8139c6e3d1d1d41",
+      "optimization_N_F": 5670,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 190,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0190_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9b7e3da655dce641c3d116f4bb10d24696971cdef23f6d3e06d4474f2b336bee",
+      "official_path32_sha256": "0ab163c9ff4079b0a756116ef6ba93c3bae486032fdaa4455e397637b0c36c61",
+      "optimization_N_F": 5700,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 191,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0191_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "6ea8c9f95722851a33906212890156c062f99878c36479eb2b24495483bcf7d0",
+      "official_path32_sha256": "046109cdc56859b36ed11c9242387d6b9df26b3512e653fcee8b853ce211bc32",
+      "optimization_N_F": 5730,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 192,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0192_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5c4a4df2c46ab9e98aba93517219e74fbab89d23c650245df053a33310c38ec1",
+      "official_path32_sha256": "38089dc5f77b378e59c77bb9b4be888dbd61fcaf709373828b1dec2cad6a769b",
+      "optimization_N_F": 5760,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 193,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0193_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b46fb101a2f465b2a5aa8cb394632b090f9d2ed9f662ba816ab66ad7447c895e",
+      "official_path32_sha256": "060f69b2c338803c662eac5caf2b63348a84bc8a6244e03d18b6fd948196d1b0",
+      "optimization_N_F": 5790,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 194,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0194_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "57dea8246b0a408bfa44718898e910c830e4d9c75e0322b36d7d9c2c25da1755",
+      "official_path32_sha256": "57a75f818f4f56079a1421478682d0c8cca192f9220143f6159cd10a008cf4b3",
+      "optimization_N_F": 5820,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 195,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0195_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4630f66cda2052a4d5ef6ff4ce617b5becbf963fca31901428733c7008c6afbf",
+      "official_path32_sha256": "f68fb87a066dd02700e21d357db102047a4aa4b3ca84aa2afbe8aae6abe36bef",
+      "optimization_N_F": 5850,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 196,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0196_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "070984dc79983e4602278ced31829acb2300404f5f23db50223995ce470139a3",
+      "official_path32_sha256": "c29b27f602d9828504250b7c25fa7d0efeb752b132fe32dcc829e40cdd031852",
+      "optimization_N_F": 5880,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 197,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0197_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7e131c8aca29dbdd0c4f0d90a759a31485241aa7aa947dffd10d6a23c47b4917",
+      "official_path32_sha256": "68ffd2bbe56067d9c40841fc7a4dc1e05afc874b5248defa5b9347cc9c490647",
+      "optimization_N_F": 5910,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 198,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0198_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "58ff14f1227bdace24813d575acc99818c6667b33e6ed46f2f911d7669abedfc",
+      "official_path32_sha256": "a179ed5cca60d37755593cbbb9ec0920fce97455c3d2f07006fe2a675ad7c5e3",
+      "optimization_N_F": 5940,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 199,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0199_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "452b957a6071458ba06e53b4b6c9fbf2a53d5cf3e8a4f647649fb15db26d64cd",
+      "official_path32_sha256": "f20c5ed8e2e9bbed8946921bb854e7eaf8691a3f34faa2ec2f4fd707abb61805",
+      "optimization_N_F": 5970,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 200,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0200_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "60b8b1b743e2c596d5a059c59206b377a55892fca421635758dbdf0689c512d6",
+      "official_path32_sha256": "89279c663e9cc8161f9826603e7f34da76cbd052e99294dcf612a1b4dc1527da",
+      "optimization_N_F": 6000,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 201,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0201_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3c62edf69e8bbeb2404a10da42e80d8d813af50a06064ca4c5c992ea74853511",
+      "official_path32_sha256": "38d9be66ed1a01cdb9dc8c84930c896952b6bc72845e1385bf32b6fd898645a4",
+      "optimization_N_F": 6030,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 202,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0202_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "aee1f478985ecc5acb7b5d9b0b4a1d039d45ea7eaa7d8fe47c921cdecb77a08a",
+      "official_path32_sha256": "f168464cec2ac8aaa111a26a6b197e0a491f9b98c8a0ef17a12cc644195ec151",
+      "optimization_N_F": 6060,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 203,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0203_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "52eb571df8c6d4c162f5935d952566bc23e12b14efaa20210817d15d4466ffc1",
+      "official_path32_sha256": "2f7434e3e86eb68e7fad2b3cf989c05e7ec12e1703dc2234b126f14283561bd1",
+      "optimization_N_F": 6090,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 204,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0204_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cc40a6fa3e1a3866da5f7d8e012cea6ad13f78a592e7731e15ee0fd20a8a6e44",
+      "official_path32_sha256": "717550dbdb448f4c3eb14d039657534ace8d613e0d210f95f842297dcc289ea6",
+      "optimization_N_F": 6120,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 205,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0205_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b382a749d052c4f2c3992ac15967089efbd5cdafeb807e975184337fc8058323",
+      "official_path32_sha256": "b9cd201ab0bb81f4018d28c6c63588af929394725e7225da79350745a2ebd440",
+      "optimization_N_F": 6150,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 206,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0206_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "db2af5c2885907201bbeedec595bf96274264eb6b7a74e50810abdf82e2217db",
+      "official_path32_sha256": "0de2b71ec8761c0b54e7dfc8d124f6d859074d5543412dfed8ccba6703ee3f33",
+      "optimization_N_F": 6180,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 207,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0207_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "48eb2236b5d3b8672178ed29b3b64beb464a6d2bdc39c925b3d1e57ac0ddc91f",
+      "official_path32_sha256": "b22919463b808895794ee9b74795b860b1bcf3a8fd0338582b9cc82af53b4a3c",
+      "optimization_N_F": 6210,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 208,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0208_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e3a24dc28cace5174b3901499f5c13f1a2ceadc90b195a43eb1380d34bcab441",
+      "official_path32_sha256": "c0e5e85f3dd07b3963c52fb4773adb9f353bf36ea7a97e0f48a01bc1cdf47e79",
+      "optimization_N_F": 6240,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 209,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0209_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "17ff5b8f7960d8088f52cca8cf5c4ca798ee885a48bb5ecc40e195e5cad0e2c5",
+      "official_path32_sha256": "6e5748ad4bd1bd4d5dec077630c35536cc4b2467388807bb6e558e9570f5cb21",
+      "optimization_N_F": 6270,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 210,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0210_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d8946a18437c03ee99aad8365342c7273b89ecf57ed6e47f32b5700ac1ba7a3b",
+      "official_path32_sha256": "6827e39a62c00da6bf70357b408730bbaa84bff014a39790a9aa5462f407808f",
+      "optimization_N_F": 6300,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 211,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0211_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "991f96439458ce2517b9d9a0f163bcd374556429969bd469a9e9bd088e826d02",
+      "official_path32_sha256": "bd6cfe3724d2277f287bfa6ea3bcc7ba9fb2278704f54a0131919ca1b2f68106",
+      "optimization_N_F": 6330,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 212,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0212_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2e0440093ff11bdd5c679dd16cf4538f6b455886588e2407ff0829f70119f434",
+      "official_path32_sha256": "75c15e1990110531b100ee532a2f1b7599ed01db7f5eb0bf9e7176113db04fc3",
+      "optimization_N_F": 6360,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 213,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0213_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "12f3f068cf0fdbd1e72f8163c35f5a6ff8764df2088703f0607fbabc7d3d1e11",
+      "official_path32_sha256": "ce4478e9f3283dc521ce6dc0b81d14a6436811ef626cfa44d813a7847ac617c5",
+      "optimization_N_F": 6390,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 214,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0214_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "532facf8676c795520f0aeb5601ab82c87cffbb7001bf73a1ac577e2183543e3",
+      "official_path32_sha256": "289a3ab9c5409a35665bc6754721a7b3420343154a8bbe318fa0ea6518ab035d",
+      "optimization_N_F": 6420,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 215,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0215_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1d3baf0f5544ccf38452b313779da40f8e4c6b0b52f98ceaa3c373e6169f5c2f",
+      "official_path32_sha256": "dd99541e941ec05cf8803bcc6788136d1886aafd605c674d800c5e1b86c68fa4",
+      "optimization_N_F": 6450,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 216,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0216_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "13e10dcf854a99d6e113994b59f0210de3867315ea71b979192292ff909efe1c",
+      "official_path32_sha256": "18f8e4df75dd484b1b846ade461748e0a29202533e115e18c5f5d5d0db4c9eb1",
+      "optimization_N_F": 6480,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 217,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0217_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0b3136ba70605611fdaacd832041203c5c0e543f7242bfa591431b960e64680b",
+      "official_path32_sha256": "3c02fa4bf38044ef07b24b574a689f17c4b2c24ddc4887bd92323edfa0ccee50",
+      "optimization_N_F": 6510,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 218,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0218_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ae2d3ce7c902bfb3b619ac078b0f439b236daa14626a4422f038ab7fdfbbb966",
+      "official_path32_sha256": "bcc590079875cb3ccf46042b80f2bf1fa8a77bda0065c32181054ea9d2823d2e",
+      "optimization_N_F": 6540,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 219,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0219_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0f9da9faefa84dcdcb4526b9d4a040cde32554ba97c5202e966580dd919f9613",
+      "official_path32_sha256": "d7ec4bee7c10b15f36a288d553208ec494d335f50493db8474bcb19253612123",
+      "optimization_N_F": 6570,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 220,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0220_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3ace4bf916c6576a4aa6ad410441636c7c4e63ffb275c8da2e2063f103bfb6f2",
+      "official_path32_sha256": "1ae4ba29cc7957036768abe1c1d1175ee04ae62766efd83be7350af44887cac4",
+      "optimization_N_F": 6600,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 221,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0221_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "58da7242a967be51687b92c6aff375d05188ba57e48ab6581b70a6c833c160e2",
+      "official_path32_sha256": "f813fc9bdcfb99515e5be9999a9a66341a5412051438545639a7556cf09754a5",
+      "optimization_N_F": 6630,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 222,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0222_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "955f5c8768f0fc72198d8b9304abc409b44b1f9fb316d3c8a94f8181eebe8443",
+      "official_path32_sha256": "5af5784a5cb69234ad1df0f1923272ef989e5e06871fdc8d48588e59d7c78b1f",
+      "optimization_N_F": 6660,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 223,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0223_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "41c1a4a79285ea2c5cbeecce8959f3c92625bb5e9b06ce9390214e8251133b82",
+      "official_path32_sha256": "c5b9d460baba723c2d0cb4c3d5660a3f84642c9a91f225c2818ba54f629debac",
+      "optimization_N_F": 6690,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 224,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0224_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9f213e0a824d7b0a37ba2f577dd2b4386d190be9e155b5ec356b20d929a98c46",
+      "official_path32_sha256": "ea99eca0cd1aee04545d5176d03fe86d0c49a64f82563a274809af9f1f8f93ff",
+      "optimization_N_F": 6720,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 225,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0225_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "eff292ee4f359688860abd7e6b96b674301df580cd4395afefd9e22bef67eb83",
+      "official_path32_sha256": "a6f705663ba723aa4c2a99cc0f2b9cda1d287d19fe2e999a7aeb1021bd593596",
+      "optimization_N_F": 6750,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 226,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0226_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5cd2a2c7ca666305d7c407474b7c3a2ad7caa71fbc004eef92dae5ffcf4687b9",
+      "official_path32_sha256": "e38102d4bf6347c74f5717dcceb04f2763d4514b21e4a6e5784a988308cc527b",
+      "optimization_N_F": 6780,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 227,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0227_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e927cbca427b6f8b4119c656ee06020c813da6e53eb746563917239d3faafb43",
+      "official_path32_sha256": "1272e9a1a5380784101e3af7e2ea812ace6d06af772ed2461646cfbad7951cfc",
+      "optimization_N_F": 6810,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 228,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0228_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "96f7b4345c539edc1e2076313c68fec5c3c3741fe7de1390a65283500d79b1bf",
+      "official_path32_sha256": "03fa4fda3b222d6fce7fa2fdecca242ce6fea705324b3a10d60f4dfaa46b6391",
+      "optimization_N_F": 6840,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 229,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0229_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3dc444fa5127b18cafd4a9a52fd7794d64b4ef2158c8a6f9015961c8d4d775f5",
+      "official_path32_sha256": "84f7eaf49fb16d821768c5de884c7988e1b8074ec506eff5c4abaf8937f68adc",
+      "optimization_N_F": 6870,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 230,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0230_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "699e0dc655f2c930d0bc8242e8a5e3f77d979c2481d79b29042c0f74e9a291ae",
+      "official_path32_sha256": "cf706bd2ce21d4e141fbf5a60d707cfb67cfe24d66fa3bb66f15dc948c4cd15b",
+      "optimization_N_F": 6900,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 231,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0231_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b2d7dd8a84c901cf66b6bdc6cb7689b438583354cb93001d485d7ec11c617cfd",
+      "official_path32_sha256": "504f3bb96118ccf9d3e57cd2a6cf58658c2bea5d15870aad27488d41e6956b3b",
+      "optimization_N_F": 6930,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 232,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0232_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "61e844bc9ce39e5ffe81a1e599a128f18bc51e3802cdb1f5133f1f5321ad074d",
+      "official_path32_sha256": "60caef16480cfd242662167f1fe3dc6e454d4a540b739d26dfc283bee458aa99",
+      "optimization_N_F": 6960,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 233,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0233_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "46561048236871a2b1882be7dac2d4a9711e965d253091d588a21a60e2a6b843",
+      "official_path32_sha256": "4e78ebd3421db43e4daa75a9284591307fd504c4a91b13a98b9f53ade95b8a92",
+      "optimization_N_F": 6990,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 234,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0234_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "40f35d9f7d101b2c3f9f05a2ca92088c58a27a88f8a24c2c3acbd3eec914902c",
+      "official_path32_sha256": "c240ee4e114fb204e0833531e368a021066ec4ba70557f05b62fdf3c32dcf7ef",
+      "optimization_N_F": 7020,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 235,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0235_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "113503d54a134f11fd078d8d70aeb03e1071b89eaffc4fc8a2df2ef8537d3c31",
+      "official_path32_sha256": "e3da6e224a25b4e3f5ff7cdad69e8f19cdb844d9e85c376577d8a11762e16525",
+      "optimization_N_F": 7050,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 236,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0236_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "9b18be08be414e1e12832f21e3779980f11d0853e6b433466883262f21178bb1",
+      "official_path32_sha256": "be83618facc95ef95f007b680dbd55f5ad4bef860dac67c1c819e1b9e33cc311",
+      "optimization_N_F": 7080,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 237,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0237_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "edc01e717911166c8a5bb207a6b59e58cc2a341e94d5e13069c2ac9408fdf634",
+      "official_path32_sha256": "28641f96d07caea2f471b034d845858bc7e8dec9bc04a05da7723d81b7c5830b",
+      "optimization_N_F": 7110,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 238,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0238_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a68253eb6ad64a848d16c8d5f60a5cba257bec0041e4f52842dd0a6fa3bdc88b",
+      "official_path32_sha256": "87cc03097d539d378f1f32eca92df0c7456393dff90fed10a77a7034c4087656",
+      "optimization_N_F": 7140,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 239,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0239_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "042028c1d947def3801b25bccaac25114d161114ab1f82909bb80a28638ed3c1",
+      "official_path32_sha256": "b001b03dbda3e5563495edceb568dc7d4f15f0d6771a1fb04ee505fdcb45ed4b",
+      "optimization_N_F": 7170,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 240,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0240_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "71b34c0c7479e516cccb1d1288fb477e88abf3ea9dc32f7b8c567d569df5eb76",
+      "official_path32_sha256": "1f36aa56c2a4e757c1e90abced0ca327fb8a2ef3a698a92ab01f0522176ded2f",
+      "optimization_N_F": 7200,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 241,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0241_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4985cc6261e2531a5981d186f39d0febdbb2ea730f69f59c259d2c66f4792876",
+      "official_path32_sha256": "fc314131d8a107032bf56f58713e159aeb6933ab30d5f593641a7143713622fc",
+      "optimization_N_F": 7230,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 242,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0242_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "db5129b280a9575381b514cb61974cf6c86791c54a921fe696bbc8cf902ab40a",
+      "official_path32_sha256": "0a79b1cf497dc238034c827e2a09309e156619d1179077c77fd573fc3bc35142",
+      "optimization_N_F": 7260,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 243,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0243_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "67180320271d5c086c8114bd573d71adaca20037893f90b5ef35c32482a19c6e",
+      "official_path32_sha256": "72df249718c7d1d47d3f1e866d5d310134f1c57bd7cb3a0f4480b95f553fe6c7",
+      "optimization_N_F": 7290,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 244,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0244_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b2a7739e00b591efbc34bb89d480afaab4cc6c7b4f473dba3530c112d794e18d",
+      "official_path32_sha256": "e4e7b4a7772bbbac8797fb09aeaf2dacadf307e3b2a38425a12d4f77fce237ce",
+      "optimization_N_F": 7320,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 245,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0245_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3d8f939569f13e63aec5aec1a3a72766f254888461d84592ec930ea76fc852f3",
+      "official_path32_sha256": "260c0e5f33792ceab42779a1a11264064967b9efc95508cab0ec28c22a9367e2",
+      "optimization_N_F": 7350,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 246,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0246_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "668ea646ac2225ac63a3ca541f610e2fdd96950b4d0d40fae17b31941e83426f",
+      "official_path32_sha256": "fa241b03a34a6851469cff0671403718d815f2e0005a6f1ba7d5b14edfc0e755",
+      "optimization_N_F": 7380,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 247,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0247_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "b629411ab3f0ddd7f3a696f6f9ce2846e9510c3dc62c7061eeda00cd75a10869",
+      "official_path32_sha256": "8f575c83bb897869a7a542e3d3559573b0aa59833ced680b0038f726935fddf1",
+      "optimization_N_F": 7410,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 248,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0248_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e3a72a981a3c49d5cfaa2226e5c3d90ca78e2743dff37ef3a26d8d51224264be",
+      "official_path32_sha256": "effbefc9bf3306d88d3cd3a1f64563af91d621a2ae9a265183ceba3fcffb696a",
+      "optimization_N_F": 7440,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 249,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0249_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e6d137e48326dcccd3da883f10ad83ddbaa238c107fac649fcd49c5e29d16eba",
+      "official_path32_sha256": "da3bf1fa080d07f45711f978fdb56f5349545767c4da1517468f35505b3e4e5f",
+      "optimization_N_F": 7470,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 250,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0250_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7e502287d1f529ce5b134c38eaca5d1a1ab622e2c2355eb1045b55d5dd0efa6d",
+      "official_path32_sha256": "e6de680b0995c561074b9817dc51a03550474e8f89780149da1d1fb7d015136b",
+      "optimization_N_F": 7500,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 251,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0251_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3a9811486b38583d84f3bccd542fe500a9e0f295517774baf28c87d25f0e88f9",
+      "official_path32_sha256": "0dc53e5e61c6a28acdda93f531dae2ba6f46809e8dcf5c2e7afbf7a6db1a44f6",
+      "optimization_N_F": 7530,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 252,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0252_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "070eb96bf1da8301bc09d7195cb483bb5d6510ba4977b4fc54c39f3d8252b1a1",
+      "official_path32_sha256": "375b923be5e51881e59b7f793b75adb6d14a5eeb3e10e32aaebaa100bfb01912",
+      "optimization_N_F": 7560,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 253,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0253_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "26e0a1d1f730f0166ebdd35e41ee69dfbde5006b8dc6ea5f5377ef8fbb7121bc",
+      "official_path32_sha256": "d037537ba4b503f4847160701dc84ae3f3264893addd9467e9bbb84daee50bff",
+      "optimization_N_F": 7590,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 254,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0254_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "634a2eb0e33af365eb3eb9dc9bc020d1efc681ae98b08f0e9ab4c112aa998b1c",
+      "official_path32_sha256": "bf6b502b2a2f52c229e2ad8c547bd43e199005ff4ab4253ef87bdd4900bb61bc",
+      "optimization_N_F": 7620,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 255,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0255_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "23bedbe4a28fb2b435ea1ef7ddb3a34418a827e2bb6134e8268befd87644a2bc",
+      "official_path32_sha256": "8d93aa55443a5fbce77d37dfc6a78bea3a5d401673d4cc29f2fee156dd7b96cf",
+      "optimization_N_F": 7650,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 256,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0256_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c81f14546779d4d2cf5a2a7f0bb0a991281bdc62532a4316a22430d27a983c0b",
+      "official_path32_sha256": "d305775873815e2da43adc39cf77cb80bbb2fc58f9858627137f882b871f9526",
+      "optimization_N_F": 7680,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 257,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0257_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c91a67b9c1c82e203b44ed4426b59140f92f029c2c60105b98434ab7f157c455",
+      "official_path32_sha256": "07984c7c9f9bc3f7020e9fa639356d6e2b3877b6556f1d624d653a7e1ee42c1a",
+      "optimization_N_F": 7710,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 258,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0258_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5d1c4e78171a4d41f2c21fb3c84ad9d88ece444cf4204c42c2267f94f2ad12c7",
+      "official_path32_sha256": "d5231cde3dcbfe79ee5b6a1a2a9f65e25d44348893be39caab1fd4e25a7cc213",
+      "optimization_N_F": 7740,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 259,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0259_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e77b2b573f0e8d9880d3a232c4685ea99c5beb0e58e06d54ed434e4499547684",
+      "official_path32_sha256": "2525a7e19d992632079a1fef25d39aa02a4f56f87057d67f687a7d0ef178f4fc",
+      "optimization_N_F": 7770,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 260,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0260_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8ee30921a1f50ee25a057e399bc6ee1c3a9d43ea85279acd3d176893c20ad704",
+      "official_path32_sha256": "7f9da7e03ae6fa9c059b1dd6c3642b44a4641098d7fdcf9e6c3cd38b583f3b56",
+      "optimization_N_F": 7800,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 261,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0261_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4cffb5f21bc2e5614fc7c7b3d8af9bc2ab3db6fbdba1b0f7e2401b58d4f343dd",
+      "official_path32_sha256": "2b025233199a0a7de703cbd02c3678861553fbbfe4d9e8a5a2272663f0bbcd68",
+      "optimization_N_F": 7830,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 262,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0262_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e99daca597114b2ef4c477a8b9c37415877a31163b515a79213f2f1589ced2e2",
+      "official_path32_sha256": "27934afc7b56532699260ea20da5dd46f62361b9a5bbf929f66fdd186092a645",
+      "optimization_N_F": 7860,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 263,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0263_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "eae3a517b7d15dabcf9a2896d6c04eb38a758d739d158ac3e37aa11f56acab73",
+      "official_path32_sha256": "9b2fafb9d8ffba9256a7cb1948ddbbd5a8d92c11ff1a88c82894021fd78ea4bd",
+      "optimization_N_F": 7890,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 264,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0264_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cba522bc1168c1a9f7b6135dea3d29265593c61dbdeded9fadc5f9347f5734a2",
+      "official_path32_sha256": "7ed4b86d82acbed3c36907e987771787e077907876b111c24407861a8292a078",
+      "optimization_N_F": 7920,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 265,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0265_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8ae91eaab049752692a9fb475072aec6964d9ef2881625b54c54916733b46b60",
+      "official_path32_sha256": "129866e15960402552c0bb54d8a663bb02bd152c32f57c24082dddcc436a61c3",
+      "optimization_N_F": 7950,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 266,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0266_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "820e21d3d12d262f65da4a30682d8bdec10e480ddedba0b902bd1d28dabed3d3",
+      "official_path32_sha256": "a0a2dc3f5f2864c05636fa81f99c7d4d2874669160f2618b24c9658d0d3df40c",
+      "optimization_N_F": 7980,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 267,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0267_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "453199e70ede387694747f5bdcf21bf72181f2f577ce79dd1e5578e512f52452",
+      "official_path32_sha256": "cbf1e1bbb86c59f78912bb7076c1eb5a566eb78ba9afa179862c4b0335963c88",
+      "optimization_N_F": 8010,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 268,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0268_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "e9dec3c17ea1ed3267d61fa883081ca676bb5e879e934d84ce5222472b3297e0",
+      "official_path32_sha256": "4de3ae0356792df3401bf4e96caf8d9cb56970212b13ec5319f07da4f668b4fe",
+      "optimization_N_F": 8040,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 269,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0269_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "353b3dc97b7f508ca0726aaa15e515eee0569724972bd137bc4bee5eed9d04f0",
+      "official_path32_sha256": "c8aa54418dd48078abdea2b01d72f0cee02280fad22fa0db0c8c1a4d989f0515",
+      "optimization_N_F": 8070,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 270,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0270_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "581b0f8d96fb3a7c4981d968c3227d81938c1cc8265895c4f06d63b08f45d802",
+      "official_path32_sha256": "63eb7433819b9f5dc753072e0d08558ea7451e50dec18974f7644d7009659256",
+      "optimization_N_F": 8100,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 271,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0271_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0faf8cb453338be2914c6b041a29b4f08d82a68a1ea71d4404fee56bfa45e8ae",
+      "official_path32_sha256": "0fdf32e0266f79d0775847d1fb76c313ce663e258d5d558a4b5fd319f311041e",
+      "optimization_N_F": 8130,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 272,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0272_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f971c18c2021f0e550cde51dc0a1f4767e53be7583286bf8e9a2800c9ab7c6a6",
+      "official_path32_sha256": "ce608f83f1ed0c2c1a924fdbd783ce24bfcba51cab72d27cba1bba590484df8c",
+      "optimization_N_F": 8160,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 273,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0273_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "681229a604062f71c973cbb80dba4745558d8d7aa377ff21d4ebabe12278aa78",
+      "official_path32_sha256": "840d4e5081bd4e64e1df1dcd38ddda4bbbf6e29032fe818613174fba8236ba2e",
+      "optimization_N_F": 8190,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 274,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0274_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0554c3354df171d5b0640b110a375a5ceec0a3bf2b7942db90249cdf833bb93d",
+      "official_path32_sha256": "0b1de0226466e1b64df7fe9db7c328f6c5e054b6d6e3d616002551b4472e034f",
+      "optimization_N_F": 8220,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 275,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0275_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "684c0e81af88a63ffdf01262035eecb7e095c185d19b49f7b820c2351ee2d293",
+      "official_path32_sha256": "468a93942ee567d8de57d9678aa3771440c84fdc2fd1b79a882323267f8ece8d",
+      "optimization_N_F": 8250,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 276,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0276_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ce759596a57d8c842812edab739f2682a19d63219e67c58cd0d46b426fc2f7ea",
+      "official_path32_sha256": "caad8aa0d3fb9534ffc6c443a9749a17bfe67068e244821b30ab86385313161d",
+      "optimization_N_F": 8280,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 277,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0277_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5d710a449f37f38fcaa096f81a5b90df893cc34a3508afe0a5297f86e436ab3e",
+      "official_path32_sha256": "350f9b098a48957976d58f9cbbcde81e6059ddb94c696558c5a3d51ec4223f08",
+      "optimization_N_F": 8310,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 278,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0278_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d2abf6a943c18f9bdd4ac25f4c5efc53f94dc80cb3dbf27edc7f4e4b9a2dc5e1",
+      "official_path32_sha256": "160536e8b622c77104f92a514bc98cf14d4aa4cda8e973df6a36389a5bfc11cd",
+      "optimization_N_F": 8340,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 279,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0279_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7dd6bee30e7d70d41ab73f584d93ccbaf490a72428d4b963b43e1c5cec4dd04a",
+      "official_path32_sha256": "98da538a44f64c4e258188f6ca923fe5da709cf5a877351dab842e1e192928f6",
+      "optimization_N_F": 8370,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 280,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0280_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "11e5c38c179a39f4a0d72d365bde1060fb64bd0abb1b35b9492b64f560a5e224",
+      "official_path32_sha256": "76dbe26ae4b4276638a0caeeaed17424d0f0b27a2bf9946babea6ea7f707e21c",
+      "optimization_N_F": 8400,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 281,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0281_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f70aa5ad16502b8b0cb5835c7ba6ccda29e89a0bcf6dff6b1b92fc91ac2f5740",
+      "official_path32_sha256": "a408433977503a4cc42b40b02197a1c7fb98c67aefc3d688c827a74457496294",
+      "optimization_N_F": 8430,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 282,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0282_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "537d3f96df2777abdde487a964f0f648f54fd306151f14d266697ec2804d6d06",
+      "official_path32_sha256": "d0f41e25f2983bdb5548f76d34d643b7cdc5c2883df9a4d4241b6034d54f071b",
+      "optimization_N_F": 8460,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 283,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0283_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a902b858b6165843a5b65ad0dbb47c4efcfe4e680016826d2750dd6f5f78b15a",
+      "official_path32_sha256": "41cd7fee5ab32bee8f35c7bfc5002a3c0bc9807c5108714c5c49e652a67c82db",
+      "optimization_N_F": 8490,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 284,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0284_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "1ccd8e3bafbf8ccbe79508628ca8636b9bd863ce891dd85444ff8cafb18537f3",
+      "official_path32_sha256": "e92cc4d67ff17128508a578a97b71bdc3d02983091f2d9e3606791910845675e",
+      "optimization_N_F": 8520,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 285,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0285_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "14f52f494953a76f373df85e664d0c0de278dab8516bb1d74c0a671f4266a751",
+      "official_path32_sha256": "2358b4e60e62a8c0a5c750c4cf2d52cf7f37c5cf2e86795dd00c5d7c33fcf401",
+      "optimization_N_F": 8550,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 286,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0286_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bb037ba99a9b4dcc9f98d5eb93831263c5d10a616274ce41d75ed81c37f677c4",
+      "official_path32_sha256": "a4e53efd5c4910102c3b402f690cb7154940785f752825c08877c8ae919c7020",
+      "optimization_N_F": 8580,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 287,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0287_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "f51b63cc899a6167ea8c63e1a57a0946f82dc81160b769425e1f5ac6d4b07a59",
+      "official_path32_sha256": "18d2990f5ce17ad0e5e9c9d1f387f184beb7c6d6c79679ba588c66ca6bf85619",
+      "optimization_N_F": 8610,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 288,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0288_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "cb643f1bb9e83656c0251fe563884f4e41998c603843de5e00aaa9b503985084",
+      "official_path32_sha256": "a6dc58b1fda911a84552105cb4d2bde01168e4e19eb33e90f0ee75ac90e7b6bf",
+      "optimization_N_F": 8640,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 289,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0289_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "456e2c379b28cc6009e4a67a9124ac8c64ab73a94bc621b6d49855c757038bf2",
+      "official_path32_sha256": "6fdb0876c4fa664c18db3a73d8e27e0730a18c88cbaceaa8c8b89c7c10609b36",
+      "optimization_N_F": 8670,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 290,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0290_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "67286b7b13588898a769ab4d781c1e1d86dcf714f331b6c9e6951cd8fdf89bbb",
+      "official_path32_sha256": "db9df2cb69d28a47da929dcad63cd4e668a08f7994de056cffd32de277c73985",
+      "optimization_N_F": 8700,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 291,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0291_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d432e17c23c685ba47a9fe224830d8d2a37d26ccc168f6f0eaa165d015544172",
+      "official_path32_sha256": "daa2bb2f7530eea1997f99ea5c93f7d04516c702e5129a3ac8f938e4a3389db5",
+      "optimization_N_F": 8730,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 292,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0292_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "52cae985cdd665a99ba7065a39a997d63cc5c98114a139d0722eee9897a6c7cc",
+      "official_path32_sha256": "033cd998ce46a0e756e968496f0291033036a589d50e7c8fd7dfb3356739661f",
+      "optimization_N_F": 8760,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 293,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0293_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "02cc111082cd4adb77fdbc66897bde1c4d3b6f4c38abe59cf4b6ac18d462274c",
+      "official_path32_sha256": "a427c9fdf21f594b165ceed1710a5b03bd1174fb5261c7eb9788a3df84302dcb",
+      "optimization_N_F": 8790,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 294,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0294_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8ca909e625b2536cfca2fabcc6682118fd12c073afd1368ccaf09597b3523d25",
+      "official_path32_sha256": "3944aa75a1feff029fb84958279126fd433cc671e462c9ce915e1d275f05f37c",
+      "optimization_N_F": 8820,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 295,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0295_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c6cc118be850df8ea3706ca964a58d45fd520cc5a42685ad6449b5cbefe59fec",
+      "official_path32_sha256": "b3a9484b50d13e98d22a5ac792c662f6cb0d823cfe224e9637e08f527886e378",
+      "optimization_N_F": 8850,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 296,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0296_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8d94e70e40753ca0ac16d58bbf1c0963adc22a4a9358b65dfe69804866dc0667",
+      "official_path32_sha256": "cd6ddc738b5f2579fd4aec979b56a8df7983df0905266e9652e6885db577d409",
+      "optimization_N_F": 8880,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 297,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0297_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "311eb95c5da4f7a2f66e2337fa717fb8cec1f4516793c7bdceac6c8e0b416816",
+      "official_path32_sha256": "27aaf9b92a7cc1439ca7320fc33df2b2daac20325c422c34aa066dbe55a3560f",
+      "optimization_N_F": 8910,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 298,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0298_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c4872d11ed3061d68db56849a2c7d70f7768cd1870d127578652991a7814c232",
+      "official_path32_sha256": "3bfb59657521949c1227a31d69aa1fb072f4cb75edad2432f9be55ab925e15bb",
+      "optimization_N_F": 8940,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 299,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0299_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4c13ad065252bc45d0b2b711cb49fd60d91bb9a7067abfdab6d2fa12c6d95add",
+      "official_path32_sha256": "aa7d220a52c2d6e6dffd1b4ec0b8ede85b3dcb82b8d3fd2e77b4c7589a65916b",
+      "optimization_N_F": 8970,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 300,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0300_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "90f6018b2b8d05d3b9248a95f8dd45edaf65958f004dec7aa2fa991f569595fe",
+      "official_path32_sha256": "1e0d9a2e8d4fff3f302b07b943c58ab197a74e690b3aea61e30275434fb97e88",
+      "optimization_N_F": 9000,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 301,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0301_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7f4e7afcae18e0dd632ef6be190a4c4f4e1fee4541aa73b62641be4c3ee09dc9",
+      "official_path32_sha256": "b1faf3a3f21d1f2b11eccfa61bd4a67896e5846aacc34a036128f224d51ebbe6",
+      "optimization_N_F": 9030,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 302,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0302_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "aec0ddb15b1f0eade1af60890c71de85af9d58993369e41c025c35f342adb3e5",
+      "official_path32_sha256": "be30967627a1d549e7b5790b5d05ed24d2e191e3177da43b35a40c1f06530ee6",
+      "optimization_N_F": 9060,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 303,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0303_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bca4a30dc43c746884786f99b279ca8c7524393f6f96070044227d3343e2efa7",
+      "official_path32_sha256": "b0030b6163020c2cef6ae9515fc0e7998b97138c54795271538740e1a05f23fc",
+      "optimization_N_F": 9090,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 304,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0304_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "57f806f6397b90598b3cddd538089fca3d9502b9923092e6698475c1de955dcb",
+      "official_path32_sha256": "7eb73fee5325907276404987d240b21b213dc4d06c9493ebccd184db6615a98c",
+      "optimization_N_F": 9120,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 305,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0305_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "bcf54714b5326f8d7e4087c18a639917bbbcbfd9c6b84dbba45f42602e221416",
+      "official_path32_sha256": "902a905dcc398b3a11d12bcde682158dbb43db68d5c5c641edf77e99494afa07",
+      "optimization_N_F": 9150,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 306,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0306_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7471e3631f6ba7904b755bc6e352385bd3cf1dfe430b1828437e9c504e1060de",
+      "official_path32_sha256": "3a41a9b52d30ef1914e0528c89bdde8b0372a0855a15ee1c99a249452b68d27e",
+      "optimization_N_F": 9180,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 307,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0307_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "03a261a3ccbe2808be78df02015a133ae7502e981c685daae88c4f9e31cd73a2",
+      "official_path32_sha256": "3cc82be55d05dd21fffb7f4357d424148cf076fd74a6a7b2be2dda742b53f166",
+      "optimization_N_F": 9210,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 308,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0308_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "6e50607a762e7c12e0e5d75780b8167d23c9b97770d0216cfad61eab96249940",
+      "official_path32_sha256": "b9c91391f0ad7dbc21640d7b17a274e0454d710f8fc42d451e11399b6d64752b",
+      "optimization_N_F": 9240,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 309,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0309_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "87d5c8e9c6eb0f52bcf441eb3d70e859abefe5d66868f9a81339854bf817eb36",
+      "official_path32_sha256": "242f61d12f027b95d4fc541a94f6dcc6b86a0ea60814f1b689380ffc70d0fbab",
+      "optimization_N_F": 9270,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 310,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0310_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5808b1d4576e855b119a3d7e32c93da1f103c874a634a087edb5cce8d9e5914b",
+      "official_path32_sha256": "b9c994353a36b0e378efdadf2e78ec4c73a4325c9e16f130d20b0d6d71a4bb9c",
+      "optimization_N_F": 9300,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 311,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0311_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7f3f2031093e3a116587476f8358f8c7e2997a682d735a36dec2587d42c74713",
+      "official_path32_sha256": "9a1059059eda4dcb1939400655606bb94a9417ba0d5cace3f9162967dcf953f0",
+      "optimization_N_F": 9330,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 312,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0312_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d88bc60bf856afb63bdb375fab9e14eae23f521d34b79e36a3d4d4fdf0529808",
+      "official_path32_sha256": "b65828114ab0f27b09b671c1e090b03d15b7bd47fc516f631d70789bbcca5517",
+      "optimization_N_F": 9360,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 313,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0313_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a39d33d3cf48b2e4c98d0c54bc41be51f87f580933736c1b7b2df4deff27f9dc",
+      "official_path32_sha256": "7bdac8f6989613b5fadc97bba60904e217293e8ec205fbc751be0901be1a95c5",
+      "optimization_N_F": 9390,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 314,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0314_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "58f66054f197e0024fd31a736a400893208a3d9d4fe925bd29fcf5e4a79d3f85",
+      "official_path32_sha256": "ea488d815f2433dadbebee25d31fc25d36b11511a3e65f5230d8c294fa9a8009",
+      "optimization_N_F": 9420,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 315,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0315_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "51574a57b4c7c4b9f2f66b853c2ab65321f580de00e406b1ce6e2815af331d26",
+      "official_path32_sha256": "58bf062dae3ae97e2fb72a4c26e7d81cef8d1f308d71c691f66c0ebf4e7b2eac",
+      "optimization_N_F": 9450,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 316,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0316_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4ecfdb268e3b7bed1711259035285ba2d08c4562ee0617d6d7dfe8f9c685c2d3",
+      "official_path32_sha256": "53bfad449812ec16656d05661fae993e7c8abb7e884a8e10b6f2c20da05a7594",
+      "optimization_N_F": 9480,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 317,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0317_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c05798746e949b148b0497a1ed8f180c5bc5b85f23048d1b70542006ce197789",
+      "official_path32_sha256": "c61fbf6867c52f40d9feac00d8cbaafeb706bb56bf3ec47d19aecd5e7118f527",
+      "optimization_N_F": 9510,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 318,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0318_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "637e7b7eceaa849905185ee55ca654af2f480849894ac4bdc742073b09dd9d3b",
+      "official_path32_sha256": "51c804c9e41ecf6f945af8fe5418080449b1577c540d6d614085a5f11379fccc",
+      "optimization_N_F": 9540,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 319,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0319_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ab9dfd384f7e8e4ffef55d333e43f46b0e182f3d0d9912d8aa5e9d8de56940c4",
+      "official_path32_sha256": "1a37fa7959081af1e2eef52640c7066b3763b86b14d44acdd634b553a51b66ad",
+      "optimization_N_F": 9570,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 320,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0320_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "a881b37e447aee399e8435f9ecfac7382088e2d06a5a3d0be2e898bb35136bb2",
+      "official_path32_sha256": "2c38ea2a543e2a732f2e7616b070bdbf74382748cf4695f4cd6391fdfb91d6ce",
+      "optimization_N_F": 9600,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 321,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0321_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7e4ae209e622d45ba0acecf3a282233719e7e4db8e8719547789b90ef72e8af1",
+      "official_path32_sha256": "9ff426da74b9b095cba8f018a90b4c89e3e9507db3488133e59463013d5fbc1b",
+      "optimization_N_F": 9630,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 322,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0322_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "ccc857f8bfc8f09ae587a58665cef5582ae6c94dc04955f0734b22593ff9e922",
+      "official_path32_sha256": "38d8367cfed4a999b2506a2b8c0b24b61044362909d2641330ca34a5896192af",
+      "optimization_N_F": 9660,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 323,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0323_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "4a30675ac266254dec7a2eaad914076ddf240d98f75751cb2b4d57982a87bcd8",
+      "official_path32_sha256": "c2f46a4e1e986dfed69accef1233acc004bc9304c1698c38342fc0f6c0a09d7f",
+      "optimization_N_F": 9690,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 324,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0324_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "5a8a91ac21d39e7f74ef047b22f51b8b450966cfda0daf4bb353f9fd95a319d2",
+      "official_path32_sha256": "2281d229d99a780b863be73e4b42941d5b927fd89657f5897aaf2c86592018f5",
+      "optimization_N_F": 9720,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 325,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0325_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "2e58582d646bbe136d69e140919101ce54f7040583c97e7a60b2abcd45cf6926",
+      "official_path32_sha256": "1b8c29367cc672804ee0a9a135cc913acf9b9463ab1f5ba81004da2908fa9775",
+      "optimization_N_F": 9750,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 326,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0326_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "30bdf634c6e1a46b6effa01af559e3b5e3d557e5275abf2ed47d8a6c6ac80ed6",
+      "official_path32_sha256": "499f638a056bb5a9b73f04a2ff66cfb650c707ebed58a3c336489e5d22bd56f9",
+      "optimization_N_F": 9780,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 327,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0327_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "8415444b356d9548facc42358c051df66b0a07be35444719a99d91edbe36aa38",
+      "official_path32_sha256": "0d3974b14de15b8e11d948d7c4bcf273b3cf9770d6ddd1cbba9a15a5a1760c32",
+      "optimization_N_F": 9810,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 328,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0328_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "0629c7419accbd3a935fadaec3f5356414e68278f277e5b4c4b630891df6fc22",
+      "official_path32_sha256": "30e0cfbdfba078f4ac80a8b7cc9a3efd4847635f45f68be4b8b199800706ce9c",
+      "optimization_N_F": 9840,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 329,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0329_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "449c7d77115e388ba83f9231ec4a965a05c5642f5e376f124bee46e45fe630ea",
+      "official_path32_sha256": "e481651651e288bdf73802a631452a7a451b4c49b02b2aad197f8e17cd630d92",
+      "optimization_N_F": 9870,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 330,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0330_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "c3ef710aa4ede1ad4543e1c29f2230e672b807ead4c268884d107a604c29171b",
+      "official_path32_sha256": "77104b7b2d615339042d5752fb1349b359ae94a31dd5b9e2b498723d152b63f6",
+      "optimization_N_F": 9900,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 331,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0331_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "fb65676be6db06a9e7dbee636340d8a4080cb50cf4a1341b8aabe3aefa453b4a",
+      "official_path32_sha256": "e8339632f7e48057563a15bbd65fa22f875088a1c36ee56564f655cb765d3b8c",
+      "optimization_N_F": 9930,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 332,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0332_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d7868017c208e5d46c4e354679c539a1a31779b8676a08b01656d1a7bdef2283",
+      "official_path32_sha256": "50486c53ac8e68f64d48175218fd4760cc3ff69d28aa3393c5dfdb46830e1f14",
+      "optimization_N_F": 9960,
+      "state_role": "trial"
+    },
+    {
+      "batch_id": 333,
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0333_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "7dd2411869c4128f6e15e9568dab027fd3c7da8d105254302aa6224283f213a5",
+      "official_path32_sha256": "3b017361c8922cfa07013a6240b0bf7f608f406449865535c66deee6944fb500",
+      "optimization_N_F": 9990,
+      "state_role": "trial"
+    }
+  ],
+  "purpose": "Apply the common equal-Cartesian-arclength 500-point densified Delta E diagnostic to every paid path of the official k=0.1 ODE--NEB optimization.",
+  "schema": "bb-ode-neb-all-paid-batches-arc500-contract-v1",
+  "source_scope": {
+    "fixed_endpoint_optimization_N_F": 0,
+    "optimization_N_F": [
+      30,
+      9990
+    ],
+    "paid_path_count": 333,
+    "run_label": "bbcr30_neb_ode1e6_k0p1_prod_20260814_r1"
+  },
+  "status": "FROZEN_BEFORE_ANY_NEW_ALL_BATCH_ARC500_ENERGY_CALL"
+}

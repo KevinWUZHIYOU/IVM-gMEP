@@ -1,0 +1,272 @@
+{
+  "checkpoints_calls_per_image": [
+    10,
+    20,
+    50,
+    100,
+    150,
+    200,
+    300
+  ],
+  "rule": "minimum mean checkpoint log10(I_perp)+log10(dense barrier error); unfinished nonstationary checkpoints receive a fixed penalty",
+  "selected_anchor_alpha": 0.0013,
+  "selected_policy": {
+    "accepted_step_cap": 2,
+    "active_curvature": 0.0,
+    "armijo": 0.0001,
+    "backtrack": 0.5,
+    "harmonic_preconditioner": true,
+    "history_size": 7,
+    "kkt_atol": 1e-08,
+    "kkt_rtol": 0.5,
+    "max_step": 3.0,
+    "min_accepted_steps": 2,
+    "new_call_cap": 12,
+    "resample_interval": 5,
+    "warm_history": true
+  },
+  "selected_policy_id": "205de20ebf",
+  "selected_score": -8.742343410837618,
+  "top_candidates": [
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895892453285,
+      "final_i_perp": 7.861627988504894e-16,
+      "policy_id": "205de20ebf",
+      "selection_score": -8.742343410837618,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895892453285,
+      "final_i_perp": 7.861627988504894e-16,
+      "policy_id": "2257febf6e",
+      "selection_score": -8.742343410837618,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895892453285,
+      "final_i_perp": 7.861627988504894e-16,
+      "policy_id": "cec5e3bb8f",
+      "selection_score": -8.742343410837618,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896196707685,
+      "final_i_perp": 7.167580074440933e-16,
+      "policy_id": "03d1fc344a",
+      "selection_score": -8.662510510855757,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896196707685,
+      "final_i_perp": 7.167580074440933e-16,
+      "policy_id": "08dbd29516",
+      "selection_score": -8.662510510855757,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896196707685,
+      "final_i_perp": 7.167580074440933e-16,
+      "policy_id": "b835197ec0",
+      "selection_score": -8.662510510855757,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896196707685,
+      "final_i_perp": 7.167580074440933e-16,
+      "policy_id": "dafa378ad6",
+      "selection_score": -8.662510510855757,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896432181547,
+      "final_i_perp": 8.171845621470826e-16,
+      "policy_id": "32452e7a13",
+      "selection_score": -8.606036799048601,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851896432181547,
+      "final_i_perp": 8.171845621470826e-16,
+      "policy_id": "54277b865d",
+      "selection_score": -8.606036799048601,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.001885189572661261,
+      "final_i_perp": 5.945040742159083e-16,
+      "policy_id": "2710c2a599",
+      "selection_score": -8.22962600840414,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.001885189572661261,
+      "final_i_perp": 5.945040742159083e-16,
+      "policy_id": "3e68d086d7",
+      "selection_score": -8.22962600840414,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.001885189572661261,
+      "final_i_perp": 5.945040742159083e-16,
+      "policy_id": "90ffcddb6e",
+      "selection_score": -8.22962600840414,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.001885189572661261,
+      "final_i_perp": 5.945040742159083e-16,
+      "policy_id": "d80b1f95aa",
+      "selection_score": -8.22962600840414,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895712259648,
+      "final_i_perp": 6.706757390895899e-16,
+      "policy_id": "35f768e3ba",
+      "selection_score": -8.210606931174325,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895712259648,
+      "final_i_perp": 6.706757390895899e-16,
+      "policy_id": "ee5876f980",
+      "selection_score": -8.210606931174325,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895712259648,
+      "final_i_perp": 6.706757390895899e-16,
+      "policy_id": "f7723eb6cb",
+      "selection_score": -8.210606931174325,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895778766448,
+      "final_i_perp": 6.04343409613569e-16,
+      "policy_id": "83445b27ac",
+      "selection_score": -7.941672011668653,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.0013,
+      "final_barrier_error": 0.0018851895778908556,
+      "final_i_perp": 6.04458652468106e-16,
+      "policy_id": "b8deaf60ed",
+      "selection_score": -7.941624708209367,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.00188518961570594,
+      "final_i_perp": 6.759747708287898e-16,
+      "policy_id": "03d1fc344a",
+      "selection_score": -7.884763923163463,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.00188518961570594,
+      "final_i_perp": 6.759747708287898e-16,
+      "policy_id": "08dbd29516",
+      "selection_score": -7.884763923163463,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.00188518961570594,
+      "final_i_perp": 6.759747708287898e-16,
+      "policy_id": "b835197ec0",
+      "selection_score": -7.884763923163463,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.00188518961570594,
+      "final_i_perp": 6.759747708287898e-16,
+      "policy_id": "dafa378ad6",
+      "selection_score": -7.884763923163463,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851896392959588,
+      "final_i_perp": 8.456841391328708e-16,
+      "policy_id": "205de20ebf",
+      "selection_score": -7.843073478739684,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851896392959588,
+      "final_i_perp": 8.456841391328708e-16,
+      "policy_id": "2257febf6e",
+      "selection_score": -7.843073478739684,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851896392959588,
+      "final_i_perp": 8.456841391328708e-16,
+      "policy_id": "cec5e3bb8f",
+      "selection_score": -7.843073478739684,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851896486040687,
+      "final_i_perp": 8.287989078972001e-16,
+      "policy_id": "32452e7a13",
+      "selection_score": -7.7592748788525165,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851896486040687,
+      "final_i_perp": 8.287989078972001e-16,
+      "policy_id": "54277b865d",
+      "selection_score": -7.7592748788525165,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851895840441557,
+      "final_i_perp": 6.656385151157692e-16,
+      "policy_id": "2710c2a599",
+      "selection_score": -7.2711828053413035,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851895840441557,
+      "final_i_perp": 6.656385151157692e-16,
+      "policy_id": "3e68d086d7",
+      "selection_score": -7.2711828053413035,
+      "stop_reason": "stationary"
+    },
+    {
+      "alpha": 0.001,
+      "final_barrier_error": 0.0018851895746365699,
+      "final_i_perp": 7.998841753433069e-16,
+      "policy_id": "90ffcddb6e",
+      "selection_score": -7.225508667088769,
+      "stop_reason": "stationary"
+    }
+  ]
+}

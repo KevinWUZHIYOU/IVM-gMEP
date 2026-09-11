@@ -1,0 +1,206 @@
+{
+  "bindings": {
+    "alpha10_infrastructure_failures": [
+      {
+        "path": "../../reports/failures/BB_IRIVM_ALPHA10_CONFIRMATION_INFRASTRUCTURE_FAILURE_20260901_R1.json",
+        "sha256": "c360fe16325151685966a2d061806a99ec97948f2ccfa2b0484cf473aec4d509"
+      },
+      {
+        "path": "../../reports/failures/BB_IRIVM_ALPHA10_CONFIRMATION_INFRASTRUCTURE_FAILURE_20260901_R2.json",
+        "sha256": "4a775e815fe7e528aeda5ad4368ed0502befe275dd0bde094ca4d05b9d81823f"
+      }
+    ],
+    "alpha_scope_R2": {
+      "path": "../USER_ALPHA_SCOPE_AMENDMENT_20260901_R2.json",
+      "sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f"
+    },
+    "budget_atomicity_amendment": {
+      "path": "../USER_BUDGET_ATOMICITY_AMENDMENT_20260901_R1.json",
+      "sha256": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680"
+    },
+    "diagnostic_evaluator": {
+      "path": "../../scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ff0e9c17a642630e0172f1b5ae118c760d878fc4f1990e5949f31b8b422530eb"
+    },
+    "exact_path_diagnostic_reuse_amendment": {
+      "path": "../USER_EXACT_PATH_DIAGNOSTIC_REUSE_AMENDMENT_20260901_R1.json",
+      "sha256": "1da0658a7f80908e08184cd54d21bc0e5ca73b7f589784be41337902e30998f9"
+    },
+    "metric_policy_amendment": {
+      "path": "../USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "parent_protocol": {
+      "path": "../STAGED_SEARCH_PROTOCOL.json",
+      "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+    },
+    "principal_alpha_selection": {
+      "path": "../../reports/selections/BB_IRIVM_ALPHA_PRINCIPAL_SELECTION_20260901_R1.json",
+      "sha256": "9f04553f390b5d6e6e2d1984047f2692e979e952b4d91854426c07d33abdbd69"
+    },
+    "registered_exact_reuse_source": {
+      "audit": "../../runs/diagnostics/bb_irivm_alpha_discrete_iperp_densified_delta_e_500_20260901_r1.audit.json",
+      "audit_sha256": "1cac17a892385fe50b8277490bee6f75c7019dcf2fc75d03e7cf2bc242e483f2",
+      "diagnostics": "../../runs/diagnostics/bb_irivm_alpha_discrete_iperp_densified_delta_e_500_20260901_r1.npz",
+      "diagnostics_sha256": "d1528c65ca71a3e291997aae83450a001afab1dc44e93f7604237c4292a12e56"
+    },
+    "zero_OpenMM_tests": {
+      "command": "PYTHONPATH=src:scripts /Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python tests/test_discrete_iperp_densified_barrier.py",
+      "path": "../../tests/test_discrete_iperp_densified_barrier.py",
+      "result": "5 unittest cases passed before freezing",
+      "sha256": "08ad50c0ca689c4a1583de3b0e5f7fedda783e323058c98fa49576b7f4ef2714"
+    }
+  },
+  "common_initial_path": {
+    "array_sha256": "e6104f507303bc5e06abc557cad40ccd08924d21474e67073a3a9f6bd5823769",
+    "file_sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "path": "../../inputs/common_initial_path32.npz"
+  },
+  "contract_id": "bb_irivm_alpha_990_nf_confirmation_diagnostics_20260901_r1",
+  "created_utc": "2026-09-01T14:03:35Z",
+  "diagnostic_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "force_evaluations_per_path": 0,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "sampling": "uniform_cartesian_arclength",
+    "sparse_barrier_used_for_selection": false
+  },
+  "runs": [
+    {
+      "actual_optimization_N_F": 990,
+      "alpha": 1.0,
+      "eligible_committed_calls": [
+        3,
+        12
+      ],
+      "eligible_states_at_freeze": [
+        {
+          "calls_per_image": 3,
+          "discrete_I_perp": 68082635.78093566,
+          "history_index": 2,
+          "optimization_N_F": 90,
+          "path_sha256": "ac936c48900840a10586156abc286cdbcc5ddaddc3a960703639783e421ac93d"
+        },
+        {
+          "calls_per_image": 12,
+          "discrete_I_perp": 512257.8829267063,
+          "history_index": 11,
+          "optimization_N_F": 360,
+          "path_sha256": "48c2a09bfa04afb1289b80cf1192a84eaaa636e011d0906bf286ea87b8630b44"
+        }
+      ],
+      "execution_authorization": "../execution_authorizations/bb_irivm_a1e0_r05_m05_inf990_r1.json",
+      "execution_authorization_sha256": "8bcc74545d02988b72190c0f79b1af706a88aad3facb8470c2a39739751fa933",
+      "execution_host": "local",
+      "label": "bb_irivm_a1e0_r05_m05_inf990_r1",
+      "m_max": 5,
+      "member_registration": "../screen/bb_irivm_a1e0_r05_m05_inf990_r1.json",
+      "member_registration_sha256": "ac0a91e9d05e167d184b77d457e247294941690e6589058b0cb61671814694c2",
+      "r": 0.5,
+      "registered_optimization_N_F": 990,
+      "source_audit": "../../runs/screen/ivm_bb_irivm_a1e0_r05_m05_inf990_r1_central_state_ivm_cfg6b17a4327796_budget990_storagecommitted.audit.json",
+      "source_audit_sha256": "5b35a8588711223c502760b018d43ce899fec05ec85afba2690fd8b93ff70ac3",
+      "source_result": "../../runs/screen/ivm_bb_irivm_a1e0_r05_m05_inf990_r1_central_state_ivm_cfg6b17a4327796_budget990_storagecommitted.npz",
+      "source_result_sha256": "ec31cd620d22ddd8784049acdb805e8c64ae0b831d12aede66add2b638c051e0"
+    },
+    {
+      "actual_optimization_N_F": 990,
+      "alpha": 0.1,
+      "eligible_committed_calls": [
+        3,
+        12
+      ],
+      "eligible_states_at_freeze": [
+        {
+          "calls_per_image": 3,
+          "discrete_I_perp": 67305757.1917648,
+          "history_index": 2,
+          "optimization_N_F": 90,
+          "path_sha256": "a5e262819f571cb62ac6a5a3401887df5b8a13bea7e4511ad6b1b2caf13afd36"
+        },
+        {
+          "calls_per_image": 12,
+          "discrete_I_perp": 167639.5569297204,
+          "history_index": 11,
+          "optimization_N_F": 360,
+          "path_sha256": "022c44510eb320df754fdc7e8c919d9122219ee939ab7b698d93f493326e7e74"
+        }
+      ],
+      "execution_authorization": "../execution_authorizations/bb_irivm_a1em1_r05_m05_inf990_r1.json",
+      "execution_authorization_sha256": "78acc98753ede16337aca8a74125127da59fd6bd4b89678f6432f9ce0d1e0eea",
+      "execution_host": "remote",
+      "label": "bb_irivm_a1em1_r05_m05_inf990_r1",
+      "m_max": 5,
+      "member_registration": "../screen/bb_irivm_a1em1_r05_m05_inf990_r1.json",
+      "member_registration_sha256": "2abe166569d82db555e6234a8a525bf58f39dd7b30842604df6ce273ccd31d8d",
+      "r": 0.5,
+      "registered_optimization_N_F": 990,
+      "source_audit": "../../runs/screen/ivm_bb_irivm_a1em1_r05_m05_inf990_r1_central_state_ivm_cfgc9e735e66118_budget990_storagecommitted.audit.json",
+      "source_audit_sha256": "fe2caf548ea6a284563f966a7aae80e1ed1e2f3672f2a1d2c36cd7dbee500182",
+      "source_result": "../../runs/screen/ivm_bb_irivm_a1em1_r05_m05_inf990_r1_central_state_ivm_cfgc9e735e66118_budget990_storagecommitted.npz",
+      "source_result_sha256": "791b71dc9320ba63ef9d00ddd4d60fe76cf162cd7d109a44b39e9e623401faa2"
+    },
+    {
+      "actual_optimization_N_F": 986,
+      "alpha": 10.0,
+      "eligible_committed_calls": [
+        3,
+        10,
+        32
+      ],
+      "eligible_states_at_freeze": [
+        {
+          "calls_per_image": 3,
+          "discrete_I_perp": 68348514.32327402,
+          "history_index": 2,
+          "optimization_N_F": 90,
+          "path_sha256": "471a4a1e5a06e4a3f4aba8a951920ed4f563d9b1adab5f5362ed1763b5624f52"
+        },
+        {
+          "calls_per_image": 10,
+          "discrete_I_perp": 5463278.224795754,
+          "history_index": 9,
+          "optimization_N_F": 300,
+          "path_sha256": "32387e6418779a5c6df13b397007e7a84c2a71c93d49261c72cb5da424195650"
+        },
+        {
+          "calls_per_image": 32,
+          "discrete_I_perp": 16324.730005390877,
+          "history_index": 31,
+          "optimization_N_F": 716,
+          "path_sha256": "31e9770678bfcbc85022024f069b848c45f2a90e90b3a1f2fdc30f1bb3f5d802"
+        }
+      ],
+      "execution_authorization": "../execution_authorizations/bb_irivm_a1e1_r05_m05_inf990_r3.json",
+      "execution_authorization_sha256": "1d36cbed40c451531ad073ef5372ae9dc581caad958bb33a8c24bb7e589c0d57",
+      "execution_host": "local",
+      "label": "bb_irivm_a1e1_r05_m05_inf990_r3",
+      "m_max": 5,
+      "member_registration": "../screen/bb_irivm_a1e1_r05_m05_inf990_r3.json",
+      "member_registration_sha256": "36e38c05afec0fcf9ad60ebff2d3f78984c55113762f9aa5086368c7a50ca107",
+      "r": 0.5,
+      "registered_optimization_N_F": 990,
+      "source_audit": "../../runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf990_r3_central_state_ivm_cfg2a53ad9cf3db_budget990_storagecommitted.audit.json",
+      "source_audit_sha256": "cb0d98cfa7f3d998edac577d4acf266b12abf52261e8374b25a735a84311e354",
+      "source_result": "../../runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf990_r3_central_state_ivm_cfg2a53ad9cf3db_budget990_storagecommitted.npz",
+      "source_result_sha256": "800f13c3a88eeb3fbb3ee62670a9ecc57f547397de2751191a8a3627024f0768"
+    }
+  ],
+  "schema": "bb-irivm-discrete-iperp-densified-barrier-contract-v1",
+  "scientific_terms": {
+    "cost_axis": "optimization Number of Forces N_F",
+    "energetic_diagnostic": "densified 0 K forward barrier Delta E",
+    "stationarity_diagnostic": "discrete unnormalized normal residual I_perp"
+  },
+  "selection_decisions_made_after_990_N_F_results": 0,
+  "selection_rule": "Apply the frozen user metric-policy amendment to every listed eligible state after all listed 500-point diagnostic ledgers close; retain alpha_star and alpha_2 by its deterministic same-state ranking.",
+  "status": "FROZEN_AFTER_ALL_990_N_F_RESULTS_AND_BEFORE_CONFIRMATION_DIAGNOSTICS",
+  "topology": {
+    "path": "../../inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  }
+}

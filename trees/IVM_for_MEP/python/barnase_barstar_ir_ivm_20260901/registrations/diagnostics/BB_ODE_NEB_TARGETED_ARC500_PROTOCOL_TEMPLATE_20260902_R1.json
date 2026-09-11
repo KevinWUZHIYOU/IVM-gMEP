@@ -1,0 +1,40 @@
+{
+  "schema": "bb-ode-neb-targeted-arc500-inert-template-v1",
+  "status": "INERT_TEMPLATE_NOT_AN_EXECUTION_AUTHORIZATION",
+  "purpose": "After the selected IR-IVM N_F=9990 arc-length-500 result has a PASS audit, run the zero-OpenMM selector to freeze only the ODE--NEB retained path or paths needed for a threshold-targeted comparison.",
+  "required_inputs_after_selected_run_finishes": {
+    "selected_IR_IVM_arc500_result": "<PASS_RESULT_NPZ>",
+    "selected_IR_IVM_arc500_audit": "<PASS_AUDIT_JSON>",
+    "official_ODE_NEB_source_root": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1",
+    "completed_ODE_NEB_arc500_pairs": [
+      [
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.npz",
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.audit.json"
+      ],
+      [
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.npz",
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.audit.json"
+      ]
+    ],
+    "already_paid_force_receipts": "nine sealed ODE--NEB milestone receipts exist at N_F=30,240,480,990,2040,4080,6150,8160,9990; the N_F=6150 receipt is a rejected trial and must be excluded from the retained-path I_perp ledger, leaving eight exact retained-path milestones"
+  },
+  "recommended_economical_mode": {
+    "claim_mode": "observed",
+    "max_new_paths_per_freeze": 1,
+    "allowed_claim": "earliest observed first passage",
+    "forbidden_claim": "exact first passage while any earlier distinct retained path is unmeasured"
+  },
+  "exact_mode": {
+    "claim_mode": "exact",
+    "rule": "densify distinct retained paths in chronological paid-N_F order, reusing rejected-batch duplicates by exact path hash, until every path before the first passing path is covered",
+    "warning": "Because densified Delta E is not assumed monotone, exact certification can require many paths and in the no-passage case requires all 284 distinct retained paths."
+  },
+  "metric_contract": {
+    "discrete_I_perp": "normalized-central-chord perpendicular force with the interior half-adjacent-chord unnormalized integral; only complete already-paid force arrays are admissible",
+    "ASE_residual_is_not_discrete_I_perp": true,
+    "densified_Delta_E": "500 energy evaluations at uniform Cartesian arc length on the frozen piecewise-linear 32-image path, including both endpoints",
+    "diagnostic_force_requests_per_path": 0,
+    "optimization_N_F_contribution": 0
+  },
+  "physical_calls_authorized": false
+}

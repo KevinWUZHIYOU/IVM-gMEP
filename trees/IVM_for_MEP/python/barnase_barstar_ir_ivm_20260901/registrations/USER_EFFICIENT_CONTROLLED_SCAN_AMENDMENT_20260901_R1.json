@@ -1,0 +1,61 @@
+{
+  "amendment_id": "bb_irivm_efficient_controlled_scans_20260901_r1",
+  "created_utc": "2026-09-01T14:19:33Z",
+  "decision_timing": "after alpha confirmation and before the first new r-controlled physical call",
+  "observed_information": "alpha_star=10 and alpha_2=1 were fixed by the sealed same-state two-metric confirmation; no r value other than the pre-existing r=0.5 trajectory has been observed at alpha=10",
+  "parent_protocol": "registrations/STAGED_SEARCH_PROTOCOL.json",
+  "parent_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "alpha_confirmation_selection": "reports/selections/BB_IRIVM_ALPHA_CONFIRMATION_SELECTION_20260901_R1.json",
+  "alpha_confirmation_selection_sha256": "e45fb79a37ac5ef87a86927ed0790490973c2ff4b6210a35f9f2cc4e3bd5f1a9",
+  "preserved_rules": [
+    "the frozen Chignolin IR-IVM numerical algorithm",
+    "one BB task per host, jobs=1, all thread caps equal one",
+    "immutable member registration and execution authorization",
+    "actual optimization Number of Forces with fixed endpoints contributing zero",
+    "only fully reparameterization-committed states are eligible",
+    "same-state discrete unnormalized I_perp and arc-length-500 Delta E",
+    "no offline diagnostic feedback within an optimization trajectory"
+  ],
+  "bindings": {
+    "metric_policy_sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5",
+    "exact_path_diagnostic_reuse_sha256": "1da0658a7f80908e08184cd54d21bc0e5ca73b7f589784be41337902e30998f9",
+    "budget_atomicity_sha256": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680"
+  },
+  "r_controlled_scan": {
+    "fixed_alpha": 10.0,
+    "fixed_m_max": 5,
+    "candidate_r": [0.1, 0.3, 0.5, 0.7, 0.8],
+    "registered_budget_upper_bound": 480,
+    "reuse_exact_existing_member": {
+      "r": 0.5,
+      "result": "runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf480_r1_central_state_ivm_cfg3dc98c99dc24_budget480_storagecommitted.npz",
+      "result_sha256": "e33d135622e4537bcc003d889a35e941a05af2d4e41e6cd701f2c83daf41418c",
+      "audit_sha256": "8b360276f28aa6b7785f2265b12ed9fa00bd7c0e6dd0f67044ab22f43eae77f4"
+    },
+    "new_members": [
+      {"r": 0.1, "assigned_host": "local"},
+      {"r": 0.3, "assigned_host": "remote"},
+      {"r": 0.7, "assigned_host": "local"},
+      {"r": 0.8, "assigned_host": "remote"}
+    ],
+    "selection": "freeze all five results first; evaluate every eligible committed path under the common metric protocol; choose r_star and r_2 by the existing joint-score order while reporting raw metrics and Pareto relations",
+    "budget_extension": "run an independent 990-N_F confirmation only if a leading member has no eligible committed path at 480, the leading same-state joint quantities differ by at most 10 percent, or the leading candidates are Pareto-incomparable"
+  },
+  "m_max_controlled_scan": {
+    "candidate_order": [5, 8, 10, 15, 20, 50],
+    "first_budget_upper_bound": 480,
+    "exact_early_stop": "if every frozen proximal subproblem for m_max=k terminates before the inner-step cap by its residual condition, all larger m_max values are deterministic exact aliases until another control changes; record an alias receipt and do not claim unexecuted aliases as measurements"
+  },
+  "local_interaction": {
+    "design": "complete 2^3 local factorial over alpha_star/alpha_2, r_star/r_2, and two behaviorally distinct m_max values",
+    "maximum_new_members_after_exact_reuse": 6,
+    "budget_upper_bound": 480
+  },
+  "long_budget": {
+    "first_stage": "select two representatives from the full controlled-scan/local-interaction Pareto set and run each once at 4080 N_F on the same reference host",
+    "final_stage": "run the 4080 winner at 9990 N_F; extend the runner-up only if its joint quantity differs by at most 10 percent or the two are Pareto-incomparable",
+    "prefix_rule": "the longer trajectory must reproduce every fully closed shorter-budget state, excluding wall time and a quarantined terminal partial tail"
+  },
+  "schema": "bb-irivm-efficient-controlled-scan-amendment-v1",
+  "status": "OPERATIVE_PROSPECTIVE_EFFICIENCY_AMENDMENT"
+}

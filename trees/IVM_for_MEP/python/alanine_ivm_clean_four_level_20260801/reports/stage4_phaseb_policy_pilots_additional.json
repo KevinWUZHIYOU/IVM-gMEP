@@ -1,0 +1,71 @@
+{
+  "variants": {
+    "curve_eq095_perimage_e1": [
+      "state_curve",
+      "per_image",
+      "0.95",
+      1
+    ],
+    "curve_eq075_perimage_e5": [
+      "state_curve",
+      "per_image",
+      "0.75",
+      5
+    ],
+    "curve_eq05_perimage_e5": [
+      "state_curve",
+      "per_image",
+      "0.5",
+      5
+    ],
+    "geometric_e1": [
+      "geometric",
+      "per_image",
+      "0.75",
+      1
+    ],
+    "geometric_e5": [
+      "geometric",
+      "per_image",
+      "0.75",
+      5
+    ]
+  },
+  "results": [
+    {
+      "variant": "curve_eq075_perimage_e5",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq075_perimage_e5_a20_central_state_ivm_cfgd80b272ac67e_budget220.npz",
+      "wall_seconds": 64.27635192871094
+    },
+    {
+      "variant": "curve_eq05_perimage_e5",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq05_perimage_e5_a20_central_state_ivm_cfgde21bb4625b3_budget220.npz",
+      "wall_seconds": 68.12908506393433
+    },
+    {
+      "variant": "curve_eq095_perimage_e1",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_curve_eq095_perimage_e1_a20_central_state_ivm_cfgd7a59abb21e2_budget220.npz",
+      "wall_seconds": 71.40776872634888
+    },
+    {
+      "variant": "geometric_e1",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_geometric_e1_a20_central_state_ivm_cfg61ddc86ec115_budget220.npz",
+      "wall_seconds": 38.48042178153992
+    },
+    {
+      "variant": "geometric_e5",
+      "status": "completed",
+      "returncode": 0,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/pilots/ivm_clean_stage4_phaseB_pilot_geometric_e5_a20_central_state_ivm_cfgc988196ca1fb_budget220.npz",
+      "wall_seconds": 41.742265939712524
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""Run fixed-alpha cases with one KKT-only inner stopping rule.
+
+The nominal per-subproblem limit is set equal to the entire per-image
+experiment budget. Therefore it cannot truncate a subproblem before the
+common KKT condition; only exhaustion of the preregistered total experiment
+budget can stop the solve.
+"""
+
+from __future__ import annotations
+
+import argparse
+import glob
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+
+ALPHAS_REQUIRING_RERUN = (2, 3, 5, 10, 15, 20, 30, 50, 70, 100, 300, 1000)
+PER_IMAGE_BUDGET = 500
+
+
+def audited_result(root: Path, label: str) -> Path | None:
+    pattern = (
+        root
+        / "runs"
+        / "ivm"
+        / f"ivm_{label}_central_state_ivm_*_budget{PER_IMAGE_BUDGET}.npz"
+    )
+    matches = sorted(glob.glob(str(pattern)))
+    if len(matches) > 1:
+        raise RuntimeError(f"Ambiguous completed results for {label}: {matches}")
+    if not matches:
+        return None
+    result = Path(matches[0])
+    audit = result.with_suffix(".audit.json")
+    if not audit.exists() or not json.loads(audit.read_text()).get("consistent"):
+        raise RuntimeError(f"Existing result is not strictly audited: {result}")
+    return result
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, required=True)
+    parser.add_argument("--runner", type=Path, required=True)
+    parser.add_argument("--python", default=sys.executable)
+    args = parser.parse_args()
+    root = args.root.expanduser().resolve()
+    runner = args.runner.expanduser().resolve()
+
+    for alpha in ALPHAS_REQUIRING_RERUN:
+        label = f"production_kkt_only_escape_relock_a{alpha}"
+        existing = audited_result(root, label)
+        if existing is not None:
+            print(f"SKIP audited {existing}", flush=True)
+            continue
+        command = [
+            args.python,
+            str(runner),
+            "--root",
+            str(root),
+            "--initial-path-file",
+            "inputs/common_initial_path_equidistant.npz",
+            "--run-label",
+            label,
+            "--solver",
+            "state_ivm",
+            "--alpha",
+            str(alpha),
+            "--alpha-mode",
+            "fixed",
+            "--alpha-min",
+            "0.03",
+            "--alpha-max",
+            "1000",
+            "--max-step",
+            "1",
+            "--state-trust-fraction",
+            "2",
+            "--state-polish-trust-fraction",
+            "2",
+            "--state-globalization",
+            "proximal_only",
+            "--reparam-mode",
+            "state_curve_projected",
+            "--state-curve-direct-solve",
+            "--state-curve-direct-trial-calls",
+            str(PER_IMAGE_BUDGET),
+            "--state-curve-stall-free-polish",
+            "--state-curve-stall-free-polish-count",
+            "1",
+            "--state-curve-relock-escape-trust-factor",
+            "0.0001",
+            "--state-free-polish-reparam-strategy",
+            "hermite_relock",
+            "--reparam-ready-relative-iperp",
+            "2",
+            "--reparam-cv-trigger",
+            "-1",
+            "--reparam-recovery-calls",
+            "30",
+            "--inner-calls",
+            str(PER_IMAGE_BUDGET),
+            "--plbfgs-kkt-rtol",
+            "0.8",
+            "--budget",
+            str(PER_IMAGE_BUDGET),
+            "--save-all-paths",
+        ]
+        print("RUN " + " ".join(command), flush=True)
+        subprocess.run(command, check=True, cwd=root)
+
+
+if __name__ == "__main__":
+    main()

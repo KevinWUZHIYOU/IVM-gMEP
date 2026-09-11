@@ -1,0 +1,26 @@
+{
+  "derivatives": [
+    {
+      "beta": null,
+      "max_gradient_error": 1.1700379554113738e-09
+    },
+    {
+      "beta": 0.1,
+      "max_gradient_error": 2.0503789777137627e-09
+    },
+    {
+      "beta": 0.3,
+      "max_gradient_error": 1.0593723676066702e-09
+    },
+    {
+      "beta": 1.0,
+      "max_gradient_error": 1.50313886337905e-10
+    },
+    {
+      "beta": 3.0,
+      "max_gradient_error": 7.169443511090279e-11
+    }
+  ],
+  "passed": true,
+  "source_sha256": "4e1ccff1b7ce6d5c4356ec4e4bc80282b99e054dfaad20f869bfe4e20e676bb6"
+}

@@ -1,0 +1,42 @@
+{
+  "protocol": "clean-start four-level fixed-alpha Ala IVM audit",
+  "root": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801",
+  "common_initial_path": "inputs/common_initial_path_equidistant.npz",
+  "common_initial_file_sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b",
+  "runner_sha256": "74a6cf216c82f4c22fd3b8ce993b2369aa967319f62c632b856d69870bc3ac43",
+  "orchestrator_sha256": "f5cfa54ea1249499ba8d86970c1432ee0e174157b66b01f782da6e3b8bc822fa",
+  "stages": {
+    "stage1": {
+      "output_dir": "runs/stage1_exact_no_resample",
+      "budget": 160,
+      "rtols": [
+        0.2,
+        0.1
+      ],
+      "description": "exact-like frozen-normal IVM; no reparameterization"
+    }
+  },
+  "alphas": [
+    1.0
+  ],
+  "tasks": 1,
+  "jobs": 1,
+  "started_unix": 1785598328.7243898,
+  "finished_unix": 1785598425.51018,
+  "results": [
+    {
+      "stage": "stage1",
+      "alpha": 1.0,
+      "rtol": 0.1,
+      "budget": 2500,
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 96.77447199821472,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage1_exact_no_resample/ivm_clean_stage1_r0p1_a1_central_state_ivm_cfg2aea455dc5e8_budget2500.npz",
+      "result_sha256": "1e1f03b0eb3adf98a9c3e154950c7a1e5b3cb7d5aff9d7aca1b2920f31213e94",
+      "log_dir": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage1_r0p1_a1_b2500"
+    }
+  ],
+  "successful": 1,
+  "failed": 0
+}

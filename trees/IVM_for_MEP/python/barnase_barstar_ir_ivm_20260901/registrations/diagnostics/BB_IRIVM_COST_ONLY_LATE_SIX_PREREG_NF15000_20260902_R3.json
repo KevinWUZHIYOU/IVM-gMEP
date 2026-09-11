@@ -1,0 +1,185 @@
+{
+  "R5B_closure_required_before_selection": {
+    "both_verifiers_must_bind_same_manifest_and_index": true,
+    "canonical_index_schema": "bb-irivm-full-state-history-stable-last-index-v1",
+    "future_canonical_paths": {
+      "canonical_index": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.canonical_index.json",
+      "capture_manifest": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r5b/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b_observer/full_state_history.manifest.json",
+      "primary_verification": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_PRIMARY.json",
+      "selection": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_SELECTION_NF15000_20260902_R3.json",
+      "supplemental_verification": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B_SUPPLEMENTAL.json"
+    },
+    "manifest_schema": "bb-irivm-full-state-history-manifest-v3",
+    "primary_inventory_must_equal_stable_last_index": true,
+    "primary_schema": "bb-irivm-selected-full-state-history-verification-v5b",
+    "primary_status": "PASS_R5B_EXACT_PREFIX318_AND_DYNAMIC_STABLE_LAST_FULL_STATE_REPLAY",
+    "supplemental_schema": "bb-irivm-full-state-r5b-supplemental-verification-v1",
+    "supplemental_status": "PASS_R5B_EXACT_COUNTER_SCHEMA_AND_ARTIFACT_CLOSURE"
+  },
+  "R5B_final_artifacts_read": false,
+  "bindings": {
+    "Mutagen_gate": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_MUTAGEN_GATE_NF15000_20260902_R5B.json",
+      "sha256": "3a5dfee20e2e1cc70dd0bd761154ec79dd12ec677a5a0b3ff91a27330952fc6e"
+    },
+    "authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf15000_fullstate_r5b.json",
+      "sha256": "817799d981c43edddcb3c8940b10035959ff98cf30cb395218b76e21c7ec2a57"
+    },
+    "endpoint_joint_EF_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "joint_EF_engine": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+      "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+    },
+    "primary_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay_r5.py",
+      "sha256": "b6d4e7b8258e338f2b689c67be073e164c5440a6d84998bd7d352388935c1d0b"
+    },
+    "registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF15000_20260902_R5B.json",
+      "sha256": "7149bf52c733004f13e15b3a7685a6ba2dc9ec8106308f8e786a9f18f5aa1246"
+    },
+    "selector_and_plan_freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_cost_only_late_six_r3.py",
+      "sha256": "9eb8ff190e68d1fea0b200145dfd326e99bc24fef561a02279a8829308f84979"
+    },
+    "supplemental_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay_r5b_supplemental.py",
+      "sha256": "e7e5d12c709b6d90ad253d83a1ae39c1eb0569efd2bad4d2a909f4c2ab8f61e3"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    },
+    "zero_physical_tests": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/tests/test_select_bb_irivm_cost_only_late_six_r3.py",
+      "sha256": "4c2b624b2ad05d50d378ebc3ede65de7b1218676894069ab8098ffd91e0aa93b"
+    }
+  },
+  "created_utc": "2026-09-02T14:08:41.869309+00:00",
+  "early_four_optimization_N_F": [
+    60,
+    150,
+    300,
+    1329
+  ],
+  "execution_authorized_by_this_file": false,
+  "frozen": true,
+  "frozen_dual_host_assignment": {
+    "assignment_uses_metric_values": false,
+    "local_path_count": 2,
+    "local_relative_throughput": 1.0,
+    "local_roles": [
+      "nearest_unused_to_NF2000",
+      "nearest_unused_to_NF4000"
+    ],
+    "normalized_work_local": 996,
+    "normalized_work_remote": 996.0,
+    "remote_path_count": 4,
+    "remote_relative_throughput": 2.0,
+    "remote_roles": [
+      "highest_legal_NF_not_above_15000",
+      "nearest_unused_to_NF8982",
+      "nearest_unused_to_NF8000",
+      "nearest_unused_to_NF6000"
+    ]
+  },
+  "metric_evaluation_policy_after_selection": {
+    "dense_coordinates_energy_full_force_all_stored": true,
+    "dense_sampling": "500 uniform unweighted-Cartesian-arc-length points",
+    "expected_fresh_dense_interior_joint_EF_per_path": 498,
+    "expected_fresh_dense_interior_joint_EF_total": 2988,
+    "inherited_fixed_endpoint_joint_EF_per_path": 2,
+    "new_original_path_calls": 0,
+    "optimization_N_F_contribution": 0,
+    "original_images": 32,
+    "original_internal_joint_EF_reused_from_R5B_per_path": 30
+  },
+  "metric_values_read_by_selector_or_this_freezer": false,
+  "prior_observation_disclosure": "metric values may already have been observed outside this selector; they are not inputs and cannot affect the frozen projection or ranking",
+  "purpose": "after dual R5B PASS, choose six late cost milestones without reading I_perp, Delta E, energy, force, barrier, or action",
+  "schema": "bb-irivm-r5b-cost-only-late-six-preregistration-v3",
+  "selection_policy": {
+    "allowed_primary_inventory_fields": [
+      "call_per_image",
+      "formally_reportable",
+      "history_index",
+      "optimization_N_F",
+      "path_sha256",
+      "shard",
+      "shard_sha256",
+      "terminal_uncommitted_charged_tail"
+    ],
+    "allowed_replay_array_keys": [
+      "calls_per_image",
+      "total_internal_joint_evaluations",
+      "reparam_committed",
+      "total_internal_nf_last_complete_state_index"
+    ],
+    "anchor_rule": "minimum (absolute_NF_distance, optimization_N_F, call_per_image) among unused paths",
+    "anchor_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json",
+      "sha256": "a0a6af4b445b02a5960541c5492fdc57a4f48d74acdbda26c096dafb9b953e94"
+    },
+    "anchor_targets_N_F": [
+      2000,
+      4000,
+      6000,
+      8000,
+      8982
+    ],
+    "anchors_changed_from_old_preregistration": false,
+    "distinctness_key": "path_sha256",
+    "forbidden_selection_fields": [
+      "Delta_E",
+      "I_perp",
+      "action",
+      "barrier",
+      "densified_Delta_E",
+      "energies",
+      "energy",
+      "energy_eV",
+      "force",
+      "force_eV_per_A",
+      "forces",
+      "geometric_action",
+      "i_perp"
+    ],
+    "highest_cap_change_reason": "mechanical user-authorized budget extension from 9990 to 15000",
+    "highest_rule": "maximum (optimization_N_F, call_per_image)",
+    "late_optimization_N_F_strictly_greater_than": 1329,
+    "maximum_legal_optimization_N_F": 15000,
+    "metric_values_consulted": false,
+    "must_be_formally_reportable": true,
+    "must_be_fully_evaluated": true,
+    "must_be_reparameterization_committed": true,
+    "must_be_stable_last": true,
+    "number_of_distinct_paths": 6,
+    "reserve_highest_first": true,
+    "role_order": [
+      "highest_legal_NF_not_above_15000",
+      "nearest_unused_to_NF2000",
+      "nearest_unused_to_NF4000",
+      "nearest_unused_to_NF6000",
+      "nearest_unused_to_NF8000",
+      "nearest_unused_to_NF8982"
+    ],
+    "terminal_uncommitted_charged_tail_allowed": false
+  },
+  "status": "FROZEN_DURING_R5B_BEFORE_FINAL_RESULT_AND_BEFORE_SELECTION",
+  "supersedes": {
+    "old_files_modified_or_deleted": false,
+    "old_late_six_package_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_PACKAGE_PREREG_20260902_R1.json",
+      "sha256": "a40d5504b30ca96b10d876b4271b28b9496442783e27dfe9b5e368805b167f5d"
+    },
+    "old_selection_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json",
+      "sha256": "a0a6af4b445b02a5960541c5492fdc57a4f48d74acdbda26c096dafb9b953e94"
+    },
+    "reason": "the old protocol was capped at NF9990 and assigned all six paths to the remote host; R3 retains its five anchors, mechanically extends only the highest cap with the authorized NF15000 budget, and freezes a balanced remote4/local2 split"
+  }
+}

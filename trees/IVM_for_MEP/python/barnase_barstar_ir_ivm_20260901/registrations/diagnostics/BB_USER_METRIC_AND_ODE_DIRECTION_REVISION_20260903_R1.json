@@ -1,0 +1,77 @@
+{
+  "cancelled_work": {
+    "completed_arc500_data_role": "historical_audit_only_not_admissible_for_new_figures",
+    "ir_late_six_arc500": "cancelled_before_selection_authorization_or_execution",
+    "old_final_densified_contract": "superseded_pending_not_executed",
+    "old_late_six_preparation": "superseded_pending_not_executed",
+    "preserve_existing_files": true
+  },
+  "experiment_direction": {
+    "ode_screen": {
+      "candidate_spring_k_eV_per_A2": [
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "fresh_winner_budget_optimization_N_F": 30000,
+      "fresh_winner_must_restart_from_common_initial_path": true,
+      "screen_budget_optimization_N_F_per_candidate": 6000,
+      "screen_state_is_not_resumable_into_winner_run": true
+    },
+    "storage": {
+      "each_complete_force_batch": [
+        "path32_A",
+        "energy_eV",
+        "force_eV_per_A"
+      ],
+      "endpoint_optimization_N_F_contribution": 0,
+      "endpoint_policy": "precomputed_fixed_endpoints"
+    },
+    "tangent": {
+      "definition": "tau_i = normalize(x[i+1] - x[i-1])",
+      "scope": "all IR-IVM updates, all ODE-NEB physical and spring projections, and all diagnostics"
+    }
+  },
+  "metric_policy": {
+    "DeltaE32": "max(E_0,...,E_31) - E_0 on the original 32-image path",
+    "I_perp": "bb_core.path_diagnostics central-tangent discrete I_perp on the same original 32-image path",
+    "arc_length_densification": "forbidden_for_new_formal_figures",
+    "metric_interpolation": "none",
+    "same_path_required_for_both_metrics": true
+  },
+  "not_execution_authority": true,
+  "referenced_existing_files": {
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "completed_ivm_early_arc500_historical_only": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r4b.npz",
+      "sha256": "ca723874195d628f69748e174e9a08dd1dcdb6dd7415a057ebc14d0dcbaa0a14"
+    },
+    "completed_ode_early_arc500_historical_only": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_dense_four_arc500_joint_ef_20260902_r2.npz",
+      "sha256": "a66ee883dbff63299b5df914ebc9d401f471ba647af3c4a1cae5f0d7a76ecac3"
+    },
+    "completed_ode_late_arc500_historical_only": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_late_four_arc500_joint_ef_20260902_r1.npz",
+      "sha256": "a60bc51386c4b74351bcef2015052911b53d345c593cfa90fc52212e7cecbe23"
+    },
+    "superseded_ir_late_six_dual_host_template": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_DUAL_HOST_TEMPLATE_NF15000_20260902_R3.json",
+      "sha256": "2a49f4cdd5dada6f899e9bf49b10c781ba09f65a870bfcbf6e6a4cb5b9068078"
+    },
+    "superseded_ir_late_six_preparation": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_LATE_SIX_ARC500_PREPARATION_NF15000_20260902_R4.json",
+      "sha256": "eb149c2a867acd6bbffe0c788d0e29538e25527c3cefadd948c4a9dce5d6e73e"
+    },
+    "superseded_ir_late_six_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_COST_ONLY_LATE_SIX_PREREG_NF15000_20260902_R3.json",
+      "sha256": "0957e5f432173a6b8aa972310391e74f0e244f9bab10e661c7e7218650be8b8e"
+    }
+  },
+  "revision_date": "2026-09-03",
+  "schema": "bb-user-metric-and-ode-direction-revision-v1",
+  "status": "FROZEN_USER_DIRECTION_ZERO_PHYSICAL_NO_EXECUTION_AUTHORITY"
+}

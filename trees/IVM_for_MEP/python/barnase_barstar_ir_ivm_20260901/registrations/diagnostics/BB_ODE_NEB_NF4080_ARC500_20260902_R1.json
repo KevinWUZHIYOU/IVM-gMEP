@@ -1,0 +1,121 @@
+{
+  "schema": "bb-ode-neb-nf4080-arc500-contract-v1",
+  "contract_id": "bb_ode_neb_nf4080_arc500_20260902_r1",
+  "created_utc": "2026-09-01T20:57:54Z",
+  "status": "FROZEN_BEFORE_ANY_NF4080_ARC500_PHYSICAL_CALL",
+  "purpose": "Apply the common equal-Cartesian-arclength 500-point densified Delta E diagnostic to only the accepted ODE--NEB path at actual optimization N_F=4080, selected because the corresponding IR-IVM comparison needs this path.",
+  "scope": "ODE-NEB_NF4080_SINGLE_RETAINED_PATH_ONLY",
+  "all_path_ode_neb_arc500_task": "REMAINS_PAUSED",
+  "non_authorizations": [
+    "This contract does not authorize evaluation of any other ODE--NEB path.",
+    "This contract does not resume, shard, or complete the all-paid-path ODE--NEB arc500 campaign.",
+    "This contract does not request or authorize a force evaluation."
+  ],
+  "bindings": {
+    "zero_force_extraction_report": {
+      "path": "../../reports/comparisons/BB_ODE_NEB_NF4080_DISCRETE_IPERP_ZERO_FORCE_EXTRACTION_20260902_R1.json",
+      "sha256": "f6dce2467377cf0719e50010c004dd8a55a6211d23f324fbbf749c1d7f4d1c8c"
+    },
+    "metric_policy_amendment": {
+      "path": "../USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "alpha_scope_R2": {
+      "path": "../USER_ALPHA_SCOPE_AMENDMENT_20260901_R2.json",
+      "sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f"
+    },
+    "single_path_evaluator": {
+      "path": "../../scripts/evaluate_ode_neb_nf4080_arc500.py",
+      "sha256": "2622dd5ff149c0a06f91810d53b88c105a629854369074d1142c4d2f6575590c"
+    },
+    "shared_arc500_evaluator": {
+      "path": "../../scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ab56602fa94e3ab5f03b38b5210fc99430e128491ff3ea1e0b5967b21a2f5304"
+    },
+    "shared_path_diagnostics": {
+      "path": "../../src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "fixed_endpoint_cache": {
+      "path": "../../inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    }
+  },
+  "topology": {
+    "path": "../../inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "OpenMM_platform": "CPU",
+    "precision": "double"
+  },
+  "source_path": {
+    "method": "ODE-NEB",
+    "optimization_N_F": 4080,
+    "batch_id": 136,
+    "paid_internal_images_per_batch": 30,
+    "disposition": "accepted",
+    "representation": "frozen_piecewise_linear_32_images",
+    "official_path32_sha256": "eb21e326ccbefe8919c022bfc842ae0b6518de0136f4ef2336bb57a8af9a2461",
+    "raw_path_sha256": "b28a7222e61e457eae7e3b3dcfd90f83fec6b78728d64497914e1f607f4343d7",
+    "discrete_I_perp_eV2_per_A": 4371.16533670238,
+    "snapshot": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_archive_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/snapshots/nf04080.npz",
+      "sha256": "d6b81336ae627cd872498fb821ec104767f8f959ab1a126d4eeb9cb7566c7fa7"
+    },
+    "paid_force_receipt": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_archive_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/milestone_force_receipts/nf04080_batch_0136_EF30.npz",
+      "sha256": "2905e8f488690c81706a7a04bc25a67e43152266ed48809e37a7640ad12f96af"
+    },
+    "identity_checks_required": {
+      "snapshot_internal_coordinates_equal_paid_force_coordinates_bytewise": true,
+      "snapshot_endpoints_equal_fixed_endpoint_cache_coordinates_bytewise": true,
+      "snapshot_and_force_receipt_N_F_equal": true,
+      "snapshot_and_force_receipt_batch_id_equal": true
+    }
+  },
+  "diagnostic_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "interpolation": "piecewise_linear",
+    "sampling": "uniform_cartesian_arclength",
+    "number_of_points": 500,
+    "include_both_endpoints": true,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "prospective_dense_coordinate_sha256": "d84ddb9b2d0631a3c55e020fffb81e35faec3ddef37c40d17e4b52feb81ff874",
+    "energy_evaluations_per_path": 500,
+    "force_evaluations_per_path": 0,
+    "optimization_N_F_contribution": 0,
+    "Delta_E_definition": "(max_j E(x(s_j)) - E(x(s_0))) converted from eV to kcal/mol",
+    "discrete_I_perp_source": "the already-paid 30-image force receipt under the normalized-central-chord and interior half-adjacent-chord unnormalized-integral convention"
+  },
+  "endpoint_policy": {
+    "number_of_fixed_endpoints": 2,
+    "optimization_fixed_endpoint_N_F": 0,
+    "dense_grid_includes_both_endpoints": true,
+    "diagnostic_endpoint_requests": "energy only; included among the same 500 diagnostic evaluations",
+    "diagnostic_endpoint_energy_calls_are_optimization_N_F": false
+  },
+  "lock_policy": {
+    "jobs_per_host": 1,
+    "host_local_lock_paths": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "acquire_both_before_first_physical_call": true,
+    "hold_both_through_last_physical_call": true,
+    "validate_only_acquires_no_physical_evaluation_lock": true,
+    "thread_caps": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1"
+    }
+  },
+  "output_policy": {
+    "output": "../../runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.npz",
+    "audit": "../../runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.audit.json",
+    "energy_WAL": "../../runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.energy.wal.jsonl",
+    "overwrite": false,
+    "full_500_successful_energy_ledger_required_before_reporting_Delta_E": true
+  }
+}

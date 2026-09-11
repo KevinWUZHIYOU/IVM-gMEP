@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "x_axis_scale": "linear",
+  "x_axis_maximum": {
+    "i_perp": 90000,
+    "densified_barrier": 30000
+  },
+  "x_axis_label": "Number of Forces",
+  "y_axis_minimum": {
+    "i_perp": 5e-05,
+    "densified_barrier": 2.0
+  },
+  "densified_barrier_y_axis_maximum": 10.0,
+  "densified_barrier_upper_axis_break": true,
+  "speedup_labels": [
+    "17.4x",
+    "4x"
+  ],
+  "plotted_force_ranges": {
+    "ivm": {
+      "i_perp_maximum": 4808,
+      "densified_barrier_maximum": 4808
+    },
+    "ode_neb": {
+      "i_perp_maximum": 100022,
+      "densified_barrier_maximum": 100022
+    },
+    "original_string": {
+      "i_perp_maximum": 90002,
+      "densified_barrier_maximum": 60002
+    },
+    "static_neb": {
+      "i_perp_maximum": 90002,
+      "densified_barrier_maximum": 60002
+    },
+    "obsm_bfgs": {
+      "i_perp_maximum": 107268,
+      "densified_barrier_maximum": 29463
+    },
+    "obsm_fire": {
+      "i_perp_maximum": 90182,
+      "densified_barrier_maximum": 40502
+    }
+  },
+  "minimum_non_ivm_terminal_force_count": 90002,
+  "legend_location": "figure top, six columns",
+  "matched_precision_speedups": {
+    "i_perp": {
+      "metric": "i_perp",
+      "threshold": 0.00021,
+      "ivm_force": 4808,
+      "jointly_eligible_competitor": "ode_neb",
+      "jointly_eligible_competitor_label": "ODE--NEB",
+      "jointly_eligible_competitor_force": 83522,
+      "companion_metric": "barrier_error",
+      "companion_threshold": 0.017,
+      "comparison_scope": "fastest competitor at this metric among methods that also reach the companion-metric threshold",
+      "speedup": 17.37146422628952
+    },
+    "densified_barrier_error": {
+      "metric": "barrier_error",
+      "threshold": 0.017,
+      "ivm_force": 4808,
+      "jointly_eligible_competitor": "ode_neb",
+      "jointly_eligible_competitor_label": "ODE--NEB",
+      "jointly_eligible_competitor_force": 19222,
+      "companion_metric": "i_perp",
+      "companion_threshold": 0.00021,
+      "comparison_scope": "fastest competitor at this metric among methods that also reach the companion-metric threshold",
+      "speedup": 3.9979201331114806
+    }
+  },
+  "ivm_cost_accounting": "optimization force calls plus all reference-free Pareto screen calls",
+  "ivm_screen_force_equivalent_evaluations": 2301,
+  "outputs": {
+    ".pdf": "df652cdecc553d12d951ff8c15ad305fb7087454567b9825a2a15bb753095e1a",
+    ".svg": "6e2f0b3458ca27830702dfce5a5f3acec64553522eb93e135c4d4a89b09252ed",
+    ".png": "62e497afc4ad5776e45f5c238bb4682f37759c0a6ff7ab0df32d77f1f226d49d"
+  },
+  "new_dynamics_run": true,
+  "main_tex_modified": true
+}

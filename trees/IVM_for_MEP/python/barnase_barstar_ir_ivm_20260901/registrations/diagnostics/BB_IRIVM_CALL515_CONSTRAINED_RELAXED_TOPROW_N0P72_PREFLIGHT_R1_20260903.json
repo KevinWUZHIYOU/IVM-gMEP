@@ -1,0 +1,35 @@
+{
+  "contract": {
+    "bytes": 4512,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_CALL515_CONSTRAINED_RELAXED_TOPROW_N0P72_CONTRACT_R1_20260903.json",
+    "sha256": "dd2fbd66ac292c6052960f48c04c007be4ff91cb6f61339bd65a6ddc44de2c08"
+  },
+  "created_utc": "2026-09-03T14:06:10.437052+00:00",
+  "free_bytes": 14409289728,
+  "maximum_force_calls": 765,
+  "openmm_contexts_constructed": 0,
+  "optimization_N_F_contribution": 0,
+  "physical_force_calls_started": 0,
+  "runner": {
+    "bytes": 23936,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_call515_constrained_relaxed_toprow_n0p72_r1.py",
+    "sha256": "4501e4afe89c593aea401ab6417b8d8b6b4df83988b7a6988ebd2a6d4b3ea9b3"
+  },
+  "schema": "bb-irivm-call515-constrained-relaxed-toprow-n0p72-r1-v1-preflight",
+  "status": "PASS_ZERO_PHYSICS",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "two_lock_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  }
+}

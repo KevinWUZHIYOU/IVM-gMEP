@@ -1,0 +1,47 @@
+{
+  "schema": "bb-ode-neb-discrete-iperp-zero-force-extraction-v1",
+  "status": "PASS_POSTHOC_EXTRACTION_UNDER_PREEXISTING_FROZEN_METRIC",
+  "created_utc": "2026-09-01T19:35:11Z",
+  "purpose": "provide the exact ODE--NEB N_F=4080 discrete I_perp comparator without any new OpenMM evaluation",
+  "comparison_scope": "discrete 32-image metric only; this receipt is not an arc-length-500 Delta E diagnostic and is not a first-passage claim",
+  "optimization_Number_of_Forces": 4080,
+  "metric": {
+    "name": "discrete_I_perp",
+    "value_eV2_per_A": 4371.16533670238,
+    "tangent": "normalized central chord",
+    "quadrature": "interior half-adjacent-chord unnormalized integral",
+    "endpoint_force_contribution": 0
+  },
+  "source_snapshot": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_archive_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/snapshots/nf04080.npz",
+    "sha256": "d6b81336ae627cd872498fb821ec104767f8f959ab1a126d4eeb9cb7566c7fa7",
+    "nf": 4080,
+    "batch_id": 136,
+    "evaluated": true,
+    "method": "neb",
+    "disposition": "accepted",
+    "representation": "frozen_piecewise_linear_32_images",
+    "state_sha256": "eb21e326ccbefe8919c022bfc842ae0b6518de0136f4ef2336bb57a8af9a2461"
+  },
+  "source_paid_force_receipt": {
+    "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf9990_remote_archive_20260817_r2/runs/fresh-nonresume-bb-neb-aseode-k0p1-nf9990-20260817-r2/milestone_force_receipts/nf04080_batch_0136_EF30.npz",
+    "sha256": "2905e8f488690c81706a7a04bc25a67e43152266ed48809e37a7640ad12f96af",
+    "nf_after": 4080,
+    "batch_id": 136,
+    "paid_internal_images": 30
+  },
+  "validation": {
+    "snapshot_internal_coordinates_equal_paid_force_coordinates_bytewise": true,
+    "snapshot_and_force_receipt_nf_equal": true,
+    "snapshot_and_force_receipt_batch_id_equal": true,
+    "new_OpenMM_energy_attempts": 0,
+    "new_OpenMM_force_attempts": 0,
+    "optimization_Number_of_Forces_contribution": 0
+  },
+  "frozen_metric_bindings": {
+    "registrations/STAGED_SEARCH_PROTOCOL.json": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+    "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5",
+    "src/bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+  },
+  "reporting_rule": "use this value only against an IR-IVM path whose actual audited optimization N_F is exactly 4080, or in a clearly labeled budget-envelope comparison; do not relabel a registered upper bound as actual N_F"
+}

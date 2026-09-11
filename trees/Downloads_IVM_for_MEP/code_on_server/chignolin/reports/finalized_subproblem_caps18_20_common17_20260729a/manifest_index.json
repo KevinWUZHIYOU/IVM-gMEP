@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "all_requested_sweeps_complete_and_audited",
+  "generated_at_utc": "2026-07-28T20:36:29.371067+00:00",
+  "source_root": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+  "finalizer": "/Users/wuzhiyou/.codex/.chatgpt-projects/g-p-6a5f68f7543481918e38549814e88bf0/working/chignolin_new_methods/finalize_subproblem_cap_manifests.py",
+  "finalizer_sha256": "f096e0ca742e955fd2a988e77d6cdc9d4dfca471c2db8deb496683ecf04a067e",
+  "caps": [
+    18,
+    20
+  ],
+  "fixed_alphas": [
+    0.03,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    30.0,
+    50.0,
+    70.0,
+    100.0
+  ],
+  "alpha_count_per_cap": 17,
+  "manifests": [
+    {
+      "cap": 18,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_common17_20260729a/inner18_manifest.json",
+      "sha256": "bf3e381da5b383fe1ecff9243b1f1a570b5b05dc098cc2d4c13521b771253c6a"
+    },
+    {
+      "cap": 20,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_common17_20260729a/inner20_manifest.json",
+      "sha256": "7ada68485b36de82912eed0583e725f0e206c663b4284302287af6fbddfd2874"
+    }
+  ]
+}

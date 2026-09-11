@@ -1,0 +1,182 @@
+{
+  "IVM_new_reporting_calls": [
+    2,
+    5,
+    10,
+    50
+  ],
+  "IVM_reporting_rows": [
+    {
+      "call_per_image": 1,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": false,
+      "optimization_N_F": 30,
+      "reparameterization_committed": false,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 3310616093.2793417
+    },
+    {
+      "call_per_image": 2,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": true,
+      "optimization_N_F": 60,
+      "reparameterization_committed": false,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 68167135.91306221
+    },
+    {
+      "call_per_image": 5,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": true,
+      "optimization_N_F": 150,
+      "reparameterization_committed": false,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 29407169.52263667
+    },
+    {
+      "call_per_image": 10,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": true,
+      "optimization_N_F": 300,
+      "reparameterization_committed": false,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 897667.2039737597
+    },
+    {
+      "call_per_image": 20,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": false,
+      "optimization_N_F": 429,
+      "reparameterization_committed": true,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 77444.13564174288
+    },
+    {
+      "call_per_image": 50,
+      "eligibility": "contingent_on_PASS_EXACT_OUTPUT_ONLY_PREFIX_replay_verification",
+      "new_reporting_path": true,
+      "optimization_N_F": 1329,
+      "reparameterization_committed": false,
+      "sealed_reference_discrete_I_perp_eV2_per_A": 952.0611021437114
+    }
+  ],
+  "ODE_NEB_cost_matched_rows": [
+    {
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0002_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "3f067aea28c3d8934c2a1cedd6c371ec8a92c70ddc23e836a61e133fa98dbb25",
+      "disposition_at_first_occurrence": "accepted",
+      "matched_IR_IVM_call_per_image": 2,
+      "matched_IR_IVM_optimization_N_F": 60,
+      "new_densified_Delta_E_seen_at_selection": false,
+      "new_discrete_I_perp_seen_at_selection": false,
+      "official_path32_sha256": "dd1ea8ac4b6ac094b3967b1fde770d5b4851b77270bde2e92c958cd8dd68bb99",
+      "optimization_N_F_first_occurrence": 60,
+      "paid_batch_id_first_occurrence": 2,
+      "source_batch_id": 2
+    },
+    {
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0005_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d6910b5911026a63906768bcccafaddf5ab0c5740aaaecf7e1861615cb73cbf5",
+      "disposition_at_first_occurrence": "accepted",
+      "matched_IR_IVM_call_per_image": 5,
+      "matched_IR_IVM_optimization_N_F": 150,
+      "new_densified_Delta_E_seen_at_selection": false,
+      "new_discrete_I_perp_seen_at_selection": false,
+      "official_path32_sha256": "64c0a32b94a860b51ccd6290b96221f2c116243b40fd736521a49b696f59bc85",
+      "optimization_N_F_first_occurrence": 150,
+      "paid_batch_id_first_occurrence": 5,
+      "source_batch_id": 5
+    },
+    {
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0010_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "d407371bad5e8f0f888c79ee68457c18a9e9443b619a886b9e4b47764a44a62d",
+      "disposition_at_first_occurrence": "accepted",
+      "matched_IR_IVM_call_per_image": 10,
+      "matched_IR_IVM_optimization_N_F": 300,
+      "new_densified_Delta_E_seen_at_selection": false,
+      "new_discrete_I_perp_seen_at_selection": false,
+      "official_path32_sha256": "5cd502e6eff9294e9c7381aa4cb6b0a7653fa2eff921aeafdf68d562a7cfadbe",
+      "optimization_N_F_first_occurrence": 300,
+      "paid_batch_id_first_occurrence": 10,
+      "source_batch_id": 10
+    },
+    {
+      "coordinate_archive": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/baselines/ode_neb_all_batches_k0p1/paid_batch_coordinates/batch_0044_paid_coordinates30_A.npz",
+      "coordinate_archive_sha256": "dff2d6ba9f74df46c2e4e575e1aadd9f8ceb206f9a7cde9ebf9b55e98ab3387a",
+      "disposition_at_first_occurrence": "accepted",
+      "matched_IR_IVM_call_per_image": 50,
+      "matched_IR_IVM_optimization_N_F": 1329,
+      "new_densified_Delta_E_seen_at_selection": false,
+      "new_discrete_I_perp_seen_at_selection": false,
+      "official_path32_sha256": "bed299e3446182e72d9468d32527ec13e4823d87cc61627eb2de9219f9e4d2ae",
+      "optimization_N_F_first_occurrence": 1320,
+      "paid_batch_id_first_occurrence": 44,
+      "source_batch_id": 44
+    }
+  ],
+  "ODE_NEB_rule": "For each new IR-IVM actual optimization N_F, choose the latest first occurrence of a distinct official retained ODE--NEB current path with optimization N_F no greater than that IR-IVM N_F. Charge an identical retained path at its earliest occurrence.",
+  "bindings": {
+    "freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_cost_densification_selection.py",
+      "sha256": "fdca57787da79bcc8259a80b74f634eeb724f20f444238e9b9f04155f35c7acc"
+    },
+    "official_ODE_NEB_retained_path_ledger": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R2.json",
+      "sha256": "8b5762aad446708b4f3cf3a68b588cf7c198a88acf22f6fa3ae99b922f445d24"
+    },
+    "replay_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_LEGACY_REPLAY_NF1500_20260902_R1.json",
+      "sha256": "aa7994abec1339bf9c9ae915b9982e8134363baf8966b9bb221ca244ab5808a2"
+    },
+    "reporting_amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_REPORTING_INTERMEDIATE_STATES_AMENDMENT_20260902_R1.json",
+      "sha256": "de426ab62e1e25bc65b9f03d1b265912387268a3d46c1361d29120e4a59459e6"
+    },
+    "selected_9990_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    }
+  },
+  "created_utc": "2026-09-02T04:48:03Z",
+  "decision_timing": "after replay launch, using the replay registration's launch-time fixed call set, and before any new arc-length-500 energy or ODE--NEB diagnostic-force call",
+  "eligibility_gate": {
+    "IVM_replay_verification_required_status": "PASS_EXACT_OUTPUT_ONLY_PREFIX",
+    "IVM_required_result_and_audit_paths": "must be passed explicitly to the replay verifier; runtime cfg hash may not be guessed",
+    "exact_selected_9990_online_prefix_required": true,
+    "fully_evaluated_nonterminal_current_state_required": true
+  },
+  "execution_assignment": {
+    "Mutagen_and_result_validation_gates_may_not_be_bypassed": true,
+    "ODE_NEB_metric_host": "wuzhiyoudeMacBook-Air-206.local",
+    "all_thread_caps": 1,
+    "host_local_BB_locks_required": true,
+    "jobs": 1,
+    "one_BB_task_on_host": true
+  },
+  "execution_authorized_by_this_file": false,
+  "physical_calls_made_by_freezer": 0,
+  "planned_new_physical_calls": {
+    "IR_IVM_arc500_energy": 2000,
+    "IR_IVM_diagnostic_force": 0,
+    "IR_IVM_replay_optimization_joint_EF_expected": 1479,
+    "IR_IVM_replay_optimization_joint_EF_hard_upper_bound": 1500,
+    "ODE_NEB_arc500_energy": 2000,
+    "ODE_NEB_diagnostic_force": 120,
+    "expected_total_including_replay": 5599,
+    "hard_upper_bound_total_including_replay": 5620
+  },
+  "schema": "bb-irivm-ode-neb-cost-densification-selection-v1",
+  "scientific_protocol": {
+    "IVM_new_diagnostic_force_calls_per_path": 0,
+    "ODE_NEB_new_diagnostic_force_calls_per_path": 30,
+    "arc500_grid": "s_j=j*L/499,j=0,...,499",
+    "arc500_includes_both_endpoints": true,
+    "densified_Delta_E": "0 K forward barrier on 500 points uniformly spaced in unweighted Cartesian arc length along the same piecewise-linear path",
+    "diagnostic_calls_contribute_to_optimization_N_F": false,
+    "diagnostic_calls_reported_separately": true,
+    "diagnostic_feedback_into_optimization": "forbidden",
+    "discrete_I_perp": "unnormalized normal residual on the 32-image path",
+    "endpoint_diagnostic_force_calls_per_path": 0,
+    "fixed_endpoint_optimization_N_F": 0,
+    "rejected_ODE_NEB_trial": "does not create a new retained reporting path",
+    "same_frozen_path_for_both_metrics": true,
+    "terminal_partial_or_uncommitted_tail": "excluded"
+  },
+  "selection_is_metric_blind": true,
+  "status": "FROZEN_BEFORE_ANY_NEW_ARC500_OR_ODE_DIAGNOSTIC_FORCE_CALL"
+}

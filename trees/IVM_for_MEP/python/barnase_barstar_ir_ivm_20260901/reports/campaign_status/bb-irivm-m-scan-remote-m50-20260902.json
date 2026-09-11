@@ -1,0 +1,47 @@
+{
+  "disk_free_bytes_at_gate": 5066022912,
+  "disk_free_threshold_bytes": 2147483648,
+  "held_locks": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "jobs": 1,
+  "name": "bb-irivm-m-scan-remote-m50-20260902",
+  "pid": 21003,
+  "records": [
+    {
+      "alpha": 10.0,
+      "attempt_tag": "r1",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/run_barnase_barstar_ir_ivm_member.py",
+        "--root",
+        "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+        "--alpha",
+        "10",
+        "--residual-ratio",
+        "0.1",
+        "--inner-max-steps",
+        "50",
+        "--internal-nf-budget",
+        "480",
+        "--tier",
+        "screen",
+        "--attempt-tag",
+        "r1"
+      ],
+      "finished_unix": 1788279187.160037,
+      "index": 0,
+      "label": "bb_irivm_a1e1_r01_m50_inf480_r1",
+      "m_max": 50,
+      "r": 0.1,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/screen/ivm_bb_irivm_a1e1_r01_m50_inf480_r1_central_state_ivm_cfg689e1c5bb1a0_budget480_storagecommitted.npz",
+      "returncode": 0,
+      "started_unix": 1788278691.6420438,
+      "status": "complete"
+    }
+  ],
+  "started_unix": 1788278691.641752,
+  "status": "complete",
+  "updated_unix": 1788279187.1646779
+}

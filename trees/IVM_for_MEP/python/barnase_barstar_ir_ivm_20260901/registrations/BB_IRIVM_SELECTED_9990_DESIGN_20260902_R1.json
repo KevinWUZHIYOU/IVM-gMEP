@@ -1,0 +1,130 @@
+{
+  "algorithm_identity": {
+    "forbidden_changes": [
+      "globalization rule",
+      "reparameterization or recovery rule",
+      "eta",
+      "history length",
+      "physical maximum step",
+      "central tangent convention",
+      "Number-of-Forces definition"
+    ],
+    "migration_rule": "the frozen Chignolin IR-IVM with only the molecular system and registered alpha, r, m_max controls changed",
+    "path_storage": "reparameterization-committed states",
+    "reparameterization": "state_curve every outer iteration with per_image direct acceptance and recovery",
+    "tangent": "normalized central chord"
+  },
+  "bindings": {
+    "budget_atomicity_amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_BUDGET_ATOMICITY_AMENDMENT_20260901_R1.json",
+      "sha256": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680"
+    },
+    "campaign_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/CAMPAIGN_PREREGISTRATION.json",
+      "sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454"
+    },
+    "candidate_B_4080_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF4080_R1_VERIFICATION_20260902.json",
+      "sha256": "b020e2f67660d579094a35f7b8a2d6595e0b7668aaf87d1dda2563a613c0281b"
+    },
+    "candidate_B_arc500_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_candidate_b_long_arc500_20260902_r1.audit.json",
+      "sha256": "a2893048d8086b573c107450ad9feeb19fe3e54aec6fb288178a95560c6e66d7"
+    },
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/common_initial_path32.npz",
+      "sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf"
+    },
+    "efficient_scan_amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_EFFICIENT_CONTROLLED_SCAN_AMENDMENT_20260901_R1.json",
+      "sha256": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46"
+    },
+    "endpoint_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "long_budget_design": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_BUDGET_DESIGN_20260902_R1.json",
+      "sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629"
+    },
+    "metric_policy_amendment": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "migration_contract": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/contracts/MIGRATION_CONTRACT.json",
+      "sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc"
+    },
+    "prefix_reproducibility_criterion": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json",
+      "sha256": "a1e485cda26065ae1c91188589450053c4a25d0e7c871ee5ac9faa5dee6c6432"
+    },
+    "selection": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_LONG_BUDGET_SELECTION_20260902_R1.json",
+      "sha256": "b91e30de47727cd7f6f8c1211f53d1ae4973e2bacc4f9a3996bb97c5980aec5d"
+    },
+    "staged_search_protocol": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/STAGED_SEARCH_PROTOCOL.json",
+      "sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-01T20:37:00Z",
+  "execution": {
+    "all_thread_caps": 1,
+    "attempt_tag": "r1",
+    "diagnostic_feedback_during_optimization": "forbidden",
+    "fixed_endpoint_optimization_Number_of_Forces": 0,
+    "fresh_from_common_initial_path": true,
+    "jobs": 1,
+    "minimum_free_disk_bytes_before_child": 8589934592,
+    "one_BB_task_on_host": true,
+    "reference_host": {
+      "address": "100.74.85.3",
+      "architecture": "arm64",
+      "hostname": "Mac-mini.local",
+      "processor": "Apple M4",
+      "selection_basis": "chosen before either 4080 call because measured throughput is about twice the local Mac; both candidates run serially on this same host"
+    },
+    "tier": "production",
+    "two_host_local_fcntl_locks_required_before_child": true,
+    "warm_start_forbidden": true
+  },
+  "input_closure_sha256": {
+    "common_initial_path32.npz": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "complex_fixed.pdb": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "endpoint_joint_ef_cache.npz": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "required_post_run_gates": [
+    "zero-OpenMM long-member verification",
+    "exact 4080 eligible-prefix reproducibility against the reference-host candidate-B run",
+    "same-state discrete I_perp and uniform-arc-length-500 densified Delta E",
+    "necessary ODE-NEB comparison-path diagnostics only"
+  ],
+  "schema": "bb-irivm-selected-9990-design-v1",
+  "selected_setting": {
+    "alpha": 1.0,
+    "eta": 1.1,
+    "history": 7,
+    "m_max": 5,
+    "optimization_Number_of_Forces_upper_bound": 9990,
+    "physical_max_step_angstrom": 1.0,
+    "r": 0.1
+  },
+  "source_closure_sha256": {
+    "bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d",
+    "bb_ffprecon.py": "248f030d8f2e11ea1c5ac6d7cfd3d5fb1966c22162a33216c7d285d75d1d1df1",
+    "frozen_discrete_b040.py": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "run_barnase_barstar_ir_ivm_member.py": "ebb9d2c52d5e3a12c477c0e735797d9aff5fee5df311b8c84f87f0b39f4cfd85",
+    "run_ivm_v9_discrete_ffrbk_takeover_grid_shim.py": "b93a0156bd05cf1f1eafced5a07d608160e2f9ec440136c2ed5961a240709d2b",
+    "run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py": "75f4dc5f4d7ab6c7af13e5b8e15a0f81b41b4a937346233a20a3e20e0de160f4",
+    "run_ivm_v9_discrete_selected_eta_shim.py": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9",
+    "run_ivm_v9_spring_projected_production_20260730.py": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa",
+    "run_ivm_v9_total_internal_nf_budget.py": "71e82c4d32b07e9295b44e2af18b9b6c0e7dbad0d5cbc4a517288ce213d03e22",
+    "storage_policy.py": "30621a7fcd14400b97ff75643d8d2a9596dd9b665bd20df48fa0985ccd8cc0c2"
+  },
+  "status": "FROZEN_BEFORE_FIRST_9990_PHYSICAL_CALL"
+}

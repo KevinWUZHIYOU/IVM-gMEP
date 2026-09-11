@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_production_high_precision_central_hybrid_cfgb9454d6f3db1_budget1000.npz",
+      "method": "IVM",
+      "passed": true,
+      "failures": [],
+      "records": 1000,
+      "horizontal_axis_definition": "max joint evaluations per internal image",
+      "final_internal_min": 754,
+      "final_internal_mean": 868.85,
+      "final_internal_max": 1000,
+      "final_internal_sum": 17377,
+      "final_total_22_image_joint_evaluations": 17379,
+      "backend_raw_joint_evaluations": 17379,
+      "unchanged_saved_path_intervals_with_new_real_evaluations": 577,
+      "interpretation": "Such unchanged-path intervals prove that rejected evaluations remain in the counters rather than disappearing on rollback."
+    },
+    {
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/neb/neb_production_central_k20_alpha0p0001_ode_budget5000.npz",
+      "method": "NEB",
+      "passed": true,
+      "failures": [],
+      "records": 4584,
+      "horizontal_axis_definition": "max joint evaluations per internal image",
+      "final_internal_min": 5000,
+      "final_internal_mean": 5000.0,
+      "final_internal_max": 5000,
+      "final_internal_sum": 100000,
+      "final_total_22_image_joint_evaluations": 100002,
+      "backend_raw_joint_evaluations": 100002,
+      "unchanged_saved_path_intervals_with_new_real_evaluations": 0,
+      "interpretation": "Such unchanged-path intervals prove that rejected evaluations remain in the counters rather than disappearing on rollback."
+    }
+  ]
+}

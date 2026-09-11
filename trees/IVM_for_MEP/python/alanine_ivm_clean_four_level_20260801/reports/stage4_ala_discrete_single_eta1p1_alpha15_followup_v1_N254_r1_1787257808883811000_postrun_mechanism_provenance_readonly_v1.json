@@ -1,0 +1,260 @@
+{
+  "status": "passed",
+  "audit_id": "stage4_ala_discrete_single_eta1p1_alpha15_postrun_mechanism_provenance_readonly_v1",
+  "created_unix": 1787258223.270151,
+  "read_only_postrun_audit": true,
+  "formal_report": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000.json",
+  "formal_report_sha256": "fa0bf64922d91d15a48b0b6b6949d8ddb3ff109661ff011b351f8f9caee79212",
+  "preregistration_sha256": "dbffae0850f39128c313f2819c28b7679d5e80ef0a6f9fe59246dc43a176df1d",
+  "provenance": {
+    "immutable_artifacts": {
+      "formal_report": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000.json",
+        "sha256": "fa0bf64922d91d15a48b0b6b6949d8ddb3ff109661ff011b351f8f9caee79212"
+      },
+      "preregistration": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_N254_r1_1787257808883811000_preregistered.json",
+        "sha256": "dbffae0850f39128c313f2819c28b7679d5e80ef0a6f9fe59246dc43a176df1d"
+      },
+      "result": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/ivm_stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg02c3f3990307_budget254.npz",
+        "sha256": "bb189235868d63be23d335c0766db59e0315b82fd11448077a492966ce5eaa55"
+      },
+      "member_audit": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/audits/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1.json",
+        "sha256": "058d591e5fccc4a0e7a4dee0854c4f372b7b2648d2673dd25a9bd58363eed91a"
+      },
+      "runner_companion_audit": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/ivm_stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg02c3f3990307_budget254.audit.json",
+        "sha256": "c6bf4bd4dcf8df9bb909780ebed631a5b72e726f9a168bfc0036223b62aed498"
+      },
+      "member_command": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1/command.json",
+        "sha256": "a3f622b4be15b64574479d5832bd76fc2a0de8fb3e2032ef4103e776129fb61f"
+      },
+      "launcher_command": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/launcher/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1/command.json",
+        "sha256": "3b9574d6cb86054b1ec3909d53ebaeb7126a829a8303aef77057eaa96418a948"
+      }
+    },
+    "registered_run_sources": {
+      "ala_core": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/ala_core.py",
+        "sha256": "e3d9b2d472d8b9d7e0e03289dcf6a87bdff10cb8fc296bdfda911798799377bd"
+      },
+      "alpha15_refinement_wrapper": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_alpha_refinement.py",
+        "sha256": "a1504d634e9e5984363b64ac23a4df8a606de007785074feab916fad86e8bf62"
+      },
+      "coarse_wrapper_alias": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_fixedalpha.py",
+        "sha256": "dd4035a6ce95a090adaffb574c806f9aba4f87f7d16744714dc564bf86134ed6"
+      },
+      "coarse_wrapper_implementation": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_dsel_single_fixedalpha.py",
+        "sha256": "241e90d44f64d137f63de7451c60d506307b911473c1112caf94f5701f81f845"
+      },
+      "eta_runtime_shim": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_discrete_selected_eta_shim.py",
+        "sha256": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9"
+      },
+      "followup_grid": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup_grid.py",
+        "sha256": "0c56283c67559abf0fcf898d44faefa8e51b82481f4bc833ecf3a3d2b05b4ab6"
+      },
+      "followup_member": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_ala_discrete_single_eta1p1_alpha15_followup.py",
+        "sha256": "0587bb2dd438a402293ee73a2be060a6e54d82b06add6f519d19df914a780c1a"
+      },
+      "followup_tests": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/tests/test_stage4_ala_discrete_single_eta1p1_alpha15_followup.py",
+        "sha256": "3bbd8ea822a4d3af80b455b9c7856ade7b5db42206442d53784b8aec73e52d1f"
+      },
+      "frozen_discrete_b040": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/frozen_discrete_b040.py",
+        "sha256": "8384a84666af463991df2e8d8a344779ae675feaddc73c12bcc82ff6ba324e22"
+      },
+      "legacy_command_helper": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_stage4_uniform_optimized.py",
+        "sha256": "990be5520093af674bc44061c0c38af9169a1e207f06c33f7bea9d53ac2d7e02"
+      },
+      "production_runner": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/src/run_ivm_v9_spring_projected_production_20260730.py",
+        "sha256": "9abd6e96bb9e6cead380a28c849fd11c15c5fe9a8854d77fe41a991240b0510f"
+      }
+    },
+    "registered_decision_inputs": {
+      "alpha15_refinement_ctp_snapshot": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_single_alpha_refinement_matched_v1_N254_r1_1787252714040428000_iperp_ctp_readonly_v1_1787253163640931000.json",
+        "sha256": "8ff9d9824eb2d3719d28f73f33b92b62e115ff9f7449bf60be054298d7ba5212"
+      },
+      "official_stage4_v4": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/pareto_archive/pareto_clean_stage4_v4_a20_phaseA34_phaseB220.npz",
+        "sha256": "09ccbf7db731c96c0beda9d5879c9dd46cae2b428db8b71820aad1c56cb574fc"
+      },
+      "same_alpha_eta_one_candidate_audit": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1.json",
+        "sha256": "65ce120aaf470cfd95ac3ab46e1cc50ceecb76afff4e6c484216f1986e77165c"
+      },
+      "same_alpha_eta_one_candidate_command": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1/command.json",
+        "sha256": "9bf0458e6d0f898ddaf76eaa9758531887c677853b4ce32b4bf98c3ea46125c8"
+      },
+      "same_alpha_eta_one_candidate_result": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg661f507a1380_budget254.npz",
+        "sha256": "28bf7a5894337e2fc26178cc9dc9ead86f421c50972f9faf15aef34ce1830d90"
+      },
+      "same_alpha_legacy_audit": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/audits/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1.json",
+        "sha256": "fb26c9fcb09ba1fbff7058c367965c694a573ecd5ed6110ce81366cbdef3fe83"
+      },
+      "same_alpha_legacy_command": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/logs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1/command.json",
+        "sha256": "9842cbe8e47971a49e4b90203192d59d45245b19baadf06e28b36ef049d4db16"
+      },
+      "same_alpha_legacy_result": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1/members/ivm_stage4_ala_discrete_single_fixedalpha_alpha_refinement_v1_legacy_stop_a15_N254_legacy_r1_central_state_ivm_cfg75672fcfca59_budget254.npz",
+        "sha256": "2ffa7aeb8122cbf4cdfecf9d4a372da8774c6485ec82f9b6693c3047c2d247dc"
+      }
+    },
+    "run_source_count": 11,
+    "decision_input_count": 8,
+    "scientific_command_sha256": "6e01b50f8e13a627a7b9f72f6b1e6e8f8ec8f9aa3ddf605eebe950720a946b8c",
+    "configuration_sha256": "02c3f3990307b894013cd41e97182d0045314466b500159cd059f93a42578a18",
+    "formal_result_row": {
+      "eta": 1.1,
+      "alpha": 15.0,
+      "returncode": 0,
+      "final_optimization_NF": 3313,
+      "h0_selection_count": 25,
+      "lbfgs_selection_count": 45,
+      "eta_cap_hit_count": 0
+    },
+    "formal_preregistration_clone_verified": true,
+    "all_registered_source_hashes_verified": true,
+    "all_registered_decision_input_hashes_verified": true,
+    "all_artifact_cross_links_verified": true
+  },
+  "mechanism_recomputation": {
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_single_eta1p1_alpha15_followup_v1/members/ivm_stage4_ala_discrete_single_eta1p1_alpha15_followup_v1_eta1p1_r08c10_a15_N254_discrete_b040_r1_central_state_ivm_cfg02c3f3990307_budget254.npz",
+    "configuration_sha256": "02c3f3990307b894013cd41e97182d0045314466b500159cd059f93a42578a18",
+    "eta": 1.1,
+    "alpha": 15.0,
+    "trajectory_record_count": 254,
+    "joint_selected_step_count": 70,
+    "h0_selection_count": 25,
+    "lbfgs_selection_count": 45,
+    "selector_tie_count": 23,
+    "cap_hit_count": 0,
+    "base_max_atomic_displacement_min": 0.002709264821514003,
+    "base_max_atomic_displacement_max": 0.255534843516785,
+    "dynamic_cap_min": 0.28860868916659954,
+    "dynamic_cap_max": 0.4195306967003724,
+    "applied_multiplier_min": 1.099999999999999,
+    "applied_multiplier_max": 1.100000000000001,
+    "evaluated_step_count_min": 1,
+    "evaluated_step_count_max": 7,
+    "residual_stop_count": 22,
+    "budget_interrupted_inner_stop_count": 1,
+    "final_optimization_NF": 3313,
+    "subproblem_line_search_backtrack_count": 0,
+    "shim_extra_physical_evaluations": 0,
+    "selector_winner_mismatch_count": 0,
+    "eta_selection_label_mismatch_count": 0,
+    "recorded_h0_count_mismatch_count": 0,
+    "recorded_lbfgs_count_mismatch_count": 0,
+    "requested_multiplier_mismatch_count": 0,
+    "base_exceeds_dynamic_cap_count": 0,
+    "requested_eta_times_base_mismatch_count": 0,
+    "applied_below_base_count": 0,
+    "applied_min_eta_base_dynamic_cap_mismatch_count": 0,
+    "applied_multiplier_mismatch_count": 0,
+    "cap_hit_mismatch_count": 0,
+    "energy_force_request_identity_mismatch_count": 0,
+    "request_counter_cache_identity_mismatch_count": 0,
+    "internal_nf_sum_mismatch_count": 0,
+    "nonincreasing_total_nf_count": 0,
+    "alpha_exactly_15_throughout": true,
+    "fixed_r08_k10_m7_verified": true,
+    "max_evaluated_steps_strictly_greater_than_3": true,
+    "existing_ala_state_curve_per_image_reparameterization_verified": true,
+    "spline_reparameterization_used": false,
+    "energy_or_objective_fallback_used": false,
+    "barrier_field_names_seen_by_name_not_indexed": [
+      "barrier_kcal",
+      "barrier_metric_for_figures",
+      "optimization_barrier_is_sparse"
+    ],
+    "barrier_metric_values_accessed": false,
+    "mechanism_fields_accessed": [
+      "active_alpha",
+      "alpha",
+      "alpha_action",
+      "alpha_mode",
+      "budget",
+      "cache_hit_vectors",
+      "configuration_sha256",
+      "counter_vectors",
+      "discrete_audit_global_relative_residual",
+      "discrete_audit_h0_capped_predicted_decrease",
+      "discrete_audit_history_count",
+      "discrete_audit_lbfgs_capped_predicted_decrease",
+      "discrete_audit_outer",
+      "discrete_audit_selection",
+      "discrete_audit_step",
+      "discrete_audit_stop_reason",
+      "discrete_h0_selection_count",
+      "discrete_history",
+      "discrete_inner_max_steps",
+      "discrete_lbfgs_selection_count",
+      "discrete_residual_ratio",
+      "discrete_step_multiplier_aborted_selection_count",
+      "discrete_step_multiplier_audit_applied",
+      "discrete_step_multiplier_audit_applied_max_atomic_displacement",
+      "discrete_step_multiplier_audit_base_max_atomic_displacement",
+      "discrete_step_multiplier_audit_cap_hit",
+      "discrete_step_multiplier_audit_dynamic_max_step",
+      "discrete_step_multiplier_audit_requested",
+      "discrete_step_multiplier_audit_requested_max_atomic_displacement",
+      "discrete_step_multiplier_audit_selection",
+      "discrete_step_multiplier_dynamic_cap_reapplied",
+      "discrete_step_multiplier_energy_backtracking",
+      "discrete_step_multiplier_eta",
+      "discrete_step_multiplier_extra_physical_evaluations",
+      "discrete_step_multiplier_selector_isolated",
+      "discrete_step_multiplier_uncommitted_selection_count",
+      "discrete_stop_mode",
+      "energy_request_vectors",
+      "force_request_vectors",
+      "frozen_subproblem",
+      "geometric_reparam_joint_evaluations",
+      "initial_path_sha256",
+      "reparam_mode",
+      "state_curve_direct_objective_acceptance",
+      "state_curve_projection_uses_spline",
+      "stored_path_calls",
+      "subproblem_line_search_backtracks",
+      "total_internal_joint_evaluations"
+    ]
+  },
+  "physical_evaluation_accounting": {
+    "runner_accounting_consistent": true,
+    "backend_raw_joint_evaluations": 3315,
+    "sum_image_joint_evaluations": 3315,
+    "per_image_budget_blocked_miss_count": 0,
+    "all_request_and_query_identities_verified": true,
+    "member_summary_cross_checked": true
+  },
+  "original_h0_lbfgs_selector_recomputed_before_eta": true,
+  "post_selection_recap_recomputed_as_min_1p1_base_dynamic_cap": true,
+  "base_step_never_exceeded_dynamic_cap": true,
+  "applied_step_never_below_base": true,
+  "fixed_alpha_15_throughout": true,
+  "fixed_r08_k10_m7_throughout": true,
+  "energy_or_objective_fallback_used": false,
+  "extra_physical_evaluations_from_eta_shim": 0,
+  "subproblem_line_search_backtrack_count": 0,
+  "barrier_npz_members_indexed": [],
+  "barrier_metric_values_accessed": false,
+  "barrier_computation_or_ranking_performed": false
+}

@@ -1,0 +1,359 @@
+{
+  "requested_total_force_budgets": [
+    2000,
+    3000,
+    6000,
+    10000
+  ],
+  "checkpoint_selection": "latest exact archived trajectory record with counter_vectors.sum(axis=1) <= budget",
+  "budget_semantics": "Every curve is N_F <= budget. If an optimization ended before the requested budget, its final archived state is retained and the smaller attained N_F is reported explicitly.",
+  "diagnostic_calls_excluded_from_optimization_axis": true,
+  "total_diagnostic_joint_evaluations": 52891,
+  "records": [
+    {
+      "alpha": 0.1,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a0p1_central_state_ivm_cfgdce1851e326b_budget600.npz",
+      "source_result_sha256": "8fab65d54f08eb0d2bc660dee9e8121b76b491f1c96a08c8c021e569d3ddb211",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p1.npz",
+      "result_sha256": "cb8445cacd582a21e624646de985f861cf337e815265009d3c4f13faeaedd024",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p1.audit.json",
+      "audit_sha256": "ffa843f31e3599f0c7ec920c88206c3e70a5e41467cc5009e7ea780444119c22",
+      "attained_total_force": [
+        997,
+        2998,
+        3123,
+        3123
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "diagnostic_joint_evaluations": 2247
+    },
+    {
+      "alpha": 0.2,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a0p2_central_state_ivm_cfg329bfca53eac_budget600.npz",
+      "source_result_sha256": "7a401dd36dd7a674266a42f8885df055e397b1ba3e592ec29adff308a0a090ff",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p2.npz",
+      "result_sha256": "60a946dd4a56fb261c80cffc925ee56cf1c9b2e7cb4d11664e4c796dfd498671",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p2.audit.json",
+      "audit_sha256": "d9cf7e9cc088e165ea6d0e0eb7c359b59e468a8aa48127ef11072c89c6609a62",
+      "attained_total_force": [
+        1998,
+        2999,
+        4894,
+        4894
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "diagnostic_joint_evaluations": 4531
+    },
+    {
+      "alpha": 0.3,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a0p3_central_state_ivm_cfg343f0befae91_budget600.npz",
+      "source_result_sha256": "117b0fbf89c73c281369f27d8619fad983eaf525a6e275d4986e61d5982df9f0",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p3.npz",
+      "result_sha256": "54baf412c112c83d2a6bf81623d24b7dbc42dd8f251ff61afffb715600fd6889",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p3.audit.json",
+      "audit_sha256": "3219dcc6899d989ddbc09b02f6fd747333fbfb2e02539ca0dd91d6ed976eaacf",
+      "attained_total_force": [
+        688,
+        2998,
+        4774,
+        4774
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "diagnostic_joint_evaluations": 4086
+    },
+    {
+      "alpha": 0.5,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a0p5_central_state_ivm_cfg8abd14ea2dd1_budget600.npz",
+      "source_result_sha256": "ce8611d8f17cf14c0dd5e8bb671ef64d9c92250a9fe7b1117a2d56ab42517640",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p5.npz",
+      "result_sha256": "bdec24c55c00ba2bae63f56528a0321c0da89f0b5bad274857b52faa66002c83",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p5.audit.json",
+      "audit_sha256": "d6d365037d8c808e61471c0f29ab64e05943083e81e5a3e45c2042fd4fcc84b2",
+      "attained_total_force": [
+        1995,
+        2996,
+        5999,
+        6569
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "diagnostic_joint_evaluations": 3157
+    },
+    {
+      "alpha": 0.7,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a0p7_central_state_ivm_cfgc6536ce0d444_budget600.npz",
+      "source_result_sha256": "1f6b299b6283b65e2562812fb602d75060d768b62c862e0f40cc0ad0120f389e",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p7.npz",
+      "result_sha256": "82196eacad780e3ba2e7dd9846d6013752986d4722e96003b30853a546539390",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a0p7.audit.json",
+      "audit_sha256": "fefbf8a57a049f4bc235f484d76e202a31ebda0db16d181631f2acbd002077f8",
+      "attained_total_force": [
+        1997,
+        2999,
+        5499,
+        5499
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "diagnostic_joint_evaluations": 3676
+    },
+    {
+      "alpha": 1.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_long_representative_a1_central_state_ivm_cfg0ea6d3039811_budget1000.npz",
+      "source_result_sha256": "4e061f4c88766d6a618e7a1d8e8ebf8158520c4e4cb05abf7e068e11722e9d43",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1.npz",
+      "result_sha256": "4f0d17e245573c0554e3ee2f285c2f76e1ff1407e28950f9464b5dd3a1dd0f06",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1.audit.json",
+      "audit_sha256": "4e2cca207060e11003dd33180289885e93187723636959f65fa3f1acfbc0a19b",
+      "attained_total_force": [
+        2000,
+        2988,
+        5989,
+        9997
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 4123
+    },
+    {
+      "alpha": 1.5,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a1p5_central_state_ivm_cfg057215c2c4dc_budget600.npz",
+      "source_result_sha256": "5f4deffd5129fce38eb33ee7943c80b3261b91abd2997585444a1ffa1b77dd0c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1p5.npz",
+      "result_sha256": "c2cd70cc243ef7f4b644dc38a812e55f6f6251923e61bee8528021222387550d",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1p5.audit.json",
+      "audit_sha256": "25f0f09ccefa9ef1550531ca7dbbd1b26ab2a6ed7b69cb87ac501af254fccac1",
+      "attained_total_force": [
+        1994,
+        2999,
+        5990,
+        8460
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "diagnostic_joint_evaluations": 3251
+    },
+    {
+      "alpha": 2.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a2_central_state_ivm_cfg53b32908a739_budget600.npz",
+      "source_result_sha256": "b795d69ea4c16f5d8c2ef5413f2af66344e9bf00a7c6ffe26a32dd678546e801",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a2.npz",
+      "result_sha256": "a80bd04ccbe195e4386f5ad662c39d24b288885a5944fb1396e1034dd3d89c29",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a2.audit.json",
+      "audit_sha256": "81095ddc02cc2b2657c28d3e0d1596b0093c522fbf8028fe121530c29197242a",
+      "attained_total_force": [
+        1998,
+        2996,
+        5995,
+        8280
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "diagnostic_joint_evaluations": 2447
+    },
+    {
+      "alpha": 3.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a3_central_state_ivm_cfgcfb8215817cf_budget600.npz",
+      "source_result_sha256": "31d2acd33a01631e0dee5c9057a92358c53bfcbcb27e550e2d83cd5655136689",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a3.npz",
+      "result_sha256": "73d61edf28085cb0496e4da0fe3fc6457a5031f281997ff96715ade0e791c16b",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a3.audit.json",
+      "audit_sha256": "d66e4aef9d129b23964c1a92adaf0159a35ab5baf93ebd0a56f648e82b5c9258",
+      "attained_total_force": [
+        1993,
+        2985,
+        5991,
+        9992
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "diagnostic_joint_evaluations": 2729
+    },
+    {
+      "alpha": 5.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a5_central_state_ivm_cfg033c34d720cd_budget600.npz",
+      "source_result_sha256": "69572b981149220760c1f969fa036bcf966a7b301678bfe862af4ddfbcef9398",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a5.npz",
+      "result_sha256": "abbd8b524b13ff93da2e60b9aeddb7924ae28fb59ab1b4a2ef5a4dfd8f17c1b5",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a5.audit.json",
+      "audit_sha256": "c9f1a2efdd77532de124c90cbe11cfae111a0d9b9629fe52dcb060d5239e9301",
+      "attained_total_force": [
+        2000,
+        2996,
+        5989,
+        9987
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2049
+    },
+    {
+      "alpha": 7.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a7_central_state_ivm_cfg0231b1df0876_budget600.npz",
+      "source_result_sha256": "dcd18fa7754e4ef6baaee8c913344e129d331aa8fd4e90a3a98856b253e0e56e",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a7.npz",
+      "result_sha256": "d25c7a567118ca38a78d3e6fac9870bc36ce093d31bf4ec05a0d405a73850032",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a7.audit.json",
+      "audit_sha256": "d44d3de56386900d5f978be5887b08d1c59382311124cdcbcd6751119118c08a",
+      "attained_total_force": [
+        1989,
+        2992,
+        5999,
+        9991
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2554
+    },
+    {
+      "alpha": 10.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_long_representative_a10_central_state_ivm_cfg0e4704a643b2_budget1000.npz",
+      "source_result_sha256": "0a79710fd6aa6814d2c5e51fe782892a9d66337e0bad93baee7dd44d92e1d75c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a10.npz",
+      "result_sha256": "21b587a5d7799f64f14fc7e5066a26b726b9d5d33ac1a0051301d556dbd94d40",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a10.audit.json",
+      "audit_sha256": "d6f170b1f6ae5c60984a6c82f32d3460dd88c94e98bac46533307948ece3ca99",
+      "attained_total_force": [
+        1982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2097
+    },
+    {
+      "alpha": 15.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a15_central_state_ivm_cfgb723b685deca_budget600.npz",
+      "source_result_sha256": "6fb65b9fa52c85eb65b5733c09a9c2e5606a3d54a13c2a2287ec2ce925f869be",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a15.npz",
+      "result_sha256": "a8d26fe17d5076cd4c684c0e190826cbfce7d68dd4bf3b9f4ce8366d980da8ab",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a15.audit.json",
+      "audit_sha256": "98b409ddb7c2ebafaebbd05ff40159aea280cb60a05d2169cca71bcf97ea897b",
+      "attained_total_force": [
+        1993,
+        2993,
+        5993,
+        9993
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2254
+    },
+    {
+      "alpha": 20.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a20_central_state_ivm_cfg339e9a556111_budget600.npz",
+      "source_result_sha256": "2aba1d2cc91133cf690eeb6c04d9f93a429b79b0857dc21b03f0c657aaa70b4c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a20.npz",
+      "result_sha256": "0ca79ed58865fcf033b5ec8a322658203ec8d77cd4a257859fce742585b6b7bc",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a20.audit.json",
+      "audit_sha256": "34b03437782705b2e2cf9a4fe4e4b0c12f788c6db1730a09b1b4a5c66841c3e9",
+      "attained_total_force": [
+        1983,
+        2983,
+        5983,
+        9983
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2098
+    },
+    {
+      "alpha": 30.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a30_central_state_ivm_cfg6310fd32cd54_budget600.npz",
+      "source_result_sha256": "5873ec435945273fd5ad5300143ef403cc6205d779419d66664f62a16b212a36",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a30.npz",
+      "result_sha256": "7dc4e0ed76f896a8071dbdad9bb5697246910346e33523d744df5fdc3357c6de",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a30.audit.json",
+      "audit_sha256": "9c233f17fa58459ee742e1a2549eb81c9498ffafd597c482959019e278cb15be",
+      "attained_total_force": [
+        1992,
+        2992,
+        5981,
+        10000
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2119
+    },
+    {
+      "alpha": 50.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a50_central_state_ivm_cfg0ed6299f21fb_budget600.npz",
+      "source_result_sha256": "03f8de94ff1ad425bd2a240218332c763efc5c30f5e02238083a693ad530b51f",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a50.npz",
+      "result_sha256": "2083dd2bc0303f887e69422f8121186b6367c61c0a43c2f83507a2c3c6332ac5",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a50.audit.json",
+      "audit_sha256": "461495033096cdc3583c16e0f0a3d6f767fa964f78fd5e464badbd42f9b3c730",
+      "attained_total_force": [
+        1990,
+        2990,
+        5990,
+        9990
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 840
+    },
+    {
+      "alpha": 100.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a100_central_state_ivm_cfg3567e6130c80_budget600.npz",
+      "source_result_sha256": "3e50f451452127469d6707c83a15dcf3a66178da0e91108a556e9dc4a7e055c0",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a100.npz",
+      "result_sha256": "d814d57f5533575d4bddc9064fbfd25ad06cabaa5a1156c5b285c1353ebb97e4",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a100.audit.json",
+      "audit_sha256": "6cc27d13954f335eac5e4a3d10315946b72d7db39b8c7467ae361bd2af2cdff9",
+      "attained_total_force": [
+        1996,
+        2991,
+        5992,
+        9452
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "diagnostic_joint_evaluations": 1424
+    },
+    {
+      "alpha": 300.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_alpha_grid_a300_central_state_ivm_cfg0ebd4a65285e_budget600.npz",
+      "source_result_sha256": "f287dc1c7037afbf6166fa85e6670310964aa55a909464a0c0a5a4a140a5a5bc",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a300.npz",
+      "result_sha256": "1fa60abc3af4b50e774af4052ee66e1bd65cfe05b1fd9cf974c283603c5779b9",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a300.audit.json",
+      "audit_sha256": "75c96aff1e358d9e4f31089279c42b0827c3c62f5db5799ae69ed28767d1efe1",
+      "attained_total_force": [
+        1990,
+        2997,
+        5992,
+        9990
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 2767
+    },
+    {
+      "alpha": 1000.0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_nearexact_kkt_long_representative_a1000_central_state_ivm_cfgc2dc04332785_budget1000.npz",
+      "source_result_sha256": "75303de25a4da755936f97f79ce2a0744cc1ebddd709323408333196f893ee4e",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1000.npz",
+      "result_sha256": "558b026fb7106e44e125187d100715fe5b83d0e4abc5ff7e5025a204708eaa70",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_nearexact_alpha_well_a1000.audit.json",
+      "audit_sha256": "f1d1578f4e0951f618e9bed4d109ed870bcecb1f4fbbb970587086ebe1b1cb80",
+      "attained_total_force": [
+        1984,
+        2989,
+        6000,
+        9999
+      ],
+      "budget_not_reached": [],
+      "diagnostic_joint_evaluations": 4442
+    }
+  ]
+}

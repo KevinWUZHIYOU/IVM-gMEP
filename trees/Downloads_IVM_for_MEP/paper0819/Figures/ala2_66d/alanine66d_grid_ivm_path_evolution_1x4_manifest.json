@@ -1,0 +1,201 @@
+{
+  "status": "registered_and_cited_in_paper0819",
+  "purpose": "Ramachandran projection of the same selected IVM and ODE--NEB experiments as manuscript Fig. 6",
+  "selected_cell_id": "a736dd230285d61c",
+  "selected_ivm_controls": {
+    "alpha": 10.0,
+    "residual_ratio": 0.7,
+    "inner_max_steps": 5,
+    "total_internal_nf_budget": 5000
+  },
+  "selected_ivm_result": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_ala_discrete_inexact_reparam_grid_v1/members/ivm_stage4_ala_discrete_inexact_reparam_grid_v1_a1e1_rr70_c05_tnf5000_r1_central_state_ivm_cfgc3a418a9c878_budget5000.npz",
+    "sha256": "0da1bbab469de81ca5b9229c4ebef656b7688ccb79c822ec14f0f4c92226d161"
+  },
+  "panel_policy": {
+    "initial": "selected IVM IDPP path before charged optimization evaluations",
+    "milestones": [
+      "latest saved paths at or before N_F=100",
+      "latest saved paths at or before N_F=1000",
+      "final reported paths: last formal complete mesh-eligible IVM state and terminal saved ODE--NEB path"
+    ],
+    "intermediate_selection": "latest saved path of each method at or before the displayed common force budget",
+    "panels": [
+      {
+        "panel": "a",
+        "title": "$N_F=0$",
+        "budget_NF": 0,
+        "entries": [
+          {
+            "method": "Initial (IDPP)",
+            "actual_NF": 0,
+            "source_record_index": null,
+            "source_call": 0,
+            "selected_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+            "formal_complete": true,
+            "mesh_eligible": true
+          }
+        ]
+      },
+      {
+        "panel": "b",
+        "title": "$N_F\\leq 100$",
+        "budget_NF": 100,
+        "entries": [
+          {
+            "method": "ODE-NEB",
+            "actual_NF": 82,
+            "source_record_index": 2,
+            "source_call": 4,
+            "selected_path_sha256": "6f394c9690c42c4f7a0c87de8737b836aedac2ab4481230afd17de15d547a0fe",
+            "formal_complete": true,
+            "mesh_eligible": null
+          },
+          {
+            "method": "IVM",
+            "actual_NF": 100,
+            "source_record_index": 4,
+            "source_call": 5,
+            "selected_path_sha256": "1205bcd469d3c155d6ffbc4556177bbee7a90702fe6c5445f6b39262546a3756",
+            "formal_complete": false,
+            "mesh_eligible": true
+          }
+        ]
+      },
+      {
+        "panel": "c",
+        "title": "$N_F\\leq 1,000$",
+        "budget_NF": 1000,
+        "entries": [
+          {
+            "method": "ODE-NEB",
+            "actual_NF": 982,
+            "source_record_index": 41,
+            "source_call": 49,
+            "selected_path_sha256": "0415be9b98b9e38dca8837d5c307e92f4fb1d8f4035d1226c9f765e615ebeb21",
+            "formal_complete": true,
+            "mesh_eligible": null
+          },
+          {
+            "method": "IVM",
+            "actual_NF": 993,
+            "source_record_index": 52,
+            "source_call": 53,
+            "selected_path_sha256": "1e33327d9c3ed467e5b0d3c6e1a2860f9f4b09dc464fc6f36fab48cfe3484836",
+            "formal_complete": false,
+            "mesh_eligible": false
+          }
+        ]
+      },
+      {
+        "panel": "d",
+        "title": "Final paths",
+        "budget_NF": "final",
+        "entries": [
+          {
+            "method": "ODE-NEB",
+            "actual_NF": 100022,
+            "source_record_index": 4637,
+            "source_call": 5001,
+            "selected_path_sha256": "c3e43a1ecb1728e5262ce885a4c8a039f9843c0876a4281dc5f7ebc88c661178",
+            "formal_complete": true,
+            "mesh_eligible": null
+          },
+          {
+            "method": "IVM",
+            "actual_NF": 3587,
+            "source_record_index": 235,
+            "source_call": 236,
+            "selected_path_sha256": "b9517af023413fe127f151d2c92b24ac1df4e2fd8c02ecf7d52c7f7e6cea750a",
+            "formal_complete": true,
+            "mesh_eligible": true
+          }
+        ]
+      }
+    ]
+  },
+  "style": {
+    "background": "plasma, unchanged from the superseded manuscript Fig. 5",
+    "ivm": {
+      "color": "#0072B2",
+      "linestyle": "-",
+      "linewidth": 1.85,
+      "marker": "o",
+      "markersize": 3.1,
+      "zorder": 5
+    },
+    "ode_neb": {
+      "color": "#D55E00",
+      "linestyle": "--",
+      "linewidth": 1.65,
+      "marker": "s",
+      "markersize": 2.9,
+      "zorder": 4
+    },
+    "initial": {
+      "color": "#888888",
+      "linestyle": "--",
+      "linewidth": 1.6,
+      "marker": "D",
+      "markersize": 2.9,
+      "zorder": 3
+    },
+    "marker_facecolor": "white",
+    "marker_edgewidth": 0.4,
+    "markevery": 1,
+    "special_endpoint_or_minimum_markers": "none"
+  },
+  "projection": {
+    "source": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/src/plot_v49_formal_ala_1x3.py",
+    "source_sha256": "4af8feee0843206f17fc6f4b1b19eb52743719a4f553821a8a041ac9d06626dd",
+    "phi_atom_indices": [
+      4,
+      6,
+      8,
+      14
+    ],
+    "psi_atom_indices": [
+      6,
+      8,
+      14,
+      16
+    ],
+    "wrap_degrees": "[-180, 180)"
+  },
+  "inputs": {
+    "grid_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/stage4_ala_discrete_grid_metric_campaign_v2_1787608620070816000_preregistered.json",
+      "sha256": "5fcfad3228e72c267ea1d768dd6f677528ae1fc8e8c6f180ea0d3498503b98a3"
+    },
+    "common_initial": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/inputs/common_initial_path_equidistant.npz",
+      "sha256": "4a08066e1f0a89ad1d0ee6ecc442d7255d511217576d1ff65e9cb5e2164d891b"
+    },
+    "ode_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/formal_figure_inputs/ala_0to1_N22_k50_alpha0.0001_ode_results.npz",
+      "sha256": "935561709ecbdfe87af31b78b45335a66545356b3e62f331a4a9fbb8125d9a09"
+    },
+    "ramachandran_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_v10_chignolin_v9_fixed_alpha_20260730/formal_figure_inputs/ala2_scan_cache.pkl",
+      "sha256": "1eab9d20f7767a264b5164dadb8b2b5dd6f759b3de37dabef217933375a5ce9d"
+    },
+    "figure6_manifest": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_ivm_geometric_action_1x3_manifest.json",
+      "sha256": "61f9e08bf0ac1550b073082992333383aea53f3798e46ae6e20c4c6cd6fac7be"
+    },
+    "plotter": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/plotting/plot_ala_grid_ivm_path_evolution_1x4.py",
+      "sha256": "b5252cd9ce40a8ec23ae9add9dcc8e9cdeb5e75ba6feed26950c16ea77808313"
+    }
+  },
+  "outputs": {
+    "pdf": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_grid_ivm_path_evolution_1x4.pdf",
+      "sha256": "4175ba9eefd53905ec7ad81b6c85ced6e30d8c5cf2d1240cb4a48aafc2c5d3eb"
+    },
+    "source_csv": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_grid_ivm_path_evolution_1x4_source.csv",
+      "sha256": "f5b11fcf686cdeef60cae70124aa2ca375b05f3660df7575db11bf59063c9c95"
+    }
+  }
+}

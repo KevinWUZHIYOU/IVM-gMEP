@@ -1,0 +1,77 @@
+{
+  "analysis_source_sha256": "ec4a809fc9887cb4edaad396e0659da57e83c329a76b1eb644a22c6300d5351b",
+  "barrier_reference_kcal_per_mol": 1.1433272313575527,
+  "candidate": {
+    "alpha": 0.00013,
+    "m_max": 4,
+    "r": 0.5
+  },
+  "curve_semantics": "IR-IVM is the pointwise median across sealed seeds 41, 42, and 43; all methods share the incremental mean-force-evaluation checkpoints",
+  "early_20_to_300": {
+    "checkpoint_count": 15,
+    "mean_I_perp_G": {
+      "current_ivm": 49.96338614250392,
+      "feneb_lambda_0p02": 130.0262919789151,
+      "ir_ivm_r1_three_repeat_pointwise_median": 30.396692676104458
+    },
+    "median_I_perp_G": {
+      "current_ivm": 28.65334445016297,
+      "feneb_lambda_0p02": 133.5281290412812,
+      "ir_ivm_r1_three_repeat_pointwise_median": 8.757283031369935
+    },
+    "start_incremental_mean_force_evaluations": 20,
+    "stop_incremental_mean_force_evaluations": 300
+  },
+  "formal_evidence": false,
+  "input_sha256": {
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/ala2_2d_FreeEnergy/MFEP_IVM_vs_FENEB_bestpair_threepanel.pdf": "ed57a7089730e760862ac435545d7e9fc8534601ee8c9008635b1a16d54b9932",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/ala2d_mfep_irivm_20260905_r1/analysis/plot_failed_precheck_formal_layout.py": "bb043ecee263368744e35e837763ba92610f1bdde2f025e6b7ae2318ab0a618b",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/ala2d_mfep_irivm_20260905_r1/inputs/reference/current_ivm.npz": "b9cabc5119eaae01a2d1d6556b43219e7f34ae831f05bdbfec9a22787e145d24",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/ala2d_mfep_irivm_20260905_r1/inputs/reference/feneb_lambda0p02.npz": "53f840618fcc194e1e3b288f9a8936020b4bac05990387068196601e2563fc49",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/ala2d_mfep_irivm_20260905_r1/registrations/CAMPAIGN_PREREGISTRATION.json": "15c2608eb9268945a5bbc6a2364caa7ad25dbbc0cd98128a090ed91f0e3b9a7f",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/ala2d_mfep_irivm_20260905_r1/reports/acceptance_precheck.json": "ca13e61456196355c20e6986b0057ff7b37e1f831649b9313b80ea2219a5f7d2"
+  },
+  "late_1000_to_2000": {
+    "checkpoint_count": 51,
+    "mean_I_perp_G": {
+      "current_ivm": 0.895078562480636,
+      "feneb_lambda_0p02": 1.3376505287249085,
+      "ir_ivm_r1_three_repeat_pointwise_median": 1.6045012349563126
+    },
+    "median_I_perp_G": {
+      "current_ivm": 0.8481340752711118,
+      "feneb_lambda_0p02": 1.2407987825964015,
+      "ir_ivm_r1_three_repeat_pointwise_median": 1.4916411888945271
+    },
+    "start_incremental_mean_force_evaluations": 1000,
+    "stop_incremental_mean_force_evaluations": 2000
+  },
+  "paper_figure_replacement_authorized": false,
+  "registered_tail_1620_to_2000": {
+    "checkpoint_count": 20,
+    "mean_I_perp_G": {
+      "current_ivm": 0.9334213009211171,
+      "feneb_lambda_0p02": 1.4107070051340536,
+      "ir_ivm_r1_three_repeat_pointwise_median": 1.5857365461435315
+    },
+    "median_I_perp_G": {
+      "current_ivm": 0.9444677407407377,
+      "feneb_lambda_0p02": 1.2532044676905114,
+      "ir_ivm_r1_three_repeat_pointwise_median": 1.4919126871486252
+    },
+    "start_incremental_mean_force_evaluations": 1620,
+    "stop_incremental_mean_force_evaluations": 2000
+  },
+  "registered_tail_barrier_error_median_kcal_per_mol": {
+    "current_ivm": 0.1308288381354914,
+    "feneb_lambda_0p02": 0.12500266013430894,
+    "ir_ivm_r1_three_repeat_pointwise_median": 0.12882519357781197
+  },
+  "registered_tail_image_diagnostics": {
+    "fraction_abs_normal_mean_force_below_one_block_SE": 0.48333333333333334,
+    "fraction_abs_normal_mean_force_below_two_block_SE": 0.7641666666666667,
+    "fraction_total_I_perp_G_from_internal_images_15_through_20": 0.7843920443985835,
+    "image_state_observation_count": 1200
+  },
+  "schema_version": "ala2d.r1_rejected_tail_diagnosis.v1"
+}

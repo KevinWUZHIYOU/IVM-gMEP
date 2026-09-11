@@ -1,0 +1,108 @@
+{
+  "status": "accepted",
+  "overall_acceptance": true,
+  "acceptance_scope": "published complete-state Pareto incumbent trace; raw trial/complete candidates remain separately disclosed",
+  "checks": {
+    "stage1_exact_like_no_resample_has_20_main_results": true,
+    "stage2_exact_like_resample_has_20_main_results": true,
+    "stage3_baseline_inexact_resample_has_10_main_results": true,
+    "stage4_uniform_v4_has_10_alpha_results": true,
+    "stage4_uniform_v4_has_10_pareto_archives": true,
+    "all_stage4_runs_share_clean_initial_path": true,
+    "stage4_alpha_values_match_grid": true,
+    "alpha_is_fixed_across_both_phases": true,
+    "pareto_screen_is_reference_free": true,
+    "screen_force_accounting_is_exact": true,
+    "alpha20_is_unique_target_reaching_run": true,
+    "selected_path_is_exact_stored_state": true,
+    "selected_state_is_completed_reparameterized_macrostate": true,
+    "active_alpha_is_exact_integer20_in_both_phases": true,
+    "published_i_perp_has_zero_rises": true,
+    "published_dense_barrier_error_has_zero_rises": true,
+    "selected_i_perp_beats_ode_neb": true,
+    "selected_dense_barrier_error_beats_ode_neb": true,
+    "charged_cost_speedup_is_at_least_10x": true,
+    "raw_rejected_candidate_shoulder_is_disclosed": true,
+    "all_current_formal_figures_exist_in_pdf_svg_png": true
+  },
+  "evidence": {
+    "four_level_counts": {
+      "stage1": 20,
+      "stage2": 20,
+      "stage3": 10,
+      "stage4": 10,
+      "stage4_archives": 10
+    },
+    "target_reached_by_alpha": {
+      "0.01": false,
+      "0.1": false,
+      "1": false,
+      "10": false,
+      "20": true,
+      "30": false,
+      "100": false,
+      "1000": false,
+      "10000": false,
+      "inf": false
+    },
+    "common_initial_path_sha256": [
+      "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e"
+    ],
+    "selected_alpha20": {
+      "optimization_force_evaluations": 2507,
+      "screen_force_equivalent_evaluations": 2301,
+      "total_charged_force_equivalent_evaluations": 4808,
+      "i_perp": 0.00018216907465962214,
+      "dense_barrier20_kcal_per_mol": 2.4551593991015093,
+      "dense_barrier20_abs_error_kcal_per_mol": 0.0009231140237990765,
+      "ode_terminal_i_perp": 0.00020406804672111045,
+      "ode_terminal_barrier_abs_error_kcal_per_mol": 0.03607305433804209,
+      "ode_first_passage_force_evaluations": 83522,
+      "charged_cost_speedup": 17.37146422628952,
+      "accepted_calls": [
+        660,
+        680,
+        829,
+        943,
+        2507
+      ],
+      "accepted_i_perp": [
+        0.006889354808869684,
+        0.006584491730342424,
+        0.0034644624572146097,
+        0.0018424108929185675,
+        0.00018216907465962214
+      ],
+      "accepted_barrier20_kcal_per_mol": [
+        2.5015005537398483,
+        2.497368345313599,
+        2.4913029042616177,
+        2.4908191977367014,
+        2.4551593991015093
+      ],
+      "accepted_barrier20_abs_error_kcal_per_mol": [
+        0.04541804061453991,
+        0.04128583218829052,
+        0.03522039113630937,
+        0.03473668461139301,
+        0.0009231140237990765
+      ],
+      "accepted_i_perp_rises": 0,
+      "accepted_barrier_error_rises": 0,
+      "raw_candidate_barrier_error_max": 0.20155680818239263,
+      "raw_candidate_barrier_error_rises": 4,
+      "selected_path_sha256": "009b6d129797a54b02f6c7424426ea24c76367a184f83e0066bfbcb9fae0bcff"
+    },
+    "final_figures": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto/alanine_integer20_all_methods_1x4_path_evolution.pdf",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto/alanine_integer20_all_methods_1x4_path_evolution.svg",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto/alanine_integer20_all_methods_1x4_path_evolution.png",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto_linear_speedup_v5/alanine_integer20_all_methods_two_metric_descent_linear_cost_speedup.pdf",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto_linear_speedup_v5/alanine_integer20_all_methods_two_metric_descent_linear_cost_speedup.svg",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/all_methods_stage4_v4_pareto_linear_speedup_v5/alanine_integer20_all_methods_two_metric_descent_linear_cost_speedup.png",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.pdf",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.svg",
+      "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/figures/clean_four_level_audit/alpha_common5000_decades_v10_titles/alanine_v10_cut5000_decades_protocol_titles_alpha_budget_aware_cost_to_precision_stage1_vs_stage4.png"
+    ]
+  }
+}

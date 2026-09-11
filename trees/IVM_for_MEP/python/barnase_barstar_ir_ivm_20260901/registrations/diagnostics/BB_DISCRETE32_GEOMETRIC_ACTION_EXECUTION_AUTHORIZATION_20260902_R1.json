@@ -1,0 +1,51 @@
+{
+  "audit_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.audit.json",
+  "authorized_utc": "2026-09-02T13:30:54.749591+00:00",
+  "authorizer": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/authorize_bb_discrete32_geometric_action.py",
+    "sha256": "1f3efe02a8492f9a299a87670fdb0154d7dfb26af3fe59331ef0b9944946e453"
+  },
+  "canonical_two_lock_second_probe": {
+    "locks": [
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ],
+    "status": "PASS"
+  },
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DISCRETE32_GEOMETRIC_ACTION_CONTRACT_20260902_R1.json",
+    "sha256": "8c4bc92d5752637dadd9796651632186d2d47ee60fc27b95880c56fa1b642f75"
+  },
+  "enabled": true,
+  "evaluator": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_discrete32_geometric_action.py",
+    "sha256": "c7139d24636c92f9b0c5d4fae408b010de1b2820f3e9c26caea69f35aa2227fb"
+  },
+  "failed_or_open_attempt_policy": "fail closed; require superseding authorization and new output",
+  "host_role": "local",
+  "jobs": 1,
+  "joint_EF_WAL_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.joint_ef.wal.jsonl",
+  "maximum_fresh_ODE_NEB_joint_ef_attempts": 0,
+  "maximum_fresh_endpoint_joint_ef_attempts": 0,
+  "maximum_fresh_internal_joint_ef_attempts": 30,
+  "openmm_contexts_constructed_before_authorization": 0,
+  "optimization_N_F_contribution": 0,
+  "physical_calls_started_before_authorization": 0,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.npz",
+  "result_publication_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ivm_ode_neb_discrete32_geometric_action_20260902_r1.publication.json",
+  "schema": "bb-discrete32-path-dependent-geometric-action-authorization-v1",
+  "status": "AUTHORIZED_AFTER_ZERO_OPENMM_PREFLIGHT",
+  "successful_prefix_resume_policy": "reuse only complete coordinate-hash-bound WAL successes",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "zero_openmm_preflight": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DISCRETE32_GEOMETRIC_ACTION_PREAUTH_PREFLIGHT_20260902_R1.json",
+    "sha256": "80d8464b9154b979a7e8ad7ebef527a5ca1b4c0361b3d8efa0f0845742b48ecf"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "bb-ode-neb-targeted-arc500-execution-contract-v1",
+  "status": "INERT_TEMPLATE_NOT_AN_AUTHORIZATION",
+  "physical_execution_authorized": false,
+  "activation_rule": "Create a new immutable contract only after the final selected IR-IVM arc500 result and a nonempty bb-ode-neb-targeted-arc500-selection-v1 receipt have been frozen. Replace every placeholder, bind exact SHA-256 values, set status to AUTHORIZED_AFTER_FROZEN_TARGET_SELECTION, and set physical_execution_authorized to true.",
+  "target_selection": {
+    "path": "<absolute frozen selection JSON>",
+    "sha256": "<selection SHA-256>"
+  },
+  "topology": {
+    "path": "<absolute complex_fixed.pdb>",
+    "sha256": "<topology SHA-256 inferred consistently from all completed ODE-NEB arc500 bundles>"
+  },
+  "evaluator": {
+    "path": "<absolute evaluate_targeted_ode_neb_arc500.py>",
+    "sha256": "<evaluator SHA-256>"
+  },
+  "implementation_bindings": {
+    "target_selector": {
+      "path": "<absolute freeze_targeted_ode_neb_arc500.py>",
+      "sha256": "<target selector SHA-256>"
+    },
+    "common_arc500_evaluator": {
+      "path": "<absolute evaluate_discrete_iperp_densified_barrier.py>",
+      "sha256": "<common evaluator SHA-256>"
+    },
+    "bb_core": {
+      "path": "<absolute src/bb_core.py>",
+      "sha256": "<bb_core SHA-256>"
+    }
+  },
+  "output": "<absolute new .npz output path>",
+  "execution_protocol": {
+    "claim_mode": "observed",
+    "evaluate_only_paths_to_densify": true,
+    "distinct_retained_paths_only": true,
+    "energy_evaluations_per_path": 500,
+    "force_evaluations_per_path": 0,
+    "optimization_N_F_contribution": 0,
+    "fixed_endpoint_optimization_N_F": 0,
+    "allow_exact_energy_reuse": false,
+    "no_overwrite": true,
+    "append_only_energy_WAL": true,
+    "durable_attempt_started_before_each_physical_call": true,
+    "fsync_each_attempt_start_and_terminal_record": true
+  },
+  "lock_policy": {
+    "jobs_per_host": 1,
+    "acquire_both_before_first_physical_call": true,
+    "hold_both_through_last_physical_call": true,
+    "host_local_BB_locks": [
+      "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+      "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+    ]
+  }
+}

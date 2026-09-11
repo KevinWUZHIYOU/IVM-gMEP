@@ -1,0 +1,735 @@
+{
+  "campaign": "LEPS period-one single synchronized recovery grid",
+  "complete_count": 48,
+  "cumulative_terminal_article_nf": 25179,
+  "failed_count": 0,
+  "host": "wuzhiyoudeMacBook-Air-206.local",
+  "jobs": 1,
+  "parameter_combination_count": 48,
+  "pending_count": 0,
+  "records": [
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 4,
+        "r": 0.001
+      },
+      "finished_unix": 1788021806.7724988,
+      "index": 0,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/f557199147ea0436.npz",
+      "run_id": "f557199147ea0436",
+      "started_unix": 1788021803.931177,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 264
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 5,
+        "r": 0.001
+      },
+      "finished_unix": 1788021809.142612,
+      "index": 1,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/a31db1458d647c82.npz",
+      "run_id": "a31db1458d647c82",
+      "started_unix": 1788021806.773433,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 268
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 6,
+        "r": 0.001
+      },
+      "finished_unix": 1788021811.506855,
+      "index": 2,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/04933ba97d9764e6.npz",
+      "run_id": "04933ba97d9764e6",
+      "started_unix": 1788021809.1434371,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 269
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 8,
+        "r": 0.001
+      },
+      "finished_unix": 1788021813.874719,
+      "index": 3,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/dfe21135f9787ca4.npz",
+      "run_id": "dfe21135f9787ca4",
+      "started_unix": 1788021811.5077682,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 270
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 4,
+        "r": 0.01
+      },
+      "finished_unix": 1788021816.2360342,
+      "index": 4,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/31160e6478e03cc5.npz",
+      "run_id": "31160e6478e03cc5",
+      "started_unix": 1788021813.875545,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 246
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 5,
+        "r": 0.01
+      },
+      "finished_unix": 1788021818.604762,
+      "index": 5,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/53a31429f3c53f9b.npz",
+      "run_id": "53a31429f3c53f9b",
+      "started_unix": 1788021816.236877,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 248
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 6,
+        "r": 0.01
+      },
+      "finished_unix": 1788021820.989774,
+      "index": 6,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/8881e70eb92b60e0.npz",
+      "run_id": "8881e70eb92b60e0",
+      "started_unix": 1788021818.605699,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 249
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 8,
+        "r": 0.01
+      },
+      "finished_unix": 1788021823.352096,
+      "index": 7,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/48eb67727841a103.npz",
+      "run_id": "48eb67727841a103",
+      "started_unix": 1788021820.990711,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 249
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 4,
+        "r": 0.1
+      },
+      "finished_unix": 1788021823.3757079,
+      "index": 8,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/b08f0fa8efd92339.npz",
+      "run_id": "b08f0fa8efd92339",
+      "started_unix": 1788021823.352969,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 56
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 5,
+        "r": 0.1
+      },
+      "finished_unix": 1788021823.399137,
+      "index": 9,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/c187637de5e664e7.npz",
+      "run_id": "c187637de5e664e7",
+      "started_unix": 1788021823.3766148,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 56
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 6,
+        "r": 0.1
+      },
+      "finished_unix": 1788021823.423361,
+      "index": 10,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/e6199dfc73744712.npz",
+      "run_id": "e6199dfc73744712",
+      "started_unix": 1788021823.399918,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 56
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 8,
+        "r": 0.1
+      },
+      "finished_unix": 1788021823.447123,
+      "index": 11,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/ce03efb77cc30db8.npz",
+      "run_id": "ce03efb77cc30db8",
+      "started_unix": 1788021823.424247,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 56
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 4,
+        "r": 0.3
+      },
+      "finished_unix": 1788021823.469478,
+      "index": 12,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/780b000204ffa490.npz",
+      "run_id": "780b000204ffa490",
+      "started_unix": 1788021823.447916,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 51
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 5,
+        "r": 0.3
+      },
+      "finished_unix": 1788021823.492128,
+      "index": 13,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/214c1aad7548adb2.npz",
+      "run_id": "214c1aad7548adb2",
+      "started_unix": 1788021823.470283,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 51
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 6,
+        "r": 0.3
+      },
+      "finished_unix": 1788021823.514527,
+      "index": 14,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/73a3b9f7699e1a77.npz",
+      "run_id": "73a3b9f7699e1a77",
+      "started_unix": 1788021823.492946,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 51
+    },
+    {
+      "controls": {
+        "alpha": 10.0,
+        "m_max": 8,
+        "r": 0.3
+      },
+      "finished_unix": 1788021823.537379,
+      "index": 15,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/ceeb940d4f709dbf.npz",
+      "run_id": "ceeb940d4f709dbf",
+      "started_unix": 1788021823.5155358,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 51
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 4,
+        "r": 0.001
+      },
+      "finished_unix": 1788021839.4164128,
+      "index": 16,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/2f91ecad1071cd02.npz",
+      "run_id": "2f91ecad1071cd02",
+      "started_unix": 1788021823.53836,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1587
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 5,
+        "r": 0.001
+      },
+      "finished_unix": 1788021855.9097311,
+      "index": 17,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/356307bb5a618535.npz",
+      "run_id": "356307bb5a618535",
+      "started_unix": 1788021839.417397,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1587
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 6,
+        "r": 0.001
+      },
+      "finished_unix": 1788021872.1648698,
+      "index": 18,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/c319ab0c9f76b10a.npz",
+      "run_id": "c319ab0c9f76b10a",
+      "started_unix": 1788021855.910759,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1587
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 8,
+        "r": 0.001
+      },
+      "finished_unix": 1788021888.5097458,
+      "index": 19,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/f46aa6f06179a102.npz",
+      "run_id": "f46aa6f06179a102",
+      "started_unix": 1788021872.16577,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1587
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 4,
+        "r": 0.01
+      },
+      "finished_unix": 1788021904.6177971,
+      "index": 20,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/756bf4584a55e959.npz",
+      "run_id": "756bf4584a55e959",
+      "started_unix": 1788021888.510784,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1536
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 5,
+        "r": 0.01
+      },
+      "finished_unix": 1788021920.650029,
+      "index": 21,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/17a5ab07defdb3d3.npz",
+      "run_id": "17a5ab07defdb3d3",
+      "started_unix": 1788021904.618755,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1536
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 6,
+        "r": 0.01
+      },
+      "finished_unix": 1788021936.557183,
+      "index": 22,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/669a84a2bd3a2947.npz",
+      "run_id": "669a84a2bd3a2947",
+      "started_unix": 1788021920.65101,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1536
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 8,
+        "r": 0.01
+      },
+      "finished_unix": 1788021952.391296,
+      "index": 23,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/a45a33d6ec46ad90.npz",
+      "run_id": "a45a33d6ec46ad90",
+      "started_unix": 1788021936.558192,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1536
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 4,
+        "r": 0.1
+      },
+      "finished_unix": 1788021952.417911,
+      "index": 24,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/b5a9489fb60b5992.npz",
+      "run_id": "b5a9489fb60b5992",
+      "started_unix": 1788021952.392359,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 47
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 5,
+        "r": 0.1
+      },
+      "finished_unix": 1788021952.442726,
+      "index": 25,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/c678285789c40c6d.npz",
+      "run_id": "c678285789c40c6d",
+      "started_unix": 1788021952.418983,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 47
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 6,
+        "r": 0.1
+      },
+      "finished_unix": 1788021952.5264351,
+      "index": 26,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/fc0f540af9d70bdb.npz",
+      "run_id": "fc0f540af9d70bdb",
+      "started_unix": 1788021952.443701,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 47
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 8,
+        "r": 0.1
+      },
+      "finished_unix": 1788021952.552104,
+      "index": 27,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/3766ea8746cc4567.npz",
+      "run_id": "3766ea8746cc4567",
+      "started_unix": 1788021952.527989,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 47
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 4,
+        "r": 0.3
+      },
+      "finished_unix": 1788021952.57682,
+      "index": 28,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/4fa8e5862eb546ad.npz",
+      "run_id": "4fa8e5862eb546ad",
+      "started_unix": 1788021952.55302,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 46
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 5,
+        "r": 0.3
+      },
+      "finished_unix": 1788021952.601857,
+      "index": 29,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/485e18182a9ce02c.npz",
+      "run_id": "485e18182a9ce02c",
+      "started_unix": 1788021952.577757,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 46
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 6,
+        "r": 0.3
+      },
+      "finished_unix": 1788021952.626375,
+      "index": 30,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/242bcf87cf406005.npz",
+      "run_id": "242bcf87cf406005",
+      "started_unix": 1788021952.602836,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 46
+    },
+    {
+      "controls": {
+        "alpha": 100.0,
+        "m_max": 8,
+        "r": 0.3
+      },
+      "finished_unix": 1788021952.650722,
+      "index": 31,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/b7f28420d21cb5b8.npz",
+      "run_id": "b7f28420d21cb5b8",
+      "started_unix": 1788021952.627326,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 46
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 4,
+        "r": 0.001
+      },
+      "finished_unix": 1788021952.676325,
+      "index": 32,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/ed6c153ad1bc8fd3.npz",
+      "run_id": "ed6c153ad1bc8fd3",
+      "started_unix": 1788021952.651893,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 50
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 5,
+        "r": 0.001
+      },
+      "finished_unix": 1788021968.147129,
+      "index": 33,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/1cad5b1466f5ccb8.npz",
+      "run_id": "1cad5b1466f5ccb8",
+      "started_unix": 1788021952.677326,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1520
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 6,
+        "r": 0.001
+      },
+      "finished_unix": 1788021984.071254,
+      "index": 34,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/df600c3dcbd0d1c6.npz",
+      "run_id": "df600c3dcbd0d1c6",
+      "started_unix": 1788021968.148151,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1589
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 8,
+        "r": 0.001
+      },
+      "finished_unix": 1788021999.963813,
+      "index": 35,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/1c7e945429c95dac.npz",
+      "run_id": "1c7e945429c95dac",
+      "started_unix": 1788021984.072716,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1580
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 4,
+        "r": 0.01
+      },
+      "finished_unix": 1788021999.990481,
+      "index": 36,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/4083852b62257e5b.npz",
+      "run_id": "4083852b62257e5b",
+      "started_unix": 1788021999.9649122,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 50
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 5,
+        "r": 0.01
+      },
+      "finished_unix": 1788022015.893899,
+      "index": 37,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/b2d4b35034ebe763.npz",
+      "run_id": "b2d4b35034ebe763",
+      "started_unix": 1788021999.9915252,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1535
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 6,
+        "r": 0.01
+      },
+      "finished_unix": 1788022031.729991,
+      "index": 38,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/ffea988fa3925a59.npz",
+      "run_id": "ffea988fa3925a59",
+      "started_unix": 1788022015.8950322,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1556
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 8,
+        "r": 0.01
+      },
+      "finished_unix": 1788022047.554448,
+      "index": 39,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/046cab794ce31650.npz",
+      "run_id": "046cab794ce31650",
+      "started_unix": 1788022031.7310562,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 1556
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 4,
+        "r": 0.1
+      },
+      "finished_unix": 1788022047.581045,
+      "index": 40,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/54aed1c7d758ddc5.npz",
+      "run_id": "54aed1c7d758ddc5",
+      "started_unix": 1788022047.5559528,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 49
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 5,
+        "r": 0.1
+      },
+      "finished_unix": 1788022047.606076,
+      "index": 41,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/2c4ca0e325f854fb.npz",
+      "run_id": "2c4ca0e325f854fb",
+      "started_unix": 1788022047.58209,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 49
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 6,
+        "r": 0.1
+      },
+      "finished_unix": 1788022047.6312802,
+      "index": 42,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/7db96b557c2b439c.npz",
+      "run_id": "7db96b557c2b439c",
+      "started_unix": 1788022047.607147,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 49
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 8,
+        "r": 0.1
+      },
+      "finished_unix": 1788022047.656469,
+      "index": 43,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/e227b2747778e442.npz",
+      "run_id": "e227b2747778e442",
+      "started_unix": 1788022047.632311,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 49
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 4,
+        "r": 0.3
+      },
+      "finished_unix": 1788022047.681592,
+      "index": 44,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/6f419575cfeb4258.npz",
+      "run_id": "6f419575cfeb4258",
+      "started_unix": 1788022047.657581,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 48
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 5,
+        "r": 0.3
+      },
+      "finished_unix": 1788022047.706225,
+      "index": 45,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/503aa1ce971bb262.npz",
+      "run_id": "503aa1ce971bb262",
+      "started_unix": 1788022047.6825979,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 48
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 6,
+        "r": 0.3
+      },
+      "finished_unix": 1788022047.7310798,
+      "index": 46,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/55859214ce3d3ab0.npz",
+      "run_id": "55859214ce3d3ab0",
+      "started_unix": 1788022047.707298,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 48
+    },
+    {
+      "controls": {
+        "alpha": 1000.0,
+        "m_max": 8,
+        "r": 0.3
+      },
+      "finished_unix": 1788022047.75669,
+      "index": 47,
+      "result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/LEPS/leps_irivm_ala_chig_every1_sync1_20260830/runs/d532683d3b8f1def.npz",
+      "run_id": "d532683d3b8f1def",
+      "started_unix": 1788022047.73213,
+      "status": "complete",
+      "stop_reason": "stationary",
+      "terminal_article_nf": 48
+    }
+  ],
+  "running_count": 0,
+  "started_unix": 1788021803.9289632,
+  "updated_unix": 1788022047.756726
+}

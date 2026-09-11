@@ -1,0 +1,43 @@
+{
+  "authorization_scope": "one exact fresh non-resumed registered member",
+  "campaign_preregistration_sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+  "concurrency": "one BB task on this host, two host-local fcntl locks, jobs=1",
+  "diagnostic_feedback": "forbidden during optimization",
+  "enabled": true,
+  "ff_builder_parity_gate_sha256": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+  "fixed_endpoint_policy": "hash-bound inherited endpoint E/F; endpoint getState attempts, misses, and optimization NoF must remain zero",
+  "infrastructure_retry_gate": {
+    "failure_receipt": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/failures/BB_IRIVM_ALPHA10_CONFIRMATION_INFRASTRUCTURE_FAILURE_20260901_R1.json",
+    "failure_receipt_sha256": "c360fe16325151685966a2d061806a99ec97948f2ccfa2b0484cf473aec4d509",
+    "original_label": "bb_irivm_a1e1_r05_m05_inf990_r1",
+    "replacement_label": "bb_irivm_a1e1_r05_m05_inf990_r2",
+    "rule": "fresh non-resumed replacement; original attempt remains excluded"
+  },
+  "issued_utc": "2026-09-01T13:17:26Z",
+  "label": "bb_irivm_a1e1_r05_m05_inf990_r2",
+  "member_registration_sha256": "226093c5dcae38d0f3a6d8cc01e1c58a15cb1266b1d925220459bc57e5a0c165",
+  "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+  "promotion_gate": {
+    "alpha_scope_R2_sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f",
+    "metric_policy_amendment_sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5",
+    "promoted_alpha_values": [
+      1.0,
+      0.1,
+      10.0
+    ],
+    "same_state_two_metric_selection_required": true,
+    "selection_receipt": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/selections/BB_IRIVM_ALPHA_PRINCIPAL_SELECTION_20260901_R1.json",
+    "selection_receipt_sha256": "9f04553f390b5d6e6e2d1984047f2692e979e952b4d91854426c07d33abdbd69",
+    "stage": "alpha_controlled_scan_independent_990_N_F_confirmation"
+  },
+  "registered_controls": {
+    "alpha": 10.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 990,
+    "r": 0.5
+  },
+  "schema": "bb-irivm-per-member-execution-authorization-v1",
+  "smoke_240_gate_sha256": "6c259716dce2e91db9d4dddd6555c54bb9f2183749169b3229da7465db01c4d4",
+  "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "tier": "screen"
+}

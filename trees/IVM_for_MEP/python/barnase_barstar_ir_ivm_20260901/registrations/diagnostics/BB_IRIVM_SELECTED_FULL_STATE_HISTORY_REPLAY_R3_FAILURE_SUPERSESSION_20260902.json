@@ -1,0 +1,116 @@
+{
+  "schema": "bb-irivm-selected-full-state-history-replay-failure-supersession-v2",
+  "status": "R3_FAILED_AT_FIRST_DISCRETE_TRIAL_RECORD_SUPERSEDED_NO_REUSE",
+  "created_utc": "2026-09-02T06:32:39Z",
+  "execution_authorized_by_this_file": false,
+  "failed_label": "bb_irivm_a1e0_r01_m05_inf9990_fullstate_r3",
+  "host": "remote_mac_m4",
+  "failure": {
+    "child_returncode": 1,
+    "child_started_utc": "2026-09-02T06:20:54Z",
+    "locks_released_utc": "2026-09-02T06:23:26Z",
+    "traceback_exception": "KeyError: 'inherited_cache_entries'",
+    "traceback_chain": [
+      "src/run_ivm_v9_spring_projected_production_20260730.py:7448 record(counter_snapshot=trace_counters)",
+      "src/run_ivm_v9_spring_projected_production_20260730.py:3810 should_store_path observer",
+      "scripts/full_state_history_recorder.py:118 counter_arrays comprehension"
+    ],
+    "traceback_evidence_policy": "the launch was attached to the supervisor terminal and did not create a separate stdout/stderr log; the frozen source, launch receipt, WAL, first shard, and sealed-reference call-2 arrays provide the file-bound evidence chain",
+    "failure_phase": "the first ordinary discrete internal-trial record after the initial record; this is a run-frame record, not an attempt_reparameterization-frame record",
+    "root_cause": "production record() has two legitimate counter sources. A live bb_core.counter_arrays(evaluators) dictionary has eight keys including inherited_cache_entries. The historical trace_counters snapshot emitted by frozen_discrete_b040.counter_arrays has only seven keys because that module's frozen COUNTER_NAMES omits inherited_cache_entries. R3 incorrectly required the eighth key from both schemas.",
+    "failed_record_call_per_image": 2,
+    "failed_record_call_proof": "the R3 observer had one committed record; base recorder.record advanced past its strict call == index + 1 assertion before raising KeyError, so the attempted next record had call=2",
+    "failed_historical_snapshot_optimization_N_F": 60,
+    "failed_snapshot_N_F_proof": "the R3 observer had one committed record; base recorder.record advanced past its strict call == index + 1 assertion before raising KeyError, so the attempted historical snapshot had call=2; the sealed reference has calls_per_image[1]=2, total_internal_joint_evaluations[1]=60, and sum(counter_vectors[1,1:-1])=60",
+    "lifetime_optimization_internal_joint_EF_attempts": 150,
+    "lifetime_optimization_N_F_proof": "the first discrete outer solve physically computes four internal steps before publishing their historical trace records. The first attempted publication at production line 7448 was the call-2/N_F60 snapshot, but the live backend had already paid through the four snapshots N_F60,90,120,150. In the hash-identical sealed reference, discrete_audit_outer[0:4]=[0,0,0,0], discrete_audit_step[0:4]=[0,1,2,3], calls_per_image[0:5]=[1,2,3,4,5], and total_internal_joint_evaluations[0:5]=[30,60,90,120,150].",
+    "lifetime_state_ledger": {
+      "durably_captured_before_failure_N_F": [30],
+      "failing_historical_snapshot_N_F": 60,
+      "already_physically_evaluated_but_not_reached_for_capture_N_F": [90, 120, 150],
+      "lifetime_paid_optimization_N_F": 150,
+      "why_90_120_150_are_paid": "the solver completed all four first-outer trial evaluations before the caller entered the trace publication loop; failure occurred while publishing the first historical snapshot",
+      "why_90_120_150_are_not_shards": "the observer exception stopped the publication loop at its first item"
+    },
+    "fixed_endpoint_joint_EF_attempts": 0,
+    "fixed_endpoint_proof": "the sealed reference counter_vectors[1,[0,-1]] equals [0,0]; both endpoint states are inherited and excluded from Number of Forces",
+    "partial_cost_must_not_be_reused_or_hidden": true
+  },
+  "partial_outputs": {
+    "wal_line_count": 2,
+    "wal_contents": "header plus one record_committed event for call 1",
+    "committed_shard_count": 1,
+    "committed_shard_calls": [1],
+    "committed_shard_optimization_N_F": [30],
+    "runtime_result_count": 0,
+    "runtime_audit_count": 0,
+    "manifest_count": 0,
+    "capture_audit_count": 0,
+    "scientifically_reportable_bundle_count": 0,
+    "R3_partial_shard_may_not_be_imported_into_R4": true
+  },
+  "lock_postcondition": {
+    "launch_receipt_status": "CHILD_EXITED_LOCKS_RELEASED",
+    "both_remote_process_ids_absent_after_exit": true,
+    "local_host_lock_state_is_irrelevant_to_remote_failure": true
+  },
+  "supersession": {
+    "R3_registration_may_not_be_reused": true,
+    "R3_authorization_may_not_be_reused": true,
+    "R3_label_output_and_partial_shard_may_not_be_reused": true,
+    "R3_sources_and_failure_artifacts_must_be_preserved": true,
+    "replacement_requires_new_R4_sources_registration_authorization_label_output": true,
+    "R4_must_capture_all_counter_fields_at_the_historical_snapshot_time": true,
+    "R4_may_not_guess_or_backfill_inherited_cache_entries_from_a_later_live_state": true
+  },
+  "bindings": {
+    "R3_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REPLAY_NF9990_20260902_R3.json",
+      "sha256": "92d72cf681fc06d24a5c91f8ae85d3fcbcd33397353a5c345da10e161ef04c05"
+    },
+    "R3_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r3.json",
+      "sha256": "1e14209b32c67df28df440a2827f1beb6ecc583c665747093cd7413422d6042e"
+    },
+    "R3_remote_prelaunch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_FULL_STATE_HISTORY_REMOTE_PRELAUNCH_20260902_R3.json",
+      "sha256": "4a6499fb824ed4d11711469ae07c4699c716226c9f21f6dfd5380191a4ea165c"
+    },
+    "R3_launch_receipt": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/lock_receipts/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r3.launch.json",
+      "sha256": "6b0d60d5a1f3d2990294e516b4e049b709d280499cb87d020301353e2a7d4ac2"
+    },
+    "R3_WAL": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r3/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r3_observer/full_state_history.wal.jsonl",
+      "sha256": "7142c15b6d41ff136aa53b7e661324921dbaf3a59f0dd3a9b668f4a5784372a6"
+    },
+    "R3_call1_shard": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/full_state_history_replay_r3/bb_irivm_a1e0_r01_m05_inf9990_fullstate_r3_observer/shards/record_0000_call_0001.npz",
+      "sha256": "0336dd252a5f93c657fe7f5e140f64b9aa1e6b4b29bd2fcff33ef253536a176c"
+    },
+    "sealed_selected_reference_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "production_source": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/run_ivm_v9_spring_projected_production_20260730.py",
+      "sha256": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa"
+    },
+    "failed_R3_observer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/full_state_history_recorder_r3.py",
+      "sha256": "abe1e807eea44f298a953ea10f9bf1a27598c9c9fb76bf580f366a28bedab368"
+    },
+    "failed_R3_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_full_state_history_replay_r3.py",
+      "sha256": "7b1b679a8a8e6a39f26bad28adcb3a1c8c12233223859f23ca40a42ca7a8dada"
+    },
+    "failed_R3_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_full_state_history_replay_r3.py",
+      "sha256": "bb08f489bb0a46c8433eac279ea6f26f81a925ec1eb68f39a9d781568023d06b"
+    },
+    "failed_R3_test": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/tests/test_run_selected_ivm_full_state_history_replay_r3.py",
+      "sha256": "025561c63591f6f2816b308eb3f92ee499244a1badc17f6aecf3da2b8cad0ac9"
+    }
+  }
+}

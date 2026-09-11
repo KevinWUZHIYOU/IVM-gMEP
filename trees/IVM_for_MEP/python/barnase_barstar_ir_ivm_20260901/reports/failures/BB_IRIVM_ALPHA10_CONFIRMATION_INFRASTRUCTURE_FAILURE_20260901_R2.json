@@ -1,0 +1,26 @@
+{
+  "campaign_status": "reports/campaign_status/bb-irivm-alpha-confirm-a10-990-local-r2-20260901.json",
+  "campaign_status_sha256": "71879b5744a389737d29e154b0e61ec242ab610a7845c4673689725e8a3c2ac8",
+  "created_utc": "2026-09-01T13:20:57Z",
+  "execution_authorization": "registrations/execution_authorizations/bb_irivm_a1e1_r05_m05_inf990_r2.json",
+  "execution_authorization_sha256": "f2d91aa228c4ebb56bfc6725af3538ab3915b3ac4e517fceaee608ca08c4ae09",
+  "interpretation": "The sandbox removed both detached launcher variants after the launching command returned. The batch status remained at running, both recorded PIDs were absent, both BB locks were free, and no result or audit existed.",
+  "number_of_forces_interpretation": "Indeterminate because the forcibly removed process produced no terminal result and no physical-attempt audit; it contributes no scientific observation and must not enter ranking.",
+  "observed_dead_pids": [92389, 92392],
+  "original_label": "bb_irivm_a1e1_r05_m05_inf990_r2",
+  "original_registration": "registrations/screen/bb_irivm_a1e1_r05_m05_inf990_r2.json",
+  "original_registration_sha256": "226093c5dcae38d0f3a6d8cc01e1c58a15cb1266b1d925220459bc57e5a0c165",
+  "replacement_label": "bb_irivm_a1e1_r05_m05_inf990_r3",
+  "replacement_rule": "A single fresh, non-resumed replacement may run under a new immutable registration and authorization in a maintained execution session; r1 and r2 remain preserved and excluded.",
+  "registered_controls": {
+    "alpha": 10.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 990,
+    "r": 0.5
+  },
+  "returncode": 137,
+  "returncode_interpretation": "Synthetic nonzero infrastructure code denoting externally vanished processes; no program exit code was written.",
+  "scientific_result_exists": false,
+  "started_unix": 1788268750.635594,
+  "status": "RECORDED_INFRASTRUCTURE_FAILURE_NO_SCIENTIFIC_RESULT"
+}

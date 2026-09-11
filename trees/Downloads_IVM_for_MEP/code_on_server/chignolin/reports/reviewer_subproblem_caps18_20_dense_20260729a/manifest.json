@@ -1,0 +1,1831 @@
+{
+  "schema_version": 1,
+  "namespace": "reviewer_subproblem_caps18_20_dense_20260729a",
+  "experiment_fingerprint": "b180ac79f20cd821539d305db418d710d5378ac1c497bbab42458fad6fc51184",
+  "source_manifests": [
+    {
+      "inner_calls": 18,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7"
+    },
+    {
+      "inner_calls": 20,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980"
+    }
+  ],
+  "inner_call_caps": [
+    18,
+    20
+  ],
+  "requested_total_force_budgets": [
+    1000,
+    3000,
+    6000,
+    10000
+  ],
+  "checkpoint_selection": "For each total-force budget B reached by the optimization, select the last stored path with counter_vectors.sum(axis=1) <= B. If the final optimization cost is below B, emit no value for B.",
+  "censoring_policy": "A missing budget is stored as reached=false, source index=-1, attained N_F=-1, barrier=NaN and subdivisions=-1. It must not be plotted or imputed.",
+  "adaptive_barrier_protocol": {
+    "energy_surface": "real 0 K OpenMM potential energy surface",
+    "initial_subdivisions_per_segment": 10,
+    "comparison_subdivisions_per_segment": 20,
+    "adaptive_threshold_kcal_per_mol": 0.05,
+    "maximum_subdivisions_per_segment": 80
+  },
+  "topology": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/inputs/chignolin_clean.pdb",
+  "topology_sha256": "04b122a0b98492b6fadae35772ffc307b8916ea65c8eaf959cb5187bbbfeab01",
+  "postprocessor": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+  "postprocessor_sha256": "7eb012bab0160cd2693529d56041799be6e00b4d5f0f019281ccf454485bb734",
+  "optimization_cost_axis": "sum over all 22 image evaluator joint energy-force cache misses",
+  "diagnostic_calls_excluded_from_optimization_axis": true,
+  "total_diagnostic_joint_evaluations": 54965,
+  "records": [
+    {
+      "inner_calls": 18,
+      "alpha": 0.03,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p03_central_state_ivm_cfg7a8c35371585_budget500.npz",
+      "source_result_sha256": "a1408425c24fecc66515689bf7cb9b6b9a65a73594f85d857d956664eb0a03df",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p03_central_state_ivm_cfg7a8c35371585_budget500.audit.json",
+      "source_audit_sha256": "70b4d97fc7fce6a9126011876b67b0d569836740ba6a66acb5fe4e0c19d2e413",
+      "cache_key": "78dd7ca711104967f5d04afa7880bc8ff89e283a5f06abf95d8ab32817674415",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "124f583a81ebd8e88cb19de5e2595c03510e9edc46ea795c6d6b1a362a5bb1cf",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p03_78dd7ca711104967.npz",
+      "result_sha256": "142305383bc8b4f7a8547e29ce4758f48a5fa8344b2adc48d3075428ce37c498",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p03_78dd7ca711104967.audit.json",
+      "audit_sha256": "fead00395c45012835759dd0baeb20289328cdb51dc3219aebf25a20a33cdf42",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 0.05,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p05_central_state_ivm_cfg6ab2a7596bcc_budget500.npz",
+      "source_result_sha256": "5ed38b71b07b3ae132dbb1bd46cdbfb26620af1930119ef5b449a8925e6ec037",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p05_central_state_ivm_cfg6ab2a7596bcc_budget500.audit.json",
+      "source_audit_sha256": "7d23e34d2c3274b5ee1dfbbac6193b7d9e18018d44afaf561f3fc008c89774ea",
+      "cache_key": "1998b5721349c32bf6c8a14777893b0da4326a19ce19a19d857fe12febab372d",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "256e0e09acde0eae6dac81c86718934e583b792a0e1361abbc4e719ddee74672",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p05_1998b5721349c32b.npz",
+      "result_sha256": "2e52998da025187dd8e2b334cf03fd67f859fae070ccef142b7cae674c518df5",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p05_1998b5721349c32b.audit.json",
+      "audit_sha256": "d2794fd23ef7374a4e3f9b59a6d6856e8e7315340d35c4cbd5f9856abdf8eb2b",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 0.1,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p1_central_state_ivm_cfg380df27249f7_budget500.npz",
+      "source_result_sha256": "3fea5dd796db496a8cbae8584704e09368601ec5e0187df06c03866e638d53d4",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p1_central_state_ivm_cfg380df27249f7_budget500.audit.json",
+      "source_audit_sha256": "cfe7a875343e5bdfe96a4f8005a0deca5e21fcc6ac9ca8880265ba411805a130",
+      "cache_key": "c2f53eb942ead66d1141badeb0617b9a990becf9776fe99fcbf8dfa1d86374e1",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "427553497bcdf980bf63bcc5a072d37fe54d4c63cad3402d790be1b54cc097c6",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p1_c2f53eb942ead66d.npz",
+      "result_sha256": "67e0d631a4d691a4732ef4f87368a1f19513722a2e5875a59bd74f763a1bf741",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p1_c2f53eb942ead66d.audit.json",
+      "audit_sha256": "c4d4701679f5baf7c23f3c74d4e5db1e865cafc8f0f1de393ccb32bf44337d77",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 0.2,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p2_central_state_ivm_cfgeffe69e41faf_budget500.npz",
+      "source_result_sha256": "af0c48990f44dd3b542fd47a806a2ade4ba6bdb21ca279a552380017f32136b7",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p2_central_state_ivm_cfgeffe69e41faf_budget500.audit.json",
+      "source_audit_sha256": "0b4c404a0725b385e5570870fda071e470ea7526d0963e894d7bc5c33ed41c9e",
+      "cache_key": "5e6ae8208736544dfc68864df6ba305b63212e34db1c325e32c705c95367cccd",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 8442,
+      "final_call_per_internal_image": 422,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "c8c6ede35ae3fe199e1e8497b896ab1f7204a41e7971ea19630f3179fe97b411",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p2_5e6ae8208736544d.npz",
+      "result_sha256": "c40b0279a71955b27ca8042f87cdb40d4e6efc071edf6a2458bc2ae44d304272",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p2_5e6ae8208736544d.audit.json",
+      "audit_sha256": "b5ee85a6a6e2f943d3b0e6a46802a45798e6ff5a3759849380c2d8d98d25e40f",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 0.3,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p3_central_state_ivm_cfg3a8b26497d21_budget500.npz",
+      "source_result_sha256": "2358db220b6d61e87ab484cf272a5a26a65d40212cc307b8f86657003598efc9",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p3_central_state_ivm_cfg3a8b26497d21_budget500.audit.json",
+      "source_audit_sha256": "01aa33b322cb7163900961538305e2f477651d482822d2693ff9f2e407cd7fc9",
+      "cache_key": "d31e7787b59d1a831913630bf6ec897bc3c071cc273cd62e41104eb7dad8f984",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 6982,
+      "final_call_per_internal_image": 349,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "701aed73e9a4dd00710851255b55e35752edd5517ebd84d5b68392627239e720",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p3_d31e7787b59d1a83.npz",
+      "result_sha256": "7dae03ad2f21469f31a62c9f0087cbcb14efb02843dba6187edb50f72a3f1cd2",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p3_d31e7787b59d1a83.audit.json",
+      "audit_sha256": "d6ac5fb1366f2f499c15cfdc4d1b1e0a52462a9587704dda454e30cd4b644a68",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 0.5,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p5_central_state_ivm_cfg259202e35630_budget500.npz",
+      "source_result_sha256": "a974f45b226720bedd026dba2d254d9526898cb538912f6ed20738f6b9830ec6",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a0p5_central_state_ivm_cfg259202e35630_budget500.audit.json",
+      "source_audit_sha256": "40fdf5678c533aa277c9a9234e40a540176e9cec558f1d3073eadf2f7fb59ef4",
+      "cache_key": "13b5b01d829002bd3c60919fc3cfa165c69e7c246257d546e213ea9b945ebfc7",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 8482,
+      "final_call_per_internal_image": 424,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "db58773ce53078622571e9b6f29515940e2122ee350cda8f905e032a66da9e70",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p5_13b5b01d829002bd.npz",
+      "result_sha256": "53db8a5783a6b9786e3d01bb0a0074f84813e6b04523a7eb68418ce4e1efe8e0",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a0p5_13b5b01d829002bd.audit.json",
+      "audit_sha256": "52519fc528486c8bb32e7e7765850606c1b750a91850ff128d5eb55789583e3c",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 1.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a1_central_state_ivm_cfgd3eada33f69d_budget500.npz",
+      "source_result_sha256": "244fd8ef6f59ee8b55f36655ce4eba2820763b5102f07a7dc1f2db9741904cf7",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a1_central_state_ivm_cfgd3eada33f69d_budget500.audit.json",
+      "source_audit_sha256": "2bc30c37aea7f6fb8fc7062a2726e75025c9bca9d08270365fab7b258906a67b",
+      "cache_key": "393930f8829b29507a43997006da6c2e245cc7120426e6e6e26f6071e4625351",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 6883,
+      "final_call_per_internal_image": 345,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "2e09624690c23cac6b0179f3ad7edf4405dfa441bfa37f7745fc1e7c8adca42b",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a1_393930f8829b2950.npz",
+      "result_sha256": "ae6af91f36f65a245afcd136f25cc953f31bdeb824fd9592b947fd9769631a23",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a1_393930f8829b2950.audit.json",
+      "audit_sha256": "ddc3b4116169f7753d8e9de6cea40bdc6aad8214d0afbaa02a68b2b5c431017e",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 2.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a2_central_state_ivm_cfg3f8711681c12_budget500.npz",
+      "source_result_sha256": "8c95fe07d317c1c5afd04a259b8b0534869055733fb2019f2021aa7ef8d0c1af",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a2_central_state_ivm_cfg3f8711681c12_budget500.audit.json",
+      "source_audit_sha256": "cf4f3312e8ff8776a5219e87057468d749ed9ab4cdd04988d1d0a6c6343b9975",
+      "cache_key": "9ffb0f066e2911286704f1c3e53b5cf2581561cd3da3ea40c30134a40e97f01a",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "2c39d876d792a840ce13f82acf1347c364f68fc96fec672f320f1df08323f371",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a2_9ffb0f066e291128.npz",
+      "result_sha256": "82fcf1b040d433e7621a95632b4821328948c6b98d6cbbdf03c791cd0bfdc002",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a2_9ffb0f066e291128.audit.json",
+      "audit_sha256": "e7547964451492e355d4207b4912ee32a7da1fa35c8ece989ac0d473c2a5df0f",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 3.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a3_central_state_ivm_cfg39b68c701fdc_budget500.npz",
+      "source_result_sha256": "6693b83f637e821e8aa487539db7d9f5dda1475701fe66d315e859e086f000a3",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a3_central_state_ivm_cfg39b68c701fdc_budget500.audit.json",
+      "source_audit_sha256": "73f18763100b23ef773b0b56971bdcffd4841ea9c8a0c3d7cf8819132ff9e4af",
+      "cache_key": "7dbaf71dec31cbf7fec8a99a803f1eeccceb9bf7230ca168dbef635ce85558c9",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "6ede0578d1e63e0edbafc732d07c6aa4499c2876ffe232954dfc2c4b9e7b63d0",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a3_7dbaf71dec31cbf7.npz",
+      "result_sha256": "64d8ec7e911a791bf17961d04fc71a28816fc65d274b2956bcfd99be8fef4203",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a3_7dbaf71dec31cbf7.audit.json",
+      "audit_sha256": "127753d0b52e9f456da734cc7cbd0f2e277341509480fbf4cdacb21aed918e5b",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 5.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a5_central_state_ivm_cfgaf6f08a196e5_budget500.npz",
+      "source_result_sha256": "78de01d9ee150abe3165f5410174fa0ed2ab48389de68f3412d565b330c033eb",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a5_central_state_ivm_cfgaf6f08a196e5_budget500.audit.json",
+      "source_audit_sha256": "36de27fc07345bfde1c475befaec4bd9adb1c6f314afcf631609fc2353b0d5b7",
+      "cache_key": "5ef9840666be5ceee5fe3f724aa9b7048ab0f603ca3bd0da124cead30e81e5f7",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "9976ef04d77b4d3b8da0be5be4bef9f258b08b7b708049d47e43107be0f16985",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a5_5ef9840666be5cee.npz",
+      "result_sha256": "c91f396ef5e1bb80d5879c35b8a64ff1421eadfe21ee3681a044af5439bbca4e",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a5_5ef9840666be5cee.audit.json",
+      "audit_sha256": "691072d7a76c62138b6203f304f0be6eaab62016218599b072a1e99d797395d7",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 10.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a10_central_state_ivm_cfg83495f4ab016_budget500.npz",
+      "source_result_sha256": "c69644ad03d0c64b5269c667d608ddc296137c3c5c4aa7ca0755be4ab3d082f6",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a10_central_state_ivm_cfg83495f4ab016_budget500.audit.json",
+      "source_audit_sha256": "b8240236269cb091244e626dfb1b2ef2f3137518077071c8a759ca82350f45f0",
+      "cache_key": "d466303b0dcd456cd985d59abf3c31ce045ca7cf202b01fec68bdcb06529b76e",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "2b2db3d57134bf4de24e468a7965f44c4de10a70a1e1137f5056e4be50476a6a",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a10_d466303b0dcd456c.npz",
+      "result_sha256": "d2d52f45a357d6a3fc3762aab22f933b3f2516a05747258a8902ff55d3f8d6bd",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a10_d466303b0dcd456c.audit.json",
+      "audit_sha256": "080ed5bbd79b1d7fbfc7b07395b902626a5c9c492d4ad6cb5626e361ac6099d8",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 15.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a15_central_state_ivm_cfg27c4680250c8_budget500.npz",
+      "source_result_sha256": "6ec3b3a6fceca00d73c6e21de2d9fcc79a4dcde100fc58408c4c7b2843c6f976",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a15_central_state_ivm_cfg27c4680250c8_budget500.audit.json",
+      "source_audit_sha256": "dc132d12687c39f334427945244a4314a4e7bc130375c9eb1048e4442a297a95",
+      "cache_key": "aac3c33cfe9a632f6b8852c5895fd0c7b187db40b25148b4e76b657b2282a433",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "302330dd33f9aa3fee6ee154043324ed0325e6920dd6a9478efa1a427576c170",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a15_aac3c33cfe9a632f.npz",
+      "result_sha256": "5546ea8cfb8b7765e8feb7ddf68eebf0e55427292efddd0128db5483b2afd9d2",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a15_aac3c33cfe9a632f.audit.json",
+      "audit_sha256": "d8788903e514ea966ad2160a2adc3878a8983e4478a3f51e64639940469332fc",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 20.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a20_central_state_ivm_cfg3e8e2bcc2e5d_budget500.npz",
+      "source_result_sha256": "362afb2e789fbe97e5d14c0ae81536676c6e214fab3ea4dedd5ce9526628cb83",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a20_central_state_ivm_cfg3e8e2bcc2e5d_budget500.audit.json",
+      "source_audit_sha256": "862f0e96fe291de34d0eba152421a4cedcb75bf9ce35ec6b38284db1939e76f5",
+      "cache_key": "e704c2fd558a419aab5005951852a0f1d82d75b4976e664efd9db6eebdac129b",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7278,
+      "final_call_per_internal_image": 375,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "547df3cf6414c87c9685ee2e933d265ae5bb45b676700742e6765b4a2f816105",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a20_e704c2fd558a419a.npz",
+      "result_sha256": "3d461a67bbe1230214c4c6f43d48df09a0e7c1daed670b76c08049b238d0cb36",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a20_e704c2fd558a419a.audit.json",
+      "audit_sha256": "3d9183d345b891316e943ce8f56022bf693649cb91a9d36215ddebc56b406d75",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 30.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a30_central_state_ivm_cfg0e7d89894d36_budget500.npz",
+      "source_result_sha256": "6fb5cbf53d7fe7b2f7ebc0644b3ebcd3ce3ee8a75d2ec046a931f03d35ea7882",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a30_central_state_ivm_cfg0e7d89894d36_budget500.audit.json",
+      "source_audit_sha256": "0f63a43b039ca6aa555c9f59d0192dc76bcd23facd71d4c0ee80c293ff0b1f37",
+      "cache_key": "232018fdda545f3c7392da61d097594a255b719f811fb66196965efe80ab7691",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "800c8e50e88950b45158dc73df9300682773003d89826e004342d3d4b127df19",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a30_232018fdda545f3c.npz",
+      "result_sha256": "aecfd5cba5d130b45199c6c3cd79a20b57f521cb8b02df8fb23b358a040c070d",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a30_232018fdda545f3c.audit.json",
+      "audit_sha256": "a78ff44cbfda60d446a59ad50713b06e03fef505d9954c00f50c84bd2bb1043d",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 50.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a50_central_state_ivm_cfg1e17b53ed3d6_budget500.npz",
+      "source_result_sha256": "2b8ad655575d5d164f685b6bcdd04f9be006d074e945eea6f39f615b82bba128",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a50_central_state_ivm_cfg1e17b53ed3d6_budget500.audit.json",
+      "source_audit_sha256": "8846b3a2f1f1308f107676dec37e6579a91991c57f1a93c7dcddefa2d5136bdc",
+      "cache_key": "0554313a61e50fa6fd9114d7995569bc29e1b6418a09f7e3a3aaffc78a904778",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        -1,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        -1,
+        -1
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "final_total_force": 4175,
+      "final_call_per_internal_image": 214,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "ebb7bea2c00d0c9554b5147829e24ecccb3e1ef165d53925f4f6213aac583297",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a50_0554313a61e50fa6.npz",
+      "result_sha256": "77fe284cd13a4c51bfea7d07cf3828342fe1cf7ec81fc69b2aa4a3e47c7e3666",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a50_0554313a61e50fa6.audit.json",
+      "audit_sha256": "a4d1a0d0f749bb71c843e81c1125e41d0200267c07c16ef09f04abdd34353c8a",
+      "diagnostic_joint_evaluations": 840,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 70.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a70_central_state_ivm_cfg05357912ed56_budget500.npz",
+      "source_result_sha256": "2549b8aa4652b7f838c09427b746931b11f5501eaea99bdbd51e0a46401f664c",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a70_central_state_ivm_cfg05357912ed56_budget500.audit.json",
+      "source_audit_sha256": "bd7193f83094267ed8b66e7b2b24827086788fdbe07bd12d5131dfdc9d0a6821",
+      "cache_key": "45e42982291e3f173d3bea36944b25f6b48d068bfe4a5f2741619152a134db7d",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "1f55d24c273afa77e9a0b145b795e9ae9be31a9680aa037c6acd201e93f636da",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a70_45e42982291e3f17.npz",
+      "result_sha256": "ee6e11173340df2e1f38b27fd4fdbad21c0eeb5fc949d68f0fa20a18e729a501",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a70_45e42982291e3f17.audit.json",
+      "audit_sha256": "d3b17dc8a80eb11e4b916c20bcd958e578376940110077ac65acbd67a64af685",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 100.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a100_central_state_ivm_cfgde871685b6fe_budget500.npz",
+      "source_result_sha256": "5c1fb71e34d5f8cd702d4f4d533dd8cd2f18895a0513a4623262d42f76bc249f",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a100_central_state_ivm_cfgde871685b6fe_budget500.audit.json",
+      "source_audit_sha256": "713d7f5e168d16f03ac34fbb7dcfbeca98fa93f4d73f04c416e3e3cb6d88b84e",
+      "cache_key": "231a5f27415502b11330678f28456245bf685f68176fb18ab77cec8cbf479eaf",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        -1,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        -1,
+        -1
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "final_total_force": 5143,
+      "final_call_per_internal_image": 280,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "b01d3419bcc0404109a2752910222dca28113cec654172e84da34249984af96f",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a100_231a5f27415502b1.npz",
+      "result_sha256": "01924d4c4717e00715ca3e14eb9309b0ee30a1246b434288e5aa172d138a5786",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a100_231a5f27415502b1.audit.json",
+      "audit_sha256": "6d97aefcc093a88dc4fe89cd5233af74dccb546737224f36b014af0d1076cbb8",
+      "diagnostic_joint_evaluations": 840,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 300.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a300_central_state_ivm_cfgcbfe2a5b4d60_budget500.npz",
+      "source_result_sha256": "26b9abe028f70074910632d4947af5594adbcab278e61e478446506479194510",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a300_central_state_ivm_cfgcbfe2a5b4d60_budget500.audit.json",
+      "source_audit_sha256": "17cb7419a51743b68d4faaa16008e0e5147b4cd87177429d121916cc18821e62",
+      "cache_key": "74b42d941bcf579502dcb21f4aa1e3d51e1ef509683244c01a6daadfcd6b3090",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7520,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "8841f34af00bd33ce91baaaa32e5540a275b9634d80289cd471677b9ca1c5122",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a300_74b42d941bcf5795.npz",
+      "result_sha256": "a7ee8074bf1fcf953ce3373540103dd1c0704ed7ef5a93b2c0278d4c41c9fdc5",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a300_74b42d941bcf5795.audit.json",
+      "audit_sha256": "2ff7483cfa2fafb6427564bde2a7f4b1a44b55dbe46306f1548448e8ef24a9f5",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 18,
+      "alpha": 1000.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner18_manifest.json",
+      "source_manifest_sha256": "7bd615f893a1623de568e28137f7df4e5534b39df3acc4b67f62817f59b9f1c7",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a1000_central_state_ivm_cfg6ad8c3420d5e_budget500.npz",
+      "source_result_sha256": "92cffbfcfd58955c65bf06df6a88693f0151769acf3b20a3bd7316fede0ba731",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner18_a1000_central_state_ivm_cfg6ad8c3420d5e_budget500.audit.json",
+      "source_audit_sha256": "33724c330770e96cae5bd85f07839dd7227a6e2cd7615bbb8e18550c727f919a",
+      "cache_key": "eedbec2e32800c3c1a3f071f9c56abd568a9ef100a1a1eae44182a5dff8baf3e",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        313,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5998,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7063,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "dac22ffe16b3299ee486d8388b90a626d0cc75fed7239e7dc05a666608eccf67",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a1000_eedbec2e32800c3c.npz",
+      "result_sha256": "da87202fa8fb5d4ee3f66813aaf2087878e29492c31478dba5a7c2bdec0ea585",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner18_a1000_eedbec2e32800c3c.audit.json",
+      "audit_sha256": "fb2e74c0e6fb82e62e356582c1c1f72f1bb019953c9b6fd7623aaf771655c4c7",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.03,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p03_central_state_ivm_cfgee83ed6c60ab_budget500.npz",
+      "source_result_sha256": "45f760bb103bf13f489ad1ade6f2b5ee39f720a5f853925c5ab187e8004a0736",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p03_central_state_ivm_cfgee83ed6c60ab_budget500.audit.json",
+      "source_audit_sha256": "dac69848d1a0a964e4e0fb58d7554f89512002cd6c31d8a70e4a3c5634f65fda",
+      "cache_key": "78d7b3d8753de14f2aadaec365dc4098058caf520518fae3e984a30213f27047",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "124f583a81ebd8e88cb19de5e2595c03510e9edc46ea795c6d6b1a362a5bb1cf",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p03_78d7b3d8753de14f.npz",
+      "result_sha256": "db756a9d5d18038654789a6cc393011a7d427fb07a4831cc9cdb3bc7bbe80e84",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p03_78d7b3d8753de14f.audit.json",
+      "audit_sha256": "851abaf325d662bf967227f6abfd81dfdcb8a0f32034adf3317c9479ac951d27",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.05,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p05_central_state_ivm_cfg340b6ba961b6_budget500.npz",
+      "source_result_sha256": "296aa40f139d1df1b93bf6107f1f35b9f0377494c2bb8d97c039fd91d612e317",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p05_central_state_ivm_cfg340b6ba961b6_budget500.audit.json",
+      "source_audit_sha256": "3ccafd3a2d751d8f927aa20ee8b8ff32dfe7528b9d10de4ffc2560c2e4b65ccf",
+      "cache_key": "bb6c271cc416051cab5ec5e53e302de2abf3336c0ab46d5a2192cbf0a7a54c1d",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "256e0e09acde0eae6dac81c86718934e583b792a0e1361abbc4e719ddee74672",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p05_bb6c271cc416051c.npz",
+      "result_sha256": "13448a31c98e7e32f67cf948334264d1abe68e631fc4b9a00e7a701a0aecc787",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p05_bb6c271cc416051c.audit.json",
+      "audit_sha256": "f8de03168bd0605b15480de51bb1a521e93d1670402ac062e322132a95cbb87a",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.1,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p1_central_state_ivm_cfgae040c350260_budget500.npz",
+      "source_result_sha256": "ff3a38dbeca44a548e048c7040e52d27c7212d48e14b72d875bd9a56e9b8cd87",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p1_central_state_ivm_cfgae040c350260_budget500.audit.json",
+      "source_audit_sha256": "74cae9ea4cb06623ca8f9fa2ed309c4eec692e7cdad4220c37edac7af8150688",
+      "cache_key": "462934d16f5ffcf79ad50b145d48caf7c79c9beeaa94f2fa03c4ea01a941f3f8",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "427553497bcdf980bf63bcc5a072d37fe54d4c63cad3402d790be1b54cc097c6",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p1_462934d16f5ffcf7.npz",
+      "result_sha256": "efc30c881a9370cc5e4f5d283893a26e167b1b2248e56b942163a37dc9475968",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p1_462934d16f5ffcf7.audit.json",
+      "audit_sha256": "f044db214311b4498582a1e96c5d5ef9b058f4a998b21c36670292c12a30ed71",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.2,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p2_central_state_ivm_cfg89e7ba2cff63_budget500.npz",
+      "source_result_sha256": "a62a1779867f2186c309fcf61d0d0db8da3c0f648faedc1c2804df9d712c7c7e",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p2_central_state_ivm_cfg89e7ba2cff63_budget500.audit.json",
+      "source_audit_sha256": "521b0e7ceb5411a2661578cbe820a3fdf0586d1a33c2614f0a5a7286799b9b88",
+      "cache_key": "20266065981d8e8356539d181b92fa53e176bee675497446291176a08c578dbb",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 8482,
+      "final_call_per_internal_image": 424,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "c8c6ede35ae3fe199e1e8497b896ab1f7204a41e7971ea19630f3179fe97b411",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p2_20266065981d8e83.npz",
+      "result_sha256": "d78dbf9a0c773f671d8242b51e4a39adeaff9a5342de3bcd81408fc2fddb3814",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p2_20266065981d8e83.audit.json",
+      "audit_sha256": "60f6b302194fa8ceb4488d5458a0b07ce276039d94ff6ef09bd214832ebca398",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.3,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p3_central_state_ivm_cfgee4ea6c5f980_budget500.npz",
+      "source_result_sha256": "b9ba80da1d136008fea6cbc1a6acf05a890966d2c4fb455c73d88c0257f626fb",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p3_central_state_ivm_cfgee4ea6c5f980_budget500.audit.json",
+      "source_audit_sha256": "62d4a1696764ec0de6c65e439fa25f2552d8afbef450b6647866ae7e2caef195",
+      "cache_key": "b0df6041fa531df19a09d42cd84e21185f953d55bf4c37a5d1069d69fd302d0e",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7022,
+      "final_call_per_internal_image": 351,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "701aed73e9a4dd00710851255b55e35752edd5517ebd84d5b68392627239e720",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p3_b0df6041fa531df1.npz",
+      "result_sha256": "77866a2f150ec833c7368e3ec5648943bb61d88565c186dee6b8c25fe653241c",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p3_b0df6041fa531df1.audit.json",
+      "audit_sha256": "f3bf0a82fcec215aeb88425dac50de6bb0c39d49a2b438d055165044b825b59c",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 0.5,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p5_central_state_ivm_cfg52feacf1855b_budget500.npz",
+      "source_result_sha256": "fbb3dbd87db4cf67dd87ebd3859f0249d0e5444b8c2be97925b992863621ddf5",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a0p5_central_state_ivm_cfg52feacf1855b_budget500.audit.json",
+      "source_audit_sha256": "ca40c20ecc712ba7ecb0e391c23d0d0cf782bba333f44fc92120c0d9a3ade691",
+      "cache_key": "0bcf6dfb8c5dd292dcdb9ee38d84e781b813aa5ce7b0017cbf750afa41c30eb1",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 8522,
+      "final_call_per_internal_image": 426,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "db58773ce53078622571e9b6f29515940e2122ee350cda8f905e032a66da9e70",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p5_0bcf6dfb8c5dd292.npz",
+      "result_sha256": "6f2ae82080ec41e1f8ae59b92b84900b379e2e3329ce3086117432c9e816f482",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a0p5_0bcf6dfb8c5dd292.audit.json",
+      "audit_sha256": "d6a7a5cbc2c4f78247dcc349c95e819360168367f3b17e244b256bb9a9803a22",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 1.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a1_central_state_ivm_cfg60168571ab27_budget500.npz",
+      "source_result_sha256": "e1178ebeecfd95c34b8ada1fbaac2ee2d3f1a9db98999d8a331bf1b009aad892",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a1_central_state_ivm_cfg60168571ab27_budget500.audit.json",
+      "source_audit_sha256": "16e0715a5b7fe05a05cab155bbe2d6be53e3076a486a50ca4cef734b227b9d31",
+      "cache_key": "08e356187a94d14e382d5bb4f4d6d6294fa20f35b5aa46169baa576566836a4b",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 6923,
+      "final_call_per_internal_image": 347,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "2e09624690c23cac6b0179f3ad7edf4405dfa441bfa37f7745fc1e7c8adca42b",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a1_08e356187a94d14e.npz",
+      "result_sha256": "2282ceb7e4f7b23f4bd002bb72f9e1cdc16be84412148478b29121872b2d7d01",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a1_08e356187a94d14e.audit.json",
+      "audit_sha256": "0f665772ab30e5f69890209e16c2b5c8f54a9054868cd815d6e5a3260aa55598",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 2.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a2_central_state_ivm_cfg4d2e3dfef9d0_budget500.npz",
+      "source_result_sha256": "9d4bdfe367b5d7198655942f8aa568ad0b51eeb0f867d2fdbee48de50a2aada5",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a2_central_state_ivm_cfg4d2e3dfef9d0_budget500.audit.json",
+      "source_audit_sha256": "4398d75a7e54809c05827a6c402aed4420e90a35518bc4fdd6a1c6d35569ac83",
+      "cache_key": "c8db8ba1e8a270d6cd78f81553bb822935f9d16840f2bb0ede5c9b0227ac95e9",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "65935d208220e8369e87edffb4bd7b50d0c463ac3495fe01d0008775627aa277",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a2_c8db8ba1e8a270d6.npz",
+      "result_sha256": "7faad10a74bb3bee8295c39207063afcfc78ce6eb45d5bbbdf3ebb85f3ced97f",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a2_c8db8ba1e8a270d6.audit.json",
+      "audit_sha256": "19da475f07dd9a32778a00a6d06b32efae7fb560096ac5c3490b973bf3a61bc8",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 3.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a3_central_state_ivm_cfg614d756ed976_budget500.npz",
+      "source_result_sha256": "f3c09b34ada78c4e2a601f34a36b3fe145455f21f681d98779e00bd9712f43c4",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a3_central_state_ivm_cfg614d756ed976_budget500.audit.json",
+      "source_audit_sha256": "40d9844b67185dc0e79badc5c4b098485a2d1a6026cc16f2cbbeda385109de4c",
+      "cache_key": "149c53a03e7604f618e54ac2625dbacca9b59e353cd15868b81f331533cab632",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "6efc355521548c98c993a19d58b2bfb7b12667e57cae7e61cb7a08c6ebff96de",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a3_149c53a03e7604f6.npz",
+      "result_sha256": "e776be5c3e5f40a5a2d07d82b77562c3daa2681f08905c6ffeba127f18d8f734",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a3_149c53a03e7604f6.audit.json",
+      "audit_sha256": "e6a57e934a23b10fc900c5ba50eeb9ec0afa0e7b8c05ef01526550fa1088191f",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 5.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a5_central_state_ivm_cfg49d939ba42c5_budget500.npz",
+      "source_result_sha256": "ea3838f8602edf441ef1615114152d57eb4ebdfce04e9f51a0a841db41b07c2d",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a5_central_state_ivm_cfg49d939ba42c5_budget500.audit.json",
+      "source_audit_sha256": "d0e93e7a13ed79fe42546c211d3f383e25205252710ed1fe1b4579edc3c41d38",
+      "cache_key": "be48094c85a821c265cd6e0d19d65192dc77d67926f54be5c62b4607d035756d",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "80837f1a23e80271774e9ef78e7d487369a97f262592f976b026a2ff9205481c",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a5_be48094c85a821c2.npz",
+      "result_sha256": "02b432d545691fa7d76c8f0c93163a9afaae8ec90c83b70151854427643a2b01",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a5_be48094c85a821c2.audit.json",
+      "audit_sha256": "79d3ca14d26bcd4dfaa03f1d054fee718f53c199f7a505bb767852314ffd2643",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 10.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a10_central_state_ivm_cfg438c7c3a56c9_budget500.npz",
+      "source_result_sha256": "385d099a7c07b4d3987b87ea66cc607fec17c446b19a8a3073f43875ddfebca0",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a10_central_state_ivm_cfg438c7c3a56c9_budget500.audit.json",
+      "source_audit_sha256": "09f2aa97cf8334dfb7953d1c8222fbf0122077ccf798888a595345d1b9fc9164",
+      "cache_key": "f04e44e54dda99d0224c67130db8d6bed290a5124c33e6af364793eaa01489f8",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "e4eb3dfb308cad7fc0ead100452e92ccb4d9510f18db18f1898fd3b590f0502d",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a10_f04e44e54dda99d0.npz",
+      "result_sha256": "babbad9d58168efaef674c280660ba3dc9dff18fbc9aa4e07a39d967869af820",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a10_f04e44e54dda99d0.audit.json",
+      "audit_sha256": "93f3bdb639f3bb7121ee4b5a8c39c917668aaa42dc9a15d0088a1499b2d0b6a3",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 15.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a15_central_state_ivm_cfgbe46494b3448_budget500.npz",
+      "source_result_sha256": "7952fb6b4a4e7b42d6e615054e5b4f02aba0d821c720f4d6071757bee937a5ca",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a15_central_state_ivm_cfgbe46494b3448_budget500.audit.json",
+      "source_audit_sha256": "81f85caacc48cb3eda824061b72b48f9211821e594a1b988fa05c54ddbf56a62",
+      "cache_key": "3d208d653ce02a32c842f92b0ae89b725a47c0d4a21154a1b40ab69ed8fe1008",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "9389cfc2d5308afdee26637dae68f8c8acb08e2175628e6b4965f187f5f229ca",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a15_3d208d653ce02a32.npz",
+      "result_sha256": "981f520286882e7c2638dd41bd2451be60c0295f6a5a1a555b4ef234bf69b177",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a15_3d208d653ce02a32.audit.json",
+      "audit_sha256": "4b9f19b6067daf856a77cbea6c6ca2e9ca453e819027759998cf39b69b787b5b",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 20.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a20_central_state_ivm_cfg87ac9b4c0d8a_budget500.npz",
+      "source_result_sha256": "eec0575fafe7e24469c5afe18003644527c07bbdb0535fcda6fc23b3ca064aa4",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a20_central_state_ivm_cfg87ac9b4c0d8a_budget500.audit.json",
+      "source_audit_sha256": "0663320ca1f52107fac2f8e23da6a2c3313111c090828073fc75af3747034f9a",
+      "cache_key": "4a619d122594aa09362390f96389698ec630a6ca7e1978d467600f4d851d9f42",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 8031,
+      "final_call_per_internal_image": 405,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "d03ce6cadce2ee114278c53a2a6455dfbcfd40b162a9640322c007f00514d995",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a20_4a619d122594aa09.npz",
+      "result_sha256": "40c0b65e565d9f71ca7ae6e2777980b23e7b69bbe565cbbc2cf8562d737dd03f",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a20_4a619d122594aa09.audit.json",
+      "audit_sha256": "227bb8286eee6f8f0f3ec598e6d0b79d8d57138e32eb4ab340d86effbd1751ea",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 30.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a30_central_state_ivm_cfg0275d9d837d8_budget500.npz",
+      "source_result_sha256": "e59b868f8dc1aa149f3623664c36762bfcecc25b0948c64aa6bbdfbb59e40359",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a30_central_state_ivm_cfg0275d9d837d8_budget500.audit.json",
+      "source_audit_sha256": "7c221cc978c832633722691077a1916c15b7131eaf987626307cea8051c28732",
+      "cache_key": "3e9f42f0ffd1277c143a645836b7a0164266be0675bb5d1bf9bdcee69e7e9a3a",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "db90ddba777a32c0add1ceeb3ae5eed756f1360cdc2b217c6475325e6ed641fd",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a30_3e9f42f0ffd1277c.npz",
+      "result_sha256": "7734ad87f2aba5cdc6cc1beddd90ddc5da74050cfbeac82d0553719f1ff06bf0",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a30_3e9f42f0ffd1277c.audit.json",
+      "audit_sha256": "a10fa9f851633b02787d83fba6b17d3ab5accaa5099b6a4807cbe0b7126db847",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 50.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a50_central_state_ivm_cfg40484dae0222_budget500.npz",
+      "source_result_sha256": "94fb2c549cb6bb76ec2add9bf6f239e5a960dfbc9b45ddeb441c2a63684d0eb8",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a50_central_state_ivm_cfg40484dae0222_budget500.audit.json",
+      "source_audit_sha256": "ad5e6d610f3b1a5599abc0b4d472d7b6d3c97931d404b8f5333378a7fe4c8112",
+      "cache_key": "a8ff3298418defab78008d6acc18ab70ab08dd6a52e8fca7f05ecff4af40a48d",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        -1,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        -1,
+        -1
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "final_total_force": 4682,
+      "final_call_per_internal_image": 238,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "ad061aad92bcaee9676dac53c9f706d466006b99a48929dcc321936bfdc57bc6",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a50_a8ff3298418defab.npz",
+      "result_sha256": "ce4bbf3957d0d0873300804ac9a563b91e80a9c626d887e2d6b2998deb81172c",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a50_a8ff3298418defab.audit.json",
+      "audit_sha256": "31082b997c97ca9c6b094bcb6c9f9d38cf8ef5beb19c54fbd275f0ea524b3846",
+      "diagnostic_joint_evaluations": 840,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 70.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a70_central_state_ivm_cfg476a8c4c8894_budget500.npz",
+      "source_result_sha256": "f94306d7585a59cbc6afc4d3410d646dd423c37a95b4f243a7567f1ca06b5884",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a70_central_state_ivm_cfg476a8c4c8894_budget500.audit.json",
+      "source_audit_sha256": "0acb5d98711ca8d2366ae69da978436597ace756e6720831e8bcb7fe73420d93",
+      "cache_key": "4db6c049c100f2c6debb6c67e97133e80fe24cad111311dded46b5a3bee46db1",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "5d233943ffa0a46330284914b6a6fa40b0d254e22b6ffae35c6861b21bbdef3b",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a70_4db6c049c100f2c6.npz",
+      "result_sha256": "e20db2da002a69451d6846d8d9ff448a9b0bc658fe3813915f5b07dd7925bbe5",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a70_4db6c049c100f2c6.audit.json",
+      "audit_sha256": "16d384da10fe0a7eeb98ad64dce0e746f784cd7de99f25d9e8508e4e94be508f",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 100.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a100_central_state_ivm_cfg1a55f2671df1_budget500.npz",
+      "source_result_sha256": "4b18d6c719f7aa18cc21ec9a2afcd84089de1f5780fe7dad25b219095235b1aa",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a100_central_state_ivm_cfg1a55f2671df1_budget500.audit.json",
+      "source_audit_sha256": "5792e69641259fdaa14fd839c97858339064687161d31b7c7a738980d204b4e1",
+      "cache_key": "b4befadc575a499e86e24126a9536f85a97d916cc722ee5e532f69680be2addf",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        -1,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        -1,
+        -1
+      ],
+      "budget_not_reached": [
+        6000,
+        10000
+      ],
+      "final_total_force": 5663,
+      "final_call_per_internal_image": 306,
+      "stop_reason": "lbfgsb_no_progress",
+      "source_paths_sha256": "496f748583d0dfdaf461177ed472becb389b4efcd2c92846672742b8a84cfede",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a100_b4befadc575a499e.npz",
+      "result_sha256": "d4e082684bee254ea4f3fdb506ec866a6409c817926d6f8a26c4c9076d655d00",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a100_b4befadc575a499e.audit.json",
+      "audit_sha256": "20267b9d9651d0e97845522702e62eefe9c62ef7d5ba80f8465f0e4f43ffeb07",
+      "diagnostic_joint_evaluations": 840,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 300.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a300_central_state_ivm_cfg9bdcd9a85947_budget500.npz",
+      "source_result_sha256": "40386fb49b15bf7128bf19282c525ec0037875b722049df6162e60f5bd8241ce",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a300_central_state_ivm_cfg9bdcd9a85947_budget500.audit.json",
+      "source_audit_sha256": "d8e65cb689fa836348ebce23a72c30d31c41af407d352e5eab698b4e5502cf19",
+      "cache_key": "650aa81972bfb614d5b75479c3a06240038388f3d11ea1ae187c43d922a54143",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        498
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        9982
+      ],
+      "budget_not_reached": [],
+      "final_total_force": 10002,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "ecd7853873f525328817ccfdcd9bed9f301facb77cf8b804d652207675213e25",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a300_650aa81972bfb614.npz",
+      "result_sha256": "75803021d8b1f0161357c25abb4424cbfde8899a373e28d833171003a6137ab9",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a300_650aa81972bfb614.audit.json",
+      "audit_sha256": "e0b895f0ca49fd0aa8bde67824be6c45e595a8fbcb79b1d766219dbd57036210",
+      "diagnostic_joint_evaluations": 1678,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 20,
+      "alpha": 1000.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/finalized_subproblem_caps18_20_20260729a/inner20_manifest.json",
+      "source_manifest_sha256": "8b0e06964ff68fbde4b18cebe3d4f346015fdc516f623d8c57ce7e6cb548c980",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a1000_central_state_ivm_cfgc1b77f65a963_budget500.npz",
+      "source_result_sha256": "522993d47cc2ced016a26d43b9cb522ab79aec9bc21b27dabbf3bc46c110cc72",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_inner20_a1000_central_state_ivm_cfgc1b77f65a963_budget500.audit.json",
+      "source_audit_sha256": "d21c19cdbb0aeb00ebf6694675426f570e4fbfd63149365b84382ccb3faff49d",
+      "cache_key": "b8cc384b31c30eea2fdef8f3f523a694db82b1c0798fc6f67658d21fd3b826a6",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        300,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5989,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7495,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "e7d618976dcfd9e8c143cad7cf10aadb8ad8c71bc32820e95c8e281aa3077f4e",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a1000_b8cc384b31c30eea.npz",
+      "result_sha256": "f8f290f2453a19bf48fe727849c0a74d936ac89e8208fd7f4a49c5353839ffd7",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_caps18_20_dense_20260729a/dense_barrier_inner20_a1000_b8cc384b31c30eea.audit.json",
+      "audit_sha256": "3d18c7753207e9e335ce47777b6a1d59680a4988c4145804e57c6588745c21a5",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    }
+  ]
+}

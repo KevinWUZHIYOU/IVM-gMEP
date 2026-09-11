@@ -1,0 +1,405 @@
+{
+  "requested_total_force_budgets": [
+    1002,
+    3002,
+    6002
+  ],
+  "optimization_cost_axis": "counter_vectors.sum(axis=1)",
+  "cost_includes_all_22_images": true,
+  "diagnostic_calls_excluded_from_optimization_axis": true,
+  "total_diagnostic_joint_evaluations": 10072,
+  "records": [
+    {
+      "alpha": 0.05,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p05_central_state_ivm_cfgdce54f7d7545_budget300.npz",
+      "source_result_sha256": "c98b99166f23b3a9b1b69055053c9504f91c38bc956946caca000d6786b5423e",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p05.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p05.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_0p05.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p05_central_state_ivm_cfgdce54f7d7545_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a0p05",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "823528dd59410049a04536458a3aaa2ddb3e839230e6e9427ee3f3e022d2f1c2",
+      "audit_sha256": "6ec2469552949e2032e3132328f49cae2515b24061028e43c0c4e1703e2596f8",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 0.2,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p2_central_state_ivm_cfg11d850c43744_budget300.npz",
+      "source_result_sha256": "20184b17c6f8f9a73a3c451ae174d7081cfd513f6d656b3e01d0bd97fce089d2",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p2.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p2.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_0p2.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p2_central_state_ivm_cfg11d850c43744_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a0p2",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "28fb8b6fba04661476e09b9e6adc25d85e1315e94a568095945736e34253750f",
+      "audit_sha256": "37db42db9b6bf2389b70102fa1d1a899ff17027491637dc4fd319330dc2e6e39",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 0.5,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p5_central_state_ivm_cfgd123ba880c78_budget300.npz",
+      "source_result_sha256": "932d326d30e8afc71795e45deb5088500c872df22588ee683423fb2b9b3a927c",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p5.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a0p5.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_0p5.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a0p5_central_state_ivm_cfgd123ba880c78_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a0p5",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "cc4bfbd189a8106a9dbc49dd0f4a8e2724da3d1f3db9b51daa9de077ad9b6d22",
+      "audit_sha256": "9a9587cbdfc6331b044eb35664d4273260a7300131a59555f884da54bde20ab8",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 2.0,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a2_central_state_ivm_cfgccd0e66d14c7_budget300.npz",
+      "source_result_sha256": "b4a790fd9a1a33a7d67566ddb28397c45a3dc427e113c067f7626cb41e4c1ae9",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a2.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a2.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_2.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a2_central_state_ivm_cfgccd0e66d14c7_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a2",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "6644cd8da894f8e1d27cad18075e1fa696e72dde37a8452bf02597747ba371d9",
+      "audit_sha256": "bbd63044e2c6f9bab4d342d96465c509b476af0adb4a08b884f7bec6f01914f1",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 5.0,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a5_central_state_ivm_cfgd44ff4bbcb09_budget300.npz",
+      "source_result_sha256": "faacf3e794fbdaece74ecbf0f20891ac18d65fe14d23b451f1d7aca29780c2d9",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a5.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a5.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_5.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a5_central_state_ivm_cfgd44ff4bbcb09_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a5",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "137ed3f6cd3c4d745f173dbb978c08bea5b7d9f16566feab85cb244812223fe4",
+      "audit_sha256": "a59a01f5b47bac427a47f5142d4c636e181157e8a8344dc103be6c684e3cd2ad",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 15.0,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a15_central_state_ivm_cfg2a934dd08e8b_budget300.npz",
+      "source_result_sha256": "3343569d5ae8b04d48557f262b60ff1ff5ba34c57dccc01321a86bdb3670327f",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a15.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a15.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_15.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a15_central_state_ivm_cfg2a934dd08e8b_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a15",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "7db9a48cd89562a200861461cd54d5be6b61ad3152beff5624cd97cb5081e950",
+      "audit_sha256": "4a08bf3813b4a242ea2683c31d9e9e9504841b5236f99ebe98d85c7c2302909f",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 50.0,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a50_central_state_ivm_cfg0d813d5aff66_budget300.npz",
+      "source_result_sha256": "ce3412e354056d3bc8cf9a89e70ca2ca2912eef8f5044633e33b99d454a98028",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 181,
+          "actual_number_of_force_evaluations": 3515
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a50.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a50.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_50.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a50_central_state_ivm_cfg0d813d5aff66_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a50",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,181"
+      ],
+      "result_sha256": "fe1081923f1b7467b292b554fc0533a5dffaf52f0d54f7ace10b7d9907279863",
+      "audit_sha256": "100ba4035a6d4bc495093cd9f3210bf7d9baa7d345eb427a06a279096f9b577b",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    },
+    {
+      "alpha": 70.0,
+      "status": "completed",
+      "returncode": 0,
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a70_central_state_ivm_cfgfc766f63a0ec_budget300.npz",
+      "source_result_sha256": "7f8b3e1051276bb6902a2b9838c104b3ce8fb88d70f5dab59f2778b631066512",
+      "checkpoints": [
+        {
+          "requested_force_budget": 1002,
+          "selected_call_per_image": 50,
+          "actual_number_of_force_evaluations": 1002
+        },
+        {
+          "requested_force_budget": 3002,
+          "selected_call_per_image": 150,
+          "actual_number_of_force_evaluations": 3002
+        },
+        {
+          "requested_force_budget": 6002,
+          "selected_call_per_image": 300,
+          "actual_number_of_force_evaluations": 6002
+        }
+      ],
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a70.npz",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/dense_barrier_ivm_fixed_alpha_well_fill_20260728a_a70.audit.json",
+      "log_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/logs/ivm_fixed_alpha_well_fill_20260728a/alpha_70.log",
+      "command": [
+        "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python3.8",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+        "--root",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin",
+        "--result",
+        "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_paper_fixed_alpha_well_fill_a70_central_state_ivm_cfgfc766f63a0ec_budget300.npz",
+        "--output-label",
+        "ivm_fixed_alpha_well_fill_20260728a_a70",
+        "--workers",
+        "1",
+        "--calls",
+        "50,150,300"
+      ],
+      "result_sha256": "e7f8a87408775b1e9f57f23c8884c6d4b07420d419eb1daf43f29841d0927698",
+      "audit_sha256": "df97ea9f70a155f28d354c5670992c88fdad0986d86841b12cb5ed7a46c4316e",
+      "diagnostic_joint_evaluations": 1259,
+      "selected_subdivision_counts": {
+        "20": 3,
+        "40": 0,
+        "80": 0
+      }
+    }
+  ]
+}

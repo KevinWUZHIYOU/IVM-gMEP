@@ -1,0 +1,26 @@
+{
+  "campaign_status": "reports/campaign_status/bb-irivm-alpha-confirm-local-a1-a10-990-20260901-r1.json",
+  "campaign_status_sha256": "3bcff5f5b295c04ead001b7d19de4a5b8b1b9ab24a005b1956a8f3da1597c4d0",
+  "created_utc": "2026-09-01T13:16:55Z",
+  "execution_authorization": "registrations/execution_authorizations/bb_irivm_a1e1_r05_m05_inf990_r1.json",
+  "execution_authorization_sha256": "154cf798537827be0c92d3e27aa88fd55e4144782eac417a96382a39dd797b9a",
+  "finished_unix": 1788268232.828398,
+  "interpretation": "The foreground PTY-backed process returned nonzero without producing a result or audit. Return code 120 is treated as an infrastructure/process-I/O failure, not as evidence about IR-IVM convergence.",
+  "number_of_forces_interpretation": "Indeterminate because no terminal result and no physical-attempt audit were produced; this attempt contributes no scientific observation and must not enter ranking.",
+  "original_label": "bb_irivm_a1e1_r05_m05_inf990_r1",
+  "original_registration": "registrations/screen/bb_irivm_a1e1_r05_m05_inf990_r1.json",
+  "original_registration_sha256": "398ae65efadb1ff043c57cd9ae22130d65dace2685556d0266ca57e6b69af5f1",
+  "replacement_label": "bb_irivm_a1e1_r05_m05_inf990_r2",
+  "replacement_rule": "A single fresh, non-resumed, detached replacement may run under a new immutable registration and authorization; the original failed attempt remains preserved and excluded.",
+  "registered_controls": {
+    "alpha": 10.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 990,
+    "r": 0.5
+  },
+  "returncode": 120,
+  "schema": "bb-irivm-infrastructure-failure-receipt-v1",
+  "scientific_result_exists": false,
+  "started_unix": 1788268080.670791,
+  "status": "RECORDED_INFRASTRUCTURE_FAILURE_NO_SCIENTIFIC_RESULT"
+}

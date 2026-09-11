@@ -1,0 +1,52 @@
+{
+  "source_result": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/screen/ivm_chig_irivm_a1e1_r05_m05_inf1500_r1_central_state_ivm_cfg29d8ce2d7afa_budget1500.npz",
+  "source_result_sha256": "25dfaa16dc765e2e091f82cb1c0ca6c10232013cda5ad3964a349262bdf6ca4f",
+  "source_optimization_audit": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/screen/ivm_chig_irivm_a1e1_r05_m05_inf1500_r1_central_state_ivm_cfg29d8ce2d7afa_budget1500.audit.json",
+  "source_optimization_audit_sha256": "b00224191f24690f77ca523112108c1e29ca2b5ee74583dcc106b2d061e74056",
+  "source_optimization_backend_raw_joint_evaluations": 1502,
+  "output": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/runs/diagnostics/by_record_chig_irivm_a10_r05_m05_nf907.npz",
+  "output_sha256": "d93cdbcaab95a8a0978c5db470e4aaa25b61ca17367169d12289f96b680e222d",
+  "source_selected_paths_sha256": "2b47200b5f428f01431b8dd0772cf7965dca130e0ec8940aa480c03c1c47437a",
+  "complete_state_definition": "initial_or_reparam_committed",
+  "eligibility_rule": "record_index == 0 or reparam_committed[record_index]",
+  "all_selected_records_eligible": true,
+  "path_mapping_policy": "audited_one_to_one_history_order",
+  "optimization_cost_axis": "counter_vectors.sum(axis=1)",
+  "cost_includes_all_22_images": true,
+  "fixed_endpoint_first_evaluations_included": true,
+  "diagnostic_counts_excluded_from_optimization_axis": true,
+  "barrier_protocol": {
+    "energy_backend": "real OpenMM CPU double precision",
+    "interpolation": "linear Cartesian interpolation per segment",
+    "initial_subdivisions": 10,
+    "comparison_subdivisions": 20,
+    "adaptive_threshold_kcal": 0.05,
+    "maximum_subdivisions": 80
+  },
+  "records": [
+    {
+      "record_index": 50,
+      "stored_path_index": 50,
+      "complete_state_kind": "reparam_committed",
+      "reparam_committed": true,
+      "paper_total_nf": 907,
+      "i_perp": 0.18194143923859238,
+      "adaptive_dense_barrier_kcal": 24.100142619701092,
+      "selected_subdivisions": 20,
+      "diagnostic_joint_evaluations": 421
+    }
+  ],
+  "selected_initial_states": 0,
+  "selected_committed_reparameterizations": 1,
+  "diagnostic_backend_raw_joint_evaluations": 421,
+  "diagnostic_evaluator_cache_misses": 421,
+  "diagnostic_row_joint_evaluations": 421,
+  "diagnostic_energy_requests": 632,
+  "diagnostic_force_requests": 0,
+  "diagnostic_cache_hits": 211,
+  "selected_subdivision_counts": {
+    "20": 1,
+    "40": 0,
+    "80": 0
+  }
+}

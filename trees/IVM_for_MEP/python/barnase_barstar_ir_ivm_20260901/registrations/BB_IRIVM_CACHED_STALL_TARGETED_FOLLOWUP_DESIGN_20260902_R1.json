@@ -1,0 +1,110 @@
+{
+  "schema": "bb-irivm-cached-stall-targeted-followup-design-v1",
+  "status": "CONDITIONAL_DESIGN_FROZEN_NON_EXECUTABLE",
+  "created_utc": "2026-09-01T19:04:25Z",
+  "timing": "frozen while candidate B was still running and before any candidate-B arc-length-500 diagnostic was computed or inspected",
+  "purpose": "prospectively define the smallest three-parameter follow-up if the two preregistered 4080-N_F candidates provide no compliant long-budget IR-IVM path",
+  "trigger": {
+    "logical_rule": "candidate B is classified ALGORITHMIC_EARLY_STOP after its terminal audit, or the terminal audits of candidates A and B establish that neither supplies a compliant 4080-N_F result",
+    "candidate_A_terminal_class": "ALGORITHMIC_EARLY_STOP",
+    "candidate_A_failure_receipt_sha256": "1d3eea23c847c7bfe537191eaa6f94e9b6686108352b41c84e5201c1976fba9a",
+    "candidate_A_cached_stall_diagnosis_sha256": "2b573e99d936325034a6cad9b0426e906c7ade9028bff28f51c92b1ba01bc1ce",
+    "candidate_B_registration_sha256": "6896c62db4964fcd218275e0898764519ee7906f249b11b03dce0df6232b7244",
+    "candidate_B_execution_authorization_sha256": "95870cc0f81d17caf62422f109cf5c77ea0e8240e4759aeb90a1e6de0f1d9d6b",
+    "candidate_B_terminal_bindings_required_before_trigger_decision": [
+      "unique result NPZ SHA-256",
+      "producer audit SHA-256",
+      "terminal lock receipt SHA-256",
+      "zero-OpenMM verifier or failure receipt SHA-256"
+    ],
+    "infrastructure_exclusion": "a lock, host, source-hash, disk, synchronization, or failed-OpenMM-call nonconformance does not activate the follow-up; the infrastructure failure must first be sealed and corrected"
+  },
+  "first_followup": {
+    "label": "bb_irivm_a1e1_r05_m08_inf4080_r1",
+    "alpha": 10.0,
+    "residual_ratio_r": 0.5,
+    "inner_max_steps_m_max": 8,
+    "optimization_Number_of_Forces_upper_bound": 4080,
+    "fresh_initial_path": "inputs/common_initial_path32.npz",
+    "warm_start_forbidden": true,
+    "forbidden_inherited_state": [
+      "candidate-A N_F=716 path",
+      "candidate-A N_F=3057 terminal path",
+      "candidate-A coordinate cache",
+      "candidate-A L-BFGS history",
+      "candidate-B path or optimizer state"
+    ],
+    "reference_host": {
+      "hostname": "Mac-mini.local",
+      "address": "100.74.85.3",
+      "architecture": "arm64",
+      "processor": "Apple M4"
+    },
+    "execution_invariants": {
+      "jobs": 1,
+      "all_thread_caps": 1,
+      "host_local_fcntl_locks_required_before_child": true,
+      "fixed_endpoint_optimization_Number_of_Forces": 0,
+      "diagnostic_feedback_during_optimization": "forbidden",
+      "arc_length_500_before_terminal_audit": "forbidden"
+    },
+    "interpretation": "a result-triggered targeted experiment within the declared IR-IVM controls, not a continuation or silent replacement of candidate A"
+  },
+  "second_followup": {
+    "m_max": 10,
+    "status": "NOT_AUTHORIZED_BY_THIS_DESIGN",
+    "necessary_conditions": [
+      "the m_max=8 follow-up terminates with cached_coordinate_stall",
+      "each repeated terminal outer solve reaches evaluated-inner-max-steps at 8 steps",
+      "the terminal relative natural residual remains greater than r=0.5",
+      "candidate directions, predicted decrease, cap scale, and coordinates repeat byte-for-byte across terminal outer solves",
+      "the strict merged outer acceptance fraction is zero",
+      "the repeated coordinates are cache hits with zero additional physical force calls"
+    ],
+    "insufficient_conditions": [
+      "an unfavorable discrete I_perp value",
+      "an unfavorable densified Delta E value",
+      "failure to meet a precision target without the listed mechanical evidence"
+    ]
+  },
+  "authorization_rule": "this file is not an execution authorization; after candidate B terminates, a separate immutable trigger-decision receipt, member registration, and execution authorization must bind the complete terminal evidence before the child process starts",
+  "frozen_protocol_bindings": {
+    "contracts/MIGRATION_CONTRACT.json": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+    "registrations/CAMPAIGN_PREREGISTRATION.json": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+    "registrations/STAGED_SEARCH_PROTOCOL.json": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+    "registrations/USER_EFFICIENT_CONTROLLED_SCAN_AMENDMENT_20260901_R1.json": "7ed32b0562657bc78b79ade588e1b0bd38c3c4d744e3c9642e1d70bece153d46",
+    "registrations/USER_BUDGET_ATOMICITY_AMENDMENT_20260901_R1.json": "fbecd954477a64c8ae83add0025c6d314905f1eb5f789ab7e0732b4da87cc680",
+    "registrations/USER_METRIC_POLICY_AMENDMENT_20260901_R1.json": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5",
+    "registrations/USER_EXACT_PATH_DIAGNOSTIC_REUSE_AMENDMENT_20260901_R1.json": "1da0658a7f80908e08184cd54d21bc0e5ca73b7f589784be41337902e30998f9",
+    "registrations/BB_IRIVM_LONG_BUDGET_DESIGN_20260902_R1.json": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629",
+    "registrations/BB_IRIVM_LONG_PREFIX_REPRODUCIBILITY_CRITERION_20260902_R1.json": "a1e485cda26065ae1c91188589450053c4a25d0e7c871ee5ac9faa5dee6c6432"
+  },
+  "source_closure_sha256": {
+    "src/bb_core.py": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d",
+    "src/bb_ffprecon.py": "248f030d8f2e11ea1c5ac6d7cfd3d5fb1966c22162a33216c7d285d75d1d1df1",
+    "src/frozen_discrete_b040.py": "a42da93b10ab9e235770569159cfaf5bd36e819ed169ccb619729b5de6df9ed4",
+    "src/run_barnase_barstar_ir_ivm_member.py": "ebb9d2c52d5e3a12c477c0e735797d9aff5fee5df311b8c84f87f0b39f4cfd85",
+    "src/run_ivm_v9_discrete_ffrbk_takeover_grid_shim.py": "b93a0156bd05cf1f1eafced5a07d608160e2f9ec440136c2ed5961a240709d2b",
+    "src/run_ivm_v9_discrete_ffrbk_takeover_selector_shim.py": "75f4dc5f4d7ab6c7af13e5b8e15a0f81b41b4a937346233a20a3e20e0de160f4",
+    "src/run_ivm_v9_discrete_selected_eta_shim.py": "a2f071ea787a008ed001fd806b8952f84d8db90335b544308478f3f6ae2facf9",
+    "src/run_ivm_v9_spring_projected_production_20260730.py": "991c11ff1f8eab014a6e54b4bf8ba610b0e52d071b202dc131b03bfabe6143fa",
+    "src/run_ivm_v9_total_internal_nf_budget.py": "71e82c4d32b07e9295b44e2af18b9b6c0e7dbad0d5cbc4a517288ce213d03e22",
+    "src/storage_policy.py": "30621a7fcd14400b97ff75643d8d2a9596dd9b665bd20df48fa0985ccd8cc0c2"
+  },
+  "input_closure_sha256": {
+    "inputs/complex_fixed.pdb": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49",
+    "inputs/common_initial_path32.npz": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf",
+    "inputs/endpoint_joint_ef_cache.npz": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+  },
+  "forbidden_changes": [
+    "state_kkt_stall_tighten_target",
+    "globalization rule",
+    "reparameterization or recovery rule",
+    "eta",
+    "history length",
+    "physical maximum step",
+    "central tangent convention",
+    "path-storage policy",
+    "Number-of-Forces definition"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "audit_edge_test": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_independent_audit_edges.py",
+    "sha256": "c183b4ef0dafd1af3c0c2bced29ac3101f3e9f2c10c4c576541060aa671db6ad"
+  },
+  "campaign_id": "q10-irivm-low-r-coherence-secant-v2-20260830",
+  "candidate_summary": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/result_audit/candidate_summary.csv",
+    "sha256": "c1f0312380b23e3d3701393323bf7788e2de51194bb5f101622075a55c494848"
+  },
+  "checkpoint_comparison": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/result_audit/checkpoint_comparison.csv",
+    "sha256": "4456548c48c9a8d340fbcd09890bb196c482c57d2f222405f89769d3c05c19b9"
+  },
+  "contract_test": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tests/test_atomic_tangent_secant_contract.py",
+    "sha256": "fd0dc05a53f8fc201d6defbe636f5e5ceaf89695fc6be7c982eadfa3bac3e1e4"
+  },
+  "created_at": "2026-08-30T22:22:03+08:00",
+  "figure": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/q10_irivm_low_r_strict_comparison.pdf",
+    "sha256": "930e17ce9ecd54819e1e37bae5efe707652aec9749f89e3ff44a7052f0e6098e"
+  },
+  "figure_provenance": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/FIGURE_PROVENANCE.md",
+    "sha256": "bb367abf93287cd9265d93492bb303b247d9e524b6a4c8ce2350130acb97cdaa"
+  },
+  "final_audit_manifest": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/result_audit/audit_manifest.json",
+    "sha256": "9f0deef275b46a81541dc2f475061bc8fefe73f0aa8d80272d76efdb3ebadee0"
+  },
+  "final_audit_report": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/result_audit/AUDIT_REPORT.md",
+    "sha256": "eaa157cb02bf6d7039fb82e2b23cb74b298658ef59596b324d930d8223bb5431"
+  },
+  "implementation": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/q10_irivm_atomic_tangent_secant_core.py",
+    "sha256": "2e12b8817730b56ddef0594c932cfc0c3f4642795af25c623ca82c7a726a66a0"
+  },
+  "independent_audit_source": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/audit_results.py",
+    "sha256": "79d4a57e96732124e1389a164841f741da6114b69f19b5c1743db072a93a639f"
+  },
+  "integrity_failure_count": 0,
+  "integrity_valid_member_count": 8,
+  "metric_source": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/unified_ir_ivm_20260827/src/q10_article_metrics.py",
+    "sha256": "ab60b2391b52b6304b364c9d1c062dfbb0340ee4e9598b3827fba03006fd5e14"
+  },
+  "n20_gate_manifest": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/n20_gate_audit/audit_manifest.json",
+    "sha256": "e7a3c54bffd4c9c63c9b2dac39fe9baf985a6d964485ea77fecc11917cc8fd23"
+  },
+  "plot_source": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/plot_selected_comparison.py",
+    "sha256": "aaea656f4a8f79b6bb4a3696d345f472adeb32606d3eedb556f48fc4e67b5b6e"
+  },
+  "protocol": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/PROTOCOL.md",
+    "sha256": "6203f7e07fbe74c343be34e34de24fc08458f80b812aecb6ccfba71dfba96169"
+  },
+  "qa_render": {
+    "dpi": 180,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/tmp/pdfs/q10_irivm_low_r_strict_comparison_rendered.png",
+    "renderer": "Poppler pdftoppm",
+    "sha256": "7a5ec96d1f72ab1940604156ae7ab4f68787f29fa3ecd8eabaf7c86111a8aa7c",
+    "visually_checked": true
+  },
+  "registered_member_count": 8,
+  "registration": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/registrations/CAMPAIGN_PREREGISTRATION.json",
+    "sha256": "d75b59fa7aea8bf6badf07903f2a155d2999cb7563968b36c8ec7e85c76fd8ee"
+  },
+  "runner": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/src/run_grid.py",
+    "sha256": "6b9e02242564b331e7103f3ebfe81513964035e4dd4961a570d17230cc595ae4"
+  },
+  "scientific_status": "disclosed post-hoc QM10 v2 confirmation; not an independent transfer or holdout",
+  "selected": {
+    "10": {
+      "article_npz": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/image12/data/frozen_runs/tuned_ivm_alpha2e3_selected.npz",
+        "sha256": "a09bdc481d98c37b448ae9efaff045aba6208f247b8bcbf6d296b1f1ec7a7a40"
+      },
+      "candidate_npz": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/runs/n10/c5a578f9a8b87197.npz",
+        "sha256": "d59af36708a03fece3477cd2b177e306ecc419efeddcd2ac6573e6a313a07a7f"
+      },
+      "controls": {
+        "alpha": 0.002,
+        "alpha_label": "2e-3",
+        "m_max": 4,
+        "n_internal": 10,
+        "r": 0.65
+      },
+      "joint_wins": 51,
+      "receipt": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/receipts/n10/c5a578f9a8b87197.receipt.json",
+        "sha256": "2459c5bc8ab0f2f22668a7ef2cd8aea13524d52bd144936a51ad9954c6c821a9"
+      },
+      "run_id": "c5a578f9a8b87197",
+      "staged_gate_token": "e7a3c54bffd4c9c63c9b2dac39fe9baf985a6d964485ea77fecc11917cc8fd23",
+      "terminal_nof": 847,
+      "worst_delta_e_error_ratio": 0.9996979797127526,
+      "worst_i_perp_ratio": 0.026290842610753155
+    },
+    "20": {
+      "article_npz": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/muller_q10_10d/data/frozen_runs/tuned_ivm_alpha1e3_selected.npz",
+        "sha256": "3cf6649deb4b6bd2c11da51ca204a06513cad8e6702867e59619a2956d52162b"
+      },
+      "candidate_npz": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/runs/n20/c14cc0cf2a7f6171.npz",
+        "sha256": "7a046b483f3af238a3b5359ece157ff935b84af1d4699a700bc4768143bab9f7"
+      },
+      "controls": {
+        "alpha": 0.001,
+        "alpha_label": "1e-3",
+        "m_max": 4,
+        "n_internal": 20,
+        "r": 0.65
+      },
+      "joint_wins": 51,
+      "receipt": {
+        "path": "/Users/wuzhiyou/IVM_for_MEP/python/q10_irivm_low_r_coherence_secant_v2_20260830/reports/receipts/n20/c14cc0cf2a7f6171.receipt.json",
+        "sha256": "966cea6fb811dc6f055db20f84a3e4343e5cdf8871a3abdeafc70609d89410a7"
+      },
+      "run_id": "c14cc0cf2a7f6171",
+      "staged_gate_token": "not_applicable",
+      "terminal_nof": 2282,
+      "worst_delta_e_error_ratio": 0.9907478520478517,
+      "worst_i_perp_ratio": 0.18279904897298907
+    }
+  }
+}

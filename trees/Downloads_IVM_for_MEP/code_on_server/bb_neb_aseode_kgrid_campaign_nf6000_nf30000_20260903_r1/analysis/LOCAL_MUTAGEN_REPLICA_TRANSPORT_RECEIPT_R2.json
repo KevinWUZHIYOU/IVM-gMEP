@@ -1,0 +1,94 @@
+{
+  "schema": "bb-nf30000-local-mutagen-replica-transport-receipt-v1",
+  "status": "PASS_REMOTE_IMMUTABLE_LOCAL_MODE_NORMALIZED",
+  "created_utc": "2026-09-03T07:26:06Z",
+  "independent_observer_report": {
+    "observer": "/root/bb_speed_supervisor",
+    "remote_probe_approximately_utc": "2026-09-03T07:24:00Z",
+    "raw_command_output_was_persisted": false,
+    "note": "No command-output hash is claimed; the independently reported exact facts are recorded below without backdating a machine attestation."
+  },
+  "mutagen_session": {
+    "identifier": "sync_wluhxwR03mFsMVwykAr1wJZEhU2OBSLb9h1LhC0Dus0",
+    "name": "bb-aseode-nf30000-output-20260903-r1",
+    "mode": "One Way Safe",
+    "alpha": "wuzhiyou@100.74.85.3:/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1",
+    "beta": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1",
+    "alpha_connected": true,
+    "beta_connected": true,
+    "status": "Watching for changes"
+  },
+  "exact_run": {
+    "run_label": "fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1",
+    "remote_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1",
+    "local_beta_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/runs/fresh-nonresume-bb-neb-aseode-k0p1-formal-nf30000-remote-20260903-r1"
+  },
+  "prestart": {
+    "relative_path": "PRESTART.json",
+    "bytes": 5648,
+    "remote_mode_octal": "0444",
+    "local_beta_mode_octal": "0600",
+    "remote_sha256": "1c5aa970ab806eccb785e41cb273c52bf5d38b087c834d5dda5fc09555522422",
+    "local_beta_sha256": "1c5aa970ab806eccb785e41cb273c52bf5d38b087c834d5dda5fc09555522422",
+    "remote_local_bytes_and_sha256_equal": true
+  },
+  "published_shard_exemplar": {
+    "relative_path": "paid_batch_full_state/batch_0333_nf09990.npz",
+    "batch_id": 333,
+    "optimization_N_F": 9990,
+    "bytes": 4949896,
+    "remote_mode_octal": "0444",
+    "local_beta_mode_octal": "0600",
+    "remote_sha256": "850780637149ab34bd6dba36cd01ee7ca76ad03cbc4caa4d2f756a3ee7fb524d",
+    "local_beta_sha256": "850780637149ab34bd6dba36cd01ee7ca76ad03cbc4caa4d2f756a3ee7fb524d",
+    "remote_local_bytes_and_sha256_equal": true
+  },
+  "local_replica_exception": {
+    "allowed_mode": "0600",
+    "allowed_exact_paths": [
+      "PRESTART.json",
+      "paid_batch_full_state/batch_<published-id>_nf<30*id>.npz",
+      "paid_batch_full_state/FULL_STATE_COMPLETE.json after terminal publication",
+      "exact canonical terminal-audit path after terminal publication"
+    ],
+    "forbidden": [
+      "paths outside the exact registered beta campaign/run",
+      "unpublished or noncontiguous shard tails",
+      "symlinks and nonregular files",
+      "source trees, output caches, and selected-state packs",
+      "content whose SHA-256 differs from its publication or terminal binding"
+    ],
+    "per_shard_scientific_gate": [
+      "complete newline-terminated batch_published record",
+      "matching optimizer batch_commit record",
+      "exact publication-to-commit metadata equality",
+      "exact shard SHA-256 equality",
+      "bit-exact full/XOR reconstruction hashes"
+    ],
+    "local_beta_files_chmodded_by_observer": false,
+    "local_cache_and_selected_state_outputs_require_mode": "0444"
+  },
+  "preaudit_diagnostic_local_caches": [
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/formal_discrete32_cache_r2_local_mutagen/formal_discrete32_cache_through_batch_0337.json",
+      "sha256": "a5af2672c8906f86402c2b668ce1e77db28bf0057c2dbb2d8dc3170b4fd80aaa",
+      "processed_batches": 337,
+      "processed_optimization_N_F": 10110,
+      "formal_input_eligible": false,
+      "reason": "Generated before this receipt and the replica wrapper were frozen; it must not be used as a previous cache or final scientific input.",
+      "physical_calls": 0,
+      "bb_locks_acquired": 0
+    },
+    {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode_kgrid_campaign_nf6000_nf30000_20260903_r1/analysis/formal_discrete32_cache_r2_audited_local_mutagen/formal_discrete32_cache_through_batch_0372.json",
+      "sha256": "d203be9844d0ce3a0c6271fa59b1f311eaa63dc7932b36fe50ad574ee7c87c0e",
+      "processed_batches": 372,
+      "processed_optimization_N_F": 11160,
+      "formal_input_eligible": false,
+      "reason": "Generated before the production wrapper enforced exact CLI source/run/output paths; it must not be reused by the final cache.",
+      "physical_calls": 0,
+      "bb_locks_acquired": 0
+    }
+  ],
+  "physical_calls": 0
+}

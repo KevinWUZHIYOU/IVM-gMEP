@@ -1,0 +1,158 @@
+{
+  "bindings": {
+    "bb_core": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/src/bb_core.py",
+      "sha256": "8cc9f3519bd36ef46901dd86ec2cdd9e8005763993892d48a9daf3d24e4b9f2d"
+    },
+    "blind_selection_preregistration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json",
+      "sha256": "a0a6af4b445b02a5960541c5492fdc57a4f48d74acdbda26c096dafb9b953e94"
+    },
+    "blind_selector": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_late_milestones_blind.py",
+      "sha256": "5106409e7ab7dce619c8be5d96f9d6c2878fe23dd55b23b798e8ce706cb4a972"
+    },
+    "common_initial_path": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/common_initial_path32.npz",
+      "sha256": "6983365a5c39d117b5ec1ce4cb9afbaed1817c1190d27a567dea1fbce983e6cf"
+    },
+    "contract_freezer": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_late_six_joint_ef_contract.py",
+      "sha256": "c55ffc4f04e2b7115129f93d231671d3f42f737d4b47492d7bc8d4ec8a7658b5"
+    },
+    "endpoint_joint_EF_cache": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/endpoint_joint_ef_cache.npz",
+      "sha256": "5cd4e757c99f0784d8b0781d05d8083070c8cfaad2670ead26999b3a4134e99a"
+    },
+    "evaluator": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_late_six_joint_ef.py",
+      "sha256": "85fbc4ec68a8c0d05d7b725b6747c493c8be4777fb0ae26682a275340643e77e"
+    },
+    "joint_engine": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_dense_four_paths_joint_v2.py",
+      "sha256": "d4aac14c43a5d270f0f446d6701d5cd7c3b728e53aa9a3cca5d0c89200cd493e"
+    },
+    "topology": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/inputs/complex_fixed.pdb",
+      "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+    }
+  },
+  "created_utc": "2026-09-02T12:30:04.950243+00:00",
+  "durability_policy": {
+    "append_only_fsync_WAL": true,
+    "atomic_complete_path_shard": true,
+    "complete_shard_only_restart": true,
+    "individual_partial_success_reuse": false,
+    "no_overwrite": true,
+    "open_failed_or_retried_attempt_requires_superseding_contract": true
+  },
+  "final_contract_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_ARC500_20260902_R1.json",
+  "frozen": true,
+  "host_local_lock_paths": [
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "remote",
+  "jobs": 1,
+  "metric_policy": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "dense_energy_and_force_same_call": true,
+    "dense_force_storage": "complete_full_force_vector_for_every_point",
+    "dense_joint_EF_values_stored_per_path": 500,
+    "discrete_I_perp_new_calls": 0,
+    "discrete_I_perp_source": "exact_verified_online_history_computed_from_30_internal_forces_on_the_same_selected_32_image_path",
+    "fresh_dense_joint_EF_calls_per_path": 498,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "include_both_endpoints": true,
+    "inherited_endpoint_joint_EF_values_per_path": 2,
+    "interpolation": "piecewise_linear",
+    "number_of_points": 500,
+    "optimization_N_F_contribution": 0,
+    "sampling": "uniform_cartesian_arclength"
+  },
+  "physical_call_policy": {
+    "all_six_thread_caps": 1,
+    "fresh_joint_EF_attempts_per_path": 498,
+    "inherited_endpoint_joint_EF_values_total": 12,
+    "jobs": 1,
+    "maximum_fresh_attempt_started_records": 2988,
+    "optimization_N_F_contribution": 0,
+    "original_discrete_new_calls": 0,
+    "selected_paths": 6,
+    "stored_joint_EF_values_per_path": 500,
+    "stored_joint_EF_values_total": 3000,
+    "two_host_local_fcntl_locks": true
+  },
+  "post_arrival_pipeline_templates": {
+    "python": "/Users/wuzhiyou/anaconda3/envs/torch-nightly/bin/python",
+    "remote_environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OPENMM_CPU_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "step_1_selector_argv": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_late_milestones_blind.py",
+      "select",
+      "--preregistration",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_PREREG_20260902_R1.json",
+      "--verification",
+      "ABSOLUTE_PASS_R2_ALL_PATHS_VERIFICATION_JSON",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_20260902_R1.json"
+    ],
+    "step_2_contract_freeze_argv": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/freeze_bb_irivm_late_six_joint_ef_contract.py",
+      "freeze",
+      "--package",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_PACKAGE_PREREG_20260902_R1.json",
+      "--selection",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_MILESTONE_SELECTION_20260902_R1.json",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_ARC500_20260902_R1.json"
+    ],
+    "step_2_includes_dedicated_Mutagen_flush_before_inputs_and_after_contract_publish": true,
+    "step_3_remote_preflight_argv": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_late_six_joint_ef.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_ARC500_20260902_R1.json",
+      "--host-role",
+      "remote",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_late_six_arc500_joint_ef_20260902_r1.npz",
+      "--preflight-only"
+    ],
+    "step_4_remote_run_argv": [
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/evaluate_bb_irivm_late_six_joint_ef.py",
+      "--contract",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_LATE_SIX_JOINT_EF_ARC500_20260902_R1.json",
+      "--host-role",
+      "remote",
+      "--output",
+      "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_late_six_arc500_joint_ef_20260902_r1.npz"
+    ],
+    "working_directory": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901"
+  },
+  "purpose": "pre-bind the complete remote IR--IVM late-six evaluator/freezer before the all-path result and any late diagnostic metric arrive",
+  "remote_identity": {
+    "address": "100.74.85.3",
+    "hostname": "Mac-mini.local",
+    "machine": "arm64",
+    "platform": "Darwin"
+  },
+  "required_Mutagen_session": {
+    "alpha_connected": true,
+    "beta_connected": true,
+    "contract_publish_flush_must_succeed_after_final_contract_freeze": true,
+    "identifier": "sync_EaEvvA9594NRGtMQSN0jneepyUq2tCef27jljwXXPc9",
+    "input_flush_must_succeed_before_final_contract_freeze": true,
+    "name": "bb-irivm-20260901",
+    "transition_problems": 0
+  },
+  "result_or_selection_bound_now": false,
+  "result_output": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_late_six_arc500_joint_ef_20260902_r1.npz",
+  "schema": "bb-irivm-late-six-joint-ef-package-preregistration-v1",
+  "status": "FROZEN_BEFORE_ALL_PATH_RESULT_AND_BEFORE_LATE_METRIC_INSPECTION"
+}

@@ -1,0 +1,57 @@
+{
+  "authorization_scope": "one exact fresh non-resumed registered member",
+  "campaign_preregistration_sha256": "c7d6a50716399ca723c654328fe837c8264eb712d8e95342a93b3e98a27d8454",
+  "concurrency": "one BB task on this host, two host-local fcntl locks, jobs=1",
+  "controlled_scan_gate": {
+    "design": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/BB_IRIVM_LONG_BUDGET_DESIGN_20260902_R1.json",
+    "design_sha256": "62504024685fb603bba6b09b196288520b270d829172b5b0df2a84f06bc84629",
+    "fresh_from_common_initial_path": true,
+    "frozen_reference_host": {
+      "address": "100.74.85.3",
+      "architecture": "arm64",
+      "hostname": "Mac-mini.local",
+      "processor": "Apple M4",
+      "selection_basis": "chosen before either 4080 call because measured throughput is about twice the local Mac; both candidates run serially on this same host"
+    },
+    "promoted_parameter_settings": [
+      [
+        10.0,
+        0.5,
+        5
+      ],
+      [
+        1.0,
+        0.1,
+        5
+      ]
+    ],
+    "same_state_two_metric_selection_required_after_both_runs": true,
+    "shorter_prefix_reproduction_required": true,
+    "stage": "two_candidate_4080_N_F_reference_host_confirmation"
+  },
+  "diagnostic_feedback": "forbidden during optimization",
+  "enabled": true,
+  "ff_builder_parity_gate_sha256": "ce1fad0442cd5e216821aa6afe382058411c8efa4c4cb2b951572c6dbc87da99",
+  "fixed_endpoint_policy": "hash-bound inherited endpoint E/F; endpoint getState attempts, misses, and optimization NoF must remain zero",
+  "infrastructure_retry_gate": {
+    "failure_receipt": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/failures/BB_IRIVM_4080_A10_R05_M05_R1_LATE_LOCK_NONCONFORMANCE_20260902.json",
+    "failure_receipt_sha256": "17745315a9e0bef860460211afb7b63d17ab6a3c02957ca7b98d9561efa5a69b",
+    "original_label": "bb_irivm_a1e1_r05_m05_inf4080_r1",
+    "replacement_label": "bb_irivm_a1e1_r05_m05_inf4080_r2",
+    "rule": "fresh non-resumed replacement; original attempt remains excluded"
+  },
+  "issued_utc": "2026-09-01T17:45:54Z",
+  "label": "bb_irivm_a1e1_r05_m05_inf4080_r2",
+  "member_registration_sha256": "b961cfbad20d854b61a11b408726429b3ac1164b09e4f196fa9d89e3323dbe21",
+  "migration_contract_sha256": "37126d31a286ef308cd4bc9cae581fc07b7ba876eb4cce552260ff961b493ccc",
+  "registered_controls": {
+    "alpha": 10.0,
+    "m_max": 5,
+    "optimization_Number_of_Forces": 4080,
+    "r": 0.5
+  },
+  "schema": "bb-irivm-per-member-execution-authorization-v1",
+  "smoke_240_gate_sha256": "6c259716dce2e91db9d4dddd6555c54bb9f2183749169b3229da7465db01c4d4",
+  "staged_search_protocol_sha256": "e85e4d471144f76a8a35bda656c04bb91f80e097f76ce2f8c26fce02aede1bc5",
+  "tier": "screen"
+}

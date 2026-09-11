@@ -1,0 +1,18 @@
+{
+  "schema": "bb-irivm-diagnostic-contract-supersession-v1",
+  "created_utc": "2026-09-01T10:20:48Z",
+  "superseded_contract": {
+    "path": "BB_IRIVM_ALPHA_PRINCIPAL_DIAGNOSTICS_20260901_R1.json",
+    "sha256": "f705f3ac5e783ed26d367507ea3455974ef0298369b76a3f2d26ecd2f1e7213a"
+  },
+  "operative_contract": {
+    "path": "BB_IRIVM_ALPHA_PRINCIPAL_DIAGNOSTICS_20260901_R2.json",
+    "sha256": "0a3b7a662c761bb54c8564d50336aff15658fa14c1daf3e2434f515e978a9db3"
+  },
+  "reason": "R1 retained a stale human-readable test count of 4 although the bound test file contained 5 unittest cases and all 5 passed. R2 corrects only this provenance statement and records the executed command; the frozen runs, eligible paths, metric protocol, and selection rule are unchanged.",
+  "timing": "Issued before any densified energy evaluation and before any alpha selection decision.",
+  "scientific_data_changed": false,
+  "physical_evaluations_between_R1_and_R2": 0,
+  "selection_decisions_between_R1_and_R2": 0,
+  "status": "R2_OPERATIVE_R1_HISTORICAL_ONLY"
+}

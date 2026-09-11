@@ -1,0 +1,26 @@
+{
+  "disk_free_bytes_at_gate": 19783208960,
+  "disk_free_threshold_bytes": 2147483648,
+  "held_locks": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "jobs": 1,
+  "name": "bb-irivm-alpha-confirm-a10-990-local-r3-20260901",
+  "pid": 3586,
+  "records": [
+    {
+      "alpha": 10.0,
+      "attempt_tag": "r3",
+      "index": 0,
+      "label": "bb_irivm_a1e1_r05_m05_inf990_r3",
+      "m_max": 5,
+      "r": 0.5,
+      "result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/screen/ivm_bb_irivm_a1e1_r05_m05_inf990_r3_central_state_ivm_cfg2a53ad9cf3db_budget990_storagecommitted.npz",
+      "status": "already_complete"
+    }
+  ],
+  "started_unix": 1788271174.016854,
+  "status": "complete",
+  "updated_unix": 1788271174.024029
+}

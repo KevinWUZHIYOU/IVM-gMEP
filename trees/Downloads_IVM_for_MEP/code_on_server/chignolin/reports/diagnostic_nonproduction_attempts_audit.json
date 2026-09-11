@@ -1,0 +1,30 @@
+{
+  "optimization_axis_includes_any_of_these_calls": false,
+  "failed_long_output_label_batch": {
+    "attempted_paths": 10,
+    "save_status": "calculation_completed_but_output_filename_was_too_long",
+    "direct_counter_record_persisted": false,
+    "reconstructed_joint_openmm_evaluations": 6320,
+    "reconstruction_basis": "Each identical successful call-500 rerun required exactly 632 joint evaluations under the deterministic 20-subdivision stopping rule.",
+    "status": "reconstructed_not_directly_persisted"
+  },
+  "successful_replacement_batch": {
+    "paths": 10,
+    "joint_openmm_evaluations": 6320,
+    "status": "persisted_and_audited"
+  },
+  "absolute_output_label_typo": {
+    "paths": 1,
+    "joint_openmm_evaluations": 632,
+    "backend_equals_cache_misses": true,
+    "status": "persisted_in_an_accidental_nested_diagnostic_directory",
+    "role": "superseded_call_500_check_only"
+  },
+  "production_diagnostics": {
+    "ivm_joint_openmm_evaluations": 410188,
+    "ivm_backend_equals_cache_misses": true,
+    "neb_joint_openmm_evaluations": 559874,
+    "neb_backend_equals_cache_misses": true,
+    "counts_excluded_from_optimization_axis": true
+  }
+}

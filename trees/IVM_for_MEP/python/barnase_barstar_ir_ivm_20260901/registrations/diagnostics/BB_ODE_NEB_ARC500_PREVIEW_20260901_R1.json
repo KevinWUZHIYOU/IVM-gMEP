@@ -1,0 +1,117 @@
+{
+  "schema": "bb-ode-neb-arc500-preview-contract-v1",
+  "contract_id": "bb_ode_neb_nf240_480_990_9990_arc500_preview_20260901_r1",
+  "purpose": "In-progress Chignolin-style cost-to-precision preview against ODE-NEB, using the same two user-requested BB diagnostics as IR-IVM.",
+  "status": "FROZEN_BEFORE_ANY_PREVIEW_DIAGNOSTIC_ENERGY_CALL",
+  "bindings": {
+    "metric_policy_amendment": {
+      "path": "../USER_METRIC_POLICY_AMENDMENT_20260901_R1.json",
+      "sha256": "ca547dd86a119e0dd4b6049e296ae9616d335248c3df1ce1f77f7fcb91500bc5"
+    },
+    "alpha_scope_R2": {
+      "path": "../USER_ALPHA_SCOPE_AMENDMENT_20260901_R2.json",
+      "sha256": "9dd4dda96d428df1e7acd07533061cc77f8e8fe55c1d38bdda14f24510be6e0f"
+    },
+    "preview_evaluator": {
+      "path": "../../scripts/evaluate_ode_neb_arc500_preview.py",
+      "sha256": "b66d1c33a3b280306d6ead6f812fec1b8a18ff513a4d895f02cd4c18478635a4"
+    },
+    "shared_arc500_evaluator": {
+      "path": "../../scripts/evaluate_discrete_iperp_densified_barrier.py",
+      "sha256": "ad2b8fff6ac0cbf4b5deca2b05837654a717f6c104f608e97bac4e1d10cffcd7"
+    },
+    "official_ode_neb_optimization_complete": {
+      "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/OPTIMIZATION_COMPLETE.json",
+      "sha256": "6dc07e421d49d303d6b174ada620e243145cf59ce7c6e1ce42711eaf73f8665e"
+    },
+    "official_terminal_raw_manifest": {
+      "path": "../../inputs/baselines/ode_neb_nf9990/MANIFEST.json",
+      "sha256": "70fddb096de3d678c73ff02d73be291ca8cc950437f77cba323ad87c9c9d68a1"
+    },
+    "official_terminal_raw_seal": {
+      "path": "../../inputs/baselines/ode_neb_nf9990/SEALED.json",
+      "sha256": "099ee1ef54c1d821f125b80e30717306db177ef6b773173c3ac6f6e3cd485fef"
+    }
+  },
+  "official_baseline_index": {
+    "source_path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_r30h8_dense200_authorizer_20260831_r1/NEB_IVM_UNIFIED_DENSE400_BASELINE_INDEX.json",
+    "sha256": "db60ab89263b81cd353eff9b32780ea568122956c35505a5c66a5b2782924179",
+    "note": "Identity/provenance only. Historical dense400 metrics are not consumed by this preview."
+  },
+  "topology": {
+    "path": "../../inputs/complex_fixed.pdb",
+    "sha256": "26b58b4301c1e293c7fcd01878c3a208451621099419cbf5b41bd80eb96a0f49"
+  },
+  "diagnostic_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "interpolation": "piecewise_linear",
+    "sampling": "uniform_cartesian_arclength",
+    "number_of_points": 500,
+    "include_both_endpoints": true,
+    "grid_formula": "s_j=j*L/499,j=0,...,499",
+    "force_evaluations_per_path": 0,
+    "optimization_N_F_contribution": 0,
+    "sparse_barrier_used_for_plot": false,
+    "historical_dense400_metric_used_for_plot": false
+  },
+  "milestones": [
+    {
+      "optimization_N_F": 240,
+      "batch_id": 8,
+      "official_path32_sha256": "8bfa2c2109fad930d2f6969768be1b6b561a3d82f8aecbc89b9873312a1b250b",
+      "coordinate_archive": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/batch_0008_paid_coordinates30_A.npz",
+        "sha256": "dfd355dc2bc2291e437cfc03c2467278ae82176855bc7775dce620a4afea64f4"
+      },
+      "paid_force_receipt": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf00240_batch_0008_EF30.npz",
+        "sha256": "e54af33cf0db2280021f082f8f680d8f0111da6d2aea90f926e2cbcb34730281"
+      }
+    },
+    {
+      "optimization_N_F": 480,
+      "batch_id": 16,
+      "official_path32_sha256": "9524d3bc6a62f96bbdd0eb3491680ef1cb744e0a88a30c29d29722f41feeb186",
+      "coordinate_archive": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/batch_0016_paid_coordinates30_A.npz",
+        "sha256": "0bae3210dc79ec06c9158fcb8c53c8c8529f087d06c7b1d4154e9ab499307e45"
+      },
+      "paid_force_receipt": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf00480_batch_0016_EF30.npz",
+        "sha256": "c7290e458229fa1c6792b8f604df0f9fe7fbd909fae8d680d037fbfbe9c5f6c2"
+      }
+    },
+    {
+      "optimization_N_F": 990,
+      "batch_id": 33,
+      "official_path32_sha256": "3ab9750f0701c26c001ba684dda27ff269148e02239a127155cc4edf66ff3ab0",
+      "coordinate_archive": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/batch_0033_paid_coordinates30_A.npz",
+        "sha256": "453e69dcc3358c23741a8bd842fb656968ea9971b11efe1e6733ab04882df464"
+      },
+      "paid_force_receipt": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf00990_batch_0033_EF30.npz",
+        "sha256": "d01c035d8857cd5f20bce7371b6b3fa9a8ee76032821e38a8a86cbd6204ee8e2"
+      }
+    },
+    {
+      "optimization_N_F": 9990,
+      "batch_id": 333,
+      "official_path32_sha256": "3b017361c8922cfa07013a6240b0bf7f608f406449865535c66deee6944fb500",
+      "coordinate_archive": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/batch_0333_paid_coordinates30_A.npz",
+        "sha256": "7dd2411869c4128f6e15e9568dab027fd3c7da8d105254302aa6224283f213a5"
+      },
+      "paid_force_receipt": {
+        "path": "../../inputs/baselines/ode_neb_source_paths_nf240_480_990_9990/nf09990_batch_0333_EF30.npz",
+        "sha256": "0f8c84b0e11fa191db9163c13fca8f10504aa685952a4c728b4043b5eba40ae0"
+      }
+    }
+  ],
+  "plot_policy": {
+    "methods": ["IVM", "ODE-NEB"],
+    "IR_IVM_rows": "only path rows whose full 500-point diagnostic ledger has closed successfully",
+    "preview_label_required": true,
+    "formal_parameter_selection_claim_permitted": false
+  }
+}

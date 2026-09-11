@@ -1,0 +1,193 @@
+{
+  "actual": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/runs/stage4_inexact_optimized_resample/stage4_uniform_v3_a20_phaseA80_phaseB220.npz",
+  "actual_sha256": "e83c81244d29e05ef67f9667091e3ae7720977e8a7cee5132bb9a5bf6ae26ce7",
+  "materialized_prefix_reference": "/Users/wuzhiyou/IVM_for_MEP/python/alanine_ivm_clean_four_level_20260801/reports/v3_materialized_prefix_reference/stage4_uniform_v3_a20_phaseA80_phaseB220.materialized-prefix.npz",
+  "materialized_prefix_reference_sha256": "668ff711b9293366ae7a5824aaa82a1fb181c8b9ae846855b3af64ac49049dfa",
+  "scientific_arrays_exactly_equal": true,
+  "online_rule_valid": true,
+  "metadata": {
+    "policy_version": "stage4_uniform_v3",
+    "alpha_mode": "fixed_across_both_phases",
+    "common_initial_path_sha256": "cdc9330623efd3e125dfe40ecf5f4440fa90c32ef5ba8db840824b4280c69e6e",
+    "stop_complete_iperp": 0.00015,
+    "stop_rule_fired": true,
+    "stop_reason": "complete_reparameterized_i_perp_target",
+    "terminal_reparam_committed": true,
+    "materialization_mode": "independent_online_execution",
+    "independent_online_rerun_status": "confirmed",
+    "terminal_force_evaluations": 2914,
+    "terminal_i_perp": 0.00013475461874885676
+  },
+  "array_comparisons": {
+    "alpha": {
+      "shape_actual": [],
+      "shape_replay": [],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "phase_labels": {
+      "shape_actual": [
+        2
+      ],
+      "shape_replay": [
+        2
+      ],
+      "exact_equal": true
+    },
+    "phase_transition_macro_index": {
+      "shape_actual": [],
+      "shape_replay": [],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "phase_transition_force_offset": {
+      "shape_actual": [],
+      "shape_replay": [],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "macro_calls": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "total_force_evaluations": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "i_perp": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "sparse_barrier_kcal": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "physical_fmax": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "segment_length_cv": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "equidistance_relative_defect": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "phase": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stored_force_evaluations": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stored_macro_calls": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stored_phase": {
+      "shape_actual": [
+        222
+      ],
+      "shape_replay": [
+        222
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stored_paths": {
+      "shape_actual": [
+        222,
+        22,
+        66
+      ],
+      "shape_replay": [
+        222,
+        22,
+        66
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "final_path": {
+      "shape_actual": [
+        22,
+        66
+      ],
+      "shape_replay": [
+        22,
+        66
+      ],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "raw_iperp_rises": {
+      "shape_actual": [],
+      "shape_replay": [],
+      "exact_equal": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "status": "passed"
+}

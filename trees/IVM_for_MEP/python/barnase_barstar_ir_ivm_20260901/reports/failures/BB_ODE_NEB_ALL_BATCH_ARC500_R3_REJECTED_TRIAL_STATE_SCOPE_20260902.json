@@ -1,0 +1,25 @@
+{
+  "schema": "bb-diagnostic-interrupted-attempt-v1",
+  "status": "INTERRUPTED_EXCLUDED_FROM_SCIENTIFIC_RESULTS",
+  "attempt": "bb_ode_neb_all_paid_batches_arc500_20260902_r3",
+  "utc_interruption_recorded": "2026-09-01T18:40:20Z",
+  "registered_contract": {
+    "path": "registrations/diagnostics/BB_ODE_NEB_ALL_PAID_BATCHES_ARC500_20260902_R2.json",
+    "sha256": "ca5a0f15a36f2daa52b3116da1bd4cfaf1fb966b52ffbe20a5a956664baae997"
+  },
+  "partial_energy_wal": {
+    "path": "runs/diagnostics/bb_ode_neb_all_paid_batches_arc500_20260902_r3/shard_00_of_16.energy.wal.jsonl",
+    "sha256": "781430e06092b0c3b47b85d361c4973e65c94622e28fbe35c62d63c3c1e4a11e",
+    "header_lines": 1,
+    "diagnostic_energy_attempts": 55,
+    "diagnostic_energy_successes": 55,
+    "diagnostic_force_requests": 0
+  },
+  "sealed_result_present": false,
+  "sealed_audit_present": false,
+  "optimization_N_F_contribution": 0,
+  "reason": "The registered scope treated every paid ODE trial proposal as an output path. The sealed optimization WAL proves that 49 of 332 trials were rejected; at those paid N_F values the scientifically defined current path is the preceding retained path, not the rejected proposal. The attempt was stopped before completing its first 500-point path.",
+  "user_policy_after_interruption": "Pause the all-path ODE--NEB densified diagnostic. Complete IR--IVM first, then select only the ODE--NEB paths needed at the N_F/precision range supported by the IR--IVM result and evaluate them under the same equal-Cartesian-arclength 500-point protocol.",
+  "reuse_policy": "These 55 partial attempts are audit evidence only and must not be merged into a final scientific metric unless a later immutable amendment explicitly proves identical path, dense grid, energy oracle, and exact per-point identity.",
+  "files_deleted": false
+}

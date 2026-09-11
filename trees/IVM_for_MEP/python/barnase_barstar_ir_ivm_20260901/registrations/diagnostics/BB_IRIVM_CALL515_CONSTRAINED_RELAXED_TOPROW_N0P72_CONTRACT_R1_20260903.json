@@ -1,0 +1,114 @@
+{
+  "center_state": {
+    "call_per_image": 515,
+    "formally_reportable": false,
+    "method": "IVM",
+    "optimization_N_F": 14983,
+    "state_role": "terminal_uncommitted_charged_tail"
+  },
+  "constraint": {
+    "fixed_tau_nu": true,
+    "projector": "P(v)=v-tau*(tau dot v)-nu*(nu dot v)"
+  },
+  "coordinate_audit": {
+    "bytes": 2747,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.audit.json",
+    "sha256": "305ca970e862c331aa0f502f592c27d28d8a7d73f0c214c8e21b4a8a3f62fe16"
+  },
+  "coordinate_manifest": {
+    "bytes": 12452188,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_terminal_uncommitted_tail_constrained_relaxed_pilot_coordinates_15x9_20260903_r1b.npz",
+    "sha256": "1e0acc34ff629d3bb3c5eb7aa633d6af72eeaf8289aa98205acb8882caa754ec"
+  },
+  "created_utc": "2026-09-03T14:06:10.196511+00:00",
+  "durability": {
+    "attempt_fields": [
+      "coordinate_A",
+      "energy_eV",
+      "raw_force_eV_A",
+      "projected_force_eV_A",
+      "next_coordinate_A",
+      "fire_velocity_out",
+      "fire_dt_out",
+      "fire_alpha_out",
+      "fire_n_positive_out"
+    ],
+    "attempts": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_constrained_relaxed_toprow_n0p72_15s_20260903_r1/attempts",
+    "wal": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_constrained_relaxed_toprow_n0p72_15s_20260903_r1/force.wal.jsonl"
+  },
+  "frozen_base_runner": {
+    "bytes": 56126,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_call515_constrained_relaxed_pilot_r1.py",
+    "sha256": "ef4ea4ba351fa7f1af0fc4df6d38ab617ce0c5b659ea265eb19a0e415eaa52b1"
+  },
+  "grid": {
+    "construction": "x(s,0.69)+(0.72-0.69)*sqrt(3132)*fixed_nu(s)",
+    "n_value_rms_A": 0.72,
+    "points": 15,
+    "s_values": [
+      0.0,
+      0.06896551724137931,
+      0.13793103448275862,
+      0.20689655172413793,
+      0.29310344827586204,
+      0.3620689655172414,
+      0.43103448275862066,
+      0.5,
+      0.5689655172413793,
+      0.6379310344827587,
+      0.7068965517241379,
+      0.7931034482758621,
+      0.8620689655172413,
+      0.9310344827586207,
+      1.0
+    ]
+  },
+  "host_local_fcntl_locks": [
+    "/Users/wuzhiyou/Downloads/IVM_for_MEP/.bb_global_heavy_task.lock",
+    "/Users/wuzhiyou/IVM_for_MEP/.bb_global_heavy_task.lock"
+  ],
+  "host_role": "local",
+  "jobs": 1,
+  "optimizer": {
+    "Nmin": 5,
+    "alpha0": 0.1,
+    "dt0": 0.1,
+    "dtmax": 1.0,
+    "falpha": 0.99,
+    "fdec": 0.5,
+    "finc": 1.1,
+    "fmax_eV_per_A": 0.1,
+    "maximum_force_calls_per_point": 51,
+    "maximum_per_atom_step_A": 0.1,
+    "maximum_update_steps": 50,
+    "name": "projected_FIRE_with_globally_scaled_per_atom_displacement_cap"
+  },
+  "outputs": {
+    "audit": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_constrained_relaxed_toprow_n0p72_15s_20260903_r1/audit.json",
+    "result": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_constrained_relaxed_toprow_n0p72_15s_20260903_r1/result.npz",
+    "run_dir": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_call515_nf14983_constrained_relaxed_toprow_n0p72_15s_20260903_r1"
+  },
+  "physical_calls": {
+    "energy_only": 0,
+    "kind": "joint energy+Force",
+    "maximum": 765,
+    "optimization_N_F_contribution": 0
+  },
+  "runner": {
+    "bytes": 23936,
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_bb_irivm_call515_constrained_relaxed_toprow_n0p72_r1.py",
+    "sha256": "4501e4afe89c593aea401ab6417b8d8b6b4df83988b7a6988ebd2a6d4b3ea9b3"
+  },
+  "schema": "bb-irivm-call515-constrained-relaxed-toprow-n0p72-r1-v1-contract",
+  "science_root": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901",
+  "status": "FROZEN_BEFORE_PHYSICS",
+  "thread_policy": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENMM_CPU_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "work_root": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901"
+}

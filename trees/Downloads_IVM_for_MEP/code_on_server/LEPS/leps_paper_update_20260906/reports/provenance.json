@@ -1,0 +1,138 @@
+{
+  "date": "2026-09-06",
+  "purpose": "paper0819 LEPS three-figure and prose update from frozen experiment results",
+  "script": {
+    "path": "code_on_server/LEPS/leps_paper_update_20260906/src/update_paper_leps_figures.py",
+    "sha256": "c11106515ced7445792037c40e8a3810d769a4cbaa3df5cdbbd7f0a2d92ae4fb"
+  },
+  "figures": {
+    "path_evolution": {
+      "path": "paper0819/Figures/LEPS/leps_path_evolution_1x4.pdf",
+      "sha256": "ac0ee85c95ebcbd3968d6d6df00f796b745e69b9bd777b48d0ce2474ea487698"
+    },
+    "all_methods_metrics": {
+      "path": "paper0819/Figures/LEPS/leps_all_methods_metrics.pdf",
+      "sha256": "081aad16011737c67d8d9eaded57559655f9b45f6ab18817940ca019c17f66b4"
+    },
+    "continuous_comparison": {
+      "path": "paper0819/Figures/LEPS/leps_continuous_methods_comparison.pdf",
+      "sha256": "0f3c0c7a28369ba002fcccaee29a221cc1a874d39a37af5a7a611c51b5a22b12"
+    }
+  },
+  "inputs": {
+    "selected_ir_ivm": {
+      "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/runs/3c62d93a051be116.npz",
+      "sha256": "c7a09d0ae37cea45078dff2590e244390420c9b80931de1e4767e8b62f1bb02d"
+    },
+    "ode_neb": {
+      "path": "code_on_server/LEPS/runs/neb/neb_production_k10_cfgfe491f5a6c6f_budget5000.npz",
+      "sha256": "ae0c2bbf3f8fa8539bcaffaa98e0298b5f90661f145fcb5e7a5c6b61c4548b0a"
+    },
+    "nn_ivm": {
+      "path": "code_on_server/LEPS/runs/continuous_v3/nn_ivm_adaptive_al_a100_j015_b500.npz",
+      "sha256": "a85f3d0dc02948e25281b70a00242d0eadd8a26a83774fa0f38fb6f9b97860b2"
+    },
+    "gmam": {
+      "path": "code_on_server/LEPS/runs/continuous_v2/gmam_autodiff20_production_lr001_b500.npz",
+      "sha256": "0fdd784cfc5683b54aee7cb96fff2f687954256d2e9d655689c9053a2b44f9cb"
+    }
+  },
+  "metrics_registry": {
+    "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_provenance.json",
+    "sha256": "98817eac71811c82ac8ce0ec7277ac628c2f7902ac2faf68923b6ab50503ebfd"
+  },
+  "metrics_source_csv": {
+    "path": "code_on_server/LEPS/leps_irivm_sync1_refined_grid_20260830/reports/figure/leps_all_methods_metrics_source.csv",
+    "sha256": "5fbccdaba1ca0b8612ff3860b52cadea4be0bf0aa7b42889e6b8ad95a3712138"
+  },
+  "derived_sources": {
+    "path_evolution": "reports/leps_path_evolution_source.csv",
+    "continuous_comparison": "reports/leps_continuous_methods_source.csv"
+  },
+  "shared_initial_path_array_sha256": "6cf4f5cb5c0eca04fd8fc0d72f71b751526442f6422e4ecb7e31be0a07b063c8",
+  "path_snapshots": [
+    200,
+    1500,
+    "final"
+  ],
+  "path_snapshot_actual_nof": {
+    "200": {
+      "IVM": 135,
+      "ODE-NEB": 200
+    },
+    "1500": {
+      "IVM": 1486,
+      "ODE-NEB": 1500
+    },
+    "final": {
+      "IVM": 1528,
+      "ODE-NEB": 100000
+    }
+  },
+  "all_methods_summary": {
+    "ivm_first_nof_at_i_perp_le_1e-4": 572,
+    "ivm_last_saved_path_nof": 1528,
+    "ivm_terminal_ledger_nof": 1558,
+    "ivm_last_i_perp": 5.571619177163831e-28,
+    "ivm_last_geometric_action_eV": 1.7951584608504483,
+    "ivm_minimum_geometric_action_eV": 1.7927613143384924,
+    "ivm_nof_at_minimum_geometric_action": 517
+  },
+  "continuous_summary": {
+    "IVM": {
+      "last_nof": 1528,
+      "last_dense_i_perp": 0.815839622018178,
+      "minimum_dense_i_perp": 0.8065852288698554,
+      "nof_at_minimum_dense_i_perp": 517,
+      "last_barrier_eV": 1.3442038405412853,
+      "minimum_barrier_error_eV": 0.001104686603424998,
+      "nof_at_minimum_barrier_error": 517
+    },
+    "ODE-NEB": {
+      "last_nof": 100000,
+      "last_dense_i_perp": 0.9192921145049106,
+      "minimum_dense_i_perp": 0.9192921145049106,
+      "nof_at_minimum_dense_i_perp": 100000,
+      "last_barrier_eV": 1.363280684116182,
+      "minimum_barrier_error_eV": 0.020194607772077156,
+      "nof_at_minimum_barrier_error": 100000
+    },
+    "NN-IVM": {
+      "last_nof": 10000,
+      "last_dense_i_perp": 0.10082256737259543,
+      "minimum_dense_i_perp": 0.10082256737259543,
+      "nof_at_minimum_dense_i_perp": 9820,
+      "last_barrier_eV": 1.3435931242852988,
+      "minimum_barrier_error_eV": 0.00022665984811620632,
+      "nof_at_minimum_barrier_error": 4400
+    },
+    "gMAM (autodiff)": {
+      "last_nof": 10000,
+      "last_dense_i_perp": 0.24159372792000816,
+      "minimum_dense_i_perp": 0.007945648888769615,
+      "nof_at_minimum_dense_i_perp": 5780,
+      "last_barrier_eV": 4.519840167209599,
+      "minimum_barrier_error_eV": 3.1537679225521122,
+      "nof_at_minimum_barrier_error": 1380
+    }
+  },
+  "metric_contracts": {
+    "all_methods": {
+      "densified_barrier": "500 total coordinate-wise linearly interpolated points",
+      "geometric_action": "sum over the 21 original segments of 0.5*(norm(grad V_i)+norm(grad V_{i+1}))*norm(x_{i+1}-x_i); all 22 nodes including endpoints, full gradient norm, no densification",
+      "geometric_action_tangent_note": "the full-gradient action is tangent-independent; the same Henkelman-Jonsson improved tangent is retained for I_perp",
+      "i_perp": "article path-length quadrature with Henkelman-Jonsson improved tangent",
+      "number_of_forces": "uncached joint energy-force evaluations over the 20 internal images",
+      "offline_metric_evaluations_counted_as_nof": false
+    },
+    "continuous_dense_discrete": "200 linear subdivisions per each of 21 segments",
+    "continuous_neural": "stored dense diagnostic arrays from each frozen production result",
+    "cost": "total uncached joint force evaluations across 20 internal images/streams",
+    "postprocessing_excluded_from_nof": true
+  },
+  "checks": {
+    "all_initial_paths_identical": true,
+    "all_axes_boxes_square": true,
+    "metrics_figure_matches_current_registration": true
+  }
+}

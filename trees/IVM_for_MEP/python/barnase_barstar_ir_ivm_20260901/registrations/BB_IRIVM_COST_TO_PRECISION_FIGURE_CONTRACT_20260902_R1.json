@@ -1,0 +1,159 @@
+{
+  "schema": "bb-irivm-cost-to-precision-figure-contract-v1",
+  "status": "FROZEN_FINAL_INPUT_BINDINGS",
+  "created_utc": "2026-09-02T01:11:42Z",
+  "figure_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_ivm_vs_ode_neb_cost_to_precision.pdf",
+  "claim_policy": {
+    "Delta_E_monotonicity_assumed": false,
+    "allowed_sparse_claim": "earliest observed first passage",
+    "exact_first_passage_requires_every_earlier_distinct_retained_path": true,
+    "observed_ratio_must_be_marked": "obs."
+  },
+  "figure_identity": {
+    "scientific_identity": "Barnase--Barstar selected IR-IVM versus official ODE-NEB cost-to-precision comparison",
+    "legacy_reproduction_claim": false,
+    "manuscript_legend_name_for_selected_ir_ivm": "IVM",
+    "layout": "1x2 Chignolin-style",
+    "methods": [
+      "IVM",
+      "ODE-NEB"
+    ]
+  },
+  "scientific_terms": {
+    "left_metric": "discrete unnormalized normal residual I_perp",
+    "right_metric": "densified 0 K forward barrier Delta E",
+    "densification": "500 points uniformly spaced by Cartesian arc length on each frozen piecewise-linear 32-image path, including both endpoints",
+    "vertical_axis": "Number of Forces",
+    "fixed_endpoint_optimization_Number_of_Forces": 0,
+    "diagnostic_energy_evaluations_are_excluded_from_optimization_Number_of_Forces": true
+  },
+  "selected_ir_ivm": {
+    "terminal_result": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.npz",
+      "sha256": "117f022589311ed75d27a5b6bfd36bca37b3da43b5b3f4f5fcb8bcdc40cb7df4"
+    },
+    "terminal_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/production/ivm_bb_irivm_a1e0_r01_m05_inf9990_r1_central_state_ivm_cfge0354bb7178e_budget9990_storagecommitted.audit.json",
+      "sha256": "1d82aa3026faf2834ce1050de7c8454dab17c51433a1574563c24742772b6e39"
+    },
+    "arc500_diagnostics": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_selected_9990_arc500_20260902_r1.npz",
+      "sha256": "26244693b7752d8f61e7bbf706a3cea0f4a2ac9fa30b9e99fafce9fe2cfefb8f"
+    },
+    "arc500_audit": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_selected_9990_arc500_20260902_r1.audit.json",
+      "sha256": "be5fbbc0f20777216a1d7facb80ba51b94f9870dcd8292d913a21ceb0ac54a7d"
+    },
+    "terminal_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_A1E0_R01_M05_INF9990_R1_VERIFICATION_20260902.json",
+      "sha256": "af362a3db925399a5bdc49a5107f8d1988341d0ee3fd0dbfed20d31ae628b584"
+    },
+    "exact_prefix_verification": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/reports/verifications/BB_IRIVM_SELECTED_9990_EXACT_4080_PREFIX_20260902_R1.json",
+      "sha256": "182d096300578fc2cc192b5fc6245b69e15da24c877c0ef31f717087245526c1"
+    }
+  },
+  "plotter": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/plot_bb_cost_to_precision_final.py",
+    "sha256": "50c1e7f7e9c99eec2dcb81c4d50bad6efcb022e6dcdfb5cc3a8ab90981b7117a"
+  },
+  "ode_neb": {
+    "official_paid_path_ledger": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_ALL_PAID_BATCHES_ARC500_20260902_R2.json",
+      "sha256": "ca5a0f15a36f2daa52b3116da1bd4cfaf1fb966b52ffbe20a5a956664baae997"
+    },
+    "milestone_bundles": [
+      {
+        "optimization_N_F": [240, 480, 990, 9990],
+        "result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.npz",
+          "sha256": "b8feb051df121a29da01c93c6c0a2e1324dc189a07b5d44e6c8b3269b960e989"
+        },
+        "audit": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_arc500_preview_20260901_r1.audit.json",
+          "sha256": "22115e01097ea77c66a0ab2801cdce2c04e4e9e2d13a7e6dfd58388a89e94ee1"
+        }
+      },
+      {
+        "optimization_N_F": [4080],
+        "result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.npz",
+          "sha256": "66562b7d4f4f55eb97d12a9d76f79957c52266a1c952226fb657a051a8ee2be2"
+        },
+        "audit": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_nf4080_arc500_20260902_r1.audit.json",
+          "sha256": "10bc0bc4c9a08a5bbc71e0d5697364b781bbd6aa83ebe271b4078522d71cb82e"
+        }
+      }
+    ],
+    "targeted_bundles": [
+      {
+        "round_index": 1,
+        "optimization_N_F": 8160,
+        "selection": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R1.json",
+          "sha256": "b8dd0b1ccf597945ac5ae95c2ead177bbee778d657ba78bbb3c266648c46a3fd"
+        },
+        "result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_targeted_nf8160_arc500_20260902_r1.npz",
+          "sha256": "1beff260e797349c1101b51a17dd72e272f7bc434c441df277a7b4fad602840b"
+        },
+        "audit": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_targeted_nf8160_arc500_20260902_r1.audit.json",
+          "sha256": "f7ce2fed4a2546992e88f0c4d9e2c29d1118e8a1e249180ea3f01948b97dadd1"
+        }
+      },
+      {
+        "round_index": 2,
+        "optimization_N_F": 2040,
+        "selection": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_ODE_NEB_TARGETED_ARC500_SELECTION_20260902_R2.json",
+          "sha256": "8b5762aad446708b4f3cf3a68b588cf7c198a88acf22f6fa3ae99b922f445d24"
+        },
+        "result": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_targeted_nf2040_arc500_20260902_r2a2.npz",
+          "sha256": "ec6e598767e2917c0137b0fd60b672eb32100ef8457d98eef518f1eaf0af081c"
+        },
+        "audit": {
+          "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_ode_neb_targeted_nf2040_arc500_20260902_r2a2.audit.json",
+          "sha256": "f55f06fb5f848f77ad28df1126422e0d2dd3f41af15ec6850b070c728202b9e0"
+        }
+      }
+    ]
+  },
+  "style_references": {
+    "chignolin_plot_script": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/chignolin_ir_ivm_20260826/src/plot_chignolin_ivm_arc500.py",
+      "sha256": "62d30b5b81e0ab3b42bdf080308e95c615a4ecee0b960946b1df4dd15e0743b9"
+    },
+    "chignolin_pdf": {
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/chignolin/active_candidates/chignolin_ir_ivm_cpu1/chignolin_ir_ivm_overlay_total_nf.pdf",
+      "sha256": "1c023998e4359de0445ca3c7b108cd6b40753a9ac53a65fa4d6e154a55d87ed5"
+    },
+    "alanine_replacement_preview_plot_script": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/paper/ActiveExperiments/alanine_66d/code/plotting/plot_ala_delta_aware_grid_ivm_replacement_preview.py",
+      "sha256": "d5fbd8bf6d281ad22000ee505be0639ed05b861034770c749c34e93bbe038528"
+    },
+    "alanine_replacement_preview_pdf": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/output/pdf/alanine66d_delta_aware_grid_ivm_replacement_1x2_preview.pdf",
+      "sha256": "483530e8c0d764e2c4b4c82af3c280cc7f8fee300eb35b12db6e1260759f3a44"
+    }
+  },
+  "plot_policy": {
+    "raw_rows_preserved": true,
+    "cost_to_precision_curve": "minimum observed optimization N_F reaching each recorded lower metric threshold",
+    "nonmonotone_Delta_E_rows_must_not_be_deleted": true,
+    "arrows": "black double-headed arrows at registered common thresholds; ratio label at line midpoint on the right",
+    "colors": {
+      "IVM": "#0072B2",
+      "ODE-NEB": "#D55E00"
+    },
+    "left_axis": "log inverse precision",
+    "right_axis": "inverse Delta E",
+    "legend_labels": [
+      "IVM",
+      "ODE-NEB"
+    ]
+  },
+  "provenance_output": "/Users/wuzhiyou/Downloads/IVM_for_MEP/Figures/barnase_barstar/active_candidates/barnase_barstar_ivm_vs_ode_neb_cost_to_precision.json"
+}

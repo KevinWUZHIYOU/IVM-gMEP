@@ -1,0 +1,22 @@
+{
+  "authorization": "User explicitly authorized deleting obsolete unused data on local and remote hosts if needed for space on 2026-09-03.",
+  "removed": [
+    {
+      "evidence_receipt_sha256": "12e7ac8e36ab420eae22cce7b83efea94e9d624eb5969df388621a061349b563",
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_neb_aseode30_k0p1_nf2340_failed_evidence_archive_20260816_r1",
+      "reason": "Incomplete non-resumable NF2340 failure evidence superseded by the sealed NF9990 ASE ODE-NEB baseline; no current registration, manuscript, active figure provenance, R5B, or formal ODE baseline reference.",
+      "size_kib_before_removal": 213080
+    },
+    {
+      "evidence_receipt_sha256": "f7ab94943219123461e4ac06cfba9cf7efc0d71e32f18e077c1fe99b2adc6200",
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/bb_deeplr_bs64_dsel8_r30_a010_nf9990_remote_failed_archive_20260821_r1",
+      "reason": "Early-eliminated non-resumable degraded candidate; no current registration, manuscript, active figure provenance, R5B, or formal ODE baseline reference.",
+      "size_kib_before_removal": 159316
+    }
+  ],
+  "removed_total_kib": 372396,
+  "remote_removal": "none_no_candidate_passed_reference_closure_audit",
+  "schema": "bb-obsolete-failed-data-removal-v1",
+  "status": "REMOVAL_COMPLETE_PATHS_VERIFIED_ABSENT",
+  "recorded_timestamp_hkt": "2026-09-03T00:50:55+08:00"
+}

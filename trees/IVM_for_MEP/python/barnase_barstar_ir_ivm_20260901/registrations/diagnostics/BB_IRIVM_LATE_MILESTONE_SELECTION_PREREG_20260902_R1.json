@@ -1,0 +1,103 @@
+{
+  "bindings": {
+    "all_paths_exact_verifier": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/verify_selected_ivm_all_paths_replay_r2.py",
+      "sha256": "8a49ca4c0c6bdf1a0c260a72d70b4151cb0ebdb45c75b19ef552e3fc6406c63f"
+    },
+    "all_paths_replay_authorization": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/execution_authorizations/bb_irivm_a1e0_r01_m05_inf9990_allpaths_r2.json",
+      "sha256": "1dc6d762b0c9d445ad12634633e5d11abd7b6fd3a296092d75125e37a3a177fa"
+    },
+    "all_paths_replay_registration": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_IRIVM_SELECTED_ALL_PATHS_REPLAY_NF9990_20260902_R2.json",
+      "sha256": "363c1c3ba3ef164bf246539f406c16eb52570e2d457a8ff2232b358422050065"
+    },
+    "all_paths_runner": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/run_selected_ivm_all_paths_replay_r2.py",
+      "sha256": "1c803fc6e86d561d5abb0793a0ac7e3228fffaf32252f49abec06501feb7316f"
+    },
+    "selector": {
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/scripts/select_bb_irivm_late_milestones_blind.py",
+      "sha256": "5106409e7ab7dce619c8be5d96f9d6c2878fe23dd55b23b798e8ce706cb4a972"
+    }
+  },
+  "created_utc": "2026-09-02T12:13:22.974115+00:00",
+  "deterministic_selection": {
+    "anchor_rule": "minimum (absolute_NF_distance, optimization_N_F, call_per_image) among remaining distinct coordinate paths",
+    "anchor_targets_optimization_N_F": [
+      2000,
+      4000,
+      6000,
+      8000,
+      8982
+    ],
+    "highest_role_rule": "maximum (optimization_N_F, call_per_image)",
+    "metric_fields_forbidden": [
+      "Delta_E",
+      "barrier",
+      "densified_Delta_E_kcal_per_mol",
+      "discrete_I_perp_eV2_per_A",
+      "energies",
+      "energy",
+      "force",
+      "forces",
+      "i_perp"
+    ],
+    "metric_values_consulted": false,
+    "number_of_distinct_paths_required": 6,
+    "role_order": [
+      "highest_legal_optimization_N_F_not_above_9990",
+      "nearest_unused_to_NF2000",
+      "nearest_unused_to_NF4000",
+      "nearest_unused_to_NF6000",
+      "nearest_unused_to_NF8000",
+      "nearest_unused_to_NF8982"
+    ],
+    "selection_fields_allowed": [
+      "call_per_image",
+      "exclusion_reason",
+      "formally_reportable",
+      "fully_evaluated_current_path",
+      "history_index",
+      "optimization_N_F",
+      "reparameterization_committed",
+      "selected_path_sha256",
+      "terminal_uncommitted_charged_tail"
+    ]
+  },
+  "early_four_already_covered_optimization_N_F": [
+    60,
+    150,
+    300,
+    1329
+  ],
+  "future_joint_EF_protocol": {
+    "coordinate_space": "unweighted_3N_cartesian",
+    "future_evaluation_contract_requires_frozen_selection": true,
+    "include_both_endpoints": true,
+    "interpolation": "piecewise_linear",
+    "maximum_dense_attempt_started_records": 3000,
+    "number_of_points_per_selected_path": 500,
+    "one_joint_energy_full_force_call_per_point": true,
+    "optimization_N_F_contribution": 0,
+    "sampling": "uniform_cartesian_arclength",
+    "store_all_energies": true,
+    "store_all_full_force_vectors": true,
+    "store_dense_coordinates": true
+  },
+  "late_eligibility": {
+    "distinct_selected_path_sha256": true,
+    "formally_reportable": true,
+    "fully_evaluated_current_path": true,
+    "optimization_N_F_less_than_or_equal_to": 9990,
+    "optimization_N_F_strictly_greater_than": 1329,
+    "reparameterization_committed": true,
+    "terminal_partial_tail_never_eligible": true,
+    "terminal_uncommitted_charged_tail": false
+  },
+  "purpose": "select approximately six late, fully evaluated, committed IR--IVM paths by optimization cost only, before any new diagnostic metric is read",
+  "result_or_verification_bound_at_preregistration": false,
+  "schema": "bb-irivm-late-milestone-blind-selection-preregistration-v1",
+  "selection_may_freeze_only_after_exact_verification_PASS": true,
+  "status": "FROZEN_BEFORE_REMOTE_RESULT_AND_BEFORE_ANY_NEW_METRIC_INSPECTION"
+}

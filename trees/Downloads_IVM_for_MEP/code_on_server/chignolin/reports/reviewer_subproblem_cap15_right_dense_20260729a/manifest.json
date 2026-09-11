@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "namespace": "reviewer_subproblem_cap15_right_dense_20260729a",
+  "experiment_fingerprint": "3d35f1942118d7136b287c73b3ec72720cc02b91e6c38fdc6e9849d9a2dedef2",
+  "source_manifests": [
+    {
+      "inner_calls": 15,
+      "path": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_fixed_alpha_right_shoulder_20260728a/manifest.json",
+      "sha256": "e0d8653ed60c485796ae32fc6c845b7d0a20272a78ae5985108bfec90ee2ba07"
+    }
+  ],
+  "inner_call_caps": [
+    15
+  ],
+  "requested_total_force_budgets": [
+    1000,
+    3000,
+    6000,
+    10000
+  ],
+  "checkpoint_selection": "For each total-force budget B reached by the optimization, select the last stored path with counter_vectors.sum(axis=1) <= B. If the final optimization cost is below B, emit no value for B.",
+  "censoring_policy": "A missing budget is stored as reached=false, source index=-1, attained N_F=-1, barrier=NaN and subdivisions=-1. It must not be plotted or imputed.",
+  "adaptive_barrier_protocol": {
+    "energy_surface": "real 0 K OpenMM potential energy surface",
+    "initial_subdivisions_per_segment": 10,
+    "comparison_subdivisions_per_segment": 20,
+    "adaptive_threshold_kcal_per_mol": 0.05,
+    "maximum_subdivisions_per_segment": 80
+  },
+  "topology": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/inputs/chignolin_clean.pdb",
+  "topology_sha256": "04b122a0b98492b6fadae35772ffc307b8916ea65c8eaf959cb5187bbbfeab01",
+  "postprocessor": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/src/postprocess_dense_barrier.py",
+  "postprocessor_sha256": "7eb012bab0160cd2693529d56041799be6e00b4d5f0f019281ccf454485bb734",
+  "optimization_cost_axis": "sum over all 22 image evaluator joint energy-force cache misses",
+  "diagnostic_calls_excluded_from_optimization_axis": true,
+  "total_diagnostic_joint_evaluations": 2518,
+  "records": [
+    {
+      "inner_calls": 15,
+      "alpha": 300.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_fixed_alpha_right_shoulder_20260728a/manifest.json",
+      "source_manifest_sha256": "e0d8653ed60c485796ae32fc6c845b7d0a20272a78ae5985108bfec90ee2ba07",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a300_central_state_ivm_cfg253b6ba3f794_budget500.npz",
+      "source_result_sha256": "67e4531de06cc8cba475b00e995d007da6723aed78d8b88436c0fd888da46f98",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a300_central_state_ivm_cfg253b6ba3f794_budget500.audit.json",
+      "source_audit_sha256": "858fd109be338efcd94ce28b9c6ab076a5ebcfa33769dac6cb4e0e748930162d",
+      "cache_key": "6cd23f5e93b7c264b8c120879ca7809d47866625541ab3e7cf258f244b5764e5",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        298,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5982,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 7909,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "d953482bb3a30018b3c4832b83aa66676fc4c3470376ae12bfa651a2f76ed117",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_cap15_right_dense_20260729a/dense_barrier_inner15_a300_6cd23f5e93b7c264.npz",
+      "result_sha256": "03139c18872d132c9e7224f328f3690fbe36e18b374c65d7a920843a957192eb",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_cap15_right_dense_20260729a/dense_barrier_inner15_a300_6cd23f5e93b7c264.audit.json",
+      "audit_sha256": "975fe953a491d74f70ebe5b800542c2272438918a7b6cd8ebcde0a230b48244b",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    },
+    {
+      "inner_calls": 15,
+      "alpha": 1000.0,
+      "source_manifest": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/reports/reviewer_fixed_alpha_right_shoulder_20260728a/manifest.json",
+      "source_manifest_sha256": "e0d8653ed60c485796ae32fc6c845b7d0a20272a78ae5985108bfec90ee2ba07",
+      "source_result": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a1000_central_state_ivm_cfg80b6da0f8b21_budget500.npz",
+      "source_result_sha256": "d078948cc5894c26339c6f567fea2371f2c5aec6b54682b094400934e2032f2d",
+      "source_audit": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_reviewer_fixed_alpha_right_shoulder_a1000_central_state_ivm_cfg80b6da0f8b21_budget500.audit.json",
+      "source_audit_sha256": "197a8e2be781ba109e23ae30b14cbc07fb627d55e1af856280f7523c46e15d02",
+      "cache_key": "7be07513c8d9a4186f24f6342e737042309a825866c8dd1803e895abe76e3704",
+      "requested_total_force_budgets": [
+        1000,
+        3000,
+        6000,
+        10000
+      ],
+      "budget_reached": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_record_indices": [
+        48,
+        148,
+        369,
+        -1
+      ],
+      "attained_total_force": [
+        982,
+        2982,
+        5999,
+        -1
+      ],
+      "budget_not_reached": [
+        10000
+      ],
+      "final_total_force": 6451,
+      "final_call_per_internal_image": 500,
+      "stop_reason": "evaluation_budget",
+      "source_paths_sha256": "1ad5795d5d3d591a2bfa3d0b1374d62c837f2eb4b56c818ddc186ff80088c2aa",
+      "result_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_cap15_right_dense_20260729a/dense_barrier_inner15_a1000_7be07513c8d9a418.npz",
+      "result_sha256": "531f8b872ae90a1af91d41d83ba05bae8f14035ed00824738ddd30bf4709d53d",
+      "audit_file": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/diagnostics/reviewer_subproblem_cap15_right_dense_20260729a/dense_barrier_inner15_a1000_7be07513c8d9a418.audit.json",
+      "audit_sha256": "6c83a7ba80f4ca5bc3111574ba59706d43caf9960b2efc8f06559dcbae91b545",
+      "diagnostic_joint_evaluations": 1259,
+      "status": "completed"
+    }
+  ]
+}

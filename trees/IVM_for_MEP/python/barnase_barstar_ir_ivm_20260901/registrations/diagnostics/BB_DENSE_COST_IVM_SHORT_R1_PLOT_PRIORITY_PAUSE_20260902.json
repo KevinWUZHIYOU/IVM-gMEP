@@ -1,0 +1,63 @@
+{
+  "schema": "bb-dense-cost-ivm-short-r1-plot-priority-pause-v1",
+  "status": "PAUSED_WITH_TWO_COMPLETE_ATOMIC_SHARDS",
+  "recorded_local_time": "2026-09-02T19:17:39+08:00",
+  "reason": "The user explicitly prioritized the exact original-32-image energy profile. The local BB resource was released after two complete path shards had been published.",
+  "contract": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/registrations/diagnostics/BB_DENSE_COST_IVM_FOUR_JOINT_EF_SHORT_PREFIX_20260902_R1.json",
+    "sha256": "c0350c283e53f81a3446918b92319f1bbeb7cbd80cf5e7493e5a635f8ac5810a"
+  },
+  "accepted_complete_shards": [
+    {
+      "calls_per_image": 2,
+      "optimization_N_F": 60,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0002_arc500_joint_ef.npz",
+      "sha256": "3f844cfbaebe2e1a4b03359e533de9cc3c806275ba1a4f72b13f5dadf124a1af"
+    },
+    {
+      "calls_per_image": 5,
+      "optimization_N_F": 150,
+      "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.shards/ivm_call0005_arc500_joint_ef.npz",
+      "sha256": "0122d171f8e4336642445b73d53a4d89d632f28b5ed0fe521716b5e808b7c465"
+    }
+  ],
+  "unaccepted_partial_tail": {
+    "calls_per_image": 10,
+    "optimization_N_F": 300,
+    "successful_joint_energy_force_attempts": 35,
+    "open_interrupted_attempts": 1,
+    "open_attempt_id": "82c106c4c8cf4d0482df3a300f6069d2:2:dense_arc500_joint_EF:35:1036",
+    "open_attempt_coordinate_sha256": "09d05c6dc3067d1e592bed8f384a268785dcd9d773b62e668e72af10f7d67de5",
+    "complete_shard_published": false,
+    "may_be_used_as_a_metric_result": false,
+    "must_not_be_silently_retried_under_the_same_registration": true
+  },
+  "dense_wal_at_pause": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.dense_joint_ef.wal.jsonl",
+    "sha256": "7384ee9babf516e6470a4db308a14964dcda68c2a978628ca422ed68b51411ba"
+  },
+  "source_wal_at_pause": {
+    "path": "/Users/wuzhiyou/IVM_for_MEP/python/barnase_barstar_ir_ivm_20260901/runs/diagnostics/bb_irivm_short_four_arc500_joint_ef_20260902_r1.source.wal.jsonl",
+    "sha256": "bef4608247b4543bfbc1ba7d685b84dbaafe4f516d41c43ef7941a336933a160"
+  },
+  "dense_wal_lifetime_at_pause": {
+    "attempt_started": 1036,
+    "attempt_succeeded": 1035,
+    "attempt_failed": 0,
+    "attempt_open": 1
+  },
+  "process_termination_observation": {
+    "local_pid": 42998,
+    "signal": "SIGINT_from_explicit_Ctrl-C",
+    "python_exception": "KeyboardInterrupt",
+    "interrupted_operation": "OpenMM Context.getState(getEnergy=True, getForces=True) for row2 point35",
+    "process_present_after_session_exit": false,
+    "both_canonical_host_local_BB_locks_released": true
+  },
+  "accounting": {
+    "optimization_N_F_contribution": 0,
+    "accepted_dense_joint_energy_force_values": 1000,
+    "partial_tail_excluded_from_accepted_results": true
+  },
+  "resumption_policy": "Use a new superseding registration/output that imports the two hash-bound complete R1 shards and explicitly quarantines this partial tail."
+}

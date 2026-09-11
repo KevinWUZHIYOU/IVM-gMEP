@@ -1,0 +1,23 @@
+{
+  "campaign_id": "bb_chignolin_transfer_ir_ivm_20260901",
+  "status": "CONSTRUCTION_ONLY_NOT_AUTHORIZED",
+  "execution_authorized": false,
+  "algorithm_contract": "contracts/MIGRATION_CONTRACT.json",
+  "grid": {
+    "alpha": [0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0],
+    "r": [0.1, 0.3, 0.5, 0.7, 0.8],
+    "m_max": [5, 8, 10, 15, 20, 50],
+    "full_cartesian_member_count": 240
+  },
+  "mandatory_reparameterization": true,
+  "production_optimization_internal_nf_budget": 9990,
+  "production_number_of_forces_if_successful": 9990,
+  "fixed_endpoint_policy": "two shared canonical endpoint joint E/F cache entries are hash-verified and inherited; endpoint optimization getState attempts=0 and endpoint misses=0",
+  "thread_policy": "all six BLAS/OMP/VecLib/NumExpr/OpenMM caps equal 1 before Python",
+  "concurrency_policy": "one heavy Barnase--Barstar member per device; host-local fcntl lock; jobs=1",
+  "disk_free_gate_bytes": {"smoke": 2147483648, "screen": 2147483648, "production": 8589934592},
+  "storage_mode": "committed, explicitly selected; initial/reparam-committed/final only",
+  "selection_and_metric_plan": "frozen in registrations/STAGED_SEARCH_PROTOCOL.json; no online dense metric or baseline feedback",
+  "diagnostic_density": "arc-length-uniform 500 points for every compared eligible path under one frozen diagnostic oracle; diagnostic calls are separate",
+  "per_member_execution_authorization_directory_present": false
+}

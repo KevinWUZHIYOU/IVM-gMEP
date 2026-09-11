@@ -1,0 +1,22 @@
+{
+  "updated_unix": 1785347282.880152,
+  "phase": "waiting_for_optimization_results",
+  "complete": {
+    "1.0": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_production_a1_early_block_relock_ls4_v2_central_state_ivm_cfgd6f54f272f02_budget500.npz",
+    "20": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_production_v3_transactional_a20_central_state_ivm_cfgd07c4f62e269_budget500.npz",
+    "100": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_production_v3_transactional_a100_central_state_ivm_cfg0ea594451f27_budget500.npz",
+    "300": "/Users/wuzhiyou/Downloads/IVM_for_MEP/code_on_server/chignolin/runs/ivm/ivm_production_v3_transactional_a300_central_state_ivm_cfg44c49515f149_budget500.npz"
+  },
+  "missing": [
+    0.2,
+    0.3,
+    0.5,
+    5,
+    10,
+    15,
+    30,
+    50,
+    70,
+    1000
+  ]
+}
